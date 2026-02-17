@@ -1,0 +1,39 @@
+{
+  "source": "NVIDIA公式IR・SEC提出書類",
+  "unit": "百万ドル（EPS除く）",
+  "note": "NVIDIAの会計年度は2月〜翌1月。10:1株式分割を2024年6月に実施。EPS/株価は分割後調整済み。",
+  "references": [
+    "https://investor.nvidia.com/financial-info/quarterly-results/",
+    "https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/",
+    "https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2025/",
+    "https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2025/",
+    "https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2025/",
+    "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2025/",
+    "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2026/",
+    "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2026/",
+    "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2026/",
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm",
+    "https://www.macrotrends.net/stocks/charts/NVDA/nvidia/revenue",
+    "https://www.macrotrends.net/stocks/charts/NVDA/nvidia/gross-profit",
+    "https://www.macrotrends.net/stocks/charts/NVDA/nvidia/operating-income",
+    "https://www.macrotrends.net/stocks/charts/NVDA/nvidia/net-income"
+  ],
+  "annuals": {
+    "FY2024": { "revenue": 60922, "grossProfit": 44301, "operatingIncome": 32972, "netIncome": 29760, "eps": 1.193 },
+    "FY2025": { "revenue": 130497, "grossProfit": 97858, "operatingIncome": 81454, "netIncome": 72880, "eps": 2.94 }
+  },
+  "quarters": {
+    "FY2024_Q1": { "revenue": 7192, "grossProfit": 4648, "operatingIncome": 2140, "netIncome": 2043, "eps": 0.082 },
+    "FY2024_Q2": { "revenue": 13507, "grossProfit": 9462, "operatingIncome": 6800, "netIncome": 6188, "eps": 0.248 },
+    "FY2024_Q3": { "revenue": 18120, "grossProfit": 13400, "operatingIncome": 10417, "netIncome": 9243, "eps": 0.371 },
+    "FY2024_Q4": { "revenue": 22103, "grossProfit": 16791, "operatingIncome": 13615, "netIncome": 12285, "eps": 0.493 },
+    "FY2025_Q1": { "revenue": 26044, "grossProfit": 20406, "operatingIncome": 16909, "netIncome": 14881, "eps": 0.60 },
+    "FY2025_Q2": { "revenue": 30040, "grossProfit": 22574, "operatingIncome": 18642, "netIncome": 16599, "eps": 0.67 },
+    "FY2025_Q3": { "revenue": 35082, "grossProfit": 26156, "operatingIncome": 21869, "netIncome": 19309, "eps": 0.78 },
+    "FY2025_Q4": { "revenue": 39331, "grossProfit": 28722, "operatingIncome": 24034, "netIncome": 22091, "eps": 0.89 },
+    "FY2026_Q1": { "revenue": 44062, "grossProfit": 26668, "operatingIncome": 21638, "netIncome": 18775, "eps": 0.76 },
+    "FY2026_Q2": { "revenue": 46743, "grossProfit": 33853, "operatingIncome": 28440, "netIncome": 26422, "eps": 1.08 },
+    "FY2026_Q3": { "revenue": 57006, "grossProfit": 41849, "operatingIncome": 36010, "netIncome": 31910, "eps": 1.30 }
+  }
+}

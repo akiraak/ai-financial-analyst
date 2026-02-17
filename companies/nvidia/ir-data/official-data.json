@@ -32,8 +32,8 @@
     "FY2025_Q2": { "revenue": 30040, "grossProfit": 22574, "operatingIncome": 18642, "netIncome": 16599, "eps": 0.67 },
     "FY2025_Q3": { "revenue": 35082, "grossProfit": 26156, "operatingIncome": 21869, "netIncome": 19309, "eps": 0.78 },
     "FY2025_Q4": { "revenue": 39331, "grossProfit": 28722, "operatingIncome": 24034, "netIncome": 22091, "eps": 0.89 },
-    "FY2026_Q1": { "revenue": 44062, "grossProfit": 26668, "operatingIncome": 21638, "netIncome": 18775, "eps": 0.76 },
-    "FY2026_Q2": { "revenue": 46743, "grossProfit": 33853, "operatingIncome": 28440, "netIncome": 26422, "eps": 1.08 },
+    "FY2026_Q1": { "revenue": 44062, "grossProfit": 26676, "operatingIncome": 21638, "netIncome": 18775, "eps": 0.76 },
+    "FY2026_Q2": { "revenue": 46702, "grossProfit": 33812, "operatingIncome": 28440, "netIncome": 26257, "eps": 1.08 },
     "FY2026_Q3": { "revenue": 57006, "grossProfit": 41849, "operatingIncome": 36010, "netIncome": 31910, "eps": 1.30 }
   }
 }

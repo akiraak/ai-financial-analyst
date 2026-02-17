@@ -1,1 +1,10 @@
 node_modules/
+
+# 決算資料のDLファイル（PDF・HTML）
+companies/*/filings/FY*/Q*/*.pdf
+companies/*/filings/FY*/Q*/*.html
+companies/*/filings/FY*/Q*/*.htm
+
+# スクレイピング中間ファイル
+companies/*/filings/ir-page.html
+companies/*/filings/download-results.json

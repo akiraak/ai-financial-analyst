@@ -68,11 +68,12 @@ async function main() {
     }
   }
 
-  // 実績最終四半期の特定（revenueが存在する最後の四半期）
+  // 実績最終四半期の特定（revenueが存在し、outlook以外の最後の四半期）
   let lastActualIdx = -1;
   for (let i = quarters.length - 1; i >= 0; i--) {
     const { fyStr, q } = quarters[i];
-    if (financials[fyStr]?.[q]?.revenue) {
+    const d = financials[fyStr]?.[q];
+    if (d?.revenue && !d.isOutlook) {
       lastActualIdx = i;
       break;
     }
@@ -103,14 +104,19 @@ async function main() {
     const price = stockPrices[fyStr]?.[q]?.price;
 
     // --------------------------------------------------
-    // 実績 P/L データ
+    // P/L データ（実績 or 予想）
     // --------------------------------------------------
     if (d) {
       ws.getCell(3, col).value = d.revenue;
       ws.getCell(6, col).value = d.grossProfit;
       ws.getCell(9, col).value = d.researchAndDevelopment;
       ws.getCell(11, col).value = d.sga;
-      ws.getCell(13, col).value = (d.researchAndDevelopment || 0) + (d.sga || 0);
+      // 販管費: R&D/SGA内訳がない場合はtotalOperatingExpensesを使用
+      if (d.researchAndDevelopment != null || d.sga != null) {
+        ws.getCell(13, col).value = (d.researchAndDevelopment || 0) + (d.sga || 0);
+      } else if (d.totalOperatingExpenses != null) {
+        ws.getCell(13, col).value = d.totalOperatingExpenses;
+      }
       ws.getCell(16, col).value = d.operatingIncome;
       ws.getCell(19, col).value = getNonOperatingIncome(d);
       ws.getCell(20, col).value = d.netIncome;

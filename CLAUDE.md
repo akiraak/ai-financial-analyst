@@ -23,7 +23,8 @@ ai-financial-analyst/
 ├── LICENSE
 ├── workflows/       # 対話フロー定義
 │   ├── help.md              # ヘルプ・初回案内フロー
-│   └── download-filings.md  # 決算資料ダウンロードフロー
+│   ├── download-filings.md  # 決算資料ダウンロードフロー
+│   └── generate-financials.md # 業績データxlsx生成フロー
 ├── companies/       # 企業別の分析データ・スクリプト
 │   └── <企業名>/
 │       ├── filings/           # 決算資料の原本
@@ -34,12 +35,23 @@ ai-financial-analyst/
 │       │   │   └── ...
 │       │   └── README.md      # 資料一覧・URL対応表・ファイル説明
 │       └── ir-data/           # 分析用データ・スクリプト
+│           ├── extract-financials.js  # P/Lデータ抽出
+│           ├── fetch-stock-prices.js  # 四半期末株価取得
+│           ├── generate-xlsx.js       # xlsx生成
+│           ├── financials.json        # 抽出済みP/Lデータ
+│           ├── stock-prices.json      # 取得済み株価データ
+│           └── NVDA業績.xlsx          # 生成されたxlsx
 ```
 
 ## 作業フロー: 決算資料の取得
 
 - 作業開始時に [workflows/download-filings.md](workflows/download-filings.md) を読み、その指示に従うこと
 - 詳細な手順・ルールはすべてワークフローファイルに記載
+
+## 作業フロー: 業績データxlsx生成
+
+- [workflows/generate-financials.md](workflows/generate-financials.md) を読み、その指示に従うこと
+- press-release.html → financials.json → stock-prices.json → NVDA業績.xlsx
 
 ## 開発ルール
 

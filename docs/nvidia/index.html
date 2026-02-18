@@ -23,13 +23,43 @@
     </div>
 
     <div class="section">
+      <h2>セグメント別売上</h2>
+      <div class="chart-wrapper"><canvas id="segmentRevenueChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>セグメント構成比</h2>
+      <div class="chart-wrapper"><canvas id="segmentCompositionChart"></canvas></div>
+    </div>
+
+    <div class="section">
       <h2>利益率推移</h2>
       <div class="chart-wrapper"><canvas id="marginChart"></canvas></div>
     </div>
 
     <div class="section">
+      <h2>成長率推移（前年同期比）</h2>
+      <div class="chart-wrapper"><canvas id="growthChart"></canvas></div>
+    </div>
+
+    <div class="section">
       <h2>株価 & PER</h2>
       <div class="chart-wrapper"><canvas id="pricePERChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>バリュエーション指標</h2>
+      <div class="chart-wrapper"><canvas id="valuationChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>B/S概要</h2>
+      <div class="chart-wrapper"><canvas id="balanceSheetChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>キャッシュフロー</h2>
+      <div class="chart-wrapper"><canvas id="cashFlowChart"></canvas></div>
     </div>
 
     <div class="section">
@@ -55,10 +85,16 @@
         document.getElementById('meta').textContent =
           `${first} ~ ${last} | 実績 ${data.quarters.length - outlookCount}Q + 予想 ${outlookCount}Q | 更新: ${data.generatedAt}`;
 
-        // グラフ描画
+        // グラフ描画（10チャート）
         ChartBuilder.createPLChart(document.getElementById('plChart'), data);
+        ChartBuilder.createSegmentRevenueChart(document.getElementById('segmentRevenueChart'), data);
+        ChartBuilder.createSegmentCompositionChart(document.getElementById('segmentCompositionChart'), data);
         ChartBuilder.createMarginChart(document.getElementById('marginChart'), data);
+        ChartBuilder.createGrowthChart(document.getElementById('growthChart'), data);
         ChartBuilder.createPricePERChart(document.getElementById('pricePERChart'), data);
+        ChartBuilder.createValuationChart(document.getElementById('valuationChart'), data);
+        ChartBuilder.createBalanceSheetChart(document.getElementById('balanceSheetChart'), data);
+        ChartBuilder.createCashFlowChart(document.getElementById('cashFlowChart'), data);
         ChartBuilder.createCostChart(document.getElementById('costChart'), data);
       })
       .catch(err => console.error('データ読み込みエラー:', err));

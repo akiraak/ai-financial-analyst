@@ -91,7 +91,152 @@ const ChartBuilder = {
     });
   },
 
-  // === 2. 利益率推移（折れ線グラフ）===
+  // === 2. セグメント別売上（積み上げ棒グラフ）===
+  createSegmentRevenueChart(ctx, data) {
+    const labels = this.getLabels(data.quarters);
+    const q = data.quarters;
+
+    return new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: 'Data Center',
+            data: q.map(d => d.segments?.dataCenter ?? null),
+            backgroundColor: this.makeColors('rgba(30, 136, 229, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(30, 136, 229, 1)', q),
+            borderWidth: 1,
+          },
+          {
+            label: 'Gaming',
+            data: q.map(d => d.segments?.gaming ?? null),
+            backgroundColor: this.makeColors('rgba(76, 175, 80, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(76, 175, 80, 1)', q),
+            borderWidth: 1,
+          },
+          {
+            label: 'Professional Visualization',
+            data: q.map(d => d.segments?.professionalVisualization ?? null),
+            backgroundColor: this.makeColors('rgba(255, 183, 77, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(255, 183, 77, 1)', q),
+            borderWidth: 1,
+          },
+          {
+            label: 'Automotive',
+            data: q.map(d => d.segments?.automotive ?? null),
+            backgroundColor: this.makeColors('rgba(156, 39, 176, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(156, 39, 176, 1)', q),
+            borderWidth: 1,
+          },
+          {
+            label: 'OEM & Other',
+            data: q.map(d => d.segments?.oem ?? null),
+            backgroundColor: this.makeColors('rgba(158, 158, 158, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(158, 158, 158, 1)', q),
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: 'セグメント別売上（百万ドル）', font: { size: 16 } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y?.toLocaleString()}M`,
+            },
+          },
+        },
+        scales: {
+          x: { stacked: true },
+          y: {
+            stacked: true,
+            beginAtZero: true,
+            ticks: { callback: v => '$' + (v / 1000).toFixed(0) + 'B' },
+          },
+        },
+      },
+    });
+  },
+
+  // === 3. セグメント構成比（100%積み上げ棒グラフ）===
+  createSegmentCompositionChart(ctx, data) {
+    const labels = this.getLabels(data.quarters);
+    const q = data.quarters;
+
+    // 各セグメントの売上比率を算出
+    const pct = (d, key) => {
+      if (!d.segments || !d.revenue) return null;
+      const val = d.segments[key];
+      return val != null ? val / d.revenue * 100 : null;
+    };
+
+    return new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: 'Data Center',
+            data: q.map(d => pct(d, 'dataCenter')),
+            backgroundColor: 'rgba(30, 136, 229, 0.7)',
+            borderColor: 'rgba(30, 136, 229, 1)',
+            borderWidth: 1,
+          },
+          {
+            label: 'Gaming',
+            data: q.map(d => pct(d, 'gaming')),
+            backgroundColor: 'rgba(76, 175, 80, 0.7)',
+            borderColor: 'rgba(76, 175, 80, 1)',
+            borderWidth: 1,
+          },
+          {
+            label: 'Professional Visualization',
+            data: q.map(d => pct(d, 'professionalVisualization')),
+            backgroundColor: 'rgba(255, 183, 77, 0.7)',
+            borderColor: 'rgba(255, 183, 77, 1)',
+            borderWidth: 1,
+          },
+          {
+            label: 'Automotive',
+            data: q.map(d => pct(d, 'automotive')),
+            backgroundColor: 'rgba(156, 39, 176, 0.7)',
+            borderColor: 'rgba(156, 39, 176, 1)',
+            borderWidth: 1,
+          },
+          {
+            label: 'OEM & Other',
+            data: q.map(d => pct(d, 'oem')),
+            backgroundColor: 'rgba(158, 158, 158, 0.7)',
+            borderColor: 'rgba(158, 158, 158, 1)',
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: 'セグメント構成比', font: { size: 16 } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1)}%`,
+            },
+          },
+        },
+        scales: {
+          x: { stacked: true },
+          y: {
+            stacked: true,
+            max: 100,
+            ticks: { callback: v => v + '%' },
+          },
+        },
+      },
+    });
+  },
+
+  // === 4. 利益率推移（折れ線グラフ）===
   createMarginChart(ctx, data) {
     const labels = this.getLabels(data.quarters);
     const q = data.quarters;
@@ -211,7 +356,291 @@ const ChartBuilder = {
     });
   },
 
-  // === 4. 費用構造（積み上げ棒グラフ）===
+  // === 5. 成長率推移（前年同期比）===
+  createGrowthChart(ctx, data) {
+    const labels = this.getLabels(data.quarters);
+    const q = data.quarters;
+
+    // YoY成長率を計算（4四半期前と比較）
+    const yoyGrowth = (metric) => q.map((d, i) => {
+      if (i < 4) return null;
+      const prev = q[i - 4][metric];
+      const curr = d[metric];
+      if (!prev || !curr) return null;
+      return (curr / prev - 1) * 100;
+    });
+
+    return new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: '売上高 YoY',
+            data: yoyGrowth('revenue'),
+            borderColor: 'rgba(76, 175, 80, 1)',
+            backgroundColor: 'rgba(76, 175, 80, 0.1)',
+            borderWidth: 2, tension: 0.3, pointRadius: 3,
+          },
+          {
+            label: '営業利益 YoY',
+            data: yoyGrowth('operatingIncome'),
+            borderColor: 'rgba(255, 152, 0, 1)',
+            backgroundColor: 'rgba(255, 152, 0, 0.1)',
+            borderWidth: 2, tension: 0.3, pointRadius: 3,
+          },
+          {
+            label: '純利益 YoY',
+            data: yoyGrowth('netIncome'),
+            borderColor: 'rgba(156, 39, 176, 1)',
+            backgroundColor: 'rgba(156, 39, 176, 0.1)',
+            borderWidth: 2, tension: 0.3, pointRadius: 3,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: '成長率推移（前年同期比）', font: { size: 16 } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1)}%`,
+            },
+          },
+          annotation: {
+            annotations: {
+              zeroLine: {
+                type: 'line',
+                yMin: 0, yMax: 0,
+                borderColor: 'rgba(0, 0, 0, 0.3)',
+                borderWidth: 1,
+                borderDash: [5, 5],
+              },
+            },
+          },
+        },
+        scales: {
+          y: {
+            ticks: { callback: v => v + '%' },
+          },
+        },
+      },
+    });
+  },
+
+  // === 6. バリュエーション指標（複合折れ線）===
+  createValuationChart(ctx, data) {
+    const labels = this.getLabels(data.quarters);
+    const q = data.quarters;
+
+    // PER: 株価 / 直近4Q EPS合計（既存ロジック）
+    const per = q.map((d, i) => {
+      if (!d.price || i < 3) return null;
+      const epsSum = q.slice(i - 3, i + 1).reduce((s, x) => s + (x.eps || 0), 0);
+      return epsSum > 0 ? Math.round(d.price / epsSum * 10) / 10 : null;
+    });
+
+    // PSR: 時価総額 / 直近4Q売上合計
+    const psr = q.map((d, i) => {
+      if (!d.price || !d.sharesDiluted || i < 3) return null;
+      const revSum = q.slice(i - 3, i + 1).reduce((s, x) => s + (x.revenue || 0), 0);
+      if (revSum <= 0) return null;
+      const marketCap = d.price * d.sharesDiluted;
+      return Math.round(marketCap / revSum * 10) / 10;
+    });
+
+    // PBR: 時価総額 / 純資産
+    const pbr = q.map(d => {
+      if (!d.price || !d.sharesDiluted || !d.balanceSheet?.totalEquity) return null;
+      const marketCap = d.price * d.sharesDiluted;
+      return Math.round(marketCap / d.balanceSheet.totalEquity * 10) / 10;
+    });
+
+    return new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: 'PER (倍)',
+            data: per,
+            borderColor: 'rgba(255, 87, 34, 1)',
+            borderWidth: 2, tension: 0.3, pointRadius: 3,
+            yAxisID: 'y',
+          },
+          {
+            label: 'PSR (倍)',
+            data: psr,
+            borderColor: 'rgba(33, 150, 243, 1)',
+            borderWidth: 2, tension: 0.3, pointRadius: 3,
+            yAxisID: 'y1',
+          },
+          {
+            label: 'PBR (倍)',
+            data: pbr,
+            borderColor: 'rgba(76, 175, 80, 1)',
+            borderWidth: 2, tension: 0.3, pointRadius: 3,
+            yAxisID: 'y1',
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: 'バリュエーション指標', font: { size: 16 } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1)}x`,
+            },
+          },
+        },
+        scales: {
+          y: {
+            position: 'left',
+            beginAtZero: true,
+            ticks: { callback: v => v + 'x' },
+            title: { display: true, text: 'PER' },
+          },
+          y1: {
+            position: 'right',
+            beginAtZero: true,
+            grid: { drawOnChartArea: false },
+            ticks: { callback: v => v + 'x' },
+            title: { display: true, text: 'PSR / PBR' },
+          },
+        },
+      },
+    });
+  },
+
+  // === 8. B/S概要（棒グラフ）===
+  createBalanceSheetChart(ctx, data) {
+    const labels = this.getLabels(data.quarters);
+    const q = data.quarters;
+
+    return new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: '総資産',
+            data: q.map(d => d.balanceSheet?.totalAssets ?? null),
+            backgroundColor: this.makeColors('rgba(33, 150, 243, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(33, 150, 243, 1)', q),
+            borderWidth: 1,
+          },
+          {
+            label: '総負債',
+            data: q.map(d => d.balanceSheet?.totalLiabilities ?? null),
+            backgroundColor: this.makeColors('rgba(239, 83, 80, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(239, 83, 80, 1)', q),
+            borderWidth: 1,
+          },
+          {
+            label: '純資産',
+            data: q.map(d => d.balanceSheet?.totalEquity ?? null),
+            backgroundColor: this.makeColors('rgba(76, 175, 80, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(76, 175, 80, 1)', q),
+            borderWidth: 1,
+          },
+          {
+            label: '現金同等物',
+            data: q.map(d => d.balanceSheet?.cashAndEquivalents ?? null),
+            type: 'line',
+            borderColor: 'rgba(255, 152, 0, 1)',
+            backgroundColor: 'rgba(255, 152, 0, 0.1)',
+            borderWidth: 2,
+            pointRadius: 3,
+            tension: 0.3,
+            order: 0,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: 'B/S概要（百万ドル）', font: { size: 16 } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y?.toLocaleString()}M`,
+            },
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: { callback: v => '$' + (v / 1000).toFixed(0) + 'B' },
+          },
+        },
+      },
+    });
+  },
+
+  // === 9. キャッシュフロー（棒+折れ線複合）===
+  createCashFlowChart(ctx, data) {
+    const labels = this.getLabels(data.quarters);
+    const q = data.quarters;
+
+    return new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: '営業CF',
+            data: q.map(d => d.cashFlow?.operatingCF ?? null),
+            backgroundColor: this.makeColors('rgba(76, 175, 80, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(76, 175, 80, 1)', q),
+            borderWidth: 1,
+          },
+          {
+            label: '投資CF',
+            data: q.map(d => d.cashFlow?.investingCF ?? null),
+            backgroundColor: this.makeColors('rgba(239, 83, 80, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(239, 83, 80, 1)', q),
+            borderWidth: 1,
+          },
+          {
+            label: '財務CF',
+            data: q.map(d => d.cashFlow?.financingCF ?? null),
+            backgroundColor: this.makeColors('rgba(255, 152, 0, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(255, 152, 0, 1)', q),
+            borderWidth: 1,
+          },
+          {
+            label: 'FCF',
+            data: q.map(d => d.cashFlow?.freeCashFlow ?? null),
+            type: 'line',
+            borderColor: 'rgba(30, 136, 229, 1)',
+            backgroundColor: 'rgba(30, 136, 229, 0.1)',
+            borderWidth: 2,
+            pointRadius: 3,
+            tension: 0.3,
+            order: 0,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: 'キャッシュフロー（百万ドル）', font: { size: 16 } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y?.toLocaleString()}M`,
+            },
+          },
+        },
+        scales: {
+          y: {
+            ticks: { callback: v => '$' + (v / 1000).toFixed(0) + 'B' },
+          },
+        },
+      },
+    });
+  },
+
+  // === 10. 費用構造（積み上げ棒グラフ）===
   createCostChart(ctx, data) {
     const labels = this.getLabels(data.quarters);
     const q = data.quarters;

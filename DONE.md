@@ -23,8 +23,19 @@
   - グラフ4種類: P/L推移、利益率推移、株価&PER複合、費用構造
   - 技術スタック: GitHub Pages + Chart.js（静的HTML、ビルド不要）
   - 複数企業対応のディレクトリ構成を設計
+- [x] GitHub PagesのPages設定を有効化（Settings → Pages → main / docs）
 - [x] GitHub Pages ダッシュボードの実装（ステップ1〜4）
   - generate-data-json.js: financials.json + stock-prices.json → data.json 統合
   - docs/nvidia/data.json: 20四半期分の統合データ生成
   - docs/js/chart-builder.js: 4種類のグラフ描画ロジック
   - docs/css/style.css, docs/index.html, docs/nvidia/index.html
+- [x] NVIDIA業績分析の充実化（4→10チャート、→ companies/nvidia/PLAN.md）
+  - Phase 1: セグメント別売上（extract-segments.js → segments.json、チャート×2）
+    - Data Center / Gaming / Professional Visualization / Automotive / OEM & Other
+    - 19四半期分抽出、OEMは総売上との差分で算出、全四半期一致確認済み
+  - Phase 2: B/S・キャッシュフロー（extract-balance-sheet.js / extract-cash-flows.js、チャート×2）
+    - B/S: 8項目×19四半期（Cash, Total Assets/Liabilities/Equity, Debt等）
+    - CF: 4項目×19四半期（Operating/Investing/Financing CF + FCF）
+  - Phase 3: バリュエーション指標（PER / PSR / PBR 複合折れ線チャート×1）
+    - sharesDilutedをスプリット調整してdata.jsonに統合
+  - Phase 4: 成長率推移（売上高・営業利益・純利益のYoY成長率チャート×1）

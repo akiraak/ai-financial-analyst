@@ -18,7 +18,28 @@
       "netIncome": 1912,
       "eps": 0.08,
       "price": 15.28,
-      "priceDate": "2021-04-28"
+      "priceDate": "2021-04-28",
+      "sharesDiluted": 25280,
+      "segments": {
+        "dataCenter": 2050,
+        "gaming": 2760,
+        "professionalVisualization": 372,
+        "automotive": 154,
+        "oem": 325
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 12667,
+        "totalAssets": 30796,
+        "totalLiabilities": 12022,
+        "totalEquity": 18774,
+        "totalDebt": 6963
+      },
+      "cashFlow": {
+        "operatingCF": 1874,
+        "investingCF": -1272,
+        "financingCF": -471,
+        "freeCashFlow": 1557
+      }
     },
     {
       "label": "FY2022 Q2",
@@ -35,7 +56,28 @@
       "netIncome": 2374,
       "eps": 0.09,
       "price": 19.5,
-      "priceDate": "2021-07-28"
+      "priceDate": "2021-07-28",
+      "sharesDiluted": 25320,
+      "segments": {
+        "dataCenter": 2370,
+        "gaming": 3060,
+        "professionalVisualization": 519,
+        "automotive": 152,
+        "oem": 406
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 19654,
+        "totalAssets": 38650,
+        "totalLiabilities": 17503,
+        "totalEquity": 21147,
+        "totalDebt": 11943
+      },
+      "cashFlow": {
+        "operatingCF": 2682,
+        "investingCF": -2533,
+        "financingCF": 4501,
+        "freeCashFlow": 2478
+      }
     },
     {
       "label": "FY2022 Q3",
@@ -52,7 +94,28 @@
       "netIncome": 2464,
       "eps": 0.1,
       "price": 24.94,
-      "priceDate": "2021-10-28"
+      "priceDate": "2021-10-28",
+      "sharesDiluted": 25380,
+      "segments": {
+        "dataCenter": 2940,
+        "gaming": 3220,
+        "professionalVisualization": 577,
+        "automotive": 135,
+        "oem": 231
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 19298,
+        "totalAssets": 40632,
+        "totalLiabilities": 16834,
+        "totalEquity": 23798,
+        "totalDebt": 11943
+      },
+      "cashFlow": {
+        "operatingCF": 1519,
+        "investingCF": -4438,
+        "financingCF": -1421,
+        "freeCashFlow": 1276
+      }
     },
     {
       "label": "FY2022 Q4",
@@ -69,7 +132,28 @@
       "netIncome": 3003,
       "eps": 0.12,
       "price": 22.84,
-      "priceDate": "2022-01-28"
+      "priceDate": "2022-01-28",
+      "sharesDiluted": 25450,
+      "segments": {
+        "dataCenter": 3260,
+        "gaming": 3420,
+        "professionalVisualization": 643,
+        "automotive": 125,
+        "oem": 195
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 21208,
+        "totalAssets": 44187,
+        "totalLiabilities": 17575,
+        "totalEquity": 26612,
+        "totalDebt": 11945
+      },
+      "cashFlow": {
+        "operatingCF": 3033,
+        "investingCF": -1587,
+        "financingCF": -744,
+        "freeCashFlow": 2739
+      }
     },
     {
       "label": "FY2023 Q1",
@@ -86,7 +170,28 @@
       "netIncome": 1618,
       "eps": 0.06,
       "price": 19.78,
-      "priceDate": "2022-04-28"
+      "priceDate": "2022-04-28",
+      "sharesDiluted": 25370,
+      "segments": {
+        "dataCenter": 3750,
+        "gaming": 3620,
+        "professionalVisualization": 622,
+        "automotive": 138,
+        "oem": 158
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 20338,
+        "totalAssets": 45212,
+        "totalLiabilities": 18892,
+        "totalEquity": 26320,
+        "totalDebt": 10947
+      },
+      "cashFlow": {
+        "operatingCF": 1731,
+        "investingCF": 2612,
+        "financingCF": -2446,
+        "freeCashFlow": 1348
+      }
     },
     {
       "label": "FY2023 Q2",
@@ -103,7 +208,28 @@
       "netIncome": 656,
       "eps": 0.03,
       "price": 17.98,
-      "priceDate": "2022-07-28"
+      "priceDate": "2022-07-28",
+      "sharesDiluted": 25160,
+      "segments": {
+        "dataCenter": 3810,
+        "gaming": 2040,
+        "professionalVisualization": 496,
+        "automotive": 220,
+        "oem": 138
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 17037,
+        "totalAssets": 43476,
+        "totalLiabilities": 19625,
+        "totalEquity": 23851,
+        "totalDebt": 10949
+      },
+      "cashFlow": {
+        "operatingCF": 1270,
+        "investingCF": 1618,
+        "financingCF": -3762,
+        "freeCashFlow": 824
+      }
     },
     {
       "label": "FY2023 Q3",
@@ -120,7 +246,28 @@
       "netIncome": 680,
       "eps": 0.03,
       "price": 13.83,
-      "priceDate": "2022-10-28"
+      "priceDate": "2022-10-28",
+      "sharesDiluted": 24990,
+      "segments": {
+        "dataCenter": 3830,
+        "gaming": 1570,
+        "professionalVisualization": 200,
+        "automotive": 251,
+        "oem": 80
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 13143,
+        "totalAssets": 40488,
+        "totalLiabilities": 19139,
+        "totalEquity": 21349,
+        "totalDebt": 10950
+      },
+      "cashFlow": {
+        "operatingCF": 392,
+        "investingCF": 3148,
+        "financingCF": -3753,
+        "freeCashFlow": -156
+      }
     },
     {
       "label": "FY2023 Q4",
@@ -137,7 +284,28 @@
       "netIncome": 1414,
       "eps": 0.06,
       "price": 20.36,
-      "priceDate": "2023-01-27"
+      "priceDate": "2023-01-27",
+      "sharesDiluted": 24770,
+      "segments": {
+        "dataCenter": 3620,
+        "gaming": 1830,
+        "professionalVisualization": 226,
+        "automotive": 294,
+        "oem": 81
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 13296,
+        "totalAssets": 41182,
+        "totalLiabilities": 19081,
+        "totalEquity": 22101,
+        "totalDebt": 10953
+      },
+      "cashFlow": {
+        "operatingCF": 2249,
+        "investingCF": -4,
+        "financingCF": -1656,
+        "freeCashFlow": 1736
+      }
     },
     {
       "label": "FY2024 Q1",
@@ -154,7 +322,28 @@
       "netIncome": 2043,
       "eps": 0.08,
       "price": 27.75,
-      "priceDate": "2023-04-28"
+      "priceDate": "2023-04-28",
+      "sharesDiluted": 24900,
+      "segments": {
+        "dataCenter": 4280,
+        "gaming": 2240,
+        "professionalVisualization": 295,
+        "automotive": 296,
+        "oem": 81
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 15320,
+        "totalAssets": 44460,
+        "totalLiabilities": 19940,
+        "totalEquity": 24520,
+        "totalDebt": 10954
+      },
+      "cashFlow": {
+        "operatingCF": 2911,
+        "investingCF": -841,
+        "financingCF": -380,
+        "freeCashFlow": 2643
+      }
     },
     {
       "label": "FY2024 Q2",
@@ -171,7 +360,28 @@
       "netIncome": 6188,
       "eps": 0.25,
       "price": 46.75,
-      "priceDate": "2023-07-28"
+      "priceDate": "2023-07-28",
+      "sharesDiluted": 24990,
+      "segments": {
+        "dataCenter": 10320,
+        "gaming": 2490,
+        "professionalVisualization": 379,
+        "automotive": 253,
+        "oem": 65
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 16023,
+        "totalAssets": 49555,
+        "totalLiabilities": 22054,
+        "totalEquity": 27501,
+        "totalDebt": 9705
+      },
+      "cashFlow": {
+        "operatingCF": 6348,
+        "investingCF": -447,
+        "financingCF": -5098,
+        "freeCashFlow": 6048
+      }
     },
     {
       "label": "FY2024 Q3",
@@ -188,7 +398,28 @@
       "netIncome": 9243,
       "eps": 0.37,
       "price": 40.5,
-      "priceDate": "2023-10-27"
+      "priceDate": "2023-10-27",
+      "sharesDiluted": 24940,
+      "segments": {
+        "dataCenter": 14510,
+        "gaming": 2860,
+        "professionalVisualization": 416,
+        "automotive": 261,
+        "oem": 73
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 18281,
+        "totalAssets": 54148,
+        "totalLiabilities": 20883,
+        "totalEquity": 33265,
+        "totalDebt": 9706
+      },
+      "cashFlow": {
+        "operatingCF": 7333,
+        "investingCF": -3169,
+        "financingCF": -4527,
+        "freeCashFlow": 7042
+      }
     },
     {
       "label": "FY2024 Q4",
@@ -205,7 +436,28 @@
       "netIncome": 12285,
       "eps": 0.49,
       "price": 61.03,
-      "priceDate": "2024-01-26"
+      "priceDate": "2024-01-26",
+      "sharesDiluted": 24900,
+      "segments": {
+        "dataCenter": 18400,
+        "gaming": 2900,
+        "professionalVisualization": 463,
+        "automotive": 281,
+        "oem": 59
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 25984,
+        "totalAssets": 65728,
+        "totalLiabilities": 22750,
+        "totalEquity": 42978,
+        "totalDebt": 9709
+      },
+      "cashFlow": {
+        "operatingCF": 11499,
+        "investingCF": -6109,
+        "financingCF": -3629,
+        "freeCashFlow": 11217
+      }
     },
     {
       "label": "FY2025 Q1",
@@ -222,7 +474,28 @@
       "netIncome": 14881,
       "eps": 0.6,
       "price": 87.74,
-      "priceDate": "2024-04-26"
+      "priceDate": "2024-04-26",
+      "sharesDiluted": 24890,
+      "segments": {
+        "dataCenter": 22600,
+        "gaming": 2600,
+        "professionalVisualization": 427,
+        "automotive": 329,
+        "oem": 88
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 31438,
+        "totalAssets": 77072,
+        "totalLiabilities": 27930,
+        "totalEquity": 49142,
+        "totalDebt": 9710
+      },
+      "cashFlow": {
+        "operatingCF": 15345,
+        "investingCF": -5693,
+        "financingCF": -9345,
+        "freeCashFlow": 14936
+      }
     },
     {
       "label": "FY2025 Q2",
@@ -239,7 +512,28 @@
       "netIncome": 16599,
       "eps": 0.67,
       "price": 113.06,
-      "priceDate": "2024-07-26"
+      "priceDate": "2024-07-26",
+      "sharesDiluted": 24848,
+      "segments": {
+        "dataCenter": 26300,
+        "gaming": 2900,
+        "professionalVisualization": 454,
+        "automotive": 346,
+        "oem": 40
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 34800,
+        "totalAssets": 85227,
+        "totalLiabilities": 27070,
+        "totalEquity": 58157,
+        "totalDebt": 9711
+      },
+      "cashFlow": {
+        "operatingCF": 14489,
+        "investingCF": -3185,
+        "financingCF": -10320,
+        "freeCashFlow": 13483
+      }
     },
     {
       "label": "FY2025 Q3",
@@ -256,7 +550,28 @@
       "netIncome": 19309,
       "eps": 0.78,
       "price": 140.52,
-      "priceDate": "2024-10-28"
+      "priceDate": "2024-10-28",
+      "sharesDiluted": 24774,
+      "segments": {
+        "dataCenter": 30800,
+        "gaming": 3300,
+        "professionalVisualization": 486,
+        "automotive": 449,
+        "oem": 47
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 38487,
+        "totalAssets": 96013,
+        "totalLiabilities": 30114,
+        "totalEquity": 65899,
+        "totalDebt": 9712
+      },
+      "cashFlow": {
+        "operatingCF": 17629,
+        "investingCF": -4345,
+        "financingCF": -12748,
+        "freeCashFlow": 16787
+      }
     },
     {
       "label": "FY2025 Q4",
@@ -273,7 +588,28 @@
       "netIncome": 22091,
       "eps": 0.89,
       "price": 128.99,
-      "priceDate": "2025-01-28"
+      "priceDate": "2025-01-28",
+      "sharesDiluted": 24706,
+      "segments": {
+        "dataCenter": 35600,
+        "gaming": 2500,
+        "professionalVisualization": 511,
+        "automotive": 570,
+        "oem": 150
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 43210,
+        "totalAssets": 111601,
+        "totalLiabilities": 32274,
+        "totalEquity": 79327,
+        "totalDebt": 9713
+      },
+      "cashFlow": {
+        "operatingCF": 16628,
+        "investingCF": -7198,
+        "financingCF": -9948,
+        "freeCashFlow": 15519
+      }
     },
     {
       "label": "FY2026 Q1",
@@ -290,7 +626,28 @@
       "netIncome": 18775,
       "eps": 0.76,
       "price": 108.73,
-      "priceDate": "2025-04-28"
+      "priceDate": "2025-04-28",
+      "sharesDiluted": 24611,
+      "segments": {
+        "dataCenter": 39100,
+        "gaming": 3800,
+        "professionalVisualization": 509,
+        "automotive": 567,
+        "oem": 86
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 53691,
+        "totalAssets": 125254,
+        "totalLiabilities": 41411,
+        "totalEquity": 83843,
+        "totalDebt": 8464
+      },
+      "cashFlow": {
+        "operatingCF": 27414,
+        "investingCF": -5216,
+        "financingCF": -15553,
+        "freeCashFlow": 26135
+      }
     },
     {
       "label": "FY2026 Q2",
@@ -307,7 +664,28 @@
       "netIncome": 26422,
       "eps": 1.08,
       "price": 176.75,
-      "priceDate": "2025-07-28"
+      "priceDate": "2025-07-28",
+      "sharesDiluted": 24532,
+      "segments": {
+        "dataCenter": 41100,
+        "gaming": 4300,
+        "professionalVisualization": 601,
+        "automotive": 586,
+        "oem": 156
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 56791,
+        "totalAssets": 140740,
+        "totalLiabilities": 40609,
+        "totalEquity": 100131,
+        "totalDebt": 8466
+      },
+      "cashFlow": {
+        "operatingCF": 15365,
+        "investingCF": -7126,
+        "financingCF": -11834,
+        "freeCashFlow": 13450
+      }
     },
     {
       "label": "FY2026 Q3",
@@ -324,7 +702,28 @@
       "netIncome": 31910,
       "eps": 1.3,
       "price": 201.03,
-      "priceDate": "2025-10-28"
+      "priceDate": "2025-10-28",
+      "sharesDiluted": 24483,
+      "segments": {
+        "dataCenter": 51200,
+        "gaming": 4300,
+        "professionalVisualization": 760,
+        "automotive": 592,
+        "oem": 154
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 60608,
+        "totalAssets": 161148,
+        "totalLiabilities": 42251,
+        "totalEquity": 118897,
+        "totalDebt": 8467
+      },
+      "cashFlow": {
+        "operatingCF": 23750,
+        "investingCF": -9025,
+        "financingCF": -14878,
+        "freeCashFlow": 22089
+      }
     },
     {
       "label": "FY2026 Q4",
@@ -341,7 +740,11 @@
       "netIncome": 35209,
       "eps": null,
       "price": null,
-      "priceDate": null
+      "priceDate": null,
+      "sharesDiluted": null,
+      "segments": null,
+      "balanceSheet": null,
+      "cashFlow": null
     }
   ]
 }

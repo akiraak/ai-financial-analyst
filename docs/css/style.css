@@ -68,6 +68,38 @@ body {
   max-height: 400px;
 }
 
+/* チャート解説 */
+.chart-description {
+  margin-top: 16px;
+  padding: 16px;
+  background: #f8f9fb;
+  border-radius: 6px;
+  border-left: 3px solid #2e75b6;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.chart-description p {
+  margin-bottom: 8px;
+}
+
+.chart-description p:last-child {
+  margin-bottom: 0;
+}
+
+.chart-description .label {
+  font-weight: 600;
+  color: #1f3864;
+}
+
+.chart-description .insight {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e0e4ea;
+  color: #555;
+}
+
 /* フッター */
 .footer {
   text-align: center;

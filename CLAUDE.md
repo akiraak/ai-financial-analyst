@@ -40,10 +40,20 @@ ai-financial-analyst/
 │           ├── extract-financials.js  # P/Lデータ抽出
 │           ├── fetch-stock-prices.js  # 四半期末株価取得
 │           ├── generate-xlsx.js       # xlsx生成
+│           ├── generate-data-json.js  # GitHub Pages用data.json生成
 │           ├── template.xlsx          # xlsx生成用テンプレート
 │           ├── financials.json        # 抽出済みP/Lデータ
 │           ├── stock-prices.json      # 取得済み株価データ
 │           └── NVDA業績.xlsx          # 生成されたxlsx
+├── docs/            # GitHub Pages公開ディレクトリ
+│   ├── index.html             # 企業一覧トップページ
+│   ├── css/
+│   │   └── style.css          # 共通スタイル
+│   ├── js/
+│   │   └── chart-builder.js   # 共通チャート生成ロジック
+│   └── nvidia/
+│       ├── index.html         # NVIDIAレポートページ
+│       └── data.json          # 統合データ（financials + stock-prices）
 ```
 
 ## 作業フロー: 決算資料の取得

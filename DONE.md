@@ -23,3 +23,8 @@
   - グラフ4種類: P/L推移、利益率推移、株価&PER複合、費用構造
   - 技術スタック: GitHub Pages + Chart.js（静的HTML、ビルド不要）
   - 複数企業対応のディレクトリ構成を設計
+- [x] GitHub Pages ダッシュボードの実装（ステップ1〜4）
+  - generate-data-json.js: financials.json + stock-prices.json → data.json 統合
+  - docs/nvidia/data.json: 20四半期分の統合データ生成
+  - docs/js/chart-builder.js: 4種類のグラフ描画ロジック
+  - docs/css/style.css, docs/index.html, docs/nvidia/index.html

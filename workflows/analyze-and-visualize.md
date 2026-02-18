@@ -3,41 +3,92 @@
 ## 目的
 
 - 業績データを投資判断の共有用ダッシュボードとしてGitHub Pagesに公開する
-- financials.json + stock-prices.json をデータソースとする
+- 複数のデータソース（financials.json, stock-prices.json, segments.json, balance-sheet.json, cash-flows.json, segment-profit.json）を統合する
 - 複数企業に対応可能な構造にする
 
-## 可視化するグラフ
+## 可視化するグラフ（12チャート）
 
-### 1. P/L推移（棒グラフ）
+### A. 収益全体像
+
+#### 1. P/L推移（棒グラフ）
 - 売上高・粗利・営業利益・純利益の四半期推移
 - 予想（isOutlook）データは色や透明度で区別する
 
-### 2. 利益率推移（折れ線グラフ）
+#### 2. 利益率推移（折れ線グラフ）
 - 粗利率（grossProfit / revenue）
 - 営業利益率（operatingIncome / revenue）
 - 純利益率（netIncome / revenue）
 
-### 3. 株価 & PER（複合チャート）
-- 株価: 面グラフまたは棒グラフ（左軸）
-- PER: 折れ線グラフ（右軸）
-- PER = 株価 / 直近4Q EPS合計
+#### 3. 成長率推移（折れ線グラフ）
+- 売上高・営業利益・純利益のYoY成長率
+- 0%ラインを基準に成長の加速・減速を把握
 
-### 4. 費用構造（積み上げ棒グラフ）
+#### 4. 費用構造（積み上げ棒グラフ）
 - 売上原価（costOfRevenue）
 - 研究開発費（researchAndDevelopment）
 - その他販管費（sga）
 - 売上高に対する構成比で表示
 
+### B. 財務基盤
+
+#### 5. B/S概要（棒グラフ + 折れ線）
+- 総資産・総負債・純資産（棒グラフ）
+- 現金同等物（折れ線）
+
+#### 6. キャッシュフロー（棒グラフ + 折れ線）
+- 営業CF・投資CF・財務CF（棒グラフ）
+- フリーキャッシュフロー（折れ線）
+
+### C. 株式市場評価
+
+#### 7. 株価 & PER（複合チャート）
+- 株価: 棒グラフ（左軸）
+- PER: 折れ線グラフ（右軸）
+- PER = 株価 / 直近4Q EPS合計
+
+#### 8. バリュエーション指標（複合折れ線）
+- PER（左軸）、PSR・PBR（右軸）
+
+### D. セグメント分析
+
+セグメント分析セクションの冒頭に、2種類のセグメント区分の説明テキストを配置する。
+
+- **市場向け5セグメント**（プレスリリースベース・売上のみ）: Data Center / Gaming / Professional Visualization / Automotive / OEM & Other
+- **SEC報告2セグメント**（10-Q/10-Kベース・売上+営業利益）: Compute & Networking / Graphics
+- 両者の対応関係（C&N ≒ Data Center + Automotive + Networking、Graphics ≒ Gaming + ProViz + Infotainment）
+
+#### 9. セグメント別売上（積み上げ棒グラフ）
+- 市場向け5セグメントの売上推移
+- データソース: press-release.html → segments.json
+
+#### 10. セグメント構成比（100%積み上げ棒グラフ）
+- 総売上に占める各セグメントの構成比率
+
+#### 11. セグメント営業利益（棒グラフ）
+- SEC報告2セグメント（Compute & Networking / Graphics）の営業利益
+- データソース: 10-Q/10-K PDF → segment-profit.json
+
+#### 12. セグメント営業利益率（折れ線グラフ）
+- 各報告セグメントの営業利益率（Operating Income / Revenue）
+
 ## データソース
 
-### 既存データ
-- `companies/<企業名>/ir-data/financials.json` — P/L項目（四半期単位）
-- `companies/<企業名>/ir-data/stock-prices.json` — 四半期末株価・日付
+### 抽出済みデータ
+| ファイル | 内容 | ソース |
+|---------|------|-------|
+| `financials.json` | P/L項目（四半期単位） | press-release.html |
+| `stock-prices.json` | 四半期末株価・日付 | Yahoo Finance API |
+| `segments.json` | 市場向け5セグメント売上 | press-release.html |
+| `balance-sheet.json` | B/S項目 | press-release.html |
+| `cash-flows.json` | CF項目 | press-release.html |
+| `segment-profit.json` | SEC報告2セグメントの売上+営業利益 | 10-Q/10-K PDF |
 
 ### 導出指標（レポート側で計算）
 - 粗利率、営業利益率、純利益率
-- PER（直近4Q EPS合計ベース）
+- PER（直近4Q EPS合計ベース）、PSR、PBR
 - 費用構成比（各費用 / 売上高）
+- YoY成長率
+- セグメント営業利益率
 
 ## 技術スタック
 
@@ -51,17 +102,17 @@
 docs/                              # GitHub Pages公開ディレクトリ
 ├── index.html                     # 企業一覧ページ
 ├── js/
-│   └── chart-builder.js           # 共通チャート生成ロジック
+│   └── chart-builder.js           # 共通チャート生成ロジック（12チャート）
 ├── css/
 │   └── style.css                  # 共通スタイル
 └── <企業名>/
     ├── index.html                 # 企業別レポートページ
-    └── data.json                  # financials + stock-prices 統合JSON
+    └── data.json                  # 統合JSON（全データソースを結合）
 ```
 
 ### data.json の生成
-- financials.json と stock-prices.json を統合して docs/<企業名>/data.json として出力する
-- 生成スクリプトを `companies/<企業名>/ir-data/` に配置する
+- 全JSONデータソースを統合して docs/<企業名>/data.json として出力する
+- 生成スクリプト: `companies/<企業名>/ir-data/generate-data-json.js`
 
 ## レポートページの構成
 
@@ -70,17 +121,26 @@ docs/                              # GitHub Pages公開ディレクトリ
 │ ヘッダー（企業名・ティッカー・    │
 │ 最終更新日・対象期間）            │
 ├──────────────────────────────────┤
-│ セクション1: P/L推移              │
-│ [棒グラフ]                       │
+│ A. 収益全体像                     │
+│  1. P/L推移                      │
+│  2. 利益率推移                    │
+│  3. 成長率推移                    │
+│  4. 費用構造                     │
 ├──────────────────────────────────┤
-│ セクション2: 利益率推移            │
-│ [折れ線グラフ]                    │
+│ B. 財務基盤                      │
+│  5. B/S概要                      │
+│  6. キャッシュフロー               │
 ├──────────────────────────────────┤
-│ セクション3: 株価 & PER           │
-│ [複合チャート]                    │
+│ C. 株式市場評価                   │
+│  7. 株価 & PER                   │
+│  8. バリュエーション指標            │
 ├──────────────────────────────────┤
-│ セクション4: 費用構造              │
-│ [積み上げ棒グラフ]                │
+│ D. セグメント分析                  │
+│  [セグメント区分の説明テキスト]     │
+│  9. セグメント別売上               │
+│  10. セグメント構成比              │
+│  11. セグメント営業利益            │
+│  12. セグメント営業利益率           │
 ├──────────────────────────────────┤
 │ フッター（データソース情報）       │
 └──────────────────────────────────┘
@@ -88,17 +148,23 @@ docs/                              # GitHub Pages公開ディレクトリ
 
 ## 手順
 
-### 1. data.json 生成スクリプトの作成
-financials.json + stock-prices.json → docs/<企業名>/data.json を生成するスクリプトを作る。
+### 1. データ抽出スクリプトの実行
+各抽出スクリプトを実行してJSONデータを生成する。
 
-### 2. 共通チャート生成ロジックの実装
-`docs/js/chart-builder.js` に4種類のグラフ描画関数を実装する。
+| スクリプト | 出力 |
+|-----------|------|
+| `extract-financials.js` | financials.json |
+| `extract-segments.js` | segments.json |
+| `extract-balance-sheet.js` | balance-sheet.json |
+| `extract-cash-flows.js` | cash-flows.json |
+| `extract-segment-profit.js` | segment-profit.json |
+| `fetch-stock-prices.js` | stock-prices.json |
 
-### 3. 企業別レポートページの作成
-`docs/<企業名>/index.html` に data.json を読み込んでグラフを描画するページを作る。
+### 2. data.json の生成
+`generate-data-json.js` を実行して全データを統合する。
 
-### 4. トップページの作成
-`docs/index.html` に企業一覧と各レポートへのリンクを配置する。
+### 3. ダッシュボードの確認
+ブラウザで `docs/<企業名>/index.html` を開き、12チャートが正しく表示されることを確認する。
 
-### 5. GitHub Pages の有効化
+### 4. GitHub Pages の有効化
 リポジトリの Settings → Pages で `docs/` ディレクトリを公開元に設定する。

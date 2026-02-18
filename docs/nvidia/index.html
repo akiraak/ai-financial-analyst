@@ -18,6 +18,8 @@
 
   <div class="container">
 
+    <!-- ========== A. 収益全体像 ========== -->
+
     <!-- 1. P/L推移 -->
     <div class="section">
       <h2>P/L推移</h2>
@@ -28,27 +30,7 @@
       </div>
     </div>
 
-    <!-- 2. セグメント別売上 -->
-    <div class="section">
-      <h2>セグメント別売上</h2>
-      <div class="chart-wrapper"><canvas id="segmentRevenueChart"></canvas></div>
-      <div class="chart-description">
-        <p><span class="label">概要:</span> Data Center・Gaming・Professional Visualization・Automotive・OEM & Otherの5セグメント別売上を積み上げ棒グラフで表示。</p>
-        <p class="insight"><span class="label">分析:</span> Data Centerは直近1年で$35.6B→$51.2Bへ+43.8%成長し、FY2026 Q3の全体成長の大部分を占める。GamingはFY2025 Q4に$2.5Bへ一時減少したが、FY2026 Q2〜Q3は$4.3Bに回復。Professional VisualizationはFY2026 Q3に$760Mと過去最高を更新。Automotiveも$570M→$592Mと着実に拡大しており、自動運転・ロボティクス分野の成長が継続。</p>
-      </div>
-    </div>
-
-    <!-- 3. セグメント構成比 -->
-    <div class="section">
-      <h2>セグメント構成比</h2>
-      <div class="chart-wrapper"><canvas id="segmentCompositionChart"></canvas></div>
-      <div class="chart-description">
-        <p><span class="label">概要:</span> 総売上に占める各セグメントの構成比率を100%積み上げ棒グラフで表示。事業ポートフォリオの変遷が一目で分かる。</p>
-        <p class="insight"><span class="label">分析:</span> 直近1年でData Center構成比は88〜90%で高止まり。FY2022時点の36%から大きく転換し、NVIDIAは事実上の「AIインフラ企業」となった。Gaming比率はFY2025 Q4の6.4%→FY2026 Q2〜Q3の7.5%とやや回復。この集中度の高さは高成長の源泉だが、AI投資サイクルへの依存度が課題となる可能性がある。</p>
-      </div>
-    </div>
-
-    <!-- 4. 利益率推移 -->
+    <!-- 2. 利益率推移 -->
     <div class="section">
       <h2>利益率推移</h2>
       <div class="chart-wrapper"><canvas id="marginChart"></canvas></div>
@@ -58,7 +40,7 @@
       </div>
     </div>
 
-    <!-- 5. 成長率推移 -->
+    <!-- 3. 成長率推移 -->
     <div class="section">
       <h2>成長率推移（前年同期比）</h2>
       <div class="chart-wrapper"><canvas id="growthChart"></canvas></div>
@@ -68,47 +50,7 @@
       </div>
     </div>
 
-    <!-- 6. 株価 & PER -->
-    <div class="section">
-      <h2>株価 & PER</h2>
-      <div class="chart-wrapper"><canvas id="pricePERChart"></canvas></div>
-      <div class="chart-description">
-        <p><span class="label">概要:</span> 四半期末の株価（棒グラフ・左軸）と、直近4四半期EPSベースのPER（折れ線・右軸）を複合表示。株価水準と市場の期待値を同時に把握できる。</p>
-        <p class="insight"><span class="label">分析:</span> 株価はFY2025 Q4の$129→FY2026 Q1に$109へ下落後、Q3に$201へ急回復。直近1年で+56%のリターン。PERはFY2024 Q2のピーク（70倍超）から利益成長が追いつき低下傾向にあり、直近は30〜40倍台で推移。利益成長率（YoY+60%超）に対して妥当なバリュエーション水準に収束しつつある。</p>
-      </div>
-    </div>
-
-    <!-- 7. バリュエーション指標 -->
-    <div class="section">
-      <h2>バリュエーション指標</h2>
-      <div class="chart-wrapper"><canvas id="valuationChart"></canvas></div>
-      <div class="chart-description">
-        <p><span class="label">概要:</span> PER（株価収益率・左軸）、PSR（株価売上高倍率・右軸）、PBR（株価純資産倍率・右軸）の3指標を複合折れ線で表示。多角的なバリュエーション分析が可能。</p>
-        <p class="insight"><span class="label">分析:</span> PSRは直近1年で20倍前後に安定。急成長による売上拡大がバリュエーションの正常化を牽引している。PBRは利益蓄積で純資産が拡大（FY2026 Q3: $118.9B）しているにもかかわらず株価上昇により40倍台を維持。PERの低下トレンドは、市場期待を上回るペースで利益が成長していることの証左であり、グロース株としてのプレミアム評価が実態に裏付けられている。</p>
-      </div>
-    </div>
-
-    <!-- 8. B/S概要 -->
-    <div class="section">
-      <h2>B/S概要</h2>
-      <div class="chart-wrapper"><canvas id="balanceSheetChart"></canvas></div>
-      <div class="chart-description">
-        <p><span class="label">概要:</span> 総資産・総負債・純資産の推移を棒グラフで、現金同等物を折れ線で表示。財務基盤の健全性と成長投資の余力を評価できる。</p>
-        <p class="insight"><span class="label">分析:</span> 直近1年で総資産は$111.6B→$161.1Bへ+44%拡大。純資産はFY2025 Q4 $79.3B→FY2026 Q3 $118.9Bへ+50%増加し、利益蓄積の速度が際立つ。D/E Ratioは0.41→0.36に改善。現金同等物は$60.6Bに達し、有利子負債$8.5Bの7倍超。今後のM&Aや設備投資に対して極めて大きな財務的余力を有する。</p>
-      </div>
-    </div>
-
-    <!-- 9. キャッシュフロー -->
-    <div class="section">
-      <h2>キャッシュフロー</h2>
-      <div class="chart-wrapper"><canvas id="cashFlowChart"></canvas></div>
-      <div class="chart-description">
-        <p><span class="label">概要:</span> 営業CF・投資CF・財務CFを棒グラフで、フリーキャッシュフロー（FCF）を折れ線で表示。キャッシュの創出・投資・株主還元のバランスを把握できる。</p>
-        <p class="insight"><span class="label">分析:</span> 直近1年の営業CFは四半期$15〜27Bのレンジで推移。FY2026 Q1の$27.4Bがピーク（FCFマージン59.3%）。投資CFはQ3に-$9.0Bへ拡大しており、AI需要に対応する設備投資の増加を示す。財務CFは-$10〜15B/Qの大幅マイナスが続いており、積極的な自社株買いを継続。FCFは四半期$13〜26Bと安定的に創出しており、株主還元と成長投資の両立が可能な状態。</p>
-      </div>
-    </div>
-
-    <!-- 10. 費用構造 -->
+    <!-- 4. 費用構造 -->
     <div class="section">
       <h2>費用構造</h2>
       <div class="chart-wrapper"><canvas id="costChart"></canvas></div>
@@ -118,12 +60,88 @@
       </div>
     </div>
 
+    <!-- ========== B. 財務基盤 ========== -->
+
+    <!-- 5. B/S概要 -->
+    <div class="section">
+      <h2>B/S概要</h2>
+      <div class="chart-wrapper"><canvas id="balanceSheetChart"></canvas></div>
+      <div class="chart-description">
+        <p><span class="label">概要:</span> 総資産・総負債・純資産の推移を棒グラフで、現金同等物を折れ線で表示。財務基盤の健全性と成長投資の余力を評価できる。</p>
+        <p class="insight"><span class="label">分析:</span> 直近1年で総資産は$111.6B→$161.1Bへ+44%拡大。純資産はFY2025 Q4 $79.3B→FY2026 Q3 $118.9Bへ+50%増加し、利益蓄積の速度が際立つ。D/E Ratioは0.41→0.36に改善。現金同等物は$60.6Bに達し、有利子負債$8.5Bの7倍超。今後のM&Aや設備投資に対して極めて大きな財務的余力を有する。</p>
+      </div>
+    </div>
+
+    <!-- 6. キャッシュフロー -->
+    <div class="section">
+      <h2>キャッシュフロー</h2>
+      <div class="chart-wrapper"><canvas id="cashFlowChart"></canvas></div>
+      <div class="chart-description">
+        <p><span class="label">概要:</span> 営業CF・投資CF・財務CFを棒グラフで、フリーキャッシュフロー（FCF）を折れ線で表示。キャッシュの創出・投資・株主還元のバランスを把握できる。</p>
+        <p class="insight"><span class="label">分析:</span> 直近1年の営業CFは四半期$15〜27Bのレンジで推移。FY2026 Q1の$27.4Bがピーク（FCFマージン59.3%）。投資CFはQ3に-$9.0Bへ拡大しており、AI需要に対応する設備投資の増加を示す。財務CFは-$10〜15B/Qの大幅マイナスが続いており、積極的な自社株買いを継続。FCFは四半期$13〜26Bと安定的に創出しており、株主還元と成長投資の両立が可能な状態。</p>
+      </div>
+    </div>
+
+    <!-- ========== C. 株式市場評価 ========== -->
+
+    <!-- 7. 株価 & PER -->
+    <div class="section">
+      <h2>株価 & PER</h2>
+      <div class="chart-wrapper"><canvas id="pricePERChart"></canvas></div>
+      <div class="chart-description">
+        <p><span class="label">概要:</span> 四半期末の株価（棒グラフ・左軸）と、直近4四半期EPSベースのPER（折れ線・右軸）を複合表示。株価水準と市場の期待値を同時に把握できる。</p>
+        <p class="insight"><span class="label">分析:</span> 株価はFY2025 Q4の$129→FY2026 Q1に$109へ下落後、Q3に$201へ急回復。直近1年で+56%のリターン。PERはFY2024 Q2のピーク（70倍超）から利益成長が追いつき低下傾向にあり、直近は30〜40倍台で推移。利益成長率（YoY+60%超）に対して妥当なバリュエーション水準に収束しつつある。</p>
+      </div>
+    </div>
+
+    <!-- 8. バリュエーション指標 -->
+    <div class="section">
+      <h2>バリュエーション指標</h2>
+      <div class="chart-wrapper"><canvas id="valuationChart"></canvas></div>
+      <div class="chart-description">
+        <p><span class="label">概要:</span> PER（株価収益率・左軸）、PSR（株価売上高倍率・右軸）、PBR（株価純資産倍率・右軸）の3指標を複合折れ線で表示。多角的なバリュエーション分析が可能。</p>
+        <p class="insight"><span class="label">分析:</span> PSRは直近1年で20倍前後に安定。急成長による売上拡大がバリュエーションの正常化を牽引している。PBRは利益蓄積で純資産が拡大（FY2026 Q3: $118.9B）しているにもかかわらず株価上昇により40倍台を維持。PERの低下トレンドは、市場期待を上回るペースで利益が成長していることの証左であり、グロース株としてのプレミアム評価が実態に裏付けられている。</p>
+      </div>
+    </div>
+
+    <!-- ========== D. セグメント分析 ========== -->
+
+    <div class="section">
+      <h2>セグメント分析について</h2>
+      <div class="chart-description">
+        <p><span class="label">セグメント区分の説明:</span> NVIDIAの業績は2種類のセグメント区分で開示されている。</p>
+        <p><span class="label">市場向け5セグメント</span>（プレスリリースベース・売上のみ）: Data Center / Gaming / Professional Visualization / Automotive / OEM & Other。製品の最終用途別に分類され、売上の内訳を把握できる。</p>
+        <p><span class="label">SEC報告2セグメント</span>（10-Q/10-Kベース・売上+営業利益）: Compute & Networking / Graphics。SEC開示義務に基づく報告セグメントで、セグメント別の営業利益が開示される。</p>
+        <p><span class="label">両者の対応関係:</span> Compute & Networking は主に Data Center・Networking・Automotive（自動運転AI）・Jetson・DGX Cloud を含む。Graphics は主に Gaming（GeForce）・Professional Visualization（Quadro/RTX）・インフォテインメント・vGPU を含む。</p>
+      </div>
+    </div>
+
+    <!-- 9. セグメント別売上 -->
+    <div class="section">
+      <h2>セグメント別売上</h2>
+      <div class="chart-wrapper"><canvas id="segmentRevenueChart"></canvas></div>
+      <div class="chart-description">
+        <p><span class="label">概要:</span> Data Center・Gaming・Professional Visualization・Automotive・OEM & Otherの5セグメント別売上を積み上げ棒グラフで表示。</p>
+        <p class="insight"><span class="label">分析:</span> Data Centerは直近1年で$35.6B→$51.2Bへ+43.8%成長し、FY2026 Q3の全体成長の大部分を占める。GamingはFY2025 Q4に$2.5Bへ一時減少したが、FY2026 Q2〜Q3は$4.3Bに回復。Professional VisualizationはFY2026 Q3に$760Mと過去最高を更新。Automotiveも$570M→$592Mと着実に拡大しており、自動運転・ロボティクス分野の成長が継続。</p>
+      </div>
+    </div>
+
+    <!-- 10. セグメント構成比 -->
+    <div class="section">
+      <h2>セグメント構成比</h2>
+      <div class="chart-wrapper"><canvas id="segmentCompositionChart"></canvas></div>
+      <div class="chart-description">
+        <p><span class="label">概要:</span> 総売上に占める各セグメントの構成比率を100%積み上げ棒グラフで表示。事業ポートフォリオの変遷が一目で分かる。</p>
+        <p class="insight"><span class="label">分析:</span> 直近1年でData Center構成比は88〜90%で高止まり。FY2022時点の36%から大きく転換し、NVIDIAは事実上の「AIインフラ企業」となった。Gaming比率はFY2025 Q4の6.4%→FY2026 Q2〜Q3の7.5%とやや回復。この集中度の高さは高成長の源泉だが、AI投資サイクルへの依存度が課題となる可能性がある。</p>
+      </div>
+    </div>
+
     <!-- 11. セグメント営業利益 -->
     <div class="section">
       <h2>セグメント営業利益</h2>
       <div class="chart-wrapper"><canvas id="segmentProfitChart"></canvas></div>
       <div class="chart-description">
-        <p><span class="label">概要:</span> NVIDIAの2つの報告セグメント（Compute & Networking / Graphics）の営業利益を棒グラフで表示。10-Q/10-Kのセグメント情報（SEC開示）に基づく区分で、市場向け5セグメント（Data Center等）とは異なる。</p>
+        <p><span class="label">概要:</span> SEC報告2セグメント（Compute & Networking / Graphics）の営業利益を棒グラフで表示。10-Q/10-Kのセグメント情報に基づく。</p>
         <p class="insight"><span class="label">分析:</span> C&NセグメントはFY2024 Q2以降に急拡大し、FY2026 Q3には営業利益$35.7Bに到達（前年同期$22.1Bから+62%）。一方GraphicsはFY2023 Q2に$657Mまで落ち込んだ後、FY2026 Q3に$2.5Bまで回復。C&Nの営業利益はGraphicsの14倍に達し、AI/データセンターへの収益集中が顕著。</p>
       </div>
     </div>
@@ -157,17 +175,21 @@
         document.getElementById('meta').textContent =
           `${first} ~ ${last} | 実績 ${data.quarters.length - outlookCount}Q + 予想 ${outlookCount}Q | 更新: ${data.generatedAt}`;
 
-        // グラフ描画（10チャート）
+        // グラフ描画（12チャート）
+        // A. 収益全体像
         ChartBuilder.createPLChart(document.getElementById('plChart'), data);
-        ChartBuilder.createSegmentRevenueChart(document.getElementById('segmentRevenueChart'), data);
-        ChartBuilder.createSegmentCompositionChart(document.getElementById('segmentCompositionChart'), data);
         ChartBuilder.createMarginChart(document.getElementById('marginChart'), data);
         ChartBuilder.createGrowthChart(document.getElementById('growthChart'), data);
-        ChartBuilder.createPricePERChart(document.getElementById('pricePERChart'), data);
-        ChartBuilder.createValuationChart(document.getElementById('valuationChart'), data);
+        ChartBuilder.createCostChart(document.getElementById('costChart'), data);
+        // B. 財務基盤
         ChartBuilder.createBalanceSheetChart(document.getElementById('balanceSheetChart'), data);
         ChartBuilder.createCashFlowChart(document.getElementById('cashFlowChart'), data);
-        ChartBuilder.createCostChart(document.getElementById('costChart'), data);
+        // C. 株式市場評価
+        ChartBuilder.createPricePERChart(document.getElementById('pricePERChart'), data);
+        ChartBuilder.createValuationChart(document.getElementById('valuationChart'), data);
+        // D. セグメント分析
+        ChartBuilder.createSegmentRevenueChart(document.getElementById('segmentRevenueChart'), data);
+        ChartBuilder.createSegmentCompositionChart(document.getElementById('segmentCompositionChart'), data);
         ChartBuilder.createSegmentProfitChart(document.getElementById('segmentProfitChart'), data);
         ChartBuilder.createSegmentMarginChart(document.getElementById('segmentMarginChart'), data);
       })

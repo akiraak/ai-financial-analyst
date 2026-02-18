@@ -100,6 +100,39 @@ body {
   color: #555;
 }
 
+/* KPIグリッド（最新決算サマリー用） */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.kpi-item {
+  background: #f0f4fa;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+}
+
+.kpi-item .kpi-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f3864;
+}
+
+.kpi-item .kpi-label {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.kpi-item .kpi-sub {
+  font-size: 0.72rem;
+  color: #2e75b6;
+  margin-top: 2px;
+}
+
 /* フッター */
 .footer {
   text-align: center;

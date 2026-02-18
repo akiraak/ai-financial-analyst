@@ -25,7 +25,8 @@ ai-financial-analyst/
 │   ├── help.md              # ヘルプ・初回案内フロー
 │   ├── download-filings.md  # 決算資料ダウンロードフロー
 │   ├── generate-financials.md # 業績データxlsx生成フロー
-│   └── validate-xlsx.md      # xlsx数値検証フロー
+│   ├── validate-xlsx.md      # xlsx数値検証フロー
+│   └── analyze-and-visualize.md # データ分析・可視化フロー
 ├── companies/       # 企業別の分析データ・スクリプト
 │   └── <企業名>/
 │       ├── filings/           # 決算資料の原本
@@ -39,6 +40,7 @@ ai-financial-analyst/
 │           ├── extract-financials.js  # P/Lデータ抽出
 │           ├── fetch-stock-prices.js  # 四半期末株価取得
 │           ├── generate-xlsx.js       # xlsx生成
+│           ├── template.xlsx          # xlsx生成用テンプレート
 │           ├── financials.json        # 抽出済みP/Lデータ
 │           ├── stock-prices.json      # 取得済み株価データ
 │           └── NVDA業績.xlsx          # 生成されたxlsx
@@ -58,6 +60,11 @@ ai-financial-analyst/
 
 - [workflows/validate-xlsx.md](workflows/validate-xlsx.md) を読み、その指示に従うこと
 - 生成済みxlsxの数値をソースデータ・原本と突合する
+
+## 作業フロー: データ分析・可視化
+
+- [workflows/analyze-and-visualize.md](workflows/analyze-and-visualize.md) を読み、その指示に従うこと
+- GitHub Pagesで業績レポートダッシュボードを公開する
 
 ## 開発ルール
 

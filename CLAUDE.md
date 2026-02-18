@@ -24,7 +24,8 @@ ai-financial-analyst/
 ├── workflows/       # 対話フロー定義
 │   ├── help.md              # ヘルプ・初回案内フロー
 │   ├── download-filings.md  # 決算資料ダウンロードフロー
-│   └── generate-financials.md # 業績データxlsx生成フロー
+│   ├── generate-financials.md # 業績データxlsx生成フロー
+│   └── validate-xlsx.md      # xlsx数値検証フロー
 ├── companies/       # 企業別の分析データ・スクリプト
 │   └── <企業名>/
 │       ├── filings/           # 決算資料の原本
@@ -52,6 +53,11 @@ ai-financial-analyst/
 
 - [workflows/generate-financials.md](workflows/generate-financials.md) を読み、その指示に従うこと
 - press-release.html → financials.json → stock-prices.json → NVDA業績.xlsx
+
+## 作業フロー: xlsx数値検証
+
+- [workflows/validate-xlsx.md](workflows/validate-xlsx.md) を読み、その指示に従うこと
+- 生成済みxlsxの数値をソースデータ・原本と突合する
 
 ## 開発ルール
 

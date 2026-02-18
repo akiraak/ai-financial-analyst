@@ -699,4 +699,105 @@ const ChartBuilder = {
       },
     });
   },
+
+  // === 11. セグメント営業利益（棒グラフ）===
+  createSegmentProfitChart(ctx, data) {
+    const labels = this.getLabels(data.quarters);
+    const q = data.quarters;
+    return new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: 'Compute & Networking',
+            data: q.map(d => d.segmentProfit?.computeAndNetworking?.operatingIncome ?? null),
+            backgroundColor: this.makeColors('rgba(30, 136, 229, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(30, 136, 229, 1)', q),
+            borderWidth: 1,
+          },
+          {
+            label: 'Graphics',
+            data: q.map(d => d.segmentProfit?.graphics?.operatingIncome ?? null),
+            backgroundColor: this.makeColors('rgba(76, 175, 80, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(76, 175, 80, 1)', q),
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: 'セグメント営業利益（百万ドル）', font: { size: 16 } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y?.toLocaleString()}M`,
+            },
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: { callback: v => '$' + (v / 1000).toFixed(0) + 'B' },
+          },
+        },
+      },
+    });
+  },
+
+  // === 12. セグメント営業利益率（折れ線グラフ）===
+  createSegmentMarginChart(ctx, data) {
+    const labels = this.getLabels(data.quarters);
+    const q = data.quarters;
+    const cnMargin = q.map(d => {
+      const s = d.segmentProfit?.computeAndNetworking;
+      if (!s || !s.revenue || s.operatingIncome == null) return null;
+      return s.operatingIncome / s.revenue * 100;
+    });
+    const gfxMargin = q.map(d => {
+      const s = d.segmentProfit?.graphics;
+      if (!s || !s.revenue || s.operatingIncome == null) return null;
+      return s.operatingIncome / s.revenue * 100;
+    });
+    return new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: 'Compute & Networking',
+            data: cnMargin,
+            borderColor: 'rgba(30, 136, 229, 1)',
+            backgroundColor: 'rgba(30, 136, 229, 0.1)',
+            fill: true, tension: 0.3,
+            borderWidth: 2, pointRadius: 3,
+          },
+          {
+            label: 'Graphics',
+            data: gfxMargin,
+            borderColor: 'rgba(76, 175, 80, 1)',
+            backgroundColor: 'rgba(76, 175, 80, 0.1)',
+            fill: true, tension: 0.3,
+            borderWidth: 2, pointRadius: 3,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: 'セグメント営業利益率', font: { size: 16 } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1)}%`,
+            },
+          },
+        },
+        scales: {
+          y: {
+            ticks: { callback: v => v + '%' },
+          },
+        },
+      },
+    });
+  },
 };

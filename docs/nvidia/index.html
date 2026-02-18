@@ -118,6 +118,26 @@
       </div>
     </div>
 
+    <!-- 11. セグメント営業利益 -->
+    <div class="section">
+      <h2>セグメント営業利益</h2>
+      <div class="chart-wrapper"><canvas id="segmentProfitChart"></canvas></div>
+      <div class="chart-description">
+        <p><span class="label">概要:</span> NVIDIAの2つの報告セグメント（Compute & Networking / Graphics）の営業利益を棒グラフで表示。10-Q/10-Kのセグメント情報（SEC開示）に基づく区分で、市場向け5セグメント（Data Center等）とは異なる。</p>
+        <p class="insight"><span class="label">分析:</span> C&NセグメントはFY2024 Q2以降に急拡大し、FY2026 Q3には営業利益$35.7Bに到達（前年同期$22.1Bから+62%）。一方GraphicsはFY2023 Q2に$657Mまで落ち込んだ後、FY2026 Q3に$2.5Bまで回復。C&Nの営業利益はGraphicsの14倍に達し、AI/データセンターへの収益集中が顕著。</p>
+      </div>
+    </div>
+
+    <!-- 12. セグメント営業利益率 -->
+    <div class="section">
+      <h2>セグメント営業利益率</h2>
+      <div class="chart-wrapper"><canvas id="segmentMarginChart"></canvas></div>
+      <div class="chart-description">
+        <p><span class="label">概要:</span> 各報告セグメントの営業利益率（Operating Income / Revenue）を折れ線グラフで表示。セグメント間の収益性の差異と推移を把握できる。</p>
+        <p class="insight"><span class="label">分析:</span> C&Nの営業利益率はFY2023 Q2の21%を底にFY2025 Q1で75%のピークに到達後、FY2026 Q1に56%へ一時低下（Blackwell初期コスト）、Q3で70%に回復。GraphicsはFY2023 Q2の23%から直近42%に改善。C&Nの利益率がGraphicsを大幅に上回る構造は、AI向け製品の圧倒的な価格決定力を反映。</p>
+      </div>
+    </div>
+
   </div>
 
   <div class="footer">
@@ -148,6 +168,8 @@
         ChartBuilder.createBalanceSheetChart(document.getElementById('balanceSheetChart'), data);
         ChartBuilder.createCashFlowChart(document.getElementById('cashFlowChart'), data);
         ChartBuilder.createCostChart(document.getElementById('costChart'), data);
+        ChartBuilder.createSegmentProfitChart(document.getElementById('segmentProfitChart'), data);
+        ChartBuilder.createSegmentMarginChart(document.getElementById('segmentMarginChart'), data);
       })
       .catch(err => console.error('データ読み込みエラー:', err));
   </script>

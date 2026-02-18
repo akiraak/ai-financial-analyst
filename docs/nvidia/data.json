@@ -39,6 +39,16 @@
         "investingCF": -1272,
         "financingCF": -471,
         "freeCashFlow": 1557
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 2210,
+          "operatingIncome": 861
+        },
+        "graphics": {
+          "revenue": 3451,
+          "operatingIncome": 1786
+        }
       }
     },
     {
@@ -77,6 +87,16 @@
         "investingCF": -2533,
         "financingCF": 4501,
         "freeCashFlow": 2478
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 2600,
+          "operatingIncome": 1034
+        },
+        "graphics": {
+          "revenue": 3907,
+          "operatingIncome": 2127
+        }
       }
     },
     {
@@ -115,6 +135,16 @@
         "investingCF": -4438,
         "financingCF": -1421,
         "freeCashFlow": 1276
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 3011,
+          "operatingIncome": 1332
+        },
+        "graphics": {
+          "revenue": 4092,
+          "operatingIncome": 2160
+        }
       }
     },
     {
@@ -153,6 +183,16 @@
         "investingCF": -1587,
         "financingCF": -744,
         "freeCashFlow": 2739
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 3225,
+          "operatingIncome": 1371
+        },
+        "graphics": {
+          "revenue": 4418,
+          "operatingIncome": 2419
+        }
       }
     },
     {
@@ -191,6 +231,16 @@
         "investingCF": 2612,
         "financingCF": -2446,
         "freeCashFlow": 1348
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 3672,
+          "operatingIncome": 1606
+        },
+        "graphics": {
+          "revenue": 4616,
+          "operatingIncome": 2476
+        }
       }
     },
     {
@@ -229,6 +279,16 @@
         "investingCF": 1618,
         "financingCF": -3762,
         "freeCashFlow": 824
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 3907,
+          "operatingIncome": 816
+        },
+        "graphics": {
+          "revenue": 2797,
+          "operatingIncome": 657
+        }
       }
     },
     {
@@ -267,6 +327,16 @@
         "investingCF": 3148,
         "financingCF": -3753,
         "freeCashFlow": -156
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 3816,
+          "operatingIncome": 1086
+        },
+        "graphics": {
+          "revenue": 2115,
+          "operatingIncome": 606
+        }
       }
     },
     {
@@ -305,6 +375,16 @@
         "investingCF": -4,
         "financingCF": -1656,
         "freeCashFlow": 1736
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 3673,
+          "operatingIncome": 1575
+        },
+        "graphics": {
+          "revenue": 2378,
+          "operatingIncome": 813
+        }
       }
     },
     {
@@ -343,6 +423,16 @@
         "investingCF": -841,
         "financingCF": -380,
         "freeCashFlow": 2643
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 4460,
+          "operatingIncome": 2160
+        },
+        "graphics": {
+          "revenue": 2732,
+          "operatingIncome": 1046
+        }
       }
     },
     {
@@ -381,6 +471,16 @@
         "investingCF": -447,
         "financingCF": -5098,
         "freeCashFlow": 6048
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 10402,
+          "operatingIncome": 6728
+        },
+        "graphics": {
+          "revenue": 3105,
+          "operatingIncome": 1211
+        }
       }
     },
     {
@@ -419,6 +519,16 @@
         "investingCF": -3169,
         "financingCF": -4527,
         "freeCashFlow": 7042
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 14645,
+          "operatingIncome": 10262
+        },
+        "graphics": {
+          "revenue": 3475,
+          "operatingIncome": 1493
+        }
       }
     },
     {
@@ -457,6 +567,16 @@
         "investingCF": -6109,
         "financingCF": -3629,
         "freeCashFlow": 11217
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 17898,
+          "operatingIncome": 12866
+        },
+        "graphics": {
+          "revenue": 4205,
+          "operatingIncome": 2096
+        }
       }
     },
     {
@@ -495,6 +615,16 @@
         "investingCF": -5693,
         "financingCF": -9345,
         "freeCashFlow": 14936
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 22675,
+          "operatingIncome": 17047
+        },
+        "graphics": {
+          "revenue": 3369,
+          "operatingIncome": 1241
+        }
       }
     },
     {
@@ -533,6 +663,16 @@
         "investingCF": -3185,
         "financingCF": -10320,
         "freeCashFlow": 13483
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 26446,
+          "operatingIncome": 18848
+        },
+        "graphics": {
+          "revenue": 3594,
+          "operatingIncome": 1369
+        }
       }
     },
     {
@@ -571,6 +711,16 @@
         "investingCF": -4345,
         "financingCF": -12748,
         "freeCashFlow": 16787
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 31036,
+          "operatingIncome": 22081
+        },
+        "graphics": {
+          "revenue": 4046,
+          "operatingIncome": 1502
+        }
       }
     },
     {
@@ -609,6 +759,16 @@
         "investingCF": -7198,
         "financingCF": -9948,
         "freeCashFlow": 15519
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 36036,
+          "operatingIncome": 24899
+        },
+        "graphics": {
+          "revenue": 3295,
+          "operatingIncome": 973
+        }
       }
     },
     {
@@ -647,6 +807,16 @@
         "investingCF": -5216,
         "financingCF": -15553,
         "freeCashFlow": 26135
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 39589,
+          "operatingIncome": 22054
+        },
+        "graphics": {
+          "revenue": 4473,
+          "operatingIncome": 1640
+        }
       }
     },
     {
@@ -685,6 +855,16 @@
         "investingCF": -7126,
         "financingCF": -11834,
         "freeCashFlow": 13450
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 41331,
+          "operatingIncome": 28363
+        },
+        "graphics": {
+          "revenue": 5412,
+          "operatingIncome": 2242
+        }
       }
     },
     {
@@ -723,6 +903,16 @@
         "investingCF": -9025,
         "financingCF": -14878,
         "freeCashFlow": 22089
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 50908,
+          "operatingIncome": 35721
+        },
+        "graphics": {
+          "revenue": 6098,
+          "operatingIncome": 2546
+        }
       }
     },
     {
@@ -744,7 +934,8 @@
       "sharesDiluted": null,
       "segments": null,
       "balanceSheet": null,
-      "cashFlow": null
+      "cashFlow": null,
+      "segmentProfit": null
     }
   ]
 }

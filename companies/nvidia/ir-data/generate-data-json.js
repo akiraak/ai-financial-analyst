@@ -11,6 +11,7 @@ const stockPrices = JSON.parse(fs.readFileSync(path.join(DIR, 'stock-prices.json
 const segmentsData = JSON.parse(fs.readFileSync(path.join(DIR, 'segments.json'), 'utf-8'));
 const bsData = JSON.parse(fs.readFileSync(path.join(DIR, 'balance-sheet.json'), 'utf-8'));
 const cfData = JSON.parse(fs.readFileSync(path.join(DIR, 'cash-flows.json'), 'utf-8'));
+const segProfitData = JSON.parse(fs.readFileSync(path.join(DIR, 'segment-profit.json'), 'utf-8'));
 
 // 株式数スプリット調整（EPSの逆: 乗算で正規化）
 function adjustShares(shares, fy, qn) {
@@ -42,6 +43,7 @@ for (const fyStr of fys) {
     const seg = segmentsData[fyStr]?.[q];
     const bs = bsData[fyStr]?.[q];
     const cf = cfData[fyStr]?.[q];
+    const segProfit = segProfitData[fyStr]?.[q];
     const qn = parseInt(q.replace('Q', ''));
 
     // OEM & Other = 総売上 - 各セグメント合計（bullet pointに記載がないため差分で算出）
@@ -95,6 +97,17 @@ for (const fyStr of fys) {
         investingCF: cf.investingCF ?? null,
         financingCF: cf.financingCF ?? null,
         freeCashFlow: cf.freeCashFlow ?? null,
+      } : null,
+      // セグメント営業利益（報告セグメント: Compute & Networking / Graphics）
+      segmentProfit: segProfit ? {
+        computeAndNetworking: {
+          revenue: segProfit.computeAndNetworking?.revenue ?? null,
+          operatingIncome: segProfit.computeAndNetworking?.operatingIncome ?? null,
+        },
+        graphics: {
+          revenue: segProfit.graphics?.revenue ?? null,
+          operatingIncome: segProfit.graphics?.operatingIncome ?? null,
+        },
       } : null,
     });
   }

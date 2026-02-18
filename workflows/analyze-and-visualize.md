@@ -6,7 +6,7 @@
 - 複数のデータソース（financials.json, stock-prices.json, segments.json, balance-sheet.json, cash-flows.json, segment-profit.json）を統合する
 - 複数企業に対応可能な構造にする
 
-## 可視化するグラフ（12チャート）
+## 可視化するグラフ（13チャート）
 
 ### A. 収益全体像
 
@@ -71,6 +71,14 @@
 #### 12. セグメント営業利益率（折れ線グラフ）
 - 各報告セグメントの営業利益率（Operating Income / Revenue）
 
+### E. 投資ポートフォリオ
+
+#### 13. 投資残高推移（棒グラフ + 折れ線）
+- 非上場株式（Non-marketable Equity Securities）: 棒グラフ
+- 上場株式（Publicly-held Equity Securities）: 折れ線
+- 投資コミットメント情報は静的テキストで記載（Intel, OpenAI, Anthropic等）
+- データソース: 10-Q/10-K PDF → investments.json
+
 ## データソース
 
 ### 抽出済みデータ
@@ -82,6 +90,7 @@
 | `balance-sheet.json` | B/S項目 | press-release.html |
 | `cash-flows.json` | CF項目 | press-release.html |
 | `segment-profit.json` | SEC報告2セグメントの売上+営業利益 | 10-Q/10-K PDF |
+| `investments.json` | 非上場・上場株式残高・投資活動 | 10-Q/10-K PDF |
 
 ### 導出指標（レポート側で計算）
 - 粗利率、営業利益率、純利益率
@@ -102,7 +111,7 @@
 docs/                              # GitHub Pages公開ディレクトリ
 ├── index.html                     # 企業一覧ページ
 ├── js/
-│   └── chart-builder.js           # 共通チャート生成ロジック（12チャート）
+│   └── chart-builder.js           # 共通チャート生成ロジック（13チャート）
 ├── css/
 │   └── style.css                  # 共通スタイル
 └── <企業名>/
@@ -146,6 +155,10 @@ docs/                              # GitHub Pages公開ディレクトリ
 │  11. セグメント営業利益            │
 │  12. セグメント営業利益率           │
 ├──────────────────────────────────┤
+│ E. 投資ポートフォリオ              │
+│  13. 投資残高推移                 │
+│  [投資コミットメント情報]          │
+├──────────────────────────────────┤
 │ フッター（データソース情報）       │
 └──────────────────────────────────┘
 ```
@@ -178,13 +191,14 @@ docs/                              # GitHub Pages公開ディレクトリ
 | `extract-balance-sheet.js` | balance-sheet.json |
 | `extract-cash-flows.js` | cash-flows.json |
 | `extract-segment-profit.js` | segment-profit.json |
+| `extract-investments.js` | investments.json |
 | `fetch-stock-prices.js` | stock-prices.json |
 
 ### 2. data.json の生成
 `generate-data-json.js` を実行して全データを統合する。
 
 ### 3. ダッシュボードの確認
-ブラウザで `docs/<企業名>/index.html` を開き、12チャートが正しく表示されることを確認する。
+ブラウザで `docs/<企業名>/index.html` を開き、13チャートが正しく表示されることを確認する。
 
 ### 4. GitHub Pages の有効化
 リポジトリの Settings → Pages で `docs/` ディレクトリを公開元に設定する。

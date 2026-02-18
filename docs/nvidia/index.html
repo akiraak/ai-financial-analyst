@@ -200,6 +200,47 @@
       </div>
     </div>
 
+    <!-- ==================== E. 投資ポートフォリオ ==================== -->
+
+    <!-- 13. 投資残高推移 -->
+    <div class="section">
+      <h2>投資ポートフォリオ</h2>
+      <div class="chart-wrapper"><canvas id="investmentChart"></canvas></div>
+      <div class="chart-description">
+        <p><span class="label">概要:</span> 非上場株式（Non-marketable Equity Securities）と上場株式（Publicly-held Equity Securities）の期末残高推移。非上場株式は棒グラフ、上場株式は折れ線で表示。いずれも測定代替法（measurement alternative）で評価。</p>
+        <p class="insight"><span class="label">分析:</span> 非上場株式はFY2022 Q4の$208MからFY2026 Q3の$8,187Mへ約40倍に急拡大。特にFY2026 Q3は$3,704Mの大規模な新規投資を実施。上場株式はFY2026 Q1にCoreWeaveのIPOに伴い非上場から再分類され$1,251Mが出現、Q3に$3,869Mまで拡大。AI関連企業への積極的な戦略投資が加速している。</p>
+      </div>
+    </div>
+
+    <!-- 投資コミットメント -->
+    <div class="section">
+      <h2>投資コミットメント（FY2026 Q3時点）</h2>
+      <div class="kpi-grid">
+        <div class="kpi-item">
+          <div class="kpi-value">$8.2B</div>
+          <div class="kpi-label">非上場株式残高</div>
+          <div class="kpi-sub">FY2026 Q3</div>
+        </div>
+        <div class="kpi-item">
+          <div class="kpi-value">$3.9B</div>
+          <div class="kpi-label">上場株式残高</div>
+          <div class="kpi-sub">CoreWeave等</div>
+        </div>
+        <div class="kpi-item">
+          <div class="kpi-value">$6.5B</div>
+          <div class="kpi-label">投資コミットメント</div>
+          <div class="kpi-sub">総額</div>
+        </div>
+      </div>
+      <div class="chart-description">
+        <p><span class="label">主要コミットメント:</span></p>
+        <p><strong>Intel Corporation</strong> — $5B（規制当局の承認待ち）</p>
+        <p><strong>OpenAI</strong> — 投資意向書（Letter of Intent）を締結（FY2026 Q3）</p>
+        <p><strong>Anthropic</strong> — 最大$10Bの投資契約（2025年11月、クロージング条件あり）</p>
+        <p class="insight"><span class="label">補足:</span> 非上場株式ポートフォリオの個別銘柄は10-Q/10-Kで開示されていない。上記コミットメントは開示済みの大型案件のみ。累計未実現利益$1.4B、累計減損$167M（FY2026 Q3時点）。</p>
+      </div>
+    </div>
+
   </div>
 
   <div class="footer">
@@ -236,6 +277,8 @@
         ChartBuilder.createSegmentCompositionChart(document.getElementById('segmentCompositionChart'), data);
         ChartBuilder.createSegmentProfitChart(document.getElementById('segmentProfitChart'), data);
         ChartBuilder.createSegmentMarginChart(document.getElementById('segmentMarginChart'), data);
+        // E. 投資ポートフォリオ
+        ChartBuilder.createInvestmentChart(document.getElementById('investmentChart'), data);
       })
       .catch(err => console.error('データ読み込みエラー:', err));
   </script>

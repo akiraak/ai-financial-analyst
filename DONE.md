@@ -29,6 +29,7 @@
   - docs/nvidia/data.json: 20四半期分の統合データ生成
   - docs/js/chart-builder.js: 4種類のグラフ描画ロジック
   - docs/css/style.css, docs/index.html, docs/nvidia/index.html
+- [x] 最新決算サマリーをダッシュボード先頭に追加（KPIグリッド + 分析テキスト）
 - [x] NVIDIA業績分析の充実化（4→10チャート、→ companies/nvidia/PLAN.md）
   - Phase 1: セグメント別売上（extract-segments.js → segments.json、チャート×2）
     - Data Center / Gaming / Professional Visualization / Automotive / OEM & Other

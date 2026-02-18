@@ -800,4 +800,55 @@ const ChartBuilder = {
       },
     });
   },
+
+  // === 13. 投資ポートフォリオ残高推移（棒+折れ線複合）===
+  createInvestmentChart(ctx, data) {
+    const labels = this.getLabels(data.quarters);
+    const q = data.quarters;
+
+    return new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: '非上場株式',
+            data: q.map(d => d.investments?.nonMarketableBalance ?? null),
+            backgroundColor: this.makeColors('rgba(156, 39, 176, 0.7)', q),
+            borderColor: this.makeBorderColors('rgba(156, 39, 176, 1)', q),
+            borderWidth: 1,
+            order: 2,
+          },
+          {
+            label: '上場株式',
+            data: q.map(d => d.investments?.publiclyHeldBalance ?? null),
+            type: 'line',
+            borderColor: 'rgba(255, 152, 0, 1)',
+            backgroundColor: 'rgba(255, 152, 0, 0.1)',
+            borderWidth: 2,
+            pointRadius: 3,
+            tension: 0.3,
+            order: 1,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: '投資ポートフォリオ残高（百万ドル）', font: { size: 16 } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y?.toLocaleString()}M`,
+            },
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: { callback: v => '$' + (v / 1000).toFixed(1) + 'B' },
+          },
+        },
+      },
+    });
+  },
 };

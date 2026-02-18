@@ -12,6 +12,7 @@ const segmentsData = JSON.parse(fs.readFileSync(path.join(DIR, 'segments.json'),
 const bsData = JSON.parse(fs.readFileSync(path.join(DIR, 'balance-sheet.json'), 'utf-8'));
 const cfData = JSON.parse(fs.readFileSync(path.join(DIR, 'cash-flows.json'), 'utf-8'));
 const segProfitData = JSON.parse(fs.readFileSync(path.join(DIR, 'segment-profit.json'), 'utf-8'));
+const investmentsData = JSON.parse(fs.readFileSync(path.join(DIR, 'investments.json'), 'utf-8'));
 
 // 株式数スプリット調整（EPSの逆: 乗算で正規化）
 function adjustShares(shares, fy, qn) {
@@ -44,6 +45,7 @@ for (const fyStr of fys) {
     const bs = bsData[fyStr]?.[q];
     const cf = cfData[fyStr]?.[q];
     const segProfit = segProfitData[fyStr]?.[q];
+    const inv = investmentsData[fyStr]?.[q];
     const qn = parseInt(q.replace('Q', ''));
 
     // OEM & Other = 総売上 - 各セグメント合計（bullet pointに記載がないため差分で算出）
@@ -108,6 +110,14 @@ for (const fyStr of fys) {
           revenue: segProfit.graphics?.revenue ?? null,
           operatingIncome: segProfit.graphics?.operatingIncome ?? null,
         },
+      } : null,
+      // 投資ポートフォリオ
+      investments: inv ? {
+        nonMarketableBalance: inv.nonMarketableBalance ?? null,
+        publiclyHeldBalance: inv.publiclyHeldBalance ?? null,
+        netAdditions: inv.netAdditions ?? null,
+        unrealizedGains: inv.unrealizedGains ?? null,
+        impairments: inv.impairments ?? null,
       } : null,
     });
   }

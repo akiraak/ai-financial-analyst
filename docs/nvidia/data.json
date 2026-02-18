@@ -49,6 +49,13 @@
           "revenue": 3451,
           "operatingIncome": 1786
         }
+      },
+      "investments": {
+        "nonMarketableBalance": null,
+        "publiclyHeldBalance": 133,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
       }
     },
     {
@@ -97,6 +104,13 @@
           "revenue": 3907,
           "operatingIncome": 2127
         }
+      },
+      "investments": {
+        "nonMarketableBalance": null,
+        "publiclyHeldBalance": 128,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
       }
     },
     {
@@ -145,6 +159,13 @@
           "revenue": 4092,
           "operatingIncome": 2160
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 172,
+        "publiclyHeldBalance": 136,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
       }
     },
     {
@@ -193,6 +214,13 @@
           "revenue": 4418,
           "operatingIncome": 2419
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 208,
+        "publiclyHeldBalance": 58,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
       }
     },
     {
@@ -241,6 +269,13 @@
           "revenue": 4616,
           "operatingIncome": 2476
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 238,
+        "publiclyHeldBalance": 48,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
       }
     },
     {
@@ -289,6 +324,13 @@
           "revenue": 2797,
           "operatingIncome": 657
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 266,
+        "publiclyHeldBalance": 41,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
       }
     },
     {
@@ -337,6 +379,13 @@
           "revenue": 2115,
           "operatingIncome": 606
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 287,
+        "publiclyHeldBalance": 27,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
       }
     },
     {
@@ -385,6 +434,13 @@
           "revenue": 2378,
           "operatingIncome": 813
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 288,
+        "publiclyHeldBalance": 11,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
       }
     },
     {
@@ -433,6 +489,13 @@
           "revenue": 2732,
           "operatingIncome": 1046
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 496,
+        "publiclyHeldBalance": 9,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
       }
     },
     {
@@ -481,6 +544,13 @@
           "revenue": 3105,
           "operatingIncome": 1211
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 676,
+        "publiclyHeldBalance": 124,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
       }
     },
     {
@@ -529,6 +599,13 @@
           "revenue": 3475,
           "operatingIncome": 1493
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 1019,
+        "publiclyHeldBalance": 153,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
       }
     },
     {
@@ -577,6 +654,13 @@
           "revenue": 4205,
           "operatingIncome": 2096
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 1321,
+        "publiclyHeldBalance": 225,
+        "netAdditions": 859,
+        "unrealizedGains": 194,
+        "impairments": -20
       }
     },
     {
@@ -625,6 +709,13 @@
           "revenue": 3369,
           "operatingIncome": 1241
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 1463,
+        "publiclyHeldBalance": 287,
+        "netAdditions": 127,
+        "unrealizedGains": 15,
+        "impairments": 0
       }
     },
     {
@@ -673,6 +764,13 @@
           "revenue": 3594,
           "operatingIncome": 1369
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 1819,
+        "publiclyHeldBalance": 419,
+        "netAdditions": 294,
+        "unrealizedGains": 77,
+        "impairments": -15
       }
     },
     {
@@ -721,6 +819,13 @@
           "revenue": 4046,
           "operatingIncome": 1502
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 2237,
+        "publiclyHeldBalance": 472,
+        "netAdditions": 409,
+        "unrealizedGains": 23,
+        "impairments": -14
       }
     },
     {
@@ -769,6 +874,13 @@
           "revenue": 3295,
           "operatingIncome": 973
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 3387,
+        "publiclyHeldBalance": 381,
+        "netAdditions": 479,
+        "unrealizedGains": 701,
+        "impairments": -30
       }
     },
     {
@@ -817,6 +929,13 @@
           "revenue": 4473,
           "operatingIncome": 1640
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 3240,
+        "publiclyHeldBalance": 1251,
+        "netAdditions": 649,
+        "unrealizedGains": 63,
+        "impairments": -16
       }
     },
     {
@@ -865,6 +984,13 @@
           "revenue": 5412,
           "operatingIncome": 2242
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 3799,
+        "publiclyHeldBalance": 3199,
+        "netAdditions": 299,
+        "unrealizedGains": 267,
+        "impairments": -2
       }
     },
     {
@@ -913,6 +1039,13 @@
           "revenue": 6098,
           "operatingIncome": 2546
         }
+      },
+      "investments": {
+        "nonMarketableBalance": 8187,
+        "publiclyHeldBalance": 3869,
+        "netAdditions": 3704,
+        "unrealizedGains": 758,
+        "impairments": -74
       }
     },
     {
@@ -935,7 +1068,8 @@
       "segments": null,
       "balanceSheet": null,
       "cashFlow": null,
-      "segmentProfit": null
+      "segmentProfit": null,
+      "investments": null
     }
   ]
 }

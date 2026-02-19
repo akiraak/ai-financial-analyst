@@ -282,11 +282,25 @@ const QuarterDetail = {
       // D. セグメント分析
       ChartBuilder.createSegmentRevenueChart(document.getElementById('segmentRevenueChart'), data);
       ChartBuilder.createSegmentCompositionChart(document.getElementById('segmentCompositionChart'), data);
-      ChartBuilder.createSegmentProfitChart(document.getElementById('segmentProfitChart'), data);
-      ChartBuilder.createSegmentMarginChart(document.getElementById('segmentMarginChart'), data);
+
+      // データが無いセクションは非表示にする
+      const hasSegmentProfit = quarters.some(d => d.segmentProfit != null);
+      const hasInvestments = quarters.some(d => d.investments != null);
+
+      if (hasSegmentProfit) {
+        ChartBuilder.createSegmentProfitChart(document.getElementById('segmentProfitChart'), data);
+        ChartBuilder.createSegmentMarginChart(document.getElementById('segmentMarginChart'), data);
+      } else {
+        document.getElementById('segmentProfitChart').closest('.section').style.display = 'none';
+        document.getElementById('segmentMarginChart').closest('.section').style.display = 'none';
+      }
 
       // E. 投資ポートフォリオ
-      ChartBuilder.createInvestmentChart(document.getElementById('investmentChart'), data);
+      if (hasInvestments) {
+        ChartBuilder.createInvestmentChart(document.getElementById('investmentChart'), data);
+      } else {
+        document.getElementById('investmentChart').closest('.section').style.display = 'none';
+      }
 
       // 決算資料リンク
       this.renderFilings(irLinks, d.fy, d.q);

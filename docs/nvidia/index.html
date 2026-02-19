@@ -241,6 +241,12 @@
       </div>
     </div>
 
+    <!-- 決算資料リンク -->
+    <div class="section">
+      <h2>決算資料</h2>
+      <div id="filingsContainer"></div>
+    </div>
+
   </div>
 
   <div class="footer">
@@ -281,6 +287,51 @@
         ChartBuilder.createInvestmentChart(document.getElementById('investmentChart'), data);
       })
       .catch(err => console.error('データ読み込みエラー:', err));
+
+    // 決算資料リンクの読み込み
+    fetch('ir-links.json')
+      .then(r => r.json())
+      .then(links => {
+        const container = document.getElementById('filingsContainer');
+        // FYを新しい順にソート
+        const fys = Object.keys(links).sort().reverse();
+        fys.forEach((fy, idx) => {
+          const details = document.createElement('details');
+          details.className = 'filings-fy';
+          if (idx === 0) details.open = true; // 最新FYは展開
+
+          const summary = document.createElement('summary');
+          summary.textContent = fy.replace('FY', 'FY ');
+          details.appendChild(summary);
+
+          links[fy].forEach(q => {
+            const qDiv = document.createElement('div');
+            qDiv.className = 'filings-quarter';
+
+            const label = document.createElement('div');
+            label.className = 'filings-quarter-label';
+            label.textContent = q.quarter;
+            qDiv.appendChild(label);
+
+            const linksDiv = document.createElement('div');
+            linksDiv.className = 'filings-links';
+            q.documents.forEach(doc => {
+              const a = document.createElement('a');
+              a.className = 'filing-link';
+              a.href = doc.url;
+              a.target = '_blank';
+              a.rel = 'noopener noreferrer';
+              a.textContent = doc.name;
+              linksDiv.appendChild(a);
+            });
+            qDiv.appendChild(linksDiv);
+            details.appendChild(qDiv);
+          });
+
+          container.appendChild(details);
+        });
+      })
+      .catch(err => console.error('決算資料データ読み込みエラー:', err));
   </script>
 
 </body>

@@ -133,6 +133,62 @@ body {
   margin-top: 2px;
 }
 
+/* 決算資料セクション */
+.filings-fy {
+  margin-bottom: 8px;
+}
+
+.filings-fy summary {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1f3864;
+  cursor: pointer;
+  padding: 8px 0;
+  border-bottom: 1px solid #e8ecf1;
+}
+
+.filings-fy summary:hover {
+  color: #2e75b6;
+}
+
+.filings-quarter {
+  padding: 10px 0 10px 16px;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.filings-quarter:last-child {
+  border-bottom: none;
+}
+
+.filings-quarter-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.filings-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.filing-link {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  background: #f0f4fa;
+  color: #2e75b6;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.filing-link:hover {
+  background: #2e75b6;
+  color: #fff;
+}
+
 /* フッター */
 .footer {
   text-align: center;

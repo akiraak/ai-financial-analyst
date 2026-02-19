@@ -11,6 +11,19 @@
 
 ## 手順
 
+### 0. 既存データの削除
+
+ビルド前に生成済みデータをクリーンアップする。古いファイルが残るのを防ぐ。
+
+```bash
+rm -rf companies/<企業名>/data/
+rm -rf companies/<企業名>/filings/
+mkdir -p companies/<企業名>/data
+mkdir -p companies/<企業名>/filings
+```
+
+**注意:** `scripts/` 配下の処理コードは削除しない。
+
 ### 1. 決算資料のダウンロード
 
 [download-filings.md](download-filings.md) に従い、IRページから全資料をダウンロードする。

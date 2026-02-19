@@ -206,7 +206,7 @@ docs/                              # GitHub Pages公開ディレクトリ
 ```
 
 **各チャートの「解説」について:**
-- `<details class="chart-details">` でチャートの下に折りたたみ配置する
+- チャートの下に `<div class="chart-description">` で常時表示する（折りたたみにしない）
 - グラフが何を表示しているかの説明テキスト（概要）を記載する
 - template.html に静的HTMLとして定義する（動的生成ではない）
 

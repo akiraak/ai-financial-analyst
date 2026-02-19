@@ -67,45 +67,33 @@
     <div class="section">
       <h2>P/L推移</h2>
       <div class="chart-wrapper"><canvas id="plChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>四半期ごとの売上高・粗利・営業利益・純利益の推移。収益規模と利益創出力の変化を俯瞰できる。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <div class="section">
       <h2>利益率推移</h2>
       <div class="chart-wrapper"><canvas id="marginChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>粗利率・営業利益率・純利益率の推移を折れ線グラフで表示。収益性の構造的変化を追跡できる。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <div class="section">
       <h2>成長率推移（前年同期比）</h2>
       <div class="chart-wrapper"><canvas id="growthChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>売上高・営業利益・純利益の前年同期比（YoY）成長率を折れ線グラフで表示。0%ラインを基準に成長の加速・減速を把握できる。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <div class="section">
       <h2>費用構造</h2>
       <div class="chart-wrapper"><canvas id="costChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>売上原価・研究開発費・販管費の売上高に対する比率を積み上げ棒グラフで表示。オペレーティングレバレッジの効き具合を分析できる。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <!-- ========== B. 財務基盤 ========== -->
@@ -114,23 +102,17 @@
     <div class="section">
       <h2>B/S概要</h2>
       <div class="chart-wrapper"><canvas id="balanceSheetChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>総資産・総負債・純資産の推移を棒グラフで、現金同等物を折れ線で表示。財務基盤の健全性と成長投資の余力を評価できる。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <div class="section">
       <h2>キャッシュフロー</h2>
       <div class="chart-wrapper"><canvas id="cashFlowChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>営業CF・投資CF・財務CFを棒グラフで、フリーキャッシュフロー（FCF）を折れ線で表示。キャッシュの創出・投資・株主還元のバランスを把握できる。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <!-- ========== C. 株式市場評価 ========== -->
@@ -139,23 +121,17 @@
     <div class="section">
       <h2>株価 & PER</h2>
       <div class="chart-wrapper"><canvas id="pricePERChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>四半期末の株価（棒グラフ・左軸）と、直近4四半期EPSベースのPER（折れ線・右軸）を複合表示。株価水準と市場の期待値を同時に把握できる。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <div class="section">
       <h2>バリュエーション指標</h2>
       <div class="chart-wrapper"><canvas id="valuationChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>PER（株価収益率・左軸）、PSR（株価売上高倍率・右軸）、PBR（株価純資産倍率・右軸）の3指標を複合折れ線で表示。多角的なバリュエーション分析が可能。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <!-- ========== D. セグメント分析 ========== -->
@@ -173,45 +149,33 @@
     <div class="section">
       <h2>セグメント別売上</h2>
       <div class="chart-wrapper"><canvas id="segmentRevenueChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>Data Center・Gaming・Professional Visualization・Automotive・OEM & Otherの5セグメント別売上を積み上げ棒グラフで表示。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <div class="section">
       <h2>セグメント構成比</h2>
       <div class="chart-wrapper"><canvas id="segmentCompositionChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>総売上に占める各セグメントの構成比率を100%積み上げ棒グラフで表示。事業ポートフォリオの変遷が一目で分かる。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <div class="section">
       <h2>セグメント営業利益</h2>
       <div class="chart-wrapper"><canvas id="segmentProfitChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>SEC報告2セグメント（Compute & Networking / Graphics）の営業利益を棒グラフで表示。10-Q/10-Kのセグメント情報に基づく。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <div class="section">
       <h2>セグメント営業利益率</h2>
       <div class="chart-wrapper"><canvas id="segmentMarginChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>各報告セグメントの営業利益率（Operating Income / Revenue）を折れ線グラフで表示。セグメント間の収益性の差異と推移を把握できる。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <!-- ========== E. 投資ポートフォリオ ========== -->
@@ -220,12 +184,9 @@
     <div class="section">
       <h2>投資ポートフォリオ</h2>
       <div class="chart-wrapper"><canvas id="investmentChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説</summary>
-        <div class="chart-description">
+      <div class="chart-description">
           <p>非上場株式（Non-marketable Equity Securities）と上場株式（Publicly-held Equity Securities）の期末残高推移。非上場株式は棒グラフ、上場株式は折れ線で表示。いずれも測定代替法（measurement alternative）で評価。</p>
-        </div>
-      </details>
+      </div>
     </div>
 
     <!-- 決算資料リンク -->

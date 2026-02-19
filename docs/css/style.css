@@ -588,6 +588,43 @@ details.chart-details .chart-description {
   font-weight: 600;
 }
 
+/* 四半期リンク一覧 */
+.quarter-fy-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.quarter-fy-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  min-width: 56px;
+}
+
+.quarter-link-item {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 5px 16px;
+  background: var(--primary-bg);
+  color: var(--primary);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.quarter-link-item:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.quarter-link-item.outlook {
+  background: #f5f5f5;
+  color: #aaa;
+}
+
 /* === レスポンシブ === */
 @media (max-width: 768px) {
   .header h1 { font-size: 1.4rem; }

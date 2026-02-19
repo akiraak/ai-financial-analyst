@@ -19,6 +19,7 @@
   <!-- セクションナビゲーション -->
   <nav class="section-nav">
     <div class="container">
+      <a href="#section-quarters">四半期分析</a>
       <a href="#section-a">収益全体像</a>
       <a href="#section-b">財務基盤</a>
       <a href="#section-c">株式市場評価</a>
@@ -76,6 +77,13 @@
           <p><span class="label">財務状況:</span> 現金同等物$60.6Bは有利子負債$8.5Bの7倍超。四半期FCFは$22.1Bで、積極的な自社株買い（財務CF -$14.9B/Q）を実施しながらも潤沢なキャッシュを創出。FY2026 Q4ガイダンスの売上$65.0B（YoY +65%見通し）は、AI需要の継続的な拡大を示唆。</p>
         </div>
       </details>
+    </div>
+
+    <!-- 四半期分析リンク -->
+    <div class="section" id="section-quarters">
+      <h2>四半期分析</h2>
+      <p style="font-size:0.85rem;color:#666;margin-bottom:12px;">各四半期をクリックすると、P/L・セグメント・B/S・CF等の詳細分析ページを表示します。</p>
+      <div id="quarterLinksContainer"></div>
     </div>
 
     <!-- ========== A. 収益全体像 ========== -->
@@ -334,6 +342,33 @@
         const outlookCount = data.quarters.filter(q => q.isOutlook).length;
         document.getElementById('meta').textContent =
           `${first} ~ ${last} | 実績 ${data.quarters.length - outlookCount}Q + 予想 ${outlookCount}Q | 更新: ${data.generatedAt}`;
+
+        // 四半期分析リンク生成
+        (() => {
+          const container = document.getElementById('quarterLinksContainer');
+          // FY単位でグループ化（新しい順）
+          const fyGroups = {};
+          data.quarters.forEach(q => {
+            if (!fyGroups[q.fy]) fyGroups[q.fy] = [];
+            fyGroups[q.fy].push(q);
+          });
+          const sortedFYs = Object.keys(fyGroups).sort((a, b) => b - a);
+          let html = '';
+          for (const fy of sortedFYs) {
+            html += `<div class="quarter-fy-row"><span class="quarter-fy-label">FY${fy}</span>`;
+            // Q1→Q4の順で表示
+            const sorted = fyGroups[fy].sort((a, b) => a.q - b.q);
+            for (const q of sorted) {
+              if (q.isOutlook) {
+                html += `<span class="quarter-link-item outlook">Q${q.q}予想</span>`;
+              } else {
+                html += `<a href="quarter.html?fy=${q.fy}&q=${q.q}" class="quarter-link-item">Q${q.q}</a>`;
+              }
+            }
+            html += '</div>';
+          }
+          container.innerHTML = html;
+        })();
 
         // グラフ描画（13チャート）
         // A. 収益全体像

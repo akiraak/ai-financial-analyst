@@ -18,6 +18,8 @@
 3. xlsx数値の検証（[validate-xlsx.md](validate-xlsx.md)）
 4. 分析レポートページの生成（[analyze-and-visualize.md](analyze-and-visualize.md)）
 
+**一括実行:** 上記1〜4をまとめて実行する場合は [full-build.md](full-build.md) を参照してください。
+
 ## 「何をすればいい？」と聞かれたとき
 
 1. **「新しい企業を分析する」か「既存の企業を更新する」かを聞く**

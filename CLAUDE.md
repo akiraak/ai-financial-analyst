@@ -29,7 +29,8 @@ ai-financial-analyst/
 │   ├── download-filings.md  # 決算資料ダウンロードフロー
 │   ├── generate-financials.md # 業績データxlsx生成フロー
 │   ├── validate-xlsx.md      # xlsx数値検証フロー
-│   └── analyze-and-visualize.md # データ分析・可視化フロー
+│   ├── analyze-and-visualize.md # データ分析・可視化フロー
+│   └── full-build.md         # フルビルド（DL→抽出→xlsx→ページ生成）
 ├── companies/       # 企業別の分析データ・スクリプト
 │   └── <企業名>/
 │       ├── filings/           # 決算資料の原本
@@ -91,6 +92,11 @@ ai-financial-analyst/
 
 - [workflows/analyze-and-visualize.md](workflows/analyze-and-visualize.md) を読み、その指示に従うこと
 - GitHub Pagesで業績レポートダッシュボードを公開する
+
+## 作業フロー: フルビルド
+
+- [workflows/full-build.md](workflows/full-build.md) を読み、その指示に従うこと
+- DL → データ抽出 → xlsx生成 → ページ生成 を一気通貫で実行する
 
 ## 開発ルール
 

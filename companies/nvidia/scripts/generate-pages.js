@@ -54,17 +54,18 @@ function generateLandingPage() {
     fetch('data.json')
       .then(r => r.json())
       .then(data => {
-        // メタ情報
-        const actual = data.quarters.filter(q => !q.isOutlook);
-        const first = actual[0]?.label || '';
-        const last = actual[actual.length - 1]?.label || '';
+        // メタ情報（ページのある四半期の期間を表示）
+        const withPage = data.quarters.filter(q => !q.isOutlook && q.hasPage);
+        const allActual = data.quarters.filter(q => !q.isOutlook);
+        const first = withPage[0]?.label || '';
+        const last = withPage[withPage.length - 1]?.label || '';
         document.getElementById('meta').textContent =
-          first + ' ~ ' + last + ' | ' + actual.length + '四半期 | 更新: ' + data.generatedAt;
+          first + ' ~ ' + last + ' | データ: ' + allActual.length + '四半期 | 更新: ' + data.generatedAt;
 
-        // 四半期分析リンク生成
+        // 四半期分析リンク生成（ページのある四半期のみ）
         const container = document.getElementById('quarterLinksContainer');
         const fyGroups = {};
-        data.quarters.filter(q => !q.isOutlook).forEach(q => {
+        withPage.forEach(q => {
           if (!fyGroups[q.fy]) fyGroups[q.fy] = [];
           fyGroups[q.fy].push(q);
         });

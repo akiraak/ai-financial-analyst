@@ -51,7 +51,8 @@
           "operatingIncome": 1520
         }
       },
-      "investments": null
+      "investments": null,
+      "hasPage": false
     },
     {
       "label": "FY2022 Q1",
@@ -107,7 +108,8 @@
         "netAdditions": null,
         "unrealizedGains": null,
         "impairments": null
-      }
+      },
+      "hasPage": false
     },
     {
       "label": "FY2022 Q2",
@@ -163,7 +165,8 @@
         "netAdditions": null,
         "unrealizedGains": null,
         "impairments": null
-      }
+      },
+      "hasPage": false
     },
     {
       "label": "FY2022 Q3",
@@ -219,7 +222,8 @@
         "netAdditions": null,
         "unrealizedGains": null,
         "impairments": null
-      }
+      },
+      "hasPage": false
     },
     {
       "label": "FY2022 Q4",
@@ -275,7 +279,8 @@
         "netAdditions": null,
         "unrealizedGains": null,
         "impairments": null
-      }
+      },
+      "hasPage": false
     },
     {
       "label": "FY2023 Q1",
@@ -331,7 +336,8 @@
         "netAdditions": null,
         "unrealizedGains": null,
         "impairments": null
-      }
+      },
+      "hasPage": false
     },
     {
       "label": "FY2023 Q2",
@@ -387,7 +393,8 @@
         "netAdditions": null,
         "unrealizedGains": null,
         "impairments": null
-      }
+      },
+      "hasPage": false
     },
     {
       "label": "FY2023 Q3",
@@ -443,7 +450,8 @@
         "netAdditions": null,
         "unrealizedGains": null,
         "impairments": null
-      }
+      },
+      "hasPage": false
     },
     {
       "label": "FY2023 Q4",
@@ -499,7 +507,8 @@
         "netAdditions": null,
         "unrealizedGains": null,
         "impairments": null
-      }
+      },
+      "hasPage": false
     },
     {
       "label": "FY2024 Q1",
@@ -555,7 +564,8 @@
         "netAdditions": null,
         "unrealizedGains": null,
         "impairments": null
-      }
+      },
+      "hasPage": false
     },
     {
       "label": "FY2024 Q2",
@@ -611,7 +621,8 @@
         "netAdditions": null,
         "unrealizedGains": null,
         "impairments": null
-      }
+      },
+      "hasPage": false
     },
     {
       "label": "FY2024 Q3",
@@ -667,7 +678,8 @@
         "netAdditions": null,
         "unrealizedGains": null,
         "impairments": null
-      }
+      },
+      "hasPage": false
     },
     {
       "label": "FY2024 Q4",
@@ -723,7 +735,8 @@
         "netAdditions": 859,
         "unrealizedGains": 194,
         "impairments": -20
-      }
+      },
+      "hasPage": true
     },
     {
       "label": "FY2025 Q1",
@@ -779,7 +792,8 @@
         "netAdditions": 127,
         "unrealizedGains": 15,
         "impairments": 0
-      }
+      },
+      "hasPage": true
     },
     {
       "label": "FY2025 Q2",
@@ -835,7 +849,8 @@
         "netAdditions": 294,
         "unrealizedGains": 77,
         "impairments": -15
-      }
+      },
+      "hasPage": true
     },
     {
       "label": "FY2025 Q3",
@@ -891,7 +906,8 @@
         "netAdditions": 409,
         "unrealizedGains": 23,
         "impairments": -14
-      }
+      },
+      "hasPage": true
     }
   ],
   "currentQuarter": {

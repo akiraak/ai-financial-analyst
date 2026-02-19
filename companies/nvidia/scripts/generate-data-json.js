@@ -148,6 +148,12 @@ for (const fyStr of fys) {
   }
 }
 
+// ページ生成対象にhasPageフラグを付与（data.json出力前に設定）
+const startIdx = Math.max(0, quarters.length - pageQuarters);
+for (let i = 0; i < quarters.length; i++) {
+  quarters[i].hasPage = i >= startIdx;
+}
+
 const data = {
   company: 'NVIDIA',
   ticker: 'NVDA',
@@ -163,9 +169,6 @@ console.log(`出力: ${OUTPUT} (${quarters.length} 四半期)`);
 // 四半期別data.json + index.html を出力
 const templatePath = path.join(QUARTERS_DIR, 'template.html');
 const template = fs.existsSync(templatePath) ? fs.readFileSync(templatePath, 'utf-8') : null;
-
-// ページ生成: 最新 pageQuarters 個分のみ
-const startIdx = Math.max(0, quarters.length - pageQuarters);
 console.log(`設定: pageYears=${config.pageYears} (${quarters.length - startIdx}ページ), chartYears=${config.chartYears} (最大${chartQuarters}四半期分)`);
 
 for (let i = startIdx; i < quarters.length; i++) {

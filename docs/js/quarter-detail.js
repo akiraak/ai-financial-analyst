@@ -1,6 +1,5 @@
 // quarter-detail.js — 四半期詳細ページのロジック
-// ./data.json を読み込み、KPIサマリー + ChartBuilderの11チャートを描画する
-// data.json には currentQuarter と、その四半期までの全quartersが含まれる
+// ./data.json + analysis-text.json を読み込み、KPIサマリー + 11チャート + 分析テキストを描画する
 
 const QuarterDetail = {
 
@@ -11,11 +10,6 @@ const QuarterDetail = {
     const abs = Math.abs(val);
     if (abs >= 1000) return (val < 0 ? '-' : '') + '$' + (abs / 1000).toFixed(1) + 'B';
     return (val < 0 ? '-' : '') + '$' + abs.toLocaleString() + 'M';
-  },
-
-  fmtTableMoney(val) {
-    if (val == null) return '---';
-    return '$' + val.toLocaleString() + 'M';
   },
 
   fmtPct(val) {
@@ -65,13 +59,9 @@ const QuarterDetail = {
       prevLink.classList.remove('disabled');
     }
 
-    // 次の四半期はdata.jsonに含まれないので、全体data.jsonから判定
-    // currentQuarterの次を計算
     const curr = quarters[idx];
     const nextFy = curr.q === 4 ? curr.fy + 1 : curr.fy;
     const nextQ = curr.q === 4 ? 1 : curr.q + 1;
-    // 次のフォルダが存在するかfetchで確認せず、リンクだけ設定（存在しなければ404）
-    // ただしOutlook(最後)の場合は次がないので非表示
     if (!curr.isOutlook) {
       nextLink.href = `../${nextFy}Q${nextQ}/`;
       nextLink.textContent = `FY${nextFy} Q${nextQ} \u2192`;
@@ -133,6 +123,95 @@ const QuarterDetail = {
     `).join('');
   },
 
+  // === 分析テキストの挿入 ===
+
+  renderAnalysisText(analysisData, quarterKey) {
+    const overviews = analysisData.overviews || {};
+    const qData = (analysisData.quarters || {})[quarterKey] || {};
+    const charts = qData.charts || {};
+
+    // チャート概要・解説の挿入
+    const chartIds = [
+      'plChart', 'marginChart', 'costChart',
+      'balanceSheetChart', 'cashFlowChart',
+      'pricePERChart', 'valuationChart',
+      'segmentRevenueChart', 'segmentCompositionChart',
+      'segmentProfitChart', 'segmentMarginChart',
+      'investmentChart'
+    ];
+
+    for (const id of chartIds) {
+      const el = document.getElementById(id + '-desc');
+      if (!el) continue;
+
+      const overview = overviews[id];
+      const analysis = charts[id];
+
+      let html = '';
+      if (overview) {
+        html += `<p><span class="label">概要:</span> ${overview}</p>`;
+      }
+      if (analysis) {
+        html += `<p class="insight"><span class="label">解説:</span> ${analysis}</p>`;
+      }
+      el.innerHTML = html;
+    }
+
+    // 決算サマリーの挿入
+    if (qData.summary && qData.summary.length > 0) {
+      const section = document.getElementById('section-summary');
+      const title = document.getElementById('summaryTitle');
+      const content = document.getElementById('summaryContent');
+
+      title.textContent = quarterKey.replace(/(\d{4})Q(\d)/, 'FY$1 Q$2') + ' 決算サマリー';
+      content.innerHTML = qData.summary.map(item =>
+        `<p><span class="label">${item.label}:</span> ${item.text}</p>`
+      ).join('');
+      section.style.display = '';
+    }
+
+    // 投資コミットメントの挿入
+    if (qData.investmentCommitments) {
+      const ic = qData.investmentCommitments;
+      const section = document.getElementById('investmentCommitmentsSection');
+      const title = document.getElementById('investmentCommitmentsTitle');
+      const content = document.getElementById('investmentCommitmentsContent');
+
+      title.textContent = `投資コミットメント（${quarterKey.replace(/(\d{4})Q(\d)/, 'FY$1 Q$2')}時点）`;
+
+      let html = '';
+
+      // KPIグリッド
+      if (ic.kpis && ic.kpis.length > 0) {
+        html += '<div class="kpi-grid">';
+        for (const kpi of ic.kpis) {
+          html += `<div class="kpi-item">
+            <div class="kpi-value">${kpi.value}</div>
+            <div class="kpi-label">${kpi.label}</div>
+            <div class="kpi-sub">${kpi.sub}</div>
+          </div>`;
+        }
+        html += '</div>';
+      }
+
+      // コミットメント一覧
+      html += '<div class="chart-description">';
+      if (ic.commitments && ic.commitments.length > 0) {
+        html += '<p><span class="label">主要コミットメント:</span></p>';
+        for (const c of ic.commitments) {
+          html += `<p><strong>${c.name}</strong> — ${c.detail}</p>`;
+        }
+      }
+      if (ic.note) {
+        html += `<p class="insight"><span class="label">補足:</span> ${ic.note}</p>`;
+      }
+      html += '</div>';
+
+      content.innerHTML = html;
+      section.style.display = '';
+    }
+  },
+
   // === 決算資料リンク ===
 
   renderFilings(irLinks, fy, q) {
@@ -164,11 +243,13 @@ const QuarterDetail = {
   init() {
     Promise.all([
       fetch('./data.json').then(r => r.json()),
-      fetch('../../ir-links.json').then(r => r.json())
-    ]).then(([data, irLinks]) => {
+      fetch('../../ir-links.json').then(r => r.json()),
+      fetch('../../analysis-text.json').then(r => r.ok ? r.json() : {})
+    ]).then(([data, irLinks, analysisData]) => {
       const quarters = data.quarters;
-      const idx = quarters.length - 1; // 最後の四半期が「この四半期」
+      const idx = quarters.length - 1;
       const d = quarters[idx];
+      const quarterKey = `${d.fy}Q${d.q}`;
 
       // Outlookバナー
       if (d.isOutlook) {
@@ -181,6 +262,9 @@ const QuarterDetail = {
 
       // KPIサマリー
       this.renderKPI(quarters, idx);
+
+      // 分析テキスト（概要・解説・サマリー・投資コミットメント）
+      this.renderAnalysisText(analysisData, quarterKey);
 
       // === 時系列チャート（ChartBuilderを再利用） ===
       // A. 収益全体像
@@ -209,7 +293,7 @@ const QuarterDetail = {
       this.renderFilings(irLinks, d.fy, d.q);
 
     }).catch(err => {
-      console.error(err);
+      console.error('ページ初期化エラー:', err);
     });
   }
 };

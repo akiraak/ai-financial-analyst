@@ -1,23 +1,16 @@
 # TODO
 
-## Phase 1: 不要セクションの削除
-
-- [ ] template.html から「損益計算書 (P/L)」セクション（P/Lテーブル + ウォーターフォール）を削除
-- [ ] template.html から「成長率推移（前年同期比）」チャートを削除
-- [ ] ランディングページ（docs/nvidia/index.html）からエクセルDLリンクを削除
+## Phase 1: 不要セクションの削除 ✅
 
 ## Phase 2: 分析コンテンツの追加・修正
 
-**設計方針:** 四半期ごとの分析テキストをJSONファイル（例: `analysis-text.json`）に格納し、quarter-detail.js で動的に挿入する。template.html にはプレースホルダー要素のみ配置。
+**設計方針:** `docs/nvidia/analysis-text.json` に四半期ごとの分析テキストを格納し、quarter-detail.js で動的に挿入。template.html にはプレースホルダー要素のみ配置。
 
-- [ ] analysis-text.json の設計・作成
-- [ ] quarter-detail.js にJSON読み込み・挿入ロジックを追加
-- [ ] template.html のプレースホルダー化
-- [ ] 四半期詳細ページの先頭に決算サマリーを追加
-  - 過去1年のプレスリリースを参考にしながら今期のプレスリリースを紹介
-  - KPIグリッド + 解説テキスト（直近1年の推移、セグメント動向、財務状況）
-- [ ] 各セクションの概要・解説を今期中心の内容に修正
-  - 過去の推移を考慮しつつ今期の分析をメインとする
+- [x] analysis-text.json の設計・作成（overviews + quarters構造）
+- [x] quarter-detail.js にJSON読み込み・挿入ロジックを追加（renderAnalysisText）
+- [x] template.html のプレースホルダー化（`<details>` → 常時展開div）
+- [x] 2026Q3の決算サマリー・チャート解説・投資コミットメントを記載
+- [ ] 他の四半期（2022Q1〜2026Q2, 2026Q4）の解説テキストを追加
 
 ## Phase 3: 財務データの表示
 

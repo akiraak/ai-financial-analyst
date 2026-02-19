@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "serve": "npx http-server docs -p 8080 -c-1 --cors"
+  },
   "dependencies": {
     "cheerio": "^1.2.0",
     "exceljs": "^4.4.0",

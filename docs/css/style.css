@@ -57,6 +57,38 @@ body {
   opacity: 0.7;
 }
 
+/* パンくずナビ */
+.breadcrumb {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.breadcrumb .container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb .separator {
+  margin: 0 6px;
+  color: #ccc;
+}
+
+.breadcrumb .current {
+  color: #666;
+  font-weight: 600;
+}
+
 /* セクションナビゲーション */
 .section-nav {
   background: #fff;

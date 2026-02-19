@@ -34,6 +34,14 @@ function generateLandingPage() {
     </div>
   </div>
 
+  <nav class="breadcrumb">
+    <div class="container">
+      <a href="../">HOME</a>
+      <span class="separator">/</span>
+      <span class="current">${COMPANY}</span>
+    </div>
+  </nav>
+
   <div class="container">
 
     <!-- 四半期分析リンク -->
@@ -108,10 +116,17 @@ function generateQuartersIndex() {
     </div>
   </div>
 
+  <nav class="breadcrumb">
+    <div class="container">
+      <a href="../../">HOME</a>
+      <span class="separator">/</span>
+      <a href="../">${COMPANY}</a>
+      <span class="separator">/</span>
+      <span class="current">四半期一覧</span>
+    </div>
+  </nav>
+
   <div class="container">
-    <p style="margin:20px 0 24px;font-size:0.9rem;">
-      <a href="../" style="color:var(--primary);text-decoration:none;font-weight:600;">&larr; ダッシュボードに戻る</a>
-    </p>
     <div id="quarterList"></div>
   </div>
 
@@ -186,6 +201,16 @@ function generateTemplate() {
       <div class="meta" id="headerMeta"></div>
     </div>
   </div>
+
+  <nav class="breadcrumb">
+    <div class="container">
+      <a href="../../../">HOME</a>
+      <span class="separator">/</span>
+      <a href="../../">${COMPANY}</a>
+      <span class="separator">/</span>
+      <span class="current" id="breadcrumbQuarter"></span>
+    </div>
+  </nav>
 
   <!-- 四半期ナビ（前後移動） -->
   <nav class="quarter-nav">

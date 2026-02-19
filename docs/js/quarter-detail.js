@@ -46,6 +46,9 @@ const QuarterDetail = {
       quarter.label + (quarter.isOutlook ? '（ガイダンス）' : '');
     document.title = `NVIDIA ${quarter.label} 四半期詳細`;
     document.getElementById('currentLabel').textContent = quarter.label;
+    // パンくずナビの四半期ラベル
+    const bc = document.getElementById('breadcrumbQuarter');
+    if (bc) bc.textContent = quarter.label;
   },
 
   renderNav(quarters, idx) {

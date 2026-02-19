@@ -1,5 +1,5 @@
 // template.xlsx をベースに financials.json + stock-prices.json のデータを流し込み
-// NVDA-Financials.xlsx を生成するスクリプト
+// Financials.xlsx を生成するスクリプト
 //
 // テンプレートの書式（色・罫線・数値フォーマット）はそのまま保持し、
 // 値と数式のみを設定する。数式パターンは既存「AI企業の業績と予想.xlsx」に準拠。
@@ -13,7 +13,7 @@ const DATA_DIR = path.join(DIR, '..', 'data');
 const TEMPLATE_PATH = path.join(DATA_DIR, 'template.xlsx');
 const FINANCIALS_PATH = path.join(DATA_DIR, 'financials.json');
 const STOCK_PRICES_PATH = path.join(DATA_DIR, 'stock-prices.json');
-const OUTPUT_PATH = path.join(DATA_DIR, 'NVDA-Financials.xlsx');
+const OUTPUT_PATH = path.join(DATA_DIR, 'Financials.xlsx');
 
 // === 設定 ===
 // 表示範囲はfinancials.jsonのデータから自動判定

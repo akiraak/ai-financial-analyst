@@ -7,7 +7,7 @@ const ExcelJS = require('exceljs');
 
 const DIR = __dirname;
 const DATA_DIR = path.join(DIR, '..', 'data');
-const XLSX_PATH = path.join(DATA_DIR, 'NVDA-Financials.xlsx');
+const XLSX_PATH = path.join(DATA_DIR, 'Financials.xlsx');
 const FINANCIALS_PATH = path.join(DATA_DIR, 'financials.json');
 const STOCK_PRICES_PATH = path.join(DATA_DIR, 'stock-prices.json');
 
@@ -187,7 +187,7 @@ async function main() {
 
   // === 結果レポート ===
   console.log('=== 検証結果サマリー ===');
-  console.log(`- 対象: NVDA-Financials.xlsx`);
+  console.log(`- 対象: Financials.xlsx`);
   console.log(`- 年度範囲: FY${startFY} ~ FY${endFY}`);
   const actualCount = quarters.filter(q => financials[q.fyStr]?.[q.q]?.revenue).length;
   console.log(`- 四半期数: 実績 ${actualCount}`);

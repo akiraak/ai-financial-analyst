@@ -23,9 +23,9 @@ node companies/<企業名>/scripts/download-filings.js
 
 ### 2. データ抽出
 
-以下のスクリプトを実行してJSONデータを生成する。2-1〜2-6は並列実行可能。
+以下のスクリプトを実行してJSONデータを生成する。2a の6スクリプトは並列実行可能。
 
-#### 2-1〜2-6. 抽出スクリプト（並列実行可能）
+#### 2a. 抽出スクリプト（並列実行可能）
 
 ```bash
 node companies/<企業名>/scripts/extract-financials.js
@@ -45,7 +45,7 @@ node companies/<企業名>/scripts/extract-investments.js
 | extract-segment-profit.js | 10-Q.pdf / 10-K.pdf | data/segment-profit.json |
 | extract-investments.js | 10-Q.pdf / 10-K.pdf | data/investments.json |
 
-#### 2-7. 株価取得（financials.jsonに依存）
+#### 2b. 株価取得（financials.json に依存）
 
 ```bash
 node companies/<企業名>/scripts/fetch-stock-prices.js
@@ -61,9 +61,20 @@ node companies/<企業名>/scripts/generate-xlsx.js
 ```
 
 - 入力: data/financials.json, data/stock-prices.json, data/template.xlsx
-- 出力: data/NVDA-Financials.xlsx
+- 出力: data/Financials.xlsx
 
-### 4. ページ生成
+### 4. xlsx検証
+
+[validate-xlsx.md](validate-xlsx.md) に従い、生成されたxlsxの数値を検証する。
+
+```bash
+node companies/<企業名>/scripts/validate-xlsx.js
+```
+
+- 検証対象: data/Financials.xlsx
+- ソース: data/financials.json, data/stock-prices.json, filings/FY*/Q*/press-release.*
+
+### 5. ページ生成
 
 ```bash
 node companies/<企業名>/scripts/generate-pages.js
@@ -75,7 +86,13 @@ node companies/<企業名>/scripts/generate-data-json.js
 | generate-pages.js | docs/\<企業名\>/index.html, quarters/index.html, quarters/template.html |
 | generate-data-json.js | docs/\<企業名\>/data.json, quarters/\<YYYYQN\>/data.json + index.html |
 
-### 5. 確認
+### 6. 分析テキストの作成
+
+[analyze-and-visualize.md](analyze-and-visualize.md) の手順4に従い、`docs/<企業名>/analysis-text.json` を作成する。
+
+このファイルは四半期詳細ページの解説テキスト・決算サマリーの表示に**必須**。存在しない場合、ページのテキストがすべて空になる。
+
+### 7. 確認
 
 - `docs/<企業名>/index.html` をブラウザで開き、ランディングページが正しく表示されることを確認
 - 最新四半期の `docs/<企業名>/quarters/<YYYYQN>/index.html` を開き、KPI・チャート・解説が正しく表示されることを確認

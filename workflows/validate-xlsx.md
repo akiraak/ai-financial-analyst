@@ -6,7 +6,7 @@
 
 ## 対象ファイル
 
-- 検証対象: `companies/<企業名>/data/<企業名>業績.xlsx`
+- 検証対象: `companies/<企業名>/data/Financials.xlsx`
 - ソース1: `companies/<企業名>/data/financials.json`
 - ソース2: `companies/<企業名>/data/stock-prices.json`
 - ソース3: `companies/<企業名>/filings/FY*/Q*/press-release.*`（原本）

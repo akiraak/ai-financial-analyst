@@ -54,7 +54,7 @@ ai-financial-analyst/
 │           ├── financials.json        # 抽出済みP/Lデータ
 │           ├── stock-prices.json      # 取得済み株価データ
 │           ├── template.xlsx          # xlsx生成用テンプレート
-│           └── NVDA-Financials.xlsx   # 生成されたxlsx
+│           └── Financials.xlsx   # 生成されたxlsx
 ├── docs/            # GitHub Pages公開ディレクトリ
 │   ├── index.html             # 企業一覧トップページ
 │   ├── css/
@@ -81,7 +81,7 @@ ai-financial-analyst/
 ## 作業フロー: 業績データxlsx生成
 
 - [workflows/generate-financials.md](workflows/generate-financials.md) を読み、その指示に従うこと
-- press-release.html → financials.json → stock-prices.json → NVDA-Financials.xlsx
+- press-release.html → financials.json → stock-prices.json → Financials.xlsx
 
 ## 作業フロー: xlsx数値検証
 

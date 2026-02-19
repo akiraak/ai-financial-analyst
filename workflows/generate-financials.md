@@ -39,7 +39,7 @@ node companies/<企業名>/scripts/generate-xlsx.js
 ```
 
 - 入力: `financials.json` + `stock-prices.json`
-- 出力: `companies/<企業名>/data/<企業名>業績.xlsx`
+- 出力: `companies/<企業名>/data/Financials.xlsx`
 
 ### 4. 確認
 

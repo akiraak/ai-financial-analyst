@@ -668,5 +668,229 @@
         }
       ]
     }
+  ],
+  "FY2020": [
+    {
+      "quarter": "Fourth Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2020",
+          "description": "Press Release of Fourth Quarter 2020, Online link, opens in new window"
+        },
+        {
+          "name": "CFO Commentary",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2020/Q420/Q4FY20-CFO-Commentary.pdf",
+          "description": "CFO Commentary of Fourth Quarter 2020, PDF file, opens in new window"
+        },
+        {
+          "name": "NVIDIA Quarterly Revenue Trend",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2020/Q420/Rev_by_Mkt_Qtrly_Trend_Q420.pdf",
+          "description": "NVIDIA Quarterly Revenue Trend of Fourth Quarter 2020, PDF file, opens in new window"
+        },
+        {
+          "name": "10-K",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2020/q4/174b2f06-ba5b-4e0a-b288-e33c46e9a0a4.pdf",
+          "description": "10-K of Fourth Quarter 2020, PDF file, opens in new window"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2020",
+          "description": "Press Release of Third Quarter 2020, Online link, opens in new window"
+        },
+        {
+          "name": "CFO Commentary",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2020/Q320/Q3FY20-CFO-Commentary.pdf",
+          "description": "CFO Commentary of Third Quarter 2020, PDF file, opens in new window"
+        },
+        {
+          "name": "NVIDIA Quarterly Revenue Trend",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2020/Q320/Rev_by_Mkt_Qtrly_Trend_Q320.pdf",
+          "description": "NVIDIA Quarterly Revenue Trend of Third Quarter 2020, PDF file, opens in new window"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2020/q3/cfa30c13-a603-418d-9dc7-2c52c44a276c.pdf",
+          "description": "10-Q of Third Quarter 2020, PDF file, opens in new window"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2020",
+          "description": "Press Release of Second Quarter 2020, Online link, opens in new window"
+        },
+        {
+          "name": "CFO Commentary",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2020/Q220/Q2FY20-CFO-Commentary.pdf",
+          "description": "CFO Commentary of Second Quarter 2020, PDF file, opens in new window"
+        },
+        {
+          "name": "NVIDIA Quarterly Revenue Trend",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2020/Q220/Rev_by_Mkt_Qtrly_Trend_Q220.pdf",
+          "description": "NVIDIA Quarterly Revenue Trend of Second Quarter 2020, PDF file, opens in new window"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2020/Q220/9e501519-7cc2-40f2-aeb9-e6aace95e474.pdf",
+          "description": "10-Q of Second Quarter 2020, PDF file, opens in new window"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2020",
+          "description": "Press Release of First Quarter 2020, Online link, opens in new window"
+        },
+        {
+          "name": "CFO Commentary",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2020/Q120/Q1FY20-CFO-Commentary.pdf",
+          "description": "CFO Commentary of First Quarter 2020, PDF file, opens in new window"
+        },
+        {
+          "name": "NVIDIA Quarterly Revenue Trend",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2020/Q120/Rev_by_Mkt_Qtrly_Trend_Q120.pdf",
+          "description": "NVIDIA Quarterly Revenue Trend of First Quarter 2020, PDF file, opens in new window"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2020/Q120/e0636cad-19cc-4520-8e80-4dfc8b28d16a.pdf",
+          "description": "10-Q of First Quarter 2020, PDF file, opens in new window"
+        }
+      ]
+    }
+  ],
+  "FY2021": [
+    {
+      "quarter": "Fourth Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2021",
+          "description": "Press Release of Fourth Quarter 2021, Online link, opens in new window"
+        },
+        {
+          "name": "CFO Commentary",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/annual/2021/Q4FY21-CFO-Commentary.pdf",
+          "description": "CFO Commentary of Fourth Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "NVIDIA Quarterly Revenue Trend",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/annual/2021/Rev_by_Mkt_Qtrly_Trend_Q421.pdf",
+          "description": "NVIDIA Quarterly Revenue Trend of Fourth Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "10-K",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2021/q4/0ec16816-55e2-4812-8f77-75cab5909247.pdf",
+          "description": "10-K of Fourth Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "Presentation",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_downloads/2021/03/NVDA-F4Q21-Investor-Presentation-FINAL-Mar-2.pdf",
+          "description": "Presentation of Fourth Quarter 2021, PDF file, opens in new window"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2021",
+          "description": "Press Release of Third Quarter 2021, Online link, opens in new window"
+        },
+        {
+          "name": "CFO Commentary",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2021/Q321/Q3FY21-CFO-Commentary.pdf",
+          "description": "CFO Commentary of Third Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "NVIDIA Quarterly Revenue Trend",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2021/Q321/Rev_by_Mkt_Qtrly_Trend_Q321.pdf",
+          "description": "NVIDIA Quarterly Revenue Trend of Third Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2021/Q321/a0c4a358-8b0e-4b20-a5cd-dd56002591ed.pdf",
+          "description": "10-Q of Third Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "Presentation",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2021/2021-Updates/NVDA-F3Q21-Investor-Presentation-FINAL.pdf",
+          "description": "Presentation of Third Quarter 2021, PDF file, opens in new window"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2021",
+          "description": "Press Release of Second Quarter 2021, Online link, opens in new window"
+        },
+        {
+          "name": "CFO Commentary",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2021/Q221/Q2FY21-CFO-Commentary.pdf",
+          "description": "CFO Commentary of Second Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "NVIDIA Quarterly Revenue Trend",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2021/Q221/Rev_by_Mkt_Qtrly_Trend_Q221.pdf",
+          "description": "NVIDIA Quarterly Revenue Trend of Second Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2021/Q2/65b8fd67-6306-47d4-8a29-9a6be3860297.pdf",
+          "description": "10-Q of Second Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "Presentation",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2021/2021-Updates/NVDA-F2Q21-Investor-Presentation-FINAL.pdf",
+          "description": "Presentation of Second Quarter 2021, PDF file, opens in new window"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2021",
+          "description": "Press Release of First Quarter 2021, Online link, opens in new window"
+        },
+        {
+          "name": "CFO Commentary",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2021/Q121/Q1FY21-CFO-Commentary.pdf",
+          "description": "CFO Commentary of First Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "NVIDIA Quarterly Revenue Trend",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2021/Q121/Rev_by_Mkt_Qtrly_Trend_Q121.pdf",
+          "description": "NVIDIA Quarterly Revenue Trend of First Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2021/q1/6a2895c9-f648-4e77-bcd6-63bbfc4e0786.pdf",
+          "description": "10-Q of First Quarter 2021, PDF file, opens in new window"
+        },
+        {
+          "name": "Presentation",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2021/2021-Updates/NVDA-F1Q21-Investor-Presentation-FINAL.pdf",
+          "description": "Presentation of First Quarter 2021, PDF file, opens in new window"
+        }
+      ]
+    }
   ]
 }

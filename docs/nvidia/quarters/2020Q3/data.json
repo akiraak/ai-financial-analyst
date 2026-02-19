@@ -1,0 +1,117 @@
+{
+  "company": "NVIDIA",
+  "ticker": "NVDA",
+  "generatedAt": "2026-02-19",
+  "quarters": [
+    {
+      "label": "FY2020 Q1",
+      "fy": 2020,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 2220,
+      "costOfRevenue": 924,
+      "grossProfit": 1296,
+      "researchAndDevelopment": 674,
+      "sga": 264,
+      "totalOperatingExpenses": 938,
+      "operatingIncome": 358,
+      "nonOperatingIncome": 31,
+      "netIncome": 394,
+      "eps": 0.02,
+      "price": 4.45,
+      "priceDate": "2019-04-26",
+      "sharesDiluted": 24640,
+      "segments": null,
+      "balanceSheet": {
+        "cashAndEquivalents": 7802,
+        "totalAssets": 14021,
+        "totalLiabilities": 4317,
+        "totalEquity": 9704,
+        "totalDebt": 1988
+      },
+      "cashFlow": {
+        "operatingCF": null,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 592
+      },
+      "segmentProfit": null,
+      "investments": null
+    },
+    {
+      "label": "FY2020 Q2",
+      "fy": 2020,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 2579,
+      "costOfRevenue": 1038,
+      "grossProfit": 1541,
+      "researchAndDevelopment": 704,
+      "sga": 266,
+      "totalOperatingExpenses": 970,
+      "operatingIncome": 571,
+      "nonOperatingIncome": 35,
+      "netIncome": 552,
+      "eps": 0.02,
+      "price": 4.38,
+      "priceDate": "2019-07-26",
+      "sharesDiluted": 24640,
+      "segments": null,
+      "balanceSheet": {
+        "cashAndEquivalents": 8475,
+        "totalAssets": 14775,
+        "totalLiabilities": 4439,
+        "totalEquity": 10336,
+        "totalDebt": 1989
+      },
+      "cashFlow": {
+        "operatingCF": null,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 823
+      },
+      "segmentProfit": null,
+      "investments": null
+    },
+    {
+      "label": "FY2020 Q3",
+      "fy": 2020,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 3014,
+      "costOfRevenue": 1098,
+      "grossProfit": 1916,
+      "researchAndDevelopment": 712,
+      "sga": 277,
+      "totalOperatingExpenses": 989,
+      "operatingIncome": 927,
+      "nonOperatingIncome": 32,
+      "netIncome": 899,
+      "eps": 0.04,
+      "price": 5.17,
+      "priceDate": "2019-10-28",
+      "sharesDiluted": 24720,
+      "segments": null,
+      "balanceSheet": {
+        "cashAndEquivalents": 9769,
+        "totalAssets": 15810,
+        "totalLiabilities": 4596,
+        "totalEquity": 11214,
+        "totalDebt": 1990
+      },
+      "cashFlow": {
+        "operatingCF": null,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 1536
+      },
+      "segmentProfit": null,
+      "investments": null
+    }
+  ],
+  "currentQuarter": {
+    "fy": 2020,
+    "q": 3,
+    "label": "FY2020 Q3"
+  }
+}

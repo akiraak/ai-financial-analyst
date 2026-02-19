@@ -1,4 +1,29 @@
 {
+  "FY2021": {
+    "Q1": {
+      "gaming": 1340,
+      "dataCenter": 1140,
+      "professionalVisualization": 307,
+      "automotive": 155
+    },
+    "Q2": {
+      "dataCenter": 1750,
+      "gaming": 1650,
+      "professionalVisualization": 203,
+      "automotive": 111
+    },
+    "Q3": {
+      "dataCenter": 1900,
+      "gaming": 2270,
+      "professionalVisualization": 236
+    },
+    "Q4": {
+      "dataCenter": 1900,
+      "gaming": 2500,
+      "professionalVisualization": 307,
+      "automotive": 145
+    }
+  },
   "FY2022": {
     "Q1": {
       "gaming": 2760,

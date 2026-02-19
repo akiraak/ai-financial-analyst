@@ -1,4 +1,80 @@
 {
+  "FY2020": {
+    "Q1": {
+      "cashAndEquivalents": 7802,
+      "totalCurrentAssets": 10629,
+      "totalAssets": 14021,
+      "totalCurrentLiabilities": 1183,
+      "longTermDebt": 1988,
+      "totalLiabilities": 4317,
+      "totalEquity": 9704
+    },
+    "Q2": {
+      "cashAndEquivalents": 8475,
+      "totalCurrentAssets": 11391,
+      "totalAssets": 14775,
+      "totalCurrentLiabilities": 1317,
+      "longTermDebt": 1989,
+      "totalLiabilities": 4439,
+      "totalEquity": 10336
+    },
+    "Q3": {
+      "cashAndEquivalents": 9769,
+      "totalCurrentAssets": 12420,
+      "totalAssets": 15810,
+      "totalCurrentLiabilities": 1475,
+      "longTermDebt": 1990,
+      "totalLiabilities": 4596,
+      "totalEquity": 11214
+    },
+    "Q4": {
+      "cashAndEquivalents": 10897,
+      "totalCurrentAssets": 13690,
+      "totalAssets": 17315,
+      "totalCurrentLiabilities": 1784,
+      "longTermDebt": 1991,
+      "totalLiabilities": 5111,
+      "totalEquity": 12204
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "cashAndEquivalents": 16354,
+      "totalCurrentAssets": 19584,
+      "totalAssets": 23254,
+      "totalCurrentLiabilities": 1903,
+      "longTermDebt": 6959,
+      "totalLiabilities": 10155,
+      "totalEquity": 13099
+    },
+    "Q2": {
+      "totalCurrentAssets": 14681,
+      "totalCurrentLiabilities": 2410,
+      "longTermDebt": 6960,
+      "totalLiabilities": 11266,
+      "totalEquity": 13914
+    },
+    "Q3": {
+      "cashAndEquivalents": 10139,
+      "totalCurrentAssets": 14393,
+      "totalAssets": 26881,
+      "shortTermDebt": 998,
+      "totalCurrentLiabilities": 3669,
+      "longTermDebt": 5963,
+      "totalLiabilities": 11547,
+      "totalEquity": 15334
+    },
+    "Q4": {
+      "cashAndEquivalents": 11561,
+      "totalCurrentAssets": 16055,
+      "totalAssets": 28791,
+      "shortTermDebt": 999,
+      "totalCurrentLiabilities": 3925,
+      "longTermDebt": 5964,
+      "totalLiabilities": 11898,
+      "totalEquity": 16893
+    }
+  },
   "FY2022": {
     "Q1": {
       "cashAndEquivalents": 12667,

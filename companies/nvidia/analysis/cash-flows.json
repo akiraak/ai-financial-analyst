@@ -1,4 +1,45 @@
 {
+  "FY2020": {
+    "Q1": {
+      "freeCashFlow": 592
+    },
+    "Q2": {
+      "freeCashFlow": 823
+    },
+    "Q3": {
+      "freeCashFlow": 1536
+    },
+    "Q4": {
+      "operatingCF": 1465,
+      "investingCF": -151,
+      "financingCF": -183,
+      "freeCashFlow": 1321
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "operatingCF": 909,
+      "investingCF": -1055,
+      "financingCF": 4744,
+      "freeCashFlow": 754
+    },
+    "Q2": {
+      "operatingCF": 1566,
+      "investingCF": -13489,
+      "financingCF": -297,
+      "freeCashFlow": 1349
+    },
+    "Q3": {
+      "operatingCF": 1279,
+      "freeCashFlow": 806
+    },
+    "Q4": {
+      "operatingCF": 2067,
+      "investingCF": -3129,
+      "financingCF": -342,
+      "freeCashFlow": 1767
+    }
+  },
   "FY2022": {
     "Q1": {
       "operatingCF": 1874,

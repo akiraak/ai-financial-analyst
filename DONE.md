@@ -63,3 +63,8 @@
   - A〜Eのセクショングループ見出し
   - チャート解説をdetails/summaryで折りたたみ化
   - レスポンシブ対応（768px/480pxブレークポイント）
+- [x] Phase 2完了: 全28四半期の分析テキストを追加
+  - FY2020-FY2021プレスリリース取得（8四半期分）
+  - 全27四半期分のデータ抽出・data.json再生成
+  - analysis-text.json: overviews（12チャート概要）+ 28四半期分の解説テキスト（サマリー+チャート別分析）
+  - データ充足チェック手順をworkflowに追加（analyze-and-visualize.md）

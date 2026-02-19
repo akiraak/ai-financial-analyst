@@ -242,7 +242,7 @@ const QuarterDetail = {
   init() {
     Promise.all([
       fetch('./data.json').then(r => r.json()),
-      fetch('../../ir-links.json').then(r => r.json()),
+      fetch('../../ir-links.json').then(r => r.ok ? r.json() : {}),
       fetch('../../analysis-text.json').then(r => r.ok ? r.json() : {})
     ]).then(([data, irLinks, analysisData]) => {
       const quarters = data.quarters;

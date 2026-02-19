@@ -15,83 +15,13 @@
     </div>
   </div>
 
-  <!-- セクションナビゲーション -->
-  <nav class="section-nav">
-    <div class="container">
-      <a href="#section-summary">サマリー</a>
-      <a href="#section-quarters">四半期分析</a>
-      <a href="#section-data">財務データ</a>
-      <a href="#section-filings">決算資料</a>
-    </div>
-  </nav>
-
   <div class="container">
-
-    <!-- 最新決算サマリー -->
-    <div class="section" id="section-summary">
-      <h2>最新決算サマリー — FY2026 Q3（2025年8-10月期）</h2>
-
-      <div class="kpi-grid">
-        <div class="kpi-item">
-          <div class="kpi-value">$57.0B</div>
-          <div class="kpi-label">売上高</div>
-          <div class="kpi-sub">YoY +62.5%</div>
-        </div>
-        <div class="kpi-item">
-          <div class="kpi-value">$36.0B</div>
-          <div class="kpi-label">営業利益</div>
-          <div class="kpi-sub">営業利益率 63.2%</div>
-        </div>
-        <div class="kpi-item">
-          <div class="kpi-value">$31.9B</div>
-          <div class="kpi-label">純利益</div>
-          <div class="kpi-sub">YoY +65.2%</div>
-        </div>
-        <div class="kpi-item">
-          <div class="kpi-value">73.4%</div>
-          <div class="kpi-label">粗利率</div>
-          <div class="kpi-sub">前期 72.4%</div>
-        </div>
-        <div class="kpi-item">
-          <div class="kpi-value">$60.6B</div>
-          <div class="kpi-label">現金同等物</div>
-          <div class="kpi-sub">FCF $22.1B</div>
-        </div>
-        <div class="kpi-item">
-          <div class="kpi-value">$65.0B</div>
-          <div class="kpi-label">次期ガイダンス</div>
-          <div class="kpi-sub">FY2026 Q4 売上</div>
-        </div>
-      </div>
-
-      <details class="chart-details">
-        <summary>解説・分析</summary>
-        <div class="chart-description">
-          <p><span class="label">直近1年の推移:</span> FY2025 Q4〜FY2026 Q3の4四半期で売上高は$39.3B→$57.0Bへ拡大。FY2026 Q1に粗利率が60.5%へ一時低下（Blackwellアーキテクチャの初期製造コスト増）したが、Q2で72.4%、Q3で73.4%へ急速に回復し、新製品の歩留まり改善が進んでいることを示す。営業利益率もQ1の49.1%からQ3の63.2%に改善。</p>
-          <p><span class="label">セグメント動向:</span> Data Centerが$51.2B（構成比90%）で引き続き圧倒的な成長ドライバー。前年同期の$32.1Bから+59.5%成長。GamingはFY2025 Q4に$2.5Bへ一時減少後、FY2026 Q3に$4.3Bへ回復。SEC報告ベースではCompute & Networkingセグメントの営業利益率が70%に達し、AI向け製品の価格決定力が際立つ。</p>
-          <p><span class="label">財務状況:</span> 現金同等物$60.6Bは有利子負債$8.5Bの7倍超。四半期FCFは$22.1Bで、積極的な自社株買い（財務CF -$14.9B/Q）を実施しながらも潤沢なキャッシュを創出。FY2026 Q4ガイダンスの売上$65.0B（YoY +65%見通し）は、AI需要の継続的な拡大を示唆。</p>
-        </div>
-      </details>
-    </div>
 
     <!-- 四半期分析リンク -->
     <div class="section" id="section-quarters">
       <h2>四半期分析</h2>
-      <p style="font-size:0.85rem;color:#666;margin-bottom:12px;">各四半期をクリックすると、P/L・セグメント・B/S・CF等の詳細分析ページを表示します。</p>
+      <p style="font-size:0.85rem;color:#666;margin-bottom:12px;">各四半期をクリックすると、詳細分析ページを表示します。</p>
       <div id="quarterLinksContainer"></div>
-      <p style="margin-top:16px;"><a href="quarters/" class="download-btn">四半期一覧ページへ</a></p>
-    </div>
-
-    <!-- 財務データ（xlsx） -->
-    <div class="section" id="section-data">
-      <h2>財務データ</h2>
-      <p><a href="NVDA-Financials.xlsx" download class="download-btn">NVDA-Financials.xlsx をダウンロード</a></p>
-    </div>
-
-    <!-- 決算資料リンク -->
-    <div class="section" id="section-filings">
-      <h2>決算資料</h2>
-      <div id="filingsContainer"></div>
     </div>
 
   </div>
@@ -137,49 +67,6 @@
       })
       .catch(err => console.error('データ読み込みエラー:', err));
 
-    // 決算資料リンクの読み込み
-    fetch('ir-links.json')
-      .then(r => r.json())
-      .then(links => {
-        const container = document.getElementById('filingsContainer');
-        const fys = Object.keys(links).sort().reverse();
-        fys.forEach((fy, idx) => {
-          const details = document.createElement('details');
-          details.className = 'filings-fy';
-          if (idx === 0) details.open = true;
-
-          const summary = document.createElement('summary');
-          summary.textContent = fy.replace('FY', 'FY ');
-          details.appendChild(summary);
-
-          links[fy].forEach(q => {
-            const qDiv = document.createElement('div');
-            qDiv.className = 'filings-quarter';
-
-            const label = document.createElement('div');
-            label.className = 'filings-quarter-label';
-            label.textContent = q.quarter;
-            qDiv.appendChild(label);
-
-            const linksDiv = document.createElement('div');
-            linksDiv.className = 'filings-links';
-            q.documents.forEach(doc => {
-              const a = document.createElement('a');
-              a.className = 'filing-link';
-              a.href = doc.url;
-              a.target = '_blank';
-              a.rel = 'noopener noreferrer';
-              a.textContent = doc.name;
-              linksDiv.appendChild(a);
-            });
-            qDiv.appendChild(linksDiv);
-            details.appendChild(qDiv);
-          });
-
-          container.appendChild(details);
-        });
-      })
-      .catch(err => console.error('決算資料データ読み込みエラー:', err));
   </script>
 
 </body>

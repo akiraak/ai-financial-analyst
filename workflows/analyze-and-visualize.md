@@ -6,13 +6,18 @@
 - 複数のデータソース（financials.json, stock-prices.json, segments.json, balance-sheet.json, cash-flows.json, segment-profit.json）を統合する
 - 複数企業に対応可能な構造にする
 
+## 予想（Outlook）データの扱い
+
+- **グラフ**: 予想四半期（`isOutlook: true`）はグラフに含めない。グラフは実績データのみで描画する
+- **財務データ表**: 予想四半期は表示する。ヘッダーに「Q4予想」と明示し、セルはグレーアウト表示
+- **xlsxファイル**: 予想四半期を含む（Excelでの分析用）
+
 ## 可視化するグラフ（13チャート）
 
 ### A. 収益全体像
 
 #### 1. P/L推移（棒グラフ）
 - 売上高・粗利・営業利益・純利益の四半期推移
-- 予想（isOutlook）データは色や透明度で区別する
 
 #### 2. 利益率推移（折れ線グラフ）
 - 粗利率（grossProfit / revenue）

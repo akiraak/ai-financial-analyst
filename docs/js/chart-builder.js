@@ -7,6 +7,11 @@ const ChartBuilder = {
     return quarters.map(q => q.label.replace('FY', ''));
   },
 
+  // 実績四半期のみ取得（Outlook/予想を除外）
+  getActualQuarters(quarters) {
+    return quarters.filter(q => !q.isOutlook);
+  },
+
   // Outlook四半期のインデックスを取得
   getOutlookIndices(quarters) {
     return quarters.map((q, i) => q.isOutlook ? i : -1).filter(i => i >= 0);
@@ -33,8 +38,8 @@ const ChartBuilder = {
 
   // === 1. P/L推移（棒グラフ）===
   createPLChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
 
     return new Chart(ctx, {
       type: 'bar',
@@ -93,8 +98,8 @@ const ChartBuilder = {
 
   // === 2. セグメント別売上（積み上げ棒グラフ）===
   createSegmentRevenueChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
 
     return new Chart(ctx, {
       type: 'bar',
@@ -162,8 +167,8 @@ const ChartBuilder = {
 
   // === 3. セグメント構成比（100%積み上げ棒グラフ）===
   createSegmentCompositionChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
 
     // 各セグメントの売上比率を算出
     const pct = (d, key) => {
@@ -238,8 +243,8 @@ const ChartBuilder = {
 
   // === 4. 利益率推移（折れ線グラフ）===
   createMarginChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
 
     const grossMargin = q.map(d => d.revenue ? d.grossProfit / d.revenue * 100 : null);
     const opMargin = q.map(d => d.revenue ? d.operatingIncome / d.revenue * 100 : null);
@@ -292,10 +297,10 @@ const ChartBuilder = {
     });
   },
 
-  // === 3. 株価 & PER（複合チャート）===
+  // === 5. 株価 & PER（複合チャート）===
   createPricePERChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
 
     // PER = 株価 / 直近4Q EPS合計
     const per = q.map((d, i) => {
@@ -356,10 +361,10 @@ const ChartBuilder = {
     });
   },
 
-  // === 5. 成長率推移（前年同期比）===
+  // === 6. 成長率推移（前年同期比）===
   createGrowthChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
 
     // YoY成長率を計算（4四半期前と比較）
     const yoyGrowth = (metric) => q.map((d, i) => {
@@ -428,10 +433,10 @@ const ChartBuilder = {
     });
   },
 
-  // === 6. バリュエーション指標（複合折れ線）===
+  // === 7. バリュエーション指標（複合折れ線）===
   createValuationChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
 
     // PER: 株価 / 直近4Q EPS合計（既存ロジック）
     const per = q.map((d, i) => {
@@ -515,8 +520,8 @@ const ChartBuilder = {
 
   // === 8. B/S概要（棒グラフ）===
   createBalanceSheetChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
 
     return new Chart(ctx, {
       type: 'bar',
@@ -579,8 +584,8 @@ const ChartBuilder = {
 
   // === 9. キャッシュフロー（棒+折れ線複合）===
   createCashFlowChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
 
     return new Chart(ctx, {
       type: 'bar',
@@ -642,8 +647,8 @@ const ChartBuilder = {
 
   // === 10. 費用構造（積み上げ棒グラフ）===
   createCostChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
 
     // 売上高に対する構成比（%）
     const cor = q.map(d => d.revenue && d.costOfRevenue != null ? d.costOfRevenue / d.revenue * 100 : null);
@@ -702,8 +707,8 @@ const ChartBuilder = {
 
   // === 11. セグメント営業利益（棒グラフ）===
   createSegmentProfitChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
     return new Chart(ctx, {
       type: 'bar',
       data: {
@@ -747,8 +752,8 @@ const ChartBuilder = {
 
   // === 12. セグメント営業利益率（折れ線グラフ）===
   createSegmentMarginChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
     const cnMargin = q.map(d => {
       const s = d.segmentProfit?.computeAndNetworking;
       if (!s || !s.revenue || s.operatingIncome == null) return null;
@@ -803,8 +808,8 @@ const ChartBuilder = {
 
   // === 13. 投資ポートフォリオ残高推移（棒+折れ線複合）===
   createInvestmentChart(ctx, data) {
-    const labels = this.getLabels(data.quarters);
-    const q = data.quarters;
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
 
     return new Chart(ctx, {
       type: 'bar',

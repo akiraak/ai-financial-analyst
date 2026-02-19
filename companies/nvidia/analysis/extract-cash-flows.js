@@ -4,6 +4,7 @@
 // "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS" テーブルを解析し、
 // 当四半期（1列目: Three Months Ended）のデータのみ取得する
 // Free Cash Flow は GAAP-to-Non-GAAP reconciliation テーブルから抽出
+// 対応形式: SEC EDGAR形式（<td>見出し + text-align:right値）、GlobNewswire形式
 
 const fs = require('fs');
 const path = require('path');
@@ -42,9 +43,58 @@ function parseNumber(text) {
 }
 
 /**
- * 行から数値セルを抽出
+ * SEC EDGAR形式: テーブル行から右寄せの数値セルを抽出
+ * text-align:right スタイルで値セルを識別する
  */
-function extractValues($, row) {
+function extractValuesEdgar($, row) {
+  const cells = $(row).find('td');
+  const values = [];
+
+  cells.each((i, cell) => {
+    const $cell = $(cell);
+    const text = $cell.text().trim().replace(/\u00a0/g, '').replace(/\s+/g, '').trim();
+    const style = $cell.attr('style') || '';
+
+    // 右寄せセルから数値を抽出
+    if (style.includes('text-align:right')) {
+      if (text && text !== '$' && text !== '' && text !== '-' && text !== '—') {
+        values.push(text);
+      }
+    }
+  });
+
+  return values;
+}
+
+/**
+ * SEC EDGAR形式: 行のラベルテキストを取得
+ * ラベルは text-align:left のセル
+ */
+function getRowLabelEdgar($, row) {
+  const cells = $(row).find('td');
+  let label = '';
+
+  cells.each((i, cell) => {
+    const $cell = $(cell);
+    const text = $cell.text().trim().replace(/\u00a0/g, ' ').trim();
+    const style = $cell.attr('style') || '';
+
+    if (style.includes('text-align:left') && text && !label) {
+      // 数値のみのセルはスキップ
+      if (!text.match(/^[\$\d,.\-()\s]+$/)) {
+        label = text;
+      }
+    }
+  });
+
+  return label;
+}
+
+/**
+ * GlobNewswire形式: 行から数値セルを抽出
+ * padding-left:0 かつ text-align:right で値セルを識別する
+ */
+function extractValuesGnw($, row) {
   const cells = $(row).find('td');
   const values = [];
 
@@ -71,9 +121,9 @@ function extractValues($, row) {
 }
 
 /**
- * 行のラベルテキストを取得
+ * GlobNewswire形式: 行のラベルテキストを取得
  */
-function getRowLabel($, row) {
+function getRowLabelGnw($, row) {
   const cells = $(row).find('td');
   let label = '';
 
@@ -107,13 +157,82 @@ function getRowLabel($, row) {
 }
 
 /**
+ * フォーマットに応じた値抽出関数を返す
+ */
+function getExtractValues(format) {
+  return format === 'edgar' ? extractValuesEdgar : extractValuesGnw;
+}
+
+/**
+ * フォーマットに応じたラベル取得関数を返す
+ */
+function getRowLabel(format) {
+  return format === 'edgar' ? getRowLabelEdgar : getRowLabelGnw;
+}
+
+/**
+ * HTMLの形式を検出する
+ * SEC EDGAR形式: text-align:right で値を持つセルがある
+ * GlobNewswire形式: padding-left:0 + text-align:right で値を持つセルがある
+ */
+function detectFormat(html) {
+  // SEC EDGAR形式の特徴: border-collapse:collapse + text-align:right（padding-left:0なし）
+  if (html.includes('border-collapse:collapse') && html.includes('text-align:right')) {
+    return 'edgar';
+  }
+  return 'gnw';
+}
+
+/**
  * CF関連テーブルをすべて検索する
  * CF計算書が複数テーブルに分割されている場合があるため、
  * タイトル直後の連続するテーブルをすべて返す
+ * @returns {{ tables: Array, format: string }}
  */
-function findCFTables($) {
+function findCFTables(html, $) {
   const titleText = 'CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS';
   let tables = [];
+  let format = detectFormat(html);
+
+  // SEC EDGAR形式: HTMLテキストからindexOfでタイトル位置を特定し、
+  // その位置を含むテーブルと後続テーブルを切り出してcheerioで解析
+  // SEC EDGARではテーブル間に<div>が挟まるため、cheerioのnext()では辿れない
+  if (format === 'edgar') {
+    const titleIdx = html.indexOf(titleText);
+    if (titleIdx !== -1) {
+      // タイトルを含む<table>の開始位置を後方検索
+      const before = html.substring(0, titleIdx);
+      const tableStartIdx = before.lastIndexOf('<table');
+      if (tableStartIdx !== -1) {
+        // タイトルを含むテーブルから順に連続するテーブルを取得
+        let searchPos = tableStartIdx;
+        let consecutive = 0;
+        while (searchPos < html.length && consecutive < 10) {
+          const tableMatch = html.substring(searchPos).match(/<table[\s>]/i);
+          if (!tableMatch) break;
+
+          const tStart = searchPos + tableMatch.index;
+          const tEndMatch = html.substring(tStart).match(/<\/table>/i);
+          if (!tEndMatch) break;
+
+          const tableHtml = html.substring(tStart, tStart + tEndMatch.index + 8);
+          const $t = cheerio.load(tableHtml);
+          tables.push({ $: $t, table: $t('table').first() });
+
+          searchPos = tStart + tEndMatch.index + 8;
+          consecutive++;
+
+          // 次のテーブルまでの距離を確認（SEC EDGARでは<div>が挟まるため余裕をもたせる）
+          const nextContent = html.substring(searchPos, searchPos + 1000);
+          const nextTable = nextContent.match(/<table[\s>]/i);
+          if (!nextTable || nextTable.index > 500) break;
+        }
+      }
+    }
+    return { tables, format };
+  }
+
+  // GlobNewswire形式
 
   // パターン1: <td>内でタイトルを検索 → そのテーブルと連続するテーブルを取得
   $('td').each((i, el) => {
@@ -172,21 +291,28 @@ function findCFTables($) {
     });
   }
 
-  return tables;
+  return { tables, format };
 }
 
 /**
  * テーブルから指定マッピングで行データを抽出（1列目のみ）
+ * @param {CheerioAPI} $ - cheerioインスタンス
+ * @param {Cheerio} table - テーブル要素
+ * @param {Array} mappings - 行マッピング
+ * @param {string} format - 'edgar' or 'gnw'
  */
-function extractFromTable($, table, mappings) {
+function extractFromTable($, table, mappings, format) {
   const result = {};
   if (!table) return result;
 
+  const extractValuesFn = getExtractValues(format);
+  const getRowLabelFn = getRowLabel(format);
+
   table.find('tr').each((i, row) => {
-    const label = getRowLabel($, row);
+    const label = getRowLabelFn($, row);
     if (!label) return;
 
-    const values = extractValues($, row);
+    const values = extractValuesFn($, row);
     if (values.length === 0) return;
 
     const firstValue = parseNumber(values[0]);
@@ -207,9 +333,51 @@ function extractFromTable($, table, mappings) {
 /**
  * GAAP-to-Non-GAAP reconciliation テーブルからFCFを抽出
  * 複数の reconciliation テーブルがあるため、"Free cash flow" を含むテーブルを探す
+ * @param {string} html - 元のHTML文字列
+ * @param {CheerioAPI} $ - cheerioインスタンス
+ * @param {string} format - 'edgar' or 'gnw'
  */
-function extractFCF($) {
-  // 全テーブルを走査して "Free cash flow" 行を探す
+function extractFCF(html, $, format) {
+  const extractValuesFn = getExtractValues(format);
+  const getRowLabelFn = getRowLabel(format);
+
+  // SEC EDGAR形式: HTMLテキストからFree cash flowの位置を特定してテーブルを取得
+  if (format === 'edgar') {
+    // "Free cash flow" を含むテーブルをindexOfで検索
+    const fcfIdx = html.indexOf('Free cash flow');
+    if (fcfIdx !== -1) {
+      // この位置を含むテーブルの開始位置を後方検索
+      const before = html.substring(0, fcfIdx);
+      const tableStartIdx = before.lastIndexOf('<table');
+      if (tableStartIdx !== -1) {
+        const tEndMatch = html.substring(tableStartIdx).match(/<\/table>/i);
+        if (tEndMatch) {
+          const tableHtml = html.substring(tableStartIdx, tableStartIdx + tEndMatch.index + 8);
+          const $t = cheerio.load(tableHtml);
+          const table = $t('table').first();
+
+          let fcf = null;
+          table.find('tr').each((ri, row) => {
+            if (fcf !== null) return false;
+            const label = getRowLabelFn($t, row);
+            if (!label) return;
+
+            if (FCF_PATTERNS.some(p => p.test(label))) {
+              const values = extractValuesFn($t, row);
+              if (values.length > 0) {
+                fcf = parseNumber(values[0]);
+                return false;
+              }
+            }
+          });
+
+          if (fcf !== null) return fcf;
+        }
+      }
+    }
+  }
+
+  // GlobNewswire形式 / フォールバック: 全テーブルを走査して "Free cash flow" 行を探す
   let fcf = null;
 
   $('table').each((ti, table) => {
@@ -217,11 +385,11 @@ function extractFCF($) {
 
     $(table).find('tr').each((ri, row) => {
       if (fcf !== null) return false;
-      const label = getRowLabel($, row);
+      const label = getRowLabelFn($, row);
       if (!label) return;
 
       if (FCF_PATTERNS.some(p => p.test(label))) {
-        const values = extractValues($, row);
+        const values = extractValuesFn($, row);
         if (values.length > 0) {
           fcf = parseNumber(values[0]);
           return false;
@@ -241,22 +409,29 @@ function extractFromFile(filePath, fy, q) {
   const $ = cheerio.load(html);
 
   // CFテーブルの検索（複数テーブルに分割されている場合がある）
-  const cfTables = findCFTables($);
+  const { tables: cfTables, format } = findCFTables(html, $);
 
   const result = {};
 
   // CF本体から Operating/Investing/Financing CF を抽出
   if (cfTables.length > 0) {
-    for (const table of cfTables) {
-      const cfData = extractFromTable($, table, CF_ROW_MAPPINGS);
-      Object.assign(result, cfData);
+    for (const tableItem of cfTables) {
+      // パターン3（SEC EDGAR indexOf）の場合は独自の$を持つオブジェクト
+      if (tableItem.$ && tableItem.table) {
+        const cfData = extractFromTable(tableItem.$, tableItem.table, CF_ROW_MAPPINGS, format);
+        Object.assign(result, cfData);
+      } else {
+        // パターン1/2: cheerio要素を直接使用
+        const cfData = extractFromTable($, tableItem, CF_ROW_MAPPINGS, format);
+        Object.assign(result, cfData);
+      }
     }
   } else {
     console.warn(`  警告: ${fy}/${q} - CASH FLOWSテーブルが見つかりません`);
   }
 
   // GAAP reconciliation から Free Cash Flow を抽出
-  const fcf = extractFCF($);
+  const fcf = extractFCF(html, $, format);
   if (fcf !== null) {
     result.freeCashFlow = fcf;
   }

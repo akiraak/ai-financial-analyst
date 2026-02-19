@@ -1,0 +1,294 @@
+{
+  "company": "NVIDIA",
+  "ticker": "NVDA",
+  "generatedAt": "2026-02-19",
+  "quarters": [
+    {
+      "label": "FY2025 Q1",
+      "fy": 2025,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 26044,
+      "costOfRevenue": 5638,
+      "grossProfit": 20406,
+      "researchAndDevelopment": 2720,
+      "sga": 777,
+      "totalOperatingExpenses": 3497,
+      "operatingIncome": 16909,
+      "nonOperatingIncome": 370,
+      "netIncome": 14881,
+      "eps": 0.6,
+      "price": 87.74,
+      "priceDate": "2024-04-26",
+      "sharesDiluted": 24890,
+      "segments": {
+        "dataCenter": 22600,
+        "gaming": 2600,
+        "professionalVisualization": 427,
+        "automotive": 329,
+        "oem": 88
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 31438,
+        "totalAssets": 77072,
+        "totalLiabilities": 27930,
+        "totalEquity": 49142,
+        "totalDebt": 9710
+      },
+      "cashFlow": {
+        "operatingCF": 15345,
+        "investingCF": -5693,
+        "financingCF": -9345,
+        "freeCashFlow": 14936
+      },
+      "segmentProfit": null,
+      "investments": null
+    },
+    {
+      "label": "FY2025 Q2",
+      "fy": 2025,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 30040,
+      "costOfRevenue": 7466,
+      "grossProfit": 22574,
+      "researchAndDevelopment": 3090,
+      "sga": 842,
+      "totalOperatingExpenses": 3932,
+      "operatingIncome": 18642,
+      "nonOperatingIncome": 572,
+      "netIncome": 16599,
+      "eps": 0.67,
+      "price": 113.06,
+      "priceDate": "2024-07-26",
+      "sharesDiluted": 24848,
+      "segments": {
+        "dataCenter": 26300,
+        "gaming": 2900,
+        "professionalVisualization": 454,
+        "automotive": 346,
+        "oem": 40
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 34800,
+        "totalAssets": 85227,
+        "totalLiabilities": 27070,
+        "totalEquity": 58157,
+        "totalDebt": 9711
+      },
+      "cashFlow": {
+        "operatingCF": 14489,
+        "investingCF": -3185,
+        "financingCF": -10320,
+        "freeCashFlow": 13483
+      },
+      "segmentProfit": null,
+      "investments": null
+    },
+    {
+      "label": "FY2025 Q3",
+      "fy": 2025,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 35082,
+      "costOfRevenue": 8926,
+      "grossProfit": 26156,
+      "researchAndDevelopment": 3390,
+      "sga": 897,
+      "totalOperatingExpenses": 4287,
+      "operatingIncome": 21869,
+      "nonOperatingIncome": 447,
+      "netIncome": 19309,
+      "eps": 0.78,
+      "price": 140.52,
+      "priceDate": "2024-10-28",
+      "sharesDiluted": 24774,
+      "segments": {
+        "dataCenter": 30800,
+        "gaming": 3300,
+        "professionalVisualization": 486,
+        "automotive": 449,
+        "oem": 47
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 38487,
+        "totalAssets": 96013,
+        "totalLiabilities": 30114,
+        "totalEquity": 65899,
+        "totalDebt": 9712
+      },
+      "cashFlow": {
+        "operatingCF": 17629,
+        "investingCF": -4345,
+        "financingCF": -12748,
+        "freeCashFlow": 16787
+      },
+      "segmentProfit": null,
+      "investments": null
+    },
+    {
+      "label": "FY2025 Q4",
+      "fy": 2025,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 39331,
+      "costOfRevenue": 10608,
+      "grossProfit": 28723,
+      "researchAndDevelopment": 3714,
+      "sga": 975,
+      "totalOperatingExpenses": 4689,
+      "operatingIncome": 24034,
+      "nonOperatingIncome": 1183,
+      "netIncome": 22091,
+      "eps": 0.89,
+      "price": 128.99,
+      "priceDate": "2025-01-28",
+      "sharesDiluted": 24706,
+      "segments": {
+        "dataCenter": 35600,
+        "gaming": 2500,
+        "professionalVisualization": 511,
+        "automotive": 570,
+        "oem": 150
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 43210,
+        "totalAssets": 111601,
+        "totalLiabilities": 32274,
+        "totalEquity": 79327,
+        "totalDebt": 9713
+      },
+      "cashFlow": {
+        "operatingCF": 16628,
+        "investingCF": -7198,
+        "financingCF": -9948,
+        "freeCashFlow": 15519
+      },
+      "segmentProfit": null,
+      "investments": null
+    },
+    {
+      "label": "FY2026 Q1",
+      "fy": 2026,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 44062,
+      "costOfRevenue": 17394,
+      "grossProfit": 26668,
+      "researchAndDevelopment": 3989,
+      "sga": 1041,
+      "totalOperatingExpenses": 5030,
+      "operatingIncome": 21638,
+      "nonOperatingIncome": 272,
+      "netIncome": 18775,
+      "eps": 0.76,
+      "price": 108.73,
+      "priceDate": "2025-04-28",
+      "sharesDiluted": 24611,
+      "segments": {
+        "dataCenter": 39100,
+        "gaming": 3800,
+        "professionalVisualization": 509,
+        "automotive": 567,
+        "oem": 86
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 53691,
+        "totalAssets": 125254,
+        "totalLiabilities": 41411,
+        "totalEquity": 83843,
+        "totalDebt": 8464
+      },
+      "cashFlow": {
+        "operatingCF": 27414,
+        "investingCF": -5216,
+        "financingCF": -15553,
+        "freeCashFlow": 26135
+      },
+      "segmentProfit": null,
+      "investments": null
+    },
+    {
+      "label": "FY2026 Q2",
+      "fy": 2026,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 46743,
+      "costOfRevenue": 12890,
+      "grossProfit": 33853,
+      "researchAndDevelopment": 4291,
+      "sga": 1122,
+      "totalOperatingExpenses": 5413,
+      "operatingIncome": 28440,
+      "nonOperatingIncome": 2766,
+      "netIncome": 26422,
+      "eps": 1.08,
+      "price": 176.75,
+      "priceDate": "2025-07-28",
+      "sharesDiluted": 24532,
+      "segments": {
+        "dataCenter": 41100,
+        "gaming": 4300,
+        "professionalVisualization": 601,
+        "automotive": 586,
+        "oem": 156
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 56791,
+        "totalAssets": 140740,
+        "totalLiabilities": 40609,
+        "totalEquity": 100131,
+        "totalDebt": 8466
+      },
+      "cashFlow": {
+        "operatingCF": 15365,
+        "investingCF": -7126,
+        "financingCF": -11834,
+        "freeCashFlow": 13450
+      },
+      "segmentProfit": null,
+      "investments": null
+    },
+    {
+      "label": "FY2026 Q3",
+      "fy": 2026,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 57006,
+      "costOfRevenue": 15157,
+      "grossProfit": 41849,
+      "researchAndDevelopment": 4705,
+      "sga": 1134,
+      "totalOperatingExpenses": 5839,
+      "operatingIncome": 36010,
+      "nonOperatingIncome": 1926,
+      "netIncome": 31910,
+      "eps": 1.3,
+      "price": 201.03,
+      "priceDate": "2025-10-28",
+      "sharesDiluted": 24483,
+      "segments": {
+        "dataCenter": 51200,
+        "gaming": 4300,
+        "professionalVisualization": 760,
+        "automotive": 592,
+        "oem": 154
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 60608,
+        "totalAssets": 161148,
+        "totalLiabilities": 42251,
+        "totalEquity": 118897,
+        "totalDebt": 8467
+      },
+      "cashFlow": {
+        "operatingCF": 23750,
+        "investingCF": -9025,
+        "financingCF": -14878,
+        "freeCashFlow": 22089
+      },
+      "segmentProfit": null,
+      "investments": null
+    }
+  ]
+}

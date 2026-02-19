@@ -1,5 +1,6 @@
 // press-release.html から貸借対照表データを抽出するスクリプト
 // 出力: balance-sheet.json
+// 対応形式: SEC EDGAR形式（<td>見出し + 同一テーブル内データ）、GlobNewswire形式
 //
 // "CONDENSED CONSOLIDATED BALANCE SHEETS" テーブルを解析し、
 // 当四半期末（1列目）のデータのみ取得する
@@ -41,7 +42,56 @@ function parseNumber(text) {
 }
 
 /**
- * 行から数値セルを抽出（B/Sテーブル用）
+ * SEC EDGAR形式: テーブル行から右寄せの数値セルを抽出
+ * 2列構成: [当四半期末, 前期末]
+ * 最初の値（当四半期末）を返す
+ */
+function extractValuesEdgar($, row) {
+  const cells = $(row).find('td');
+  const values = [];
+
+  cells.each((i, cell) => {
+    const $cell = $(cell);
+    const text = $cell.text().trim().replace(/\u00a0/g, '').replace(/\s+/g, '').trim();
+    const style = $cell.attr('style') || '';
+
+    // 右寄せセルから数値を抽出
+    if (style.includes('text-align:right')) {
+      if (text && text !== '$' && text !== '' && text !== '-' && text !== '—') {
+        values.push(text);
+      }
+    }
+  });
+
+  return values;
+}
+
+/**
+ * SEC EDGAR形式: 行のラベルテキストを取得
+ * ラベルは text-align:left のセル
+ */
+function getRowLabelEdgar($, row) {
+  const cells = $(row).find('td');
+  let label = '';
+
+  cells.each((i, cell) => {
+    const $cell = $(cell);
+    const text = $cell.text().trim().replace(/\u00a0/g, ' ').trim();
+    const style = $cell.attr('style') || '';
+
+    if (style.includes('text-align:left') && text && !label) {
+      // 数値のみのセルはスキップ（$記号のセル等）
+      if (!text.match(/^[\$\d,.\-()\s]+$/)) {
+        label = text;
+      }
+    }
+  });
+
+  return label;
+}
+
+/**
+ * GlobNewswire形式: 行から数値セルを抽出（B/Sテーブル用）
  * padding-left:0 のセルを数値セルとして判定
  */
 function extractValues($, row) {
@@ -109,24 +159,28 @@ function getRowLabel($, row) {
 
 /**
  * CONDENSED CONSOLIDATED BALANCE SHEETS テーブルを検索
+ * 戻り値: { table, format, $ } （format: 'edgar' or 'gnw'）
  */
-function findBalanceSheetTable($) {
+function findBalanceSheetTable(html, $) {
+  const TITLE = 'CONDENSED CONSOLIDATED BALANCE SHEETS';
   let table = null;
+  let format = 'gnw';
 
-  // パターン1: <td>内で検索
+  // パターン1: <td>内で検索（SEC EDGAR形式: タイトルとデータが同一テーブル）
   $('td').each((i, el) => {
     const text = $(el).text().trim().replace(/\u00a0/g, ' ').trim();
-    if (text === 'CONDENSED CONSOLIDATED BALANCE SHEETS') {
+    if (text === TITLE) {
       table = $(el).closest('table');
+      format = 'edgar';
       return false;
     }
   });
 
-  // パターン2: <strong>内で検索
+  // パターン2: <strong>内で検索（GlobNewswire形式）
   if (!table) {
     $('strong').each((i, el) => {
       const text = $(el).text().trim().replace(/\u00a0/g, ' ').trim();
-      if (text === 'CONDENSED CONSOLIDATED BALANCE SHEETS') {
+      if (text === TITLE) {
         const parent = $(el).closest('p');
         if (parent.length) {
           table = parent.nextAll('table').first();
@@ -134,12 +188,35 @@ function findBalanceSheetTable($) {
         if (!table || !table.length) {
           table = $(el).parent().nextAll('table').first();
         }
+        format = 'gnw';
         return false;
       }
     });
   }
 
-  return table;
+  // パターン3: SEC EDGAR形式フォールバック（<div><font>内にタイトル、直後に<table>）
+  // HTMLテキストからindexOfで位置を特定し、直後のtableを切り出す
+  if (!table || !table.length) {
+    const titleIdx = html.indexOf(TITLE);
+    if (titleIdx !== -1) {
+      const afterTitle = html.substring(titleIdx);
+      const tableMatch = afterTitle.match(/<table[\s>]/i);
+      if (tableMatch) {
+        const tableStart = titleIdx + tableMatch.index;
+        const tableEndMatch = html.substring(tableStart).match(/<\/table>/i);
+        if (tableEndMatch) {
+          const tableHtml = html.substring(tableStart, tableStart + tableEndMatch.index + 8);
+          const $table = cheerio.load(tableHtml);
+          table = $table('table').first();
+          format = 'edgar';
+          // 専用のcheerioインスタンスを返す
+          return { table, format, $: $table };
+        }
+      }
+    }
+  }
+
+  return { table, format, $ };
 }
 
 /**
@@ -147,22 +224,26 @@ function findBalanceSheetTable($) {
  */
 function extractFromFile(filePath, fy, q) {
   const html = fs.readFileSync(filePath, 'utf-8');
-  const $ = cheerio.load(html);
+  const $orig = cheerio.load(html);
 
-  const bsTable = findBalanceSheetTable($);
-  if (!bsTable) {
+  const { table: bsTable, format, $ } = findBalanceSheetTable(html, $orig);
+  if (!bsTable || !bsTable.length) {
     console.warn(`  警告: ${fy}/${q} - BALANCE SHEETSテーブルが見つかりません`);
     return null;
   }
+
+  // 形式に応じたラベル・値抽出関数を選択
+  const getLabelFn = format === 'edgar' ? getRowLabelEdgar : getRowLabel;
+  const getValuesFn = format === 'edgar' ? extractValuesEdgar : extractValues;
 
   const result = {};
   const rows = bsTable.find('tr');
 
   rows.each((i, row) => {
-    const label = getRowLabel($, row);
+    const label = getLabelFn($, row);
     if (!label) return;
 
-    const values = extractValues($, row);
+    const values = getValuesFn($, row);
     if (values.length === 0) return;
 
     // 1列目（当四半期末）のみ取得

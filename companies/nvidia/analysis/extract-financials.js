@@ -1,5 +1,6 @@
 // press-release.html から損益計算書データを抽出するスクリプト
 // 出力: financials.json
+// 対応形式: SEC EDGAR形式（<div>見出し + <table>データ）、GlobNewswire形式
 
 const fs = require('fs');
 const path = require('path');
@@ -27,14 +28,79 @@ const ROW_MAPPINGS = [
   { patterns: [/^Net income$/i], key: 'netIncome' },
 ];
 
-// EPSとシェア数は特別処理（"Net income per share:" セクション内の Basic/Diluted）
+/**
+ * テキストから数値をパース
+ * "(61)" → -61, "57,006" → 57006, "1.30" → 1.30, "-" → null
+ */
+function parseNumber(text) {
+  if (!text || text === '-' || text === '—') return null;
+
+  let negative = false;
+  let cleaned = text.replace(/[$\s]/g, '');
+  if (cleaned.startsWith('(')) {
+    negative = true;
+    cleaned = cleaned.replace(/[()]/g, '');
+  }
+
+  cleaned = cleaned.replace(/,/g, '');
+  const num = parseFloat(cleaned);
+  if (isNaN(num)) return null;
+  return negative ? -num : num;
+}
 
 /**
- * HTMLテーブルの行から数値を抽出する
- * 各データ値は3セル構成: [$, 数値, スペーサー]
- * 数値セルはpadding-left:0かつpadding-right:0（classまたはstyle）
+ * SEC EDGAR形式: テーブル行から右寄せの数値セルを抽出
+ * 4列構成: [当期Q, 前年Q, 当期YTD, 前年YTD]
+ * 最初の値（当期Q）を返す
  */
-function extractValues($, row) {
+function extractValuesEdgar($, row) {
+  const cells = $(row).find('td');
+  const values = [];
+
+  cells.each((i, cell) => {
+    const $cell = $(cell);
+    const text = $cell.text().trim().replace(/\u00a0/g, '').replace(/\s+/g, '').trim();
+    const style = $cell.attr('style') || '';
+
+    // 右寄せセルから数値を抽出
+    if (style.includes('text-align:right')) {
+      if (text && text !== '$' && text !== '' && text !== '-' && text !== '—') {
+        values.push(text);
+      }
+    }
+  });
+
+  return values;
+}
+
+/**
+ * SEC EDGAR形式: 行のラベルテキストを取得
+ * ラベルは text-align:left のセル（colspan >= 3 が多い）
+ */
+function getRowLabelEdgar($, row) {
+  const cells = $(row).find('td');
+  let label = '';
+
+  cells.each((i, cell) => {
+    const $cell = $(cell);
+    const text = $cell.text().trim().replace(/\u00a0/g, ' ').trim();
+    const style = $cell.attr('style') || '';
+
+    if (style.includes('text-align:left') && text && !label) {
+      // 数値のみのセルはスキップ
+      if (!text.match(/^[\$\d,.\-()\s]+$/)) {
+        label = text;
+      }
+    }
+  });
+
+  return label;
+}
+
+/**
+ * GlobNewswire形式: HTMLテーブルの行から数値を抽出する
+ */
+function extractValuesGnw($, row) {
   const cells = $(row).find('td');
   const values = [];
 
@@ -44,18 +110,15 @@ function extractValues($, row) {
     const style = $cell.attr('style') || '';
     const cls = $cell.attr('class') || '';
 
-    // 数値セルの判定: padding-left:0 かつ padding-right:0
     const isValueCell =
       (style.includes('padding-left: 0') && style.includes('padding-right: 0')) ||
       (cls.includes('gnw_padding_left_none') && cls.includes('gnw_padding_right_none'));
 
-    // text-align:rightも必要
     const isRightAligned =
       style.includes('text-align: right') || style.includes('text-align:right') ||
       cls.includes('gnw_align_right');
 
     if (isValueCell && isRightAligned && text) {
-      // $記号、空白のみ、&nbsp;のセルはスキップ
       if (text === '$' || text === '' || text === '-' || text === '—') return;
       values.push(text);
     }
@@ -65,32 +128,9 @@ function extractValues($, row) {
 }
 
 /**
- * テキストから数値をパース
- * "(61)" → -61, "57,006" → 57006, "1.30" → 1.30, "-" → null
+ * GlobNewswire形式: 行のラベルテキストを取得
  */
-function parseNumber(text) {
-  if (!text || text === '-' || text === '—') return null;
-
-  // 括弧は負数: "(61" → -61（閉じ括弧は次のセルにある場合がある）
-  let negative = false;
-  let cleaned = text.replace(/[$\s]/g, '');
-  if (cleaned.startsWith('(')) {
-    negative = true;
-    cleaned = cleaned.replace(/[()]/g, '');
-  }
-
-  // カンマ除去
-  cleaned = cleaned.replace(/,/g, '');
-
-  const num = parseFloat(cleaned);
-  if (isNaN(num)) return null;
-  return negative ? -num : num;
-}
-
-/**
- * 行のラベルテキストを取得（HTMLタグ除去、&nbsp;除去）
- */
-function getRowLabel($, row) {
+function getRowLabelGnw($, row) {
   const cells = $(row).find('td');
   let label = '';
 
@@ -99,14 +139,12 @@ function getRowLabel($, row) {
     const text = $cell.text().trim().replace(/\u00a0/g, ' ').trim();
     if (!text || text === ' ') return;
 
-    // ラベルセルかどうか: text-align:left または align系クラス
     const style = $cell.attr('style') || '';
     const cls = $cell.attr('class') || '';
     const isLabel =
       style.includes('text-align: left') || style.includes('text-align:left') ||
       cls.includes('gnw_align_left') || cls.includes('gnw_align_center');
 
-    // colspan付きのテキストセルはラベル
     const colspan = parseInt($cell.attr('colspan') || '1');
 
     if (isLabel || colspan >= 2) {
@@ -114,7 +152,6 @@ function getRowLabel($, row) {
     }
   });
 
-  // ラベルが見つからない場合は全セルテキストの先頭テキストを使う
   if (!label) {
     cells.each((i, cell) => {
       const text = $(cell).text().trim().replace(/\u00a0/g, ' ').trim();
@@ -134,51 +171,83 @@ function extractFromFile(filePath, fy, q) {
   const html = fs.readFileSync(filePath, 'utf-8');
   const $ = cheerio.load(html);
 
-  // CONDENSED CONSOLIDATED STATEMENTS OF INCOME テーブルを検索
-  // パターン1: タイトルが<td>内にある場合（多くの四半期）
-  // パターン2: タイトルが<p><strong>内にある場合（FY2024/Q2等）
+  const TITLE = 'CONDENSED CONSOLIDATED STATEMENTS OF INCOME';
   let incomeTable = null;
+  let format = 'gnw'; // 'gnw' or 'edgar'
 
-  // パターン1: <td>内を検索
+  // パターン1: <td>内にタイトルがある場合（GlobNewswire形式）
   $('td').each((i, el) => {
     const text = $(el).text().trim().replace(/\u00a0/g, ' ').trim();
-    if (text === 'CONDENSED CONSOLIDATED STATEMENTS OF INCOME') {
+    if (text === TITLE) {
       incomeTable = $(el).closest('table');
+      format = 'gnw';
       return false;
     }
   });
 
-  // パターン2: <strong>内を検索し、直後のテーブルを使用
+  // パターン2: <strong>内にタイトルがある場合
   if (!incomeTable) {
     $('strong').each((i, el) => {
       const text = $(el).text().trim().replace(/\u00a0/g, ' ').trim();
-      if (text === 'CONDENSED CONSOLIDATED STATEMENTS OF INCOME') {
-        // 親要素（<p>等）の次のテーブルを取得
+      if (text === TITLE) {
         const parent = $(el).closest('p');
         if (parent.length) {
           incomeTable = parent.nextAll('table').first();
         }
         if (!incomeTable || !incomeTable.length) {
-          // フォールバック: DOM順で次のテーブル
           incomeTable = $(el).parent().nextAll('table').first();
         }
+        format = 'gnw';
         return false;
       }
     });
   }
 
+  // パターン3: SEC EDGAR形式（<div><font>内にタイトル、直後に<table>）
   if (!incomeTable) {
-    console.warn(`  警告: ${fy}/${q} - CONDENSED CONSOLIDATED STATEMENTS OF INCOMEテーブルが見つかりません`);
+    // HTMLテキストから位置を特定し、直後のtableを取得
+    const titleIdx = html.indexOf(TITLE);
+    if (titleIdx !== -1) {
+      const afterTitle = html.substring(titleIdx);
+      const tableMatch = afterTitle.match(/<table[\s>]/i);
+      if (tableMatch) {
+        const tableStart = titleIdx + tableMatch.index;
+        const tableEndMatch = html.substring(tableStart).match(/<\/table>/i);
+        if (tableEndMatch) {
+          const tableHtml = html.substring(tableStart, tableStart + tableEndMatch.index + 8);
+          const $table = cheerio.load(tableHtml);
+          incomeTable = $table('table').first();
+          // テーブルの$コンテキストを変更
+          $ === $ ; // 元の$をそのまま使えないので、$tableを使う
+          format = 'edgar';
+
+          // SEC EDGAR形式は専用のcheerioインスタンスで処理
+          return extractFromEdgarTable($table, incomeTable, fy, q);
+        }
+      }
+    }
+  }
+
+  if (!incomeTable || !incomeTable.length) {
+    console.warn(`  警告: ${fy}/${q} - ${TITLE}テーブルが見つかりません`);
     return null;
   }
 
+  // GlobNewswire形式の解析
+  return extractFromTable($, incomeTable, format, fy, q);
+}
+
+/**
+ * SEC EDGAR形式のテーブルを解析
+ */
+function extractFromEdgarTable($, incomeTable, fy, q) {
   const result = {};
   let inEpsSection = false;
   let inSharesSection = false;
 
   const rows = incomeTable.find('tr');
   rows.each((i, row) => {
-    const label = getRowLabel($, row);
+    const label = getRowLabelEdgar($, row);
     if (!label) return;
 
     // EPS セクションの検出
@@ -193,7 +262,7 @@ function extractFromFile(filePath, fy, q) {
       return;
     }
 
-    const values = extractValues($, row);
+    const values = extractValuesEdgar($, row);
     if (values.length === 0) return;
 
     // 最初の値（Three Months Ended の当四半期列）を取得
@@ -226,6 +295,73 @@ function extractFromFile(filePath, fy, q) {
     }
 
     // 通常の行マッピング
+    for (const mapping of ROW_MAPPINGS) {
+      if (mapping.patterns.some(p => p.test(label))) {
+        if (!(mapping.key in result)) {
+          result[mapping.key] = firstValue;
+        }
+        break;
+      }
+    }
+  });
+
+  return result;
+}
+
+/**
+ * GlobNewswire形式のテーブルを解析
+ */
+function extractFromTable($, incomeTable, format, fy, q) {
+  const result = {};
+  let inEpsSection = false;
+  let inSharesSection = false;
+
+  const rows = incomeTable.find('tr');
+  rows.each((i, row) => {
+    const label = getRowLabelGnw($, row);
+    if (!label) return;
+
+    // EPS セクションの検出
+    if (label.match(/Net income per share/i)) {
+      inEpsSection = true;
+      inSharesSection = false;
+      return;
+    }
+    if (label.match(/Weighted average shares/i)) {
+      inSharesSection = true;
+      inEpsSection = false;
+      return;
+    }
+
+    const values = extractValuesGnw($, row);
+    if (values.length === 0) return;
+
+    const firstValue = parseNumber(values[0]);
+
+    if (inEpsSection) {
+      if (label.match(/^Basic$/i)) {
+        result.epsBasic = firstValue;
+        return;
+      }
+      if (label.match(/^Diluted$/i)) {
+        result.epsDiluted = firstValue;
+        inEpsSection = false;
+        return;
+      }
+    }
+
+    if (inSharesSection) {
+      if (label.match(/^Basic$/i)) {
+        result.sharesBasic = firstValue;
+        return;
+      }
+      if (label.match(/^Diluted$/i)) {
+        result.sharesDiluted = firstValue;
+        inSharesSection = false;
+        return;
+      }
+    }
+
     for (const mapping of ROW_MAPPINGS) {
       if (mapping.patterns.some(p => p.test(label))) {
         if (!(mapping.key in result)) {

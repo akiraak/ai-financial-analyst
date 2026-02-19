@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVIDIA (NVDA) 業績レポート</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <h1>NVIDIA <span class="ticker">NVDA</span></h1>
+      <div class="meta" id="meta"></div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- 四半期分析リンク -->
+    <div class="section" id="section-quarters">
+      <h2>四半期分析</h2>
+      <p style="font-size:0.85rem;color:#666;margin-bottom:12px;">各四半期をクリックすると、詳細分析ページを表示します。</p>
+      <div id="quarterLinksContainer"></div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>データソース: NVIDIA IR / Yahoo Finance</p>
+    <p><a href="../">企業一覧に戻る</a></p>
+  </div>
+
+  <script>
+    fetch('data.json')
+      .then(r => r.json())
+      .then(data => {
+        // メタ情報
+        const actual = data.quarters.filter(q => !q.isOutlook);
+        const first = actual[0]?.label || '';
+        const last = actual[actual.length - 1]?.label || '';
+        document.getElementById('meta').textContent =
+          `${first} ~ ${last} | ${actual.length}四半期 | 更新: ${data.generatedAt}`;
+
+        // 四半期分析リンク生成
+        const container = document.getElementById('quarterLinksContainer');
+        const fyGroups = {};
+        data.quarters.filter(q => !q.isOutlook).forEach(q => {
+          if (!fyGroups[q.fy]) fyGroups[q.fy] = [];
+          fyGroups[q.fy].push(q);
+        });
+        const sortedFYs = Object.keys(fyGroups).sort((a, b) => b - a);
+        let html = '';
+        for (const fy of sortedFYs) {
+          html += `<div class="quarter-fy-row"><span class="quarter-fy-label">FY${fy}</span>`;
+          const sorted = fyGroups[fy].sort((a, b) => a.q - b.q);
+          for (const q of sorted) {
+            html += `<a href="quarters/${q.fy}Q${q.q}/" class="quarter-link-item">Q${q.q}</a>`;
+          }
+          html += '</div>';
+        }
+        container.innerHTML = html;
+      })
+      .catch(err => console.error('データ読み込みエラー:', err));
+
+  </script>
+
+</body>
+</html>

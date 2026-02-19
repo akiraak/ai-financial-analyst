@@ -1,0 +1,53 @@
+{
+  "company": "NVIDIA",
+  "ticker": "NVDA",
+  "generatedAt": "2026-02-19",
+  "quarters": [
+    {
+      "label": "FY2025 Q1",
+      "fy": 2025,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 26044,
+      "costOfRevenue": 5638,
+      "grossProfit": 20406,
+      "researchAndDevelopment": 2720,
+      "sga": 777,
+      "totalOperatingExpenses": 3497,
+      "operatingIncome": 16909,
+      "nonOperatingIncome": 370,
+      "netIncome": 14881,
+      "eps": 0.6,
+      "price": 87.74,
+      "priceDate": "2024-04-26",
+      "sharesDiluted": 24890,
+      "segments": {
+        "dataCenter": 22600,
+        "gaming": 2600,
+        "professionalVisualization": 427,
+        "automotive": 329,
+        "oem": 88
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 31438,
+        "totalAssets": 77072,
+        "totalLiabilities": 27930,
+        "totalEquity": 49142,
+        "totalDebt": 9710
+      },
+      "cashFlow": {
+        "operatingCF": 15345,
+        "investingCF": -5693,
+        "financingCF": -9345,
+        "freeCashFlow": 14936
+      },
+      "segmentProfit": null,
+      "investments": null
+    }
+  ],
+  "currentQuarter": {
+    "fy": 2025,
+    "q": 1,
+    "label": "FY2025 Q1"
+  }
+}

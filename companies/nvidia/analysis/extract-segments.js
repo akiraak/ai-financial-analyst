@@ -1,8 +1,10 @@
 // press-release.html からセグメント別売上データを抽出するスクリプト
 // 出力: segments.json
 //
-// セグメントの見出し（<p><strong>Data Center</strong></p>）直後の
-// <ul> 内最初の <li> から売上金額を正規表現で抽出する
+// 対応形式:
+// 1. GlobNewswire形式: <p><strong>セグメント名</strong></p> 直後の <ul><li> から金額抽出
+// 2. SEC EDGAR形式: <font style="font-weight:700">セグメント名</font> 直後の
+//    narrative text から "revenue was [a record] $X billion/million" パターンで金額抽出
 
 const fs = require('fs');
 const path = require('path');
@@ -37,13 +39,10 @@ function parseDollarAmount(text) {
 }
 
 /**
- * press-release.html からセグメント別売上を抽出
- * パターン: <p><strong>セグメント名</strong></p> の直後の <ul> 内最初の <li> に売上記載
+ * GlobNewswire形式: <strong>セグメント名</strong> 直後の <ul><li> から売上を抽出
  */
-function extractFromFile(filePath, fy, q) {
-  const html = fs.readFileSync(filePath, 'utf-8');
+function extractFromFileGnw(html, fy, q) {
   const $ = cheerio.load(html);
-
   const result = {};
 
   // <strong> 要素を走査し、セグメント見出しを探す
@@ -95,6 +94,98 @@ function extractFromFile(filePath, fy, q) {
   });
 
   return Object.keys(result).length > 0 ? result : null;
+}
+
+/**
+ * SEC EDGAR形式: <font style="font-weight:700">セグメント名</font> の後の
+ * narrative text から "revenue was [a record] $X billion/million" を抽出
+ *
+ * SEC EDGARのHTML構造:
+ *   <div><font style="font-weight:700">Data Center</font></div>
+ *   <div>...<font>...revenue was a record $22.6 billion...</font></div>
+ *
+ * HTMLタグを除去したテキストから金額パターンをマッチさせる
+ */
+function extractFromFileEdgar(html, fy, q) {
+  const result = {};
+
+  // font-weight:700 のテキストからセグメント見出しを探す
+  const headingRe = /font-weight:700[^>]*>([^<]+)/g;
+  let match;
+
+  while ((match = headingRe.exec(html)) !== null) {
+    const headingText = match[1].trim();
+
+    // セグメント名にマッチするか判定
+    let segKey = null;
+    for (const def of SEGMENT_DEFS) {
+      if (def.patterns.some(p => p.test(headingText))) {
+        segKey = def.key;
+        break;
+      }
+    }
+    if (!segKey) continue;
+    if (segKey in result) continue; // 同じセグメントの重複を防ぐ
+
+    // 見出し位置から後ろ3000文字を取得（次のセグメントまでの範囲内で検索）
+    const afterHeading = html.substring(match.index, match.index + 3000);
+
+    // HTMLタグを除去してプレーンテキスト化
+    const plainText = afterHeading.replace(/<[^>]+>/g, ' ').replace(/&\w+;/g, ' ').replace(/&#\d+;/g, ' ');
+
+    // "revenue was [a record] $X billion/million" パターンで金額を抽出
+    const revMatch = plainText.match(/revenue\s+was\s+(?:a\s+record\s+)?\$([\d,.]+)\s*(billion|million)/i);
+    if (revMatch) {
+      const num = parseFloat(revMatch[1].replace(/,/g, ''));
+      if (!isNaN(num)) {
+        const amount = revMatch[2].toLowerCase() === 'billion'
+          ? Math.round(num * 1000)
+          : Math.round(num);
+        result[segKey] = amount;
+      } else {
+        console.warn(`  警告: ${fy}/${q} - ${segKey} の金額をパースできません: "${revMatch[0]}"`);
+      }
+    } else {
+      // フォールバック: 最初のドル金額を試す
+      const fallbackMatch = plainText.match(/\$([\d,.]+)\s*(billion|million)/i);
+      if (fallbackMatch) {
+        const num = parseFloat(fallbackMatch[1].replace(/,/g, ''));
+        if (!isNaN(num)) {
+          const amount = fallbackMatch[2].toLowerCase() === 'billion'
+            ? Math.round(num * 1000)
+            : Math.round(num);
+          result[segKey] = amount;
+          console.warn(`  注意: ${fy}/${q} - ${segKey} はフォールバックパターンで抽出: $${amount}M`);
+        }
+      } else {
+        console.warn(`  警告: ${fy}/${q} - ${segKey} の売上金額が見つかりません`);
+      }
+    }
+  }
+
+  return Object.keys(result).length > 0 ? result : null;
+}
+
+/**
+ * press-release.html からセグメント別売上を抽出
+ * GlobNewswire形式を先に試し、失敗した場合はSEC EDGAR形式にフォールバック
+ */
+function extractFromFile(filePath, fy, q) {
+  const html = fs.readFileSync(filePath, 'utf-8');
+
+  // パターン1: GlobNewswire形式（<strong>見出し + <ul><li>）
+  const gnwResult = extractFromFileGnw(html, fy, q);
+  if (gnwResult) {
+    return gnwResult;
+  }
+
+  // パターン2: SEC EDGAR形式（<font font-weight:700>見出し + narrative text）
+  const edgarResult = extractFromFileEdgar(html, fy, q);
+  if (edgarResult) {
+    return edgarResult;
+  }
+
+  return null;
 }
 
 // メイン処理

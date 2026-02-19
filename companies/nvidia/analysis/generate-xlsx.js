@@ -15,8 +15,7 @@ const STOCK_PRICES_PATH = path.join(DIR, 'stock-prices.json');
 const OUTPUT_PATH = path.join(DIR, 'NVDA-Financials.xlsx');
 
 // === 設定 ===
-const DISPLAY_START_FY = 2022;
-const DISPLAY_END_FY = 2026;
+// 表示範囲はfinancials.jsonのデータから自動判定
 const QUARTERS = ['Q1', 'Q2', 'Q3', 'Q4'];
 
 // === EPS スプリット調整 ===
@@ -59,6 +58,11 @@ async function main() {
   // データ読み込み
   const financials = JSON.parse(fs.readFileSync(FINANCIALS_PATH, 'utf-8'));
   const stockPrices = JSON.parse(fs.readFileSync(STOCK_PRICES_PATH, 'utf-8'));
+
+  // financials.jsonから表示範囲を自動判定
+  const fyKeys = Object.keys(financials).map(k => parseInt(k.replace('FY', ''))).sort((a, b) => a - b);
+  const DISPLAY_START_FY = fyKeys[0];
+  const DISPLAY_END_FY = fyKeys[fyKeys.length - 1];
 
   // 表示する四半期一覧を構築
   const quarters = [];

@@ -157,17 +157,16 @@ const QuarterDetail = {
       el.innerHTML = html;
     }
 
-    // 決算サマリーの挿入
-    if (qData.summary && qData.summary.length > 0) {
-      const section = document.getElementById('section-summary');
-      const title = document.getElementById('summaryTitle');
-      const content = document.getElementById('summaryContent');
-
+    // 決算サマリーの挿入（KPIセクションと統合）
+    const title = document.getElementById('summaryTitle');
+    const content = document.getElementById('summaryContent');
+    if (title) {
       title.textContent = quarterKey.replace(/(\d{4})Q(\d)/, 'FY$1 Q$2') + ' 決算サマリー';
+    }
+    if (content && qData.summary && qData.summary.length > 0) {
       content.innerHTML = qData.summary.map(item =>
         `<p><span class="label">${item.label}:</span> ${item.text}</p>`
       ).join('');
-      section.style.display = '';
     }
 
     // 投資コミットメントの挿入

@@ -40,3 +40,10 @@
   - Phase 3: バリュエーション指標（PER / PSR / PBR 複合折れ線チャート×1）
     - sharesDilutedをスプリット調整してdata.jsonに統合
   - Phase 4: 成長率推移（売上高・営業利益・純利益のYoY成長率チャート×1）
+- [x] 投資ポートフォリオの抽出・可視化（extract-investments.js → investments.json、チャート13）
+- [x] 決算資料リンクセクションをダッシュボードに追加（ir-links.json、アコーディオンUI）
+- [x] 財務データのHTML表+xlsxダウンロードをダッシュボードに追加
+  - 全24項目（P/L・費用・利益・株式指標）をExcel準拠で表示
+  - カテゴリ別背景色（売上:緑、利益:青、費用:橙、株式:紫）
+  - 年度+四半期の2段ヘッダー、会社予想は「Q4予想」と明示
+  - NVDA-Financials.xlsx ダウンロードリンク付き

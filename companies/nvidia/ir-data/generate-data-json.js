@@ -23,6 +23,19 @@ function adjustShares(shares, fy, qn) {
   return Math.round(shares * multiplier);
 }
 
+// 営業外収支を計算（generate-xlsx.js と同じロジック）
+function getNonOperatingIncome(d) {
+  if (d.totalOtherIncome != null) return d.totalOtherIncome;
+  if (d.incomeBeforeTax != null && d.operatingIncome != null) {
+    return d.incomeBeforeTax - d.operatingIncome;
+  }
+  let total = 0;
+  if (d.interestIncome != null) total += d.interestIncome;
+  if (d.interestExpense != null) total += d.interestExpense;
+  if (d.otherIncomeNet != null) total += d.otherIncomeNet;
+  return total;
+}
+
 // EPS スプリット調整（generate-xlsx.js と同じロジック）
 function adjustEPS(eps, fy, qn) {
   if (eps == null) return null;
@@ -69,6 +82,7 @@ for (const fyStr of fys) {
       sga: d.sga ?? null,
       totalOperatingExpenses: d.totalOperatingExpenses ?? null,
       operatingIncome: d.operatingIncome,
+      nonOperatingIncome: getNonOperatingIncome(d),
       netIncome: d.netIncome,
       // EPS（スプリット調整済み）
       eps: adjustEPS(d.epsDiluted, fy, qn),

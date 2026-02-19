@@ -177,13 +177,25 @@ body {
   z-index: 2;
 }
 
-.financial-table tr:nth-child(even) td {
-  background: #fafbfc;
-}
+/* カテゴリ別行の背景色（売上:緑、利益:青、費用:橙、株式:紫） */
+.financial-table tr.cat-revenue td { background: #e8f5e9; }
+.financial-table tr.cat-revenue td:first-child { background: #e8f5e9; color: #2e7d32; }
+.financial-table tr.cat-profit td { background: #e3f2fd; }
+.financial-table tr.cat-profit td:first-child { background: #e3f2fd; color: #1565c0; }
+.financial-table tr.cat-expense td { background: #fff3e0; }
+.financial-table tr.cat-expense td:first-child { background: #fff3e0; color: #e65100; }
+.financial-table tr.cat-stock td { background: #f3e5f5; }
+.financial-table tr.cat-stock td:first-child { background: #f3e5f5; color: #7b1fa2; }
 
-.financial-table tr:nth-child(even) td:first-child {
-  background: #fafbfc;
-}
+/* 小項目（比率・成長率）行は薄い背景 */
+.financial-table tr.cat-revenue.sub td { background: #f1f8f2; }
+.financial-table tr.cat-revenue.sub td:first-child { background: #f1f8f2; color: #388e3c; }
+.financial-table tr.cat-profit.sub td { background: #edf4fb; }
+.financial-table tr.cat-profit.sub td:first-child { background: #edf4fb; color: #1976d2; }
+.financial-table tr.cat-expense.sub td { background: #fff8ef; }
+.financial-table tr.cat-expense.sub td:first-child { background: #fff8ef; color: #ef6c00; }
+.financial-table tr.cat-stock.sub td { background: #f9f0fc; }
+.financial-table tr.cat-stock.sub td:first-child { background: #f9f0fc; color: #8e24aa; }
 
 .financial-table .outlook {
   color: #999;

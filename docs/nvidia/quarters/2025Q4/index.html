@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVIDIA 四半期詳細</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <h1>NVIDIA <span class="ticker">NVDA</span></h1>
+      <div class="meta" id="headerMeta"></div>
+    </div>
+  </div>
+
+  <!-- 四半期ナビ（前後移動） -->
+  <nav class="quarter-nav">
+    <div class="container">
+      <a href="#" id="prevLink" class="disabled">&lt; 前の四半期</a>
+      <span class="current" id="currentLabel"></span>
+      <a href="#" id="nextLink" class="disabled">次の四半期 &gt;</a>
+    </div>
+  </nav>
+
+  <!-- セクションナビ -->
+  <nav class="section-nav">
+    <div class="container">
+      <a href="#section-kpi">KPI</a>
+      <a href="#section-pl">P/L詳細</a>
+      <a href="#section-a">収益全体像</a>
+      <a href="#section-b">財務基盤</a>
+      <a href="#section-c">株式市場評価</a>
+      <a href="#section-d">セグメント分析</a>
+      <a href="#section-e">投資ポートフォリオ</a>
+      <a href="#section-filings">決算資料</a>
+    </div>
+  </nav>
+
+  <div class="container" id="mainContent">
+
+    <!-- Outlookバナー -->
+    <div class="outlook-banner" id="outlookBanner" style="display:none;">
+      この四半期はガイダンス（会社予想）です。開示されている項目のみ表示しています。
+    </div>
+
+    <!-- KPIサマリー -->
+    <div class="section" id="section-kpi">
+      <h2>KPIサマリー</h2>
+      <div class="kpi-grid" id="kpiGrid"></div>
+    </div>
+
+    <!-- P/L詳細テーブル + ウォーターフォール -->
+    <div class="section" id="section-pl">
+      <h2>損益計算書 (P/L)</h2>
+      <div id="plTableContainer"></div>
+      <div class="chart-wrapper" id="waterfallContainer" style="margin-top:20px;">
+        <canvas id="waterfallChart"></canvas>
+      </div>
+    </div>
+
+    <!-- ========== A. 収益全体像 ========== -->
+    <div class="section-group-label" id="section-a">A. 収益全体像</div>
+
+    <div class="section">
+      <h2>P/L推移</h2>
+      <div class="chart-wrapper"><canvas id="plChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>利益率推移</h2>
+      <div class="chart-wrapper"><canvas id="marginChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>成長率推移（前年同期比）</h2>
+      <div class="chart-wrapper"><canvas id="growthChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>費用構造</h2>
+      <div class="chart-wrapper"><canvas id="costChart"></canvas></div>
+    </div>
+
+    <!-- ========== B. 財務基盤 ========== -->
+    <div class="section-group-label" id="section-b">B. 財務基盤</div>
+
+    <div class="section">
+      <h2>B/S概要</h2>
+      <div class="chart-wrapper"><canvas id="balanceSheetChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>キャッシュフロー</h2>
+      <div class="chart-wrapper"><canvas id="cashFlowChart"></canvas></div>
+    </div>
+
+    <!-- ========== C. 株式市場評価 ========== -->
+    <div class="section-group-label" id="section-c">C. 株式市場評価</div>
+
+    <div class="section">
+      <h2>株価 & PER</h2>
+      <div class="chart-wrapper"><canvas id="pricePERChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>バリュエーション指標</h2>
+      <div class="chart-wrapper"><canvas id="valuationChart"></canvas></div>
+    </div>
+
+    <!-- ========== D. セグメント分析 ========== -->
+    <div class="section-group-label" id="section-d">D. セグメント分析</div>
+
+    <div class="section">
+      <h2>セグメント別売上</h2>
+      <div class="chart-wrapper"><canvas id="segmentRevenueChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>セグメント構成比</h2>
+      <div class="chart-wrapper"><canvas id="segmentCompositionChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>セグメント営業利益</h2>
+      <div class="chart-wrapper"><canvas id="segmentProfitChart"></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>セグメント営業利益率</h2>
+      <div class="chart-wrapper"><canvas id="segmentMarginChart"></canvas></div>
+    </div>
+
+    <!-- ========== E. 投資ポートフォリオ ========== -->
+    <div class="section-group-label" id="section-e">E. 投資ポートフォリオ</div>
+
+    <div class="section">
+      <h2>投資ポートフォリオ</h2>
+      <div class="chart-wrapper"><canvas id="investmentChart"></canvas></div>
+    </div>
+
+    <!-- 決算資料リンク -->
+    <div class="section" id="section-filings">
+      <h2>決算資料</h2>
+      <div id="filingsContainer"></div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p><a href="../">四半期一覧</a> | <a href="../../">ダッシュボード</a> | <a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a></p>
+  </div>
+
+  <script src="../../../js/chart-builder.js"></script>
+  <script src="../../../js/quarter-detail.js"></script>
+</body>
+</html>

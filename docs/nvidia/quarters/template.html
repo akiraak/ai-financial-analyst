@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NVIDIA 四半期詳細</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../../../css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
 <body>
@@ -26,7 +26,7 @@
   </nav>
 
   <!-- セクションナビ -->
-  <nav class="section-nav" id="sectionNav" style="display:none;">
+  <nav class="section-nav">
     <div class="container">
       <a href="#section-kpi">KPI</a>
       <a href="#section-pl">P/L詳細</a>
@@ -39,7 +39,7 @@
     </div>
   </nav>
 
-  <div class="container" id="mainContent" style="display:none;">
+  <div class="container" id="mainContent">
 
     <!-- Outlookバナー -->
     <div class="outlook-banner" id="outlookBanner" style="display:none;">
@@ -149,20 +149,11 @@
 
   </div>
 
-  <!-- エラー表示 -->
-  <div class="container" id="errorContainer" style="display:none;">
-    <div class="error-message">
-      <h2 id="errorTitle">エラー</h2>
-      <p id="errorText"></p>
-      <p style="margin-top:16px;"><a href="./">ダッシュボードに戻る</a></p>
-    </div>
-  </div>
-
   <div class="footer">
-    <p><a href="./">ダッシュボードに戻る</a> | <a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a></p>
+    <p><a href="../">四半期一覧</a> | <a href="../../">ダッシュボード</a> | <a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a></p>
   </div>
 
-  <script src="../js/chart-builder.js"></script>
-  <script src="../js/quarter-detail.js"></script>
+  <script src="../../../js/chart-builder.js"></script>
+  <script src="../../../js/quarter-detail.js"></script>
 </body>
 </html>

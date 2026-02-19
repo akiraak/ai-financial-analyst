@@ -80,13 +80,13 @@ Phase 2のB/Sデータを使い、追加指標を算出する（**Phase 2完了�
 
 | Phase | ファイル | 操作 |
 |-------|---------|------|
-| 1 | `ir-data/extract-segments.js` | 新規 |
-| 1 | `ir-data/segments.json` | 生成 |
-| 2 | `ir-data/extract-balance-sheet.js` | 新規 |
-| 2 | `ir-data/extract-cash-flows.js` | 新規 |
-| 2 | `ir-data/balance-sheet.json` | 生成 |
-| 2 | `ir-data/cash-flows.json` | 生成 |
-| 1-3 | `ir-data/generate-data-json.js` | 修正 |
+| 1 | `analysis/extract-segments.js` | 新規 |
+| 1 | `analysis/segments.json` | 生成 |
+| 2 | `analysis/extract-balance-sheet.js` | 新規 |
+| 2 | `analysis/extract-cash-flows.js` | 新規 |
+| 2 | `analysis/balance-sheet.json` | 生成 |
+| 2 | `analysis/cash-flows.json` | 生成 |
+| 1-3 | `analysis/generate-data-json.js` | 修正 |
 | 1-4 | `docs/js/chart-builder.js` | 修正 |
 | 1-4 | `docs/nvidia/index.html` | 修正 |
 | 1-3 | `docs/nvidia/data.json` | 再生成 |

@@ -362,7 +362,7 @@
               if (q.isOutlook) {
                 html += `<span class="quarter-link-item outlook">Q${q.q}予想</span>`;
               } else {
-                html += `<a href="quarter.html?fy=${q.fy}&q=${q.q}" class="quarter-link-item">Q${q.q}</a>`;
+                html += `<a href="quarters/${q.fy}Q${q.q}/" class="quarter-link-item">Q${q.q}</a>`;
               }
             }
             html += '</div>';
@@ -471,7 +471,7 @@
             th.classList.add('outlook');
           } else {
             const a = document.createElement('a');
-            a.href = 'quarter.html?fy=' + d.fy + '&q=' + d.q;
+            a.href = 'quarters/' + d.fy + 'Q' + d.q + '/';
             a.textContent = 'Q' + d.q;
             a.style.color = 'inherit';
             a.style.textDecoration = 'underline';

@@ -1,0 +1,126 @@
+{
+  "FY2022": {
+    "Q1": {
+      "gaming": 2760,
+      "dataCenter": 2050,
+      "professionalVisualization": 372,
+      "automotive": 154
+    },
+    "Q2": {
+      "gaming": 3060,
+      "dataCenter": 2370,
+      "professionalVisualization": 519,
+      "automotive": 152
+    },
+    "Q3": {
+      "gaming": 3220,
+      "dataCenter": 2940,
+      "professionalVisualization": 577,
+      "automotive": 135
+    },
+    "Q4": {
+      "gaming": 3420,
+      "dataCenter": 3260,
+      "professionalVisualization": 643,
+      "automotive": 125
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "dataCenter": 3750,
+      "gaming": 3620,
+      "professionalVisualization": 622,
+      "automotive": 138
+    },
+    "Q2": {
+      "dataCenter": 3810,
+      "gaming": 2040,
+      "professionalVisualization": 496,
+      "automotive": 220
+    },
+    "Q3": {
+      "dataCenter": 3830,
+      "gaming": 1570,
+      "professionalVisualization": 200,
+      "automotive": 251
+    },
+    "Q4": {
+      "dataCenter": 3620,
+      "gaming": 1830,
+      "professionalVisualization": 226,
+      "automotive": 294
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "dataCenter": 4280,
+      "gaming": 2240,
+      "professionalVisualization": 295,
+      "automotive": 296
+    },
+    "Q2": {
+      "dataCenter": 10320,
+      "gaming": 2490,
+      "professionalVisualization": 379,
+      "automotive": 253
+    },
+    "Q3": {
+      "dataCenter": 14510,
+      "gaming": 2860,
+      "professionalVisualization": 416,
+      "automotive": 261
+    },
+    "Q4": {
+      "dataCenter": 18400,
+      "gaming": 2900,
+      "professionalVisualization": 463,
+      "automotive": 281
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "dataCenter": 22600,
+      "gaming": 2600,
+      "professionalVisualization": 427,
+      "automotive": 329
+    },
+    "Q2": {
+      "dataCenter": 26300,
+      "gaming": 2900,
+      "professionalVisualization": 454,
+      "automotive": 346
+    },
+    "Q3": {
+      "dataCenter": 30800,
+      "gaming": 3300,
+      "professionalVisualization": 486,
+      "automotive": 449
+    },
+    "Q4": {
+      "dataCenter": 35600,
+      "gaming": 2500,
+      "professionalVisualization": 511,
+      "automotive": 570
+    }
+  },
+  "FY2026": {
+    "Q1": {
+      "dataCenter": 39100,
+      "gaming": 3800,
+      "professionalVisualization": 509,
+      "automotive": 567
+    },
+    "Q2": {
+      "dataCenter": 41100,
+      "gaming": 4300,
+      "professionalVisualization": 601,
+      "automotive": 586
+    },
+    "Q3": {
+      "dataCenter": 51200,
+      "gaming": 4300,
+      "professionalVisualization": 760,
+      "automotive": 592
+    }
+  }
+}

@@ -1,19 +1,10 @@
 // quarter-detail.js — 四半期詳細ページのロジック
-// ChartBuilder（chart-builder.js）の13チャートを再利用し、
-// 選択四半期までのデータで時系列チャートを表示する
+// ./data.json を読み込み、KPIサマリー + ChartBuilderの13チャートを描画する
+// data.json には currentQuarter と、その四半期までの全quartersが含まれる
 
 const QuarterDetail = {
 
   // === ユーティリティ ===
-
-  getParams() {
-    const params = new URLSearchParams(window.location.search);
-    return { fy: parseInt(params.get('fy')), q: parseInt(params.get('q')) };
-  },
-
-  findIndex(quarters, fy, q) {
-    return quarters.findIndex(d => d.fy === fy && d.q === q);
-  },
 
   fmtMoney(val) {
     if (val == null) return '---';
@@ -69,20 +60,26 @@ const QuarterDetail = {
 
     if (idx > 0) {
       const prev = quarters[idx - 1];
-      prevLink.href = `quarter.html?fy=${prev.fy}&q=${prev.q}`;
+      prevLink.href = `../${prev.fy}Q${prev.q}/`;
       prevLink.textContent = `\u2190 ${prev.label}`;
       prevLink.classList.remove('disabled');
     }
 
-    if (idx < quarters.length - 1) {
-      const next = quarters[idx + 1];
-      nextLink.href = `quarter.html?fy=${next.fy}&q=${next.q}`;
-      nextLink.textContent = `${next.label} \u2192`;
+    // 次の四半期はdata.jsonに含まれないので、全体data.jsonから判定
+    // currentQuarterの次を計算
+    const curr = quarters[idx];
+    const nextFy = curr.q === 4 ? curr.fy + 1 : curr.fy;
+    const nextQ = curr.q === 4 ? 1 : curr.q + 1;
+    // 次のフォルダが存在するかfetchで確認せず、リンクだけ設定（存在しなければ404）
+    // ただしOutlook(最後)の場合は次がないので非表示
+    if (!curr.isOutlook) {
+      nextLink.href = `../${nextFy}Q${nextQ}/`;
+      nextLink.textContent = `FY${nextFy} Q${nextQ} \u2192`;
       nextLink.classList.remove('disabled');
     }
   },
 
-  // === KPIサマリー（該当四半期のハイライト） ===
+  // === KPIサマリー ===
 
   renderKPI(quarters, idx) {
     const d = quarters[idx];
@@ -205,28 +202,20 @@ const QuarterDetail = {
     const floating = [];
     const colors = [];
 
-    // 売上高
     floating.push([0, d.revenue]); colors.push(totalColor);
-    // 売上原価
     floating.push([d.grossProfit, d.revenue]); colors.push(negativeColor);
-    // 粗利益
     floating.push([0, d.grossProfit]); colors.push(totalColor);
-    // R&D
     let afterRD = d.grossProfit - d.researchAndDevelopment;
     floating.push([afterRD, d.grossProfit]); colors.push(negativeColor);
-    // SGA
     let afterSGA = afterRD - (d.sga || 0);
     floating.push([afterSGA, afterRD]); colors.push(negativeColor);
-    // 営業利益
     floating.push([0, d.operatingIncome]); colors.push(totalColor);
-    // 営業外収支
     const nonOp = d.nonOperatingIncome || 0;
     if (nonOp >= 0) {
       floating.push([d.operatingIncome, d.operatingIncome + nonOp]); colors.push(positiveColor);
     } else {
       floating.push([d.operatingIncome + nonOp, d.operatingIncome]); colors.push(negativeColor);
     }
-    // 純利益
     floating.push([0, d.netIncome]); colors.push(totalColor);
 
     new Chart(ctx, {
@@ -282,55 +271,31 @@ const QuarterDetail = {
     container.innerHTML = `<div class="filings-links">${links}</div>`;
   },
 
-  // === エラー表示 ===
-
-  showError(title, text) {
-    document.getElementById('errorContainer').style.display = 'block';
-    document.getElementById('errorTitle').textContent = title;
-    document.getElementById('errorText').textContent = text;
-  },
-
   // === メインエントリポイント ===
 
   init() {
-    const { fy, q } = this.getParams();
-
-    if (isNaN(fy) || isNaN(q) || q < 1 || q > 4) {
-      this.showError('パラメータエラー', '有効な四半期を指定してください（例: ?fy=2026&q=3）');
-      return;
-    }
-
     Promise.all([
-      fetch('data.json').then(r => r.json()),
-      fetch('ir-links.json').then(r => r.json())
+      fetch('./data.json').then(r => r.json()),
+      fetch('../../ir-links.json').then(r => r.json())
     ]).then(([data, irLinks]) => {
-      const allQuarters = data.quarters;
-      const idx = this.findIndex(allQuarters, fy, q);
+      const quarters = data.quarters;
+      const idx = quarters.length - 1; // 最後の四半期が「この四半期」
+      const d = quarters[idx];
 
-      if (idx < 0) {
-        this.showError('データなし', `FY${fy} Q${q} のデータが見つかりません。`);
-        return;
-      }
-
-      const d = allQuarters[idx];
-
-      // メインコンテンツ表示
-      document.getElementById('mainContent').style.display = 'block';
-      document.getElementById('sectionNav').style.display = 'block';
-
+      // Outlookバナー
       if (d.isOutlook) {
         document.getElementById('outlookBanner').style.display = 'block';
       }
 
       // ヘッダー・ナビ
       this.renderHeader(d);
-      this.renderNav(allQuarters, idx);
+      this.renderNav(quarters, idx);
 
-      // KPIサマリー（該当四半期のハイライト）
-      this.renderKPI(allQuarters, idx);
+      // KPIサマリー
+      this.renderKPI(quarters, idx);
 
       // P/L詳細テーブル
-      this.renderPLTable(allQuarters, idx);
+      this.renderPLTable(quarters, idx);
 
       // ウォーターフォールチャート
       if (d.revenue && !d.isOutlook) {
@@ -342,41 +307,34 @@ const QuarterDetail = {
       }
 
       // === 時系列チャート（ChartBuilderを再利用） ===
-      // 選択四半期までのデータを切り出す
-      const slicedData = {
-        ...data,
-        quarters: allQuarters.slice(0, idx + 1)
-      };
-
       // A. 収益全体像
-      ChartBuilder.createPLChart(document.getElementById('plChart'), slicedData);
-      ChartBuilder.createMarginChart(document.getElementById('marginChart'), slicedData);
-      ChartBuilder.createGrowthChart(document.getElementById('growthChart'), slicedData);
-      ChartBuilder.createCostChart(document.getElementById('costChart'), slicedData);
+      ChartBuilder.createPLChart(document.getElementById('plChart'), data);
+      ChartBuilder.createMarginChart(document.getElementById('marginChart'), data);
+      ChartBuilder.createGrowthChart(document.getElementById('growthChart'), data);
+      ChartBuilder.createCostChart(document.getElementById('costChart'), data);
 
       // B. 財務基盤
-      ChartBuilder.createBalanceSheetChart(document.getElementById('balanceSheetChart'), slicedData);
-      ChartBuilder.createCashFlowChart(document.getElementById('cashFlowChart'), slicedData);
+      ChartBuilder.createBalanceSheetChart(document.getElementById('balanceSheetChart'), data);
+      ChartBuilder.createCashFlowChart(document.getElementById('cashFlowChart'), data);
 
       // C. 株式市場評価
-      ChartBuilder.createPricePERChart(document.getElementById('pricePERChart'), slicedData);
-      ChartBuilder.createValuationChart(document.getElementById('valuationChart'), slicedData);
+      ChartBuilder.createPricePERChart(document.getElementById('pricePERChart'), data);
+      ChartBuilder.createValuationChart(document.getElementById('valuationChart'), data);
 
       // D. セグメント分析
-      ChartBuilder.createSegmentRevenueChart(document.getElementById('segmentRevenueChart'), slicedData);
-      ChartBuilder.createSegmentCompositionChart(document.getElementById('segmentCompositionChart'), slicedData);
-      ChartBuilder.createSegmentProfitChart(document.getElementById('segmentProfitChart'), slicedData);
-      ChartBuilder.createSegmentMarginChart(document.getElementById('segmentMarginChart'), slicedData);
+      ChartBuilder.createSegmentRevenueChart(document.getElementById('segmentRevenueChart'), data);
+      ChartBuilder.createSegmentCompositionChart(document.getElementById('segmentCompositionChart'), data);
+      ChartBuilder.createSegmentProfitChart(document.getElementById('segmentProfitChart'), data);
+      ChartBuilder.createSegmentMarginChart(document.getElementById('segmentMarginChart'), data);
 
       // E. 投資ポートフォリオ
-      ChartBuilder.createInvestmentChart(document.getElementById('investmentChart'), slicedData);
+      ChartBuilder.createInvestmentChart(document.getElementById('investmentChart'), data);
 
       // 決算資料リンク
-      this.renderFilings(irLinks, fy, q);
+      this.renderFilings(irLinks, d.fy, d.q);
 
     }).catch(err => {
       console.error(err);
-      this.showError('読み込みエラー', 'データの読み込みに失敗しました。');
     });
   }
 };

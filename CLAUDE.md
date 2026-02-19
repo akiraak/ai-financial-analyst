@@ -36,7 +36,7 @@ ai-financial-analyst/
 │       │   │   │   └── ...              # その他資料（企業固有の名前で保存）
 │       │   │   └── ...
 │       │   └── README.md      # 資料一覧・URL対応表・ファイル説明
-│       └── ir-data/           # 分析用データ・スクリプト
+│       └── analysis/           # 分析用データ・スクリプト
 │           ├── extract-financials.js  # P/Lデータ抽出
 │           ├── fetch-stock-prices.js  # 四半期末株価取得
 │           ├── generate-xlsx.js       # xlsx生成
@@ -50,10 +50,17 @@ ai-financial-analyst/
 │   ├── css/
 │   │   └── style.css          # 共通スタイル
 │   ├── js/
-│   │   └── chart-builder.js   # 共通チャート生成ロジック
+│   │   ├── chart-builder.js   # 共通チャート生成ロジック（13チャート）
+│   │   └── quarter-detail.js  # 四半期詳細ページのロジック
 │   └── nvidia/
 │       ├── index.html         # NVIDIAレポートページ
-│       └── data.json          # 統合データ（financials + stock-prices）
+│       ├── data.json          # 統合データ（全四半期）
+│       └── quarters/          # 四半期別分析ページ
+│           ├── index.html     # 四半期選択ページ
+│           ├── template.html  # 詳細ページテンプレート
+│           └── <YYYYQN>/     # 例: 2026Q3/
+│               ├── index.html # 四半期詳細ページ（テンプレートコピー）
+│               └── data.json  # その四半期までのデータ
 ```
 
 ## 作業フロー: 決算資料の取得

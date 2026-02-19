@@ -35,7 +35,7 @@ AIを活用した株式の財務分析ツール。決算資料から業績デー
 ├── workflows/          # 処理フロー定義
 ├── companies/nvidia/
 │   ├── filings/        # 決算資料の原本（FY2022〜FY2026）
-│   └── ir-data/        # 抽出スクリプト・データ・xlsx
+│   └── analysis/        # 抽出スクリプト・データ・xlsx
 └── docs/               # GitHub Pages公開ディレクトリ
     ├── index.html      # 企業一覧
     └── nvidia/         # NVIDIAダッシュボード

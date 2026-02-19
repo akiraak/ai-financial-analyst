@@ -1,10 +1,11 @@
-// financials.json + stock-prices.json を統合して docs/nvidia/data.json を生成する
+// 全データソースを統合して docs/nvidia/data.json + 四半期別data.json を生成する
 const fs = require('fs');
 const path = require('path');
 
 const DIR = __dirname;
 const ROOT = path.resolve(DIR, '../../..');
 const OUTPUT = path.join(ROOT, 'docs/nvidia/data.json');
+const QUARTERS_DIR = path.join(ROOT, 'docs/nvidia/quarters');
 
 const financials = JSON.parse(fs.readFileSync(path.join(DIR, 'financials.json'), 'utf-8'));
 const stockPrices = JSON.parse(fs.readFileSync(path.join(DIR, 'stock-prices.json'), 'utf-8'));
@@ -144,6 +145,29 @@ const data = {
   quarters,
 };
 
+// 全期間data.json を出力
 fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });
 fs.writeFileSync(OUTPUT, JSON.stringify(data, null, 2));
 console.log(`出力: ${OUTPUT} (${quarters.length} 四半期)`);
+
+// 四半期別data.json + index.html を出力
+const templatePath = path.join(QUARTERS_DIR, 'template.html');
+const template = fs.existsSync(templatePath) ? fs.readFileSync(templatePath, 'utf-8') : null;
+
+for (let i = 0; i < quarters.length; i++) {
+  const q = quarters[i];
+  const dirName = `${q.fy}Q${q.q}`;
+  const qDir = path.join(QUARTERS_DIR, dirName);
+  const qData = {
+    ...data,
+    quarters: quarters.slice(0, i + 1),
+    currentQuarter: { fy: q.fy, q: q.q, label: q.label },
+  };
+  fs.mkdirSync(qDir, { recursive: true });
+  fs.writeFileSync(path.join(qDir, 'data.json'), JSON.stringify(qData, null, 2));
+  // テンプレートHTMLをコピー
+  if (template) {
+    fs.writeFileSync(path.join(qDir, 'index.html'), template);
+  }
+}
+console.log(`出力: ${QUARTERS_DIR}/ (${quarters.length} フォルダ)`);

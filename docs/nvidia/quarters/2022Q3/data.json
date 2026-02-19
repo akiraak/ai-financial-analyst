@@ -1,0 +1,180 @@
+{
+  "company": "NVIDIA",
+  "ticker": "NVDA",
+  "generatedAt": "2026-02-19",
+  "quarters": [
+    {
+      "label": "FY2022 Q1",
+      "fy": 2022,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 5661,
+      "costOfRevenue": 2032,
+      "grossProfit": 3629,
+      "researchAndDevelopment": 1153,
+      "sga": 520,
+      "totalOperatingExpenses": 1673,
+      "operatingIncome": 1956,
+      "nonOperatingIncome": 88,
+      "netIncome": 1912,
+      "eps": 0.08,
+      "price": 15.28,
+      "priceDate": "2021-04-28",
+      "sharesDiluted": 25280,
+      "segments": {
+        "dataCenter": 2050,
+        "gaming": 2760,
+        "professionalVisualization": 372,
+        "automotive": 154,
+        "oem": 325
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 12667,
+        "totalAssets": 30796,
+        "totalLiabilities": 12022,
+        "totalEquity": 18774,
+        "totalDebt": 6963
+      },
+      "cashFlow": {
+        "operatingCF": 1874,
+        "investingCF": -1272,
+        "financingCF": -471,
+        "freeCashFlow": 1557
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 2210,
+          "operatingIncome": 861
+        },
+        "graphics": {
+          "revenue": 3451,
+          "operatingIncome": 1786
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": null,
+        "publiclyHeldBalance": 133,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
+      }
+    },
+    {
+      "label": "FY2022 Q2",
+      "fy": 2022,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 6507,
+      "costOfRevenue": 2292,
+      "grossProfit": 4215,
+      "researchAndDevelopment": 1245,
+      "sga": 526,
+      "totalOperatingExpenses": 1771,
+      "operatingIncome": 2444,
+      "nonOperatingIncome": -50,
+      "netIncome": 2374,
+      "eps": 0.09,
+      "price": 19.5,
+      "priceDate": "2021-07-28",
+      "sharesDiluted": 25320,
+      "segments": {
+        "dataCenter": 2370,
+        "gaming": 3060,
+        "professionalVisualization": 519,
+        "automotive": 152,
+        "oem": 406
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 19654,
+        "totalAssets": 38650,
+        "totalLiabilities": 17503,
+        "totalEquity": 21147,
+        "totalDebt": 11943
+      },
+      "cashFlow": {
+        "operatingCF": 2682,
+        "investingCF": -2533,
+        "financingCF": 4501,
+        "freeCashFlow": 2478
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 2600,
+          "operatingIncome": 1034
+        },
+        "graphics": {
+          "revenue": 3907,
+          "operatingIncome": 2127
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": null,
+        "publiclyHeldBalance": 128,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
+      }
+    },
+    {
+      "label": "FY2022 Q3",
+      "fy": 2022,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 7103,
+      "costOfRevenue": 2472,
+      "grossProfit": 4631,
+      "researchAndDevelopment": 1403,
+      "sga": 557,
+      "totalOperatingExpenses": 1960,
+      "operatingIncome": 2671,
+      "nonOperatingIncome": -33,
+      "netIncome": 2464,
+      "eps": 0.1,
+      "price": 24.94,
+      "priceDate": "2021-10-28",
+      "sharesDiluted": 25380,
+      "segments": {
+        "dataCenter": 2940,
+        "gaming": 3220,
+        "professionalVisualization": 577,
+        "automotive": 135,
+        "oem": 231
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 19298,
+        "totalAssets": 40632,
+        "totalLiabilities": 16834,
+        "totalEquity": 23798,
+        "totalDebt": 11943
+      },
+      "cashFlow": {
+        "operatingCF": 1519,
+        "investingCF": -4438,
+        "financingCF": -1421,
+        "freeCashFlow": 1276
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 3011,
+          "operatingIncome": 1332
+        },
+        "graphics": {
+          "revenue": 4092,
+          "operatingIncome": 2160
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 172,
+        "publiclyHeldBalance": 136,
+        "netAdditions": null,
+        "unrealizedGains": null,
+        "impairments": null
+      }
+    }
+  ],
+  "currentQuarter": {
+    "fy": 2022,
+    "q": 3,
+    "label": "FY2022 Q3"
+  }
+}

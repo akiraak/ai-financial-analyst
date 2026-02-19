@@ -29,7 +29,6 @@
   <nav class="section-nav">
     <div class="container">
       <a href="#section-kpi">KPI</a>
-      <a href="#section-pl">P/L詳細</a>
       <a href="#section-a">収益全体像</a>
       <a href="#section-b">財務基盤</a>
       <a href="#section-c">株式市場評価</a>
@@ -50,15 +49,6 @@
     <div class="section" id="section-kpi">
       <h2>KPIサマリー</h2>
       <div class="kpi-grid" id="kpiGrid"></div>
-    </div>
-
-    <!-- P/L詳細テーブル + ウォーターフォール -->
-    <div class="section" id="section-pl">
-      <h2>損益計算書 (P/L)</h2>
-      <div id="plTableContainer"></div>
-      <div class="chart-wrapper" id="waterfallContainer" style="margin-top:20px;">
-        <canvas id="waterfallChart"></canvas>
-      </div>
     </div>
 
     <!-- ========== A. 収益全体像 ========== -->
@@ -84,18 +74,6 @@
         <div class="chart-description">
           <p><span class="label">概要:</span> 粗利率・営業利益率・純利益率の推移を折れ線グラフで表示。収益性の構造的変化を追跡できる。</p>
           <p class="insight"><span class="label">分析:</span> FY2026 Q1に粗利率が60.5%へ一時低下（Blackwellアーキテクチャ初期の製造コスト増が要因とみられる）したが、Q2で72.4%、Q3で73.4%へ急速に回復。営業利益率もQ1の49.1%からQ3の63.2%に改善し、新製品の歩留まり改善が進んでいることを示す。直近の粗利率73〜74%台は、FY2025のピーク（78.4%）よりやや低いが依然として高水準を維持。</p>
-        </div>
-      </details>
-    </div>
-
-    <div class="section">
-      <h2>成長率推移（前年同期比）</h2>
-      <div class="chart-wrapper"><canvas id="growthChart"></canvas></div>
-      <details class="chart-details">
-        <summary>解説・分析</summary>
-        <div class="chart-description">
-          <p><span class="label">概要:</span> 売上高・営業利益・純利益の前年同期比（YoY）成長率を折れ線グラフで表示。0%ラインを基準に成長の加速・減速を把握できる。</p>
-          <p class="insight"><span class="label">分析:</span> 直近1年の売上YoY成長率はFY2025 Q4 +77.9%、FY2026 Q1 +69.2%、Q2 +55.6%、Q3 +62.5%と60〜80%台を維持。FY2024 Q2〜Q3の+100〜200%台からは減速しているが、これは比較対象の前年が既に高水準であるベース効果による。FY2026 Q1は営業利益YoY+28.0%と鈍化したが、粗利率低下の一時的影響であり、Q3には+64.7%に回復。</p>
         </div>
       </details>
     </div>

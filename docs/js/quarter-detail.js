@@ -1,5 +1,5 @@
 // quarter-detail.js — 四半期詳細ページのロジック
-// ./data.json を読み込み、KPIサマリー + ChartBuilderの13チャートを描画する
+// ./data.json を読み込み、KPIサマリー + ChartBuilderの11チャートを描画する
 // data.json には currentQuarter と、その四半期までの全quartersが含まれる
 
 const QuarterDetail = {
@@ -133,118 +133,6 @@ const QuarterDetail = {
     `).join('');
   },
 
-  // === P/L詳細テーブル ===
-
-  renderPLTable(quarters, idx) {
-    const d = quarters[idx];
-    const container = document.getElementById('plTableContainer');
-
-    const rows = [
-      { label: '売上高', field: 'revenue', isTotal: true },
-      { label: '売上原価', field: 'costOfRevenue', indent: true },
-      { label: '粗利益', field: 'grossProfit', isTotal: true },
-      { label: 'R&D（研究開発費）', field: 'researchAndDevelopment', indent: true },
-      { label: 'SGA（販管費）', field: 'sga', indent: true },
-      { label: '営業利益', field: 'operatingIncome', isTotal: true },
-      { label: '営業外収支', field: 'nonOperatingIncome', indent: true },
-      { label: '純利益', field: 'netIncome', isTotal: true },
-      { label: 'EPS（希薄化後）', field: 'eps' }
-    ];
-
-    let html = `<table class="pl-detail-table">
-      <thead><tr>
-        <th style="text-align:left;">項目</th>
-        <th>金額</th>
-        <th>対売上比</th>
-        <th>前期比 (QoQ)</th>
-        <th>前年比 (YoY)</th>
-      </tr></thead><tbody>`;
-
-    for (const row of rows) {
-      const val = d[row.field];
-      const cls = row.isTotal ? 'total-row' : row.indent ? 'sub-row' : '';
-
-      let ratio = '---';
-      if (d.revenue && val != null && row.field !== 'eps' && row.field !== 'revenue') {
-        ratio = this.fmtPct(val / d.revenue * 100);
-      } else if (row.field === 'revenue') {
-        ratio = '100%';
-      }
-
-      const amount = row.field === 'eps'
-        ? (val != null ? '$' + val.toFixed(2) : '---')
-        : this.fmtTableMoney(val);
-
-      html += `<tr class="${cls}">
-        <td>${row.label}</td>
-        <td>${amount}</td>
-        <td>${ratio}</td>
-        <td>${this.fmtChange(this.qoq(quarters, idx, row.field))}</td>
-        <td>${this.fmtChange(this.yoy(quarters, idx, row.field))}</td>
-      </tr>`;
-    }
-
-    html += '</tbody></table>';
-    container.innerHTML = html;
-  },
-
-  // === P/Lウォーターフォールチャート ===
-
-  createWaterfallChart(ctx, quarter) {
-    const d = quarter;
-    if (!d.revenue) return;
-
-    const labels = ['売上高', '売上原価', '粗利益', 'R&D', 'SGA', '営業利益', '営業外', '純利益'];
-    const positiveColor = 'rgba(90, 158, 111, 0.8)';
-    const negativeColor = 'rgba(201, 107, 126, 0.8)';
-    const totalColor = 'rgba(61, 107, 74, 0.9)';
-
-    const floating = [];
-    const colors = [];
-
-    floating.push([0, d.revenue]); colors.push(totalColor);
-    floating.push([d.grossProfit, d.revenue]); colors.push(negativeColor);
-    floating.push([0, d.grossProfit]); colors.push(totalColor);
-    let afterRD = d.grossProfit - d.researchAndDevelopment;
-    floating.push([afterRD, d.grossProfit]); colors.push(negativeColor);
-    let afterSGA = afterRD - (d.sga || 0);
-    floating.push([afterSGA, afterRD]); colors.push(negativeColor);
-    floating.push([0, d.operatingIncome]); colors.push(totalColor);
-    const nonOp = d.nonOperatingIncome || 0;
-    if (nonOp >= 0) {
-      floating.push([d.operatingIncome, d.operatingIncome + nonOp]); colors.push(positiveColor);
-    } else {
-      floating.push([d.operatingIncome + nonOp, d.operatingIncome]); colors.push(negativeColor);
-    }
-    floating.push([0, d.netIncome]); colors.push(totalColor);
-
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels,
-        datasets: [{ data: floating, backgroundColor: colors, borderRadius: 3, barPercentage: 0.7 }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            callbacks: {
-              label: (context) => {
-                const [low, high] = context.raw;
-                return `$${(high - low).toLocaleString()}M`;
-              }
-            }
-          }
-        },
-        scales: {
-          y: { beginAtZero: true, ticks: { callback: v => '$' + (v / 1000).toFixed(0) + 'B' } }
-        }
-      }
-    });
-  },
-
   // === 決算資料リンク ===
 
   renderFilings(irLinks, fy, q) {
@@ -294,23 +182,10 @@ const QuarterDetail = {
       // KPIサマリー
       this.renderKPI(quarters, idx);
 
-      // P/L詳細テーブル
-      this.renderPLTable(quarters, idx);
-
-      // ウォーターフォールチャート
-      if (d.revenue && !d.isOutlook) {
-        this.createWaterfallChart(
-          document.getElementById('waterfallChart').getContext('2d'), d
-        );
-      } else {
-        document.getElementById('waterfallContainer').style.display = 'none';
-      }
-
       // === 時系列チャート（ChartBuilderを再利用） ===
       // A. 収益全体像
       ChartBuilder.createPLChart(document.getElementById('plChart'), data);
       ChartBuilder.createMarginChart(document.getElementById('marginChart'), data);
-      ChartBuilder.createGrowthChart(document.getElementById('growthChart'), data);
       ChartBuilder.createCostChart(document.getElementById('costChart'), data);
 
       // B. 財務基盤

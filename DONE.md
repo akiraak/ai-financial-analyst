@@ -74,3 +74,8 @@
 - [x] ir-links.json 404エラー・決算資料セクション非表示を修正
   - generate-ir-links.jsを作成し、フルビルドのStep 6で自動生成するよう変更
   - full-build.mdのワークフローにgenerate-ir-links.jsを追加
+- [x] 分析ページの末尾に使用した財務データへのリンクを追加
+- [x] 分析ページにエクセルの内容（財務データ表）を表示
+  - quarter-detail.jsにrenderFinancialTable()を追加（旧ランディングページのコードを移植）
+  - template.htmlに財務データセクション+セクションナビリンクを追加
+  - 24行の財務項目（P/L・費用・利益率・株式指標）をカテゴリ別色分けで表示

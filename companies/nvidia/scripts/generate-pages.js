@@ -225,6 +225,7 @@ function generateTemplate() {
   <nav class="section-nav">
     <div class="container">
       <a href="#section-kpi">決算サマリー</a>
+      <a href="#section-financial-table">財務データ</a>
       <a href="#section-filings">決算資料</a>
     </div>
   </nav>
@@ -328,6 +329,14 @@ function generateTemplate() {
     <div class="section" id="investmentCommitmentsSection" style="display:none;">
       <h2 id="investmentCommitmentsTitle"></h2>
       <div id="investmentCommitmentsContent"></div>
+    </div>
+
+    <!-- 財務データテーブル -->
+    <div class="section" id="section-financial-table">
+      <h2>財務データ</h2>
+      <div class="financial-table-wrapper">
+        <table id="financialTable" class="financial-table"></table>
+      </div>
     </div>
 
     <!-- 決算資料リンク -->

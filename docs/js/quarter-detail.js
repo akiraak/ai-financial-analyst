@@ -210,6 +210,105 @@ const QuarterDetail = {
     }
   },
 
+  // === 財務データテーブル ===
+
+  renderFinancialTable(quarters) {
+    const tbl = document.getElementById('financialTable');
+    if (!tbl) return;
+
+    const q = quarters;
+    // フォーマットヘルパー
+    const fmt = v => v != null ? '$' + v.toLocaleString() : '—';
+    const pct = (a, b) => (a != null && b) ? (a / b * 100).toFixed(1) + '%' : '—';
+    const ratio = (a, b) => (a != null && b != null && b !== 0) ? (a / b * 100).toFixed(1) + '%' : '—';
+    const growth = (a, b) => (a != null && b != null && b !== 0) ? ((a / b - 1) * 100).toFixed(1) + '%' : '—';
+    const dlr = v => v != null ? '$' + v.toFixed(2) : '—';
+    const num = v => v != null ? v.toFixed(1) + 'x' : '—';
+
+    // 全項目定義（Excelの行順序に準拠）
+    // cat: revenue(緑), profit(青), expense(橙), stock(紫) / sub: 小項目（薄い背景）
+    const rows = [
+      { label: '売上高', cat: 'revenue', fn: (d, i) => fmt(d.revenue) },
+      { label: '前期比', cat: 'revenue', sub: true, fn: (d, i) => i > 0 && d.revenue != null && q[i-1].revenue ? ratio(d.revenue, q[i-1].revenue) : '—' },
+      { label: '前年比', cat: 'revenue', sub: true, fn: (d, i) => i >= 4 && d.revenue != null && q[i-4].revenue ? ratio(q[i-4].revenue, d.revenue) : '—' },
+      { label: '粗利益', cat: 'profit', fn: (d, i) => fmt(d.grossProfit) },
+      { label: '粗利率', cat: 'profit', sub: true, fn: (d, i) => pct(d.grossProfit, d.revenue) },
+      { label: '粗利 前年比', cat: 'profit', sub: true, fn: (d, i) => i >= 4 && d.grossProfit != null && q[i-4].grossProfit ? ratio(d.grossProfit, q[i-4].grossProfit) : '—' },
+      { label: 'R&D', cat: 'expense', fn: (d, i) => fmt(d.researchAndDevelopment) },
+      { label: 'R&D 売上比', cat: 'expense', sub: true, fn: (d, i) => pct(d.researchAndDevelopment, d.revenue) },
+      { label: 'その他販管費', cat: 'expense', fn: (d, i) => fmt(d.sga) },
+      { label: '販管費 売上比', cat: 'expense', sub: true, fn: (d, i) => pct(d.sga, d.revenue) },
+      { label: '販管費合計', cat: 'expense', fn: (d, i) => fmt(d.totalOperatingExpenses) },
+      { label: '販管費 売上比', cat: 'expense', sub: true, fn: (d, i) => pct(d.totalOperatingExpenses, d.revenue) },
+      { label: '販管費 前年比', cat: 'expense', sub: true, fn: (d, i) => i >= 4 && d.totalOperatingExpenses != null && q[i-4].totalOperatingExpenses ? ratio(d.totalOperatingExpenses, q[i-4].totalOperatingExpenses) : '—' },
+      { label: '営業利益', cat: 'profit', fn: (d, i) => fmt(d.operatingIncome) },
+      { label: '営業利益率', cat: 'profit', sub: true, fn: (d, i) => pct(d.operatingIncome, d.revenue) },
+      { label: '営業利益 前年比', cat: 'profit', sub: true, fn: (d, i) => i >= 4 ? growth(d.operatingIncome, q[i-4].operatingIncome) : '—' },
+      { label: '営業外収支', cat: 'profit', fn: (d, i) => d.nonOperatingIncome != null ? fmt(d.nonOperatingIncome) : '—' },
+      { label: '純利益', cat: 'profit', fn: (d, i) => fmt(d.netIncome) },
+      { label: '純利益率', cat: 'profit', sub: true, fn: (d, i) => pct(d.netIncome, d.revenue) },
+      { label: '純利益 前年比', cat: 'profit', sub: true, fn: (d, i) => i >= 4 ? growth(d.netIncome, q[i-4].netIncome) : '—' },
+      { label: 'EPS', cat: 'stock', fn: (d, i) => dlr(d.eps) },
+      { label: 'PER', cat: 'stock', sub: true, fn: (d, i) => {
+        if (i < 3 || d.price == null) return '—';
+        const epsSum = q.slice(i-3, i+1).reduce((s, x) => s + (x.eps || 0), 0);
+        return epsSum > 0 ? num(d.price / epsSum) : '—';
+      }},
+      { label: 'PER 4Q平均', cat: 'stock', sub: true, fn: (d, i) => {
+        if (i < 6 || d.price == null) return '—';
+        const pers = [];
+        for (let j = i - 3; j <= i; j++) {
+          if (j < 3 || q[j].price == null) continue;
+          const es = q.slice(j-3, j+1).reduce((s, x) => s + (x.eps || 0), 0);
+          if (es > 0) pers.push(q[j].price / es);
+        }
+        return pers.length >= 2 ? num(pers.reduce((a, b) => a + b) / pers.length) : '—';
+      }},
+      { label: '株価', cat: 'stock', fn: (d, i) => dlr(d.price) },
+    ];
+
+    // ヘッダー（2行: 年度 + 四半期）
+    const thead = tbl.createTHead();
+    // 行1: 年度ヘッダー（colspan）
+    const fyRow = thead.insertRow();
+    const fyCorner = document.createElement('th');
+    fyCorner.rowSpan = 2;
+    fyRow.appendChild(fyCorner);
+    const fyGroups = [];
+    q.forEach(d => {
+      const last = fyGroups[fyGroups.length - 1];
+      if (last && last.fy === d.fy) { last.count++; }
+      else { fyGroups.push({ fy: d.fy, count: 1 }); }
+    });
+    fyGroups.forEach(g => {
+      const th = document.createElement('th');
+      th.textContent = g.fy;
+      th.colSpan = g.count;
+      th.style.textAlign = 'center';
+      fyRow.appendChild(th);
+    });
+    // 行2: 四半期ラベル
+    const qRow = thead.insertRow();
+    q.forEach(d => {
+      const th = document.createElement('th');
+      th.textContent = d.isOutlook ? 'Q' + d.q + '予想' : 'Q' + d.q;
+      if (d.isOutlook) th.classList.add('outlook');
+      qRow.appendChild(th);
+    });
+    // データ行
+    const tbody = tbl.createTBody();
+    rows.forEach(r => {
+      const tr = tbody.insertRow();
+      tr.className = 'cat-' + r.cat + (r.sub ? ' sub' : '');
+      tr.insertCell().textContent = r.label;
+      q.forEach((d, i) => {
+        const td = tr.insertCell();
+        td.textContent = r.fn(d, i);
+        if (d.isOutlook) td.classList.add('outlook');
+      });
+    });
+  },
+
   // === 決算資料リンク ===
 
   renderFilings(irLinks, fy, q) {
@@ -260,6 +359,9 @@ const QuarterDetail = {
 
       // KPIサマリー
       this.renderKPI(quarters, idx);
+
+      // 財務データテーブル
+      this.renderFinancialTable(quarters);
 
       // 分析テキスト（概要・解説・サマリー・投資コミットメント）
       this.renderAnalysisText(analysisData, quarterKey);

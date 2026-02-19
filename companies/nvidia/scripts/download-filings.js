@@ -16,6 +16,14 @@ const filings = [
 
 const basePath = path.join(__dirname, '..', 'filings');
 
+// config.json から期間設定を読み込み
+const CONFIG_PATH = path.join(__dirname, '..', 'config.json');
+let config = { pageYears: 2, chartYears: 2 }; // デフォルト値
+if (fs.existsSync(CONFIG_PATH)) {
+  config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf-8'));
+}
+const downloadYears = config.pageYears + config.chartYears;
+
 function buildEdgarUrl(adsh, filename) {
   // EDGAR URL: https://www.sec.gov/Archives/edgar/data/{CIK}/{adsh_no_dashes}/{filename}
   const adshNoDashes = adsh.replace(/-/g, '');
@@ -46,7 +54,14 @@ function download(url, dest) {
 }
 
 (async () => {
-  for (const f of filings) {
+  // DL対象をconfig設定に基づいてフィルタリング（最新から downloadYears 年分）
+  const maxQuarters = downloadYears * 4;
+  const targetFilings = filings.length <= maxQuarters
+    ? filings
+    : filings.slice(filings.length - maxQuarters);
+  console.log(`設定: pageYears=${config.pageYears}, chartYears=${config.chartYears}, DL対象=${downloadYears}年分 (${targetFilings.length}四半期)\n`);
+
+  for (const f of targetFilings) {
     const url = buildEdgarUrl(f.adsh, f.file);
     const destDir = path.join(basePath, f.fy, f.q);
     const dest = path.join(destDir, 'press-release.html');
@@ -62,8 +77,8 @@ function download(url, dest) {
     await new Promise(r => setTimeout(r, 100));
   }
 
-  // リンク情報をJSONに保存
-  const linksData = filings.map(f => ({
+  // リンク情報をJSONに保存（DL対象分のみ）
+  const linksData = targetFilings.map(f => ({
     ...f,
     url: buildEdgarUrl(f.adsh, f.file),
     localPath: `${f.fy}/${f.q}/press-release.html`
@@ -73,5 +88,5 @@ function download(url, dest) {
     JSON.stringify(linksData, null, 2)
   );
 
-  console.log('\n全四半期のリンク情報を quarterly-links.json に保存しました');
+  console.log(`\n${targetFilings.length}四半期のリンク情報を quarterly-links.json に保存しました`);
 })();

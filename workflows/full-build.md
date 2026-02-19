@@ -11,7 +11,24 @@
 
 ## 手順
 
-### 0. 既存データの削除
+### 0. 設定の確認（config.json）
+
+`companies/<企業名>/config.json` を確認する。
+
+- **config.json が存在する場合:** 内容を表示し、ユーザーに確認する
+  ```
+  現在の設定:
+  - ページ生成: N年分（四半期詳細ページの生成対象）
+  - チャート表示: N年分（各ページのグラフに表示するデータ期間）
+  - DL対象: N年分（自動計算: pageYears + chartYears）
+  この設定で進めますか？ 変更する場合は新しい値を指定してください。
+  ```
+- **config.json が存在しない場合:** 以下の2つを質問し、config.json を作成する
+  1. 「四半期詳細ページは何年分生成しますか？」→ `pageYears`
+  2. 「各ページのグラフには何年分のデータを表示しますか？」→ `chartYears`
+  - DL対象年数 = pageYears + chartYears（自動計算、質問しない）
+
+### 0.5. 既存データの削除
 
 ビルド前に生成済みデータをクリーンアップする。古いファイルが残るのを防ぐ。
 
@@ -22,11 +39,13 @@ mkdir -p companies/<企業名>/data
 mkdir -p companies/<企業名>/filings
 ```
 
-**注意:** `scripts/` 配下の処理コードは削除しない。
+**注意:** `scripts/` 配下の処理コードと `config.json` は削除しない。
 
 ### 1. 決算資料のダウンロード
 
 [download-filings.md](download-filings.md) に従い、IRページから全資料をダウンロードする。
+
+config.json の設定に基づいてDL対象を決定する（DL年数 = `pageYears + chartYears`）。
 
 ```bash
 node companies/<企業名>/scripts/download-filings.js
@@ -88,6 +107,8 @@ node companies/<企業名>/scripts/validate-xlsx.js
 - ソース: data/financials.json, data/stock-prices.json, filings/FY*/Q*/press-release.*
 
 ### 5. ページ生成
+
+config.json の設定に基づいてページ生成・チャートデータ範囲を決定する。
 
 ```bash
 node companies/<企業名>/scripts/generate-pages.js

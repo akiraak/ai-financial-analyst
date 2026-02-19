@@ -282,6 +282,11 @@ docs/                              # GitHub Pages公開ディレクトリ
 - `docs/<企業名>/quarters/<YYYYQN>/data.json` — 各四半期までの累積データ
 - `docs/<企業名>/quarters/<YYYYQN>/index.html` — template.html のコピー
 
+**期間制御:** `config.json` の `pageYears` と `chartYears` に基づいて生成範囲を制御する。
+- `pageYears`: 四半期詳細ページを生成する対象期間（最新N年分の四半期のみフォルダ生成）
+- `chartYears`: 各四半期ページの data.json に含めるデータ期間（チャートの表示範囲）
+- config.json が無い場合はデフォルト値（pageYears: 2, chartYears: 2）を使用する
+
 **重要:** template.html を変更した場合も、このスクリプトを再実行して全四半期ページに反映すること。
 
 ### 4. 分析テキストの作成（analysis-text.json）

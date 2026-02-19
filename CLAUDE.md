@@ -33,6 +33,7 @@ ai-financial-analyst/
 │   └── full-build.md         # フルビルド（DL→抽出→xlsx→ページ生成）
 ├── companies/       # 企業別の分析データ・スクリプト
 │   └── <企業名>/
+│       ├── config.json        # 期間設定（pageYears, chartYears）
 │       ├── filings/           # 決算資料の原本
 │       │   ├── FY20XX/
 │       │   │   ├── Q1/ ... Q4/

@@ -8,6 +8,15 @@ const ROOT = path.resolve(DIR, '../../..');
 const OUTPUT = path.join(ROOT, 'docs/nvidia/data.json');
 const QUARTERS_DIR = path.join(ROOT, 'docs/nvidia/quarters');
 
+// config.json から期間設定を読み込み
+const CONFIG_PATH = path.join(__dirname, '..', 'config.json');
+let config = { pageYears: 2, chartYears: 2 }; // デフォルト値
+if (fs.existsSync(CONFIG_PATH)) {
+  config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf-8'));
+}
+const pageQuarters = config.pageYears * 4;   // ページを生成する四半期数
+const chartQuarters = config.chartYears * 4;  // チャートに表示する四半期数
+
 const financials = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'financials.json'), 'utf-8'));
 const stockPrices = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'stock-prices.json'), 'utf-8'));
 const segmentsData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'segments.json'), 'utf-8'));
@@ -155,13 +164,19 @@ console.log(`出力: ${OUTPUT} (${quarters.length} 四半期)`);
 const templatePath = path.join(QUARTERS_DIR, 'template.html');
 const template = fs.existsSync(templatePath) ? fs.readFileSync(templatePath, 'utf-8') : null;
 
-for (let i = 0; i < quarters.length; i++) {
+// ページ生成: 最新 pageQuarters 個分のみ
+const startIdx = Math.max(0, quarters.length - pageQuarters);
+console.log(`設定: pageYears=${config.pageYears} (${quarters.length - startIdx}ページ), chartYears=${config.chartYears} (最大${chartQuarters}四半期分)`);
+
+for (let i = startIdx; i < quarters.length; i++) {
   const q = quarters[i];
   const dirName = `${q.fy}Q${q.q}`;
   const qDir = path.join(QUARTERS_DIR, dirName);
+  // チャートデータ: そのQまでの chartQuarters 個分に制限
+  const dataStartIdx = Math.max(0, i + 1 - chartQuarters);
   const qData = {
     ...data,
-    quarters: quarters.slice(0, i + 1),
+    quarters: quarters.slice(dataStartIdx, i + 1),
     currentQuarter: { fy: q.fy, q: q.q, label: q.label },
   };
   fs.mkdirSync(qDir, { recursive: true });
@@ -171,4 +186,4 @@ for (let i = 0; i < quarters.length; i++) {
     fs.writeFileSync(path.join(qDir, 'index.html'), template);
   }
 }
-console.log(`出力: ${QUARTERS_DIR}/ (${quarters.length} フォルダ)`);
+console.log(`出力: ${QUARTERS_DIR}/ (${quarters.length - startIdx} フォルダ)`);

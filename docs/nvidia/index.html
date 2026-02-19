@@ -431,8 +431,18 @@
         const qRow = thead.insertRow();
         q.forEach(d => {
           const th = document.createElement('th');
-          th.textContent = d.isOutlook ? 'Q' + d.q + '予想' : 'Q' + d.q;
-          if (d.isOutlook) th.classList.add('outlook');
+          if (d.isOutlook) {
+            th.textContent = 'Q' + d.q + '予想';
+            th.classList.add('outlook');
+          } else {
+            const a = document.createElement('a');
+            a.href = 'quarter.html?fy=' + d.fy + '&q=' + d.q;
+            a.textContent = 'Q' + d.q;
+            a.style.color = 'inherit';
+            a.style.textDecoration = 'underline';
+            a.title = d.label + ' の詳細を表示';
+            th.appendChild(a);
+          }
           qRow.appendChild(th);
         });
         // データ行

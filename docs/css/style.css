@@ -418,6 +418,176 @@ details.chart-details .chart-description {
   margin-top: 8px;
 }
 
+/* === 四半期詳細ページ === */
+
+/* 四半期ナビ（前後移動） */
+.quarter-nav {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.quarter-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.quarter-nav a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: 16px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.quarter-nav a:hover {
+  background: var(--primary-bg);
+  color: var(--accent);
+}
+
+.quarter-nav .current {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.quarter-nav .disabled {
+  color: #ccc;
+  pointer-events: none;
+}
+
+/* Outlookバナー */
+.outlook-banner {
+  background: #fff3e0;
+  border: 1px solid #ffe0b2;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  font-size: 0.88rem;
+  color: #e65100;
+  font-weight: 600;
+}
+
+/* P/L詳細テーブル（縦型） */
+.pl-detail-table {
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.pl-detail-table th,
+.pl-detail-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-light);
+  text-align: right;
+}
+
+.pl-detail-table th {
+  background: var(--primary-bg);
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+
+.pl-detail-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #444;
+}
+
+.pl-detail-table tr.sub-row td {
+  font-size: 0.78rem;
+  color: #666;
+  padding-left: 24px;
+}
+
+.pl-detail-table tr.sub-row td:first-child {
+  font-weight: 400;
+}
+
+.pl-detail-table tr.total-row {
+  border-top: 2px solid var(--border);
+}
+
+.pl-detail-table tr.total-row td {
+  font-weight: 700;
+}
+
+/* 変化率の色分け */
+.change-positive { color: #2e7d32; }
+.change-negative { color: #c62828; }
+.change-neutral { color: #888; }
+
+/* セグメント2カラム */
+.segment-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.segment-row .chart-wrapper {
+  max-height: 300px;
+}
+
+/* セグメント詳細テーブル */
+.segment-detail-table {
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  width: 100%;
+}
+
+.segment-detail-table th,
+.segment-detail-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border-light);
+  text-align: right;
+}
+
+.segment-detail-table th {
+  background: var(--primary-bg);
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+
+.segment-detail-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #444;
+}
+
+/* KPIサブテキスト（QoQ/YoY） */
+.kpi-item .kpi-change {
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+/* エラーメッセージ */
+.error-message {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.error-message h2 {
+  color: var(--accent);
+  margin-bottom: 16px;
+  border-bottom: none;
+}
+
+.error-message a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* === レスポンシブ === */
 @media (max-width: 768px) {
   .header h1 { font-size: 1.4rem; }
@@ -427,6 +597,7 @@ details.chart-details .chart-description {
   .kpi-item .kpi-value { font-size: 1.1rem; }
   .section-nav .container { gap: 2px; }
   .section-nav a { font-size: 0.75rem; padding: 4px 10px; }
+  .segment-row { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVIDIA 四半期詳細</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <h1>NVIDIA <span class="ticker">NVDA</span></h1>
+      <div class="meta" id="headerMeta"></div>
+    </div>
+  </div>
+
+  <!-- 四半期ナビ（前後移動） -->
+  <nav class="quarter-nav">
+    <div class="container">
+      <a href="#" id="prevLink" class="disabled">&lt; 前の四半期</a>
+      <span class="current" id="currentLabel"></span>
+      <a href="#" id="nextLink" class="disabled">次の四半期 &gt;</a>
+    </div>
+  </nav>
+
+  <!-- セクションナビ -->
+  <nav class="section-nav" id="sectionNav" style="display:none;">
+    <div class="container">
+      <a href="#section-kpi">KPI</a>
+      <a href="#section-pl">P/L</a>
+      <a href="#section-segment">セグメント</a>
+      <a href="#section-bs">B/S</a>
+      <a href="#section-cf">CF</a>
+      <a href="#section-valuation">株式</a>
+      <a href="#section-investment">投資</a>
+      <a href="#section-filings">決算資料</a>
+    </div>
+  </nav>
+
+  <div class="container" id="mainContent" style="display:none;">
+
+    <!-- Outlookバナー -->
+    <div class="outlook-banner" id="outlookBanner" style="display:none;">
+      この四半期はガイダンス（会社予想）です。開示されている項目のみ表示しています。
+    </div>
+
+    <!-- 1. KPIサマリー -->
+    <div class="section" id="section-kpi">
+      <h2>KPIサマリー</h2>
+      <div class="kpi-grid" id="kpiGrid"></div>
+    </div>
+
+    <!-- 2. P/L詳細 + 3. ウォーターフォール -->
+    <div class="section" id="section-pl">
+      <h2>損益計算書 (P/L)</h2>
+      <div id="plTableContainer"></div>
+      <div class="chart-wrapper" id="waterfallContainer" style="margin-top:20px;">
+        <canvas id="waterfallChart"></canvas>
+      </div>
+    </div>
+
+    <!-- 4. セグメント売上 -->
+    <div class="section" id="section-segment">
+      <h2>セグメント分析</h2>
+      <div class="segment-row">
+        <div class="chart-wrapper"><canvas id="segmentPieChart"></canvas></div>
+        <div id="segmentTableContainer"></div>
+      </div>
+    </div>
+
+    <!-- 5. セグメント営業利益 -->
+    <div class="section" id="section-segment-profit">
+      <h2>セグメント営業利益（SEC報告2セグメント）</h2>
+      <div class="kpi-grid" id="segmentProfitGrid"></div>
+    </div>
+
+    <!-- 6. B/S -->
+    <div class="section" id="section-bs">
+      <h2>貸借対照表 (B/S)</h2>
+      <div class="kpi-grid" id="bsGrid"></div>
+    </div>
+
+    <!-- 7. CF -->
+    <div class="section" id="section-cf">
+      <h2>キャッシュフロー</h2>
+      <div class="kpi-grid" id="cfGrid"></div>
+    </div>
+
+    <!-- 8. バリュエーション -->
+    <div class="section" id="section-valuation">
+      <h2>株式・バリュエーション</h2>
+      <div class="kpi-grid" id="valuationGrid"></div>
+    </div>
+
+    <!-- 9. 投資ポートフォリオ -->
+    <div class="section" id="section-investment">
+      <h2>投資ポートフォリオ</h2>
+      <div class="kpi-grid" id="investmentGrid"></div>
+    </div>
+
+    <!-- 10. 決算資料リンク -->
+    <div class="section" id="section-filings">
+      <h2>決算資料</h2>
+      <div id="filingsContainer"></div>
+    </div>
+
+  </div>
+
+  <!-- エラー表示 -->
+  <div class="container" id="errorContainer" style="display:none;">
+    <div class="error-message">
+      <h2 id="errorTitle">エラー</h2>
+      <p id="errorText"></p>
+      <p style="margin-top:16px;"><a href="./">ダッシュボードに戻る</a></p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p><a href="./">ダッシュボードに戻る</a> | <a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a></p>
+  </div>
+
+  <script src="../js/quarter-detail.js"></script>
+</body>
+</html>

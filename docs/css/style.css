@@ -157,8 +157,19 @@ body {
   background: #f0f4fa;
   color: #1f3864;
   font-weight: 600;
+}
+
+/* 2行ヘッダーのsticky制御 */
+.financial-table thead tr:first-child th {
   position: sticky;
   top: 0;
+  z-index: 3;
+}
+
+.financial-table thead tr:nth-child(2) th {
+  position: sticky;
+  top: 27px;
+  z-index: 3;
 }
 
 .financial-table th:first-child,

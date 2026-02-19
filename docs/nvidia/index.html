@@ -347,15 +347,33 @@
           { label: '株価', cat: 'stock', fn: (d, i) => dlr(d.price) },
         ];
 
-        // ヘッダー
+        // ヘッダー（2行: 年度 + 四半期）
         const thead = tbl.createTHead();
-        const hRow = thead.insertRow();
-        hRow.insertCell().textContent = '';
+        // 行1: 年度ヘッダー（colspan=4）
+        const fyRow = thead.insertRow();
+        const fyCorner = document.createElement('th');
+        fyCorner.rowSpan = 2;
+        fyRow.appendChild(fyCorner);
+        const fyGroups = [];
+        q.forEach(d => {
+          const last = fyGroups[fyGroups.length - 1];
+          if (last && last.fy === d.fy) { last.count++; }
+          else { fyGroups.push({ fy: d.fy, count: 1 }); }
+        });
+        fyGroups.forEach(g => {
+          const th = document.createElement('th');
+          th.textContent = g.fy;
+          th.colSpan = g.count;
+          th.style.textAlign = 'center';
+          fyRow.appendChild(th);
+        });
+        // 行2: 四半期ラベル
+        const qRow = thead.insertRow();
         q.forEach(d => {
           const th = document.createElement('th');
-          th.textContent = d.label.replace('FY', '');
+          th.textContent = d.isOutlook ? 'Q' + d.q + '予想' : 'Q' + d.q;
           if (d.isOutlook) th.classList.add('outlook');
-          hRow.appendChild(th);
+          qRow.appendChild(th);
         });
         // データ行
         const tbody = tbl.createTBody();

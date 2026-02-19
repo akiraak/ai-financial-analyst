@@ -1,1 +1,244 @@
-{}
+{
+  "FY2021": {
+    "Q1": {
+      "computeAndNetworking": {
+        "revenue": 1174,
+        "operatingIncome": 451
+      },
+      "graphics": {
+        "revenue": 1906,
+        "operatingIncome": 836
+      }
+    },
+    "Q2": {
+      "computeAndNetworking": {
+        "revenue": 1781,
+        "operatingIncome": 691
+      },
+      "graphics": {
+        "revenue": 2085,
+        "operatingIncome": 911
+      }
+    },
+    "Q3": {
+      "computeAndNetworking": {
+        "revenue": 1939,
+        "operatingIncome": 738
+      },
+      "graphics": {
+        "revenue": 2787,
+        "operatingIncome": 1345
+      }
+    },
+    "Q4": {
+      "computeAndNetworking": {
+        "revenue": 1947,
+        "operatingIncome": 668
+      },
+      "graphics": {
+        "revenue": 3056,
+        "operatingIncome": 1520
+      }
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "computeAndNetworking": {
+        "revenue": 2210,
+        "operatingIncome": 861
+      },
+      "graphics": {
+        "revenue": 3451,
+        "operatingIncome": 1786
+      }
+    },
+    "Q2": {
+      "computeAndNetworking": {
+        "revenue": 2600,
+        "operatingIncome": 1034
+      },
+      "graphics": {
+        "revenue": 3907,
+        "operatingIncome": 2127
+      }
+    },
+    "Q3": {
+      "computeAndNetworking": {
+        "revenue": 3011,
+        "operatingIncome": 1332
+      },
+      "graphics": {
+        "revenue": 4092,
+        "operatingIncome": 2160
+      }
+    },
+    "Q4": {
+      "computeAndNetworking": {
+        "revenue": 3225,
+        "operatingIncome": 1371
+      },
+      "graphics": {
+        "revenue": 4418,
+        "operatingIncome": 2419
+      }
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "computeAndNetworking": {
+        "revenue": 3672,
+        "operatingIncome": 1606
+      },
+      "graphics": {
+        "revenue": 4616,
+        "operatingIncome": 2476
+      }
+    },
+    "Q2": {
+      "computeAndNetworking": {
+        "revenue": 3907,
+        "operatingIncome": 816
+      },
+      "graphics": {
+        "revenue": 2797,
+        "operatingIncome": 657
+      }
+    },
+    "Q3": {
+      "computeAndNetworking": {
+        "revenue": 3816,
+        "operatingIncome": 1086
+      },
+      "graphics": {
+        "revenue": 2115,
+        "operatingIncome": 606
+      }
+    },
+    "Q4": {
+      "computeAndNetworking": {
+        "revenue": 3673,
+        "operatingIncome": 1575
+      },
+      "graphics": {
+        "revenue": 2378,
+        "operatingIncome": 813
+      }
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "computeAndNetworking": {
+        "revenue": 4460,
+        "operatingIncome": 2160
+      },
+      "graphics": {
+        "revenue": 2732,
+        "operatingIncome": 1046
+      }
+    },
+    "Q2": {
+      "computeAndNetworking": {
+        "revenue": 10402,
+        "operatingIncome": 6728
+      },
+      "graphics": {
+        "revenue": 3105,
+        "operatingIncome": 1211
+      }
+    },
+    "Q3": {
+      "computeAndNetworking": {
+        "revenue": 14645,
+        "operatingIncome": 10262
+      },
+      "graphics": {
+        "revenue": 3475,
+        "operatingIncome": 1493
+      }
+    },
+    "Q4": {
+      "computeAndNetworking": {
+        "revenue": 17898,
+        "operatingIncome": 12866
+      },
+      "graphics": {
+        "revenue": 4205,
+        "operatingIncome": 2096
+      }
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "computeAndNetworking": {
+        "revenue": 22675,
+        "operatingIncome": 17047
+      },
+      "graphics": {
+        "revenue": 3369,
+        "operatingIncome": 1241
+      }
+    },
+    "Q2": {
+      "computeAndNetworking": {
+        "revenue": 26446,
+        "operatingIncome": 18848
+      },
+      "graphics": {
+        "revenue": 3594,
+        "operatingIncome": 1369
+      }
+    },
+    "Q3": {
+      "computeAndNetworking": {
+        "revenue": 31036,
+        "operatingIncome": 22081
+      },
+      "graphics": {
+        "revenue": 4046,
+        "operatingIncome": 1502
+      }
+    },
+    "Q4": {
+      "computeAndNetworking": {
+        "revenue": 36036,
+        "operatingIncome": 24899
+      },
+      "graphics": {
+        "revenue": 3295,
+        "operatingIncome": 973
+      }
+    }
+  },
+  "FY2026": {
+    "Q1": {
+      "computeAndNetworking": {
+        "revenue": 39589,
+        "operatingIncome": 22054
+      },
+      "graphics": {
+        "revenue": 4473,
+        "operatingIncome": 1640
+      }
+    },
+    "Q2": {
+      "computeAndNetworking": {
+        "revenue": 41331,
+        "operatingIncome": 28363
+      },
+      "graphics": {
+        "revenue": 5412,
+        "operatingIncome": 2242
+      }
+    },
+    "Q3": {
+      "computeAndNetworking": {
+        "revenue": 50908,
+        "operatingIncome": 35721
+      },
+      "graphics": {
+        "revenue": 6098,
+        "operatingIncome": 2546
+      }
+    }
+  }
+}

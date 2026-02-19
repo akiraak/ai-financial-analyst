@@ -1,4 +1,102 @@
 {
+  "FY2021": {
+    "Q1": {
+      "freeCashFlow": 754
+    },
+    "Q2": {
+      "freeCashFlow": 1349
+    },
+    "Q3": {
+      "operatingCF": 1279,
+      "investingCF": -2001,
+      "financingCF": -301,
+      "freeCashFlow": 806
+    },
+    "Q4": {
+      "operatingCF": 2067,
+      "investingCF": -3129,
+      "financingCF": -342,
+      "freeCashFlow": 1767
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "operatingCF": 1874,
+      "investingCF": -1272,
+      "financingCF": -471,
+      "freeCashFlow": 1557
+    },
+    "Q2": {
+      "operatingCF": 2682,
+      "investingCF": -2533,
+      "financingCF": 4501,
+      "freeCashFlow": 2478
+    },
+    "Q3": {
+      "operatingCF": 1519,
+      "investingCF": -4438,
+      "financingCF": -1421,
+      "freeCashFlow": 1276
+    },
+    "Q4": {
+      "operatingCF": 3033,
+      "investingCF": -1587,
+      "financingCF": -744,
+      "freeCashFlow": 2739
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "operatingCF": 1731,
+      "investingCF": 2612,
+      "financingCF": -2446,
+      "freeCashFlow": 1348
+    },
+    "Q2": {
+      "operatingCF": 1270,
+      "investingCF": 1618,
+      "financingCF": -3762,
+      "freeCashFlow": 824
+    },
+    "Q3": {
+      "operatingCF": 392,
+      "investingCF": 3148,
+      "financingCF": -3753,
+      "freeCashFlow": -156
+    },
+    "Q4": {
+      "operatingCF": 2249,
+      "investingCF": -4,
+      "financingCF": -1656,
+      "freeCashFlow": 1736
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "operatingCF": 2911,
+      "investingCF": -841,
+      "financingCF": -380,
+      "freeCashFlow": 2643
+    },
+    "Q2": {
+      "operatingCF": 6348,
+      "investingCF": -447,
+      "financingCF": -5098,
+      "freeCashFlow": 6048
+    },
+    "Q3": {
+      "operatingCF": 7333,
+      "investingCF": -3169,
+      "financingCF": -4527,
+      "freeCashFlow": 7042
+    },
+    "Q4": {
+      "operatingCF": 11499,
+      "investingCF": -6109,
+      "financingCF": -3629,
+      "freeCashFlow": 11217
+    }
+  },
   "FY2025": {
     "Q1": {
       "operatingCF": 15345,

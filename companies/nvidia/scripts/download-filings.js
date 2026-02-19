@@ -5,6 +5,22 @@ const https = require('https');
 
 // 対象四半期のプレスリリース情報（SEC EDGAR）
 const filings = [
+  { fy: 'FY2021', q: 'Q1', adsh: '0001045810-20-000063', file: 'q1fy21pr.htm', date: '2020-05-21' },
+  { fy: 'FY2021', q: 'Q2', adsh: '0001045810-20-000145', file: 'q2fy21pr.htm', date: '2020-08-19' },
+  { fy: 'FY2021', q: 'Q3', adsh: '0001045810-20-000187', file: 'q3fy21pr.htm', date: '2020-11-18' },
+  { fy: 'FY2021', q: 'Q4', adsh: '0001045810-21-000007', file: 'q4fy21pr.htm', date: '2021-02-24' },
+  { fy: 'FY2022', q: 'Q1', adsh: '0001045810-21-000063', file: 'q1fy22pr.htm', date: '2021-05-26' },
+  { fy: 'FY2022', q: 'Q2', adsh: '0001045810-21-000128', file: 'q2fy22pr.htm', date: '2021-08-18' },
+  { fy: 'FY2022', q: 'Q3', adsh: '0001045810-21-000160', file: 'q3fy22pr.htm', date: '2021-11-17' },
+  { fy: 'FY2022', q: 'Q4', adsh: '0001045810-22-000008', file: 'q4fy22pr.htm', date: '2022-02-16' },
+  { fy: 'FY2023', q: 'Q1', adsh: '0001045810-22-000073', file: 'q1fy23pr.htm', date: '2022-05-25' },
+  { fy: 'FY2023', q: 'Q2', adsh: '0001045810-22-000136', file: 'q2fy23pr.htm', date: '2022-08-24' },
+  { fy: 'FY2023', q: 'Q3', adsh: '0001045810-22-000163', file: 'q3fy23pr.htm', date: '2022-11-16' },
+  { fy: 'FY2023', q: 'Q4', adsh: '0001045810-23-000014', file: 'q4fy23pr.htm', date: '2023-02-22' },
+  { fy: 'FY2024', q: 'Q1', adsh: '0001045810-23-000087', file: 'q1fy24pr.htm', date: '2023-05-24' },
+  { fy: 'FY2024', q: 'Q2', adsh: '0001045810-23-000171', file: 'q2fy24pr.htm', date: '2023-08-23' },
+  { fy: 'FY2024', q: 'Q3', adsh: '0001045810-23-000225', file: 'q3fy24pr.htm', date: '2023-11-21' },
+  { fy: 'FY2024', q: 'Q4', adsh: '0001045810-24-000028', file: 'q4fy24pr.htm', date: '2024-02-21' },
   { fy: 'FY2025', q: 'Q1', adsh: '0001045810-24-000113', file: 'q1fy25pr.htm', date: '2024-05-22' },
   { fy: 'FY2025', q: 'Q2', adsh: '0001045810-24-000262', file: 'q2fy25pr.htm', date: '2024-08-28' },
   { fy: 'FY2025', q: 'Q3', adsh: '0001045810-24-000315', file: 'q3fy25pr.htm', date: '2024-11-20' },

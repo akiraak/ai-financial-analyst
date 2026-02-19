@@ -11,7 +11,7 @@
 - [x] 決算資料から業績データxlsxを生成するワークフローを作成
   - extract-financials.js: press-release.html からP/Lデータ抽出（19四半期、FY2022 Q1〜FY2026 Q3）
   - fetch-stock-prices.js: Yahoo Finance APIから四半期末株価取得
-  - generate-xlsx.js: template.xlsxベースでNVDA業績.xlsx生成
+  - generate-xlsx.js: template.xlsxベースでNVDA-Financials.xlsx生成
   - 既存xlsxとの突合: 売上高・粗利・R&D・SGA・営業利益・純利益は100%一致
 - [x] テンプレート・スクリプトの整備
   - template.xlsxから年度・Qラベル・設定パラメータを削除（スクリプトで動的設定）

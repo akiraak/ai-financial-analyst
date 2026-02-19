@@ -42,16 +42,18 @@ ai-financial-analyst/
 │       │   │   │   └── ...              # その他資料（企業固有の名前で保存）
 │       │   │   └── ...
 │       │   └── README.md      # 資料一覧・URL対応表・ファイル説明
-│       └── analysis/           # 分析用データ・スクリプト
-│           ├── extract-financials.js  # P/Lデータ抽出
-│           ├── fetch-stock-prices.js  # 四半期末株価取得
-│           ├── generate-xlsx.js       # xlsx生成
-│           ├── generate-pages.js      # HTMLページ生成（ランディング・四半期選択・テンプレート）
-│           ├── generate-data-json.js  # GitHub Pages用data.json生成
-│           ├── template.xlsx          # xlsx生成用テンプレート
+│       ├── scripts/           # 処理コード（JSスクリプト）
+│       │   ├── extract-financials.js  # P/Lデータ抽出
+│       │   ├── fetch-stock-prices.js  # 四半期末株価取得
+│       │   ├── generate-xlsx.js       # xlsx生成
+│       │   ├── generate-pages.js      # HTMLページ生成
+│       │   ├── generate-data-json.js  # GitHub Pages用data.json生成
+│       │   └── ...
+│       └── data/              # データファイル（JSON, xlsx）
 │           ├── financials.json        # 抽出済みP/Lデータ
 │           ├── stock-prices.json      # 取得済み株価データ
-│           └── NVDA-Financials.xlsx          # 生成されたxlsx
+│           ├── template.xlsx          # xlsx生成用テンプレート
+│           └── NVDA-Financials.xlsx   # 生成されたxlsx
 ├── docs/            # GitHub Pages公開ディレクトリ
 │   ├── index.html             # 企業一覧トップページ
 │   ├── css/

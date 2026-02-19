@@ -9,10 +9,11 @@ const path = require('path');
 const ExcelJS = require('exceljs');
 
 const DIR = __dirname;
-const TEMPLATE_PATH = path.join(DIR, 'template.xlsx');
-const FINANCIALS_PATH = path.join(DIR, 'financials.json');
-const STOCK_PRICES_PATH = path.join(DIR, 'stock-prices.json');
-const OUTPUT_PATH = path.join(DIR, 'NVDA-Financials.xlsx');
+const DATA_DIR = path.join(DIR, '..', 'data');
+const TEMPLATE_PATH = path.join(DATA_DIR, 'template.xlsx');
+const FINANCIALS_PATH = path.join(DATA_DIR, 'financials.json');
+const STOCK_PRICES_PATH = path.join(DATA_DIR, 'stock-prices.json');
+const OUTPUT_PATH = path.join(DATA_DIR, 'NVDA-Financials.xlsx');
 
 // === 設定 ===
 // 表示範囲はfinancials.jsonのデータから自動判定

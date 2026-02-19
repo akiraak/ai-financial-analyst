@@ -11,7 +11,7 @@ const path = require('path');
 const cheerio = require('cheerio');
 
 const FILINGS_DIR = path.join(__dirname, '..', 'filings');
-const OUTPUT_PATH = path.join(__dirname, 'cash-flows.json');
+const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'cash-flows.json');
 
 // CF本体の抽出対象
 const CF_ROW_MAPPINGS = [

@@ -11,7 +11,7 @@ const path = require('path');
 const cheerio = require('cheerio');
 
 const FILINGS_DIR = path.join(__dirname, '..', 'filings');
-const OUTPUT_PATH = path.join(__dirname, 'segments.json');
+const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'segments.json');
 
 // セグメント名の正規化マッピング
 // press-release内の見出し → 統一キー

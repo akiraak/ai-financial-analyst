@@ -3,17 +3,18 @@ const fs = require('fs');
 const path = require('path');
 
 const DIR = __dirname;
+const DATA_DIR = path.join(DIR, '..', 'data');
 const ROOT = path.resolve(DIR, '../../..');
 const OUTPUT = path.join(ROOT, 'docs/nvidia/data.json');
 const QUARTERS_DIR = path.join(ROOT, 'docs/nvidia/quarters');
 
-const financials = JSON.parse(fs.readFileSync(path.join(DIR, 'financials.json'), 'utf-8'));
-const stockPrices = JSON.parse(fs.readFileSync(path.join(DIR, 'stock-prices.json'), 'utf-8'));
-const segmentsData = JSON.parse(fs.readFileSync(path.join(DIR, 'segments.json'), 'utf-8'));
-const bsData = JSON.parse(fs.readFileSync(path.join(DIR, 'balance-sheet.json'), 'utf-8'));
-const cfData = JSON.parse(fs.readFileSync(path.join(DIR, 'cash-flows.json'), 'utf-8'));
-const segProfitData = JSON.parse(fs.readFileSync(path.join(DIR, 'segment-profit.json'), 'utf-8'));
-const investmentsData = JSON.parse(fs.readFileSync(path.join(DIR, 'investments.json'), 'utf-8'));
+const financials = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'financials.json'), 'utf-8'));
+const stockPrices = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'stock-prices.json'), 'utf-8'));
+const segmentsData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'segments.json'), 'utf-8'));
+const bsData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'balance-sheet.json'), 'utf-8'));
+const cfData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'cash-flows.json'), 'utf-8'));
+const segProfitData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'segment-profit.json'), 'utf-8'));
+const investmentsData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'investments.json'), 'utf-8'));
 
 // 株式数スプリット調整（EPSの逆: 乗算で正規化）
 function adjustShares(shares, fy, qn) {

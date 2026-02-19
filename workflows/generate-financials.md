@@ -10,36 +10,36 @@
 
 ### 1. データ抽出（P/L）
 
-`companies/<企業名>/analysis/extract-financials.js` を実行し、press-release.htmlから損益計算書データを抽出する。
+`companies/<企業名>/scripts/extract-financials.js` を実行し、press-release.htmlから損益計算書データを抽出する。
 
 ```bash
-node companies/<企業名>/analysis/extract-financials.js
+node companies/<企業名>/scripts/extract-financials.js
 ```
 
-- 出力: `companies/<企業名>/analysis/financials.json`
+- 出力: `companies/<企業名>/data/financials.json`
 - 抽出項目: 売上高、売上総利益、研究開発費、販管費、営業利益、営業外収支、当期純利益、EPS
 
 ### 2. 株価取得
 
-`companies/<企業名>/analysis/fetch-stock-prices.js` を実行し、四半期末株価を取得する。
+`companies/<企業名>/scripts/fetch-stock-prices.js` を実行し、四半期末株価を取得する。
 
 ```bash
-node companies/<企業名>/analysis/fetch-stock-prices.js
+node companies/<企業名>/scripts/fetch-stock-prices.js
 ```
 
-- 出力: `companies/<企業名>/analysis/stock-prices.json`
+- 出力: `companies/<企業名>/data/stock-prices.json`
 - 取得項目: 四半期末終値、日付
 
 ### 3. xlsx生成
 
-`companies/<企業名>/analysis/generate-xlsx.js` を実行し、xlsxファイルを生成する。
+`companies/<企業名>/scripts/generate-xlsx.js` を実行し、xlsxファイルを生成する。
 
 ```bash
-node companies/<企業名>/analysis/generate-xlsx.js
+node companies/<企業名>/scripts/generate-xlsx.js
 ```
 
 - 入力: `financials.json` + `stock-prices.json`
-- 出力: `companies/<企業名>/analysis/<企業名>業績.xlsx`
+- 出力: `companies/<企業名>/data/<企業名>業績.xlsx`
 
 ### 4. 確認
 

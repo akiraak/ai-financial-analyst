@@ -6,9 +6,9 @@
 
 ## 対象ファイル
 
-- 検証対象: `companies/<企業名>/analysis/<企業名>業績.xlsx`
-- ソース1: `companies/<企業名>/analysis/financials.json`
-- ソース2: `companies/<企業名>/analysis/stock-prices.json`
+- 検証対象: `companies/<企業名>/data/<企業名>業績.xlsx`
+- ソース1: `companies/<企業名>/data/financials.json`
+- ソース2: `companies/<企業名>/data/stock-prices.json`
 - ソース3: `companies/<企業名>/filings/FY*/Q*/press-release.*`（原本）
 
 ## 手順

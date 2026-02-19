@@ -17,7 +17,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const FILINGS_DIR = path.join(__dirname, '..', 'filings');
-const OUTPUT_PATH = path.join(__dirname, 'investments.json');
+const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'investments.json');
 
 /**
  * pdftotext -layout でPDFからテキスト抽出

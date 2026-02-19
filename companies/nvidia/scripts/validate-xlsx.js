@@ -6,9 +6,10 @@ const path = require('path');
 const ExcelJS = require('exceljs');
 
 const DIR = __dirname;
-const XLSX_PATH = path.join(DIR, 'NVDA-Financials.xlsx');
-const FINANCIALS_PATH = path.join(DIR, 'financials.json');
-const STOCK_PRICES_PATH = path.join(DIR, 'stock-prices.json');
+const DATA_DIR = path.join(DIR, '..', 'data');
+const XLSX_PATH = path.join(DATA_DIR, 'NVDA-Financials.xlsx');
+const FINANCIALS_PATH = path.join(DATA_DIR, 'financials.json');
+const STOCK_PRICES_PATH = path.join(DATA_DIR, 'stock-prices.json');
 
 // EPSスプリット調整（generate-xlsx.jsと同一ロジック）
 function adjustEPS(eps, fyStr, q) {

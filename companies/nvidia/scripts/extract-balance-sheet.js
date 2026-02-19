@@ -10,7 +10,7 @@ const path = require('path');
 const cheerio = require('cheerio');
 
 const FILINGS_DIR = path.join(__dirname, '..', 'filings');
-const OUTPUT_PATH = path.join(__dirname, 'balance-sheet.json');
+const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'balance-sheet.json');
 
 // 抽出対象の行ラベルとマッピング
 const ROW_MAPPINGS = [

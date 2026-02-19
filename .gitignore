@@ -9,7 +9,3 @@ companies/*/filings/FY*/Q*/*.htm
 companies/*/filings/ir-page.html
 companies/*/filings/download-results.json
 
-# 生成された中間ファイル・xlsx（template.xlsxは除く）
-companies/*/ir-data/*.json
-companies/*/ir-data/*.xlsx
-!companies/*/ir-data/template.xlsx

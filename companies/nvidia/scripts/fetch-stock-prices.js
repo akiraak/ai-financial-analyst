@@ -5,8 +5,8 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const OUTPUT_PATH = path.join(__dirname, 'stock-prices.json');
-const FINANCIALS_PATH = path.join(__dirname, 'financials.json');
+const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'stock-prices.json');
+const FINANCIALS_PATH = path.join(__dirname, '..', 'data', 'financials.json');
 
 // NVIDIAの四半期末日（概算）: 各月の最終日曜日付近
 // 正確な日付はpress-releaseから取得可能だが、

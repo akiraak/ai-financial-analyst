@@ -14,7 +14,7 @@ const filings = [
   { fy: 'FY2026', q: 'Q3', adsh: '0001045810-25-000228', file: 'q3fy26pr.htm', date: '2025-11-19' },
 ];
 
-const basePath = '/home/ubuntu/ai-financial-analyst/companies/nvidia/filings';
+const basePath = path.join(__dirname, '..', 'filings');
 
 function buildEdgarUrl(adsh, filename) {
   // EDGAR URL: https://www.sec.gov/Archives/edgar/data/{CIK}/{adsh_no_dashes}/{filename}
@@ -69,7 +69,7 @@ function download(url, dest) {
     localPath: `${f.fy}/${f.q}/press-release.html`
   }));
   fs.writeFileSync(
-    path.join(basePath, 'quarterly-links.json'),
+    path.join(__dirname, '..', 'data', 'quarterly-links.json'),
     JSON.stringify(linksData, null, 2)
   );
 

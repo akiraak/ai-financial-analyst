@@ -135,7 +135,7 @@ docs/                              # GitHub Pages公開ディレクトリ
 
 ### data.json の生成
 - 全JSONデータソースを統合して docs/<企業名>/data.json として出力する
-- 生成スクリプト: `companies/<企業名>/analysis/generate-data-json.js`
+- 生成スクリプト: `companies/<企業名>/scripts/generate-data-json.js`
 
 ## ページ構成
 

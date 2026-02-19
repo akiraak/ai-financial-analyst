@@ -43,6 +43,7 @@ ai-financial-analyst/
 │           ├── extract-financials.js  # P/Lデータ抽出
 │           ├── fetch-stock-prices.js  # 四半期末株価取得
 │           ├── generate-xlsx.js       # xlsx生成
+│           ├── generate-pages.js      # HTMLページ生成（ランディング・四半期選択・テンプレート）
 │           ├── generate-data-json.js  # GitHub Pages用data.json生成
 │           ├── template.xlsx          # xlsx生成用テンプレート
 │           ├── financials.json        # 抽出済みP/Lデータ

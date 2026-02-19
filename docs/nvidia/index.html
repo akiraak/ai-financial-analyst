@@ -40,7 +40,7 @@
         const first = actual[0]?.label || '';
         const last = actual[actual.length - 1]?.label || '';
         document.getElementById('meta').textContent =
-          `${first} ~ ${last} | ${actual.length}四半期 | 更新: ${data.generatedAt}`;
+          first + ' ~ ' + last + ' | ' + actual.length + '四半期 | 更新: ' + data.generatedAt;
 
         // 四半期分析リンク生成
         const container = document.getElementById('quarterLinksContainer');
@@ -52,10 +52,10 @@
         const sortedFYs = Object.keys(fyGroups).sort((a, b) => b - a);
         let html = '';
         for (const fy of sortedFYs) {
-          html += `<div class="quarter-fy-row"><span class="quarter-fy-label">FY${fy}</span>`;
+          html += '<div class="quarter-fy-row"><span class="quarter-fy-label">FY' + fy + '</span>';
           const sorted = fyGroups[fy].sort((a, b) => a.q - b.q);
           for (const q of sorted) {
-            html += `<a href="quarters/${q.fy}Q${q.q}/" class="quarter-link-item">Q${q.q}</a>`;
+            html += '<a href="quarters/' + q.fy + 'Q' + q.q + '/" class="quarter-link-item">Q' + q.q + '</a>';
           }
           html += '</div>';
         }

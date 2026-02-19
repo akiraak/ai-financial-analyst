@@ -36,16 +36,16 @@
       .then(r => r.json())
       .then(data => {
         // メタ情報
-        const first = data.quarters[0]?.label || '';
-        const last = data.quarters[data.quarters.length - 1]?.label || '';
-        const outlookCount = data.quarters.filter(q => q.isOutlook).length;
+        const actual = data.quarters.filter(q => !q.isOutlook);
+        const first = actual[0]?.label || '';
+        const last = actual[actual.length - 1]?.label || '';
         document.getElementById('meta').textContent =
-          `${first} ~ ${last} | 実績 ${data.quarters.length - outlookCount}Q + 予想 ${outlookCount}Q | 更新: ${data.generatedAt}`;
+          `${first} ~ ${last} | ${actual.length}四半期 | 更新: ${data.generatedAt}`;
 
         // 四半期分析リンク生成
         const container = document.getElementById('quarterLinksContainer');
         const fyGroups = {};
-        data.quarters.forEach(q => {
+        data.quarters.filter(q => !q.isOutlook).forEach(q => {
           if (!fyGroups[q.fy]) fyGroups[q.fy] = [];
           fyGroups[q.fy].push(q);
         });
@@ -55,11 +55,7 @@
           html += `<div class="quarter-fy-row"><span class="quarter-fy-label">FY${fy}</span>`;
           const sorted = fyGroups[fy].sort((a, b) => a.q - b.q);
           for (const q of sorted) {
-            if (q.isOutlook) {
-              html += `<span class="quarter-link-item outlook">Q${q.q}予想</span>`;
-            } else {
-              html += `<a href="quarters/${q.fy}Q${q.q}/" class="quarter-link-item">Q${q.q}</a>`;
-            }
+            html += `<a href="quarters/${q.fy}Q${q.q}/" class="quarter-link-item">Q${q.q}</a>`;
           }
           html += '</div>';
         }

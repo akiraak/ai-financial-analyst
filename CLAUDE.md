@@ -36,6 +36,9 @@ ai-financial-analyst/
 │       │   ├── FY20XX/
 │       │   │   ├── Q1/ ... Q4/
 │       │   │   │   ├── press-release.*  # 決算プレスリリース（共通名称）
+│       │   │   │   ├── 10-Q.pdf        # 四半期報告書（Q1〜Q3）
+│       │   │   │   ├── 10-K.pdf        # 年次報告書（Q4のみ）
+│       │   │   │   ├── cfo-commentary.pdf # CFO Commentary
 │       │   │   │   └── ...              # その他資料（企業固有の名前で保存）
 │       │   │   └── ...
 │       │   └── README.md      # 資料一覧・URL対応表・ファイル説明

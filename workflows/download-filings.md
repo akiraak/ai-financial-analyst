@@ -51,13 +51,22 @@ companies/<企業名>/filings/
 
 #### 3-2. 資料をダウンロード
 
-取得したリンクから全資料をダウンロードする。
+取得したリンクから**全資料**をダウンロードする。
+
+- IRページに掲載されているダウンロード可能な資料はすべて取得する
+- ウェブキャスト（ストリーミング動画）は除外する
+- 10-Q/10-K がIRページから直接取得できない場合は、SEC EDGAR から取得する
+  - SEC EDGAR Filing URL: `https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=<CIK>&type=10-Q&dateb=&owner=include&count=40`
+  - PDF直リンクが無い場合は Filing Detail ページから "10-Q" / "10-K" 本体のHTMファイルを特定し取得する
 
 #### 3-3. ファイル名のルール
 
 | 資料 | ファイル名 |
 |------|-----------|
 | 決算プレスリリース | `press-release.*` |
+| 10-Q（四半期報告書） | `10-Q.pdf` |
+| 10-K（年次報告書） | `10-K.pdf` |
+| CFO Commentary | `cfo-commentary.pdf` |
 | その他の資料 | 企業が付けた名前をそのまま使用する |
 
 ### 4. README.md の記録

@@ -241,6 +241,15 @@
       </div>
     </div>
 
+    <!-- 財務データテーブル -->
+    <div class="section">
+      <h2>財務データ</h2>
+      <p><a href="NVDA業績.xlsx" download class="download-btn">NVDA業績.xlsx をダウンロード</a></p>
+      <div class="financial-table-wrapper">
+        <table id="financialTable" class="financial-table"></table>
+      </div>
+    </div>
+
     <!-- 決算資料リンク -->
     <div class="section">
       <h2>決算資料</h2>
@@ -285,6 +294,44 @@
         ChartBuilder.createSegmentMarginChart(document.getElementById('segmentMarginChart'), data);
         // E. 投資ポートフォリオ
         ChartBuilder.createInvestmentChart(document.getElementById('investmentChart'), data);
+
+        // 財務データテーブル生成
+        const tbl = document.getElementById('financialTable');
+        const q = data.quarters;
+        const fmt = v => v != null ? '$' + v.toLocaleString() : '—';
+        const pct = (a, b) => (a != null && b) ? (a / b * 100).toFixed(1) + '%' : '—';
+        const rows = [
+          { label: '売上高', fn: d => fmt(d.revenue) },
+          { label: '粗利益', fn: d => fmt(d.grossProfit) },
+          { label: '粗利率', fn: d => pct(d.grossProfit, d.revenue) },
+          { label: '営業利益', fn: d => fmt(d.operatingIncome) },
+          { label: '営業利益率', fn: d => pct(d.operatingIncome, d.revenue) },
+          { label: '純利益', fn: d => fmt(d.netIncome) },
+          { label: '純利益率', fn: d => pct(d.netIncome, d.revenue) },
+          { label: 'EPS', fn: d => d.eps != null ? '$' + d.eps.toFixed(2) : '—' },
+          { label: '株価', fn: d => d.price != null ? '$' + d.price.toFixed(2) : '—' },
+        ];
+        // ヘッダー
+        const thead = tbl.createTHead();
+        const hRow = thead.insertRow();
+        hRow.insertCell().textContent = '';
+        q.forEach(d => {
+          const th = document.createElement('th');
+          th.textContent = d.label.replace('FY', '');
+          if (d.isOutlook) th.classList.add('outlook');
+          hRow.appendChild(th);
+        });
+        // データ行
+        const tbody = tbl.createTBody();
+        rows.forEach(r => {
+          const tr = tbody.insertRow();
+          tr.insertCell().textContent = r.label;
+          q.forEach(d => {
+            const td = tr.insertCell();
+            td.textContent = r.fn(d);
+            if (d.isOutlook) td.classList.add('outlook');
+          });
+        });
       })
       .catch(err => console.error('データ読み込みエラー:', err));
 

@@ -177,10 +177,28 @@ for (let i = startIdx; i < quarters.length; i++) {
   const qDir = path.join(QUARTERS_DIR, dirName);
   // チャートデータ: そのQまでの chartQuarters 個分に制限
   const dataStartIdx = Math.max(0, i + 1 - chartQuarters);
+  // 前後のページ四半期を特定
+  let prevPage = null;
+  for (let j = i - 1; j >= 0; j--) {
+    if (quarters[j].hasPage) {
+      prevPage = { fy: quarters[j].fy, q: quarters[j].q, label: quarters[j].label };
+      break;
+    }
+  }
+  let nextPage = null;
+  for (let j = i + 1; j < quarters.length; j++) {
+    if (quarters[j].hasPage && !quarters[j].isOutlook) {
+      nextPage = { fy: quarters[j].fy, q: quarters[j].q, label: quarters[j].label };
+      break;
+    }
+  }
+
   const qData = {
     ...data,
     quarters: quarters.slice(dataStartIdx, i + 1),
     currentQuarter: { fy: q.fy, q: q.q, label: q.label },
+    prevPage,
+    nextPage,
   };
   fs.mkdirSync(qDir, { recursive: true });
   fs.writeFileSync(path.join(qDir, 'data.json'), JSON.stringify(qData, null, 2));

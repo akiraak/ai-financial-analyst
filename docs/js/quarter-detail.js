@@ -51,23 +51,19 @@ const QuarterDetail = {
     if (bc) bc.textContent = quarter.label;
   },
 
-  renderNav(quarters, idx) {
+  renderNav(prevPage, nextPage) {
     const prevLink = document.getElementById('prevLink');
     const nextLink = document.getElementById('nextLink');
 
-    if (idx > 0) {
-      const prev = quarters[idx - 1];
-      prevLink.href = `../${prev.fy}Q${prev.q}/`;
-      prevLink.textContent = `\u2190 ${prev.label}`;
+    if (prevPage) {
+      prevLink.href = `../${prevPage.fy}Q${prevPage.q}/`;
+      prevLink.textContent = `\u2190 ${prevPage.label}`;
       prevLink.classList.remove('disabled');
     }
 
-    const curr = quarters[idx];
-    const nextFy = curr.q === 4 ? curr.fy + 1 : curr.fy;
-    const nextQ = curr.q === 4 ? 1 : curr.q + 1;
-    if (!curr.isOutlook) {
-      nextLink.href = `../${nextFy}Q${nextQ}/`;
-      nextLink.textContent = `FY${nextFy} Q${nextQ} \u2192`;
+    if (nextPage) {
+      nextLink.href = `../${nextPage.fy}Q${nextPage.q}/`;
+      nextLink.textContent = `${nextPage.label} \u2192`;
       nextLink.classList.remove('disabled');
     }
   },
@@ -260,7 +256,7 @@ const QuarterDetail = {
 
       // ヘッダー・ナビ
       this.renderHeader(d);
-      this.renderNav(quarters, idx);
+      this.renderNav(data.prevPage, data.nextPage);
 
       // KPIサマリー
       this.renderKPI(quarters, idx);

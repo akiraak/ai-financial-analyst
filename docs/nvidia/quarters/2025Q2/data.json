@@ -908,5 +908,15 @@
     "fy": 2025,
     "q": 2,
     "label": "FY2025 Q2"
+  },
+  "prevPage": {
+    "fy": 2025,
+    "q": 1,
+    "label": "FY2025 Q1"
+  },
+  "nextPage": {
+    "fy": 2025,
+    "q": 3,
+    "label": "FY2025 Q3"
   }
 }

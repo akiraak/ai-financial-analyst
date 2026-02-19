@@ -68,3 +68,6 @@
   - 全27四半期分のデータ抽出・data.json再生成
   - analysis-text.json: overviews（12チャート概要）+ 28四半期分の解説テキスト（サマリー+チャート別分析）
   - データ充足チェック手順をworkflowに追加（analyze-and-visualize.md）
+- [x] 四半期ナビの前後リンクを端ページで非表示にする
+  - generate-data-json.jsで各ページにprevPage/nextPageを付与
+  - quarter-detail.jsのrenderNavをデータ駆動に変更

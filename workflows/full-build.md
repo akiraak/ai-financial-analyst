@@ -120,12 +120,14 @@ config.json の設定に基づいてページ生成・チャートデータ範�
 ```bash
 node companies/<企業名>/scripts/generate-pages.js
 node companies/<企業名>/scripts/generate-data-json.js
+node companies/<企業名>/scripts/generate-ir-links.js
 ```
 
 | スクリプト | 出力 |
 |-----------|------|
 | generate-pages.js | docs/\<企業名\>/index.html, quarters/index.html, quarters/template.html |
 | generate-data-json.js | docs/\<企業名\>/data.json, quarters/\<YYYYQN\>/data.json + index.html |
+| generate-ir-links.js | docs/\<企業名\>/ir-links.json（決算資料リンク） |
 
 ### 7. 分析テキストの作成
 

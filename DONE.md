@@ -71,3 +71,6 @@
 - [x] 四半期ナビの前後リンクを端ページで非表示にする
   - generate-data-json.jsで各ページにprevPage/nextPageを付与
   - quarter-detail.jsのrenderNavをデータ駆動に変更
+- [x] ir-links.json 404エラー・決算資料セクション非表示を修正
+  - generate-ir-links.jsを作成し、フルビルドのStep 6で自動生成するよう変更
+  - full-build.mdのワークフローにgenerate-ir-links.jsを追加

@@ -1,8 +1,8 @@
 /* === カラーパレット（CSS変数） === */
 :root {
-  --primary-dark: #3d6b4a;
-  --primary: #5a9e6f;
-  --primary-bg: #eef5f0;
+  --primary-dark: #4a8a30;
+  --primary: #78c44e;
+  --primary-bg: #f2f9eb;
   --accent: #c96b7e;
   --body-bg: #f6f7f5;
   --desc-bg: #f5f8f5;
@@ -27,7 +27,7 @@ body {
 
 /* ヘッダー */
 .header {
-  background: linear-gradient(135deg, var(--primary-dark), var(--accent));
+  background: var(--primary-dark);
   color: #fff;
   padding: 32px 0;
   margin-bottom: 0;
@@ -145,7 +145,7 @@ body {
   color: var(--primary-dark);
   margin-bottom: 16px;
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--border);
+  border-bottom: 2px solid var(--accent);
 }
 
 .chart-wrapper {
@@ -183,6 +183,8 @@ body {
   margin-top: 8px;
   padding-top: 8px;
   border-top: 1px solid var(--border-light);
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
   color: #555;
 }
 
@@ -396,7 +398,7 @@ details.chart-details .chart-description {
 }
 
 .filing-link:hover {
-  background: var(--primary);
+  background: var(--accent);
   color: #fff;
 }
 
@@ -485,7 +487,7 @@ details.chart-details .chart-description {
 .quarter-nav .current {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--primary-dark);
+  color: var(--accent);
 }
 
 .quarter-nav .disabled {
@@ -717,7 +719,7 @@ details.chart-details .chart-description {
 }
 
 .quarter-link-item:hover {
-  background: var(--primary);
+  background: var(--accent);
   color: #fff;
 }
 

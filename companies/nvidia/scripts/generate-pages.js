@@ -29,6 +29,7 @@ function generateLandingPage() {
 
   <div class="header">
     <div class="container">
+      <div class="site-name"><a href="../">AI Financial Analyst</a></div>
       <h1>${COMPANY} <span class="ticker">${TICKER}</span></h1>
       <div class="meta" id="meta"></div>
     </div>
@@ -111,6 +112,7 @@ function generateQuartersIndex() {
 
   <div class="header">
     <div class="container">
+      <div class="site-name"><a href="../../">AI Financial Analyst</a></div>
       <h1>${COMPANY} <span class="ticker">${TICKER}</span></h1>
       <div class="meta">四半期分析一覧</div>
     </div>
@@ -197,6 +199,7 @@ function generateTemplate() {
 
   <div class="header">
     <div class="container">
+      <div class="site-name"><a href="../../../">AI Financial Analyst</a></div>
       <h1>${COMPANY} <span class="ticker">${TICKER}</span></h1>
       <div class="meta" id="headerMeta"></div>
     </div>

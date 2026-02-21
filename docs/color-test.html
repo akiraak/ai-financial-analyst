@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>カラーパターン比較</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f6f7f5; padding: 20px; }
+h1 { text-align: center; margin-bottom: 24px; color: #333; font-size: 1.3rem; }
+.patterns { display: flex; flex-direction: column; gap: 32px; max-width: 900px; margin: 0 auto; }
+.pattern { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; }
+.pattern-label { padding: 12px 20px; background: #f0f0f0; font-weight: 700; font-size: 0.9rem; color: #555; }
+.pattern-header { color: #fff; padding: 24px 20px; }
+.pattern-header h2 { font-size: 1.4rem; }
+.pattern-header .ticker { opacity: 0.8; font-size: 0.9rem; }
+.pattern-body { padding: 20px; }
+.section-title { font-size: 1rem; font-weight: 700; padding-bottom: 8px; margin-bottom: 12px; }
+.swatches { display: flex; gap: 8px; margin-bottom: 16px; }
+.swatch { width: 80px; height: 50px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; color: #fff; font-weight: 600; }
+.nav-demo { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; }
+.nav-pill { padding: 4px 14px; border-radius: 16px; font-size: 0.82rem; font-weight: 600; text-decoration: none; }
+.quarter-pill { padding: 5px 16px; border-radius: 16px; font-size: 0.82rem; font-weight: 600; }
+.desc-box { padding: 16px; border-radius: 6px; font-size: 0.85rem; line-height: 1.7; color: #444; }
+.desc-box .insight { margin-top: 8px; padding-top: 8px; padding-left: 16px; color: #555; }
+.filing-pill { display: inline-block; font-size: 0.75rem; padding: 3px 10px; border-radius: 12px; margin-right: 4px; }
+</style>
+</head>
+<body>
+
+<h1>カラーパターン比較</h1>
+<div class="patterns" id="patterns"></div>
+
+<script>
+const accent = '#c96b7e';
+const patterns = [
+  {
+    name: 'A: 現在（暗めの落ち着いた緑）',
+    dark: '#3d6b4a',
+    mid: '#5a9e6f',
+    bg: '#eef5f0',
+  },
+  {
+    name: 'B: ティールグリーン（青寄り）',
+    dark: '#2a7d6e',
+    mid: '#45b8a0',
+    bg: '#eaf6f3',
+  },
+  {
+    name: 'C: エメラルド（鮮やか）',
+    dark: '#1a9660',
+    mid: '#34c48a',
+    bg: '#e8f9ef',
+  },
+  {
+    name: 'D: ミントグリーン（明るく爽やか）',
+    dark: '#30a070',
+    mid: '#5ed4a0',
+    bg: '#ecfaf2',
+  },
+  {
+    name: 'E: フォレスト（深い緑 × 鮮やかmid）',
+    dark: '#2d5a3a',
+    mid: '#4ec080',
+    bg: '#eef7f0',
+  },
+  {
+    name: 'F: ライムグリーン（黄寄り）',
+    dark: '#4a8a30',
+    mid: '#78c44e',
+    bg: '#f2f9eb',
+  },
+  {
+    name: 'G: セージ（グレイッシュ・落ち着き）',
+    dark: '#5a7a68',
+    mid: '#88b098',
+    bg: '#f0f4f1',
+  },
+  {
+    name: 'H: ビビッドグリーン（高彩度）',
+    dark: '#0d8050',
+    mid: '#22c06e',
+    bg: '#e6faee',
+  },
+];
+
+const container = document.getElementById('patterns');
+
+patterns.forEach(p => {
+  const borderColor = '#e2e8e4';
+  const html = `
+    <div class="pattern">
+      <div class="pattern-label">${p.name} — dark: ${p.dark} / mid: ${p.mid}</div>
+      <div class="pattern-header" style="background: ${p.dark}">
+        <h2>NVIDIA Corporation</h2>
+        <span class="ticker">NASDAQ: NVDA</span>
+      </div>
+      <div class="pattern-body">
+        <!-- カラースウォッチ -->
+        <div class="swatches">
+          <div class="swatch" style="background: ${p.dark}">dark</div>
+          <div class="swatch" style="background: ${p.mid}">mid</div>
+          <div class="swatch" style="background: ${p.bg}; color: #666; border: 1px solid #ddd;">bg</div>
+          <div class="swatch" style="background: ${accent}">accent</div>
+        </div>
+
+        <!-- セクション見出し -->
+        <div class="section-title" style="color: ${p.dark}; border-bottom: 2px solid ${accent};">
+          売上推移（Revenue）
+        </div>
+
+        <!-- 四半期ナビ -->
+        <div class="nav-demo">
+          <span class="nav-pill" style="color: ${p.mid};">← FY2025 Q3</span>
+          <span style="font-weight: 700; color: ${accent}; font-size: 0.95rem;">FY2025 Q4</span>
+          <span class="nav-pill" style="color: ${p.mid};">FY2026 Q1 →</span>
+        </div>
+
+        <!-- 解説ボックス -->
+        <div class="desc-box" style="background: ${p.bg}; border-left: 3px solid ${p.mid};">
+          <span style="font-weight: 600; color: ${p.dark};">概要:</span> 売上高は前年同期比+78%の$39.3Bに到達。Data Center部門が牽引。
+          <div class="insight" style="border-top: 1px solid #dce2dd; border-left: 3px solid ${accent};">
+            <span style="font-weight: 600; color: ${p.dark};">解説:</span> AI需要の継続的拡大により、過去最高売上を更新。
+          </div>
+        </div>
+
+        <!-- 四半期リンク -->
+        <div style="margin-top: 12px; display: flex; gap: 6px; flex-wrap: wrap;">
+          <span class="quarter-pill" style="background: ${p.bg}; color: ${p.mid};">Q1</span>
+          <span class="quarter-pill" style="background: ${accent}; color: #fff;">Q2 hover</span>
+          <span class="quarter-pill" style="background: ${p.bg}; color: ${p.mid};">Q3</span>
+          <span class="quarter-pill" style="background: ${p.bg}; color: ${p.mid};">Q4</span>
+        </div>
+
+        <!-- 決算資料リンク -->
+        <div style="margin-top: 12px;">
+          <span class="filing-pill" style="background: ${p.bg}; color: ${p.mid};">Press Release</span>
+          <span class="filing-pill" style="background: ${accent}; color: #fff;">10-K hover</span>
+          <span class="filing-pill" style="background: ${p.bg}; color: ${p.mid};">CFO Commentary</span>
+        </div>
+      </div>
+    </div>
+  `;
+  container.insertAdjacentHTML('beforeend', html);
+});
+</script>
+</body>
+</html>

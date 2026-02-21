@@ -96,53 +96,62 @@ const ChartBuilder = {
     });
   },
 
+  // セグメントキーからラベル名への変換
+  segmentLabel(key) {
+    const labels = {
+      dataCenter: 'Data Center',
+      gaming: 'Gaming',
+      professionalVisualization: 'Professional Visualization',
+      automotive: 'Automotive',
+      oem: 'OEM & Other',
+      semiconductorSolutions: 'Semiconductor Solutions',
+      infrastructureSoftware: 'Infrastructure Software',
+    };
+    return labels[key] || key;
+  },
+
+  // セグメントキーを動的に検出する
+  detectSegmentKeys(quarters) {
+    const keys = new Set();
+    for (const q of quarters) {
+      if (q.segments) {
+        for (const k of Object.keys(q.segments)) {
+          if (q.segments[k] != null) keys.add(k);
+        }
+      }
+    }
+    return Array.from(keys);
+  },
+
+  // セグメント色パレット
+  segmentColors: [
+    { bg: 'rgba(30, 136, 229, 0.7)', border: 'rgba(30, 136, 229, 1)' },
+    { bg: 'rgba(76, 175, 80, 0.7)', border: 'rgba(76, 175, 80, 1)' },
+    { bg: 'rgba(255, 183, 77, 0.7)', border: 'rgba(255, 183, 77, 1)' },
+    { bg: 'rgba(156, 39, 176, 0.7)', border: 'rgba(156, 39, 176, 1)' },
+    { bg: 'rgba(158, 158, 158, 0.7)', border: 'rgba(158, 158, 158, 1)' },
+  ],
+
   // === 2. セグメント別売上（積み上げ棒グラフ）===
   createSegmentRevenueChart(ctx, data) {
     const q = this.getActualQuarters(data.quarters);
     const labels = this.getLabels(q);
+    const segKeys = this.detectSegmentKeys(q);
+
+    const datasets = segKeys.map((key, i) => {
+      const color = this.segmentColors[i % this.segmentColors.length];
+      return {
+        label: this.segmentLabel(key),
+        data: q.map(d => d.segments?.[key] ?? null),
+        backgroundColor: this.makeColors(color.bg, q),
+        borderColor: this.makeBorderColors(color.border, q),
+        borderWidth: 1,
+      };
+    });
 
     return new Chart(ctx, {
       type: 'bar',
-      data: {
-        labels,
-        datasets: [
-          {
-            label: 'Data Center',
-            data: q.map(d => d.segments?.dataCenter ?? null),
-            backgroundColor: this.makeColors('rgba(30, 136, 229, 0.7)', q),
-            borderColor: this.makeBorderColors('rgba(30, 136, 229, 1)', q),
-            borderWidth: 1,
-          },
-          {
-            label: 'Gaming',
-            data: q.map(d => d.segments?.gaming ?? null),
-            backgroundColor: this.makeColors('rgba(76, 175, 80, 0.7)', q),
-            borderColor: this.makeBorderColors('rgba(76, 175, 80, 1)', q),
-            borderWidth: 1,
-          },
-          {
-            label: 'Professional Visualization',
-            data: q.map(d => d.segments?.professionalVisualization ?? null),
-            backgroundColor: this.makeColors('rgba(255, 183, 77, 0.7)', q),
-            borderColor: this.makeBorderColors('rgba(255, 183, 77, 1)', q),
-            borderWidth: 1,
-          },
-          {
-            label: 'Automotive',
-            data: q.map(d => d.segments?.automotive ?? null),
-            backgroundColor: this.makeColors('rgba(156, 39, 176, 0.7)', q),
-            borderColor: this.makeBorderColors('rgba(156, 39, 176, 1)', q),
-            borderWidth: 1,
-          },
-          {
-            label: 'OEM & Other',
-            data: q.map(d => d.segments?.oem ?? null),
-            backgroundColor: this.makeColors('rgba(158, 158, 158, 0.7)', q),
-            borderColor: this.makeBorderColors('rgba(158, 158, 158, 1)', q),
-            borderWidth: 1,
-          },
-        ],
-      },
+      data: { labels, datasets },
       options: {
         responsive: true,
         plugins: {
@@ -169,56 +178,28 @@ const ChartBuilder = {
   createSegmentCompositionChart(ctx, data) {
     const q = this.getActualQuarters(data.quarters);
     const labels = this.getLabels(q);
+    const segKeys = this.detectSegmentKeys(q);
 
-    // 各セグメントの売上比率を算出
     const pct = (d, key) => {
       if (!d.segments || !d.revenue) return null;
       const val = d.segments[key];
       return val != null ? val / d.revenue * 100 : null;
     };
 
+    const datasets = segKeys.map((key, i) => {
+      const color = this.segmentColors[i % this.segmentColors.length];
+      return {
+        label: this.segmentLabel(key),
+        data: q.map(d => pct(d, key)),
+        backgroundColor: color.bg,
+        borderColor: color.border,
+        borderWidth: 1,
+      };
+    });
+
     return new Chart(ctx, {
       type: 'bar',
-      data: {
-        labels,
-        datasets: [
-          {
-            label: 'Data Center',
-            data: q.map(d => pct(d, 'dataCenter')),
-            backgroundColor: 'rgba(30, 136, 229, 0.7)',
-            borderColor: 'rgba(30, 136, 229, 1)',
-            borderWidth: 1,
-          },
-          {
-            label: 'Gaming',
-            data: q.map(d => pct(d, 'gaming')),
-            backgroundColor: 'rgba(76, 175, 80, 0.7)',
-            borderColor: 'rgba(76, 175, 80, 1)',
-            borderWidth: 1,
-          },
-          {
-            label: 'Professional Visualization',
-            data: q.map(d => pct(d, 'professionalVisualization')),
-            backgroundColor: 'rgba(255, 183, 77, 0.7)',
-            borderColor: 'rgba(255, 183, 77, 1)',
-            borderWidth: 1,
-          },
-          {
-            label: 'Automotive',
-            data: q.map(d => pct(d, 'automotive')),
-            backgroundColor: 'rgba(156, 39, 176, 0.7)',
-            borderColor: 'rgba(156, 39, 176, 1)',
-            borderWidth: 1,
-          },
-          {
-            label: 'OEM & Other',
-            data: q.map(d => pct(d, 'oem')),
-            backgroundColor: 'rgba(158, 158, 158, 0.7)',
-            borderColor: 'rgba(158, 158, 158, 1)',
-            borderWidth: 1,
-          },
-        ],
-      },
+      data: { labels, datasets },
       options: {
         responsive: true,
         plugins: {
@@ -705,31 +686,50 @@ const ChartBuilder = {
     });
   },
 
+  // セグメント営業利益のキーを動的に検出する
+  detectSegmentProfitKeys(quarters) {
+    const keys = new Set();
+    for (const q of quarters) {
+      if (q.segmentProfit) {
+        for (const k of Object.keys(q.segmentProfit)) {
+          if (q.segmentProfit[k]?.operatingIncome != null) keys.add(k);
+        }
+      }
+    }
+    return Array.from(keys);
+  },
+
+  // セグメント営業利益キーからラベル名への変換
+  segmentProfitLabel(key) {
+    const labels = {
+      computeAndNetworking: 'Compute & Networking',
+      graphics: 'Graphics',
+      semiconductorSolutions: 'Semiconductor Solutions',
+      infrastructureSoftware: 'Infrastructure Software',
+    };
+    return labels[key] || key;
+  },
+
   // === 11. セグメント営業利益（棒グラフ）===
   createSegmentProfitChart(ctx, data) {
     const q = this.getActualQuarters(data.quarters);
     const labels = this.getLabels(q);
+    const segKeys = this.detectSegmentProfitKeys(q);
+
+    const datasets = segKeys.map((key, i) => {
+      const color = this.segmentColors[i % this.segmentColors.length];
+      return {
+        label: this.segmentProfitLabel(key),
+        data: q.map(d => d.segmentProfit?.[key]?.operatingIncome ?? null),
+        backgroundColor: this.makeColors(color.bg, q),
+        borderColor: this.makeBorderColors(color.border, q),
+        borderWidth: 1,
+      };
+    });
+
     return new Chart(ctx, {
       type: 'bar',
-      data: {
-        labels,
-        datasets: [
-          {
-            label: 'Compute & Networking',
-            data: q.map(d => d.segmentProfit?.computeAndNetworking?.operatingIncome ?? null),
-            backgroundColor: this.makeColors('rgba(30, 136, 229, 0.7)', q),
-            borderColor: this.makeBorderColors('rgba(30, 136, 229, 1)', q),
-            borderWidth: 1,
-          },
-          {
-            label: 'Graphics',
-            data: q.map(d => d.segmentProfit?.graphics?.operatingIncome ?? null),
-            backgroundColor: this.makeColors('rgba(76, 175, 80, 0.7)', q),
-            borderColor: this.makeBorderColors('rgba(76, 175, 80, 1)', q),
-            borderWidth: 1,
-          },
-        ],
-      },
+      data: { labels, datasets },
       options: {
         responsive: true,
         plugins: {
@@ -754,39 +754,27 @@ const ChartBuilder = {
   createSegmentMarginChart(ctx, data) {
     const q = this.getActualQuarters(data.quarters);
     const labels = this.getLabels(q);
-    const cnMargin = q.map(d => {
-      const s = d.segmentProfit?.computeAndNetworking;
-      if (!s || !s.revenue || s.operatingIncome == null) return null;
-      return s.operatingIncome / s.revenue * 100;
+    const segKeys = this.detectSegmentProfitKeys(q);
+
+    const datasets = segKeys.map((key, i) => {
+      const color = this.segmentColors[i % this.segmentColors.length];
+      return {
+        label: this.segmentProfitLabel(key),
+        data: q.map(d => {
+          const s = d.segmentProfit?.[key];
+          if (!s || !s.revenue || s.operatingIncome == null) return null;
+          return s.operatingIncome / s.revenue * 100;
+        }),
+        borderColor: color.border,
+        backgroundColor: color.bg.replace('0.7)', '0.1)'),
+        fill: true, tension: 0.3,
+        borderWidth: 2, pointRadius: 3,
+      };
     });
-    const gfxMargin = q.map(d => {
-      const s = d.segmentProfit?.graphics;
-      if (!s || !s.revenue || s.operatingIncome == null) return null;
-      return s.operatingIncome / s.revenue * 100;
-    });
+
     return new Chart(ctx, {
       type: 'line',
-      data: {
-        labels,
-        datasets: [
-          {
-            label: 'Compute & Networking',
-            data: cnMargin,
-            borderColor: 'rgba(30, 136, 229, 1)',
-            backgroundColor: 'rgba(30, 136, 229, 0.1)',
-            fill: true, tension: 0.3,
-            borderWidth: 2, pointRadius: 3,
-          },
-          {
-            label: 'Graphics',
-            data: gfxMargin,
-            borderColor: 'rgba(76, 175, 80, 1)',
-            backgroundColor: 'rgba(76, 175, 80, 0.1)',
-            fill: true, tension: 0.3,
-            borderWidth: 2, pointRadius: 3,
-          },
-        ],
-      },
+      data: { labels, datasets },
       options: {
         responsive: true,
         plugins: {

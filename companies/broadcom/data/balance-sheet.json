@@ -1,0 +1,254 @@
+{
+  "FY2020": {
+    "Q1": {
+      "cashAndEquivalents": 6444,
+      "totalCurrentAssets": 12109,
+      "totalAssets": 81006,
+      "shortTermDebt": 2311,
+      "totalCurrentLiabilities": 7739,
+      "longTermDebt": 42407,
+      "totalLiabilities": 56610,
+      "stockholdersEquity": 24368
+    },
+    "Q2": {
+      "cashAndEquivalents": 9207,
+      "totalCurrentAssets": 14222,
+      "totalAssets": 81548,
+      "shortTermDebt": 819,
+      "totalCurrentLiabilities": 6601,
+      "longTermDebt": 45044,
+      "totalLiabilities": 57578,
+      "stockholdersEquity": 23942
+    },
+    "Q3": {
+      "cashAndEquivalents": 8857,
+      "totalCurrentAssets": 13681,
+      "totalAssets": 79298,
+      "shortTermDebt": 822,
+      "totalCurrentLiabilities": 6702,
+      "longTermDebt": 43201,
+      "totalLiabilities": 55713,
+      "stockholdersEquity": 23557
+    },
+    "Q4": {
+      "cashAndEquivalents": 7618,
+      "totalCurrentAssets": 11895,
+      "totalAssets": 75933,
+      "shortTermDebt": 827,
+      "totalCurrentLiabilities": 6371,
+      "longTermDebt": 40235,
+      "totalLiabilities": 52032,
+      "stockholdersEquity": 23874
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "cashAndEquivalents": 9552,
+      "totalCurrentAssets": 14300,
+      "totalAssets": 76972,
+      "shortTermDebt": 864,
+      "totalCurrentLiabilities": 6694,
+      "longTermDebt": 41068,
+      "totalLiabilities": 52973,
+      "stockholdersEquity": 23973
+    },
+    "Q2": {
+      "cashAndEquivalents": 9518,
+      "totalCurrentAssets": 14245,
+      "totalAssets": 75524,
+      "shortTermDebt": 278,
+      "totalCurrentLiabilities": 6436,
+      "longTermDebt": 40160,
+      "totalLiabilities": 51558,
+      "stockholdersEquity": 23939
+    },
+    "Q3": {
+      "cashAndEquivalents": 11105,
+      "totalCurrentAssets": 15636,
+      "totalAssets": 75880,
+      "shortTermDebt": 279,
+      "totalCurrentLiabilities": 6501,
+      "longTermDebt": 40178,
+      "totalLiabilities": 51513,
+      "stockholdersEquity": 24340
+    },
+    "Q4": {
+      "cashAndEquivalents": 12163,
+      "totalCurrentAssets": 16586,
+      "totalAssets": 75570,
+      "shortTermDebt": 290,
+      "totalCurrentLiabilities": 6281,
+      "longTermDebt": 39440,
+      "totalLiabilities": 50581,
+      "stockholdersEquity": 24962
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "cashAndEquivalents": 10219,
+      "totalCurrentAssets": 15341,
+      "totalAssets": 73224,
+      "shortTermDebt": 300,
+      "totalCurrentLiabilities": 6287,
+      "longTermDebt": 39205,
+      "totalLiabilities": 50230,
+      "stockholdersEquity": 22968
+    },
+    "Q2": {
+      "cashAndEquivalents": 9005,
+      "totalCurrentAssets": 14810,
+      "totalAssets": 71719,
+      "shortTermDebt": 302,
+      "totalCurrentLiabilities": 6910,
+      "longTermDebt": 39164,
+      "totalLiabilities": 50729,
+      "stockholdersEquity": 20963
+    },
+    "Q3": {
+      "cashAndEquivalents": 9977,
+      "totalCurrentAssets": 15561,
+      "totalAssets": 71326,
+      "shortTermDebt": 304,
+      "totalCurrentLiabilities": 6702,
+      "longTermDebt": 39191,
+      "totalLiabilities": 50423,
+      "stockholdersEquity": 20876
+    },
+    "Q4": {
+      "cashAndEquivalents": 12416,
+      "totalCurrentAssets": 18504,
+      "totalAssets": 73249,
+      "shortTermDebt": 440,
+      "totalCurrentLiabilities": 7052,
+      "longTermDebt": 39075,
+      "totalLiabilities": 50540,
+      "stockholdersEquity": 22709
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "cashAndEquivalents": 12647,
+      "totalCurrentAssets": 18836,
+      "totalAssets": 72976,
+      "shortTermDebt": 1115,
+      "totalCurrentLiabilities": 7483,
+      "longTermDebt": 38167,
+      "totalLiabilities": 49666,
+      "stockholdersEquity": 23310
+    },
+    "Q2": {
+      "cashAndEquivalents": 11553,
+      "totalCurrentAssets": 17871,
+      "totalAssets": 71667,
+      "shortTermDebt": 1117,
+      "totalCurrentLiabilities": 7511,
+      "longTermDebt": 38194,
+      "totalLiabilities": 49660,
+      "stockholdersEquity": 22007
+    },
+    "Q3": {
+      "cashAndEquivalents": 12055,
+      "totalCurrentAssets": 18333,
+      "totalAssets": 71595,
+      "shortTermDebt": 1119,
+      "totalCurrentLiabilities": 7345,
+      "longTermDebt": 38222,
+      "totalLiabilities": 49516,
+      "stockholdersEquity": 22079
+    },
+    "Q4": {
+      "cashAndEquivalents": 14189,
+      "totalCurrentAssets": 20847,
+      "totalAssets": 72861,
+      "shortTermDebt": 1608,
+      "totalCurrentLiabilities": 7405,
+      "longTermDebt": 37621,
+      "totalLiabilities": 48873,
+      "stockholdersEquity": 23988
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "cashAndEquivalents": 11864,
+      "totalCurrentAssets": 27192,
+      "totalAssets": 177870,
+      "shortTermDebt": 2433,
+      "totalCurrentLiabilities": 20369,
+      "longTermDebt": 73468,
+      "totalLiabilities": 107586,
+      "stockholdersEquity": 70284
+    },
+    "Q2": {
+      "cashAndEquivalents": 9809,
+      "totalCurrentAssets": 25302,
+      "totalAssets": 175211,
+      "shortTermDebt": 2426,
+      "totalCurrentLiabilities": 20171,
+      "longTermDebt": 71590,
+      "totalLiabilities": 105250,
+      "stockholdersEquity": 69961
+    },
+    "Q3": {
+      "cashAndEquivalents": 9952,
+      "totalCurrentAssets": 19947,
+      "totalAssets": 167966,
+      "shortTermDebt": 3161,
+      "totalCurrentLiabilities": 19221,
+      "longTermDebt": 66798,
+      "totalLiabilities": 102315,
+      "stockholdersEquity": 65651
+    },
+    "Q4": {
+      "cashAndEquivalents": 9348,
+      "totalCurrentAssets": 19595,
+      "totalAssets": 165645,
+      "shortTermDebt": 1271,
+      "totalCurrentLiabilities": 16697,
+      "longTermDebt": 66295,
+      "totalLiabilities": 97967,
+      "stockholdersEquity": 67678
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "cashAndEquivalents": 9307,
+      "totalCurrentAssets": 20990,
+      "totalAssets": 165358,
+      "shortTermDebt": 5653,
+      "totalCurrentLiabilities": 20910,
+      "longTermDebt": 60926,
+      "totalLiabilities": 95569,
+      "stockholdersEquity": 69789
+    },
+    "Q2": {
+      "cashAndEquivalents": 9472,
+      "totalCurrentAssets": 22181,
+      "totalAssets": 164630,
+      "shortTermDebt": 5531,
+      "totalCurrentLiabilities": 20597,
+      "longTermDebt": 61751,
+      "totalLiabilities": 95044,
+      "stockholdersEquity": 69586
+    },
+    "Q3": {
+      "cashAndEquivalents": 10718,
+      "totalCurrentAssets": 24998,
+      "totalAssets": 165621,
+      "shortTermDebt": 1399,
+      "totalCurrentLiabilities": 16704,
+      "longTermDebt": 62830,
+      "totalLiabilities": 92344,
+      "stockholdersEquity": 73277
+    },
+    "Q4": {
+      "cashAndEquivalents": 16178,
+      "totalCurrentAssets": 31573,
+      "totalAssets": 171092,
+      "shortTermDebt": 3152,
+      "totalCurrentLiabilities": 18514,
+      "longTermDebt": 61984,
+      "totalLiabilities": 89800,
+      "stockholdersEquity": 81292
+    }
+  }
+}

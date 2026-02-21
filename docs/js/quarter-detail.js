@@ -44,7 +44,7 @@ const QuarterDetail = {
   renderHeader(quarter) {
     document.getElementById('headerMeta').textContent =
       quarter.label + (quarter.isOutlook ? '（ガイダンス）' : '');
-    document.title = `NVIDIA ${quarter.label} 四半期詳細`;
+    document.title = `${document.querySelector('h1')?.textContent?.trim() || ''} ${quarter.label} 四半期詳細`;
     document.getElementById('currentLabel').textContent = quarter.label;
     // パンくずナビの四半期ラベル
     const bc = document.getElementById('breadcrumbQuarter');

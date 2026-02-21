@@ -1,0 +1,110 @@
+{
+  "FY2020": {
+    "Q1": {
+      "semiconductorSolutions": 4191,
+      "infrastructureSoftware": 1667
+    },
+    "Q2": {
+      "semiconductorSolutions": 4027,
+      "infrastructureSoftware": 1715
+    },
+    "Q3": {
+      "semiconductorSolutions": 4219,
+      "infrastructureSoftware": 1602
+    },
+    "Q4": {
+      "semiconductorSolutions": 4830,
+      "infrastructureSoftware": 1637
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "semiconductorSolutions": 4908,
+      "infrastructureSoftware": 1747
+    },
+    "Q2": {
+      "semiconductorSolutions": 4820,
+      "infrastructureSoftware": 1790
+    },
+    "Q3": {
+      "semiconductorSolutions": 5021,
+      "infrastructureSoftware": 1757
+    },
+    "Q4": {
+      "semiconductorSolutions": 5634,
+      "infrastructureSoftware": 1773
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "semiconductorSolutions": 5873,
+      "infrastructureSoftware": 1833
+    },
+    "Q2": {
+      "semiconductorSolutions": 6229,
+      "infrastructureSoftware": 1874
+    },
+    "Q3": {
+      "semiconductorSolutions": 6624,
+      "infrastructureSoftware": 1840
+    },
+    "Q4": {
+      "semiconductorSolutions": 7092,
+      "infrastructureSoftware": 1838
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "semiconductorSolutions": 7107,
+      "infrastructureSoftware": 1808
+    },
+    "Q2": {
+      "semiconductorSolutions": 6808,
+      "infrastructureSoftware": 1925
+    },
+    "Q3": {
+      "semiconductorSolutions": 6941,
+      "infrastructureSoftware": 1935
+    },
+    "Q4": {
+      "semiconductorSolutions": 7326,
+      "infrastructureSoftware": 1969
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "semiconductorSolutions": 7390,
+      "infrastructureSoftware": 4571
+    },
+    "Q2": {
+      "semiconductorSolutions": 7202,
+      "infrastructureSoftware": 5285
+    },
+    "Q3": {
+      "semiconductorSolutions": 7274,
+      "infrastructureSoftware": 5798
+    },
+    "Q4": {
+      "semiconductorSolutions": 8230,
+      "infrastructureSoftware": 5824
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "semiconductorSolutions": 8212,
+      "infrastructureSoftware": 6704
+    },
+    "Q2": {
+      "semiconductorSolutions": 8408,
+      "infrastructureSoftware": 6596
+    },
+    "Q3": {
+      "semiconductorSolutions": 9166,
+      "infrastructureSoftware": 6786
+    },
+    "Q4": {
+      "semiconductorSolutions": 11072,
+      "infrastructureSoftware": 6943
+    }
+  }
+}

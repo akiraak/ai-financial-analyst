@@ -1,0 +1,218 @@
+[
+  {
+    "fy": "FY2020",
+    "q": "Q1",
+    "adsh": "0001193125-20-071608",
+    "file": "d859221dex991.htm",
+    "date": "2020-03-12",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312520071608/d859221dex991.htm",
+    "localPath": "FY2020/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q2",
+    "adsh": "0001730168-20-000099",
+    "file": "avgo-05032020x8kxex99.htm",
+    "date": "2020-06-04",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016820000099/avgo-05032020x8kxex99.htm",
+    "localPath": "FY2020/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q3",
+    "adsh": "0001730168-20-000154",
+    "file": "avgo-08022020x8kxex99.htm",
+    "date": "2020-09-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016820000154/avgo-08022020x8kxex99.htm",
+    "localPath": "FY2020/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q4",
+    "adsh": "0001730168-20-000201",
+    "file": "avgo-11012020x8kxex99.htm",
+    "date": "2020-12-10",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016820000201/avgo-11012020x8kxex99.htm",
+    "localPath": "FY2020/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q1",
+    "adsh": "0001730168-21-000026",
+    "file": "avgo-01312021x8kxex99.htm",
+    "date": "2021-03-04",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016821000026/avgo-01312021x8kxex99.htm",
+    "localPath": "FY2021/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q2",
+    "adsh": "0001730168-21-000110",
+    "file": "avgo-05022021x8kxex99.htm",
+    "date": "2021-06-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016821000110/avgo-05022021x8kxex99.htm",
+    "localPath": "FY2021/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q3",
+    "adsh": "0001730168-21-000121",
+    "file": "avgo-08012021x8kxex99.htm",
+    "date": "2021-09-02",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016821000121/avgo-08012021x8kxex99.htm",
+    "localPath": "FY2021/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q4",
+    "adsh": "0001730168-21-000148",
+    "file": "avgo-10312021x8kxex99.htm",
+    "date": "2021-12-09",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016821000148/avgo-10312021x8kxex99.htm",
+    "localPath": "FY2021/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q1",
+    "adsh": "0001730168-22-000015",
+    "file": "avgo-01302022x8kxex99.htm",
+    "date": "2022-03-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016822000015/avgo-01302022x8kxex99.htm",
+    "localPath": "FY2022/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q2",
+    "adsh": "0001193125-22-160304",
+    "file": "d262320dex991.htm",
+    "date": "2022-05-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312522160304/d262320dex991.htm",
+    "localPath": "FY2022/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q3",
+    "adsh": "0001730168-22-000091",
+    "file": "avgo-07312022x8kxex99.htm",
+    "date": "2022-09-01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016822000091/avgo-07312022x8kxex99.htm",
+    "localPath": "FY2022/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q4",
+    "adsh": "0001730168-22-000110",
+    "file": "avgo-10302022x8kxex99.htm",
+    "date": "2022-12-08",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016822000110/avgo-10302022x8kxex99.htm",
+    "localPath": "FY2022/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q1",
+    "adsh": "0001730168-23-000004",
+    "file": "avgo-01292023x8kxex99.htm",
+    "date": "2023-03-02",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016823000004/avgo-01292023x8kxex99.htm",
+    "localPath": "FY2023/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q2",
+    "adsh": "0001730168-23-000062",
+    "file": "avgo-04302023x8kxex99.htm",
+    "date": "2023-06-01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016823000062/avgo-04302023x8kxex99.htm",
+    "localPath": "FY2023/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q3",
+    "adsh": "0001730168-23-000074",
+    "file": "avgo-07302023x8kxex99.htm",
+    "date": "2023-08-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016823000074/avgo-07302023x8kxex99.htm",
+    "localPath": "FY2023/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q4",
+    "adsh": "0001730168-23-000093",
+    "file": "avgo-10292023x8kxex99.htm",
+    "date": "2023-12-07",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016823000093/avgo-10292023x8kxex99.htm",
+    "localPath": "FY2023/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q1",
+    "adsh": "0001730168-24-000012",
+    "file": "avgo-02042024x8kxex99.htm",
+    "date": "2024-03-07",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000012/avgo-02042024x8kxex99.htm",
+    "localPath": "FY2024/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q2",
+    "adsh": "0001730168-24-000077",
+    "file": "avgo-05052024x8kxex99.htm",
+    "date": "2024-06-12",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000077/avgo-05052024x8kxex99.htm",
+    "localPath": "FY2024/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q3",
+    "adsh": "0001730168-24-000095",
+    "file": "avgo-08042024x8kxex99.htm",
+    "date": "2024-09-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000095/avgo-08042024x8kxex99.htm",
+    "localPath": "FY2024/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q4",
+    "adsh": "0001730168-24-000125",
+    "file": "avgo-11032024x8kxex99.htm",
+    "date": "2024-12-12",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm",
+    "localPath": "FY2024/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q1",
+    "adsh": "0001730168-25-000009",
+    "file": "avgo-02022025x8kxex99.htm",
+    "date": "2025-03-06",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000009/avgo-02022025x8kxex99.htm",
+    "localPath": "FY2025/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q2",
+    "adsh": "0001730168-25-000061",
+    "file": "avgo-05042025x8kxex99.htm",
+    "date": "2025-06-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm",
+    "localPath": "FY2025/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q3",
+    "adsh": "0001730168-25-000094",
+    "file": "avgo-08032025x8kxex99.htm",
+    "date": "2025-09-04",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm",
+    "localPath": "FY2025/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q4",
+    "adsh": "0001730168-25-000116",
+    "file": "avgo-11022025x8kxex99.htm",
+    "date": "2025-12-11",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000116/avgo-11022025x8kxex99.htm",
+    "localPath": "FY2025/Q4/press-release.html"
+  }
+]

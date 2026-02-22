@@ -1,0 +1,1043 @@
+{
+  "company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "generatedAt": "2026-02-22",
+  "nextEarningsDate": "2026-04-29",
+  "quarters": [
+    {
+      "label": "FY2022 Q1",
+      "fy": 2022,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 68011,
+      "costOfRevenue": 29599,
+      "grossProfit": 38412,
+      "researchAndDevelopment": 9119,
+      "sga": 9199,
+      "totalOperatingExpenses": 18318,
+      "operatingIncome": 20094,
+      "nonOperatingIncome": -1160,
+      "netIncome": 16436,
+      "eps": 1.23,
+      "price": 139.07,
+      "priceDate": "2022-03-31",
+      "sharesDiluted": 13351,
+      "segments": {
+        "googleSearch": 39618,
+        "youtubeAds": 6869,
+        "googleNetwork": 8174,
+        "googleSubscriptions": 6811,
+        "googleCloud": 5821,
+        "otherBets": 440
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 20886,
+        "totalAssets": 357096,
+        "totalLiabilities": 103092,
+        "totalEquity": 254004,
+        "totalDebt": 14791
+      },
+      "cashFlow": {
+        "operatingCF": 25106,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 15320
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 61472,
+          "operatingIncome": 21973
+        },
+        "googleCloud": {
+          "revenue": 5821,
+          "operatingIncome": -706
+        },
+        "otherBets": {
+          "revenue": 440,
+          "operatingIncome": -835
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -338
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 30544,
+        "marketableSecurities": 113084,
+        "netCash": 119179
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q2",
+      "fy": 2022,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 69685,
+      "costOfRevenue": 30104,
+      "grossProfit": 39581,
+      "researchAndDevelopment": 9841,
+      "sga": 10287,
+      "totalOperatingExpenses": 20128,
+      "operatingIncome": 19453,
+      "nonOperatingIncome": -439,
+      "netIncome": 16002,
+      "eps": 1.21,
+      "price": 108.96,
+      "priceDate": "2022-06-30",
+      "sharesDiluted": 13239,
+      "segments": {
+        "googleSearch": 40689,
+        "youtubeAds": 7340,
+        "googleNetwork": 8259,
+        "googleSubscriptions": 6553,
+        "googleCloud": 6276,
+        "otherBets": 193
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 17936,
+        "totalAssets": 355185,
+        "totalLiabilities": 99766,
+        "totalEquity": 255419,
+        "totalDebt": 14734
+      },
+      "cashFlow": {
+        "operatingCF": 19422,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 12594
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 62841,
+          "operatingIncome": 21621
+        },
+        "googleCloud": {
+          "revenue": 6276,
+          "operatingIncome": -590
+        },
+        "otherBets": {
+          "revenue": 193,
+          "operatingIncome": -1339
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -239
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 30665,
+        "marketableSecurities": 107061,
+        "netCash": 110263
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q3",
+      "fy": 2022,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 69092,
+      "costOfRevenue": 31158,
+      "grossProfit": 37934,
+      "researchAndDevelopment": 10273,
+      "sga": 10526,
+      "totalOperatingExpenses": 20799,
+      "operatingIncome": 17135,
+      "nonOperatingIncome": -902,
+      "netIncome": 13910,
+      "eps": 1.06,
+      "price": 95.65,
+      "priceDate": "2022-09-30",
+      "sharesDiluted": 13097,
+      "segments": {
+        "googleSearch": 39539,
+        "youtubeAds": 7071,
+        "googleNetwork": 7872,
+        "googleSubscriptions": 6895,
+        "googleCloud": 6868,
+        "otherBets": 209
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 21984,
+        "totalAssets": 358255,
+        "totalLiabilities": 104629,
+        "totalEquity": 253626,
+        "totalDebt": 14653
+      },
+      "cashFlow": {
+        "operatingCF": 23353,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 16077
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 61377,
+          "operatingIncome": 18883
+        },
+        "googleCloud": {
+          "revenue": 6868,
+          "operatingIncome": -440
+        },
+        "otherBets": {
+          "revenue": 209,
+          "operatingIncome": -1225
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -83
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 30419,
+        "marketableSecurities": 94275,
+        "netCash": 101606
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q4",
+      "fy": 2022,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 76048,
+      "costOfRevenue": 35342,
+      "grossProfit": 40706,
+      "researchAndDevelopment": 10267,
+      "sga": 12279,
+      "totalOperatingExpenses": 22546,
+      "operatingIncome": 18160,
+      "nonOperatingIncome": -1013,
+      "netIncome": 13624,
+      "eps": 1.05,
+      "price": 88.23,
+      "priceDate": "2022-12-30",
+      "sharesDiluted": 12947,
+      "segments": {
+        "googleSearch": 42604,
+        "youtubeAds": 7963,
+        "googleNetwork": 8475,
+        "googleSubscriptions": 8796,
+        "googleCloud": 7315,
+        "otherBets": 226
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 21879,
+        "totalAssets": 365264,
+        "totalLiabilities": 109120,
+        "totalEquity": 256144,
+        "totalDebt": 14701
+      },
+      "cashFlow": {
+        "operatingCF": 23614,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 16019
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 67838,
+          "operatingIncome": 20222
+        },
+        "googleCloud": {
+          "revenue": 7315,
+          "operatingIncome": -186
+        },
+        "otherBets": {
+          "revenue": 226,
+          "operatingIncome": -1237
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -639
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 30492,
+        "marketableSecurities": 91883,
+        "netCash": 99061
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q1",
+      "fy": 2023,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 69787,
+      "costOfRevenue": 30612,
+      "grossProfit": 39175,
+      "researchAndDevelopment": 11468,
+      "sga": 10292,
+      "totalOperatingExpenses": 21760,
+      "operatingIncome": 17415,
+      "nonOperatingIncome": 790,
+      "netIncome": 15051,
+      "eps": 1.17,
+      "price": 103.73,
+      "priceDate": "2023-03-31",
+      "sharesDiluted": 12823,
+      "segments": {
+        "googleSearch": 40359,
+        "youtubeAds": 6693,
+        "googleNetwork": 7496,
+        "googleSubscriptions": 7413,
+        "googleCloud": 7454,
+        "otherBets": 288
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 25924,
+        "totalAssets": 369491,
+        "totalLiabilities": 108597,
+        "totalEquity": 260894,
+        "totalDebt": 13697
+      },
+      "cashFlow": {
+        "operatingCF": 23509,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 17220
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 61961,
+          "operatingIncome": 21737
+        },
+        "googleCloud": {
+          "revenue": 7454,
+          "operatingIncome": 191
+        },
+        "otherBets": {
+          "revenue": 288,
+          "operatingIncome": -1225
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -3288
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 31213,
+        "marketableSecurities": 89178,
+        "netCash": 101405
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q2",
+      "fy": 2023,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 74604,
+      "costOfRevenue": 31916,
+      "grossProfit": 42688,
+      "researchAndDevelopment": 10588,
+      "sga": 10262,
+      "totalOperatingExpenses": 20850,
+      "operatingIncome": 21838,
+      "nonOperatingIncome": 65,
+      "netIncome": 18368,
+      "eps": 1.44,
+      "price": 119.7,
+      "priceDate": "2023-06-30",
+      "sharesDiluted": 12764,
+      "segments": {
+        "googleSearch": 42628,
+        "youtubeAds": 7665,
+        "googleNetwork": 7850,
+        "googleSubscriptions": 8142,
+        "googleCloud": 8031,
+        "otherBets": 285
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 25929,
+        "totalAssets": 383044,
+        "totalLiabilities": 115903,
+        "totalEquity": 267141,
+        "totalDebt": 13705
+      },
+      "cashFlow": {
+        "operatingCF": 28666,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 21778
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 66285,
+          "operatingIncome": 23454
+        },
+        "googleCloud": {
+          "revenue": 8031,
+          "operatingIncome": 395
+        },
+        "otherBets": {
+          "revenue": 285,
+          "operatingIncome": -813
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -1198
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 31224,
+        "marketableSecurities": 92403,
+        "netCash": 104627
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q3",
+      "fy": 2023,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 76693,
+      "costOfRevenue": 33229,
+      "grossProfit": 43464,
+      "researchAndDevelopment": 11258,
+      "sga": 10863,
+      "totalOperatingExpenses": 22121,
+      "operatingIncome": 21343,
+      "nonOperatingIncome": -146,
+      "netIncome": 19689,
+      "eps": 1.55,
+      "price": 130.86,
+      "priceDate": "2023-09-29",
+      "sharesDiluted": 12696,
+      "segments": {
+        "googleSearch": 44026,
+        "youtubeAds": 7952,
+        "googleNetwork": 7669,
+        "googleSubscriptions": 8339,
+        "googleCloud": 8411,
+        "otherBets": 297
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 30702,
+        "totalAssets": 396711,
+        "totalLiabilities": 123509,
+        "totalEquity": 273202,
+        "totalDebt": 13781
+      },
+      "cashFlow": {
+        "operatingCF": 30656,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 22601
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 67986,
+          "operatingIncome": 23937
+        },
+        "googleCloud": {
+          "revenue": 8411,
+          "operatingIncome": 266
+        },
+        "otherBets": {
+          "revenue": 297,
+          "operatingIncome": -1194
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -1666
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 30907,
+        "marketableSecurities": 89233,
+        "netCash": 106154
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q4",
+      "fy": 2023,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 86310,
+      "costOfRevenue": 37575,
+      "grossProfit": 48735,
+      "researchAndDevelopment": 12113,
+      "sga": 12925,
+      "totalOperatingExpenses": 25038,
+      "operatingIncome": 23697,
+      "nonOperatingIncome": 715,
+      "netIncome": 20687,
+      "eps": 1.64,
+      "price": 139.69,
+      "priceDate": "2023-12-29",
+      "sharesDiluted": 12602,
+      "segments": {
+        "googleSearch": 48020,
+        "youtubeAds": 9200,
+        "googleNetwork": 8297,
+        "googleSubscriptions": 10794,
+        "googleCloud": 9192,
+        "otherBets": 657
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 24048,
+        "totalAssets": 402392,
+        "totalLiabilities": 119013,
+        "totalEquity": 283379,
+        "totalDebt": 13253
+      },
+      "cashFlow": {
+        "operatingCF": 18915,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 7896
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 76311,
+          "operatingIncome": 26730
+        },
+        "googleCloud": {
+          "revenue": 9192,
+          "operatingIncome": 864
+        },
+        "otherBets": {
+          "revenue": 657,
+          "operatingIncome": -863
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -3034
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 31008,
+        "marketableSecurities": 86868,
+        "netCash": 99046
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2024 Q1",
+      "fy": 2024,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 80539,
+      "costOfRevenue": 33712,
+      "grossProfit": 46827,
+      "researchAndDevelopment": 11903,
+      "sga": 9452,
+      "totalOperatingExpenses": 21355,
+      "operatingIncome": 25472,
+      "nonOperatingIncome": 2843,
+      "netIncome": 23662,
+      "eps": 1.89,
+      "price": 150.93,
+      "priceDate": "2024-03-28",
+      "sharesDiluted": 12527,
+      "segments": {
+        "googleSearch": 46156,
+        "youtubeAds": 8090,
+        "googleNetwork": 7413,
+        "googleSubscriptions": 8739,
+        "googleCloud": 9574,
+        "otherBets": 495
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 24493,
+        "totalAssets": 407350,
+        "totalLiabilities": 114506,
+        "totalEquity": 292844,
+        "totalDebt": 13228
+      },
+      "cashFlow": {
+        "operatingCF": 28848,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 16836
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 70398,
+          "operatingIncome": 27897
+        },
+        "googleCloud": {
+          "revenue": 9574,
+          "operatingIncome": 900
+        },
+        "otherBets": {
+          "revenue": 495,
+          "operatingIncome": -1020
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -2305
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 33994,
+        "marketableSecurities": 83597,
+        "netCash": 94862
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q2",
+      "fy": 2024,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 84742,
+      "costOfRevenue": 35507,
+      "grossProfit": 49235,
+      "researchAndDevelopment": 11860,
+      "sga": 9950,
+      "totalOperatingExpenses": 21810,
+      "operatingIncome": 27425,
+      "nonOperatingIncome": 126,
+      "netIncome": 23619,
+      "eps": 1.89,
+      "price": 182.15,
+      "priceDate": "2024-06-28",
+      "sharesDiluted": 12495,
+      "segments": {
+        "googleSearch": 48509,
+        "youtubeAds": 8663,
+        "googleNetwork": 7444,
+        "googleSubscriptions": 9312,
+        "googleCloud": 10347,
+        "otherBets": 365
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 27225,
+        "totalAssets": 414770,
+        "totalLiabilities": 114017,
+        "totalEquity": 300753,
+        "totalDebt": 13238
+      },
+      "cashFlow": {
+        "operatingCF": 26640,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 13454
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 73928,
+          "operatingIncome": 29674
+        },
+        "googleCloud": {
+          "revenue": 10347,
+          "operatingIncome": 1172
+        },
+        "otherBets": {
+          "revenue": 365,
+          "operatingIncome": -1134
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -2287
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 34172,
+        "marketableSecurities": 73500,
+        "netCash": 87487
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q3",
+      "fy": 2024,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 88268,
+      "costOfRevenue": 36474,
+      "grossProfit": 51794,
+      "researchAndDevelopment": 12447,
+      "sga": 10826,
+      "totalOperatingExpenses": 23273,
+      "operatingIncome": 28521,
+      "nonOperatingIncome": 3185,
+      "netIncome": 26301,
+      "eps": 2.12,
+      "price": 165.85,
+      "priceDate": "2024-09-30",
+      "sharesDiluted": 12419,
+      "segments": {
+        "googleSearch": 49385,
+        "youtubeAds": 8921,
+        "googleNetwork": 7548,
+        "googleSubscriptions": 10656,
+        "googleCloud": 11353,
+        "otherBets": 388
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 19959,
+        "totalAssets": 430266,
+        "totalLiabilities": 116147,
+        "totalEquity": 314119,
+        "totalDebt": 12297
+      },
+      "cashFlow": {
+        "operatingCF": 30698,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 17637
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 76510,
+          "operatingIncome": 30856
+        },
+        "googleCloud": {
+          "revenue": 11353,
+          "operatingIncome": 1947
+        },
+        "otherBets": {
+          "revenue": 388,
+          "operatingIncome": -1116
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -3166
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 36177,
+        "marketableSecurities": 73271,
+        "netCash": 80933
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q4",
+      "fy": 2024,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 96469,
+      "costOfRevenue": 40613,
+      "grossProfit": 55856,
+      "researchAndDevelopment": 13116,
+      "sga": 11768,
+      "totalOperatingExpenses": 24884,
+      "operatingIncome": 30972,
+      "nonOperatingIncome": 1271,
+      "netIncome": 26536,
+      "eps": 2.15,
+      "price": 189.3,
+      "priceDate": "2024-12-31",
+      "sharesDiluted": 12348,
+      "segments": {
+        "googleSearch": 54034,
+        "youtubeAds": 10473,
+        "googleNetwork": 7954,
+        "googleSubscriptions": 11633,
+        "googleCloud": 11955,
+        "otherBets": 400
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 23466,
+        "totalAssets": 450256,
+        "totalLiabilities": 125172,
+        "totalEquity": 325084,
+        "totalDebt": 10883
+      },
+      "cashFlow": {
+        "operatingCF": 39113,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 24837
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 84094,
+          "operatingIncome": 32836
+        },
+        "googleCloud": {
+          "revenue": 11955,
+          "operatingIncome": 2093
+        },
+        "otherBets": {
+          "revenue": 400,
+          "operatingIncome": -1174
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -2783
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 37982,
+        "marketableSecurities": 72191,
+        "netCash": 84774
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q1",
+      "fy": 2025,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 90234,
+      "costOfRevenue": 36361,
+      "grossProfit": 53873,
+      "researchAndDevelopment": 13556,
+      "sga": 9711,
+      "totalOperatingExpenses": 23267,
+      "operatingIncome": 30606,
+      "nonOperatingIncome": 11183,
+      "netIncome": 34540,
+      "eps": 2.81,
+      "price": 154.64,
+      "priceDate": "2025-03-31",
+      "sharesDiluted": 12291,
+      "segments": {
+        "googleSearch": 50702,
+        "youtubeAds": 8927,
+        "googleNetwork": 7256,
+        "googleSubscriptions": 10379,
+        "googleCloud": 12260,
+        "otherBets": 450
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 23264,
+        "totalAssets": 475374,
+        "totalLiabilities": 130107,
+        "totalEquity": 345267,
+        "totalDebt": 10886
+      },
+      "cashFlow": {
+        "operatingCF": 36150,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 18953
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 77264,
+          "operatingIncome": 32682
+        },
+        "googleCloud": {
+          "revenue": 12260,
+          "operatingIncome": 2177
+        },
+        "otherBets": {
+          "revenue": 450,
+          "operatingIncome": -1226
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -3027
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 51029,
+        "marketableSecurities": 72064,
+        "netCash": 84442
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q2",
+      "fy": 2025,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 96428,
+      "costOfRevenue": 39039,
+      "grossProfit": 57389,
+      "researchAndDevelopment": 13808,
+      "sga": 12310,
+      "totalOperatingExpenses": 26118,
+      "operatingIncome": 31271,
+      "nonOperatingIncome": 2662,
+      "netIncome": 28196,
+      "eps": 2.31,
+      "price": 176.23,
+      "priceDate": "2025-06-30",
+      "sharesDiluted": 12198,
+      "segments": {
+        "googleSearch": 54190,
+        "youtubeAds": 9796,
+        "googleNetwork": 7354,
+        "googleSubscriptions": 11203,
+        "googleCloud": 13624,
+        "otherBets": 373
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 21036,
+        "totalAssets": 502053,
+        "totalLiabilities": 139137,
+        "totalEquity": 362916,
+        "totalDebt": 23607
+      },
+      "cashFlow": {
+        "operatingCF": 27747,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 5301
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 82543,
+          "operatingIncome": 33063
+        },
+        "googleCloud": {
+          "revenue": 13624,
+          "operatingIncome": 2826
+        },
+        "otherBets": {
+          "revenue": 373,
+          "operatingIncome": -1246
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -3372
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 52574,
+        "marketableSecurities": 74112,
+        "netCash": 71541
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q3",
+      "fy": 2025,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 102346,
+      "costOfRevenue": 41369,
+      "grossProfit": 60977,
+      "researchAndDevelopment": 15151,
+      "sga": 14598,
+      "totalOperatingExpenses": 29749,
+      "operatingIncome": 31228,
+      "nonOperatingIncome": 12759,
+      "netIncome": 34979,
+      "eps": 2.87,
+      "price": 243.1,
+      "priceDate": "2025-09-30",
+      "sharesDiluted": 12203,
+      "segments": {
+        "googleSearch": 56567,
+        "youtubeAds": 10261,
+        "googleNetwork": 7354,
+        "googleSubscriptions": 12870,
+        "googleCloud": 15157,
+        "otherBets": 344
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 23090,
+        "totalAssets": 536469,
+        "totalLiabilities": 149602,
+        "totalEquity": 386867,
+        "totalDebt": 21607
+      },
+      "cashFlow": {
+        "operatingCF": 48414,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 24461
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 87052,
+          "operatingIncome": 33527
+        },
+        "googleCloud": {
+          "revenue": 15157,
+          "operatingIncome": 3594
+        },
+        "otherBets": {
+          "revenue": 344,
+          "operatingIncome": -1426
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -4467
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 63800,
+        "marketableSecurities": 75406,
+        "netCash": 76889
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q4",
+      "fy": 2025,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 113828,
+      "costOfRevenue": 45766,
+      "grossProfit": 68062,
+      "researchAndDevelopment": 18572,
+      "sga": 13556,
+      "totalOperatingExpenses": 32128,
+      "operatingIncome": 35934,
+      "nonOperatingIncome": 3183,
+      "netIncome": 34455,
+      "eps": 2.82,
+      "price": 313,
+      "priceDate": "2025-12-31",
+      "sharesDiluted": 12228,
+      "segments": {
+        "googleSearch": 63073,
+        "youtubeAds": 11383,
+        "googleNetwork": 7828,
+        "googleSubscriptions": 13578,
+        "googleCloud": 17664,
+        "otherBets": 370
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 30708,
+        "totalAssets": 595281,
+        "totalLiabilities": 180016,
+        "totalEquity": 415265,
+        "totalDebt": 46547
+      },
+      "cashFlow": {
+        "operatingCF": 52402,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 24551
+      },
+      "segmentProfit": {
+        "googleServices": {
+          "revenue": 95862,
+          "operatingIncome": 40132
+        },
+        "googleCloud": {
+          "revenue": 17664,
+          "operatingIncome": 5313
+        },
+        "otherBets": {
+          "revenue": 370,
+          "operatingIncome": -3617
+        },
+        "alphabetLevel": {
+          "revenue": null,
+          "operatingIncome": -5894
+        }
+      },
+      "investments": {
+        "nonMarketableSecurities": 68687,
+        "marketableSecurities": 96135,
+        "netCash": 80296
+      },
+      "hasPage": true
+    }
+  ],
+  "currentQuarter": {
+    "fy": 2025,
+    "q": 4,
+    "label": "FY2025 Q4"
+  },
+  "prevPage": {
+    "fy": 2025,
+    "q": 3,
+    "label": "FY2025 Q3"
+  },
+  "nextPage": null
+}

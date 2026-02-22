@@ -1,0 +1,206 @@
+{
+  "FY2020": {
+    "Q1": {
+      "cashAndEquivalents": 19644,
+      "marketableSecurities": 97585,
+      "nonMarketableSecurities": 12367,
+      "longTermDebt": 5016,
+      "totalCashAndSecurities": 117229,
+      "netCash": 112213
+    },
+    "Q2": {
+      "cashAndEquivalents": 17742,
+      "marketableSecurities": 103338,
+      "nonMarketableSecurities": 12961,
+      "longTermDebt": 4018,
+      "totalCashAndSecurities": 121080,
+      "netCash": 117062
+    },
+    "Q3": {
+      "cashAndEquivalents": 20129,
+      "marketableSecurities": 112467,
+      "nonMarketableSecurities": 14656,
+      "longTermDebt": 13902,
+      "totalCashAndSecurities": 132596,
+      "netCash": 118694
+    },
+    "Q4": {
+      "cashAndEquivalents": 26465,
+      "marketableSecurities": 110229,
+      "nonMarketableSecurities": 20703,
+      "longTermDebt": 13932,
+      "totalCashAndSecurities": 136694,
+      "netCash": 122762
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "cashAndEquivalents": 26622,
+      "marketableSecurities": 108482,
+      "nonMarketableSecurities": 25294,
+      "longTermDebt": 13887,
+      "totalCashAndSecurities": 135104,
+      "netCash": 121217
+    },
+    "Q2": {
+      "cashAndEquivalents": 23630,
+      "marketableSecurities": 112233,
+      "nonMarketableSecurities": 25532,
+      "longTermDebt": 14328,
+      "totalCashAndSecurities": 135863,
+      "netCash": 121535
+    },
+    "Q3": {
+      "cashAndEquivalents": 23719,
+      "marketableSecurities": 118284,
+      "nonMarketableSecurities": 26101,
+      "longTermDebt": 14288,
+      "totalCashAndSecurities": 142003,
+      "netCash": 127715
+    },
+    "Q4": {
+      "cashAndEquivalents": 20945,
+      "marketableSecurities": 118704,
+      "nonMarketableSecurities": 29549,
+      "longTermDebt": 14817,
+      "totalCashAndSecurities": 139649,
+      "netCash": 124832
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "cashAndEquivalents": 20886,
+      "marketableSecurities": 113084,
+      "nonMarketableSecurities": 30544,
+      "longTermDebt": 14791,
+      "totalCashAndSecurities": 133970,
+      "netCash": 119179
+    },
+    "Q2": {
+      "cashAndEquivalents": 17936,
+      "marketableSecurities": 107061,
+      "nonMarketableSecurities": 30665,
+      "longTermDebt": 14734,
+      "totalCashAndSecurities": 124997,
+      "netCash": 110263
+    },
+    "Q3": {
+      "cashAndEquivalents": 21984,
+      "marketableSecurities": 94275,
+      "nonMarketableSecurities": 30419,
+      "longTermDebt": 14653,
+      "totalCashAndSecurities": 116259,
+      "netCash": 101606
+    },
+    "Q4": {
+      "cashAndEquivalents": 21879,
+      "marketableSecurities": 91883,
+      "nonMarketableSecurities": 30492,
+      "longTermDebt": 14701,
+      "totalCashAndSecurities": 113762,
+      "netCash": 99061
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "cashAndEquivalents": 25924,
+      "marketableSecurities": 89178,
+      "nonMarketableSecurities": 31213,
+      "longTermDebt": 13697,
+      "totalCashAndSecurities": 115102,
+      "netCash": 101405
+    },
+    "Q2": {
+      "cashAndEquivalents": 25929,
+      "marketableSecurities": 92403,
+      "nonMarketableSecurities": 31224,
+      "longTermDebt": 13705,
+      "totalCashAndSecurities": 118332,
+      "netCash": 104627
+    },
+    "Q3": {
+      "cashAndEquivalents": 30702,
+      "marketableSecurities": 89233,
+      "nonMarketableSecurities": 30907,
+      "longTermDebt": 13781,
+      "totalCashAndSecurities": 119935,
+      "netCash": 106154
+    },
+    "Q4": {
+      "cashAndEquivalents": 24048,
+      "marketableSecurities": 86868,
+      "nonMarketableSecurities": 31008,
+      "longTermDebt": 11870,
+      "totalCashAndSecurities": 110916,
+      "netCash": 99046
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "cashAndEquivalents": 24493,
+      "marketableSecurities": 83597,
+      "nonMarketableSecurities": 33994,
+      "longTermDebt": 13228,
+      "totalCashAndSecurities": 108090,
+      "netCash": 94862
+    },
+    "Q2": {
+      "cashAndEquivalents": 27225,
+      "marketableSecurities": 73500,
+      "nonMarketableSecurities": 34172,
+      "longTermDebt": 13238,
+      "totalCashAndSecurities": 100725,
+      "netCash": 87487
+    },
+    "Q3": {
+      "cashAndEquivalents": 19959,
+      "marketableSecurities": 73271,
+      "nonMarketableSecurities": 36177,
+      "longTermDebt": 12297,
+      "totalCashAndSecurities": 93230,
+      "netCash": 80933
+    },
+    "Q4": {
+      "cashAndEquivalents": 23466,
+      "marketableSecurities": 72191,
+      "nonMarketableSecurities": 37982,
+      "longTermDebt": 10883,
+      "totalCashAndSecurities": 95657,
+      "netCash": 84774
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "cashAndEquivalents": 23264,
+      "marketableSecurities": 72064,
+      "nonMarketableSecurities": 51029,
+      "longTermDebt": 10886,
+      "totalCashAndSecurities": 95328,
+      "netCash": 84442
+    },
+    "Q2": {
+      "cashAndEquivalents": 21036,
+      "marketableSecurities": 74112,
+      "nonMarketableSecurities": 52574,
+      "longTermDebt": 23607,
+      "totalCashAndSecurities": 95148,
+      "netCash": 71541
+    },
+    "Q3": {
+      "cashAndEquivalents": 23090,
+      "marketableSecurities": 75406,
+      "nonMarketableSecurities": 63800,
+      "longTermDebt": 21607,
+      "totalCashAndSecurities": 98496,
+      "netCash": 76889
+    },
+    "Q4": {
+      "cashAndEquivalents": 30708,
+      "marketableSecurities": 96135,
+      "nonMarketableSecurities": 68687,
+      "longTermDebt": 46547,
+      "totalCashAndSecurities": 126843,
+      "netCash": 80296
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "FY2020": {
+    "Q1": {
+      "depreciation": 2899,
+      "stockBasedComp": 3191,
+      "operatingCF": 11451,
+      "capex": -6005,
+      "freeCashFlow": 5446
+    },
+    "Q2": {
+      "depreciation": 3178,
+      "stockBasedComp": 3382,
+      "operatingCF": 13993,
+      "capex": -5391,
+      "freeCashFlow": 8602
+    },
+    "Q3": {
+      "depreciation": 3289,
+      "stockBasedComp": 3195,
+      "operatingCF": 17003,
+      "capex": -5406,
+      "freeCashFlow": 11597
+    },
+    "Q4": {
+      "depreciation": 3539,
+      "stockBasedComp": 3223,
+      "operatingCF": 22677,
+      "capex": -5479,
+      "freeCashFlow": 17198
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "depreciation": 2525,
+      "stockBasedComp": 3745,
+      "operatingCF": 19289,
+      "capex": -5942,
+      "freeCashFlow": 13347
+    },
+    "Q2": {
+      "depreciation": 2730,
+      "stockBasedComp": 3803,
+      "operatingCF": 21890,
+      "capex": -5496,
+      "freeCashFlow": 16394
+    },
+    "Q3": {
+      "depreciation": 3085,
+      "stockBasedComp": 3874,
+      "operatingCF": 25539,
+      "capex": -6819,
+      "freeCashFlow": 18720
+    },
+    "Q4": {
+      "depreciation": 3215,
+      "stockBasedComp": 3954,
+      "operatingCF": 24934,
+      "capex": -6383,
+      "freeCashFlow": 18551
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "depreciation": 3591,
+      "stockBasedComp": 4504,
+      "operatingCF": 25106,
+      "capex": -9786,
+      "freeCashFlow": 15320
+    },
+    "Q2": {
+      "depreciation": 3698,
+      "stockBasedComp": 4782,
+      "operatingCF": 19422,
+      "capex": -6828,
+      "freeCashFlow": 12594
+    },
+    "Q3": {
+      "depreciation": 3933,
+      "stockBasedComp": 4976,
+      "operatingCF": 23353,
+      "capex": -7276,
+      "freeCashFlow": 16077
+    },
+    "Q4": {
+      "depreciation": 3602,
+      "stockBasedComp": 5100,
+      "operatingCF": 23614,
+      "capex": -7595,
+      "freeCashFlow": 16019
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "depreciation": 2635,
+      "stockBasedComp": 5284,
+      "operatingCF": 23509,
+      "capex": -6289,
+      "freeCashFlow": 17220
+    },
+    "Q2": {
+      "depreciation": 2824,
+      "stockBasedComp": 5774,
+      "operatingCF": 28666,
+      "capex": -6888,
+      "freeCashFlow": 21778
+    },
+    "Q3": {
+      "depreciation": 3171,
+      "stockBasedComp": 5743,
+      "operatingCF": 30656,
+      "capex": -8055,
+      "freeCashFlow": 22601
+    },
+    "Q4": {
+      "depreciation": 3316,
+      "stockBasedComp": 5659,
+      "operatingCF": 18915,
+      "capex": -11019,
+      "freeCashFlow": 7896
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "depreciation": 3413,
+      "stockBasedComp": 5264,
+      "operatingCF": 28848,
+      "capex": -12012,
+      "freeCashFlow": 16836
+    },
+    "Q2": {
+      "depreciation": 3708,
+      "stockBasedComp": 5865,
+      "operatingCF": 26640,
+      "capex": -13186,
+      "freeCashFlow": 13454
+    },
+    "Q3": {
+      "depreciation": 3985,
+      "stockBasedComp": 5846,
+      "operatingCF": 30698,
+      "capex": -13061,
+      "freeCashFlow": 17637
+    },
+    "Q4": {
+      "depreciation": 4205,
+      "stockBasedComp": 5810,
+      "operatingCF": 39113,
+      "capex": -14276,
+      "freeCashFlow": 24837
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "depreciation": 4487,
+      "stockBasedComp": 5516,
+      "operatingCF": 36150,
+      "capex": -17197,
+      "freeCashFlow": 18953
+    },
+    "Q2": {
+      "depreciation": 4998,
+      "stockBasedComp": 5998,
+      "operatingCF": 27747,
+      "capex": -22446,
+      "freeCashFlow": 5301
+    },
+    "Q3": {
+      "depreciation": 5611,
+      "stockBasedComp": 6368,
+      "operatingCF": 48414,
+      "capex": -23953,
+      "freeCashFlow": 24461
+    },
+    "Q4": {
+      "depreciation": 6040,
+      "stockBasedComp": 7071,
+      "operatingCF": 52402,
+      "capex": -27851,
+      "freeCashFlow": 24551
+    }
+  }
+}

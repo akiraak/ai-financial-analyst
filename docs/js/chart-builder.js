@@ -125,6 +125,16 @@ const ChartBuilder = {
       psg: 'PSG',
       allOther: 'All Other',
       other: 'Other',
+      // Alphabet セグメント
+      googleSearch: 'Google Search',
+      youtubeAds: 'YouTube Ads',
+      googleNetwork: 'Google Network',
+      googleSubscriptions: 'Subscriptions',
+      googleCloud: 'Google Cloud',
+      otherBets: 'Other Bets',
+      // Tesla セグメント
+      energyGenerationAndStorage: 'Energy Generation & Storage',
+      servicesAndOther: 'Services & Other',
     };
     return labels[key] || key;
   },
@@ -149,6 +159,8 @@ const ChartBuilder = {
     { bg: 'rgba(255, 183, 77, 0.7)', border: 'rgba(255, 183, 77, 1)' },
     { bg: 'rgba(156, 39, 176, 0.7)', border: 'rgba(156, 39, 176, 1)' },
     { bg: 'rgba(158, 158, 158, 0.7)', border: 'rgba(158, 158, 158, 1)' },
+    { bg: 'rgba(0, 188, 212, 0.7)', border: 'rgba(0, 188, 212, 1)' },
+    { bg: 'rgba(255, 87, 34, 0.7)', border: 'rgba(255, 87, 34, 1)' },
   ],
 
   // === 2. セグメント別売上（積み上げ棒グラフ）===
@@ -744,6 +756,11 @@ const ChartBuilder = {
       psg: 'PSG',
       allOther: 'All Other',
       otherSub: 'Other',
+      // Alphabet セグメント
+      googleServices: 'Google Services',
+      googleCloud: 'Google Cloud',
+      otherBets: 'Other Bets',
+      alphabetLevel: 'Alphabet-level',
     };
     return labels[key] || key;
   },
@@ -838,6 +855,8 @@ const ChartBuilder = {
       nonMarketableBalance: '非上場株式',
       publiclyHeldBalance: '上場株式',
       marketableSecurities: '有価証券',
+      nonMarketableSecurities: '非上場株式',
+      netCash: 'ネットキャッシュ',
     };
     return labels[key] || key;
   },

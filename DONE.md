@@ -100,3 +100,12 @@
   - GitHub Pages: ランディングページ + 8四半期分の詳細ページ（2024Q1〜2025Q4）
   - analysis-text.json: 12チャート概要 + 8四半期分の決算サマリー・チャート解説
   - トップページにTeslaカードを追加
+- [x] Alphabet Inc. (GOOGL) のページを追加（フルビルド）
+  - 決算資料DL: FY2020〜FY2025（24四半期分のpress-release + 10-Q/10-K）
+  - データ抽出: financials, segments, balance-sheet, cash-flows, segment-profit, investments（6スクリプト）
+  - 6セグメント売上（Google Search, YouTube Ads, Google Network, Subscriptions, Cloud, Other Bets）+ 3セグメント損益（Google Services, Cloud, Other Bets + Alphabet-level Activities）
+  - xlsx生成・検証（264/264項目一致）
+  - GitHub Pages: ランディングページ + 8四半期分の詳細ページ（2024Q1〜2025Q4）
+  - analysis-text.json: 12チャート概要 + 8四半期分の決算サマリー・チャート解説
+  - chart-builder.jsにAlphabetセグメントラベル追加、色パレット拡張
+  - トップページにAlphabetカードを追加

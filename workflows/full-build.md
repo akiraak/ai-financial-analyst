@@ -35,7 +35,7 @@ Step 0（企業選択）と Step 1（config.json設定）でユーザーの承�
   1. 「四半期詳細ページは何年分生成しますか？」→ `pageYears`
   2. 「各ページのグラフには何年分のデータを表示しますか？」→ `chartYears`
   - DL対象年数 = pageYears + chartYears（自動計算、質問しない）
-  3. 「次回の決算発表日は？」→ `nextEarningsDate`（YYYY-MM-DD形式。トップページのカードに表示される）
+  3. `nextEarningsDate` → WebSearchで「<企業名> next earnings date <現在の年>」を検索して自動取得する（YYYY-MM-DD形式。トップページのカードに表示される）。取得できない場合のみユーザーに質問する
 
 **ユーザーが Step 1 で設定を承認したら、一括実行モードに入り Step 2〜7 を自動実行する。**
 

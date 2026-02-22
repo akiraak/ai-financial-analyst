@@ -1,0 +1,254 @@
+{
+  "FY2020": {
+    "Q1": {
+      "googleServicesRevenue": 38198,
+      "googleCloudRevenue": 2777,
+      "otherBetsRevenue": 135,
+      "googleServicesOperatingIncome": 11548,
+      "googleCloudOperatingIncome": -1730,
+      "otherBetsOperatingIncome": -1121,
+      "alphabetLevelActivities": -720,
+      "totalOperatingIncome": 7977
+    },
+    "Q2": {
+      "googleServicesRevenue": 34991,
+      "googleCloudRevenue": 3007,
+      "otherBetsRevenue": 148,
+      "googleServicesOperatingIncome": 9539,
+      "googleCloudOperatingIncome": -1426,
+      "otherBetsOperatingIncome": -1116,
+      "alphabetLevelActivities": -614,
+      "totalOperatingIncome": 6383
+    },
+    "Q3": {
+      "googleServicesRevenue": 42573,
+      "googleCloudRevenue": 3444,
+      "otherBetsRevenue": 178,
+      "googleServicesOperatingIncome": 14453,
+      "googleCloudOperatingIncome": -1208,
+      "otherBetsOperatingIncome": -1103,
+      "alphabetLevelActivities": -929,
+      "totalOperatingIncome": 11213
+    },
+    "Q4": {
+      "googleServicesRevenue": 52873,
+      "googleCloudRevenue": 3831,
+      "otherBetsRevenue": 196,
+      "googleServicesOperatingIncome": 19066,
+      "googleCloudOperatingIncome": -1243,
+      "otherBetsOperatingIncome": -1136,
+      "alphabetLevelActivities": -1036,
+      "totalOperatingIncome": 15651
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "googleServicesRevenue": 51178,
+      "googleCloudRevenue": 4047,
+      "otherBetsRevenue": 198,
+      "googleServicesOperatingIncome": 19546,
+      "googleCloudOperatingIncome": -974,
+      "otherBetsOperatingIncome": -1145,
+      "alphabetLevelActivities": -990,
+      "totalOperatingIncome": 16437
+    },
+    "Q2": {
+      "googleServicesRevenue": 57067,
+      "googleCloudRevenue": 4628,
+      "otherBetsRevenue": 192,
+      "googleServicesOperatingIncome": 22343,
+      "googleCloudOperatingIncome": -591,
+      "otherBetsOperatingIncome": -1398,
+      "alphabetLevelActivities": -993,
+      "totalOperatingIncome": 19361
+    },
+    "Q3": {
+      "googleServicesRevenue": 59884,
+      "googleCloudRevenue": 4990,
+      "otherBetsRevenue": 182,
+      "googleServicesOperatingIncome": 23973,
+      "googleCloudOperatingIncome": -644,
+      "otherBetsOperatingIncome": -1288,
+      "alphabetLevelActivities": -1010,
+      "totalOperatingIncome": 21031
+    },
+    "Q4": {
+      "googleServicesRevenue": 69400,
+      "googleCloudRevenue": 5541,
+      "otherBetsRevenue": 181,
+      "googleServicesOperatingIncome": 25993,
+      "googleCloudOperatingIncome": -890,
+      "otherBetsOperatingIncome": -1450,
+      "alphabetLevelActivities": -1768,
+      "totalOperatingIncome": 21885
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "googleServicesRevenue": 61472,
+      "googleCloudRevenue": 5821,
+      "otherBetsRevenue": 440,
+      "googleServicesOperatingIncome": 21973,
+      "googleCloudOperatingIncome": -706,
+      "otherBetsOperatingIncome": -835,
+      "alphabetLevelActivities": -338,
+      "totalOperatingIncome": 20094
+    },
+    "Q2": {
+      "googleServicesRevenue": 62841,
+      "googleCloudRevenue": 6276,
+      "otherBetsRevenue": 193,
+      "googleServicesOperatingIncome": 21621,
+      "googleCloudOperatingIncome": -590,
+      "otherBetsOperatingIncome": -1339,
+      "alphabetLevelActivities": -239,
+      "totalOperatingIncome": 19453
+    },
+    "Q3": {
+      "googleServicesRevenue": 61377,
+      "googleCloudRevenue": 6868,
+      "otherBetsRevenue": 209,
+      "googleServicesOperatingIncome": 18883,
+      "googleCloudOperatingIncome": -440,
+      "otherBetsOperatingIncome": -1225,
+      "alphabetLevelActivities": -83,
+      "totalOperatingIncome": 17135
+    },
+    "Q4": {
+      "googleServicesRevenue": 67838,
+      "googleCloudRevenue": 7315,
+      "otherBetsRevenue": 226,
+      "googleServicesOperatingIncome": 20222,
+      "googleCloudOperatingIncome": -186,
+      "otherBetsOperatingIncome": -1237,
+      "alphabetLevelActivities": -639,
+      "totalOperatingIncome": 18160
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "googleServicesRevenue": 61961,
+      "googleCloudRevenue": 7454,
+      "otherBetsRevenue": 288,
+      "googleServicesOperatingIncome": 21737,
+      "googleCloudOperatingIncome": 191,
+      "otherBetsOperatingIncome": -1225,
+      "alphabetLevelActivities": -3288,
+      "totalOperatingIncome": 17415
+    },
+    "Q2": {
+      "googleServicesRevenue": 66285,
+      "googleCloudRevenue": 8031,
+      "otherBetsRevenue": 285,
+      "googleServicesOperatingIncome": 23454,
+      "googleCloudOperatingIncome": 395,
+      "otherBetsOperatingIncome": -813,
+      "alphabetLevelActivities": -1198,
+      "totalOperatingIncome": 21838
+    },
+    "Q3": {
+      "googleServicesRevenue": 67986,
+      "googleCloudRevenue": 8411,
+      "otherBetsRevenue": 297,
+      "googleServicesOperatingIncome": 23937,
+      "googleCloudOperatingIncome": 266,
+      "otherBetsOperatingIncome": -1194,
+      "alphabetLevelActivities": -1666,
+      "totalOperatingIncome": 21343
+    },
+    "Q4": {
+      "googleServicesRevenue": 76311,
+      "googleCloudRevenue": 9192,
+      "otherBetsRevenue": 657,
+      "googleServicesOperatingIncome": 26730,
+      "googleCloudOperatingIncome": 864,
+      "otherBetsOperatingIncome": -863,
+      "alphabetLevelActivities": -3034,
+      "totalOperatingIncome": 23697
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "googleServicesRevenue": 70398,
+      "googleCloudRevenue": 9574,
+      "otherBetsRevenue": 495,
+      "googleServicesOperatingIncome": 27897,
+      "googleCloudOperatingIncome": 900,
+      "otherBetsOperatingIncome": -1020,
+      "alphabetLevelActivities": -2305,
+      "totalOperatingIncome": 25472
+    },
+    "Q2": {
+      "googleServicesRevenue": 73928,
+      "googleCloudRevenue": 10347,
+      "otherBetsRevenue": 365,
+      "googleServicesOperatingIncome": 29674,
+      "googleCloudOperatingIncome": 1172,
+      "otherBetsOperatingIncome": -1134,
+      "alphabetLevelActivities": -2287,
+      "totalOperatingIncome": 27425
+    },
+    "Q3": {
+      "googleServicesRevenue": 76510,
+      "googleCloudRevenue": 11353,
+      "otherBetsRevenue": 388,
+      "googleServicesOperatingIncome": 30856,
+      "googleCloudOperatingIncome": 1947,
+      "otherBetsOperatingIncome": -1116,
+      "alphabetLevelActivities": -3166,
+      "totalOperatingIncome": 28521
+    },
+    "Q4": {
+      "googleServicesRevenue": 84094,
+      "googleCloudRevenue": 11955,
+      "otherBetsRevenue": 400,
+      "googleServicesOperatingIncome": 32836,
+      "googleCloudOperatingIncome": 2093,
+      "otherBetsOperatingIncome": -1174,
+      "alphabetLevelActivities": -2783,
+      "totalOperatingIncome": 30972
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "googleServicesRevenue": 77264,
+      "googleCloudRevenue": 12260,
+      "otherBetsRevenue": 450,
+      "googleServicesOperatingIncome": 32682,
+      "googleCloudOperatingIncome": 2177,
+      "otherBetsOperatingIncome": -1226,
+      "alphabetLevelActivities": -3027,
+      "totalOperatingIncome": 30606
+    },
+    "Q2": {
+      "googleServicesRevenue": 82543,
+      "googleCloudRevenue": 13624,
+      "otherBetsRevenue": 373,
+      "googleServicesOperatingIncome": 33063,
+      "googleCloudOperatingIncome": 2826,
+      "otherBetsOperatingIncome": -1246,
+      "alphabetLevelActivities": -3372,
+      "totalOperatingIncome": 31271
+    },
+    "Q3": {
+      "googleServicesRevenue": 87052,
+      "googleCloudRevenue": 15157,
+      "otherBetsRevenue": 344,
+      "googleServicesOperatingIncome": 33527,
+      "googleCloudOperatingIncome": 3594,
+      "otherBetsOperatingIncome": -1426,
+      "alphabetLevelActivities": -4467,
+      "totalOperatingIncome": 31228
+    },
+    "Q4": {
+      "googleServicesRevenue": 95862,
+      "googleCloudRevenue": 17664,
+      "otherBetsRevenue": 370,
+      "googleServicesOperatingIncome": 40132,
+      "googleCloudOperatingIncome": 5313,
+      "otherBetsOperatingIncome": -3617,
+      "alphabetLevelActivities": -5894,
+      "totalOperatingIncome": 35934
+    }
+  }
+}

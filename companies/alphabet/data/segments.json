@@ -1,0 +1,254 @@
+{
+  "FY2020": {
+    "Q1": {
+      "googleSearch": 24502,
+      "youtubeAds": 4038,
+      "googleNetwork": 5223,
+      "googleAdvertising": 33763,
+      "googleCloud": 2777,
+      "googleSubscriptions": 4435,
+      "googleServicesTotal": 38198,
+      "otherBets": 135
+    },
+    "Q2": {
+      "googleSearch": 21319,
+      "youtubeAds": 3812,
+      "googleNetwork": 4736,
+      "googleAdvertising": 29867,
+      "googleCloud": 3007,
+      "googleSubscriptions": 5124,
+      "googleServicesTotal": 34991,
+      "otherBets": 148
+    },
+    "Q3": {
+      "googleSearch": 26338,
+      "youtubeAds": 5037,
+      "googleNetwork": 5720,
+      "googleAdvertising": 37095,
+      "googleCloud": 3444,
+      "googleSubscriptions": 5478,
+      "googleServicesTotal": 42573,
+      "otherBets": 178
+    },
+    "Q4": {
+      "googleSearch": 31903,
+      "youtubeAds": 6885,
+      "googleNetwork": 7411,
+      "googleAdvertising": 46199,
+      "googleSubscriptions": 6674,
+      "googleServicesTotal": 52873,
+      "googleCloud": 3831,
+      "otherBets": 196
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "googleSearch": 31879,
+      "youtubeAds": 6005,
+      "googleNetwork": 6800,
+      "googleAdvertising": 44684,
+      "googleSubscriptions": 6494,
+      "googleServicesTotal": 51178,
+      "googleCloud": 4047,
+      "otherBets": 198
+    },
+    "Q2": {
+      "googleSearch": 35845,
+      "youtubeAds": 7002,
+      "googleNetwork": 7597,
+      "googleAdvertising": 50444,
+      "googleSubscriptions": 6623,
+      "googleServicesTotal": 57067,
+      "googleCloud": 4628,
+      "otherBets": 192
+    },
+    "Q3": {
+      "googleSearch": 37926,
+      "youtubeAds": 7205,
+      "googleNetwork": 7999,
+      "googleAdvertising": 53130,
+      "googleSubscriptions": 6754,
+      "googleServicesTotal": 59884,
+      "googleCloud": 4990,
+      "otherBets": 182
+    },
+    "Q4": {
+      "googleSearch": 43301,
+      "youtubeAds": 8633,
+      "googleNetwork": 9305,
+      "googleAdvertising": 61239,
+      "googleSubscriptions": 8161,
+      "googleServicesTotal": 69400,
+      "googleCloud": 5541,
+      "otherBets": 181
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "googleSearch": 39618,
+      "youtubeAds": 6869,
+      "googleNetwork": 8174,
+      "googleAdvertising": 54661,
+      "googleSubscriptions": 6811,
+      "googleServicesTotal": 61472,
+      "googleCloud": 5821,
+      "otherBets": 440
+    },
+    "Q2": {
+      "googleSearch": 40689,
+      "youtubeAds": 7340,
+      "googleNetwork": 8259,
+      "googleAdvertising": 56288,
+      "googleSubscriptions": 6553,
+      "googleServicesTotal": 62841,
+      "googleCloud": 6276,
+      "otherBets": 193
+    },
+    "Q3": {
+      "googleSearch": 39539,
+      "youtubeAds": 7071,
+      "googleNetwork": 7872,
+      "googleAdvertising": 54482,
+      "googleSubscriptions": 6895,
+      "googleServicesTotal": 61377,
+      "googleCloud": 6868,
+      "otherBets": 209
+    },
+    "Q4": {
+      "googleSearch": 42604,
+      "youtubeAds": 7963,
+      "googleNetwork": 8475,
+      "googleAdvertising": 59042,
+      "googleSubscriptions": 8796,
+      "googleServicesTotal": 67838,
+      "googleCloud": 7315,
+      "otherBets": 226
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "googleSearch": 40359,
+      "youtubeAds": 6693,
+      "googleNetwork": 7496,
+      "googleAdvertising": 54548,
+      "googleSubscriptions": 7413,
+      "googleServicesTotal": 61961,
+      "googleCloud": 7454,
+      "otherBets": 288
+    },
+    "Q2": {
+      "googleSearch": 42628,
+      "youtubeAds": 7665,
+      "googleNetwork": 7850,
+      "googleAdvertising": 58143,
+      "googleSubscriptions": 8142,
+      "googleServicesTotal": 66285,
+      "googleCloud": 8031,
+      "otherBets": 285
+    },
+    "Q3": {
+      "googleSearch": 44026,
+      "youtubeAds": 7952,
+      "googleNetwork": 7669,
+      "googleAdvertising": 59647,
+      "googleSubscriptions": 8339,
+      "googleServicesTotal": 67986,
+      "googleCloud": 8411,
+      "otherBets": 297
+    },
+    "Q4": {
+      "googleSearch": 48020,
+      "youtubeAds": 9200,
+      "googleNetwork": 8297,
+      "googleAdvertising": 65517,
+      "googleSubscriptions": 10794,
+      "googleServicesTotal": 76311,
+      "googleCloud": 9192,
+      "otherBets": 657
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "googleSearch": 46156,
+      "youtubeAds": 8090,
+      "googleNetwork": 7413,
+      "googleAdvertising": 61659,
+      "googleSubscriptions": 8739,
+      "googleServicesTotal": 70398,
+      "googleCloud": 9574,
+      "otherBets": 495
+    },
+    "Q2": {
+      "googleSearch": 48509,
+      "youtubeAds": 8663,
+      "googleNetwork": 7444,
+      "googleAdvertising": 64616,
+      "googleSubscriptions": 9312,
+      "googleServicesTotal": 73928,
+      "googleCloud": 10347,
+      "otherBets": 365
+    },
+    "Q3": {
+      "googleSearch": 49385,
+      "youtubeAds": 8921,
+      "googleNetwork": 7548,
+      "googleAdvertising": 65854,
+      "googleSubscriptions": 10656,
+      "googleServicesTotal": 76510,
+      "googleCloud": 11353,
+      "otherBets": 388
+    },
+    "Q4": {
+      "googleSearch": 54034,
+      "youtubeAds": 10473,
+      "googleNetwork": 7954,
+      "googleAdvertising": 72461,
+      "googleSubscriptions": 11633,
+      "googleServicesTotal": 84094,
+      "googleCloud": 11955,
+      "otherBets": 400
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "googleSearch": 50702,
+      "youtubeAds": 8927,
+      "googleNetwork": 7256,
+      "googleAdvertising": 66885,
+      "googleSubscriptions": 10379,
+      "googleServicesTotal": 77264,
+      "googleCloud": 12260,
+      "otherBets": 450
+    },
+    "Q2": {
+      "googleSearch": 54190,
+      "youtubeAds": 9796,
+      "googleNetwork": 7354,
+      "googleAdvertising": 71340,
+      "googleSubscriptions": 11203,
+      "googleServicesTotal": 82543,
+      "googleCloud": 13624,
+      "otherBets": 373
+    },
+    "Q3": {
+      "googleSearch": 56567,
+      "youtubeAds": 10261,
+      "googleNetwork": 7354,
+      "googleAdvertising": 74182,
+      "googleSubscriptions": 12870,
+      "googleServicesTotal": 87052,
+      "googleCloud": 15157,
+      "otherBets": 344
+    },
+    "Q4": {
+      "googleSearch": 63073,
+      "youtubeAds": 11383,
+      "googleNetwork": 7828,
+      "googleAdvertising": 82284,
+      "googleSubscriptions": 13578,
+      "googleServicesTotal": 95862,
+      "googleCloud": 17664,
+      "otherBets": 370
+    }
+  }
+}

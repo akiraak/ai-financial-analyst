@@ -1,0 +1,494 @@
+{
+  "FY2020": [
+    {
+      "quarter": "Fourth Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Fourth Quarter 2020, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-K&dateb=&owner=include&count=40",
+          "description": "10-K of Fourth Quarter 2020, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Third Quarter 2020, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Third Quarter 2020, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Second Quarter 2020, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Second Quarter 2020, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of First Quarter 2020, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of First Quarter 2020, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2021": [
+    {
+      "quarter": "Fourth Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Fourth Quarter 2021, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-K&dateb=&owner=include&count=40",
+          "description": "10-K of Fourth Quarter 2021, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Third Quarter 2021, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Third Quarter 2021, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Second Quarter 2021, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Second Quarter 2021, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of First Quarter 2021, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of First Quarter 2021, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2022": [
+    {
+      "quarter": "Fourth Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Fourth Quarter 2022, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-K&dateb=&owner=include&count=40",
+          "description": "10-K of Fourth Quarter 2022, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Third Quarter 2022, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Third Quarter 2022, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Second Quarter 2022, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Second Quarter 2022, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of First Quarter 2022, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of First Quarter 2022, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2023": [
+    {
+      "quarter": "Fourth Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Fourth Quarter 2023, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-K&dateb=&owner=include&count=40",
+          "description": "10-K of Fourth Quarter 2023, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Third Quarter 2023, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Third Quarter 2023, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Second Quarter 2023, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Second Quarter 2023, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of First Quarter 2023, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of First Quarter 2023, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2024": [
+    {
+      "quarter": "Fourth Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Fourth Quarter 2024, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-K&dateb=&owner=include&count=40",
+          "description": "10-K of Fourth Quarter 2024, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Third Quarter 2024, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Third Quarter 2024, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Second Quarter 2024, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Second Quarter 2024, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of First Quarter 2024, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of First Quarter 2024, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2025": [
+    {
+      "quarter": "Fourth Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Fourth Quarter 2025, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-K&dateb=&owner=include&count=40",
+          "description": "10-K of Fourth Quarter 2025, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Third Quarter 2025, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Third Quarter 2025, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of Second Quarter 2025, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of Second Quarter 2025, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://abc.xyz/investor/",
+          "description": "Press Release of First Quarter 2025, Alphabet Investor Relations"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=10-Q&dateb=&owner=include&count=40",
+          "description": "10-Q of First Quarter 2025, SEC EDGAR"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "description": "Alphabet Investor Relations page"
+        }
+      ]
+    }
+  ]
+}

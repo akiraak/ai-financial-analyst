@@ -92,3 +92,11 @@
   - GitHub Pages: ランディングページ + 8四半期分の詳細ページ（2024Q1〜2025Q4）
   - analysis-text.json: 12チャート概要 + 8四半期分の決算サマリー・チャート解説
   - トップページにIntelカードを追加、chart-builder.jsにセグメントラベル追加
+- [x] Tesla, Inc. (TSLA) のページを追加（フルビルド）
+  - 決算資料DL: FY2020〜FY2025（24四半期分のpress-release + 10-Q/10-K）
+  - データ抽出: financials, segments, balance-sheet, cash-flows, segment-profit, investments
+  - Teslaのプレスリリースはスライド形式（画像+隠しテキスト）のため、FONT/p要素からのテキスト解析 + 10-Q/10-Kフォールバックの独自戦略を構築
+  - xlsx生成・検証（536/536項目一致）
+  - GitHub Pages: ランディングページ + 8四半期分の詳細ページ（2024Q1〜2025Q4）
+  - analysis-text.json: 12チャート概要 + 8四半期分の決算サマリー・チャート解説
+  - トップページにTeslaカードを追加

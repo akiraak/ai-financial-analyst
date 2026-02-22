@@ -1,0 +1,182 @@
+{
+  "FY2020": {
+    "Q1": {
+      "cashAndInvestments": 8080,
+      "shortTermDebt": 3217,
+      "longTermDebt": 10666,
+      "totalDebt": 13883,
+      "netCash": -5803
+    },
+    "Q2": {
+      "cashAndInvestments": 8615,
+      "shortTermDebt": 3679,
+      "longTermDebt": 10416,
+      "totalDebt": 14095,
+      "netCash": -5480
+    },
+    "Q3": {
+      "cashAndInvestments": 14531,
+      "shortTermDebt": 3126,
+      "longTermDebt": 10559,
+      "totalDebt": 13685,
+      "netCash": 846
+    },
+    "Q4": {
+      "cashAndInvestments": 19384,
+      "shortTermDebt": 2132,
+      "longTermDebt": 9556,
+      "totalDebt": 11688,
+      "netCash": 7696
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "cashAndInvestments": 17141,
+      "shortTermDebt": 1819,
+      "longTermDebt": 9053,
+      "totalDebt": 10872,
+      "netCash": 6269
+    },
+    "Q2": {
+      "cashAndInvestments": 16229,
+      "shortTermDebt": 1530,
+      "longTermDebt": 7871,
+      "totalDebt": 9401,
+      "netCash": 6828
+    },
+    "Q3": {
+      "cashAndInvestments": 16065,
+      "shortTermDebt": 1716,
+      "longTermDebt": 6438,
+      "totalDebt": 8154,
+      "netCash": 7911
+    },
+    "Q4": {
+      "cashAndInvestments": 17576,
+      "shortTermDebt": 1589,
+      "longTermDebt": 5245,
+      "totalDebt": 6834,
+      "netCash": 10742
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "cashAndInvestments": 17505,
+      "shortTermDebt": 1659,
+      "longTermDebt": 3153,
+      "totalDebt": 4812,
+      "netCash": 12693
+    },
+    "Q2": {
+      "cashAndInvestments": 18915,
+      "shortTermDebt": 1532,
+      "longTermDebt": 2898,
+      "totalDebt": 4430,
+      "netCash": 14485
+    },
+    "Q3": {
+      "cashAndInvestments": 21107,
+      "shortTermDebt": 1457,
+      "longTermDebt": 2096,
+      "totalDebt": 3553,
+      "netCash": 17554
+    },
+    "Q4": {
+      "cashAndInvestments": 22185,
+      "shortTermDebt": 1502,
+      "longTermDebt": 1597,
+      "totalDebt": 3099,
+      "netCash": 19086
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "cashAndInvestments": 22402,
+      "shortTermDebt": 1404,
+      "longTermDebt": 1272,
+      "totalDebt": 2676,
+      "netCash": 19726
+    },
+    "Q2": {
+      "cashAndInvestments": 23075,
+      "shortTermDebt": 1459,
+      "longTermDebt": 872,
+      "totalDebt": 2331,
+      "netCash": 20744
+    },
+    "Q3": {
+      "cashAndInvestments": 26077,
+      "shortTermDebt": 1967,
+      "longTermDebt": 2426,
+      "totalDebt": 4393,
+      "netCash": 21684
+    },
+    "Q4": {
+      "cashAndInvestments": 29094,
+      "shortTermDebt": 2373,
+      "longTermDebt": 2857,
+      "totalDebt": 5230,
+      "netCash": 23864
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "cashAndInvestments": 26863,
+      "shortTermDebt": 2461,
+      "longTermDebt": 2899,
+      "totalDebt": 5360,
+      "netCash": 21503
+    },
+    "Q2": {
+      "cashAndInvestments": 30720,
+      "shortTermDebt": 2264,
+      "longTermDebt": 5481,
+      "totalDebt": 7745,
+      "netCash": 22975
+    },
+    "Q3": {
+      "cashAndInvestments": 33648,
+      "shortTermDebt": 2291,
+      "longTermDebt": 5405,
+      "totalDebt": 7696,
+      "netCash": 25952
+    },
+    "Q4": {
+      "cashAndInvestments": 36563,
+      "shortTermDebt": 2456,
+      "longTermDebt": 5757,
+      "totalDebt": 8213,
+      "netCash": 28350
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "cashAndInvestments": 36996,
+      "shortTermDebt": 2237,
+      "longTermDebt": 5292,
+      "totalDebt": 7529,
+      "netCash": 29467
+    },
+    "Q2": {
+      "cashAndInvestments": 36782,
+      "shortTermDebt": 2040,
+      "longTermDebt": 5180,
+      "totalDebt": 7220,
+      "netCash": 29562
+    },
+    "Q3": {
+      "cashAndInvestments": 41647,
+      "shortTermDebt": 1924,
+      "longTermDebt": 5778,
+      "totalDebt": 7702,
+      "netCash": 33945
+    },
+    "Q4": {
+      "cashAndInvestments": 44059,
+      "shortTermDebt": 1640,
+      "longTermDebt": 6736,
+      "totalDebt": 8376,
+      "netCash": 35683
+    }
+  }
+}

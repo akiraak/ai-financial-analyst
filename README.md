@@ -13,6 +13,7 @@ AIを活用した株式の財務分析ツール。決算資料から業績デー
 | Meta Platforms | META | FY2022 Q1 〜 FY2025 Q3 |
 | Palantir Technologies | PLTR | FY2022 Q1 〜 FY2025 Q3 |
 | Intel Corporation | INTC | FY2020 Q1 〜 FY2025 Q4 |
+| Tesla, Inc. | TSLA | FY2020 Q1 〜 FY2025 Q4 |
 
 ## 機能
 

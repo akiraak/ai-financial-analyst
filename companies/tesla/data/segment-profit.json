@@ -1,0 +1,302 @@
+{
+  "FY2020": {
+    "Q1": {
+      "automotiveRevenue": 5132,
+      "automotiveCost": 3821,
+      "automotiveGrossProfit": 1311,
+      "energyRevenue": 293,
+      "energyCost": 282,
+      "energyGrossProfit": 11,
+      "servicesRevenue": 560,
+      "servicesCost": 648,
+      "servicesGrossProfit": -88,
+      "totalGrossProfit": 1234
+    },
+    "Q2": {
+      "automotiveRevenue": 5179,
+      "automotiveCost": 3862,
+      "automotiveGrossProfit": 1317,
+      "energyRevenue": 370,
+      "energyCost": 349,
+      "energyGrossProfit": 21,
+      "servicesRevenue": 487,
+      "servicesCost": 558,
+      "servicesGrossProfit": -71,
+      "totalGrossProfit": 1267
+    },
+    "Q3": {
+      "automotiveRevenue": 7611,
+      "automotiveCost": 5506,
+      "automotiveGrossProfit": 2105,
+      "energyRevenue": 579,
+      "energyCost": 558,
+      "energyGrossProfit": 21,
+      "servicesRevenue": 581,
+      "servicesCost": 644,
+      "servicesGrossProfit": -63,
+      "totalGrossProfit": 2063
+    },
+    "Q4": {
+      "automotiveRevenue": 9314,
+      "automotiveCost": 7070,
+      "automotiveGrossProfit": 2244,
+      "energyRevenue": 752,
+      "energyCost": 787,
+      "energyGrossProfit": -35,
+      "servicesRevenue": 678,
+      "servicesCost": 821,
+      "servicesGrossProfit": -143,
+      "totalGrossProfit": 2066
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "automotiveRevenue": 9002,
+      "energyRevenue": 494,
+      "servicesRevenue": 893,
+      "automotiveCost": 6617,
+      "energyCost": 595,
+      "servicesCost": 962,
+      "totalGrossProfit": 2215,
+      "automotiveGrossProfit": 2385,
+      "energyGrossProfit": -101,
+      "servicesGrossProfit": -69
+    },
+    "Q2": {
+      "automotiveRevenue": 10206,
+      "energyRevenue": 801,
+      "servicesRevenue": 951,
+      "automotiveCost": 7307,
+      "energyCost": 781,
+      "servicesCost": 986,
+      "totalGrossProfit": 2884,
+      "automotiveGrossProfit": 2899,
+      "energyGrossProfit": 20,
+      "servicesGrossProfit": -35
+    },
+    "Q3": {
+      "automotiveRevenue": 12057,
+      "energyRevenue": 806,
+      "servicesRevenue": 894,
+      "automotiveCost": 8384,
+      "energyCost": 803,
+      "servicesCost": 910,
+      "totalGrossProfit": 3660,
+      "automotiveGrossProfit": 3673,
+      "energyGrossProfit": 3,
+      "servicesGrossProfit": -16
+    },
+    "Q4": {
+      "automotiveRevenue": 15967,
+      "automotiveCost": 11085,
+      "automotiveGrossProfit": 4882,
+      "energyRevenue": 688,
+      "energyCost": 739,
+      "energyGrossProfit": -51,
+      "servicesRevenue": 1064,
+      "servicesCost": 1048,
+      "servicesGrossProfit": 16,
+      "totalGrossProfit": 4847
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "automotiveRevenue": 16861,
+      "energyRevenue": 616,
+      "servicesRevenue": 1279,
+      "automotiveCost": 11322,
+      "energyCost": 688,
+      "servicesCost": 1286,
+      "totalGrossProfit": 5460,
+      "automotiveGrossProfit": 5539,
+      "energyGrossProfit": -72,
+      "servicesGrossProfit": -7
+    },
+    "Q2": {
+      "automotiveRevenue": 14602,
+      "automotiveCost": 10521,
+      "automotiveGrossProfit": 4081,
+      "energyRevenue": 866,
+      "energyCost": 769,
+      "energyGrossProfit": 97,
+      "servicesRevenue": 1466,
+      "servicesCost": 1410,
+      "servicesGrossProfit": 56,
+      "totalGrossProfit": 4234
+    },
+    "Q3": {
+      "automotiveRevenue": 18692,
+      "automotiveCost": 13480,
+      "automotiveGrossProfit": 5212,
+      "energyRevenue": 1117,
+      "energyCost": 1013,
+      "energyGrossProfit": 104,
+      "servicesRevenue": 1645,
+      "servicesCost": 1579,
+      "servicesGrossProfit": 66,
+      "totalGrossProfit": 5382
+    },
+    "Q4": {
+      "automotiveRevenue": 21307,
+      "automotiveCost": 15785,
+      "automotiveGrossProfit": 5522,
+      "energyRevenue": 1310,
+      "energyCost": 1151,
+      "energyGrossProfit": 159,
+      "servicesRevenue": 1701,
+      "servicesCost": 1605,
+      "servicesGrossProfit": 96,
+      "totalGrossProfit": 5777
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "automotiveRevenue": 19963,
+      "automotiveCost": 15755,
+      "automotiveGrossProfit": 4208,
+      "energyRevenue": 1529,
+      "energyCost": 1361,
+      "energyGrossProfit": 168,
+      "servicesRevenue": 1837,
+      "servicesCost": 1702,
+      "servicesGrossProfit": 135,
+      "totalGrossProfit": 4511
+    },
+    "Q2": {
+      "automotiveRevenue": 21268,
+      "automotiveCost": 17179,
+      "automotiveGrossProfit": 4089,
+      "energyRevenue": 1509,
+      "energyCost": 1231,
+      "energyGrossProfit": 278,
+      "servicesRevenue": 2150,
+      "servicesCost": 1984,
+      "servicesGrossProfit": 166,
+      "totalGrossProfit": 4533
+    },
+    "Q3": {
+      "automotiveRevenue": 19625,
+      "automotiveCost": 15957,
+      "automotiveGrossProfit": 3668,
+      "energyRevenue": 1559,
+      "energyCost": 1178,
+      "energyGrossProfit": 381,
+      "servicesRevenue": 2166,
+      "servicesCost": 2037,
+      "servicesGrossProfit": 129,
+      "totalGrossProfit": 4178
+    },
+    "Q4": {
+      "automotiveRevenue": 21563,
+      "automotiveCost": 17498,
+      "automotiveGrossProfit": 4065,
+      "energyRevenue": 1438,
+      "energyCost": 1124,
+      "energyGrossProfit": 314,
+      "servicesRevenue": 2166,
+      "servicesCost": 2107,
+      "servicesGrossProfit": 59,
+      "totalGrossProfit": 4438
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "automotiveRevenue": 17378,
+      "automotiveCost": 14166,
+      "automotiveGrossProfit": 3212,
+      "energyRevenue": 1635,
+      "energyCost": 1232,
+      "energyGrossProfit": 403,
+      "servicesRevenue": 2288,
+      "servicesCost": 2207,
+      "servicesGrossProfit": 81,
+      "totalGrossProfit": 3696
+    },
+    "Q2": {
+      "automotiveRevenue": 19878,
+      "automotiveCost": 16207,
+      "automotiveGrossProfit": 3671,
+      "energyRevenue": 3014,
+      "energyCost": 2274,
+      "energyGrossProfit": 740,
+      "servicesRevenue": 2608,
+      "servicesCost": 2441,
+      "servicesGrossProfit": 167,
+      "totalGrossProfit": 4578
+    },
+    "Q3": {
+      "automotiveRevenue": 20016,
+      "automotiveCost": 15990,
+      "automotiveGrossProfit": 4026,
+      "energyRevenue": 2376,
+      "energyCost": 1651,
+      "energyGrossProfit": 725,
+      "servicesRevenue": 2790,
+      "servicesCost": 2544,
+      "servicesGrossProfit": 246,
+      "totalGrossProfit": 4997
+    },
+    "Q4": {
+      "automotiveRevenue": 19798,
+      "automotiveCost": 16510,
+      "automotiveGrossProfit": 3288,
+      "energyRevenue": 3061,
+      "energyCost": 2289,
+      "energyGrossProfit": 772,
+      "servicesRevenue": 2848,
+      "servicesCost": 2729,
+      "servicesGrossProfit": 119,
+      "totalGrossProfit": 4179
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "automotiveRevenue": 13967,
+      "automotiveCost": 11700,
+      "automotiveGrossProfit": 2267,
+      "energyRevenue": 2730,
+      "energyCost": 1945,
+      "energyGrossProfit": 785,
+      "servicesRevenue": 2638,
+      "servicesCost": 2537,
+      "servicesGrossProfit": 101,
+      "totalGrossProfit": 3153
+    },
+    "Q2": {
+      "automotiveRevenue": 16661,
+      "automotiveCost": 13795,
+      "automotiveGrossProfit": 2866,
+      "energyRevenue": 2789,
+      "energyCost": 1943,
+      "energyGrossProfit": 846,
+      "servicesRevenue": 3046,
+      "servicesCost": 2880,
+      "servicesGrossProfit": 166,
+      "totalGrossProfit": 3878
+    },
+    "Q3": {
+      "automotiveRevenue": 21205,
+      "automotiveCost": 17590,
+      "automotiveGrossProfit": 3615,
+      "energyRevenue": 3415,
+      "energyCost": 2342,
+      "energyGrossProfit": 1073,
+      "servicesRevenue": 3475,
+      "servicesCost": 3109,
+      "servicesGrossProfit": 366,
+      "totalGrossProfit": 5054
+    },
+    "Q4": {
+      "automotiveRevenue": 17693,
+      "automotiveCost": 14080,
+      "automotiveGrossProfit": 3613,
+      "energyRevenue": 3837,
+      "energyCost": 2739,
+      "energyGrossProfit": 1098,
+      "servicesRevenue": 3371,
+      "servicesCost": 3073,
+      "servicesGrossProfit": 298,
+      "totalGrossProfit": 5009
+    }
+  }
+}

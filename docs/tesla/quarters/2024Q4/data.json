@@ -1,0 +1,932 @@
+{
+  "company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "generatedAt": "2026-02-22",
+  "nextEarningsDate": "2026-04-22",
+  "quarters": [
+    {
+      "label": "FY2021 Q1",
+      "fy": 2021,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 10389,
+      "costOfRevenue": 8174,
+      "grossProfit": 2215,
+      "researchAndDevelopment": 666,
+      "sga": 1056,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 594,
+      "nonOperatingIncome": 137,
+      "netIncome": 438,
+      "eps": 0.39,
+      "price": 222.64,
+      "priceDate": "2021-03-31",
+      "sharesDiluted": 1133,
+      "segments": {
+        "automotive": 9002,
+        "energyGenerationAndStorage": 494,
+        "servicesAndOther": 893
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 17141,
+        "totalAssets": 52972,
+        "totalLiabilities": 28507,
+        "totalEquity": 23017,
+        "totalDebt": 9053
+      },
+      "cashFlow": {
+        "operatingCF": 1641,
+        "investingCF": -2582,
+        "financingCF": -1016,
+        "freeCashFlow": 293
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 9002,
+          "operatingIncome": 2385
+        },
+        "energy": {
+          "revenue": 494,
+          "operatingIncome": -101
+        },
+        "services": {
+          "revenue": 893,
+          "operatingIncome": -69
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 17141,
+        "totalDebt": 10872,
+        "netCash": 6269
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q2",
+      "fy": 2021,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 11958,
+      "costOfRevenue": 9074,
+      "grossProfit": 2884,
+      "researchAndDevelopment": 576,
+      "sga": 973,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 1312,
+      "nonOperatingIncome": 131,
+      "netIncome": 1142,
+      "eps": 1.02,
+      "price": 226.57,
+      "priceDate": "2021-06-30",
+      "sharesDiluted": 1119,
+      "segments": {
+        "automotive": 10206,
+        "energyGenerationAndStorage": 801,
+        "servicesAndOther": 951
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 16229,
+        "totalAssets": 55146,
+        "totalLiabilities": 28896,
+        "totalEquity": 24804,
+        "totalDebt": 7871
+      },
+      "cashFlow": {
+        "operatingCF": 2124,
+        "investingCF": -1515,
+        "financingCF": -1549,
+        "freeCashFlow": 619
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 10206,
+          "operatingIncome": 2899
+        },
+        "energy": {
+          "revenue": 801,
+          "operatingIncome": 20
+        },
+        "services": {
+          "revenue": 951,
+          "operatingIncome": -35
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 16229,
+        "totalDebt": 9401,
+        "netCash": 6828
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q3",
+      "fy": 2021,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 13757,
+      "costOfRevenue": 10097,
+      "grossProfit": 3660,
+      "researchAndDevelopment": 611,
+      "sga": 994,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 2004,
+      "nonOperatingIncome": 136,
+      "netIncome": 1618,
+      "eps": 1.44,
+      "price": 258.49,
+      "priceDate": "2021-09-30",
+      "sharesDiluted": 1123,
+      "segments": {
+        "automotive": 12057,
+        "energyGenerationAndStorage": 806,
+        "servicesAndOther": 894
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 16065,
+        "totalAssets": 57834,
+        "totalLiabilities": 29340,
+        "totalEquity": 27053,
+        "totalDebt": 6438
+      },
+      "cashFlow": {
+        "operatingCF": 3147,
+        "investingCF": -1855,
+        "financingCF": -1381,
+        "freeCashFlow": 1328
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 12057,
+          "operatingIncome": 3673
+        },
+        "energy": {
+          "revenue": 806,
+          "operatingIncome": 3
+        },
+        "services": {
+          "revenue": 894,
+          "operatingIncome": -16
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 16065,
+        "totalDebt": 8154,
+        "netCash": 7911
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q4",
+      "fy": 2021,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 17719,
+      "costOfRevenue": null,
+      "researchAndDevelopment": null,
+      "sga": null,
+      "totalOperatingExpenses": null,
+      "nonOperatingIncome": null,
+      "eps": null,
+      "price": 352.26,
+      "priceDate": "2021-12-31",
+      "sharesDiluted": null,
+      "segments": {
+        "automotive": 15967,
+        "energyGenerationAndStorage": 688,
+        "servicesAndOther": 1064
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 17576,
+        "totalAssets": 62131,
+        "totalLiabilities": 30548,
+        "totalEquity": 30189,
+        "totalDebt": 5245
+      },
+      "cashFlow": {
+        "operatingCF": 4585,
+        "investingCF": -1916,
+        "financingCF": -1257,
+        "freeCashFlow": 2775
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 15967,
+          "operatingIncome": 4882
+        },
+        "energy": {
+          "revenue": 688,
+          "operatingIncome": -51
+        },
+        "services": {
+          "revenue": 1064,
+          "operatingIncome": 16
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 17576,
+        "totalDebt": 6834,
+        "netCash": 10742
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q1",
+      "fy": 2022,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 18756,
+      "costOfRevenue": 13296,
+      "grossProfit": 5460,
+      "researchAndDevelopment": 865,
+      "sga": 992,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 3603,
+      "nonOperatingIncome": 145,
+      "netIncome": 3318,
+      "eps": 2.86,
+      "price": 359.2,
+      "priceDate": "2022-03-31",
+      "sharesDiluted": 1157,
+      "segments": {
+        "automotive": 16861,
+        "energyGenerationAndStorage": 616,
+        "servicesAndOther": 1279
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 17505,
+        "totalAssets": 66038,
+        "totalLiabilities": 30632,
+        "totalEquity": 34085,
+        "totalDebt": 3153
+      },
+      "cashFlow": {
+        "operatingCF": 3995,
+        "investingCF": -2167,
+        "financingCF": -1914,
+        "freeCashFlow": 2228
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 16861,
+          "operatingIncome": 5539
+        },
+        "energy": {
+          "revenue": 616,
+          "operatingIncome": -72
+        },
+        "services": {
+          "revenue": 1279,
+          "operatingIncome": -7
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 17505,
+        "totalDebt": 4812,
+        "netCash": 12693
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q2",
+      "fy": 2022,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 16934,
+      "costOfRevenue": 12700,
+      "grossProfit": 4234,
+      "researchAndDevelopment": 667,
+      "sga": 961,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 2464,
+      "nonOperatingIncome": 10,
+      "netIncome": 2259,
+      "eps": 0.65,
+      "price": 224.47,
+      "priceDate": "2022-06-30",
+      "sharesDiluted": 3464,
+      "segments": {
+        "automotive": 14602,
+        "energyGenerationAndStorage": 866,
+        "servicesAndOther": 1466
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 18915,
+        "totalAssets": 68513,
+        "totalLiabilities": 30855,
+        "totalEquity": 36376,
+        "totalDebt": 2898
+      },
+      "cashFlow": {
+        "operatingCF": 2351,
+        "investingCF": -884,
+        "financingCF": -406,
+        "freeCashFlow": 621
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 14602,
+          "operatingIncome": 4081
+        },
+        "energy": {
+          "revenue": 866,
+          "operatingIncome": 97
+        },
+        "services": {
+          "revenue": 1466,
+          "operatingIncome": 56
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 18915,
+        "totalDebt": 4430,
+        "netCash": 14485
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q3",
+      "fy": 2022,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 21454,
+      "costOfRevenue": 16072,
+      "grossProfit": 5382,
+      "researchAndDevelopment": 733,
+      "sga": 961,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 3688,
+      "nonOperatingIncome": -52,
+      "netIncome": 3292,
+      "eps": 0.95,
+      "price": 265.25,
+      "priceDate": "2022-09-30",
+      "sharesDiluted": 3468,
+      "segments": {
+        "automotive": 18692,
+        "energyGenerationAndStorage": 1117,
+        "servicesAndOther": 1645
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 21107,
+        "totalAssets": 74426,
+        "totalLiabilities": 33302,
+        "totalEquity": 39851,
+        "totalDebt": 2096
+      },
+      "cashFlow": {
+        "operatingCF": 5100,
+        "investingCF": -2791,
+        "financingCF": -712,
+        "freeCashFlow": 3297
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 18692,
+          "operatingIncome": 5212
+        },
+        "energy": {
+          "revenue": 1117,
+          "operatingIncome": 104
+        },
+        "services": {
+          "revenue": 1645,
+          "operatingIncome": 66
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 21107,
+        "totalDebt": 3553,
+        "netCash": 17554
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q4",
+      "fy": 2022,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 24318,
+      "costOfRevenue": 18541,
+      "grossProfit": 5777,
+      "researchAndDevelopment": 810,
+      "sga": 1032,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 3901,
+      "nonOperatingIncome": 82,
+      "netIncome": 3687,
+      "eps": 1.07,
+      "price": 123.18,
+      "priceDate": "2022-12-30",
+      "sharesDiluted": 3471,
+      "segments": {
+        "automotive": 21307,
+        "energyGenerationAndStorage": 1310,
+        "servicesAndOther": 1701
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 22185,
+        "totalAssets": 82338,
+        "totalLiabilities": 36440,
+        "totalEquity": 44704,
+        "totalDebt": 1597
+      },
+      "cashFlow": {
+        "operatingCF": 3278,
+        "investingCF": -6131,
+        "financingCF": -495,
+        "freeCashFlow": 1420
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 21307,
+          "operatingIncome": 5522
+        },
+        "energy": {
+          "revenue": 1310,
+          "operatingIncome": 159
+        },
+        "services": {
+          "revenue": 1701,
+          "operatingIncome": 96
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 22185,
+        "totalDebt": 3099,
+        "netCash": 19086
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q1",
+      "fy": 2023,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 23329,
+      "costOfRevenue": 18818,
+      "grossProfit": 4511,
+      "researchAndDevelopment": 771,
+      "sga": 1076,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 2664,
+      "nonOperatingIncome": 136,
+      "netIncome": 2513,
+      "eps": 0.73,
+      "price": 207.46,
+      "priceDate": "2023-03-31",
+      "sharesDiluted": 3468,
+      "segments": {
+        "automotive": 19963,
+        "energyGenerationAndStorage": 1529,
+        "servicesAndOther": 1837
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 22402,
+        "totalAssets": 86833,
+        "totalLiabilities": 37598,
+        "totalEquity": 48054,
+        "totalDebt": 1272
+      },
+      "cashFlow": {
+        "operatingCF": 2513,
+        "investingCF": -2484,
+        "financingCF": -233,
+        "freeCashFlow": 441
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 19963,
+          "operatingIncome": 4208
+        },
+        "energy": {
+          "revenue": 1529,
+          "operatingIncome": 168
+        },
+        "services": {
+          "revenue": 1837,
+          "operatingIncome": 135
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 22402,
+        "totalDebt": 2676,
+        "netCash": 19726
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q2",
+      "fy": 2023,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 24927,
+      "costOfRevenue": 20394,
+      "grossProfit": 4533,
+      "researchAndDevelopment": 943,
+      "sga": 1191,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 2399,
+      "nonOperatingIncome": 538,
+      "netIncome": 2703,
+      "eps": 0.78,
+      "price": 261.77,
+      "priceDate": "2023-06-30",
+      "sharesDiluted": 3478,
+      "segments": {
+        "automotive": 21268,
+        "energyGenerationAndStorage": 1509,
+        "servicesAndOther": 2150
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 23075,
+        "totalAssets": 90591,
+        "totalLiabilities": 38409,
+        "totalEquity": 51130,
+        "totalDebt": 872
+      },
+      "cashFlow": {
+        "operatingCF": 3065,
+        "investingCF": -3534,
+        "financingCF": -328,
+        "freeCashFlow": 1005
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 21268,
+          "operatingIncome": 4089
+        },
+        "energy": {
+          "revenue": 1509,
+          "operatingIncome": 278
+        },
+        "services": {
+          "revenue": 2150,
+          "operatingIncome": 166
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 23075,
+        "totalDebt": 2331,
+        "netCash": 20744
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q3",
+      "fy": 2023,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 23350,
+      "costOfRevenue": 19172,
+      "grossProfit": 4178,
+      "researchAndDevelopment": 1161,
+      "sga": 1253,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 1764,
+      "nonOperatingIncome": 281,
+      "netIncome": 1853,
+      "eps": 0.53,
+      "price": 250.22,
+      "priceDate": "2023-09-29",
+      "sharesDiluted": 3493,
+      "segments": {
+        "automotive": 19625,
+        "energyGenerationAndStorage": 1559,
+        "servicesAndOther": 2166
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 26077,
+        "totalAssets": 93941,
+        "totalLiabilities": 39446,
+        "totalEquity": 53466,
+        "totalDebt": 2426
+      },
+      "cashFlow": {
+        "operatingCF": 3308,
+        "investingCF": -4762,
+        "financingCF": 2263,
+        "freeCashFlow": 848
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 19625,
+          "operatingIncome": 3668
+        },
+        "energy": {
+          "revenue": 1559,
+          "operatingIncome": 381
+        },
+        "services": {
+          "revenue": 2166,
+          "operatingIncome": 129
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 26077,
+        "totalDebt": 4393,
+        "netCash": 21684
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q4",
+      "fy": 2023,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 25167,
+      "costOfRevenue": 20729,
+      "grossProfit": 4438,
+      "researchAndDevelopment": 1094,
+      "sga": 1280,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 2064,
+      "nonOperatingIncome": 127,
+      "netIncome": 7928,
+      "eps": 2.27,
+      "price": 248.48,
+      "priceDate": "2023-12-29",
+      "sharesDiluted": 3492,
+      "segments": {
+        "automotive": 21563,
+        "energyGenerationAndStorage": 1438,
+        "servicesAndOther": 2166
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 29094,
+        "totalAssets": 106618,
+        "totalLiabilities": 43009,
+        "totalEquity": 62634,
+        "totalDebt": 2857
+      },
+      "cashFlow": {
+        "operatingCF": 4370,
+        "investingCF": -4804,
+        "financingCF": 887,
+        "freeCashFlow": 2064
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 21563,
+          "operatingIncome": 4065
+        },
+        "energy": {
+          "revenue": 1438,
+          "operatingIncome": 314
+        },
+        "services": {
+          "revenue": 2166,
+          "operatingIncome": 59
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 29094,
+        "totalDebt": 5230,
+        "netCash": 23864
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2024 Q1",
+      "fy": 2024,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 21301,
+      "costOfRevenue": 17605,
+      "grossProfit": 3696,
+      "researchAndDevelopment": 1151,
+      "sga": 1374,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 1171,
+      "nonOperatingIncome": 717,
+      "netIncome": 1390,
+      "eps": 0.41,
+      "price": 175.79,
+      "priceDate": "2024-03-28",
+      "sharesDiluted": 3484,
+      "segments": {
+        "automotive": 17378,
+        "energyGenerationAndStorage": 1635,
+        "servicesAndOther": 2288
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 26863,
+        "totalAssets": 109723,
+        "totalLiabilities": 44046,
+        "totalEquity": 64875,
+        "totalDebt": 2899
+      },
+      "cashFlow": {
+        "operatingCF": 242,
+        "investingCF": -5084,
+        "financingCF": 196,
+        "freeCashFlow": -2535
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 17378,
+          "operatingIncome": 3212
+        },
+        "energy": {
+          "revenue": 1635,
+          "operatingIncome": 403
+        },
+        "services": {
+          "revenue": 2288,
+          "operatingIncome": 81
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 26863,
+        "totalDebt": 5360,
+        "netCash": 21503
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q2",
+      "fy": 2024,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 25500,
+      "costOfRevenue": 20922,
+      "grossProfit": 4578,
+      "researchAndDevelopment": 1074,
+      "sga": 1277,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 1605,
+      "nonOperatingIncome": 182,
+      "netIncome": 1400,
+      "eps": 0.4,
+      "price": 197.88,
+      "priceDate": "2024-06-28",
+      "sharesDiluted": 3481,
+      "segments": {
+        "automotive": 19878,
+        "energyGenerationAndStorage": 3014,
+        "servicesAndOther": 2608
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 30720,
+        "totalAssets": 113251,
+        "totalLiabilities": 45569,
+        "totalEquity": 66887,
+        "totalDebt": 5481
+      },
+      "cashFlow": {
+        "operatingCF": 3612,
+        "investingCF": -3225,
+        "financingCF": 2540,
+        "freeCashFlow": 1340
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 19878,
+          "operatingIncome": 3671
+        },
+        "energy": {
+          "revenue": 3014,
+          "operatingIncome": 740
+        },
+        "services": {
+          "revenue": 2608,
+          "operatingIncome": 167
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 30720,
+        "totalDebt": 7745,
+        "netCash": 22975
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q3",
+      "fy": 2024,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 25182,
+      "costOfRevenue": 20185,
+      "grossProfit": 4997,
+      "researchAndDevelopment": 1039,
+      "sga": 1186,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 2717,
+      "nonOperatingIncome": 74,
+      "netIncome": 2173,
+      "eps": 0.62,
+      "price": 261.63,
+      "priceDate": "2024-09-30",
+      "sharesDiluted": 3497,
+      "segments": {
+        "automotive": 20016,
+        "energyGenerationAndStorage": 2376,
+        "servicesAndOther": 2790
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 33648,
+        "totalAssets": 120277,
+        "totalLiabilities": 49142,
+        "totalEquity": 70356,
+        "totalDebt": 5405
+      },
+      "cashFlow": {
+        "operatingCF": 6255,
+        "investingCF": -2875,
+        "financingCF": 132,
+        "freeCashFlow": 2742
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 20016,
+          "operatingIncome": 4026
+        },
+        "energy": {
+          "revenue": 2376,
+          "operatingIncome": 725
+        },
+        "services": {
+          "revenue": 2790,
+          "operatingIncome": 246
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 33648,
+        "totalDebt": 7696,
+        "netCash": 25952
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q4",
+      "fy": 2024,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 25707,
+      "costOfRevenue": 21528,
+      "grossProfit": 4179,
+      "researchAndDevelopment": 1276,
+      "sga": 1313,
+      "totalOperatingExpenses": null,
+      "operatingIncome": 1583,
+      "nonOperatingIncome": 941,
+      "netIncome": 2128,
+      "eps": 0.6,
+      "price": 403.84,
+      "priceDate": "2024-12-31",
+      "sharesDiluted": 3517,
+      "segments": {
+        "automotive": 19798,
+        "energyGenerationAndStorage": 3061,
+        "servicesAndOther": 2848
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 36563,
+        "totalAssets": 122070,
+        "totalLiabilities": 48390,
+        "totalEquity": 72913,
+        "totalDebt": 5757
+      },
+      "cashFlow": {
+        "operatingCF": 4814,
+        "investingCF": -7603,
+        "financingCF": 985,
+        "freeCashFlow": 2034
+      },
+      "segmentProfit": {
+        "automotive": {
+          "revenue": 19798,
+          "operatingIncome": 3288
+        },
+        "energy": {
+          "revenue": 3061,
+          "operatingIncome": 772
+        },
+        "services": {
+          "revenue": 2848,
+          "operatingIncome": 119
+        }
+      },
+      "investments": {
+        "cashAndInvestments": 36563,
+        "totalDebt": 8213,
+        "netCash": 28350
+      },
+      "hasPage": true
+    }
+  ],
+  "currentQuarter": {
+    "fy": 2024,
+    "q": 4,
+    "label": "FY2024 Q4"
+  },
+  "prevPage": {
+    "fy": 2024,
+    "q": 3,
+    "label": "FY2024 Q3"
+  },
+  "nextPage": {
+    "fy": 2025,
+    "q": 1,
+    "label": "FY2025 Q1"
+  }
+}

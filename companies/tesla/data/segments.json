@@ -1,0 +1,134 @@
+{
+  "FY2020": {
+    "Q1": {
+      "automotive": 5132,
+      "energyGenerationAndStorage": 293,
+      "servicesAndOther": 560
+    },
+    "Q2": {
+      "automotive": 5179,
+      "energyGenerationAndStorage": 370,
+      "servicesAndOther": 487
+    },
+    "Q3": {
+      "automotive": 7611,
+      "energyGenerationAndStorage": 579,
+      "servicesAndOther": 581
+    },
+    "Q4": {
+      "automotive": 9314,
+      "energyGenerationAndStorage": 752,
+      "servicesAndOther": 678
+    }
+  },
+  "FY2022": {
+    "Q2": {
+      "automotive": 14602,
+      "energyGenerationAndStorage": 866,
+      "servicesAndOther": 1466
+    },
+    "Q3": {
+      "automotive": 18692,
+      "energyGenerationAndStorage": 1117,
+      "servicesAndOther": 1645
+    },
+    "Q4": {
+      "automotive": 21307,
+      "energyGenerationAndStorage": 1310,
+      "servicesAndOther": 1701
+    },
+    "Q1": {
+      "automotive": 16861,
+      "energyGenerationAndStorage": 616,
+      "servicesAndOther": 1279
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "automotive": 19963,
+      "energyGenerationAndStorage": 1529,
+      "servicesAndOther": 1837
+    },
+    "Q2": {
+      "automotive": 21268,
+      "energyGenerationAndStorage": 1509,
+      "servicesAndOther": 2150
+    },
+    "Q3": {
+      "automotive": 19625,
+      "energyGenerationAndStorage": 1559,
+      "servicesAndOther": 2166
+    },
+    "Q4": {
+      "automotive": 21563,
+      "energyGenerationAndStorage": 1438,
+      "servicesAndOther": 2166
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "automotive": 17378,
+      "energyGenerationAndStorage": 1635,
+      "servicesAndOther": 2288
+    },
+    "Q2": {
+      "automotive": 19878,
+      "energyGenerationAndStorage": 3014,
+      "servicesAndOther": 2608
+    },
+    "Q3": {
+      "automotive": 20016,
+      "energyGenerationAndStorage": 2376,
+      "servicesAndOther": 2790
+    },
+    "Q4": {
+      "automotive": 19798,
+      "energyGenerationAndStorage": 3061,
+      "servicesAndOther": 2848
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "automotive": 13967,
+      "energyGenerationAndStorage": 2730,
+      "servicesAndOther": 2638
+    },
+    "Q2": {
+      "automotive": 16661,
+      "energyGenerationAndStorage": 2789,
+      "servicesAndOther": 3046
+    },
+    "Q3": {
+      "automotive": 21205,
+      "energyGenerationAndStorage": 3415,
+      "servicesAndOther": 3475
+    },
+    "Q4": {
+      "automotive": 17693,
+      "energyGenerationAndStorage": 3837,
+      "servicesAndOther": 3371
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "automotive": 9002,
+      "energyGenerationAndStorage": 494,
+      "servicesAndOther": 893
+    },
+    "Q2": {
+      "automotive": 10206,
+      "energyGenerationAndStorage": 801,
+      "servicesAndOther": 951
+    },
+    "Q3": {
+      "automotive": 12057,
+      "energyGenerationAndStorage": 806,
+      "servicesAndOther": 894
+    },
+    "Q4": {
+      "automotive": 15967,
+      "energyGenerationAndStorage": 688,
+      "servicesAndOther": 1064
+    }
+  }
+}

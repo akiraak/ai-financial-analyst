@@ -85,3 +85,10 @@
 - [x] トップページ改善: 各企業カードに次の決算発表日を表示（過ぎていたらアクセントカラーで強調）
   - config.json に nextEarningsDate を追加、generate-data-json.js で data.json に伝搬
   - index.html で各社の data.json を fetch し動的表示
+- [x] Intel Corporation (INTC) のページを追加（フルビルド）
+  - 決算資料DL: FY2020〜FY2025（24四半期分のpress-release + 10-Q/10-K）
+  - データ抽出: financials, segments, balance-sheet, cash-flows, segment-profit, investments
+  - xlsx生成・検証（216/216項目一致）
+  - GitHub Pages: ランディングページ + 8四半期分の詳細ページ（2024Q1〜2025Q4）
+  - analysis-text.json: 12チャート概要 + 8四半期分の決算サマリー・チャート解説
+  - トップページにIntelカードを追加、chart-builder.jsにセグメントラベル追加

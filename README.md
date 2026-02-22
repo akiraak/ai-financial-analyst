@@ -9,6 +9,10 @@ AIを活用した株式の財務分析ツール。決算資料から業績デー
 | 企業 | ティッカー | 対象期間 |
 |------|-----------|---------|
 | NVIDIA | NVDA | FY2021 Q1 〜 FY2026 Q3 |
+| Broadcom | AVGO | FY2022 Q1 〜 FY2025 Q4 |
+| Meta Platforms | META | FY2022 Q1 〜 FY2025 Q3 |
+| Palantir Technologies | PLTR | FY2022 Q1 〜 FY2025 Q3 |
+| Intel Corporation | INTC | FY2020 Q1 〜 FY2025 Q4 |
 
 ## 機能
 
@@ -38,18 +42,23 @@ AIを活用した株式の財務分析ツール。決算資料から業績デー
 ## ディレクトリ構成
 
 ```
-├── workflows/          # 処理フロー定義
-├── companies/nvidia/
-│   ├── config.json     # 期間設定（pageYears, chartYears）
-│   ├── filings/        # 決算資料の原本（FY2021〜FY2026）
-│   ├── scripts/        # 抽出・生成スクリプト
-│   └── data/           # 抽出済みデータ・xlsx
-└── docs/               # GitHub Pages公開ディレクトリ
-    ├── index.html      # 企業一覧
-    └── nvidia/
-        ├── index.html  # NVIDIAランディングページ
-        ├── data.json   # 統合データ（全四半期）
-        └── quarters/   # 四半期別分析ページ
+├── workflows/              # 処理フロー定義
+├── companies/<企業名>/
+│   ├── config.json         # 期間設定（pageYears, chartYears, nextEarningsDate）
+│   ├── filings/            # 決算資料の原本（press-release, 10-Q/10-K）
+│   ├── scripts/            # 抽出・生成スクリプト
+│   └── data/               # 抽出済みデータ（JSON）・xlsx
+└── docs/                   # GitHub Pages公開ディレクトリ
+    ├── index.html          # 企業一覧トップページ
+    ├── css/style.css       # 共通スタイル
+    ├── js/
+    │   ├── chart-builder.js    # 共通チャート生成ロジック（13チャート）
+    │   └── quarter-detail.js   # 四半期詳細ページのロジック
+    └── <企業名>/
+        ├── index.html      # ランディングページ
+        ├── data.json       # 統合データ（全四半期）
+        ├── analysis-text.json  # チャート解説・決算サマリー
+        └── quarters/       # 四半期別分析ページ
 ```
 
 ## ライセンス

@@ -1,0 +1,93 @@
+{
+  "FY2022": {
+    "Q2": {
+      "nonMarketableBalance": 6536,
+      "measurementAlternative": 6502,
+      "equityMethod": 34,
+      "marketableEquityBalance": 125
+    },
+    "Q3": {
+      "nonMarketableBalance": 6528,
+      "measurementAlternative": 6495,
+      "equityMethod": 33,
+      "marketableEquityBalance": 83
+    },
+    "Q4": {
+      "nonMarketableBalance": 6201,
+      "measurementAlternative": 6184,
+      "equityMethod": 17,
+      "marketableEquityBalance": 25
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "nonMarketableBalance": 6167,
+      "measurementAlternative": 6149,
+      "equityMethod": 18
+    },
+    "Q2": {
+      "nonMarketableBalance": 6208,
+      "measurementAlternative": 6149,
+      "equityMethod": 59
+    },
+    "Q3": {
+      "nonMarketableBalance": 6142,
+      "measurementAlternative": 6083,
+      "equityMethod": 59
+    },
+    "Q4": {
+      "nonMarketableBalance": 6141,
+      "measurementAlternative": 6083,
+      "equityMethod": 58
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "nonMarketableBalance": 6218,
+      "measurementAlternative": 6161,
+      "equityMethod": 57
+    },
+    "Q2": {
+      "nonMarketableBalance": 6207,
+      "measurementAlternative": 6151,
+      "equityMethod": 56
+    },
+    "Q3": {
+      "nonMarketableBalance": 6071,
+      "measurementAlternative": 6018,
+      "equityMethod": 53
+    },
+    "Q4": {
+      "nonMarketableBalance": 6070,
+      "measurementAlternative": 6018,
+      "equityMethod": 52,
+      "marketableEquityBalance": 1226
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "nonMarketableBalance": 6168,
+      "measurementAlternative": 6119,
+      "equityMethod": 49,
+      "marketableEquityBalance": 3086
+    },
+    "Q2": {
+      "nonMarketableBalance": 21988,
+      "measurementAlternative": 19966,
+      "equityMethod": 2022,
+      "marketableEquityBalance": 4861
+    },
+    "Q3": {
+      "nonMarketableBalance": 25074,
+      "measurementAlternative": 20017,
+      "equityMethod": 5057,
+      "marketableEquityBalance": 6128
+    },
+    "Q4": {
+      "nonMarketableBalance": 27524,
+      "measurementAlternative": 20076,
+      "equityMethod": 7448,
+      "marketableEquityBalance": 5992
+    }
+  }
+}

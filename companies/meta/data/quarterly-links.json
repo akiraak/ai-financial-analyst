@@ -1,0 +1,218 @@
+[
+  {
+    "fy": "FY2020",
+    "q": "Q1",
+    "adsh": "0001326801-20-000046",
+    "file": "fb-03312020xexhibit991.htm",
+    "date": "2020-04-29",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680120000046/fb-03312020xexhibit991.htm",
+    "localPath": "FY2020/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q2",
+    "adsh": "0001326801-20-000073",
+    "file": "fb-06302020xexhibit991.htm",
+    "date": "2020-07-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680120000073/fb-06302020xexhibit991.htm",
+    "localPath": "FY2020/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q3",
+    "adsh": "0001326801-20-000081",
+    "file": "fb-09302020xexhibit991.htm",
+    "date": "2020-10-29",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680120000081/fb-09302020xexhibit991.htm",
+    "localPath": "FY2020/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q4",
+    "adsh": "0001326801-21-000011",
+    "file": "fb-12312020xexhibit991.htm",
+    "date": "2021-01-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000011/fb-12312020xexhibit991.htm",
+    "localPath": "FY2020/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q1",
+    "adsh": "0001326801-21-000031",
+    "file": "fb-03312021xexhibit991.htm",
+    "date": "2021-04-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000031/fb-03312021xexhibit991.htm",
+    "localPath": "FY2021/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q2",
+    "adsh": "0001326801-21-000047",
+    "file": "fb-06302021xexhibit991.htm",
+    "date": "2021-07-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000047/fb-06302021xexhibit991.htm",
+    "localPath": "FY2021/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q3",
+    "adsh": "0001326801-21-000062",
+    "file": "fb-09302021xexhibit991.htm",
+    "date": "2021-10-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000062/fb-09302021xexhibit991.htm",
+    "localPath": "FY2021/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q4",
+    "adsh": "0001326801-22-000015",
+    "file": "fb-12312021xexhibit991.htm",
+    "date": "2022-02-02",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000015/fb-12312021xexhibit991.htm",
+    "localPath": "FY2021/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q1",
+    "adsh": "0001326801-22-000054",
+    "file": "meta03312022-exhibit991.htm",
+    "date": "2022-04-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000054/meta03312022-exhibit991.htm",
+    "localPath": "FY2022/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q2",
+    "adsh": "0001326801-22-000079",
+    "file": "meta06302022-exhibit991.htm",
+    "date": "2022-07-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000079/meta06302022-exhibit991.htm",
+    "localPath": "FY2022/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q3",
+    "adsh": "0001326801-22-000105",
+    "file": "meta09302022-exhibit991.htm",
+    "date": "2022-10-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000105/meta09302022-exhibit991.htm",
+    "localPath": "FY2022/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q4",
+    "adsh": "0001326801-23-000008",
+    "file": "meta-12312022xexhibit991.htm",
+    "date": "2023-02-01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000008/meta-12312022xexhibit991.htm",
+    "localPath": "FY2022/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q1",
+    "adsh": "0001326801-23-000063",
+    "file": "meta03312023-exhibit991.htm",
+    "date": "2023-04-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000063/meta03312023-exhibit991.htm",
+    "localPath": "FY2023/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q2",
+    "adsh": "0001326801-23-000089",
+    "file": "meta06302023-exhibit991.htm",
+    "date": "2023-07-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000089/meta06302023-exhibit991.htm",
+    "localPath": "FY2023/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q3",
+    "adsh": "0001326801-23-000100",
+    "file": "meta09302023-exhibit991.htm",
+    "date": "2023-10-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000100/meta09302023-exhibit991.htm",
+    "localPath": "FY2023/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q4",
+    "adsh": "0001326801-24-000010",
+    "file": "meta-12312023xexhibit991.htm",
+    "date": "2024-02-01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000010/meta-12312023xexhibit991.htm",
+    "localPath": "FY2023/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q1",
+    "adsh": "0001326801-24-000044",
+    "file": "meta-03312024xexhibit991.htm",
+    "date": "2024-04-24",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000044/meta-03312024xexhibit991.htm",
+    "localPath": "FY2024/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q2",
+    "adsh": "0001326801-24-000065",
+    "file": "meta-06302024xexhibit991.htm",
+    "date": "2024-07-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000065/meta-06302024xexhibit991.htm",
+    "localPath": "FY2024/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q3",
+    "adsh": "0001326801-24-000077",
+    "file": "meta-09302024xexhibit991.htm",
+    "date": "2024-10-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000077/meta-09302024xexhibit991.htm",
+    "localPath": "FY2024/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q4",
+    "adsh": "0001326801-25-000014",
+    "file": "meta-12312024xexhibit991.htm",
+    "date": "2025-01-29",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000014/meta-12312024xexhibit991.htm",
+    "localPath": "FY2024/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q1",
+    "adsh": "0001326801-25-000050",
+    "file": "meta-03312025xexhibit991.htm",
+    "date": "2025-04-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000050/meta-03312025xexhibit991.htm",
+    "localPath": "FY2025/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q2",
+    "adsh": "0001628280-25-036719",
+    "file": "meta-06302025xexhibit991.htm",
+    "date": "2025-07-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036719/meta-06302025xexhibit991.htm",
+    "localPath": "FY2025/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q3",
+    "adsh": "0001628280-25-047114",
+    "file": "meta-09302025xexhibit991.htm",
+    "date": "2025-10-29",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm",
+    "localPath": "FY2025/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q4",
+    "adsh": "0001628280-26-003832",
+    "file": "meta-12312025xexhibit991.htm",
+    "date": "2026-01-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-12312025xexhibit991.htm",
+    "localPath": "FY2025/Q4/press-release.html"
+  }
+]

@@ -1,0 +1,198 @@
+{
+  "FY2020": {
+    "Q1": {
+      "operatingCashFlow": 11001,
+      "investingCashFlow": -4109,
+      "financeLeasePayments": -100,
+      "financingCashFlow": -2022,
+      "freeCashFlow": 7343
+    },
+    "Q2": {
+      "operatingCashFlow": 3878,
+      "investingCashFlow": -4177,
+      "financeLeasePayments": -109,
+      "financingCashFlow": -2152
+    },
+    "Q3": {
+      "operatingCashFlow": 9828,
+      "investingCashFlow": -16599,
+      "financeLeasePayments": -189,
+      "financingCashFlow": -2912
+    },
+    "Q4": {
+      "operatingCashFlow": 14040,
+      "capitalExpenditures": -4613,
+      "investingCashFlow": -5173,
+      "financeLeasePayments": -205,
+      "financingCashFlow": -3206,
+      "freeCashFlow": 9222
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "operatingCashFlow": 12242,
+      "capitalExpenditures": -4272,
+      "investingCashFlow": -4874,
+      "financeLeasePayments": -151,
+      "financingCashFlow": -5185,
+      "freeCashFlow": 7819
+    },
+    "Q2": {
+      "operatingCashFlow": 13246,
+      "capitalExpenditures": -4612,
+      "investingCashFlow": -8195,
+      "financeLeasePayments": -123,
+      "financingCashFlow": -8548,
+      "freeCashFlow": 8511
+    },
+    "Q3": {
+      "operatingCashFlow": 14091,
+      "capitalExpenditures": -4313,
+      "investingCashFlow": -330,
+      "financeLeasePayments": -231,
+      "financingCashFlow": -15253,
+      "freeCashFlow": 9547
+    },
+    "Q4": {
+      "operatingCashFlow": 18104,
+      "capitalExpenditures": -5370,
+      "investingCashFlow": 5829,
+      "financeLeasePayments": -172,
+      "financingCashFlow": -21742,
+      "freeCashFlow": 12562
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "operatingCashFlow": 14076,
+      "capitalExpenditures": -5441,
+      "investingCashFlow": -4779,
+      "financeLeasePayments": -233,
+      "financingCashFlow": -10660,
+      "freeCashFlow": 8528
+    },
+    "Q2": {
+      "operatingCashFlow": 12197,
+      "capitalExpenditures": -7572,
+      "investingCashFlow": -6959,
+      "financeLeasePayments": -219,
+      "financingCashFlow": -6563,
+      "freeCashFlow": 4450
+    },
+    "Q3": {
+      "operatingCashFlow": 9691,
+      "capitalExpenditures": -9375,
+      "investingCashFlow": -9701,
+      "financeLeasePayments": -163,
+      "financingCashFlow": 2147,
+      "freeCashFlow": 173
+    },
+    "Q4": {
+      "operatingCashFlow": 14511,
+      "capitalExpenditures": -9043,
+      "investingCashFlow": -7531,
+      "financeLeasePayments": -235,
+      "financingCashFlow": -7059,
+      "freeCashFlow": 5288
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "operatingCashFlow": 13998,
+      "capitalExpenditures": -6842,
+      "investingCashFlow": -6743,
+      "financeLeasePayments": -264,
+      "financingCashFlow": -10516,
+      "freeCashFlow": 6911
+    },
+    "Q2": {
+      "operatingCashFlow": 17309,
+      "capitalExpenditures": -6216,
+      "investingCashFlow": -5203,
+      "financeLeasePayments": -220,
+      "financingCashFlow": 5292,
+      "freeCashFlow": 10955
+    },
+    "Q3": {
+      "operatingCashFlow": 20402,
+      "capitalExpenditures": -6543,
+      "investingCashFlow": -6077,
+      "financeLeasePayments": -267,
+      "financingCashFlow": -5875,
+      "freeCashFlow": 13639
+    },
+    "Q4": {
+      "operatingCashFlow": 19404,
+      "capitalExpenditures": -7665,
+      "investingCashFlow": -6472,
+      "financeLeasePayments": -307,
+      "financingCashFlow": -8401,
+      "freeCashFlow": 11505
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "operatingCashFlow": 19246,
+      "investingCashFlow": -8734,
+      "financeLeasePayments": -315,
+      "financingCashFlow": -19767,
+      "freeCashFlow": 12531
+    },
+    "Q2": {
+      "operatingCashFlow": 19370,
+      "investingCashFlow": -8298,
+      "financeLeasePayments": -299,
+      "financingCashFlow": -11178,
+      "freeCashFlow": 10898
+    },
+    "Q3": {
+      "operatingCashFlow": 24724,
+      "investingCashFlow": -8620,
+      "financeLeasePayments": -944,
+      "financingCashFlow": -4371,
+      "freeCashFlow": 15522
+    },
+    "Q4": {
+      "operatingCashFlow": 27988,
+      "capitalExpenditures": -14425,
+      "investingCashFlow": -21498,
+      "financeLeasePayments": -411,
+      "financingCashFlow": -5465,
+      "freeCashFlow": 13152
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "operatingCashFlow": 24026,
+      "capitalExpenditures": -12941,
+      "investingCashFlow": -20010,
+      "financeLeasePayments": -751,
+      "financingCashFlow": -19495,
+      "freeCashFlow": 10334
+    },
+    "Q2": {
+      "operatingCashFlow": 25561,
+      "capitalExpenditures": -16538,
+      "investingCashFlow": -25958,
+      "financeLeasePayments": -474,
+      "financingCashFlow": -15977,
+      "freeCashFlow": 8549
+    },
+    "Q3": {
+      "operatingCashFlow": 29999,
+      "capitalExpenditures": -18829,
+      "investingCashFlow": -21848,
+      "financeLeasePayments": -545,
+      "financingCashFlow": -10047,
+      "freeCashFlow": 10625
+    },
+    "Q4": {
+      "operatingCashFlow": 36214,
+      "capitalExpenditures": -21383,
+      "investingCashFlow": -34187,
+      "financeLeasePayments": -754,
+      "financingCashFlow": 25149,
+      "freeCashFlow": 14077
+    }
+  }
+}

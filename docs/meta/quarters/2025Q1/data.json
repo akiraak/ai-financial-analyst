@@ -1,0 +1,793 @@
+{
+  "company": "Meta Platforms",
+  "ticker": "META",
+  "generatedAt": "2026-02-22",
+  "quarters": [
+    {
+      "label": "FY2021 Q2",
+      "fy": 2021,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 29077,
+      "costOfRevenue": 5399,
+      "grossProfit": 23678,
+      "researchAndDevelopment": 6096,
+      "sga": 5215,
+      "totalOperatingExpenses": 16710,
+      "operatingIncome": 12367,
+      "nonOperatingIncome": 146,
+      "netIncome": 10394,
+      "eps": 3.61,
+      "price": 351.89,
+      "priceDate": "2021-06-29",
+      "sharesDiluted": 2877,
+      "segments": null,
+      "balanceSheet": {
+        "cashAndEquivalents": 16186,
+        "totalAssets": 170609,
+        "totalLiabilities": 32382,
+        "totalEquity": 138227,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 13246,
+        "investingCF": -8195,
+        "financingCF": -8548,
+        "freeCashFlow": 8511
+      },
+      "segmentProfit": null,
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q3",
+      "fy": 2021,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 29010,
+      "costOfRevenue": 5771,
+      "grossProfit": 23239,
+      "researchAndDevelopment": 6316,
+      "sga": 6500,
+      "totalOperatingExpenses": 18587,
+      "operatingIncome": 10423,
+      "nonOperatingIncome": 142,
+      "netIncome": 9194,
+      "eps": 3.22,
+      "price": 339.61,
+      "priceDate": "2021-09-29",
+      "sharesDiluted": 2859,
+      "segments": null,
+      "balanceSheet": {
+        "cashAndEquivalents": 14496,
+        "totalAssets": 169585,
+        "totalLiabilities": 36225,
+        "totalEquity": 133360,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 14091,
+        "investingCF": -330,
+        "financingCF": -15253,
+        "freeCashFlow": 9547
+      },
+      "segmentProfit": null,
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q4",
+      "fy": 2021,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 33671,
+      "costOfRevenue": 6348,
+      "grossProfit": 27323,
+      "researchAndDevelopment": 7046,
+      "sga": 7692,
+      "totalOperatingExpenses": 21086,
+      "operatingIncome": 12585,
+      "nonOperatingIncome": 117,
+      "netIncome": 10285,
+      "eps": 3.67,
+      "price": 344.36,
+      "priceDate": "2021-12-30",
+      "sharesDiluted": 2799,
+      "segments": {
+        "familyOfApps": 32794,
+        "realityLabs": 877
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 16601,
+        "totalAssets": 165987,
+        "totalLiabilities": 41108,
+        "totalEquity": 124879,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 18104,
+        "investingCF": 5829,
+        "financingCF": -21742,
+        "freeCashFlow": 12562
+      },
+      "segmentProfit": null,
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q1",
+      "fy": 2022,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 27908,
+      "costOfRevenue": 6005,
+      "grossProfit": 21903,
+      "researchAndDevelopment": 7707,
+      "sga": 5672,
+      "totalOperatingExpenses": 19384,
+      "operatingIncome": 8524,
+      "nonOperatingIncome": 384,
+      "netIncome": 7465,
+      "eps": 2.72,
+      "price": 227.85,
+      "priceDate": "2022-03-30",
+      "sharesDiluted": 2742,
+      "segments": {
+        "familyOfApps": 27213,
+        "realityLabs": 695
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 14886,
+        "totalAssets": 164218,
+        "totalLiabilities": 40990,
+        "totalEquity": 123228,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 14076,
+        "investingCF": -4779,
+        "financingCF": -10660,
+        "freeCashFlow": 8528
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 27213,
+          "operatingIncome": 11484
+        },
+        "realityLabs": {
+          "revenue": 695,
+          "operatingIncome": -2960
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q2",
+      "fy": 2022,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 28822,
+      "costOfRevenue": 5192,
+      "grossProfit": 23630,
+      "researchAndDevelopment": 8690,
+      "sga": 6582,
+      "totalOperatingExpenses": 20464,
+      "operatingIncome": 8358,
+      "nonOperatingIncome": -172,
+      "netIncome": 6687,
+      "eps": 2.46,
+      "price": 163.94,
+      "priceDate": "2022-06-29",
+      "sharesDiluted": 2713,
+      "segments": {
+        "familyOfApps": 28370,
+        "realityLabs": 452
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 12681,
+        "totalAssets": 169779,
+        "totalLiabilities": 44012,
+        "totalEquity": 125767,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 12197,
+        "investingCF": -6959,
+        "financingCF": -6563,
+        "freeCashFlow": 4450
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 28370,
+          "operatingIncome": 11164
+        },
+        "realityLabs": {
+          "revenue": 452,
+          "operatingIncome": -2806
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6536,
+        "publiclyHeldBalance": 125
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q3",
+      "fy": 2022,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 27714,
+      "costOfRevenue": 5716,
+      "grossProfit": 21998,
+      "researchAndDevelopment": 9170,
+      "sga": 7164,
+      "totalOperatingExpenses": 22050,
+      "operatingIncome": 5664,
+      "nonOperatingIncome": -88,
+      "netIncome": 4395,
+      "eps": 1.64,
+      "price": 136.41,
+      "priceDate": "2022-09-29",
+      "sharesDiluted": 2687,
+      "segments": {
+        "familyOfApps": 27429,
+        "realityLabs": 285
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 14308,
+        "totalAssets": 178894,
+        "totalLiabilities": 54800,
+        "totalEquity": 124094,
+        "totalDebt": 9922
+      },
+      "cashFlow": {
+        "operatingCF": 9691,
+        "investingCF": -9701,
+        "financingCF": 2147,
+        "freeCashFlow": 173
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 27429,
+          "operatingIncome": 9336
+        },
+        "realityLabs": {
+          "revenue": 285,
+          "operatingIncome": -3672
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6528,
+        "publiclyHeldBalance": 83
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q4",
+      "fy": 2022,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 32165,
+      "costOfRevenue": 8336,
+      "grossProfit": 23829,
+      "researchAndDevelopment": 9771,
+      "sga": 7659,
+      "totalOperatingExpenses": 25766,
+      "operatingIncome": 6399,
+      "nonOperatingIncome": -250,
+      "netIncome": 4652,
+      "eps": 1.76,
+      "price": 120.34,
+      "priceDate": "2022-12-30",
+      "sharesDiluted": 2640,
+      "segments": {
+        "familyOfApps": 31438,
+        "realityLabs": 727
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 14681,
+        "totalAssets": 185727,
+        "totalLiabilities": 60014,
+        "totalEquity": 125713,
+        "totalDebt": 9923
+      },
+      "cashFlow": {
+        "operatingCF": 14511,
+        "investingCF": -7531,
+        "financingCF": -7059,
+        "freeCashFlow": 5288
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 31438,
+          "operatingIncome": 10677
+        },
+        "realityLabs": {
+          "revenue": 727,
+          "operatingIncome": -4279
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6201,
+        "publiclyHeldBalance": 25
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q1",
+      "fy": 2023,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 28645,
+      "costOfRevenue": 6108,
+      "grossProfit": 22537,
+      "researchAndDevelopment": 9381,
+      "sga": 5929,
+      "totalOperatingExpenses": 21418,
+      "operatingIncome": 7227,
+      "nonOperatingIncome": 80,
+      "netIncome": 5709,
+      "eps": 2.2,
+      "price": 207.84,
+      "priceDate": "2023-03-30",
+      "sharesDiluted": 2596,
+      "segments": {
+        "familyOfApps": 28306,
+        "realityLabs": 339
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 11551,
+        "totalAssets": 184491,
+        "totalLiabilities": 59696,
+        "totalEquity": 124795,
+        "totalDebt": 9925
+      },
+      "cashFlow": {
+        "operatingCF": 13998,
+        "investingCF": -6743,
+        "financingCF": -10516,
+        "freeCashFlow": 6911
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 28306,
+          "operatingIncome": 11219
+        },
+        "realityLabs": {
+          "revenue": 339,
+          "operatingIncome": -3992
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6167,
+        "publiclyHeldBalance": null
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q2",
+      "fy": 2023,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 31999,
+      "costOfRevenue": 5945,
+      "grossProfit": 26054,
+      "researchAndDevelopment": 9344,
+      "sga": 3154,
+      "totalOperatingExpenses": 22607,
+      "operatingIncome": 9392,
+      "nonOperatingIncome": -99,
+      "netIncome": 7788,
+      "eps": 2.98,
+      "price": 281.53,
+      "priceDate": "2023-06-29",
+      "sharesDiluted": 2612,
+      "segments": {
+        "familyOfApps": 31723,
+        "realityLabs": 276
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 28785,
+        "totalAssets": 206688,
+        "totalLiabilities": 72655,
+        "totalEquity": 134033,
+        "totalDebt": 18382
+      },
+      "cashFlow": {
+        "operatingCF": 17309,
+        "investingCF": -5203,
+        "financingCF": 5292,
+        "freeCashFlow": 10955
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 31723,
+          "operatingIncome": 13131
+        },
+        "realityLabs": {
+          "revenue": 276,
+          "operatingIncome": -3739
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6208,
+        "publiclyHeldBalance": null
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q3",
+      "fy": 2023,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 34146,
+      "costOfRevenue": 6210,
+      "grossProfit": 27936,
+      "researchAndDevelopment": 9241,
+      "sga": 4947,
+      "totalOperatingExpenses": 20398,
+      "operatingIncome": 13748,
+      "nonOperatingIncome": 272,
+      "netIncome": 11583,
+      "eps": 4.39,
+      "price": 300.21,
+      "priceDate": "2023-09-29",
+      "sharesDiluted": 2641,
+      "segments": {
+        "familyOfApps": 33936,
+        "realityLabs": 210
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 36890,
+        "totalAssets": 216274,
+        "totalLiabilities": 73401,
+        "totalEquity": 142873,
+        "totalDebt": 18383
+      },
+      "cashFlow": {
+        "operatingCF": 20402,
+        "investingCF": -6077,
+        "financingCF": -5875,
+        "freeCashFlow": 13639
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 33936,
+          "operatingIncome": 17490
+        },
+        "realityLabs": {
+          "revenue": 210,
+          "operatingIncome": -3742
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6142,
+        "publiclyHeldBalance": null
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q4",
+      "fy": 2023,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 40111,
+      "costOfRevenue": 7695,
+      "grossProfit": 32416,
+      "researchAndDevelopment": 10517,
+      "sga": 5515,
+      "totalOperatingExpenses": 23727,
+      "operatingIncome": 16384,
+      "nonOperatingIncome": 424,
+      "netIncome": 14017,
+      "eps": 5.33,
+      "price": 353.96,
+      "priceDate": "2023-12-29",
+      "sharesDiluted": 2630,
+      "segments": {
+        "familyOfApps": 39040,
+        "realityLabs": 1071
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 41862,
+        "totalAssets": 229623,
+        "totalLiabilities": 76455,
+        "totalEquity": 153168,
+        "totalDebt": 18385
+      },
+      "cashFlow": {
+        "operatingCF": 19404,
+        "investingCF": -6472,
+        "financingCF": -8401,
+        "freeCashFlow": 11505
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 39041,
+          "operatingIncome": 21031
+        },
+        "realityLabs": {
+          "revenue": 1071,
+          "operatingIncome": -4647
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6141,
+        "publiclyHeldBalance": null
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2024 Q1",
+      "fy": 2024,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 36455,
+      "costOfRevenue": 6640,
+      "grossProfit": 29815,
+      "researchAndDevelopment": 9978,
+      "sga": 6019,
+      "totalOperatingExpenses": 22637,
+      "operatingIncome": 13818,
+      "nonOperatingIncome": 365,
+      "netIncome": 12369,
+      "eps": 4.71,
+      "price": 485.58,
+      "priceDate": "2024-03-28",
+      "sharesDiluted": 2625,
+      "segments": {
+        "familyOfApps": 36015,
+        "realityLabs": 440
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 32307,
+        "totalAssets": 222844,
+        "totalLiabilities": 73315,
+        "totalEquity": 149529,
+        "totalDebt": 18387
+      },
+      "cashFlow": {
+        "operatingCF": 19246,
+        "investingCF": -8734,
+        "financingCF": -19767,
+        "freeCashFlow": 12531
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 36015,
+          "operatingIncome": 17664
+        },
+        "realityLabs": {
+          "revenue": 440,
+          "operatingIncome": -3846
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6218,
+        "publiclyHeldBalance": null
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q2",
+      "fy": 2024,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 39071,
+      "costOfRevenue": 7308,
+      "grossProfit": 31763,
+      "researchAndDevelopment": 10537,
+      "sga": 2721,
+      "totalOperatingExpenses": 24224,
+      "operatingIncome": 14847,
+      "nonOperatingIncome": 259,
+      "netIncome": 13465,
+      "eps": 5.16,
+      "price": 504.22,
+      "priceDate": "2024-06-28",
+      "sharesDiluted": 2610,
+      "segments": {
+        "familyOfApps": 38718,
+        "realityLabs": 353
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 32045,
+        "totalAssets": 230238,
+        "totalLiabilities": 73475,
+        "totalEquity": 156763,
+        "totalDebt": 18389
+      },
+      "cashFlow": {
+        "operatingCF": 19370,
+        "investingCF": -8298,
+        "financingCF": -11178,
+        "freeCashFlow": 10898
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 38718,
+          "operatingIncome": 19335
+        },
+        "realityLabs": {
+          "revenue": 353,
+          "operatingIncome": -4488
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6207,
+        "publiclyHeldBalance": null
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q3",
+      "fy": 2024,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 40589,
+      "costOfRevenue": 7375,
+      "grossProfit": 33214,
+      "researchAndDevelopment": 11177,
+      "sga": 4687,
+      "totalOperatingExpenses": 23239,
+      "operatingIncome": 17350,
+      "nonOperatingIncome": 472,
+      "netIncome": 15688,
+      "eps": 6.03,
+      "price": 567.36,
+      "priceDate": "2024-09-27",
+      "sharesDiluted": 2600,
+      "segments": {
+        "familyOfApps": 40319,
+        "realityLabs": 270
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 43852,
+        "totalAssets": 256408,
+        "totalLiabilities": 91879,
+        "totalEquity": 164529,
+        "totalDebt": 28823
+      },
+      "cashFlow": {
+        "operatingCF": 24724,
+        "investingCF": -8620,
+        "financingCF": -4371,
+        "freeCashFlow": 15522
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 40319,
+          "operatingIncome": 21778
+        },
+        "realityLabs": {
+          "revenue": 270,
+          "operatingIncome": -4428
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6071,
+        "publiclyHeldBalance": null
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q4",
+      "fy": 2024,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 48385,
+      "costOfRevenue": 8839,
+      "grossProfit": 39546,
+      "researchAndDevelopment": 12180,
+      "sga": 3240,
+      "totalOperatingExpenses": 25020,
+      "operatingIncome": 23365,
+      "nonOperatingIncome": 188,
+      "netIncome": 20838,
+      "eps": 8.02,
+      "price": 591.24,
+      "priceDate": "2024-12-30",
+      "sharesDiluted": 2599,
+      "segments": {
+        "familyOfApps": 47302,
+        "realityLabs": 1083
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 43889,
+        "totalAssets": 276054,
+        "totalLiabilities": 93417,
+        "totalEquity": 182637,
+        "totalDebt": 28826
+      },
+      "cashFlow": {
+        "operatingCF": 27988,
+        "investingCF": -21498,
+        "financingCF": -5465,
+        "freeCashFlow": 13152
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 47303,
+          "operatingIncome": 28332
+        },
+        "realityLabs": {
+          "revenue": 1083,
+          "operatingIncome": -4967
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6070,
+        "publiclyHeldBalance": 1226
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q1",
+      "fy": 2025,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 42314,
+      "costOfRevenue": 7572,
+      "grossProfit": 34742,
+      "researchAndDevelopment": 12150,
+      "sga": 5037,
+      "totalOperatingExpenses": 24759,
+      "operatingIncome": 17555,
+      "nonOperatingIncome": 827,
+      "netIncome": 16644,
+      "eps": 6.43,
+      "price": 576.74,
+      "priceDate": "2025-03-28",
+      "sharesDiluted": 2590,
+      "segments": {
+        "familyOfApps": 41902,
+        "realityLabs": 412
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 28750,
+        "totalAssets": 280213,
+        "totalLiabilities": 95184,
+        "totalEquity": 185029,
+        "totalDebt": 28829
+      },
+      "cashFlow": {
+        "operatingCF": 24026,
+        "investingCF": -20010,
+        "financingCF": -19495,
+        "freeCashFlow": 10334
+      },
+      "segmentProfit": {
+        "familyOfApps": {
+          "revenue": 41902,
+          "operatingIncome": 21765
+        },
+        "realityLabs": {
+          "revenue": 412,
+          "operatingIncome": -4210
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 6168,
+        "publiclyHeldBalance": 3086
+      },
+      "hasPage": true
+    }
+  ],
+  "currentQuarter": {
+    "fy": 2025,
+    "q": 1,
+    "label": "FY2025 Q1"
+  },
+  "prevPage": {
+    "fy": 2024,
+    "q": 4,
+    "label": "FY2024 Q4"
+  },
+  "nextPage": {
+    "fy": 2025,
+    "q": 2,
+    "label": "FY2025 Q2"
+  }
+}

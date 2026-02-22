@@ -106,6 +106,8 @@ const ChartBuilder = {
       oem: 'OEM & Other',
       semiconductorSolutions: 'Semiconductor Solutions',
       infrastructureSoftware: 'Infrastructure Software',
+      familyOfApps: 'Family of Apps',
+      realityLabs: 'Reality Labs',
     };
     return labels[key] || key;
   },
@@ -706,6 +708,8 @@ const ChartBuilder = {
       graphics: 'Graphics',
       semiconductorSolutions: 'Semiconductor Solutions',
       infrastructureSoftware: 'Infrastructure Software',
+      familyOfApps: 'Family of Apps',
+      realityLabs: 'Reality Labs',
     };
     return labels[key] || key;
   },

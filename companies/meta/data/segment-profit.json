@@ -1,0 +1,170 @@
+{
+  "FY2022": {
+    "Q1": {
+      "familyOfApps": {
+        "revenue": 27213,
+        "operatingIncome": 11484
+      },
+      "realityLabs": {
+        "revenue": 695,
+        "operatingIncome": -2960
+      }
+    },
+    "Q2": {
+      "familyOfApps": {
+        "revenue": 28370,
+        "operatingIncome": 11164
+      },
+      "realityLabs": {
+        "revenue": 452,
+        "operatingIncome": -2806
+      }
+    },
+    "Q3": {
+      "familyOfApps": {
+        "revenue": 27429,
+        "operatingIncome": 9336
+      },
+      "realityLabs": {
+        "revenue": 285,
+        "operatingIncome": -3672
+      }
+    },
+    "Q4": {
+      "familyOfApps": {
+        "revenue": 31438,
+        "operatingIncome": 10677
+      },
+      "realityLabs": {
+        "revenue": 727,
+        "operatingIncome": -4279
+      }
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "familyOfApps": {
+        "revenue": 28306,
+        "operatingIncome": 11219
+      },
+      "realityLabs": {
+        "revenue": 339,
+        "operatingIncome": -3992
+      }
+    },
+    "Q2": {
+      "familyOfApps": {
+        "revenue": 31723,
+        "operatingIncome": 13131
+      },
+      "realityLabs": {
+        "revenue": 276,
+        "operatingIncome": -3739
+      }
+    },
+    "Q3": {
+      "familyOfApps": {
+        "revenue": 33936,
+        "operatingIncome": 17490
+      },
+      "realityLabs": {
+        "revenue": 210,
+        "operatingIncome": -3742
+      }
+    },
+    "Q4": {
+      "familyOfApps": {
+        "revenue": 39041,
+        "operatingIncome": 21031
+      },
+      "realityLabs": {
+        "revenue": 1071,
+        "operatingIncome": -4647
+      }
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "familyOfApps": {
+        "revenue": 36015,
+        "operatingIncome": 17664
+      },
+      "realityLabs": {
+        "revenue": 440,
+        "operatingIncome": -3846
+      }
+    },
+    "Q2": {
+      "familyOfApps": {
+        "revenue": 38718,
+        "operatingIncome": 19335
+      },
+      "realityLabs": {
+        "revenue": 353,
+        "operatingIncome": -4488
+      }
+    },
+    "Q3": {
+      "familyOfApps": {
+        "revenue": 40319,
+        "operatingIncome": 21778
+      },
+      "realityLabs": {
+        "revenue": 270,
+        "operatingIncome": -4428
+      }
+    },
+    "Q4": {
+      "familyOfApps": {
+        "revenue": 47303,
+        "operatingIncome": 28332
+      },
+      "realityLabs": {
+        "revenue": 1083,
+        "operatingIncome": -4967
+      }
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "familyOfApps": {
+        "revenue": 41902,
+        "operatingIncome": 21765
+      },
+      "realityLabs": {
+        "revenue": 412,
+        "operatingIncome": -4210
+      }
+    },
+    "Q2": {
+      "familyOfApps": {
+        "revenue": 47146,
+        "operatingIncome": 24971
+      },
+      "realityLabs": {
+        "revenue": 370,
+        "operatingIncome": -4530
+      }
+    },
+    "Q3": {
+      "familyOfApps": {
+        "revenue": 50772,
+        "operatingIncome": 24967
+      },
+      "realityLabs": {
+        "revenue": 470,
+        "operatingIncome": -4432
+      }
+    },
+    "Q4": {
+      "familyOfApps": {
+        "revenue": 58939,
+        "operatingIncome": 30766
+      },
+      "realityLabs": {
+        "revenue": 955,
+        "operatingIncome": -6021
+      }
+    }
+  }
+}

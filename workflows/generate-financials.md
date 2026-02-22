@@ -4,7 +4,7 @@
 
 - **press-release.html** を損益計算書データのソースとする
 - **Yahoo Finance API** から四半期末株価を取得する
-- 「AI企業の業績と予想.xlsx」と同じレイアウトでxlsxを生成する
+- template.xlsx と同じレイアウトでxlsxを生成する
 
 ## 手順
 
@@ -43,5 +43,5 @@ node companies/<企業名>/scripts/generate-xlsx.js
 
 ### 4. 確認
 
-生成されたxlsxを開き、既存の「AI企業の業績と予想.xlsx」とデータを比較する。
+生成されたxlsxを開き、validate-xlsx.js でデータを検証する。
 差異があれば原因を調査し、スクリプトを修正して再実行する。

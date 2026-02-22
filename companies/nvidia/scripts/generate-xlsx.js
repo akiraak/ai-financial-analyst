@@ -2,7 +2,7 @@
 // Financials.xlsx を生成するスクリプト
 //
 // テンプレートの書式（色・罫線・数値フォーマット）はそのまま保持し、
-// 値と数式のみを設定する。数式パターンは既存「AI企業の業績と予想.xlsx」に準拠。
+// 値と数式のみを設定する。数式パターンはtemplate.xlsxに準拠。
 
 const fs = require('fs');
 const path = require('path');

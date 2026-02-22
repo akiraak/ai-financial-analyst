@@ -5,6 +5,9 @@ companies/*/filings/FY*/Q*/*.pdf
 companies/*/filings/FY*/Q*/*.html
 companies/*/filings/FY*/Q*/*.htm
 
+# 作業用ファイル
+work/
+
 # スクレイピング中間ファイル
 companies/*/filings/ir-page.html
 companies/*/filings/download-results.json

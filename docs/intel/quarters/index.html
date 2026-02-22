@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intel Corporation 四半期分析一覧</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <div class="site-name"><a href="../../">AI Financial Analyst</a></div>
+      <h1>Intel Corporation <span class="ticker">INTC</span></h1>
+      <div class="meta">四半期分析一覧</div>
+    </div>
+  </div>
+
+  <nav class="breadcrumb">
+    <div class="container">
+      <a href="../../">HOME</a>
+      <span class="separator">/</span>
+      <a href="../">Intel Corporation</a>
+      <span class="separator">/</span>
+      <span class="current">四半期一覧</span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="quarterList"></div>
+  </div>
+
+  <div class="footer">
+    <p><a href="../">ダッシュボード</a> | <a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a></p>
+  </div>
+
+  <script>
+    fetch('../data.json')
+      .then(r => r.json())
+      .then(data => {
+        const container = document.getElementById('quarterList');
+        // FY単位でグループ化（新しい順）
+        const fyGroups = {};
+        data.quarters.forEach(q => {
+          if (!fyGroups[q.fy]) fyGroups[q.fy] = [];
+          fyGroups[q.fy].push(q);
+        });
+        const sortedFYs = Object.keys(fyGroups).sort((a, b) => b - a);
+
+        for (const fy of sortedFYs) {
+          const section = document.createElement('div');
+          section.className = 'section';
+          const sorted = fyGroups[fy].sort((a, b) => b.q - a.q);
+
+          let html = '<h2>FY' + fy + '</h2><div class="quarter-card-grid">';
+          for (const q of sorted) {
+            const dirName = q.fy + 'Q' + q.q;
+            if (q.isOutlook) {
+              html += '<div class="quarter-card outlook">' +
+                '<div class="quarter-card-label">Q' + q.q + '</div>' +
+                '<div class="quarter-card-sub">ガイダンス</div>' +
+                '<div class="quarter-card-revenue">' + (q.revenue ? '$' + (q.revenue / 1000).toFixed(1) + 'B' : '---') + '</div>' +
+                '<div class="quarter-card-meta">売上（予想）</div>' +
+                '</div>';
+            } else {
+              const margin = q.revenue ? (q.operatingIncome / q.revenue * 100).toFixed(1) : '---';
+              html += '<a href="' + dirName + '/" class="quarter-card">' +
+                '<div class="quarter-card-label">Q' + q.q + '</div>' +
+                '<div class="quarter-card-revenue">$' + (q.revenue / 1000).toFixed(1) + 'B</div>' +
+                '<div class="quarter-card-meta">売上高</div>' +
+                '<div class="quarter-card-detail">営業利益率 ' + margin + '%</div>' +
+                '</a>';
+            }
+          }
+          html += '</div>';
+          section.innerHTML = html;
+          container.appendChild(section);
+        }
+      });
+  </script>
+</body>
+</html>

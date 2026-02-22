@@ -1,0 +1,153 @@
+{
+  "FY2020": {
+    "Q1": {
+      "marketableEquity": 330,
+      "nonMarketableEquity": 3522,
+      "equityMethod": 28,
+      "total": 3880
+    },
+    "Q2": {
+      "marketableEquity": 464,
+      "nonMarketableEquity": 3419,
+      "equityMethod": 18,
+      "total": 3901
+    },
+    "Q3": {
+      "marketableEquity": 481,
+      "nonMarketableEquity": 3189,
+      "equityMethod": 9,
+      "total": 3679
+    },
+    "Q4": {
+      "marketableEquity": 1830,
+      "nonMarketableEquity": 3304,
+      "equityMethod": 18,
+      "total": 5152
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "marketableEquity": 1523,
+      "nonMarketableEquity": 3864,
+      "equityMethod": 17,
+      "total": 5404
+    },
+    "Q2": {
+      "marketableEquity": 1615,
+      "nonMarketableEquity": 4023,
+      "equityMethod": 17,
+      "total": 5655
+    },
+    "Q3": {
+      "marketableEquity": 2064,
+      "nonMarketableEquity": 3970,
+      "equityMethod": 16,
+      "total": 6050
+    },
+    "Q4": {
+      "marketableEquity": 2171,
+      "nonMarketableEquity": 4111,
+      "equityMethod": 16,
+      "total": 6298
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "marketableEquity": 1764,
+      "nonMarketableEquity": 4258,
+      "equityMethod": 14,
+      "total": 6036
+    },
+    "Q2": {
+      "marketableEquity": 1456,
+      "nonMarketableEquity": 4460,
+      "equityMethod": 13,
+      "total": 5929
+    },
+    "Q3": {
+      "marketableEquity": 1185,
+      "nonMarketableEquity": 4626,
+      "equityMethod": 11,
+      "total": 5822
+    },
+    "Q4": {
+      "marketableEquity": 1341,
+      "nonMarketableEquity": 4561,
+      "equityMethod": 10,
+      "total": 5912
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "marketableEquity": 1421,
+      "nonMarketableEquity": 4598,
+      "equityMethod": 10,
+      "total": 6029
+    },
+    "Q2": {
+      "marketableEquity": 1295,
+      "nonMarketableEquity": 4589,
+      "equityMethod": 9,
+      "total": 5893
+    },
+    "Q3": {
+      "marketableEquity": 1117,
+      "nonMarketableEquity": 4578,
+      "equityMethod": 5,
+      "total": 5700
+    },
+    "Q4": {
+      "marketableEquity": 1194,
+      "nonMarketableEquity": 4630,
+      "equityMethod": 5,
+      "total": 5829
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "marketableEquity": 1471,
+      "nonMarketableEquity": 4664,
+      "equityMethod": 4,
+      "total": 6139
+    },
+    "Q2": {
+      "marketableEquity": 1246,
+      "nonMarketableEquity": 4574,
+      "equityMethod": 4,
+      "total": 5824
+    },
+    "Q3": {
+      "marketableEquity": 980,
+      "nonMarketableEquity": 4513,
+      "equityMethod": 3,
+      "total": 5496
+    },
+    "Q4": {
+      "marketableEquity": 848,
+      "nonMarketableEquity": 4535,
+      "total": 5383
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "marketableEquity": 541,
+      "nonMarketableEquity": 4486,
+      "total": 5027
+    },
+    "Q2": {
+      "marketableEquity": 467,
+      "nonMarketableEquity": 4916,
+      "total": 5383
+    },
+    "Q3": {
+      "marketableEquity": 572,
+      "nonMarketableEquity": 8095,
+      "total": 8667
+    },
+    "Q4": {
+      "marketableEquity": 484,
+      "nonMarketableEquity": 8028,
+      "total": 8512
+    }
+  }
+}

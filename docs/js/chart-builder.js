@@ -110,6 +110,21 @@ const ChartBuilder = {
       realityLabs: 'Reality Labs',
       government: 'Government',
       commercial: 'Commercial',
+      // Intel セグメント
+      ccg: 'CCG',
+      dcg: 'DCG',
+      dcai: 'DCAI',
+      intelFoundry: 'Intel Foundry',
+      nex: 'NEX',
+      mobileye: 'Mobileye',
+      ifs: 'IFS',
+      axg: 'AXG',
+      altera: 'Altera',
+      iotg: 'IOTG',
+      nsg: 'NSG',
+      psg: 'PSG',
+      allOther: 'All Other',
+      other: 'Other',
     };
     return labels[key] || key;
   },
@@ -714,6 +729,21 @@ const ChartBuilder = {
       realityLabs: 'Reality Labs',
       government: 'Government',
       commercial: 'Commercial',
+      // Intel セグメント
+      ccg: 'CCG',
+      dcg: 'DCG',
+      dcai: 'DCAI',
+      foundry: 'Intel Foundry',
+      nex: 'NEX',
+      mobileye: 'Mobileye',
+      ifs: 'IFS',
+      axg: 'AXG',
+      altera: 'Altera',
+      iotg: 'IOTG',
+      nsg: 'NSG',
+      psg: 'PSG',
+      allOther: 'All Other',
+      otherSub: 'Other',
     };
     return labels[key] || key;
   },

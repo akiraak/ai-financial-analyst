@@ -1,0 +1,494 @@
+{
+  "FY2020": [
+    {
+      "quarter": "Fourth Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000009/q420_earningsrelease.htm",
+          "description": "Press Release of Fourth Quarter 2020, SEC EDGAR filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000010/intc-20201226.htm",
+          "description": "10-K of Fourth Quarter 2020, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086320000042/q320earningsrelease.htm",
+          "description": "Press Release of Third Quarter 2020, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086320000043/intc-20200926.htm",
+          "description": "10-Q of Third Quarter 2020, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086320000025/q220earningsrelease.htm",
+          "description": "Press Release of Second Quarter 2020, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086320000026/intc-20200627.htm",
+          "description": "10-Q of Second Quarter 2020, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2020",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086320000016/q1-2020earningsrelease.htm",
+          "description": "Press Release of First Quarter 2020, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086320000017/a0328202010qdocument-u.htm",
+          "description": "10-Q of First Quarter 2020, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2021": [
+    {
+      "quarter": "Fourth Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000006/q421_earningsrelease.htm",
+          "description": "Press Release of Fourth Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000007/intc-20211225.htm",
+          "description": "10-K of Fourth Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000037/q321_earningsrelease.htm",
+          "description": "Press Release of Third Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000038/intc-20210925.htm",
+          "description": "10-Q of Third Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000029/q221_earningsrelease.htm",
+          "description": "Press Release of Second Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000030/intc-20210626.htm",
+          "description": "10-Q of Second Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000017/q121_earningsrelease.htm",
+          "description": "Press Release of First Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000018/intc-20210327.htm",
+          "description": "10-Q of First Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2022": [
+    {
+      "quarter": "Fourth Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000005/q422_earningsrelease.htm",
+          "description": "Press Release of Fourth Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000006/intc-20221231.htm",
+          "description": "10-K of Fourth Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000037/q322_earningsrelease.htm",
+          "description": "Press Release of Third Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000038/intc-20221001.htm",
+          "description": "10-Q of Third Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000029/q222_earningsrelease.htm",
+          "description": "Press Release of Second Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000030/intc-20220702.htm",
+          "description": "10-Q of Second Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000019/q122_earningsrelease.htm",
+          "description": "Press Release of First Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000020/intc-20220402.htm",
+          "description": "10-Q of First Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2023": [
+    {
+      "quarter": "Fourth Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000008/q423_earningsrelease.htm",
+          "description": "Press Release of Fourth Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000010/intc-20231230.htm",
+          "description": "10-K of Fourth Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000100/q323_earningsrelease.htm",
+          "description": "Press Release of Third Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000103/intc-20230930.htm",
+          "description": "10-Q of Third Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000068/q223_earningsrelease.htm",
+          "description": "Press Release of Second Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000069/intc-20230701.htm",
+          "description": "10-Q of Second Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000027/q123_earningsrelease.htm",
+          "description": "Press Release of First Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000028/intc-20230401.htm",
+          "description": "10-Q of First Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2024": [
+    {
+      "quarter": "Fourth Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000004/q424_earningsrelease.htm",
+          "description": "Press Release of Fourth Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000009/intc-20241228.htm",
+          "description": "10-K of Fourth Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000147/q324_earningsrelease.htm",
+          "description": "Press Release of Third Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000149/intc-20240928.htm",
+          "description": "10-Q of Third Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000122/q224_earningsrelease.htm",
+          "description": "Press Release of Second Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000124/intc-20240629.htm",
+          "description": "10-Q of Second Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000074/q124_earningsrelease.htm",
+          "description": "Press Release of First Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000076/intc-20240330.htm",
+          "description": "10-Q of First Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2025": [
+    {
+      "quarter": "Fourth Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000009/q425earningsrelease.htm",
+          "description": "Press Release of Fourth Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm",
+          "description": "10-K of Fourth Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000169/q325earningsrelease.htm",
+          "description": "Press Release of Third Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000179/intc-20250927.htm",
+          "description": "10-Q of Third Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000107/q225_earningsrelease.htm",
+          "description": "Press Release of Second Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000109/intc-20250628.htm",
+          "description": "10-Q of Second Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000070/q125_earningsrelease.htm",
+          "description": "Press Release of First Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000074/intc-20250329.htm",
+          "description": "10-Q of First Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://www.intc.com/financial-info/quarterly-results",
+          "description": "Intel Corporation Investor Relations page"
+        }
+      ]
+    }
+  ]
+}

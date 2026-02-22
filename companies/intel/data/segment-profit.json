@@ -1,0 +1,674 @@
+{
+  "FY2020": {
+    "Q1": {
+      "dcg": {
+        "revenue": 6993,
+        "operatingIncome": 3492
+      },
+      "iotg": {
+        "revenue": 883,
+        "operatingIncome": 243
+      },
+      "mobileye": {
+        "revenue": 254,
+        "operatingIncome": 88
+      },
+      "nsg": {
+        "revenue": 1338,
+        "operatingIncome": -66
+      },
+      "psg": {
+        "revenue": 519,
+        "operatingIncome": 97
+      },
+      "ccg": {
+        "revenue": 9775,
+        "operatingIncome": 4225
+      },
+      "allOther": {
+        "revenue": 66,
+        "operatingIncome": -1041
+      }
+    },
+    "Q2": {
+      "dcg": {
+        "revenue": 7117,
+        "operatingIncome": 3099
+      },
+      "iotg": {
+        "revenue": 670,
+        "operatingIncome": 70
+      },
+      "mobileye": {
+        "revenue": 146,
+        "operatingIncome": -4
+      },
+      "nsg": {
+        "revenue": 1659,
+        "operatingIncome": 322
+      },
+      "psg": {
+        "revenue": 501,
+        "operatingIncome": 80
+      },
+      "ccg": {
+        "revenue": 9496,
+        "operatingIncome": 2842
+      },
+      "allOther": {
+        "revenue": 139,
+        "operatingIncome": -712
+      }
+    },
+    "Q3": {
+      "dcg": {
+        "revenue": 5905,
+        "operatingIncome": 1903
+      },
+      "iotg": {
+        "revenue": 677,
+        "operatingIncome": 61
+      },
+      "mobileye": {
+        "revenue": 234,
+        "operatingIncome": 47
+      },
+      "nsg": {
+        "revenue": 1153,
+        "operatingIncome": 29
+      },
+      "psg": {
+        "revenue": 411,
+        "operatingIncome": 40
+      },
+      "ccg": {
+        "revenue": 9847,
+        "operatingIncome": 3554
+      },
+      "allOther": {
+        "revenue": 106,
+        "operatingIncome": -575
+      }
+    },
+    "Q4": {
+      "dcg": {
+        "revenue": 6088,
+        "operatingIncome": 2077
+      },
+      "iotg": {
+        "revenue": 777,
+        "operatingIncome": 123
+      },
+      "mobileye": {
+        "revenue": 333,
+        "operatingIncome": 110
+      },
+      "nsg": {
+        "revenue": 1208,
+        "operatingIncome": 76
+      },
+      "psg": {
+        "revenue": 422,
+        "operatingIncome": 43
+      },
+      "ccg": {
+        "revenue": 10939,
+        "operatingIncome": 4508
+      },
+      "allOther": {
+        "revenue": 211,
+        "operatingIncome": -1053
+      }
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "dcg": {
+        "revenue": 5564,
+        "operatingIncome": 1273
+      },
+      "iotg": {
+        "revenue": 914,
+        "operatingIncome": 212
+      },
+      "mobileye": {
+        "revenue": 377,
+        "operatingIncome": 147
+      },
+      "nsg": {
+        "revenue": 1107,
+        "operatingIncome": 171
+      },
+      "psg": {
+        "revenue": 486,
+        "operatingIncome": 88
+      },
+      "ccg": {
+        "revenue": 10605,
+        "operatingIncome": 4120
+      },
+      "allOther": {
+        "revenue": 620,
+        "operatingIncome": -2317
+      }
+    },
+    "Q2": {
+      "ccg": {
+        "revenue": 10109,
+        "operatingIncome": 3760
+      },
+      "dcg": {
+        "revenue": 6455,
+        "operatingIncome": 1941
+      },
+      "iotg": {
+        "revenue": 984,
+        "operatingIncome": 287
+      },
+      "mobileye": {
+        "revenue": 327,
+        "operatingIncome": 109
+      },
+      "nsg": {
+        "revenue": 1098,
+        "operatingIncome": 402
+      },
+      "psg": {
+        "revenue": 486,
+        "operatingIncome": 82
+      },
+      "allOther": {
+        "revenue": 172,
+        "operatingIncome": -1035
+      }
+    },
+    "Q3": {
+      "ccg": {
+        "revenue": 9664,
+        "operatingIncome": 3317
+      },
+      "dcg": {
+        "revenue": 6496,
+        "operatingIncome": 2057
+      },
+      "iotg": {
+        "revenue": 1042,
+        "operatingIncome": 276
+      },
+      "mobileye": {
+        "revenue": 326,
+        "operatingIncome": 105
+      },
+      "nsg": {
+        "revenue": 1105,
+        "operatingIncome": 442
+      },
+      "psg": {
+        "revenue": 478,
+        "operatingIncome": 76
+      },
+      "allOther": {
+        "revenue": 81,
+        "operatingIncome": -1046
+      }
+    },
+    "Q4": {
+      "ccg": {
+        "revenue": 10133,
+        "operatingIncome": 3475
+      },
+      "dcg": {
+        "revenue": 7306,
+        "operatingIncome": 1726
+      },
+      "iotg": {
+        "revenue": 1058,
+        "operatingIncome": 270
+      },
+      "mobileye": {
+        "revenue": 356,
+        "operatingIncome": 99
+      },
+      "nsg": {
+        "revenue": 996,
+        "operatingIncome": 354
+      },
+      "psg": {
+        "revenue": 484,
+        "operatingIncome": 51
+      },
+      "allOther": {
+        "revenue": 195,
+        "operatingIncome": -986
+      }
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "ccg": {
+        "revenue": 9294,
+        "operatingIncome": 2827
+      },
+      "dcai": {
+        "revenue": 6034,
+        "operatingIncome": 1686
+      },
+      "nex": {
+        "revenue": 2213,
+        "operatingIncome": 366
+      },
+      "axg": {
+        "revenue": 219,
+        "operatingIncome": -390
+      },
+      "mobileye": {
+        "revenue": 394,
+        "operatingIncome": 148
+      },
+      "ifs": {
+        "revenue": 283,
+        "operatingIncome": -31
+      },
+      "allOther": {
+        "revenue": 67,
+        "operatingIncome": -265
+      }
+    },
+    "Q2": {
+      "ccg": {
+        "revenue": 7665,
+        "operatingIncome": 1085
+      },
+      "dcai": {
+        "revenue": 4649,
+        "operatingIncome": 214
+      },
+      "nex": {
+        "revenue": 2333,
+        "operatingIncome": 241
+      },
+      "axg": {
+        "revenue": 186,
+        "operatingIncome": -507
+      },
+      "mobileye": {
+        "revenue": 460,
+        "operatingIncome": 190
+      },
+      "ifs": {
+        "revenue": 122,
+        "operatingIncome": -155
+      },
+      "allOther": {
+        "revenue": 32,
+        "operatingIncome": -1768
+      }
+    },
+    "Q3": {
+      "ccg": {
+        "revenue": 8124,
+        "operatingIncome": 1655
+      },
+      "dcai": {
+        "revenue": 4209,
+        "operatingIncome": 17
+      },
+      "nex": {
+        "revenue": 2266,
+        "operatingIncome": 75
+      },
+      "axg": {
+        "revenue": 185,
+        "operatingIncome": -378
+      },
+      "mobileye": {
+        "revenue": 450,
+        "operatingIncome": 142
+      },
+      "ifs": {
+        "revenue": 171,
+        "operatingIncome": -103
+      },
+      "allOther": {
+        "revenue": 67,
+        "operatingIncome": -1583
+      }
+    },
+    "Q4": {
+      "ccg": {
+        "revenue": 6625,
+        "operatingIncome": 699
+      },
+      "dcai": {
+        "revenue": 4304,
+        "operatingIncome": 371
+      },
+      "nex": {
+        "revenue": 2061,
+        "operatingIncome": 58
+      },
+      "mobileye": {
+        "revenue": 565,
+        "operatingIncome": 210
+      },
+      "axg": {
+        "revenue": 247,
+        "operatingIncome": -441
+      },
+      "ifs": {
+        "revenue": 319,
+        "operatingIncome": -31
+      },
+      "allOther": {
+        "revenue": 30,
+        "operatingIncome": -1998
+      }
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "ccg": {
+        "revenue": 5767,
+        "operatingIncome": 520
+      },
+      "dcai": {
+        "revenue": 3718,
+        "operatingIncome": -518
+      },
+      "nex": {
+        "revenue": 1489,
+        "operatingIncome": -300
+      },
+      "mobileye": {
+        "revenue": 458,
+        "operatingIncome": 123
+      },
+      "ifs": {
+        "revenue": 118,
+        "operatingIncome": -140
+      },
+      "allOther": {
+        "revenue": 165,
+        "operatingIncome": -1153
+      }
+    },
+    "Q2": {
+      "ccg": {
+        "revenue": 6780,
+        "operatingIncome": 1039
+      },
+      "dcai": {
+        "revenue": 4004,
+        "operatingIncome": -161
+      },
+      "nex": {
+        "revenue": 1364,
+        "operatingIncome": -187
+      },
+      "mobileye": {
+        "revenue": 454,
+        "operatingIncome": 129
+      },
+      "ifs": {
+        "revenue": 232,
+        "operatingIncome": -143
+      },
+      "allOther": {
+        "revenue": 115,
+        "operatingIncome": -1693
+      }
+    },
+    "Q3": {
+      "ccg": {
+        "revenue": 7867,
+        "operatingIncome": 2073
+      },
+      "dcai": {
+        "revenue": 3814,
+        "operatingIncome": 71
+      },
+      "nex": {
+        "revenue": 1450,
+        "operatingIncome": 17
+      },
+      "mobileye": {
+        "revenue": 530,
+        "operatingIncome": 170
+      },
+      "ifs": {
+        "revenue": 311,
+        "operatingIncome": -86
+      },
+      "allOther": {
+        "revenue": 186,
+        "operatingIncome": -2253
+      }
+    },
+    "Q4": {
+      "ccg": {
+        "revenue": 8844,
+        "operatingIncome": 2888
+      },
+      "dcai": {
+        "revenue": 3985,
+        "operatingIncome": 78
+      },
+      "nex": {
+        "revenue": 1471,
+        "operatingIncome": -12
+      },
+      "mobileye": {
+        "revenue": 637,
+        "operatingIncome": 242
+      },
+      "ifs": {
+        "revenue": 291,
+        "operatingIncome": -113
+      },
+      "allOther": {
+        "revenue": 178,
+        "operatingIncome": -498
+      }
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "ccg": {
+        "revenue": 7533,
+        "operatingIncome": 2645
+      },
+      "dcai": {
+        "revenue": 3036,
+        "operatingIncome": 482
+      },
+      "nex": {
+        "revenue": 1364,
+        "operatingIncome": 184
+      },
+      "foundry": {
+        "revenue": 4369,
+        "operatingIncome": -2474
+      },
+      "altera": {
+        "revenue": 342,
+        "operatingIncome": -39
+      },
+      "mobileye": {
+        "revenue": 239,
+        "operatingIncome": -68
+      },
+      "otherSub": {
+        "revenue": 194,
+        "operatingIncome": -105
+      },
+      "allOther": {
+        "revenue": 775,
+        "operatingIncome": -212
+      }
+    },
+    "Q2": {
+      "ccg": {
+        "revenue": 7410,
+        "operatingIncome": 2497
+      },
+      "dcai": {
+        "revenue": 3045,
+        "operatingIncome": 276
+      },
+      "nex": {
+        "revenue": 1344,
+        "operatingIncome": 139
+      },
+      "foundry": {
+        "revenue": 4320,
+        "operatingIncome": -2830
+      },
+      "altera": {
+        "revenue": 361,
+        "operatingIncome": -25
+      },
+      "mobileye": {
+        "revenue": 440,
+        "operatingIncome": 72
+      },
+      "otherSub": {
+        "revenue": 167,
+        "operatingIncome": -82
+      },
+      "allOther": {
+        "revenue": 968,
+        "operatingIncome": -35
+      }
+    },
+    "Q3": {
+      "ccg": {
+        "revenue": 7330,
+        "operatingIncome": 2722
+      },
+      "dcai": {
+        "revenue": 3349,
+        "operatingIncome": 347
+      },
+      "nex": {
+        "revenue": 1511,
+        "operatingIncome": 268
+      },
+      "foundry": {
+        "revenue": 4352,
+        "operatingIncome": -5844
+      },
+      "altera": {
+        "revenue": 412,
+        "operatingIncome": 9
+      },
+      "mobileye": {
+        "revenue": 485,
+        "operatingIncome": 78
+      },
+      "otherSub": {
+        "revenue": 142,
+        "operatingIncome": -42
+      },
+      "allOther": {
+        "revenue": 1039,
+        "operatingIncome": 45
+      }
+    },
+    "Q4": {
+      "ccg": {
+        "revenue": 8017,
+        "operatingIncome": 3056
+      },
+      "dcai": {
+        "revenue": 3387,
+        "operatingIncome": 233
+      },
+      "nex": {
+        "revenue": 1623,
+        "operatingIncome": 340
+      },
+      "foundry": {
+        "revenue": 4502,
+        "operatingIncome": -2260
+      },
+      "allOther": {
+        "revenue": 1042,
+        "operatingIncome": 118
+      }
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "ccg": {
+        "revenue": 7629,
+        "operatingIncome": 2361
+      },
+      "dcai": {
+        "revenue": 4126,
+        "operatingIncome": 575
+      },
+      "foundry": {
+        "revenue": 4667,
+        "operatingIncome": -2320
+      },
+      "allOther": {
+        "revenue": 943,
+        "operatingIncome": 103
+      }
+    },
+    "Q2": {
+      "ccg": {
+        "revenue": 7871,
+        "operatingIncome": 2053
+      },
+      "dcai": {
+        "revenue": 3939,
+        "operatingIncome": 633
+      },
+      "foundry": {
+        "revenue": 4417,
+        "operatingIncome": -3168
+      },
+      "allOther": {
+        "revenue": 1053,
+        "operatingIncome": 69
+      }
+    },
+    "Q3": {
+      "ccg": {
+        "revenue": 8535,
+        "operatingIncome": 2694
+      },
+      "dcai": {
+        "revenue": 4117,
+        "operatingIncome": 964
+      },
+      "foundry": {
+        "revenue": 4235,
+        "operatingIncome": -2321
+      },
+      "allOther": {
+        "revenue": 993,
+        "operatingIncome": 100
+      }
+    },
+    "Q4": {
+      "ccg": {
+        "revenue": 8193,
+        "operatingIncome": 2209
+      },
+      "dcai": {
+        "revenue": 4737,
+        "operatingIncome": 1250
+      },
+      "foundry": {
+        "revenue": 4507,
+        "operatingIncome": -2509
+      },
+      "allOther": {
+        "revenue": 574,
+        "operatingIncome": -8
+      }
+    }
+  }
+}

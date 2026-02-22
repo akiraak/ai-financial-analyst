@@ -1,0 +1,218 @@
+[
+  {
+    "fy": "FY2020",
+    "q": "Q1",
+    "adsh": "0000050863-20-000016",
+    "file": "q1-2020earningsrelease.htm",
+    "date": "2020-04-23",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086320000016/q1-2020earningsrelease.htm",
+    "localPath": "FY2020/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q2",
+    "adsh": "0000050863-20-000025",
+    "file": "q220earningsrelease.htm",
+    "date": "2020-07-23",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086320000025/q220earningsrelease.htm",
+    "localPath": "FY2020/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q3",
+    "adsh": "0000050863-20-000042",
+    "file": "q320earningsrelease.htm",
+    "date": "2020-10-22",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086320000042/q320earningsrelease.htm",
+    "localPath": "FY2020/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q4",
+    "adsh": "0000050863-21-000009",
+    "file": "q420_earningsrelease.htm",
+    "date": "2021-01-21",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000009/q420_earningsrelease.htm",
+    "localPath": "FY2020/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q1",
+    "adsh": "0000050863-21-000017",
+    "file": "q121_earningsrelease.htm",
+    "date": "2021-04-22",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000017/q121_earningsrelease.htm",
+    "localPath": "FY2021/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q2",
+    "adsh": "0000050863-21-000029",
+    "file": "q221_earningsrelease.htm",
+    "date": "2021-07-22",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000029/q221_earningsrelease.htm",
+    "localPath": "FY2021/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q3",
+    "adsh": "0000050863-21-000037",
+    "file": "q321_earningsrelease.htm",
+    "date": "2021-10-21",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000037/q321_earningsrelease.htm",
+    "localPath": "FY2021/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q4",
+    "adsh": "0000050863-22-000006",
+    "file": "q421_earningsrelease.htm",
+    "date": "2022-01-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000006/q421_earningsrelease.htm",
+    "localPath": "FY2021/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q1",
+    "adsh": "0000050863-22-000019",
+    "file": "q122_earningsrelease.htm",
+    "date": "2022-04-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000019/q122_earningsrelease.htm",
+    "localPath": "FY2022/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q2",
+    "adsh": "0000050863-22-000029",
+    "file": "q222_earningsrelease.htm",
+    "date": "2022-07-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000029/q222_earningsrelease.htm",
+    "localPath": "FY2022/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q3",
+    "adsh": "0000050863-22-000037",
+    "file": "q322_earningsrelease.htm",
+    "date": "2022-10-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000037/q322_earningsrelease.htm",
+    "localPath": "FY2022/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q4",
+    "adsh": "0000050863-23-000005",
+    "file": "q422_earningsrelease.htm",
+    "date": "2023-01-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000005/q422_earningsrelease.htm",
+    "localPath": "FY2022/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q1",
+    "adsh": "0000050863-23-000027",
+    "file": "q123_earningsrelease.htm",
+    "date": "2023-04-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000027/q123_earningsrelease.htm",
+    "localPath": "FY2023/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q2",
+    "adsh": "0000050863-23-000068",
+    "file": "q223_earningsrelease.htm",
+    "date": "2023-07-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000068/q223_earningsrelease.htm",
+    "localPath": "FY2023/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q3",
+    "adsh": "0000050863-23-000100",
+    "file": "q323_earningsrelease.htm",
+    "date": "2023-10-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086323000100/q323_earningsrelease.htm",
+    "localPath": "FY2023/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q4",
+    "adsh": "0000050863-24-000008",
+    "file": "q423_earningsrelease.htm",
+    "date": "2024-01-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000008/q423_earningsrelease.htm",
+    "localPath": "FY2023/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q1",
+    "adsh": "0000050863-24-000074",
+    "file": "q124_earningsrelease.htm",
+    "date": "2024-04-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000074/q124_earningsrelease.htm",
+    "localPath": "FY2024/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q2",
+    "adsh": "0000050863-24-000122",
+    "file": "q224_earningsrelease.htm",
+    "date": "2024-08-01",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000122/q224_earningsrelease.htm",
+    "localPath": "FY2024/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q3",
+    "adsh": "0000050863-24-000147",
+    "file": "q324_earningsrelease.htm",
+    "date": "2024-10-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086324000147/q324_earningsrelease.htm",
+    "localPath": "FY2024/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q4",
+    "adsh": "0000050863-25-000004",
+    "file": "q424_earningsrelease.htm",
+    "date": "2025-01-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000004/q424_earningsrelease.htm",
+    "localPath": "FY2024/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q1",
+    "adsh": "0000050863-25-000070",
+    "file": "q125_earningsrelease.htm",
+    "date": "2025-04-24",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000070/q125_earningsrelease.htm",
+    "localPath": "FY2025/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q2",
+    "adsh": "0000050863-25-000107",
+    "file": "q225_earningsrelease.htm",
+    "date": "2025-07-24",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000107/q225_earningsrelease.htm",
+    "localPath": "FY2025/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q3",
+    "adsh": "0000050863-25-000169",
+    "file": "q325earningsrelease.htm",
+    "date": "2025-10-23",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086325000169/q325earningsrelease.htm",
+    "localPath": "FY2025/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q4",
+    "adsh": "0000050863-26-000009",
+    "file": "q425earningsrelease.htm",
+    "date": "2026-01-22",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000009/q425earningsrelease.htm",
+    "localPath": "FY2025/Q4/press-release.html"
+  }
+]

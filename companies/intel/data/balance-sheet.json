@@ -1,0 +1,254 @@
+{
+  "FY2020": {
+    "Q1": {
+      "cashAndEquivalents": 11380,
+      "shortTermInvestments": 1296,
+      "totalCurrentAssets": 41501,
+      "propertyPlantEquipment": 56770,
+      "totalAssets": 147710,
+      "totalCurrentLiabilities": 23895,
+      "longTermDebt": 36455,
+      "stockholdersEquity": 76354
+    },
+    "Q2": {
+      "cashAndEquivalents": 8736,
+      "shortTermInvestments": 4791,
+      "totalCurrentAssets": 44390,
+      "propertyPlantEquipment": 58036,
+      "totalAssets": 152539,
+      "totalCurrentLiabilities": 22481,
+      "longTermDebt": 36093,
+      "stockholdersEquity": 82010
+    },
+    "Q3": {
+      "cashAndEquivalents": 3356,
+      "shortTermInvestments": 2987,
+      "totalCurrentAssets": 36785,
+      "propertyPlantEquipment": 59205,
+      "totalAssets": 145261,
+      "totalCurrentLiabilities": 22112,
+      "longTermDebt": 36059,
+      "stockholdersEquity": 74554
+    },
+    "Q4": {
+      "cashAndEquivalents": 5865,
+      "shortTermInvestments": 2292,
+      "totalCurrentAssets": 47249,
+      "propertyPlantEquipment": 56584,
+      "totalAssets": 153091,
+      "totalCurrentLiabilities": 24754,
+      "longTermDebt": 33897,
+      "stockholdersEquity": 81038
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "cashAndEquivalents": 5192,
+      "shortTermInvestments": 2417,
+      "totalCurrentAssets": 45773,
+      "propertyPlantEquipment": 57330,
+      "totalAssets": 150622,
+      "totalCurrentLiabilities": 24151,
+      "longTermDebt": 33237,
+      "stockholdersEquity": 79807
+    },
+    "Q2": {
+      "cashAndEquivalents": 4746,
+      "shortTermInvestments": 3014,
+      "totalCurrentAssets": 49372,
+      "propertyPlantEquipment": 58166,
+      "totalAssets": 154597,
+      "totalCurrentLiabilities": 24836,
+      "longTermDebt": 31714,
+      "stockholdersEquity": 85207
+    },
+    "Q3": {
+      "cashAndEquivalents": 7870,
+      "shortTermInvestments": 4004,
+      "totalCurrentAssets": 61304,
+      "propertyPlantEquipment": 59733,
+      "totalAssets": 167962,
+      "totalCurrentLiabilities": 29572,
+      "longTermDebt": 35610,
+      "stockholdersEquity": 90087
+    },
+    "Q4": {
+      "cashAndEquivalents": 4827,
+      "shortTermInvestments": 2103,
+      "totalCurrentAssets": 57718,
+      "propertyPlantEquipment": 63245,
+      "totalAssets": 168406,
+      "totalCurrentLiabilities": 27462,
+      "longTermDebt": 33510,
+      "stockholdersEquity": 95391
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "cashAndEquivalents": 6215,
+      "shortTermInvestments": 32481,
+      "totalCurrentAssets": 62568,
+      "propertyPlantEquipment": 66718,
+      "totalAssets": 176356,
+      "totalCurrentLiabilities": 29322,
+      "longTermDebt": 32788,
+      "stockholdersEquity": 103136
+    },
+    "Q2": {
+      "cashAndEquivalents": 4390,
+      "shortTermInvestments": 22654,
+      "totalCurrentAssets": 50588,
+      "propertyPlantEquipment": 71660,
+      "totalAssets": 170418,
+      "totalCurrentLiabilities": 27218,
+      "longTermDebt": 32548,
+      "stockholdersEquity": 101218
+    },
+    "Q3": {
+      "cashAndEquivalents": 4529,
+      "shortTermInvestments": 18030,
+      "totalCurrentAssets": 49263,
+      "propertyPlantEquipment": 75763,
+      "totalAssets": 174841,
+      "totalCurrentLiabilities": 27813,
+      "longTermDebt": 37240,
+      "stockholdersEquity": 99885
+    },
+    "Q4": {
+      "cashAndEquivalents": 11144,
+      "shortTermInvestments": 17194,
+      "totalCurrentAssets": 50407,
+      "propertyPlantEquipment": 80860,
+      "totalAssets": 182103,
+      "totalCurrentLiabilities": 32155,
+      "longTermDebt": 37684,
+      "stockholdersEquity": 101423
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "cashAndEquivalents": 8232,
+      "shortTermInvestments": 19302,
+      "totalCurrentAssets": 48314,
+      "propertyPlantEquipment": 85734,
+      "totalAssets": 185303,
+      "totalCurrentLiabilities": 27393,
+      "longTermDebt": 48836,
+      "stockholdersEquity": 98059
+    },
+    "Q2": {
+      "cashAndEquivalents": 8349,
+      "shortTermInvestments": 15908,
+      "totalCurrentAssets": 43356,
+      "propertyPlantEquipment": 90945,
+      "totalAssets": 185629,
+      "totalCurrentLiabilities": 27180,
+      "longTermDebt": 46335,
+      "stockholdersEquity": 101017
+    },
+    "Q3": {
+      "cashAndEquivalents": 7621,
+      "shortTermInvestments": 17409,
+      "totalCurrentAssets": 43811,
+      "propertyPlantEquipment": 93352,
+      "totalAssets": 188837,
+      "totalCurrentLiabilities": 28614,
+      "longTermDebt": 46591,
+      "stockholdersEquity": 101813
+    },
+    "Q4": {
+      "cashAndEquivalents": 7079,
+      "shortTermInvestments": 17955,
+      "totalCurrentAssets": 43269,
+      "propertyPlantEquipment": 96647,
+      "totalAssets": 191572,
+      "totalCurrentLiabilities": 28053,
+      "longTermDebt": 46978,
+      "stockholdersEquity": 105590
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "cashAndEquivalents": 6923,
+      "shortTermInvestments": 14388,
+      "totalCurrentAssets": 42608,
+      "propertyPlantEquipment": 99924,
+      "totalAssets": 192733,
+      "totalCurrentLiabilities": 27213,
+      "longTermDebt": 47869,
+      "stockholdersEquity": 105973
+    },
+    "Q2": {
+      "cashAndEquivalents": 11287,
+      "shortTermInvestments": 17986,
+      "totalCurrentAssets": 50829,
+      "propertyPlantEquipment": 103398,
+      "totalAssets": 206205,
+      "totalCurrentLiabilities": 32027,
+      "longTermDebt": 48334,
+      "stockholdersEquity": 115229
+    },
+    "Q3": {
+      "cashAndEquivalents": 8785,
+      "shortTermInvestments": 15301,
+      "totalCurrentAssets": 46137,
+      "propertyPlantEquipment": 104248,
+      "totalAssets": 193542,
+      "totalCurrentLiabilities": 35159,
+      "longTermDebt": 46471,
+      "stockholdersEquity": 99532
+    },
+    "Q4": {
+      "cashAndEquivalents": 8249,
+      "shortTermInvestments": 13813,
+      "totalCurrentAssets": 47324,
+      "propertyPlantEquipment": 107919,
+      "totalAssets": 196485,
+      "totalCurrentLiabilities": 35666,
+      "longTermDebt": 46282,
+      "stockholdersEquity": 99270
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "cashAndEquivalents": 8947,
+      "shortTermInvestments": 12101,
+      "totalCurrentAssets": 42134,
+      "propertyPlantEquipment": 109763,
+      "totalAssets": 192242,
+      "totalCurrentLiabilities": 32174,
+      "longTermDebt": 44911,
+      "stockholdersEquity": 99756
+    },
+    "Q2": {
+      "cashAndEquivalents": 9643,
+      "shortTermInvestments": 11563,
+      "totalCurrentAssets": 43375,
+      "propertyPlantEquipment": 109510,
+      "totalAssets": 192520,
+      "totalCurrentLiabilities": 34966,
+      "longTermDebt": 44026,
+      "stockholdersEquity": 97883
+    },
+    "Q3": {
+      "cashAndEquivalents": 11141,
+      "shortTermInvestments": 19794,
+      "totalCurrentAssets": 51731,
+      "propertyPlantEquipment": 105047,
+      "totalAssets": 204514,
+      "totalCurrentLiabilities": 32297,
+      "longTermDebt": 44057,
+      "stockholdersEquity": 106376
+    },
+    "Q4": {
+      "cashAndEquivalents": 14265,
+      "shortTermInvestments": 23151,
+      "totalCurrentAssets": 63688,
+      "propertyPlantEquipment": 105414,
+      "totalAssets": 211429,
+      "totalCurrentLiabilities": 31575,
+      "longTermDebt": 44086,
+      "stockholdersEquity": 114281
+    }
+  }
+}

@@ -3,140 +3,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>カラーパターン比較</title>
+<title>テキスト緑カラー比較（--primary のみ変更）</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f6f7f5; padding: 20px; }
-h1 { text-align: center; margin-bottom: 24px; color: #333; font-size: 1.3rem; }
+h1 { text-align: center; margin-bottom: 8px; color: #333; font-size: 1.3rem; }
+.subtitle { text-align: center; margin-bottom: 24px; color: #888; font-size: 0.85rem; }
 .patterns { display: flex; flex-direction: column; gap: 32px; max-width: 900px; margin: 0 auto; }
 .pattern { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; }
-.pattern-label { padding: 12px 20px; background: #f0f0f0; font-weight: 700; font-size: 0.9rem; color: #555; }
+.pattern-label { padding: 12px 20px; background: #f0f0f0; font-weight: 700; font-size: 0.9rem; color: #555; display: flex; justify-content: space-between; align-items: center; }
+.pattern-label .contrast { font-size: 0.75rem; font-weight: 400; color: #999; }
 .pattern-header { color: #fff; padding: 24px 20px; }
 .pattern-header h2 { font-size: 1.4rem; }
 .pattern-header .ticker { opacity: 0.8; font-size: 0.9rem; }
 .pattern-body { padding: 20px; }
 .section-title { font-size: 1rem; font-weight: 700; padding-bottom: 8px; margin-bottom: 12px; }
 .swatches { display: flex; gap: 8px; margin-bottom: 16px; }
-.swatch { width: 80px; height: 50px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; color: #fff; font-weight: 600; }
+.swatch { width: 80px; height: 50px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; color: #fff; font-weight: 600; flex-direction: column; gap: 2px; }
+.swatch .hex { font-size: 0.6rem; opacity: 0.8; }
 .nav-demo { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; }
 .nav-pill { padding: 4px 14px; border-radius: 16px; font-size: 0.82rem; font-weight: 600; text-decoration: none; }
 .quarter-pill { padding: 5px 16px; border-radius: 16px; font-size: 0.82rem; font-weight: 600; }
 .desc-box { padding: 16px; border-radius: 6px; font-size: 0.85rem; line-height: 1.7; color: #444; }
 .desc-box .insight { margin-top: 8px; padding-top: 8px; padding-left: 16px; color: #555; }
 .filing-pill { display: inline-block; font-size: 0.75rem; padding: 3px 10px; border-radius: 12px; margin-right: 4px; }
+.breadcrumb-demo { font-size: 0.8rem; margin-bottom: 12px; padding: 6px 0; border-bottom: 1px solid #e2e8e4; }
+.breadcrumb-demo .sep { color: #ccc; margin: 0 6px; }
+.breadcrumb-demo .current { color: #666; font-weight: 600; }
 </style>
 </head>
 <body>
 
-<h1>カラーパターン比較</h1>
+<h1>テキスト緑カラー比較</h1>
+<p class="subtitle">--primary-dark: #4a8a30 / --accent: #c96b7e / --primary-bg: #f2f9eb は固定。<br>テキストに使われる --primary（リンク・ボタン・ピル）の緑を8段階で比較</p>
 <div class="patterns" id="patterns"></div>
 
 <script>
+const dark = '#4a8a30';
 const accent = '#c96b7e';
+const bg = '#f2f9eb';
+const descBg = '#f5f8f5';
+
 const patterns = [
-  {
-    name: 'A: 現在（暗めの落ち着いた緑）',
-    dark: '#3d6b4a',
-    mid: '#5a9e6f',
-    bg: '#eef5f0',
-  },
-  {
-    name: 'B: ティールグリーン（青寄り）',
-    dark: '#2a7d6e',
-    mid: '#45b8a0',
-    bg: '#eaf6f3',
-  },
-  {
-    name: 'C: エメラルド（鮮やか）',
-    dark: '#1a9660',
-    mid: '#34c48a',
-    bg: '#e8f9ef',
-  },
-  {
-    name: 'D: ミントグリーン（明るく爽やか）',
-    dark: '#30a070',
-    mid: '#5ed4a0',
-    bg: '#ecfaf2',
-  },
-  {
-    name: 'E: フォレスト（深い緑 × 鮮やかmid）',
-    dark: '#2d5a3a',
-    mid: '#4ec080',
-    bg: '#eef7f0',
-  },
-  {
-    name: 'F: ライムグリーン（黄寄り）',
-    dark: '#4a8a30',
-    mid: '#78c44e',
-    bg: '#f2f9eb',
-  },
-  {
-    name: 'G: セージ（グレイッシュ・落ち着き）',
-    dark: '#5a7a68',
-    mid: '#88b098',
-    bg: '#f0f4f1',
-  },
-  {
-    name: 'H: ビビッドグリーン（高彩度）',
-    dark: '#0d8050',
-    mid: '#22c06e',
-    bg: '#e6faee',
-  },
+  { name: '1: 現在', mid: '#78c44e', note: '現在の設定値。白背景では薄く読みづらい' },
+  { name: '2: やや濃く', mid: '#6ab540', note: '彩度を維持しつつ少し暗く' },
+  { name: '3: 中間', mid: '#5fa838', note: 'primaryとprimary-darkの中間あたり' },
+  { name: '4: 濃いめ', mid: '#559c30', note: 'テキスト視認性が改善。鮮やかさも残る' },
+  { name: '5: しっかり濃い', mid: '#4d9029', note: 'primary-darkに近づくが区別は可能' },
+  { name: '6: ディープ', mid: '#448523', note: 'primary-darkとほぼ同等の濃さ' },
+  { name: '7: 青寄りの濃い緑', mid: '#3d8a4a', note: '青みを加えたティールっぽい濃い緑' },
+  { name: '8: 暖かい濃い緑', mid: '#4e8530', note: '黄み寄りで暖かみのある濃い緑' },
 ];
 
 const container = document.getElementById('patterns');
 
 patterns.forEach(p => {
-  const borderColor = '#e2e8e4';
   const html = `
     <div class="pattern">
-      <div class="pattern-label">${p.name} — dark: ${p.dark} / mid: ${p.mid}</div>
-      <div class="pattern-header" style="background: ${p.dark}">
-        <h2>NVIDIA Corporation</h2>
-        <span class="ticker">NASDAQ: NVDA</span>
+      <div class="pattern-label">
+        <span>${p.name} — ${p.mid}</span>
+        <span class="contrast">${p.note}</span>
+      </div>
+      <div class="pattern-header" style="background: ${dark}">
+        <h2>Palantir Technologies <span class="ticker">PLTR</span></h2>
       </div>
       <div class="pattern-body">
         <!-- カラースウォッチ -->
         <div class="swatches">
-          <div class="swatch" style="background: ${p.dark}">dark</div>
-          <div class="swatch" style="background: ${p.mid}">mid</div>
-          <div class="swatch" style="background: ${p.bg}; color: #666; border: 1px solid #ddd;">bg</div>
-          <div class="swatch" style="background: ${accent}">accent</div>
+          <div class="swatch" style="background: ${dark}"><span>dark</span><span class="hex">${dark}</span></div>
+          <div class="swatch" style="background: ${p.mid}"><span>mid(変更)</span><span class="hex">${p.mid}</span></div>
+          <div class="swatch" style="background: ${bg}; color: #666; border: 1px solid #ddd;"><span>bg</span><span class="hex">${bg}</span></div>
+          <div class="swatch" style="background: ${accent}"><span>accent</span><span class="hex">${accent}</span></div>
+        </div>
+
+        <!-- パンくず -->
+        <div class="breadcrumb-demo">
+          <a href="#" style="color: ${p.mid}; text-decoration: none;">HOME</a>
+          <span class="sep">/</span>
+          <a href="#" style="color: ${p.mid}; text-decoration: none;">Palantir Technologies</a>
+          <span class="sep">/</span>
+          <span class="current">FY2025 Q4</span>
         </div>
 
         <!-- セクション見出し -->
-        <div class="section-title" style="color: ${p.dark}; border-bottom: 2px solid ${accent};">
-          売上推移（Revenue）
+        <div class="section-title" style="color: ${dark}; border-bottom: 2px solid ${accent};">
+          P/L推移
         </div>
 
         <!-- 四半期ナビ -->
         <div class="nav-demo">
           <span class="nav-pill" style="color: ${p.mid};">← FY2025 Q3</span>
           <span style="font-weight: 700; color: ${accent}; font-size: 0.95rem;">FY2025 Q4</span>
-          <span class="nav-pill" style="color: ${p.mid};">FY2026 Q1 →</span>
+          <span class="nav-pill" style="color: #ccc;">次の四半期 →</span>
         </div>
 
         <!-- 解説ボックス -->
-        <div class="desc-box" style="background: ${p.bg}; border-left: 3px solid ${p.mid};">
-          <span style="font-weight: 600; color: ${p.dark};">概要:</span> 売上高は前年同期比+78%の$39.3Bに到達。Data Center部門が牽引。
+        <div class="desc-box" style="background: ${descBg}; border-left: 3px solid ${p.mid};">
+          <span style="font-weight: 600; color: ${dark};">概要:</span>
+          売上高$1,407M（YoY+70.0%）で過去最高を大幅更新。営業利益$575M（OM 40.9%）。
           <div class="insight" style="border-top: 1px solid #dce2dd; border-left: 3px solid ${accent};">
-            <span style="font-weight: 600; color: ${p.dark};">解説:</span> AI需要の継続的拡大により、過去最高売上を更新。
+            <span style="font-weight: 600; color: ${dark};">ポイント:</span>
+            AIPプラットフォームの急速な普及がGovernment・Commercial両セグメントの成長を加速。
           </div>
         </div>
 
-        <!-- 四半期リンク -->
-        <div style="margin-top: 12px; display: flex; gap: 6px; flex-wrap: wrap;">
-          <span class="quarter-pill" style="background: ${p.bg}; color: ${p.mid};">Q1</span>
-          <span class="quarter-pill" style="background: ${accent}; color: #fff;">Q2 hover</span>
-          <span class="quarter-pill" style="background: ${p.bg}; color: ${p.mid};">Q3</span>
-          <span class="quarter-pill" style="background: ${p.bg}; color: ${p.mid};">Q4</span>
+        <!-- 四半期リンクピル -->
+        <div style="margin-top: 12px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center;">
+          <span style="font-size: 0.82rem; font-weight: 700; color: ${dark}; min-width: 56px;">FY2025</span>
+          <span class="quarter-pill" style="background: ${bg}; color: ${p.mid};">Q1</span>
+          <span class="quarter-pill" style="background: ${bg}; color: ${p.mid};">Q2</span>
+          <span class="quarter-pill" style="background: ${bg}; color: ${p.mid};">Q3</span>
+          <span class="quarter-pill" style="background: ${bg}; color: ${p.mid};">Q4</span>
+          <span class="quarter-pill" style="background: ${accent}; color: #fff;">hover</span>
         </div>
 
         <!-- 決算資料リンク -->
         <div style="margin-top: 12px;">
-          <span class="filing-pill" style="background: ${p.bg}; color: ${p.mid};">Press Release</span>
-          <span class="filing-pill" style="background: ${accent}; color: #fff;">10-K hover</span>
-          <span class="filing-pill" style="background: ${p.bg}; color: ${p.mid};">CFO Commentary</span>
+          <span class="filing-pill" style="background: ${bg}; color: ${p.mid};">Press Release</span>
+          <span class="filing-pill" style="background: ${bg}; color: ${p.mid};">10-K</span>
+          <span class="filing-pill" style="background: ${bg}; color: ${p.mid};">Investor Relations</span>
+          <span class="filing-pill" style="background: ${accent}; color: #fff;">hover</span>
+        </div>
+
+        <!-- KPIサブテキスト -->
+        <div style="margin-top: 16px; display: flex; gap: 12px;">
+          <div style="background: ${bg}; border-radius: 6px; padding: 12px; text-align: center; flex: 1;">
+            <div style="font-size: 1.3rem; font-weight: 700; color: ${dark};">$1,407M</div>
+            <div style="font-size: 0.75rem; color: #666; margin-top: 4px;">売上高</div>
+            <div style="font-size: 0.72rem; color: ${p.mid}; margin-top: 2px;">YoY +70.0%</div>
+          </div>
+          <div style="background: ${bg}; border-radius: 6px; padding: 12px; text-align: center; flex: 1;">
+            <div style="font-size: 1.3rem; font-weight: 700; color: ${dark};">40.9%</div>
+            <div style="font-size: 0.75rem; color: #666; margin-top: 4px;">営業利益率</div>
+            <div style="font-size: 0.72rem; color: ${p.mid}; margin-top: 2px;">QoQ +7.6pt</div>
+          </div>
+          <div style="background: ${bg}; border-radius: 6px; padding: 12px; text-align: center; flex: 1;">
+            <div style="font-size: 1.3rem; font-weight: 700; color: ${dark};">$0.24</div>
+            <div style="font-size: 0.75rem; color: #666; margin-top: 4px;">EPS</div>
+            <div style="font-size: 0.72rem; color: ${p.mid}; margin-top: 2px;">YoY +700%</div>
+          </div>
+        </div>
+
+        <!-- フッターリンク -->
+        <div style="margin-top: 16px; text-align: center; font-size: 0.8rem; color: #999;">
+          <a href="#" style="color: ${p.mid}; text-decoration: none;">四半期一覧</a> |
+          <a href="#" style="color: ${p.mid}; text-decoration: none;">ダッシュボード</a> |
+          <a href="#" style="color: ${p.mid}; text-decoration: none;">GitHub</a>
         </div>
       </div>
     </div>

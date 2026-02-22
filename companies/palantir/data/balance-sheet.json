@@ -1,0 +1,258 @@
+{
+  "FY2020": {
+    "Q3": {
+      "cashAndEquivalents": 1800190,
+      "accountsReceivable": 162269,
+      "totalCurrentAssets": 2394424,
+      "totalAssets": 2603712,
+      "totalCurrentLiabilities": 942187,
+      "longTermDebt": 197753,
+      "totalLiabilities": 1351959,
+      "accumulatedDeficit": -4817011,
+      "stockholdersEquity": 1251753
+    },
+    "Q4": {
+      "cashAndEquivalents": 2011323,
+      "accountsReceivable": 156932,
+      "totalCurrentAssets": 2257429,
+      "totalAssets": 2690504,
+      "totalCurrentLiabilities": 603823,
+      "longTermDebt": 197977,
+      "totalLiabilities": 1167954,
+      "accumulatedDeficit": -4965354,
+      "stockholdersEquity": 1522550
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "cashAndEquivalents": 2339437,
+      "accountsReceivable": 151400,
+      "totalCurrentAssets": 2589698,
+      "totalAssets": 3014185,
+      "totalCurrentLiabilities": 667626,
+      "longTermDebt": 198185,
+      "totalLiabilities": 1208242,
+      "accumulatedDeficit": -5088828,
+      "stockholdersEquity": 1805943
+    },
+    "Q2": {
+      "cashAndEquivalents": 2341156,
+      "accountsReceivable": 242998,
+      "totalCurrentAssets": 2662552,
+      "totalAssets": 3075668,
+      "totalCurrentLiabilities": 682586,
+      "longTermDebt": 197977,
+      "totalLiabilities": 1006705,
+      "accumulatedDeficit": -5227408,
+      "stockholdersEquity": 2068963
+    },
+    "Q3": {
+      "cashAndEquivalents": 2335068,
+      "accountsReceivable": 174405,
+      "marketableSecurities": 148077,
+      "totalCurrentAssets": 2811490,
+      "totalAssets": 3224327,
+      "totalCurrentLiabilities": 681509,
+      "longTermDebt": 197977,
+      "totalLiabilities": 976271,
+      "accumulatedDeficit": -5329545,
+      "stockholdersEquity": 2248056
+    },
+    "Q4": {
+      "cashAndEquivalents": 2290674,
+      "accountsReceivable": 190923,
+      "marketableSecurities": 234153,
+      "totalCurrentAssets": 2863250,
+      "totalAssets": 3247450,
+      "totalCurrentLiabilities": 660061,
+      "longTermDebt": 197977,
+      "totalLiabilities": 956420,
+      "accumulatedDeficit": -5485733,
+      "stockholdersEquity": 2291030
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "cashAndEquivalents": 2269411,
+      "accountsReceivable": 256554,
+      "marketableSecurities": 252563,
+      "totalCurrentAssets": 2927374,
+      "totalAssets": 3319179,
+      "totalCurrentLiabilities": 669104,
+      "totalLiabilities": 954433,
+      "accumulatedDeficit": -5587112,
+      "stockholdersEquity": 2364746
+    },
+    "Q2": {
+      "cashAndEquivalents": 2358393,
+      "accountsReceivable": 265826,
+      "marketableSecurities": 99210,
+      "totalCurrentAssets": 2902439,
+      "totalAssets": 3282338,
+      "totalCurrentLiabilities": 665742,
+      "totalLiabilities": 933514,
+      "accumulatedDeficit": -5766441,
+      "stockholdersEquity": 2348824
+    },
+    "Q3": {
+      "cashAndEquivalents": 2411290,
+      "accountsReceivable": 343264,
+      "marketableSecurities": 57342,
+      "totalCurrentAssets": 2946610,
+      "totalAssets": 3318835,
+      "totalCurrentLiabilities": 688350,
+      "totalLiabilities": 932220,
+      "accumulatedDeficit": -5890316,
+      "stockholdersEquity": 2386615
+    },
+    "Q4": {
+      "cashAndEquivalents": 2598540,
+      "accountsReceivable": 258346,
+      "marketableSecurities": 35135,
+      "totalCurrentAssets": 3041577,
+      "totalAssets": 3461239,
+      "totalCurrentLiabilities": 587941,
+      "totalLiabilities": 818802,
+      "accumulatedDeficit": -5859438,
+      "stockholdersEquity": 2565326
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "cashAndEquivalents": 1264738,
+      "marketableSecurities": 1639797,
+      "accountsReceivable": 254041,
+      "totalCurrentAssets": 3256147,
+      "totalAssets": 3683138,
+      "totalCurrentLiabilities": 601413,
+      "totalLiabilities": 879945,
+      "accumulatedDeficit": -5842636,
+      "stockholdersEquity": 2723733
+    },
+    "Q2": {
+      "cashAndEquivalents": 1055923,
+      "marketableSecurities": 2047329,
+      "accountsReceivable": 375756,
+      "totalCurrentAssets": 3576914,
+      "totalAssets": 3980264,
+      "totalCurrentLiabilities": 685384,
+      "totalLiabilities": 945126,
+      "accumulatedDeficit": -5814509,
+      "stockholdersEquity": 2955474
+    },
+    "Q3": {
+      "cashAndEquivalents": 1040310,
+      "marketableSecurities": 2243264,
+      "accountsReceivable": 430269,
+      "totalCurrentAssets": 3809397,
+      "totalAssets": 4193417,
+      "totalCurrentLiabilities": 688925,
+      "totalLiabilities": 921520,
+      "accumulatedDeficit": -5743004,
+      "stockholdersEquity": 3190015
+    },
+    "Q4": {
+      "cashAndEquivalents": 831047,
+      "marketableSecurities": 2843132,
+      "accountsReceivable": 364784,
+      "totalCurrentAssets": 4138618,
+      "totalAssets": 4522425,
+      "totalCurrentLiabilities": 746018,
+      "totalLiabilities": 961460,
+      "accumulatedDeficit": -5649613,
+      "stockholdersEquity": 3475561
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "cashAndEquivalents": 520388,
+      "marketableSecurities": 3347512,
+      "accountsReceivable": 486986,
+      "totalCurrentAssets": 4436064,
+      "totalAssets": 4807079,
+      "totalCurrentLiabilities": 750553,
+      "totalLiabilities": 945907,
+      "accumulatedDeficit": -5544083,
+      "stockholdersEquity": 3775227
+    },
+    "Q2": {
+      "cashAndEquivalents": 512659,
+      "marketableSecurities": 3485800,
+      "accountsReceivable": 659339,
+      "totalCurrentAssets": 4773510,
+      "totalAssets": 5191880,
+      "totalCurrentLiabilities": 806919,
+      "totalLiabilities": 1054074,
+      "accumulatedDeficit": -5409957,
+      "stockholdersEquity": 4050524
+    },
+    "Q3": {
+      "cashAndEquivalents": 768710,
+      "marketableSecurities": 3795949,
+      "accountsReceivable": 668110,
+      "totalCurrentAssets": 5351962,
+      "totalAssets": 5768097,
+      "totalCurrentLiabilities": 943456,
+      "totalLiabilities": 1176735,
+      "accumulatedDeficit": -5266432,
+      "stockholdersEquity": 4498143
+    },
+    "Q4": {
+      "cashAndEquivalents": 2098524,
+      "marketableSecurities": 3131463,
+      "accountsReceivable": 575048,
+      "totalCurrentAssets": 5934289,
+      "totalAssets": 6340884,
+      "totalCurrentLiabilities": 996018,
+      "totalLiabilities": 1246477,
+      "accumulatedDeficit": -5187423,
+      "stockholdersEquity": 5003275
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "cashAndEquivalents": 993464,
+      "marketableSecurities": 4437225,
+      "accountsReceivable": 725205,
+      "totalCurrentAssets": 6282599,
+      "totalAssets": 6736917,
+      "totalCurrentLiabilities": 967443,
+      "totalLiabilities": 1217944,
+      "accumulatedDeficit": -4973392,
+      "stockholdersEquity": 5424155
+    },
+    "Q2": {
+      "cashAndEquivalents": 929547,
+      "marketableSecurities": 5070875,
+      "accountsReceivable": 747484,
+      "totalCurrentAssets": 6890393,
+      "totalAssets": 7365688,
+      "totalCurrentLiabilities": 1089640,
+      "totalLiabilities": 1340124,
+      "accumulatedDeficit": -4646665,
+      "stockholdersEquity": 5928901
+    },
+    "Q3": {
+      "cashAndEquivalents": 1615967,
+      "marketableSecurities": 4821850,
+      "accountsReceivable": 1005910,
+      "totalCurrentAssets": 7586156,
+      "totalAssets": 8113960,
+      "totalCurrentLiabilities": 1180403,
+      "totalLiabilities": 1425691,
+      "accumulatedDeficit": -4171066,
+      "stockholdersEquity": 6590457
+    },
+    "Q4": {
+      "cashAndEquivalents": 1423796,
+      "marketableSecurities": 5753247,
+      "accountsReceivable": 1042065,
+      "totalCurrentAssets": 8358174,
+      "totalAssets": 8900392,
+      "totalCurrentLiabilities": 1175581,
+      "totalLiabilities": 1412381,
+      "accumulatedDeficit": -3562390,
+      "stockholdersEquity": 7387268
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "FY2021": {
+    "Q3": {
+      "marketableSecurities": 148077
+    },
+    "Q4": {
+      "marketableSecurities": 234153
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "marketableSecurities": 252563
+    },
+    "Q2": {
+      "marketableSecurities": 99210
+    },
+    "Q3": {
+      "marketableSecurities": 57342
+    },
+    "Q4": {
+      "marketableSecurities": 35135
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "marketableSecurities": 1639797
+    },
+    "Q2": {
+      "marketableSecurities": 2047329
+    },
+    "Q3": {
+      "marketableSecurities": 2243264
+    },
+    "Q4": {
+      "marketableSecurities": 2843132
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "marketableSecurities": 3347512
+    },
+    "Q2": {
+      "marketableSecurities": 3485800
+    },
+    "Q3": {
+      "marketableSecurities": 3795949
+    },
+    "Q4": {
+      "marketableSecurities": 3131463
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "marketableSecurities": 4437225
+    },
+    "Q2": {
+      "marketableSecurities": 5070875
+    },
+    "Q3": {
+      "marketableSecurities": 4821850
+    },
+    "Q4": {
+      "marketableSecurities": 5753247
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "FY2020": {
+    "Q3": {
+      "governmentRevenue": 162561,
+      "commercialRevenue": 126805,
+      "totalRevenue": 289366
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "governmentRevenue": 208420,
+      "commercialRevenue": 132814,
+      "totalRevenue": 341234
+    },
+    "Q2": {
+      "governmentRevenue": 232119,
+      "commercialRevenue": 143523,
+      "totalRevenue": 375642
+    },
+    "Q3": {
+      "governmentRevenue": 217836,
+      "commercialRevenue": 174310,
+      "totalRevenue": 392146
+    },
+    "Q4": {
+      "governmentRevenue": 238981,
+      "commercialRevenue": 193886,
+      "totalRevenue": 432867
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "governmentRevenue": 241790,
+      "commercialRevenue": 204567,
+      "totalRevenue": 446357
+    },
+    "Q2": {
+      "governmentRevenue": 262998,
+      "commercialRevenue": 210012,
+      "totalRevenue": 473010
+    },
+    "Q3": {
+      "governmentRevenue": 273834,
+      "commercialRevenue": 204046,
+      "totalRevenue": 477880
+    },
+    "Q4": {
+      "governmentRevenue": 293154,
+      "commercialRevenue": 215470,
+      "totalRevenue": 508624
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "governmentRevenue": 289070,
+      "commercialRevenue": 236116,
+      "totalRevenue": 525186
+    },
+    "Q2": {
+      "governmentRevenue": 301505,
+      "commercialRevenue": 231812,
+      "totalRevenue": 533317
+    },
+    "Q3": {
+      "governmentRevenue": 307603,
+      "commercialRevenue": 250556,
+      "totalRevenue": 558159
+    },
+    "Q4": {
+      "governmentRevenue": 324037,
+      "commercialRevenue": 284313,
+      "totalRevenue": 608350
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "governmentRevenue": 335373,
+      "commercialRevenue": 298965,
+      "totalRevenue": 634338
+    },
+    "Q2": {
+      "governmentRevenue": 370767,
+      "commercialRevenue": 307367,
+      "totalRevenue": 678134
+    },
+    "Q3": {
+      "governmentRevenue": 408341,
+      "commercialRevenue": 317175,
+      "totalRevenue": 725516
+    },
+    "Q4": {
+      "governmentRevenue": 455124,
+      "commercialRevenue": 372395,
+      "totalRevenue": 827519
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "governmentRevenue": 486963,
+      "commercialRevenue": 396892,
+      "totalRevenue": 883855
+    },
+    "Q2": {
+      "governmentRevenue": 552983,
+      "commercialRevenue": 450714,
+      "totalRevenue": 1003697
+    },
+    "Q3": {
+      "governmentRevenue": 632676,
+      "commercialRevenue": 548416,
+      "totalRevenue": 1181092
+    },
+    "Q4": {
+      "governmentRevenue": 729665,
+      "commercialRevenue": 677137,
+      "totalRevenue": 1406802
+    }
+  }
+}

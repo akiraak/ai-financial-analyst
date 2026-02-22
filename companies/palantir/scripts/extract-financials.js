@@ -21,14 +21,14 @@ const ROW_MAPPINGS = [
   { patterns: [/^Research and development/i], key: 'researchAndDevelopment' },
   { patterns: [/^General and administrative/i], key: 'generalAndAdministrative' },
   { patterns: [/^Total operating expenses$/i], key: 'totalOperatingExpenses' },
-  { patterns: [/^(Income|Loss) from operations$/i], key: 'operatingIncome' },
+  { patterns: [/^(?:Income|Loss)(?: \(loss\))? from operations$/i], key: 'operatingIncome' },
   { patterns: [/^Interest income$/i], key: 'interestIncome' },
   { patterns: [/^Interest expense$/i], key: 'interestExpense' },
   { patterns: [/^Other income.*net$/i, /^Change in fair value/i], key: 'otherIncomeNet' },
-  { patterns: [/^(Income|Loss) before provision for income taxes$/i], key: 'incomeBeforeTax' },
+  { patterns: [/^(?:Income|Loss)(?: \(loss\))? before provision for income taxes$/i], key: 'incomeBeforeTax' },
   { patterns: [/^Provision.*for income taxes$/i], key: 'incomeTaxExpense' },
-  { patterns: [/^Net (income|loss)$/i], key: 'netIncome' },
-  { patterns: [/^Net (income|loss) attributable to common stockholders$/i], key: 'netIncomeToCommon' },
+  { patterns: [/^Net (?:income|loss)(?: \(loss\))?$/i], key: 'netIncome' },
+  { patterns: [/^Net (?:income|loss)(?: \(loss\))? attributable to common stockholders$/i], key: 'netIncomeToCommon' },
 ];
 
 /**
@@ -179,13 +179,14 @@ function extractFromFile(filePath, fy, q) {
     const firstValue = parseNumber(values[0]);
 
     // EPS行の検出（ラベルに"per share"を含む行）
-    if (label.match(/(Earnings|Net loss|Net income) per share.*basic$/i)) {
+    // "Earnings per share", "Net loss per share", "Earnings (loss) per share" 等に対応
+    if (label.match(/(?:Earnings|Net loss|Net income)(?: \(loss\))? per share.*basic$/i)) {
       if (!('epsBasic' in result)) {
         result.epsBasic = firstValue;
         return;
       }
     }
-    if (label.match(/(Earnings|Net loss|Net income) per share.*diluted$/i)) {
+    if (label.match(/(?:Earnings|Net loss|Net income)(?: \(loss\))? per share.*diluted$/i)) {
       if (!('epsDiluted' in result)) {
         result.epsDiluted = firstValue;
         return;

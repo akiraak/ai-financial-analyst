@@ -108,6 +108,8 @@ const ChartBuilder = {
       infrastructureSoftware: 'Infrastructure Software',
       familyOfApps: 'Family of Apps',
       realityLabs: 'Reality Labs',
+      government: 'Government',
+      commercial: 'Commercial',
     };
     return labels[key] || key;
   },
@@ -710,6 +712,8 @@ const ChartBuilder = {
       infrastructureSoftware: 'Infrastructure Software',
       familyOfApps: 'Family of Apps',
       realityLabs: 'Reality Labs',
+      government: 'Government',
+      commercial: 'Commercial',
     };
     return labels[key] || key;
   },
@@ -798,51 +802,86 @@ const ChartBuilder = {
     });
   },
 
-  // === 13. 投資ポートフォリオ残高推移（棒+折れ線複合）===
+  // 投資キーのラベル変換
+  investmentLabel(key) {
+    const labels = {
+      nonMarketableBalance: '非上場株式',
+      publiclyHeldBalance: '上場株式',
+      marketableSecurities: '有価証券',
+    };
+    return labels[key] || key;
+  },
+
+  // 投資キーを動的に検出する
+  detectInvestmentKeys(quarters) {
+    const keys = new Set();
+    for (const q of quarters) {
+      if (q.investments) {
+        for (const k of Object.keys(q.investments)) {
+          if (q.investments[k] != null) keys.add(k);
+        }
+      }
+    }
+    return Array.from(keys);
+  },
+
+  // 投資色パレット
+  investmentColors: [
+    { bg: 'rgba(156, 39, 176, 0.7)', border: 'rgba(156, 39, 176, 1)' },
+    { bg: 'rgba(255, 152, 0, 0.7)', border: 'rgba(255, 152, 0, 1)' },
+    { bg: 'rgba(30, 136, 229, 0.7)', border: 'rgba(30, 136, 229, 1)' },
+  ],
+
+  // === 13. 投資ポートフォリオ残高推移（動的検出）===
   createInvestmentChart(ctx, data) {
     const q = this.getActualQuarters(data.quarters);
     const labels = this.getLabels(q);
+    const invKeys = this.detectInvestmentKeys(q);
+
+    // キーが1つの場合は棒グラフのみ、2つ以上は棒+折れ線
+    const datasets = invKeys.map((key, i) => {
+      const color = this.investmentColors[i % this.investmentColors.length];
+      if (i === 0) {
+        return {
+          label: this.investmentLabel(key),
+          data: q.map(d => d.investments?.[key] ?? null),
+          backgroundColor: this.makeColors(color.bg, q),
+          borderColor: this.makeBorderColors(color.border, q),
+          borderWidth: 1,
+          order: 2,
+        };
+      } else {
+        return {
+          label: this.investmentLabel(key),
+          data: q.map(d => d.investments?.[key] ?? null),
+          type: 'line',
+          borderColor: color.border,
+          backgroundColor: color.bg.replace('0.7)', '0.1)'),
+          borderWidth: 2,
+          pointRadius: 3,
+          tension: 0.3,
+          order: 1,
+        };
+      }
+    });
 
     return new Chart(ctx, {
       type: 'bar',
-      data: {
-        labels,
-        datasets: [
-          {
-            label: '非上場株式',
-            data: q.map(d => d.investments?.nonMarketableBalance ?? null),
-            backgroundColor: this.makeColors('rgba(156, 39, 176, 0.7)', q),
-            borderColor: this.makeBorderColors('rgba(156, 39, 176, 1)', q),
-            borderWidth: 1,
-            order: 2,
-          },
-          {
-            label: '上場株式',
-            data: q.map(d => d.investments?.publiclyHeldBalance ?? null),
-            type: 'line',
-            borderColor: 'rgba(255, 152, 0, 1)',
-            backgroundColor: 'rgba(255, 152, 0, 0.1)',
-            borderWidth: 2,
-            pointRadius: 3,
-            tension: 0.3,
-            order: 1,
-          },
-        ],
-      },
+      data: { labels, datasets },
       options: {
         responsive: true,
         plugins: {
-          title: { display: true, text: '投資ポートフォリオ残高（百万ドル）', font: { size: 16 } },
+          title: { display: true, text: '投資ポートフォリオ残高（千ドル）', font: { size: 16 } },
           tooltip: {
             callbacks: {
-              label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y?.toLocaleString()}M`,
+              label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y?.toLocaleString()}K`,
             },
           },
         },
         scales: {
           y: {
             beginAtZero: true,
-            ticks: { callback: v => '$' + (v / 1000).toFixed(1) + 'B' },
+            ticks: { callback: v => '$' + (v / 1000).toFixed(1) + 'M' },
           },
         },
       },

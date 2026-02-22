@@ -1,0 +1,934 @@
+{
+  "company": "Palantir Technologies",
+  "ticker": "PLTR",
+  "generatedAt": "2026-02-22",
+  "quarters": [
+    {
+      "label": "FY2020 Q3",
+      "fy": 2020,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 289366,
+      "costOfRevenue": 149340,
+      "grossProfit": 140026,
+      "researchAndDevelopment": 313915,
+      "sga": 673888,
+      "totalOperatingExpenses": 987803,
+      "operatingIncome": -847777,
+      "nonOperatingIncome": -14085,
+      "netIncome": -853319,
+      "eps": -0.94,
+      "price": null,
+      "priceDate": null,
+      "sharesDiluted": 905462010,
+      "segments": {
+        "government": 162561,
+        "commercial": 126805
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 1800190,
+        "totalAssets": 2603712,
+        "totalLiabilities": 1351959,
+        "totalEquity": 1251753,
+        "totalDebt": 197753
+      },
+      "cashFlow": {
+        "operatingCF": -278320,
+        "investingCF": -9975,
+        "financingCF": 817344,
+        "freeCashFlow": -285795
+      },
+      "segmentProfit": null,
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2020 Q4",
+      "fy": 2020,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 322091,
+      "costOfRevenue": 70503,
+      "grossProfit": 251588,
+      "researchAndDevelopment": 94130,
+      "sga": 314030,
+      "totalOperatingExpenses": 408160,
+      "operatingIncome": -156572,
+      "nonOperatingIncome": -2746,
+      "netIncome": -148343,
+      "eps": -0.08,
+      "price": 25.1,
+      "priceDate": "2020-12-30",
+      "sharesDiluted": 1763513922,
+      "segments": null,
+      "balanceSheet": {
+        "cashAndEquivalents": 2011323,
+        "totalAssets": 2690504,
+        "totalLiabilities": 1167954,
+        "totalEquity": 1522550,
+        "totalDebt": 197977
+      },
+      "cashFlow": {
+        "operatingCF": -296608,
+        "investingCF": -14920,
+        "financingCF": 1036453,
+        "freeCashFlow": -308844
+      },
+      "segmentProfit": null,
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q1",
+      "fy": 2021,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 341234,
+      "costOfRevenue": 74111,
+      "grossProfit": 267123,
+      "researchAndDevelopment": 98471,
+      "sga": 282666,
+      "totalOperatingExpenses": 381137,
+      "operatingIncome": -114014,
+      "nonOperatingIncome": -6358,
+      "netIncome": -123474,
+      "eps": -0.07,
+      "price": 22.04,
+      "priceDate": "2021-03-30",
+      "sharesDiluted": 1821158,
+      "segments": {
+        "government": 208420,
+        "commercial": 132814
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 2339437,
+        "totalAssets": 3014185,
+        "totalLiabilities": 1208242,
+        "totalEquity": 1805943,
+        "totalDebt": 198185
+      },
+      "cashFlow": {
+        "operatingCF": 116881,
+        "investingCF": -708,
+        "financingCF": 206354,
+        "freeCashFlow": 116173
+      },
+      "segmentProfit": null,
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q2",
+      "fy": 2021,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 375642,
+      "costOfRevenue": 90926,
+      "grossProfit": 284716,
+      "researchAndDevelopment": 110524,
+      "sga": 320340,
+      "totalOperatingExpenses": 430864,
+      "operatingIncome": -146148,
+      "nonOperatingIncome": -3683,
+      "netIncome": -138580,
+      "eps": -0.07,
+      "price": 26.63,
+      "priceDate": "2021-06-29",
+      "sharesDiluted": 1894606,
+      "segments": {
+        "government": 232119,
+        "commercial": 143523
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 2341156,
+        "totalAssets": 3075668,
+        "totalLiabilities": 1006705,
+        "totalEquity": 2068963,
+        "totalDebt": 197977
+      },
+      "cashFlow": {
+        "operatingCF": 139631,
+        "investingCF": -1405,
+        "financingCF": 174944,
+        "freeCashFlow": 138226
+      },
+      "segmentProfit": null,
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q3",
+      "fy": 2021,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 392146,
+      "costOfRevenue": 86804,
+      "grossProfit": 305342,
+      "researchAndDevelopment": 94316,
+      "sga": 302967,
+      "totalOperatingExpenses": 397283,
+      "operatingIncome": -91941,
+      "nonOperatingIncome": -9201,
+      "netIncome": -102137,
+      "eps": -0.05,
+      "price": 24.52,
+      "priceDate": "2021-09-29",
+      "sharesDiluted": 1964395,
+      "segments": {
+        "government": 217836,
+        "commercial": 174310
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 2335068,
+        "totalAssets": 3224327,
+        "totalLiabilities": 976271,
+        "totalEquity": 2248056,
+        "totalDebt": 197977
+      },
+      "cashFlow": {
+        "operatingCF": 240424,
+        "investingCF": -216039,
+        "financingCF": 274282,
+        "freeCashFlow": 233641
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 148077
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q4",
+      "fy": 2021,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 432867,
+      "costOfRevenue": 87563,
+      "grossProfit": 345304,
+      "researchAndDevelopment": 84176,
+      "sga": 320071,
+      "totalOperatingExpenses": 404247,
+      "operatingIncome": -58943,
+      "nonOperatingIncome": -64118,
+      "netIncome": -156188,
+      "eps": -0.08,
+      "price": 18.69,
+      "priceDate": "2021-12-30",
+      "sharesDiluted": 2011764,
+      "segments": {
+        "government": 238981,
+        "commercial": 193886
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 2290674,
+        "totalAssets": 3247450,
+        "totalLiabilities": 956420,
+        "totalEquity": 2291030,
+        "totalDebt": 197977
+      },
+      "cashFlow": {
+        "operatingCF": 333851,
+        "investingCF": -397912,
+        "financingCF": 306747,
+        "freeCashFlow": 321224
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 234153
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q1",
+      "fy": 2022,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 446357,
+      "costOfRevenue": 94403,
+      "grossProfit": 351954,
+      "researchAndDevelopment": 88601,
+      "sga": 302792,
+      "totalOperatingExpenses": 391393,
+      "operatingIncome": -39439,
+      "nonOperatingIncome": -59917,
+      "netIncome": -101379,
+      "eps": -0.05,
+      "price": 13.88,
+      "priceDate": "2022-03-30",
+      "sharesDiluted": 2036307,
+      "segments": {
+        "government": 241790,
+        "commercial": 204567
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 2269411,
+        "totalAssets": 3319179,
+        "totalLiabilities": 954433,
+        "totalEquity": 2364746,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 35477,
+        "investingCF": -96468,
+        "financingCF": 27241,
+        "freeCashFlow": 20262
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 252563
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q2",
+      "fy": 2022,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 473010,
+      "costOfRevenue": 102224,
+      "grossProfit": 370786,
+      "researchAndDevelopment": 88171,
+      "sga": 324360,
+      "totalOperatingExpenses": 412531,
+      "operatingIncome": -41745,
+      "nonOperatingIncome": -135798,
+      "netIncome": -179329,
+      "eps": -0.09,
+      "price": 9.23,
+      "priceDate": "2022-06-29",
+      "sharesDiluted": 2054799,
+      "segments": {
+        "government": 262998,
+        "commercial": 210012
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 2358393,
+        "totalAssets": 3282338,
+        "totalLiabilities": 933514,
+        "totalEquity": 2348824,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 97908,
+        "investingCF": -91164,
+        "financingCF": 47848,
+        "freeCashFlow": 77235
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 99210
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q3",
+      "fy": 2022,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 477880,
+      "costOfRevenue": 107611,
+      "grossProfit": 370269,
+      "researchAndDevelopment": 100863,
+      "sga": 331597,
+      "totalOperatingExpenses": 432460,
+      "operatingIncome": -62191,
+      "nonOperatingIncome": -65046,
+      "netIncome": -123875,
+      "eps": -0.06,
+      "price": 8.08,
+      "priceDate": "2022-09-29",
+      "sharesDiluted": 2073265,
+      "segments": {
+        "government": 273834,
+        "commercial": 204046
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 2411290,
+        "totalAssets": 3318835,
+        "totalLiabilities": 932220,
+        "totalEquity": 2386615,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 144974,
+        "investingCF": -118508,
+        "financingCF": 71839,
+        "freeCashFlow": 109865
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 57342
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q4",
+      "fy": 2022,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 508624,
+      "costOfRevenue": 104311,
+      "grossProfit": 404313,
+      "researchAndDevelopment": 82044,
+      "sga": 340095,
+      "totalOperatingExpenses": 422139,
+      "operatingIncome": -17826,
+      "nonOperatingIncome": 55675,
+      "netIncome": 33489,
+      "eps": 0.01,
+      "price": 6.42,
+      "priceDate": "2022-12-30",
+      "sharesDiluted": 2203733,
+      "segments": {
+        "government": 293154,
+        "commercial": 215470
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 2598540,
+        "totalAssets": 3461239,
+        "totalLiabilities": 818802,
+        "totalEquity": 2565326,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 223737,
+        "investingCF": -45427,
+        "financingCF": 85996,
+        "freeCashFlow": 183710
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 35135
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q1",
+      "fy": 2023,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 525186,
+      "costOfRevenue": 107645,
+      "grossProfit": 417541,
+      "researchAndDevelopment": 90100,
+      "sga": 323326,
+      "totalOperatingExpenses": 413426,
+      "operatingIncome": 4115,
+      "nonOperatingIncome": 16717,
+      "netIncome": 19151,
+      "eps": 0.01,
+      "price": 8.15,
+      "priceDate": "2023-03-30",
+      "sharesDiluted": 2217439,
+      "segments": {
+        "government": 289070,
+        "commercial": 236116
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 1264738,
+        "totalAssets": 3683138,
+        "totalLiabilities": 879945,
+        "totalEquity": 2723733,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 187376,
+        "investingCF": -1554591,
+        "financingCF": 25983,
+        "freeCashFlow": 182621
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 1639797
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q2",
+      "fy": 2023,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 533317,
+      "costOfRevenue": 106899,
+      "grossProfit": 426418,
+      "researchAndDevelopment": 99533,
+      "sga": 316811,
+      "totalOperatingExpenses": 416344,
+      "operatingIncome": 10074,
+      "nonOperatingIncome": 19969,
+      "netIncome": 27872,
+      "eps": 0.01,
+      "price": 15.2,
+      "priceDate": "2023-06-29",
+      "sharesDiluted": 2278155,
+      "segments": {
+        "government": 301505,
+        "commercial": 231812
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 1055923,
+        "totalAssets": 3980264,
+        "totalLiabilities": 945126,
+        "totalEquity": 2955474,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 277568,
+        "investingCF": -1945690,
+        "financingCF": 116667,
+        "freeCashFlow": 268879
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 2047329
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q3",
+      "fy": 2023,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 558159,
+      "costOfRevenue": 107922,
+      "grossProfit": 450237,
+      "researchAndDevelopment": 105708,
+      "sga": 304546,
+      "totalOperatingExpenses": 410254,
+      "operatingIncome": 39983,
+      "nonOperatingIncome": 39986,
+      "netIncome": 73439,
+      "eps": 0.03,
+      "price": 16,
+      "priceDate": "2023-09-29",
+      "sharesDiluted": 2325600,
+      "segments": {
+        "government": 307603,
+        "commercial": 250556
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 1040310,
+        "totalAssets": 4193417,
+        "totalLiabilities": 921520,
+        "totalEquity": 3190015,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 411011,
+        "investingCF": -2141954,
+        "financingCF": 167607,
+        "freeCashFlow": 400757
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 2243264
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q4",
+      "fy": 2023,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 608350,
+      "costOfRevenue": 108639,
+      "grossProfit": 499711,
+      "researchAndDevelopment": 109283,
+      "sga": 324634,
+      "totalOperatingExpenses": 433917,
+      "operatingIncome": 65794,
+      "nonOperatingIncome": 40453,
+      "netIncome": 96913,
+      "eps": 0.04,
+      "price": 17.17,
+      "priceDate": "2023-12-29",
+      "sharesDiluted": 2357742,
+      "segments": {
+        "government": 324037,
+        "commercial": 284313
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 831047,
+        "totalAssets": 4522425,
+        "totalLiabilities": 961460,
+        "totalEquity": 3475561,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 712183,
+        "investingCF": -2711180,
+        "financingCF": 218839,
+        "freeCashFlow": 697069
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 2843132
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2024 Q1",
+      "fy": 2024,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 634338,
+      "costOfRevenue": 116256,
+      "grossProfit": 518082,
+      "researchAndDevelopment": 110040,
+      "sga": 327161,
+      "totalOperatingExpenses": 437201,
+      "operatingIncome": 80881,
+      "nonOperatingIncome": 29845,
+      "netIncome": 106071,
+      "eps": 0.04,
+      "price": 23.01,
+      "priceDate": "2024-03-28",
+      "sharesDiluted": 2400107,
+      "segments": {
+        "government": 335373,
+        "commercial": 298965
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 520388,
+        "totalAssets": 4807079,
+        "totalLiabilities": 945907,
+        "totalEquity": 3775227,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 129579,
+        "investingCF": -511245,
+        "financingCF": 75248,
+        "freeCashFlow": 126915
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 3347512
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q2",
+      "fy": 2024,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 678134,
+      "costOfRevenue": 128562,
+      "grossProfit": 549572,
+      "researchAndDevelopment": 108781,
+      "sga": 335452,
+      "totalOperatingExpenses": 444233,
+      "operatingIncome": 105339,
+      "nonOperatingIncome": 35420,
+      "netIncome": 135570,
+      "eps": 0.06,
+      "price": 25.33,
+      "priceDate": "2024-06-28",
+      "sharesDiluted": 2414696,
+      "segments": {
+        "government": 370767,
+        "commercial": 307367
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 512659,
+        "totalAssets": 5191880,
+        "totalLiabilities": 1054074,
+        "totalEquity": 4050524,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 273766,
+        "investingCF": -660123,
+        "financingCF": 73273,
+        "freeCashFlow": 268223
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 3485800
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q3",
+      "fy": 2024,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 725516,
+      "costOfRevenue": 146639,
+      "grossProfit": 578877,
+      "researchAndDevelopment": 117555,
+      "sga": 348182,
+      "totalOperatingExpenses": 465737,
+      "operatingIncome": 113140,
+      "nonOperatingIncome": 44010,
+      "netIncome": 149341,
+      "eps": 0.06,
+      "price": 36.84,
+      "priceDate": "2024-09-27",
+      "sharesDiluted": 2459589,
+      "segments": {
+        "government": 408341,
+        "commercial": 317175
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 768710,
+        "totalAssets": 5768097,
+        "totalLiabilities": 1176735,
+        "totalEquity": 4498143,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 693538,
+        "investingCF": -980849,
+        "financingCF": 224700,
+        "freeCashFlow": 684010
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 3795949
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q4",
+      "fy": 2024,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 827519,
+      "costOfRevenue": 174533,
+      "grossProfit": 652986,
+      "researchAndDevelopment": 171502,
+      "sga": 470441,
+      "totalOperatingExpenses": 641943,
+      "operatingIncome": 11043,
+      "nonOperatingIncome": 69495,
+      "netIncome": 76936,
+      "eps": 0.03,
+      "price": 77.18,
+      "priceDate": "2024-12-30",
+      "sharesDiluted": 2528279,
+      "segments": {
+        "government": 455124,
+        "commercial": 372395
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 2098524,
+        "totalAssets": 6340884,
+        "totalLiabilities": 1246477,
+        "totalEquity": 5003275,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 1153865,
+        "investingCF": -340655,
+        "financingCF": 463364,
+        "freeCashFlow": 1141231
+      },
+      "segmentProfit": null,
+      "investments": {
+        "marketableSecurities": 3131463
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q1",
+      "fy": 2025,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 883855,
+      "costOfRevenue": 172970,
+      "grossProfit": 710885,
+      "researchAndDevelopment": 134889,
+      "sga": 399948,
+      "totalOperatingExpenses": 534837,
+      "operatingIncome": 176048,
+      "nonOperatingIncome": 47268,
+      "netIncome": 217717,
+      "eps": 0.08,
+      "price": 85.85,
+      "priceDate": "2025-03-28",
+      "sharesDiluted": 2552818,
+      "segments": {
+        "government": 486963,
+        "commercial": 396892
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 993464,
+        "totalAssets": 6736917,
+        "totalLiabilities": 1217944,
+        "totalEquity": 5424155,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 310263,
+        "investingCF": -1390277,
+        "financingCF": -28897,
+        "freeCashFlow": 304079
+      },
+      "segmentProfit": {
+        "government": {
+          "revenue": 486963,
+          "operatingIncome": 300960
+        },
+        "commercial": {
+          "revenue": 396892,
+          "operatingIncome": 241145
+        }
+      },
+      "investments": {
+        "marketableSecurities": 4437225
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q2",
+      "fy": 2025,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 1003697,
+      "costOfRevenue": 192934,
+      "grossProfit": 810763,
+      "researchAndDevelopment": 135043,
+      "sga": 406403,
+      "totalOperatingExpenses": 541446,
+      "operatingIncome": 269317,
+      "nonOperatingIncome": 62851,
+      "netIncome": 328572,
+      "eps": 0.13,
+      "price": 130.74,
+      "priceDate": "2025-06-27",
+      "sharesDiluted": 2562912,
+      "segments": {
+        "government": 552983,
+        "commercial": 450714
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 929547,
+        "totalAssets": 7365688,
+        "totalLiabilities": 1340124,
+        "totalEquity": 5928901,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 849514,
+        "investingCF": -2007287,
+        "financingCF": -22447,
+        "freeCashFlow": 835696
+      },
+      "segmentProfit": {
+        "government": {
+          "revenue": 552983,
+          "operatingIncome": 350412
+        },
+        "commercial": {
+          "revenue": 450714,
+          "operatingIncome": 287576
+        }
+      },
+      "investments": {
+        "marketableSecurities": 5070875
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q3",
+      "fy": 2025,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 1181092,
+      "costOfRevenue": 207307,
+      "grossProfit": 973785,
+      "researchAndDevelopment": 144191,
+      "sga": 436338,
+      "totalOperatingExpenses": 580529,
+      "operatingIncome": 393256,
+      "nonOperatingIncome": 87245,
+      "netIncome": 476748,
+      "eps": 0.18,
+      "price": 178.86,
+      "priceDate": "2025-09-29",
+      "sharesDiluted": 2571057,
+      "segments": {
+        "government": 632676,
+        "commercial": 548416
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 1615967,
+        "totalAssets": 8113960,
+        "totalLiabilities": 1425691,
+        "totalEquity": 6590457,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 1357178,
+        "investingCF": -1825720,
+        "financingCF": -16012,
+        "freeCashFlow": 1336568
+      },
+      "segmentProfit": {
+        "government": {
+          "revenue": 632676,
+          "operatingIncome": 417709
+        },
+        "commercial": {
+          "revenue": 548416,
+          "operatingIncome": 360377
+        }
+      },
+      "investments": {
+        "marketableSecurities": 4821850
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q4",
+      "fy": 2025,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 1406802,
+      "costOfRevenue": 215966,
+      "grossProfit": 1190836,
+      "researchAndDevelopment": 143554,
+      "sga": 471888,
+      "totalOperatingExpenses": 615442,
+      "operatingIncome": 575394,
+      "nonOperatingIncome": 45989,
+      "netIncome": 611607,
+      "eps": 0.24,
+      "price": 180.84,
+      "priceDate": "2025-12-30",
+      "sharesDiluted": 2573497,
+      "segments": {
+        "government": 729665,
+        "commercial": 677137
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 1423796,
+        "totalAssets": 8900392,
+        "totalLiabilities": 1412381,
+        "totalEquity": 7387268,
+        "totalDebt": null
+      },
+      "cashFlow": {
+        "operatingCF": 2134473,
+        "investingCF": -2783551,
+        "financingCF": -26910,
+        "freeCashFlow": 2100591
+      },
+      "segmentProfit": {
+        "government": {
+          "revenue": 729665,
+          "operatingIncome": 506989
+        },
+        "commercial": {
+          "revenue": 677137,
+          "operatingIncome": 477529
+        }
+      },
+      "investments": {
+        "marketableSecurities": 5753247
+      },
+      "hasPage": true
+    }
+  ]
+}

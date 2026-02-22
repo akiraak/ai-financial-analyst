@@ -1,0 +1,212 @@
+{
+  "FY2020": {
+    "Q3": {
+      "depreciationAndAmortization": 10308,
+      "stockBasedCompensation": 1028914,
+      "operatingCashFlow": -278320,
+      "capitalExpenditures": -7475,
+      "investingCashFlow": -9975,
+      "financingCashFlow": 817344,
+      "freeCashFlow": -285795
+    },
+    "Q4": {
+      "depreciationAndAmortization": 13871,
+      "stockBasedCompensation": 1270702,
+      "operatingCashFlow": -296608,
+      "capitalExpenditures": -12236,
+      "investingCashFlow": -14920,
+      "financingCashFlow": 1036453,
+      "freeCashFlow": -308844
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "depreciationAndAmortization": 3237,
+      "stockBasedCompensation": 193731,
+      "operatingCashFlow": 116881,
+      "capitalExpenditures": -708,
+      "investingCashFlow": -708,
+      "financingCashFlow": 206354,
+      "freeCashFlow": 116173
+    },
+    "Q2": {
+      "depreciationAndAmortization": 7999,
+      "stockBasedCompensation": 426473,
+      "operatingCashFlow": 139631,
+      "capitalExpenditures": -1405,
+      "investingCashFlow": -1405,
+      "financingCashFlow": 174944,
+      "freeCashFlow": 138226
+    },
+    "Q3": {
+      "depreciationAndAmortization": 11057,
+      "stockBasedCompensation": 611308,
+      "operatingCashFlow": 240424,
+      "capitalExpenditures": -6783,
+      "investingCashFlow": -216039,
+      "financingCashFlow": 274282,
+      "freeCashFlow": 233641
+    },
+    "Q4": {
+      "depreciationAndAmortization": 14897,
+      "stockBasedCompensation": 778215,
+      "operatingCashFlow": 333851,
+      "capitalExpenditures": -12627,
+      "investingCashFlow": -397912,
+      "financingCashFlow": 306747,
+      "freeCashFlow": 321224
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "depreciationAndAmortization": 4312,
+      "stockBasedCompensation": 149323,
+      "operatingCashFlow": 35477,
+      "capitalExpenditures": -15215,
+      "investingCashFlow": -96468,
+      "financingCashFlow": 27241,
+      "freeCashFlow": 20262
+    },
+    "Q2": {
+      "depreciationAndAmortization": 9207,
+      "stockBasedCompensation": 295092,
+      "operatingCashFlow": 97908,
+      "capitalExpenditures": -20673,
+      "investingCashFlow": -91164,
+      "financingCashFlow": 47848,
+      "freeCashFlow": 77235
+    },
+    "Q3": {
+      "depreciationAndAmortization": 15149,
+      "stockBasedCompensation": 435400,
+      "operatingCashFlow": 144974,
+      "capitalExpenditures": -35109,
+      "investingCashFlow": -118508,
+      "financingCashFlow": 71839,
+      "freeCashFlow": 109865
+    },
+    "Q4": {
+      "depreciationAndAmortization": 22522,
+      "stockBasedCompensation": 564798,
+      "operatingCashFlow": 223737,
+      "capitalExpenditures": -40027,
+      "investingCashFlow": -45427,
+      "financingCashFlow": 85996,
+      "freeCashFlow": 183710
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "depreciationAndAmortization": 8320,
+      "stockBasedCompensation": 114714,
+      "operatingCashFlow": 187376,
+      "capitalExpenditures": -4755,
+      "investingCashFlow": -1554591,
+      "financingCashFlow": 25983,
+      "freeCashFlow": 182621
+    },
+    "Q2": {
+      "depreciationAndAmortization": 16719,
+      "stockBasedCompensation": 228915,
+      "operatingCashFlow": 277568,
+      "capitalExpenditures": -8689,
+      "investingCashFlow": -1945690,
+      "financingCashFlow": 116667,
+      "freeCashFlow": 268879
+    },
+    "Q3": {
+      "depreciationAndAmortization": 25382,
+      "stockBasedCompensation": 343295,
+      "operatingCashFlow": 411011,
+      "capitalExpenditures": -10254,
+      "investingCashFlow": -2141954,
+      "financingCashFlow": 167607,
+      "freeCashFlow": 400757
+    },
+    "Q4": {
+      "depreciationAndAmortization": 33354,
+      "stockBasedCompensation": 475903,
+      "operatingCashFlow": 712183,
+      "capitalExpenditures": -15114,
+      "investingCashFlow": -2711180,
+      "financingCashFlow": 218839,
+      "freeCashFlow": 697069
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "depreciationAndAmortization": 8438,
+      "stockBasedCompensation": 125651,
+      "operatingCashFlow": 129579,
+      "capitalExpenditures": -2664,
+      "investingCashFlow": -511245,
+      "financingCashFlow": 75248,
+      "freeCashFlow": 126915
+    },
+    "Q2": {
+      "depreciationAndAmortization": 16494,
+      "stockBasedCompensation": 267415,
+      "operatingCashFlow": 273766,
+      "capitalExpenditures": -5543,
+      "investingCashFlow": -660123,
+      "financingCashFlow": 73273,
+      "freeCashFlow": 268223
+    },
+    "Q3": {
+      "depreciationAndAmortization": 24581,
+      "stockBasedCompensation": 409840,
+      "operatingCashFlow": 693538,
+      "capitalExpenditures": -9528,
+      "investingCashFlow": -980849,
+      "financingCashFlow": 224700,
+      "freeCashFlow": 684010
+    },
+    "Q4": {
+      "depreciationAndAmortization": 31587,
+      "stockBasedCompensation": 691638,
+      "operatingCashFlow": 1153865,
+      "capitalExpenditures": -12634,
+      "investingCashFlow": -340655,
+      "financingCashFlow": 463364,
+      "freeCashFlow": 1141231
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "depreciationAndAmortization": 6622,
+      "stockBasedCompensation": 155339,
+      "operatingCashFlow": 310263,
+      "capitalExpenditures": -6184,
+      "investingCashFlow": -1390277,
+      "financingCashFlow": -28897,
+      "freeCashFlow": 304079
+    },
+    "Q2": {
+      "depreciationAndAmortization": 13152,
+      "stockBasedCompensation": 315310,
+      "operatingCashFlow": 849514,
+      "capitalExpenditures": -13818,
+      "investingCashFlow": -2007287,
+      "financingCashFlow": -22447,
+      "freeCashFlow": 835696
+    },
+    "Q3": {
+      "depreciationAndAmortization": 19127,
+      "stockBasedCompensation": 487628,
+      "operatingCashFlow": 1357178,
+      "capitalExpenditures": -20610,
+      "investingCashFlow": -1825720,
+      "financingCashFlow": -16012,
+      "freeCashFlow": 1336568
+    },
+    "Q4": {
+      "depreciationAndAmortization": 26145,
+      "stockBasedCompensation": 684033,
+      "operatingCashFlow": 2134473,
+      "capitalExpenditures": -33882,
+      "investingCashFlow": -2783551,
+      "financingCashFlow": -26910,
+      "freeCashFlow": 2100591
+    }
+  }
+}

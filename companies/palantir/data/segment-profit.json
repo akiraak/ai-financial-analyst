@@ -1,0 +1,48 @@
+{
+  "FY2025": {
+    "Q1": {
+      "government": {
+        "revenue": 486963,
+        "contribution": 300960
+      },
+      "commercial": {
+        "revenue": 396892,
+        "contribution": 241145
+      },
+      "totalContribution": 542105
+    },
+    "Q2": {
+      "government": {
+        "revenue": 552983,
+        "contribution": 350412
+      },
+      "commercial": {
+        "revenue": 450714,
+        "contribution": 287576
+      },
+      "totalContribution": 637988
+    },
+    "Q3": {
+      "government": {
+        "revenue": 632676,
+        "contribution": 417709
+      },
+      "commercial": {
+        "revenue": 548416,
+        "contribution": 360377
+      },
+      "totalContribution": 778086
+    },
+    "Q4": {
+      "government": {
+        "revenue": 729665,
+        "contribution": 506989
+      },
+      "commercial": {
+        "revenue": 677137,
+        "contribution": 477529
+      },
+      "totalContribution": 984518
+    }
+  }
+}

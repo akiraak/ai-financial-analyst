@@ -1,7 +1,8 @@
 {
   "company": "Broadcom",
   "ticker": "AVGO",
-  "generatedAt": "2026-02-21",
+  "generatedAt": "2026-02-22",
+  "nextEarningsDate": "2026-03-06",
   "quarters": [
     {
       "label": "FY2020 Q3",

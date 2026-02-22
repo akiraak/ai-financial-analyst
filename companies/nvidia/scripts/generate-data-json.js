@@ -158,6 +158,7 @@ const data = {
   company: 'NVIDIA',
   ticker: 'NVDA',
   generatedAt: new Date().toISOString().split('T')[0],
+  nextEarningsDate: config.nextEarningsDate || null,
   quarters,
 };
 

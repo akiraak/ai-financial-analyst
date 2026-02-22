@@ -31,10 +31,11 @@ Step 0（企業選択）と Step 1（config.json設定）でユーザーの承�
 `companies/<企業名>/config.json` を確認する。
 
 - **config.json が存在する場合:** 内容を表示し、変更の必要があるか簡潔に確認する。問題なければそのまま進む
-- **config.json が存在しない場合:** 以下の2つを質問し、config.json を作成する
+- **config.json が存在しない場合:** 以下を質問し、config.json を作成する
   1. 「四半期詳細ページは何年分生成しますか？」→ `pageYears`
   2. 「各ページのグラフには何年分のデータを表示しますか？」→ `chartYears`
   - DL対象年数 = pageYears + chartYears（自動計算、質問しない）
+  3. 「次回の決算発表日は？」→ `nextEarningsDate`（YYYY-MM-DD形式。トップページのカードに表示される）
 
 **ユーザーが Step 1 で設定を承認したら、一括実行モードに入り Step 2〜7 を自動実行する。**
 

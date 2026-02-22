@@ -137,6 +137,7 @@ const data = {
   company: 'Broadcom',
   ticker: 'AVGO',
   generatedAt: new Date().toISOString().split('T')[0],
+  nextEarningsDate: config.nextEarningsDate || null,
   quarters,
 };
 

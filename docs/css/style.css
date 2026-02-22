@@ -442,6 +442,7 @@ details.chart-details .chart-description {
 .company-card {
   background: #fff;
   border-radius: 8px;
+  border-left: 3px solid var(--accent);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 24px;
   text-decoration: none;
@@ -468,6 +469,28 @@ details.chart-details .chart-description {
   font-size: 0.9rem;
   color: #666;
   margin-top: 8px;
+}
+
+.company-card .card-meta {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.8rem;
+}
+
+.company-card .card-period {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.company-card .card-earnings {
+  color: #888;
+}
+
+.company-card .card-earnings.past {
+  color: #c0392b;
+  font-weight: 600;
 }
 
 /* === 四半期詳細ページ === */

@@ -17,25 +17,29 @@
 
   <div class="container">
     <div class="company-list">
-      <a href="nvidia/" class="company-card">
+      <a href="nvidia/" class="company-card" data-slug="nvidia">
         <h2>NVIDIA</h2>
         <span class="ticker">NVDA</span>
         <p class="desc">GPU・AI半導体。四半期業績推移、利益率、株価・PER、費用構造を可視化。</p>
+        <div class="card-meta"></div>
       </a>
-      <a href="broadcom/" class="company-card">
+      <a href="broadcom/" class="company-card" data-slug="broadcom">
         <h2>Broadcom</h2>
         <span class="ticker">AVGO</span>
         <p class="desc">半導体・インフラソフトウェア。AI/クラウド向けASIC、VMware統合後の業績を可視化。</p>
+        <div class="card-meta"></div>
       </a>
-      <a href="meta/" class="company-card">
+      <a href="meta/" class="company-card" data-slug="meta">
         <h2>Meta Platforms</h2>
         <span class="ticker">META</span>
         <p class="desc">SNS・広告プラットフォーム。Family of Apps・Reality Labs セグメント別業績を可視化。</p>
+        <div class="card-meta"></div>
       </a>
-      <a href="palantir/" class="company-card">
+      <a href="palantir/" class="company-card" data-slug="palantir">
         <h2>Palantir Technologies</h2>
         <span class="ticker">PLTR</span>
         <p class="desc">データ分析・AIプラットフォーム。Government・Commercial セグメント別業績を可視化。</p>
+        <div class="card-meta"></div>
       </a>
     </div>
   </div>
@@ -43,6 +47,44 @@
   <div class="footer">
     <p><a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a></p>
   </div>
+
+  <script>
+  // 企業カードにメタ情報を動的表示する
+  document.querySelectorAll('.company-card[data-slug]').forEach(card => {
+    const slug = card.dataset.slug;
+    fetch(slug + '/data.json')
+      .then(r => r.json())
+      .then(data => {
+        const meta = card.querySelector('.card-meta');
+        if (!meta) return;
+
+        // 分析期間: hasPage=true かつ isOutlook=false の四半期の範囲
+        const withPage = data.quarters.filter(q => q.hasPage && !q.isOutlook);
+        if (withPage.length > 0) {
+          const first = withPage[0].label;
+          const last = withPage[withPage.length - 1].label;
+          const periodEl = document.createElement('div');
+          periodEl.className = 'card-period';
+          periodEl.textContent = first + ' ~ ' + last;
+          meta.appendChild(periodEl);
+        }
+
+        // 次の決算発表日
+        if (data.nextEarningsDate) {
+          const now = new Date();
+          const today = now.getFullYear() + '-' +
+            String(now.getMonth() + 1).padStart(2, '0') + '-' +
+            String(now.getDate()).padStart(2, '0');
+          const isPast = data.nextEarningsDate <= today;
+          const earningsEl = document.createElement('div');
+          earningsEl.className = 'card-earnings' + (isPast ? ' past' : '');
+          earningsEl.textContent = '次の決算発表: ' + data.nextEarningsDate;
+          meta.appendChild(earningsEl);
+        }
+      })
+      .catch(() => {});
+  });
+  </script>
 
 </body>
 </html>

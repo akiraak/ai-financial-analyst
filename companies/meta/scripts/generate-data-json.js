@@ -151,6 +151,7 @@ const data = {
   company: 'Meta Platforms',
   ticker: 'META',
   generatedAt: new Date().toISOString().split('T')[0],
+  nextEarningsDate: config.nextEarningsDate || null,
   quarters,
 };
 

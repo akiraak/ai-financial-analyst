@@ -1,7 +1,8 @@
 {
   "company": "NVIDIA",
   "ticker": "NVDA",
-  "generatedAt": "2026-02-20",
+  "generatedAt": "2026-02-22",
+  "nextEarningsDate": "2026-02-26",
   "quarters": [
     {
       "label": "FY2022 Q2",

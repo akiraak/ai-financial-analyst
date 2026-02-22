@@ -136,6 +136,7 @@ docs/                              # GitHub Pages公開ディレクトリ
 ### data.json の生成
 - 全JSONデータソースを統合して docs/<企業名>/data.json として出力する
 - 生成スクリプト: `companies/<企業名>/scripts/generate-data-json.js`
+- トップレベルに `nextEarningsDate` を含む（config.json から取得。トップページのカード表示に使用）
 
 ## ページ構成
 

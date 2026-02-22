@@ -142,6 +142,7 @@ const data = {
   company: 'Palantir Technologies',
   ticker: 'PLTR',
   generatedAt: new Date().toISOString().split('T')[0],
+  nextEarningsDate: config.nextEarningsDate || null,
   quarters,
 };
 

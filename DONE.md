@@ -80,3 +80,8 @@
   - quarter-detail.jsにrenderFinancialTable()を追加（旧ランディングページのコードを移植）
   - template.htmlに財務データセクション+セクションナビリンクを追加
   - 24行の財務項目（P/L・費用・利益率・株式指標）をカテゴリ別色分けで表示
+- [x] ヘッダーにサイト名を表示
+- [x] トップページ改善: 各企業カードに分析ページの生成済み期間を表示
+- [x] トップページ改善: 各企業カードに次の決算発表日を表示（過ぎていたらアクセントカラーで強調）
+  - config.json に nextEarningsDate を追加、generate-data-json.js で data.json に伝搬
+  - index.html で各社の data.json を fetch し動的表示

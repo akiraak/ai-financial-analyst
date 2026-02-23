@@ -1,0 +1,80 @@
+{
+  "FY2021": {
+    "Q1": {
+      "equityInvestments": 3103
+    },
+    "Q2": {
+      "equityInvestments": 3794
+    },
+    "Q3": {
+      "equityInvestments": 5395
+    },
+    "Q4": {
+      "equityInvestments": 5984
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "equityInvestments": 6393
+    },
+    "Q2": {
+      "equityInvestments": 6994
+    },
+    "Q3": {
+      "equityInvestments": 6907
+    },
+    "Q4": {
+      "equityInvestments": 6891
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "equityInvestments": 6839
+    },
+    "Q2": {
+      "equityInvestments": 7097
+    },
+    "Q3": {
+      "equityInvestments": 9415
+    },
+    "Q4": {
+      "equityInvestments": 9879
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "equityInvestments": 11423
+    },
+    "Q2": {
+      "equityInvestments": 13367
+    },
+    "Q3": {
+      "equityInvestments": 13565
+    },
+    "Q4": {
+      "equityInvestments": 13661
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "equityInvestments": 15162
+    },
+    "Q2": {
+      "equityInvestments": 14304
+    },
+    "Q3": {
+      "equityInvestments": 14357
+    },
+    "Q4": {
+      "equityInvestments": 13718
+    }
+  },
+  "FY2026": {
+    "Q1": {
+      "equityInvestments": 8982
+    },
+    "Q2": {
+      "equityInvestments": 20928
+    }
+  }
+}

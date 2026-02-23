@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft 四半期詳細</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <div class="site-name"><a href="../../../">AI Financial Analyst</a></div>
+      <h1>Microsoft <span class="ticker">MSFT</span></h1>
+      <div class="meta" id="headerMeta"></div>
+    </div>
+  </div>
+
+  <nav class="breadcrumb">
+    <div class="container">
+      <a href="../../../">HOME</a>
+      <span class="separator">/</span>
+      <a href="../../">Microsoft</a>
+      <span class="separator">/</span>
+      <span class="current" id="breadcrumbQuarter"></span>
+    </div>
+  </nav>
+
+  <!-- 四半期ナビ（前後移動） -->
+  <nav class="quarter-nav">
+    <div class="container">
+      <a href="#" id="prevLink" class="disabled">&lt; 前の四半期</a>
+      <span class="current" id="currentLabel"></span>
+      <a href="#" id="nextLink" class="disabled">次の四半期 &gt;</a>
+    </div>
+  </nav>
+
+  <!-- セクションナビ -->
+  <nav class="section-nav">
+    <div class="container">
+      <a href="#section-kpi">決算サマリー</a>
+      <a href="#section-financial-table">財務データ</a>
+      <a href="#section-filings">決算資料</a>
+    </div>
+  </nav>
+
+  <div class="container" id="mainContent">
+
+    <!-- Outlookバナー -->
+    <div class="outlook-banner" id="outlookBanner" style="display:none;">
+      この四半期はガイダンス（会社予想）です。開示されている項目のみ表示しています。
+    </div>
+
+    <!-- 決算サマリー（KPI + 解説） -->
+    <div class="section" id="section-kpi">
+      <h2 id="summaryTitle">決算サマリー</h2>
+      <div class="kpi-grid" id="kpiGrid"></div>
+      <div id="summaryContent"></div>
+    </div>
+
+    <div class="section">
+      <h2>P/L推移</h2>
+      <div class="chart-wrapper"><canvas id="plChart"></canvas></div>
+      <div class="chart-description" id="plChart-desc"></div>
+    </div>
+
+    <div class="section">
+      <h2>利益率推移</h2>
+      <div class="chart-wrapper"><canvas id="marginChart"></canvas></div>
+      <div class="chart-description" id="marginChart-desc"></div>
+    </div>
+
+    <div class="section">
+      <h2>費用構造</h2>
+      <div class="chart-wrapper"><canvas id="costChart"></canvas></div>
+      <div class="chart-description" id="costChart-desc"></div>
+    </div>
+
+    <div class="section">
+      <h2>B/S概要</h2>
+      <div class="chart-wrapper"><canvas id="balanceSheetChart"></canvas></div>
+      <div class="chart-description" id="balanceSheetChart-desc"></div>
+    </div>
+
+    <div class="section">
+      <h2>キャッシュフロー</h2>
+      <div class="chart-wrapper"><canvas id="cashFlowChart"></canvas></div>
+      <div class="chart-description" id="cashFlowChart-desc"></div>
+    </div>
+
+    <div class="section">
+      <h2>株価 & PER</h2>
+      <div class="chart-wrapper"><canvas id="pricePERChart"></canvas></div>
+      <div class="chart-description" id="pricePERChart-desc"></div>
+    </div>
+
+    <div class="section">
+      <h2>バリュエーション指標</h2>
+      <div class="chart-wrapper"><canvas id="valuationChart"></canvas></div>
+      <div class="chart-description" id="valuationChart-desc"></div>
+    </div>
+
+    <div class="section">
+      <h2>セグメント区分について</h2>
+      <div class="chart-description">
+        <p><span class="label">3事業セグメント</span>（プレスリリース・10-Q/10-Kベース）: Productivity and Business Processes（M365, LinkedIn, Dynamics）/ Intelligent Cloud（Azure, Server, Enterprise Services）/ More Personal Computing（Windows, Gaming, Search）。</p>
+        <p><span class="label">Microsoftのセグメント構成:</span> 全セグメントで売上高と営業利益が開示されている。なお FY2025（2024年7月期）に一部製品のセグメント間移管が行われた。</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>セグメント別売上</h2>
+      <div class="chart-wrapper"><canvas id="segmentRevenueChart"></canvas></div>
+      <div class="chart-description" id="segmentRevenueChart-desc"></div>
+    </div>
+
+    <div class="section">
+      <h2>セグメント構成比</h2>
+      <div class="chart-wrapper"><canvas id="segmentCompositionChart"></canvas></div>
+      <div class="chart-description" id="segmentCompositionChart-desc"></div>
+    </div>
+
+    <div class="section">
+      <h2>セグメント営業利益</h2>
+      <div class="chart-wrapper"><canvas id="segmentProfitChart"></canvas></div>
+      <div class="chart-description" id="segmentProfitChart-desc"></div>
+    </div>
+
+    <div class="section">
+      <h2>セグメント営業利益率</h2>
+      <div class="chart-wrapper"><canvas id="segmentMarginChart"></canvas></div>
+      <div class="chart-description" id="segmentMarginChart-desc"></div>
+    </div>
+
+    <div class="section">
+      <h2>投資ポートフォリオ</h2>
+      <div class="chart-wrapper"><canvas id="investmentChart"></canvas></div>
+      <div class="chart-description" id="investmentChart-desc"></div>
+    </div>
+
+    <!-- 投資コミットメント（analysis-text.jsonから動的挿入） -->
+    <div class="section" id="investmentCommitmentsSection" style="display:none;">
+      <h2 id="investmentCommitmentsTitle"></h2>
+      <div id="investmentCommitmentsContent"></div>
+    </div>
+
+    <!-- 財務データテーブル -->
+    <div class="section" id="section-financial-table">
+      <h2>財務データ</h2>
+      <div class="financial-table-wrapper">
+        <table id="financialTable" class="financial-table"></table>
+      </div>
+    </div>
+
+    <!-- 決算資料リンク -->
+    <div class="section" id="section-filings">
+      <h2>決算資料</h2>
+      <div id="filingsContainer"></div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p><a href="../">四半期一覧</a> | <a href="../../">ダッシュボード</a> | <a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a></p>
+  </div>
+
+  <script src="../../../js/chart-builder.js"></script>
+  <script src="../../../js/quarter-detail.js"></script>
+</body>
+</html>

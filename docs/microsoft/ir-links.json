@@ -1,0 +1,454 @@
+{
+  "FY2021": [
+    {
+      "quarter": "Fourth Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521225746/d200100dex991.htm",
+          "description": "Press Release of Fourth Quarter 2021, SEC filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021039151/msft-10k_20210630.htm",
+          "description": "10-K of Fourth Quarter 2021, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2021-Q4/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2021 Q4"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521134213/d179564dex991.htm",
+          "description": "Press Release of Third Quarter 2021, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021021704/msft-10q_20210331.htm",
+          "description": "10-Q of Third Quarter 2021, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2021-Q3/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2021 Q3"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521017683/d65802dex991.htm",
+          "description": "Press Release of Second Quarter 2021, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021004440/msft-10q_20201231.htm",
+          "description": "10-Q of Second Quarter 2021, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2021-Q2/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2021 Q2"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312520278410/d10535dex991.htm",
+          "description": "Press Release of First Quarter 2021, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459020047996/msft-10q_20200930.htm",
+          "description": "10-Q of First Quarter 2021, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2021-Q1/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2021 Q1"
+        }
+      ]
+    }
+  ],
+  "FY2022": [
+    {
+      "quarter": "Fourth Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522202034/d372382dex991.htm",
+          "description": "Press Release of Fourth Quarter 2022, SEC filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022026876/msft-10k_20220630.htm",
+          "description": "10-K of Fourth Quarter 2022, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2022-Q4/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2022 Q4"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522120207/d328712dex991.htm",
+          "description": "Press Release of Third Quarter 2022, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022015784/msft-10q_20220331.htm",
+          "description": "10-Q of Third Quarter 2022, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2022-Q3/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2022 Q3"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522017041/d299919dex991.htm",
+          "description": "Press Release of Second Quarter 2022, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022002580/msft-10q_20211231.htm",
+          "description": "10-Q of Second Quarter 2022, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2022-Q2/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2022 Q2"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521307941/d239488dex991.htm",
+          "description": "Press Release of First Quarter 2022, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021052232/msft-10q_20210930.htm",
+          "description": "10-Q of First Quarter 2022, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2022-Q1/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2022 Q1"
+        }
+      ]
+    }
+  ],
+  "FY2023": [
+    {
+      "quarter": "Fourth Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023034400/msft-ex99_1.htm",
+          "description": "Press Release of Fourth Quarter 2023, SEC filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023035122/msft-20230630.htm",
+          "description": "10-K of Fourth Quarter 2023, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2023-Q4/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2023 Q4"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312523115280/d321368dex991.htm",
+          "description": "Press Release of Third Quarter 2023, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023014423/msft-20230331.htm",
+          "description": "10-Q of Third Quarter 2023, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2023-Q3/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2023 Q3"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312523014230/d406070dex991.htm",
+          "description": "Press Release of Second Quarter 2023, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023003772/msft-20221231.htm",
+          "description": "10-Q of Second Quarter 2023, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2023-Q2/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2023 Q2"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522268356/d361432dex991.htm",
+          "description": "Press Release of First Quarter 2023, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017022022101/msft-20220930.htm",
+          "description": "10-Q of First Quarter 2023, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2023-Q1/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2023 Q1"
+        }
+      ]
+    }
+  ],
+  "FY2024": [
+    {
+      "quarter": "Fourth Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087835/msft-ex99_1.htm",
+          "description": "Press Release of Fourth Quarter 2024, SEC filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+          "description": "10-K of Fourth Quarter 2024, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2024-Q4/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2024 Q4"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024048268/msft-ex99_1.htm",
+          "description": "Press Release of Third Quarter 2024, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024050616/msft-20240331.htm",
+          "description": "10-Q of Third Quarter 2024, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2024-Q3/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2024 Q3"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024008809/msft-ex99_1.htm",
+          "description": "Press Release of Second Quarter 2024, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024011995/msft-20231231.htm",
+          "description": "10-Q of Second Quarter 2024, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2024-Q2/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2024 Q2"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023054848/msft-ex99_1.htm",
+          "description": "Press Release of First Quarter 2024, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023052545/msft-20230930.htm",
+          "description": "10-Q of First Quarter 2024, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2024-Q1/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2024 Q1"
+        }
+      ]
+    }
+  ],
+  "FY2025": [
+    {
+      "quarter": "Fourth Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100226/msft-ex99_1.htm",
+          "description": "Press Release of Fourth Quarter 2025, SEC filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025088076/msft-20250630.htm",
+          "description": "10-K of Fourth Quarter 2025, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q4/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2025 Q4"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061032/msft-ex99_1.htm",
+          "description": "Press Release of Third Quarter 2025, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025051073/msft-20250331.htm",
+          "description": "10-Q of Third Quarter 2025, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q3/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2025 Q3"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025010484/msft-ex99_1.htm",
+          "description": "Press Release of Second Quarter 2025, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025015405/msft-20241231.htm",
+          "description": "10-Q of Second Quarter 2025, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q2/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2025 Q2"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024118955/msft-ex99_1.htm",
+          "description": "Press Release of First Quarter 2025, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024120234/msft-20240930.htm",
+          "description": "10-Q of First Quarter 2025, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q1/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2025 Q1"
+        }
+      ]
+    }
+  ],
+  "FY2026": [
+    {
+      "quarter": "Second Quarter 2026",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027198/msft-ex99_1.htm",
+          "description": "Press Release of Second Quarter 2026, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017026014024/msft-20251231.htm",
+          "description": "10-Q of Second Quarter 2026, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q2/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2026 Q2"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2026",
+      "documents": [
+        {
+          "name": "Press Release (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256310/msft-ex99_1.htm",
+          "description": "Press Release of First Quarter 2026, SEC filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025119764/msft-20250930.htm",
+          "description": "10-Q of First Quarter 2026, SEC filing"
+        },
+        {
+          "name": "Microsoft IR",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q1/press-release-webcast",
+          "description": "Microsoft Investor Relations page for FY2026 Q1"
+        }
+      ]
+    }
+  ]
+}

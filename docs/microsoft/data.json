@@ -1,0 +1,1218 @@
+{
+  "company": "Microsoft",
+  "ticker": "MSFT",
+  "generatedAt": "2026-02-23",
+  "nextEarningsDate": "2026-04-29",
+  "quarters": [
+    {
+      "label": "FY2021 Q1",
+      "fy": 2021,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 37154,
+      "costOfRevenue": 11002,
+      "grossProfit": 26152,
+      "researchAndDevelopment": 4926,
+      "sga": 5350,
+      "totalOperatingExpenses": 10276,
+      "operatingIncome": 15876,
+      "nonOperatingIncome": 248,
+      "netIncome": 13893,
+      "eps": 1.82,
+      "price": 210.33,
+      "priceDate": "2020-09-30",
+      "sharesDiluted": 7637,
+      "segments": {
+        "productivityAndBusiness": 12319,
+        "intelligentCloud": 12986,
+        "morePersonalComputing": 11849
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 17205,
+        "totalAssets": 301001,
+        "totalLiabilities": 177609,
+        "totalEquity": 123392,
+        "totalDebt": 63552
+      },
+      "cashFlow": {
+        "operatingCF": 19335,
+        "investingCF": -5371,
+        "financingCF": -10289,
+        "freeCashFlow": 14428
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 12319,
+          "operatingIncome": 5706
+        },
+        "intelligentCloud": {
+          "revenue": 12986,
+          "operatingIncome": 5422
+        },
+        "morePersonalComputing": {
+          "revenue": 11849,
+          "operatingIncome": 4748
+        }
+      },
+      "investments": {
+        "equityInvestments": 3103
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q2",
+      "fy": 2021,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 43076,
+      "costOfRevenue": 14194,
+      "grossProfit": 28882,
+      "researchAndDevelopment": 4899,
+      "sga": 6086,
+      "totalOperatingExpenses": 10985,
+      "operatingIncome": 17897,
+      "nonOperatingIncome": 440,
+      "netIncome": 15463,
+      "eps": 2.03,
+      "price": 222.42,
+      "priceDate": "2020-12-31",
+      "sharesDiluted": 7616,
+      "segments": {
+        "productivityAndBusiness": 13353,
+        "intelligentCloud": 14601,
+        "morePersonalComputing": 15122
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 14432,
+        "totalAssets": 304137,
+        "totalLiabilities": 173901,
+        "totalEquity": 130236,
+        "totalDebt": 60523
+      },
+      "cashFlow": {
+        "operatingCF": 12516,
+        "investingCF": -1669,
+        "financingCF": -13634,
+        "freeCashFlow": 8342
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 13353,
+          "operatingIncome": 6181
+        },
+        "intelligentCloud": {
+          "revenue": 14601,
+          "operatingIncome": 6492
+        },
+        "morePersonalComputing": {
+          "revenue": 15122,
+          "operatingIncome": 5224
+        }
+      },
+      "investments": {
+        "equityInvestments": 3794
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q3",
+      "fy": 2021,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 41706,
+      "costOfRevenue": 13045,
+      "grossProfit": 28661,
+      "researchAndDevelopment": 5204,
+      "sga": 6409,
+      "totalOperatingExpenses": 11613,
+      "operatingIncome": 17048,
+      "nonOperatingIncome": 188,
+      "netIncome": 15457,
+      "eps": 2.03,
+      "price": 235.77,
+      "priceDate": "2021-03-31",
+      "sharesDiluted": 7597,
+      "segments": {
+        "productivityAndBusiness": 13552,
+        "intelligentCloud": 15118,
+        "morePersonalComputing": 13036
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 13702,
+        "totalAssets": 308879,
+        "totalLiabilities": 174374,
+        "totalEquity": 134505,
+        "totalDebt": 58058
+      },
+      "cashFlow": {
+        "operatingCF": 22179,
+        "investingCF": null,
+        "financingCF": -13192,
+        "freeCashFlow": 17090
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 13552,
+          "operatingIncome": 6029
+        },
+        "intelligentCloud": {
+          "revenue": 15118,
+          "operatingIncome": 6425
+        },
+        "morePersonalComputing": {
+          "revenue": 13036,
+          "operatingIncome": 4594
+        }
+      },
+      "investments": {
+        "equityInvestments": 5395
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q4",
+      "fy": 2021,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 46152,
+      "costOfRevenue": 13991,
+      "grossProfit": 32161,
+      "researchAndDevelopment": 5687,
+      "sga": 7379,
+      "totalOperatingExpenses": 13066,
+      "operatingIncome": 19095,
+      "nonOperatingIncome": 310,
+      "netIncome": 16458,
+      "eps": 2.17,
+      "price": 270.9,
+      "priceDate": "2021-06-30",
+      "sharesDiluted": 7581,
+      "segments": {
+        "productivityAndBusiness": 14691,
+        "intelligentCloud": 17375,
+        "morePersonalComputing": 14086
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 14224,
+        "totalAssets": 333779,
+        "totalLiabilities": 191791,
+        "totalEquity": 141988,
+        "totalDebt": 58146
+      },
+      "cashFlow": {
+        "operatingCF": 22710,
+        "investingCF": -10853,
+        "financingCF": -11371,
+        "freeCashFlow": 16258
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 14691,
+          "operatingIncome": 6435
+        },
+        "intelligentCloud": {
+          "revenue": 17375,
+          "operatingIncome": 7787
+        },
+        "morePersonalComputing": {
+          "revenue": 14086,
+          "operatingIncome": 4873
+        }
+      },
+      "investments": {
+        "equityInvestments": 5984
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q1",
+      "fy": 2022,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 45317,
+      "costOfRevenue": 13646,
+      "grossProfit": 31671,
+      "researchAndDevelopment": 5599,
+      "sga": 5834,
+      "totalOperatingExpenses": 11433,
+      "operatingIncome": 20238,
+      "nonOperatingIncome": 286,
+      "netIncome": 20505,
+      "eps": 2.71,
+      "price": 281.92,
+      "priceDate": "2021-09-30",
+      "sharesDiluted": 7567,
+      "segments": {
+        "productivityAndBusiness": 15039,
+        "intelligentCloud": 16964,
+        "morePersonalComputing": 13314
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 19165,
+        "totalAssets": 335418,
+        "totalLiabilities": 183440,
+        "totalEquity": 151978,
+        "totalDebt": 53288
+      },
+      "cashFlow": {
+        "operatingCF": 24540,
+        "investingCF": -3250,
+        "financingCF": -16276,
+        "freeCashFlow": 18730
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 15039,
+          "operatingIncome": 7581
+        },
+        "intelligentCloud": {
+          "revenue": 16964,
+          "operatingIncome": 7562
+        },
+        "morePersonalComputing": {
+          "revenue": 13314,
+          "operatingIncome": 5095
+        }
+      },
+      "investments": {
+        "equityInvestments": 6393
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q2",
+      "fy": 2022,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 51728,
+      "costOfRevenue": 16960,
+      "grossProfit": 34768,
+      "researchAndDevelopment": 5758,
+      "sga": 6763,
+      "totalOperatingExpenses": 12521,
+      "operatingIncome": 22247,
+      "nonOperatingIncome": 268,
+      "netIncome": 18765,
+      "eps": 2.48,
+      "price": 336.32,
+      "priceDate": "2021-12-31",
+      "sharesDiluted": 7555,
+      "segments": {
+        "productivityAndBusiness": 15936,
+        "intelligentCloud": 18327,
+        "morePersonalComputing": 17465
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 20604,
+        "totalAssets": 340389,
+        "totalLiabilities": 180379,
+        "totalEquity": 160010,
+        "totalDebt": 53258
+      },
+      "cashFlow": {
+        "operatingCF": 14480,
+        "investingCF": -1161,
+        "financingCF": -11986,
+        "freeCashFlow": 8615
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 15936,
+          "operatingIncome": 7688
+        },
+        "intelligentCloud": {
+          "revenue": 18327,
+          "operatingIncome": 8197
+        },
+        "morePersonalComputing": {
+          "revenue": 17465,
+          "operatingIncome": 6362
+        }
+      },
+      "investments": {
+        "equityInvestments": 6994
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q3",
+      "fy": 2022,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 49360,
+      "costOfRevenue": 15615,
+      "grossProfit": 33745,
+      "researchAndDevelopment": 6306,
+      "sga": 7075,
+      "totalOperatingExpenses": 13381,
+      "operatingIncome": 20364,
+      "nonOperatingIncome": -174,
+      "netIncome": 16728,
+      "eps": 2.22,
+      "price": 308.31,
+      "priceDate": "2022-03-31",
+      "sharesDiluted": 7534,
+      "segments": {
+        "productivityAndBusiness": 15789,
+        "intelligentCloud": 19051,
+        "morePersonalComputing": 14520
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 12498,
+        "totalAssets": 344607,
+        "totalLiabilities": 181683,
+        "totalEquity": 162924,
+        "totalDebt": 49926
+      },
+      "cashFlow": {
+        "operatingCF": 25386,
+        "investingCF": -16171,
+        "financingCF": -17345,
+        "freeCashFlow": 20046
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 15789,
+          "operatingIncome": 7184
+        },
+        "intelligentCloud": {
+          "revenue": 19051,
+          "operatingIncome": 8281
+        },
+        "morePersonalComputing": {
+          "revenue": 14520,
+          "operatingIncome": 4899
+        }
+      },
+      "investments": {
+        "equityInvestments": 6907
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q4",
+      "fy": 2022,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 51865,
+      "costOfRevenue": 16429,
+      "grossProfit": 35436,
+      "researchAndDevelopment": 6849,
+      "sga": 8053,
+      "totalOperatingExpenses": 14902,
+      "operatingIncome": 20534,
+      "nonOperatingIncome": -47,
+      "netIncome": 16740,
+      "eps": 2.23,
+      "price": 256.83,
+      "priceDate": "2022-06-30",
+      "sharesDiluted": 7506,
+      "segments": {
+        "productivityAndBusiness": 16600,
+        "intelligentCloud": 20909,
+        "morePersonalComputing": 14356
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 13931,
+        "totalAssets": 364840,
+        "totalLiabilities": 198298,
+        "totalEquity": 166542,
+        "totalDebt": 49781
+      },
+      "cashFlow": {
+        "operatingCF": 24629,
+        "investingCF": -9729,
+        "financingCF": -13269,
+        "freeCashFlow": 17758
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 16600,
+          "operatingIncome": 7234
+        },
+        "intelligentCloud": {
+          "revenue": 20909,
+          "operatingIncome": 8681
+        },
+        "morePersonalComputing": {
+          "revenue": 14356,
+          "operatingIncome": 4619
+        }
+      },
+      "investments": {
+        "equityInvestments": 6891
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q1",
+      "fy": 2023,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 50122,
+      "costOfRevenue": 15452,
+      "grossProfit": 34670,
+      "researchAndDevelopment": 6628,
+      "sga": 6524,
+      "totalOperatingExpenses": 13152,
+      "operatingIncome": 21518,
+      "nonOperatingIncome": 54,
+      "netIncome": 17556,
+      "eps": 2.35,
+      "price": 232.9,
+      "priceDate": "2022-09-30",
+      "sharesDiluted": 7485,
+      "segments": {
+        "productivityAndBusiness": 16465,
+        "intelligentCloud": 20325,
+        "morePersonalComputing": 13332
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 22884,
+        "totalAssets": 359784,
+        "totalLiabilities": 186218,
+        "totalEquity": 173566,
+        "totalDebt": 48622
+      },
+      "cashFlow": {
+        "operatingCF": 23198,
+        "investingCF": -3132,
+        "financingCF": -10883,
+        "freeCashFlow": 16915
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 16465,
+          "operatingIncome": 8323
+        },
+        "intelligentCloud": {
+          "revenue": 20325,
+          "operatingIncome": 8978
+        },
+        "morePersonalComputing": {
+          "revenue": 13332,
+          "operatingIncome": 4217
+        }
+      },
+      "investments": {
+        "equityInvestments": 6839
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q2",
+      "fy": 2023,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 52747,
+      "costOfRevenue": 17488,
+      "grossProfit": 35259,
+      "researchAndDevelopment": 6844,
+      "sga": 8016,
+      "totalOperatingExpenses": 14860,
+      "operatingIncome": 20399,
+      "nonOperatingIncome": -60,
+      "netIncome": 16425,
+      "eps": 2.2,
+      "price": 239.82,
+      "priceDate": "2022-12-30",
+      "sharesDiluted": 7473,
+      "segments": {
+        "productivityAndBusiness": 17002,
+        "intelligentCloud": 21508,
+        "morePersonalComputing": 14237
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 15646,
+        "totalAssets": 364552,
+        "totalLiabilities": 181416,
+        "totalEquity": 183136,
+        "totalDebt": 48116
+      },
+      "cashFlow": {
+        "operatingCF": 11173,
+        "investingCF": -7150,
+        "financingCF": -11349,
+        "freeCashFlow": 4899
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 17002,
+          "operatingIncome": 8175
+        },
+        "intelligentCloud": {
+          "revenue": 21508,
+          "operatingIncome": 8904
+        },
+        "morePersonalComputing": {
+          "revenue": 14237,
+          "operatingIncome": 3320
+        }
+      },
+      "investments": {
+        "equityInvestments": 7097
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q3",
+      "fy": 2023,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 52857,
+      "costOfRevenue": 16128,
+      "grossProfit": 36729,
+      "researchAndDevelopment": 6984,
+      "sga": 7393,
+      "totalOperatingExpenses": 14377,
+      "operatingIncome": 22352,
+      "nonOperatingIncome": 321,
+      "netIncome": 18299,
+      "eps": 2.45,
+      "price": 288.3,
+      "priceDate": "2023-03-31",
+      "sharesDiluted": 7464,
+      "segments": {
+        "productivityAndBusiness": 17516,
+        "intelligentCloud": 22081,
+        "morePersonalComputing": 13260
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 26562,
+        "totalAssets": 380088,
+        "totalLiabilities": 185405,
+        "totalEquity": 194683,
+        "totalDebt": 48210
+      },
+      "cashFlow": {
+        "operatingCF": 24441,
+        "investingCF": -3264,
+        "financingCF": -10290,
+        "freeCashFlow": 17834
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 17516,
+          "operatingIncome": 8639
+        },
+        "intelligentCloud": {
+          "revenue": 22081,
+          "operatingIncome": 9476
+        },
+        "morePersonalComputing": {
+          "revenue": 13260,
+          "operatingIncome": 4237
+        }
+      },
+      "investments": {
+        "equityInvestments": 9415
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q4",
+      "fy": 2023,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 56189,
+      "costOfRevenue": 16795,
+      "grossProfit": 39394,
+      "researchAndDevelopment": 6739,
+      "sga": 8401,
+      "totalOperatingExpenses": 15140,
+      "operatingIncome": 24254,
+      "nonOperatingIncome": 473,
+      "netIncome": 20081,
+      "eps": 2.69,
+      "price": 340.54,
+      "priceDate": "2023-06-30",
+      "sharesDiluted": 7467,
+      "segments": {
+        "productivityAndBusiness": 18291,
+        "intelligentCloud": 23993,
+        "morePersonalComputing": 13905
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 34704,
+        "totalAssets": 411976,
+        "totalLiabilities": 205753,
+        "totalEquity": 206223,
+        "totalDebt": 47237
+      },
+      "cashFlow": {
+        "operatingCF": 28770,
+        "investingCF": -9134,
+        "financingCF": -11413,
+        "freeCashFlow": 19827
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 18291,
+          "operatingIncome": 9052
+        },
+        "intelligentCloud": {
+          "revenue": 23993,
+          "operatingIncome": 10526
+        },
+        "morePersonalComputing": {
+          "revenue": 13905,
+          "operatingIncome": 4676
+        }
+      },
+      "investments": {
+        "equityInvestments": 9879
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2024 Q1",
+      "fy": 2024,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 56517,
+      "costOfRevenue": 16302,
+      "grossProfit": 40215,
+      "researchAndDevelopment": 6659,
+      "sga": 6661,
+      "totalOperatingExpenses": 13320,
+      "operatingIncome": 26895,
+      "nonOperatingIncome": 389,
+      "netIncome": 22291,
+      "eps": 2.99,
+      "price": 315.75,
+      "priceDate": "2023-09-29",
+      "sharesDiluted": 7462,
+      "segments": {
+        "productivityAndBusiness": 18592,
+        "intelligentCloud": 24259,
+        "morePersonalComputing": 13666
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 80452,
+        "totalAssets": 445785,
+        "totalLiabilities": 225071,
+        "totalEquity": 220714,
+        "totalDebt": 67754
+      },
+      "cashFlow": {
+        "operatingCF": 30583,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 20666
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 18592,
+          "operatingIncome": 9970
+        },
+        "intelligentCloud": {
+          "revenue": 24259,
+          "operatingIncome": 11751
+        },
+        "morePersonalComputing": {
+          "revenue": 13666,
+          "operatingIncome": 5174
+        }
+      },
+      "investments": {
+        "equityInvestments": 11423
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2024 Q2",
+      "fy": 2024,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 62020,
+      "costOfRevenue": 19623,
+      "grossProfit": 42397,
+      "researchAndDevelopment": 7142,
+      "sga": 8223,
+      "totalOperatingExpenses": 15365,
+      "operatingIncome": 27032,
+      "nonOperatingIncome": -506,
+      "netIncome": 21870,
+      "eps": 2.93,
+      "price": 376.04,
+      "priceDate": "2023-12-29",
+      "sharesDiluted": 7468,
+      "segments": {
+        "productivityAndBusiness": 19249,
+        "intelligentCloud": 25880,
+        "morePersonalComputing": 16891
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 17305,
+        "totalAssets": 470558,
+        "totalLiabilities": 232290,
+        "totalEquity": 238268,
+        "totalDebt": 71969
+      },
+      "cashFlow": {
+        "operatingCF": 18853,
+        "investingCF": -71925,
+        "financingCF": null,
+        "freeCashFlow": 9118
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 19249,
+          "operatingIncome": 10284
+        },
+        "intelligentCloud": {
+          "revenue": 25880,
+          "operatingIncome": 12461
+        },
+        "morePersonalComputing": {
+          "revenue": 16891,
+          "operatingIncome": 4287
+        }
+      },
+      "investments": {
+        "equityInvestments": 13367
+      },
+      "hasPage": false
+    },
+    {
+      "label": "FY2024 Q3",
+      "fy": 2024,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 61858,
+      "costOfRevenue": 18505,
+      "grossProfit": 43353,
+      "researchAndDevelopment": 7653,
+      "sga": 8119,
+      "totalOperatingExpenses": 15772,
+      "operatingIncome": 27581,
+      "nonOperatingIncome": -854,
+      "netIncome": 21939,
+      "eps": 2.94,
+      "price": 420.72,
+      "priceDate": "2024-03-28",
+      "sharesDiluted": 7472,
+      "segments": {
+        "productivityAndBusiness": 19570,
+        "intelligentCloud": 26708,
+        "morePersonalComputing": 15580
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 19634,
+        "totalAssets": 484275,
+        "totalLiabilities": 231123,
+        "totalEquity": 253152,
+        "totalDebt": 63193
+      },
+      "cashFlow": {
+        "operatingCF": 31917,
+        "investingCF": -10700,
+        "financingCF": -18808,
+        "freeCashFlow": 20965
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 19570,
+          "operatingIncome": 10143
+        },
+        "intelligentCloud": {
+          "revenue": 26708,
+          "operatingIncome": 12513
+        },
+        "morePersonalComputing": {
+          "revenue": 15580,
+          "operatingIncome": 4925
+        }
+      },
+      "investments": {
+        "equityInvestments": 13565
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2024 Q4",
+      "fy": 2024,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 64727,
+      "costOfRevenue": 19684,
+      "grossProfit": 45043,
+      "researchAndDevelopment": 8056,
+      "sga": 9062,
+      "totalOperatingExpenses": 17118,
+      "operatingIncome": 27925,
+      "nonOperatingIncome": -675,
+      "netIncome": 22036,
+      "eps": 2.95,
+      "price": 446.95,
+      "priceDate": "2024-06-28",
+      "sharesDiluted": 7472,
+      "segments": {
+        "productivityAndBusiness": 20317,
+        "intelligentCloud": 28515,
+        "morePersonalComputing": 15895
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 18315,
+        "totalAssets": 512163,
+        "totalLiabilities": 243686,
+        "totalEquity": 268477,
+        "totalDebt": 49381
+      },
+      "cashFlow": {
+        "operatingCF": 37195,
+        "investingCF": -14848,
+        "financingCF": -23563,
+        "freeCashFlow": 23322
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 20317,
+          "operatingIncome": 10143
+        },
+        "intelligentCloud": {
+          "revenue": 28515,
+          "operatingIncome": 12859
+        },
+        "morePersonalComputing": {
+          "revenue": 15895,
+          "operatingIncome": 4923
+        }
+      },
+      "investments": {
+        "equityInvestments": 13661
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q1",
+      "fy": 2025,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 65585,
+      "costOfRevenue": 20099,
+      "grossProfit": 45486,
+      "researchAndDevelopment": 7544,
+      "sga": 7390,
+      "totalOperatingExpenses": 14934,
+      "operatingIncome": 30552,
+      "nonOperatingIncome": -283,
+      "netIncome": 24667,
+      "eps": 3.3,
+      "price": 430.3,
+      "priceDate": "2024-09-30",
+      "sharesDiluted": 7470,
+      "segments": {
+        "productivityAndBusiness": 28317,
+        "intelligentCloud": 24092,
+        "morePersonalComputing": 13176
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 20840,
+        "totalAssets": 523013,
+        "totalLiabilities": 235290,
+        "totalEquity": 287723,
+        "totalDebt": 42868
+      },
+      "cashFlow": {
+        "operatingCF": 34180,
+        "investingCF": null,
+        "financingCF": null,
+        "freeCashFlow": 19257
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 28317,
+          "operatingIncome": 16516
+        },
+        "intelligentCloud": {
+          "revenue": 24092,
+          "operatingIncome": 10503
+        },
+        "morePersonalComputing": {
+          "revenue": 13176,
+          "operatingIncome": 3533
+        }
+      },
+      "investments": {
+        "equityInvestments": 15162
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q2",
+      "fy": 2025,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 69632,
+      "costOfRevenue": 21799,
+      "grossProfit": 47833,
+      "researchAndDevelopment": 7917,
+      "sga": 8263,
+      "totalOperatingExpenses": 16180,
+      "operatingIncome": 31653,
+      "nonOperatingIncome": -2288,
+      "netIncome": 24108,
+      "eps": 3.23,
+      "price": 421.5,
+      "priceDate": "2024-12-31",
+      "sharesDiluted": 7468,
+      "segments": {
+        "productivityAndBusiness": 29437,
+        "intelligentCloud": 25544,
+        "morePersonalComputing": 14651
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 17482,
+        "totalAssets": 533898,
+        "totalLiabilities": 231203,
+        "totalEquity": 302695,
+        "totalDebt": 39722
+      },
+      "cashFlow": {
+        "operatingCF": 22291,
+        "investingCF": -14112,
+        "financingCF": null,
+        "freeCashFlow": 6487
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 29437,
+          "operatingIncome": 16885
+        },
+        "intelligentCloud": {
+          "revenue": 25544,
+          "operatingIncome": 10851
+        },
+        "morePersonalComputing": {
+          "revenue": 14651,
+          "operatingIncome": 3917
+        }
+      },
+      "investments": {
+        "equityInvestments": 14304
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q3",
+      "fy": 2025,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 70066,
+      "costOfRevenue": 21919,
+      "grossProfit": 48147,
+      "researchAndDevelopment": 8198,
+      "sga": 7949,
+      "totalOperatingExpenses": 16147,
+      "operatingIncome": 32000,
+      "nonOperatingIncome": -623,
+      "netIncome": 25824,
+      "eps": 3.46,
+      "price": 375.39,
+      "priceDate": "2025-03-31",
+      "sharesDiluted": 7461,
+      "segments": {
+        "productivityAndBusiness": 29944,
+        "intelligentCloud": 26751,
+        "morePersonalComputing": 13371
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 28828,
+        "totalAssets": 562624,
+        "totalLiabilities": 240733,
+        "totalEquity": 321891,
+        "totalDebt": 39882
+      },
+      "cashFlow": {
+        "operatingCF": 37044,
+        "investingCF": -12714,
+        "financingCF": -13036,
+        "freeCashFlow": 20299
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 29944,
+          "operatingIncome": 17379
+        },
+        "intelligentCloud": {
+          "revenue": 26751,
+          "operatingIncome": 11095
+        },
+        "morePersonalComputing": {
+          "revenue": 13371,
+          "operatingIncome": 3526
+        }
+      },
+      "investments": {
+        "equityInvestments": 14357
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2025 Q4",
+      "fy": 2025,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 76441,
+      "costOfRevenue": 24014,
+      "grossProfit": 52427,
+      "researchAndDevelopment": 8829,
+      "sga": 9275,
+      "totalOperatingExpenses": 18104,
+      "operatingIncome": 34323,
+      "nonOperatingIncome": -1707,
+      "netIncome": 27233,
+      "eps": 3.65,
+      "price": 497.41,
+      "priceDate": "2025-06-30",
+      "sharesDiluted": 7461,
+      "segments": {
+        "productivityAndBusiness": 33112,
+        "intelligentCloud": 29878,
+        "morePersonalComputing": 13451
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 30242,
+        "totalAssets": 619003,
+        "totalLiabilities": 275524,
+        "totalEquity": 343479,
+        "totalDebt": 40152
+      },
+      "cashFlow": {
+        "operatingCF": 42647,
+        "investingCF": -30572,
+        "financingCF": -10844,
+        "freeCashFlow": 25568
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 33112,
+          "operatingIncome": 18993
+        },
+        "intelligentCloud": {
+          "revenue": 29878,
+          "operatingIncome": 12140
+        },
+        "morePersonalComputing": {
+          "revenue": 13451,
+          "operatingIncome": 3190
+        }
+      },
+      "investments": {
+        "equityInvestments": 13718
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2026 Q1",
+      "fy": 2026,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 77673,
+      "costOfRevenue": 24043,
+      "grossProfit": 53630,
+      "researchAndDevelopment": 8146,
+      "sga": 7523,
+      "totalOperatingExpenses": 15669,
+      "operatingIncome": 37961,
+      "nonOperatingIncome": -3660,
+      "netIncome": 27747,
+      "eps": 3.72,
+      "price": 517.95,
+      "priceDate": "2025-09-30",
+      "sharesDiluted": 7466,
+      "segments": {
+        "productivityAndBusiness": 33020,
+        "intelligentCloud": 30897,
+        "morePersonalComputing": 13756
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 28849,
+        "totalAssets": 636351,
+        "totalLiabilities": 273275,
+        "totalEquity": 363076,
+        "totalDebt": 43208
+      },
+      "cashFlow": {
+        "operatingCF": 45057,
+        "investingCF": -34559,
+        "financingCF": -11799,
+        "freeCashFlow": 25663
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 33020,
+          "operatingIncome": 20407
+        },
+        "intelligentCloud": {
+          "revenue": 30897,
+          "operatingIncome": 13391
+        },
+        "morePersonalComputing": {
+          "revenue": 13756,
+          "operatingIncome": 4163
+        }
+      },
+      "investments": {
+        "equityInvestments": 8982
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2026 Q2",
+      "fy": 2026,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 81273,
+      "costOfRevenue": 25978,
+      "grossProfit": 55295,
+      "researchAndDevelopment": 8504,
+      "sga": 8516,
+      "totalOperatingExpenses": 17020,
+      "operatingIncome": 38275,
+      "nonOperatingIncome": 9971,
+      "netIncome": 38458,
+      "eps": 5.16,
+      "price": 483.62,
+      "priceDate": "2025-12-31",
+      "sharesDiluted": 7460,
+      "segments": {
+        "productivityAndBusiness": 34116,
+        "intelligentCloud": 32907,
+        "morePersonalComputing": 14250
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 24296,
+        "totalAssets": 665302,
+        "totalLiabilities": 274427,
+        "totalEquity": 390875,
+        "totalDebt": 40262
+      },
+      "cashFlow": {
+        "operatingCF": 35758,
+        "investingCF": -22705,
+        "financingCF": -17617,
+        "freeCashFlow": 5882
+      },
+      "segmentProfit": {
+        "productivityAndBusiness": {
+          "revenue": 34116,
+          "operatingIncome": 20599
+        },
+        "intelligentCloud": {
+          "revenue": 32907,
+          "operatingIncome": 13873
+        },
+        "morePersonalComputing": {
+          "revenue": 14250,
+          "operatingIncome": 3803
+        }
+      },
+      "investments": {
+        "equityInvestments": 20928
+      },
+      "hasPage": true
+    }
+  ]
+}

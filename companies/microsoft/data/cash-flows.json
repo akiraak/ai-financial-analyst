@@ -1,0 +1,161 @@
+{
+  "FY2021": {
+    "Q1": {
+      "operatingCF": 19335,
+      "financingCF": -10289,
+      "capitalExpenditure": -4907,
+      "investingCF": -5371,
+      "freeCashFlow": 14428
+    },
+    "Q2": {
+      "operatingCF": 12516,
+      "financingCF": -13634,
+      "capitalExpenditure": -4174,
+      "investingCF": -1669,
+      "freeCashFlow": 8342
+    },
+    "Q3": {
+      "operatingCF": 22179,
+      "financingCF": -13192,
+      "capitalExpenditure": -5089,
+      "freeCashFlow": 17090
+    },
+    "Q4": {
+      "operatingCF": 22710,
+      "financingCF": -11371,
+      "capitalExpenditure": -6452,
+      "investingCF": -10853,
+      "freeCashFlow": 16258
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "operatingCF": 24540,
+      "financingCF": -16276,
+      "capitalExpenditure": -5810,
+      "investingCF": -3250,
+      "freeCashFlow": 18730
+    },
+    "Q2": {
+      "operatingCF": 14480,
+      "financingCF": -11986,
+      "capitalExpenditure": -5865,
+      "investingCF": -1161,
+      "freeCashFlow": 8615
+    },
+    "Q3": {
+      "operatingCF": 25386,
+      "financingCF": -17345,
+      "capitalExpenditure": -5340,
+      "investingCF": -16171,
+      "freeCashFlow": 20046
+    },
+    "Q4": {
+      "operatingCF": 24629,
+      "financingCF": -13269,
+      "capitalExpenditure": -6871,
+      "investingCF": -9729,
+      "freeCashFlow": 17758
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "operatingCF": 23198,
+      "financingCF": -10883,
+      "capitalExpenditure": -6283,
+      "investingCF": -3132,
+      "freeCashFlow": 16915
+    },
+    "Q2": {
+      "operatingCF": 11173,
+      "financingCF": -11349,
+      "capitalExpenditure": -6274,
+      "investingCF": -7150,
+      "freeCashFlow": 4899
+    },
+    "Q3": {
+      "operatingCF": 24441,
+      "financingCF": -10290,
+      "capitalExpenditure": -6607,
+      "investingCF": -3264,
+      "freeCashFlow": 17834
+    },
+    "Q4": {
+      "operatingCF": 28770,
+      "financingCF": -11413,
+      "capitalExpenditure": -8943,
+      "investingCF": -9134,
+      "freeCashFlow": 19827
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "operatingCF": 30583,
+      "capitalExpenditure": -9917,
+      "freeCashFlow": 20666
+    },
+    "Q2": {
+      "operatingCF": 18853,
+      "capitalExpenditure": -9735,
+      "investingCF": -71925,
+      "freeCashFlow": 9118
+    },
+    "Q3": {
+      "operatingCF": 31917,
+      "financingCF": -18808,
+      "capitalExpenditure": -10952,
+      "investingCF": -10700,
+      "freeCashFlow": 20965
+    },
+    "Q4": {
+      "operatingCF": 37195,
+      "financingCF": -23563,
+      "capitalExpenditure": -13873,
+      "investingCF": -14848,
+      "freeCashFlow": 23322
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "operatingCF": 34180,
+      "capitalExpenditure": -14923,
+      "freeCashFlow": 19257
+    },
+    "Q2": {
+      "operatingCF": 22291,
+      "capitalExpenditure": -15804,
+      "investingCF": -14112,
+      "freeCashFlow": 6487
+    },
+    "Q3": {
+      "operatingCF": 37044,
+      "financingCF": -13036,
+      "capitalExpenditure": -16745,
+      "investingCF": -12714,
+      "freeCashFlow": 20299
+    },
+    "Q4": {
+      "operatingCF": 42647,
+      "financingCF": -10844,
+      "capitalExpenditure": -17079,
+      "investingCF": -30572,
+      "freeCashFlow": 25568
+    }
+  },
+  "FY2026": {
+    "Q1": {
+      "operatingCF": 45057,
+      "financingCF": -11799,
+      "capitalExpenditure": -19394,
+      "investingCF": -34559,
+      "freeCashFlow": 25663
+    },
+    "Q2": {
+      "operatingCF": 35758,
+      "financingCF": -17617,
+      "capitalExpenditure": -29876,
+      "investingCF": -22705,
+      "freeCashFlow": 5882
+    }
+  }
+}

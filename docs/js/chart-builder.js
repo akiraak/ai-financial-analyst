@@ -135,6 +135,10 @@ const ChartBuilder = {
       // Tesla セグメント
       energyGenerationAndStorage: 'Energy Generation & Storage',
       servicesAndOther: 'Services & Other',
+      // Microsoft セグメント
+      productivityAndBusiness: 'Productivity & Business',
+      intelligentCloud: 'Intelligent Cloud',
+      morePersonalComputing: 'More Personal Computing',
     };
     return labels[key] || key;
   },
@@ -761,6 +765,10 @@ const ChartBuilder = {
       googleCloud: 'Google Cloud',
       otherBets: 'Other Bets',
       alphabetLevel: 'Alphabet-level',
+      // Microsoft セグメント
+      productivityAndBusiness: 'Productivity & Business',
+      intelligentCloud: 'Intelligent Cloud',
+      morePersonalComputing: 'More Personal Computing',
     };
     return labels[key] || key;
   },

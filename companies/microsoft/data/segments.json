@@ -1,0 +1,124 @@
+{
+  "FY2021": {
+    "Q1": {
+      "productivityAndBusiness": 12319,
+      "intelligentCloud": 12986,
+      "morePersonalComputing": 11849
+    },
+    "Q2": {
+      "productivityAndBusiness": 13353,
+      "intelligentCloud": 14601,
+      "morePersonalComputing": 15122
+    },
+    "Q3": {
+      "productivityAndBusiness": 13552,
+      "intelligentCloud": 15118,
+      "morePersonalComputing": 13036
+    },
+    "Q4": {
+      "productivityAndBusiness": 14691,
+      "intelligentCloud": 17375,
+      "morePersonalComputing": 14086
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "productivityAndBusiness": 15039,
+      "intelligentCloud": 16964,
+      "morePersonalComputing": 13314
+    },
+    "Q2": {
+      "productivityAndBusiness": 15936,
+      "intelligentCloud": 18327,
+      "morePersonalComputing": 17465
+    },
+    "Q3": {
+      "productivityAndBusiness": 15789,
+      "intelligentCloud": 19051,
+      "morePersonalComputing": 14520
+    },
+    "Q4": {
+      "productivityAndBusiness": 16600,
+      "intelligentCloud": 20909,
+      "morePersonalComputing": 14356
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "productivityAndBusiness": 16465,
+      "intelligentCloud": 20325,
+      "morePersonalComputing": 13332
+    },
+    "Q2": {
+      "productivityAndBusiness": 17002,
+      "intelligentCloud": 21508,
+      "morePersonalComputing": 14237
+    },
+    "Q3": {
+      "productivityAndBusiness": 17516,
+      "intelligentCloud": 22081,
+      "morePersonalComputing": 13260
+    },
+    "Q4": {
+      "productivityAndBusiness": 18291,
+      "intelligentCloud": 23993,
+      "morePersonalComputing": 13905
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "productivityAndBusiness": 18592,
+      "intelligentCloud": 24259,
+      "morePersonalComputing": 13666
+    },
+    "Q2": {
+      "productivityAndBusiness": 19249,
+      "intelligentCloud": 25880,
+      "morePersonalComputing": 16891
+    },
+    "Q3": {
+      "productivityAndBusiness": 19570,
+      "intelligentCloud": 26708,
+      "morePersonalComputing": 15580
+    },
+    "Q4": {
+      "productivityAndBusiness": 20317,
+      "intelligentCloud": 28515,
+      "morePersonalComputing": 15895
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "productivityAndBusiness": 28317,
+      "intelligentCloud": 24092,
+      "morePersonalComputing": 13176
+    },
+    "Q2": {
+      "productivityAndBusiness": 29437,
+      "intelligentCloud": 25544,
+      "morePersonalComputing": 14651
+    },
+    "Q3": {
+      "productivityAndBusiness": 29944,
+      "intelligentCloud": 26751,
+      "morePersonalComputing": 13371
+    },
+    "Q4": {
+      "productivityAndBusiness": 33112,
+      "intelligentCloud": 29878,
+      "morePersonalComputing": 13451
+    }
+  },
+  "FY2026": {
+    "Q1": {
+      "productivityAndBusiness": 33020,
+      "intelligentCloud": 30897,
+      "morePersonalComputing": 13756
+    },
+    "Q2": {
+      "productivityAndBusiness": 34116,
+      "intelligentCloud": 32907,
+      "morePersonalComputing": 14250
+    }
+  }
+}

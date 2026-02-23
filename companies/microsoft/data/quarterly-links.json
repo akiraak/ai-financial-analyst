@@ -1,0 +1,200 @@
+[
+  {
+    "fy": "FY2021",
+    "q": "Q1",
+    "adsh": "0001193125-20-278410",
+    "file": "d10535dex991.htm",
+    "date": "2020-10-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312520278410/d10535dex991.htm",
+    "localPath": "FY2021/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q2",
+    "adsh": "0001193125-21-017683",
+    "file": "d65802dex991.htm",
+    "date": "2021-01-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521017683/d65802dex991.htm",
+    "localPath": "FY2021/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q3",
+    "adsh": "0001193125-21-134213",
+    "file": "d179564dex991.htm",
+    "date": "2021-04-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521134213/d179564dex991.htm",
+    "localPath": "FY2021/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q4",
+    "adsh": "0001193125-21-225746",
+    "file": "d200100dex991.htm",
+    "date": "2021-07-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521225746/d200100dex991.htm",
+    "localPath": "FY2021/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q1",
+    "adsh": "0001193125-21-307941",
+    "file": "d239488dex991.htm",
+    "date": "2021-10-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521307941/d239488dex991.htm",
+    "localPath": "FY2022/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q2",
+    "adsh": "0001193125-22-017041",
+    "file": "d299919dex991.htm",
+    "date": "2022-01-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522017041/d299919dex991.htm",
+    "localPath": "FY2022/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q3",
+    "adsh": "0001193125-22-120207",
+    "file": "d328712dex991.htm",
+    "date": "2022-04-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522120207/d328712dex991.htm",
+    "localPath": "FY2022/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q4",
+    "adsh": "0001193125-22-202034",
+    "file": "d372382dex991.htm",
+    "date": "2022-07-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522202034/d372382dex991.htm",
+    "localPath": "FY2022/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q1",
+    "adsh": "0001193125-22-268356",
+    "file": "d361432dex991.htm",
+    "date": "2022-10-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522268356/d361432dex991.htm",
+    "localPath": "FY2023/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q2",
+    "adsh": "0001193125-23-014230",
+    "file": "d406070dex991.htm",
+    "date": "2023-01-24",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312523014230/d406070dex991.htm",
+    "localPath": "FY2023/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q3",
+    "adsh": "0001193125-23-115280",
+    "file": "d321368dex991.htm",
+    "date": "2023-04-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312523115280/d321368dex991.htm",
+    "localPath": "FY2023/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q4",
+    "adsh": "0000950170-23-034400",
+    "file": "msft-ex99_1.htm",
+    "date": "2023-07-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023034400/msft-ex99_1.htm",
+    "localPath": "FY2023/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q1",
+    "adsh": "0000950170-23-054848",
+    "file": "msft-ex99_1.htm",
+    "date": "2023-10-24",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023054848/msft-ex99_1.htm",
+    "localPath": "FY2024/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q2",
+    "adsh": "0000950170-24-008809",
+    "file": "msft-ex99_1.htm",
+    "date": "2024-01-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024008809/msft-ex99_1.htm",
+    "localPath": "FY2024/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q3",
+    "adsh": "0000950170-24-048268",
+    "file": "msft-ex99_1.htm",
+    "date": "2024-04-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024048268/msft-ex99_1.htm",
+    "localPath": "FY2024/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q4",
+    "adsh": "0000950170-24-087835",
+    "file": "msft-ex99_1.htm",
+    "date": "2024-07-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087835/msft-ex99_1.htm",
+    "localPath": "FY2024/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q1",
+    "adsh": "0000950170-24-118955",
+    "file": "msft-ex99_1.htm",
+    "date": "2024-10-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024118955/msft-ex99_1.htm",
+    "localPath": "FY2025/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q2",
+    "adsh": "0000950170-25-010484",
+    "file": "msft-ex99_1.htm",
+    "date": "2025-01-29",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025010484/msft-ex99_1.htm",
+    "localPath": "FY2025/Q2/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q3",
+    "adsh": "0000950170-25-061032",
+    "file": "msft-ex99_1.htm",
+    "date": "2025-04-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061032/msft-ex99_1.htm",
+    "localPath": "FY2025/Q3/press-release.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q4",
+    "adsh": "0000950170-25-100226",
+    "file": "msft-ex99_1.htm",
+    "date": "2025-07-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100226/msft-ex99_1.htm",
+    "localPath": "FY2025/Q4/press-release.html"
+  },
+  {
+    "fy": "FY2026",
+    "q": "Q1",
+    "adsh": "0001193125-25-256310",
+    "file": "msft-ex99_1.htm",
+    "date": "2025-10-29",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256310/msft-ex99_1.htm",
+    "localPath": "FY2026/Q1/press-release.html"
+  },
+  {
+    "fy": "FY2026",
+    "q": "Q2",
+    "adsh": "0001193125-26-027198",
+    "file": "msft-ex99_1.htm",
+    "date": "2026-01-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027198/msft-ex99_1.htm",
+    "localPath": "FY2026/Q2/press-release.html"
+  }
+]

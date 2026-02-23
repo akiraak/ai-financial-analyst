@@ -209,7 +209,7 @@ const ChartBuilder = {
     });
   },
 
-  // === 3. セグメント構成比（100%積み上げ棒グラフ）===
+  // === 3. セグメント別 売上比率（100%積み上げ棒グラフ）===
   createSegmentCompositionChart(ctx, data) {
     const q = this.getActualQuarters(data.quarters);
     const labels = this.getLabels(q);
@@ -238,7 +238,7 @@ const ChartBuilder = {
       options: {
         responsive: true,
         plugins: {
-          title: { display: true, text: 'セグメント構成比', font: { size: 16 } },
+          title: { display: true, text: 'セグメント別 売上比率', font: { size: 16 } },
           tooltip: {
             callbacks: {
               label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1)}%`,

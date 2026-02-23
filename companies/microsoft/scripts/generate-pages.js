@@ -10,6 +10,8 @@ const path = require('path');
 const COMPANY = 'Microsoft';
 const TICKER = 'MSFT';
 const SLUG = 'microsoft';
+const DESC = 'クラウド・AI・生産性ソフトウェア。Intelligent Cloud・Productivity & Business・More Personal Computing セグメント別業績を可視化。';
+const BASE_URL = 'https://akiraak.github.io/ai-financial-analyst';
 const ROOT = path.resolve(__dirname, '../../..');
 const DOCS_DIR = path.join(ROOT, 'docs', SLUG);
 const QUARTERS_DIR = path.join(DOCS_DIR, 'quarters');
@@ -22,6 +24,13 @@ function generateLandingPage() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${COMPANY} (${TICKER}) 業績レポート</title>
+  <meta property="og:title" content="${COMPANY} (${TICKER}) 業績レポート">
+  <meta property="og:description" content="${DESC}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${BASE_URL}/${SLUG}/">
+  <meta property="og:image" content="${BASE_URL}/${SLUG}/ogp.png">
+  <meta property="og:site_name" content="AI Financial Analyst">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -103,6 +112,13 @@ function generateQuartersIndex() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${COMPANY} 四半期分析一覧</title>
+  <meta property="og:title" content="${COMPANY} 四半期分析一覧">
+  <meta property="og:description" content="${COMPANY}の四半期ごとの業績分析・チャートを閲覧">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${BASE_URL}/${SLUG}/quarters/">
+  <meta property="og:image" content="${BASE_URL}/${SLUG}/ogp.png">
+  <meta property="og:site_name" content="AI Financial Analyst">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
@@ -187,7 +203,14 @@ function generateTemplate() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${COMPANY} 四半期詳細</title>
+  <title>${COMPANY} {{QUARTER_LABEL}} 決算分析</title>
+  <meta property="og:title" content="${COMPANY} {{QUARTER_LABEL}} 決算分析">
+  <meta property="og:description" content="${COMPANY} {{QUARTER_LABEL}}の業績分析・チャート">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${BASE_URL}/${SLUG}/quarters/{{QUARTER_DIR}}/">
+  <meta property="og:image" content="${BASE_URL}/${SLUG}/ogp.png">
+  <meta property="og:site_name" content="AI Financial Analyst">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../../../css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
@@ -300,7 +323,7 @@ function generateTemplate() {
     </div>
 
     <div class="section">
-      <h2>セグメント構成比</h2>
+      <h2>セグメント別 売上比率</h2>
       <div class="chart-wrapper"><canvas id="segmentCompositionChart"></canvas></div>
       <div class="chart-description" id="segmentCompositionChart-desc"></div>
     </div>

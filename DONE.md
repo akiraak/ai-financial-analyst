@@ -125,3 +125,4 @@
   - GitHub Pages: ランディングページ + 8四半期分の詳細ページ（2024Q2〜2026Q1）
   - analysis-text.json: 12チャート概要 + 8四半期分の決算サマリー・チャート解説（定性情報含む）
   - トップページにAppleカードを追加
+- [x] Microsoft Corporation (MSFT) のページを追加（フルビルド）

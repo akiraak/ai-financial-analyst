@@ -223,9 +223,12 @@ for (let i = startIdx; i < quarters.length; i++) {
   };
   fs.mkdirSync(qDir, { recursive: true });
   fs.writeFileSync(path.join(qDir, 'data.json'), JSON.stringify(qData, null, 2));
-  // テンプレートHTMLをコピー
+  // テンプレートHTMLをコピー（OGPプレースホルダを置換）
   if (template) {
-    fs.writeFileSync(path.join(qDir, 'index.html'), template);
+    const html = template
+      .replace(/\{\{QUARTER_LABEL\}\}/g, q.label)
+      .replace(/\{\{QUARTER_DIR\}\}/g, dirName);
+    fs.writeFileSync(path.join(qDir, 'index.html'), html);
   }
 }
 console.log(`出力: ${QUARTERS_DIR}/ (${quarters.length - startIdx} フォルダ)`);

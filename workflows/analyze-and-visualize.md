@@ -67,7 +67,7 @@
 - 市場向け5セグメントの売上推移
 - データソース: press-release.html → segments.json
 
-#### 10. セグメント構成比（100%積み上げ棒グラフ）
+#### 10. セグメント別 売上比率（100%積み上げ棒グラフ）
 - 総売上に占める各セグメントの構成比率
 
 #### 11. セグメント営業利益（棒グラフ）
@@ -104,6 +104,36 @@
 - 費用構成比（各費用 / 売上高）
 - YoY成長率
 - セグメント営業利益率
+
+## OGP（Open Graph）メタタグ
+
+外部サイト（SNS・Slack等）からリンクされた際にタイトル・説明・画像が表示されるよう、全ページにOGPメタタグを設定する。
+
+**設定するタグ:**
+- `og:title` — ページタイトル
+- `og:description` — ページ説明文
+- `og:type` — `website`
+- `og:url` — ページの正規URL
+- `og:image` — OGP画像（企業別に `docs/<企業名>/ogp.png` を配置、1200×630px推奨）
+- `og:site_name` — `AI Financial Analyst`
+- `twitter:card` — `summary_large_image`
+
+**ページ別のOGP内容:**
+| ページ | og:title | og:description |
+|--------|----------|----------------|
+| トップページ | AI Financial Analyst | 業績データの分析・可視化ダッシュボード |
+| 企業ランディング | {企業名} ({ティッカー}) 業績レポート | generate-pages.jsのDESC定数 |
+| 四半期選択 | {企業名} 四半期分析一覧 | {企業名}の四半期ごとの業績分析・チャートを閲覧 |
+| 四半期詳細 | {企業名} {四半期ラベル} 決算分析 | {企業名} {四半期ラベル}の業績分析・チャート |
+
+**四半期詳細ページのプレースホルダ置換:**
+- template.html では `{{QUARTER_LABEL}}` と `{{QUARTER_DIR}}` をプレースホルダとして埋め込む
+- generate-data-json.js がtemplate.htmlを各四半期フォルダにコピーする際、これらを実際の値（例: `FY2026 Q2`, `2026Q2`）に置換する
+
+**OGP画像の配置:**
+- サイト共通: `docs/ogp.png`
+- 企業別: `docs/<企業名>/ogp.png`
+- 画像が未配置でもタイトル・説明文は表示される
 
 ## 技術スタック
 
@@ -210,7 +240,7 @@ docs/                              # GitHub Pages公開ディレクトリ
 │ D. セグメント分析                  │
 │  [セグメント区分の説明テキスト]     │
 │  9. セグメント別売上 + 解説       │
-│  10. セグメント構成比 + 解説      │
+│  10. セグメント別 売上比率 + 解説      │
 │  11. セグメント営業利益 + 解説    │
 │  12. セグメント営業利益率 + 解説  │
 ├──────────────────────────────────┤
@@ -282,7 +312,7 @@ docs/                              # GitHub Pages公開ディレクトリ
 このスクリプトは以下を自動生成する:
 - `docs/<企業名>/data.json` — 全四半期の統合データ
 - `docs/<企業名>/quarters/<YYYYQN>/data.json` — 各四半期までの累積データ
-- `docs/<企業名>/quarters/<YYYYQN>/index.html` — template.html のコピー
+- `docs/<企業名>/quarters/<YYYYQN>/index.html` — template.html のコピー（`{{QUARTER_LABEL}}`・`{{QUARTER_DIR}}` を実際の値に置換）
 
 **期間制御:** `config.json` の `pageYears` と `chartYears` に基づいて生成範囲を制御する。
 - `pageYears`: 四半期詳細ページを生成する対象期間（最新N年分の四半期のみフォルダ生成）

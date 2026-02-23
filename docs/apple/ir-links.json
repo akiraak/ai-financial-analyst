@@ -1,0 +1,434 @@
+{
+  "FY2021": [
+    {
+      "quarter": "Fourth Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000104/a8-kex991q4202109252021.htm",
+          "description": "Press Release of Fourth Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm",
+          "description": "10-K of Fourth Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000063/a8-kex991q3202106262021.htm",
+          "description": "Press Release of Third Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000065/aapl-20210626.htm",
+          "description": "10-Q of Third Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000055/a8-kex991q2202103272021.htm",
+          "description": "Press Release of Second Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000056/aapl-20210327.htm",
+          "description": "10-Q of Second Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2021",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000009/a8-kex991q1202112262020.htm",
+          "description": "Press Release of First Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000010/aapl-20201226.htm",
+          "description": "10-Q of First Quarter 2021, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2022": [
+    {
+      "quarter": "Fourth Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000107/a8-kex991q4202209242022.htm",
+          "description": "Press Release of Fourth Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000108/aapl-20220924.htm",
+          "description": "10-K of Fourth Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000069/a8-kex991q3202206252022.htm",
+          "description": "Press Release of Third Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000070/aapl-20220625.htm",
+          "description": "10-Q of Third Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000058/a8-kex991q2202203262022.htm",
+          "description": "Press Release of Second Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000059/aapl-20220326.htm",
+          "description": "10-Q of Second Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2022",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000006/a8-kex991q1202212252021.htm",
+          "description": "Press Release of First Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000007/aapl-20211225.htm",
+          "description": "10-Q of First Quarter 2022, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2023": [
+    {
+      "quarter": "Fourth Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000104/a8-kex991q4202309302023.htm",
+          "description": "Press Release of Fourth Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+          "description": "10-K of Fourth Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000075/a8-kex991q3202307012023.htm",
+          "description": "Press Release of Third Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000077/aapl-20230701.htm",
+          "description": "10-Q of Third Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000063/a8-kex991q2202304012023.htm",
+          "description": "Press Release of Second Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000064/aapl-20230401.htm",
+          "description": "10-Q of Second Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2023",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000005/a8-kex991q1202312312022.htm",
+          "description": "Press Release of First Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000006/aapl-20221231.htm",
+          "description": "10-Q of First Quarter 2023, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2024": [
+    {
+      "quarter": "Fourth Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000120/a8-kex991q4202409282024.htm",
+          "description": "Press Release of Fourth Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+          "description": "10-K of Fourth Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000080/a8-kex991q3202406292024.htm",
+          "description": "Press Release of Third Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000081/aapl-20240629.htm",
+          "description": "10-Q of Third Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000067/a8-kex991q2202403302024.htm",
+          "description": "Press Release of Second Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000069/aapl-20240330.htm",
+          "description": "10-Q of Second Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2024",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000005/a8-kex991q1202412302023.htm",
+          "description": "Press Release of First Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000006/aapl-20231230.htm",
+          "description": "10-Q of First Quarter 2024, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2025": [
+    {
+      "quarter": "Fourth Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000077/a8-kex991q4202509272025.htm",
+          "description": "Press Release of Fourth Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+          "description": "10-K of Fourth Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Third Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000071/a8-kex991q3202506282025.htm",
+          "description": "Press Release of Third Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000073/aapl-20250628.htm",
+          "description": "10-Q of Third Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "Second Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000055/a8-kex991q2202503292025.htm",
+          "description": "Press Release of Second Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000057/aapl-20250329.htm",
+          "description": "10-Q of Second Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    },
+    {
+      "quarter": "First Quarter 2025",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000007/a8-kex991q1202512282024.htm",
+          "description": "Press Release of First Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000008/aapl-20241228.htm",
+          "description": "10-Q of First Quarter 2025, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    }
+  ],
+  "FY2026": [
+    {
+      "quarter": "First Quarter 2026",
+      "documents": [
+        {
+          "name": "Press Release",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/a8-kex991q1202612272025.htm",
+          "description": "Press Release of First Quarter 2026, SEC EDGAR filing"
+        },
+        {
+          "name": "10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm",
+          "description": "10-Q of First Quarter 2026, SEC EDGAR filing"
+        },
+        {
+          "name": "Investor Relations",
+          "url": "https://investor.apple.com/",
+          "description": "Apple Inc. Investor Relations page"
+        }
+      ]
+    }
+  ]
+}

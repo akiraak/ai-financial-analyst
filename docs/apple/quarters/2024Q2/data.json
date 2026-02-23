@@ -1,0 +1,1055 @@
+{
+  "company": "Apple Inc.",
+  "ticker": "AAPL",
+  "generatedAt": "2026-02-23",
+  "nextEarningsDate": "2026-04-30",
+  "quarters": [
+    {
+      "label": "FY2021 Q1",
+      "fy": 2021,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 111439,
+      "costOfRevenue": 67111,
+      "grossProfit": 44328,
+      "researchAndDevelopment": 5163,
+      "sga": 5631,
+      "totalOperatingExpenses": 10794,
+      "operatingIncome": 33534,
+      "nonOperatingIncome": 45,
+      "netIncome": 28755,
+      "eps": 1.68,
+      "price": 133.72,
+      "priceDate": "2020-12-30",
+      "sharesDiluted": 17113688,
+      "segments": {
+        "americas": 46310,
+        "europe": 27306,
+        "greaterChina": 21313,
+        "japan": 8285,
+        "restOfAsiaPacific": 8225
+      },
+      "productSegments": {
+        "iPhone": 65597,
+        "mac": 8675,
+        "iPad": 8435,
+        "wearables": 12971,
+        "services": 15761
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 36010,
+        "marketableSecurities": 159561,
+        "totalAssets": 354054,
+        "totalLiabilities": 287830,
+        "totalEquity": 66224,
+        "currentTermDebt": 7762,
+        "commercialPaper": 5000,
+        "longTermDebt": 99281,
+        "totalDebt": 112043
+      },
+      "cashFlow": {
+        "operatingCF": 38763,
+        "investingCF": -8584,
+        "financingCF": -32249,
+        "freeCashFlow": 35263
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 46310,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 27306,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 21313,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 8285,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 8225,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q2",
+      "fy": 2021,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 89584,
+      "costOfRevenue": 51505,
+      "grossProfit": 38079,
+      "researchAndDevelopment": 5262,
+      "sga": 5314,
+      "totalOperatingExpenses": 10576,
+      "operatingIncome": 27503,
+      "nonOperatingIncome": 508,
+      "netIncome": 23630,
+      "eps": 1.4,
+      "price": 119.9,
+      "priceDate": "2021-03-30",
+      "sharesDiluted": 16929157,
+      "segments": {
+        "americas": 34306,
+        "europe": 22264,
+        "greaterChina": 17728,
+        "japan": 7742,
+        "restOfAsiaPacific": 7544
+      },
+      "productSegments": {
+        "iPhone": 47938,
+        "mac": 9102,
+        "iPad": 7807,
+        "wearables": 7836,
+        "services": 16901
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 38466,
+        "marketableSecurities": 165907,
+        "totalAssets": 337158,
+        "totalLiabilities": 267980,
+        "totalEquity": 69178,
+        "currentTermDebt": 8003,
+        "commercialPaper": 5000,
+        "longTermDebt": 108642,
+        "totalDebt": 121645
+      },
+      "cashFlow": {
+        "operatingCF": 23981,
+        "investingCF": -10368,
+        "financingCF": -11326,
+        "freeCashFlow": 21712
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 34306,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 22264,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 17728,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 7742,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 7544,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q3",
+      "fy": 2021,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 81434,
+      "costOfRevenue": 46179,
+      "grossProfit": 35255,
+      "researchAndDevelopment": 5717,
+      "sga": 5412,
+      "totalOperatingExpenses": 11129,
+      "operatingIncome": 24126,
+      "nonOperatingIncome": 243,
+      "netIncome": 21744,
+      "eps": 1.3,
+      "price": 136.33,
+      "priceDate": "2021-06-29",
+      "sharesDiluted": 16781735,
+      "segments": {
+        "americas": 35870,
+        "europe": 18943,
+        "greaterChina": 14762,
+        "japan": 6464,
+        "restOfAsiaPacific": 5395
+      },
+      "productSegments": {
+        "iPhone": 39570,
+        "mac": 8235,
+        "iPad": 7368,
+        "wearables": 8775,
+        "services": 17486
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 34050,
+        "marketableSecurities": 159594,
+        "totalAssets": 329840,
+        "totalLiabilities": 265560,
+        "totalEquity": 64280,
+        "currentTermDebt": 8039,
+        "commercialPaper": 8000,
+        "longTermDebt": 105752,
+        "totalDebt": 121791
+      },
+      "cashFlow": {
+        "operatingCF": 21094,
+        "investingCF": 3572,
+        "financingCF": -29396,
+        "freeCashFlow": 19001
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 35870,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 18943,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 14762,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 6464,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 5395,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2021 Q4",
+      "fy": 2021,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 83360,
+      "costOfRevenue": 48186,
+      "grossProfit": 35174,
+      "researchAndDevelopment": 5772,
+      "sga": 5616,
+      "totalOperatingExpenses": 11388,
+      "operatingIncome": 23786,
+      "nonOperatingIncome": -538,
+      "netIncome": 20551,
+      "eps": 1.24,
+      "price": 142.83,
+      "priceDate": "2021-09-29",
+      "sharesDiluted": 16635097,
+      "segments": {
+        "americas": 36820,
+        "europe": 20794,
+        "greaterChina": 14563,
+        "japan": 5991,
+        "restOfAsiaPacific": 5192
+      },
+      "productSegments": {
+        "iPhone": 38868,
+        "mac": 9178,
+        "iPad": 8252,
+        "wearables": 8785,
+        "services": 18277
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 34940,
+        "marketableSecurities": 155576,
+        "totalAssets": 351002,
+        "totalLiabilities": 287912,
+        "totalEquity": 63090,
+        "currentTermDebt": 9613,
+        "commercialPaper": 6000,
+        "longTermDebt": 109106,
+        "totalDebt": 124719
+      },
+      "cashFlow": {
+        "operatingCF": 20200,
+        "investingCF": 835,
+        "financingCF": -20382,
+        "freeCashFlow": 16977
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 36820,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 20794,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 14563,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 5991,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 5192,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q1",
+      "fy": 2022,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 123945,
+      "costOfRevenue": 69702,
+      "grossProfit": 54243,
+      "researchAndDevelopment": 6306,
+      "sga": 6449,
+      "totalOperatingExpenses": 12755,
+      "operatingIncome": 41488,
+      "nonOperatingIncome": -247,
+      "netIncome": 34630,
+      "eps": 2.1,
+      "price": 178.2,
+      "priceDate": "2021-12-30",
+      "sharesDiluted": 16519291,
+      "segments": {
+        "americas": 51496,
+        "europe": 29749,
+        "greaterChina": 25783,
+        "japan": 7107,
+        "restOfAsiaPacific": 9810
+      },
+      "productSegments": {
+        "iPhone": 71628,
+        "mac": 10852,
+        "iPad": 7248,
+        "wearables": 14701,
+        "services": 19516
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 37119,
+        "marketableSecurities": 165477,
+        "totalAssets": 381191,
+        "totalLiabilities": 309259,
+        "totalEquity": 71932,
+        "currentTermDebt": 11169,
+        "commercialPaper": 5000,
+        "longTermDebt": 106629,
+        "totalDebt": 122798
+      },
+      "cashFlow": {
+        "operatingCF": 46966,
+        "investingCF": -16106,
+        "financingCF": -28159,
+        "freeCashFlow": 44163
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 51496,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 29749,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 25783,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 7107,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 9810,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q2",
+      "fy": 2022,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 97278,
+      "costOfRevenue": 54719,
+      "grossProfit": 42559,
+      "researchAndDevelopment": 6387,
+      "sga": 6193,
+      "totalOperatingExpenses": 12580,
+      "operatingIncome": 29979,
+      "nonOperatingIncome": 160,
+      "netIncome": 25010,
+      "eps": 1.52,
+      "price": 177.77,
+      "priceDate": "2022-03-30",
+      "sharesDiluted": 16403316,
+      "segments": {
+        "americas": 40882,
+        "europe": 23287,
+        "greaterChina": 18343,
+        "japan": 7724,
+        "restOfAsiaPacific": 7042
+      },
+      "productSegments": {
+        "iPhone": 50570,
+        "mac": 10435,
+        "iPad": 7646,
+        "wearables": 8806,
+        "services": 19821
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 28098,
+        "marketableSecurities": 164632,
+        "totalAssets": 350662,
+        "totalLiabilities": 283263,
+        "totalEquity": 67399,
+        "currentTermDebt": 9659,
+        "commercialPaper": 6999,
+        "longTermDebt": 103323,
+        "totalDebt": 119981
+      },
+      "cashFlow": {
+        "operatingCF": 28166,
+        "investingCF": -9265,
+        "financingCF": -28351,
+        "freeCashFlow": 25652
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 40882,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 23287,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 18343,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 7724,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 7042,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q3",
+      "fy": 2022,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 82959,
+      "costOfRevenue": 47074,
+      "grossProfit": 35885,
+      "researchAndDevelopment": 6797,
+      "sga": 6012,
+      "totalOperatingExpenses": 12809,
+      "operatingIncome": 23076,
+      "nonOperatingIncome": -10,
+      "netIncome": 19442,
+      "eps": 1.2,
+      "price": 139.23,
+      "priceDate": "2022-06-29",
+      "sharesDiluted": 16262203,
+      "segments": {
+        "americas": 37472,
+        "europe": 19287,
+        "greaterChina": 14604,
+        "japan": 5446,
+        "restOfAsiaPacific": 6150
+      },
+      "productSegments": {
+        "iPhone": 40665,
+        "mac": 7382,
+        "iPad": 7224,
+        "wearables": 8084,
+        "services": 19604
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 27502,
+        "marketableSecurities": 151806,
+        "totalAssets": 336309,
+        "totalLiabilities": 278202,
+        "totalEquity": 58107,
+        "currentTermDebt": 14009,
+        "commercialPaper": 10982,
+        "longTermDebt": 94700,
+        "totalDebt": 119691
+      },
+      "cashFlow": {
+        "operatingCF": 22892,
+        "investingCF": 4234,
+        "financingCF": -27445,
+        "freeCashFlow": 20790
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 37472,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 19287,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 14604,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 5446,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 6150,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2022 Q4",
+      "fy": 2022,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 90146,
+      "costOfRevenue": 52051,
+      "grossProfit": 38095,
+      "researchAndDevelopment": 6761,
+      "sga": 6440,
+      "totalOperatingExpenses": 13201,
+      "operatingIncome": 24894,
+      "nonOperatingIncome": -237,
+      "netIncome": 20721,
+      "eps": 1.29,
+      "price": 142.48,
+      "priceDate": "2022-09-29",
+      "sharesDiluted": 16118465,
+      "segments": {
+        "americas": 39808,
+        "europe": 22795,
+        "greaterChina": 15470,
+        "japan": 5700,
+        "restOfAsiaPacific": 6373
+      },
+      "productSegments": {
+        "iPhone": 42626,
+        "mac": 11508,
+        "iPad": 7174,
+        "wearables": 9650,
+        "services": 19188
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 23646,
+        "marketableSecurities": 145463,
+        "totalAssets": 352755,
+        "totalLiabilities": 302083,
+        "totalEquity": 50672,
+        "currentTermDebt": 11128,
+        "commercialPaper": 9982,
+        "longTermDebt": 98959,
+        "totalDebt": 120069
+      },
+      "cashFlow": {
+        "operatingCF": 24127,
+        "investingCF": -1217,
+        "financingCF": -26794,
+        "freeCashFlow": 20838
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 39808,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 22795,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 15470,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 5700,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 6373,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q1",
+      "fy": 2023,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 117154,
+      "costOfRevenue": 66822,
+      "grossProfit": 50332,
+      "researchAndDevelopment": 7709,
+      "sga": 6607,
+      "totalOperatingExpenses": 14316,
+      "operatingIncome": 36016,
+      "nonOperatingIncome": -393,
+      "netIncome": 29998,
+      "eps": 1.88,
+      "price": 129.93,
+      "priceDate": "2022-12-30",
+      "sharesDiluted": 15955718,
+      "segments": {
+        "americas": 49278,
+        "europe": 27681,
+        "greaterChina": 23905,
+        "japan": 6755,
+        "restOfAsiaPacific": 9535
+      },
+      "productSegments": {
+        "iPhone": 65775,
+        "mac": 7735,
+        "iPad": 9396,
+        "wearables": 13482,
+        "services": 20766
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 20535,
+        "marketableSecurities": 144915,
+        "totalAssets": 346747,
+        "totalLiabilities": 290020,
+        "totalEquity": 56727,
+        "currentTermDebt": 9740,
+        "commercialPaper": 1743,
+        "longTermDebt": 99627,
+        "totalDebt": 111110
+      },
+      "cashFlow": {
+        "operatingCF": 34005,
+        "investingCF": -1445,
+        "financingCF": -35563,
+        "freeCashFlow": 30218
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 49278,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 27681,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 23905,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 6755,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 9535,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q2",
+      "fy": 2023,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 94836,
+      "costOfRevenue": 52860,
+      "grossProfit": 41976,
+      "researchAndDevelopment": 7457,
+      "sga": 6201,
+      "totalOperatingExpenses": 13658,
+      "operatingIncome": 28318,
+      "nonOperatingIncome": 64,
+      "netIncome": 24160,
+      "eps": 1.52,
+      "price": 162.36,
+      "priceDate": "2023-03-30",
+      "sharesDiluted": 15847050,
+      "segments": {
+        "americas": 37784,
+        "europe": 23945,
+        "greaterChina": 17812,
+        "japan": 7176,
+        "restOfAsiaPacific": 8119
+      },
+      "productSegments": {
+        "iPhone": 51334,
+        "mac": 7168,
+        "iPad": 6670,
+        "wearables": 8757,
+        "services": 20907
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 24687,
+        "marketableSecurities": 141646,
+        "totalAssets": 332160,
+        "totalLiabilities": 270002,
+        "totalEquity": 62158,
+        "currentTermDebt": 10578,
+        "commercialPaper": 1996,
+        "longTermDebt": 97041,
+        "totalDebt": 109615
+      },
+      "cashFlow": {
+        "operatingCF": 28560,
+        "investingCF": 2319,
+        "financingCF": -25724,
+        "freeCashFlow": 25644
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 37784,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 23945,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 17812,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 7176,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 8119,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q3",
+      "fy": 2023,
+      "q": 3,
+      "isOutlook": false,
+      "revenue": 81797,
+      "costOfRevenue": 45384,
+      "grossProfit": 36413,
+      "researchAndDevelopment": 7442,
+      "sga": 5973,
+      "totalOperatingExpenses": 13415,
+      "operatingIncome": 22998,
+      "nonOperatingIncome": -265,
+      "netIncome": 19881,
+      "eps": 1.26,
+      "price": 189.59,
+      "priceDate": "2023-06-29",
+      "sharesDiluted": 15775021,
+      "segments": {
+        "americas": 35383,
+        "europe": 20205,
+        "greaterChina": 15758,
+        "japan": 4821,
+        "restOfAsiaPacific": 5630
+      },
+      "productSegments": {
+        "iPhone": 39669,
+        "mac": 6840,
+        "iPad": 5791,
+        "wearables": 8284,
+        "services": 21213
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 28408,
+        "marketableSecurities": 138135,
+        "totalAssets": 335038,
+        "totalLiabilities": 274764,
+        "totalEquity": 60274,
+        "currentTermDebt": 7216,
+        "commercialPaper": 3993,
+        "longTermDebt": 98071,
+        "totalDebt": 109280
+      },
+      "cashFlow": {
+        "operatingCF": 26380,
+        "investingCF": 437,
+        "financingCF": -24048,
+        "freeCashFlow": 24287
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 35383,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 20205,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 15758,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 4821,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 5630,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2023 Q4",
+      "fy": 2023,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 89498,
+      "costOfRevenue": 49071,
+      "grossProfit": 40427,
+      "researchAndDevelopment": 7307,
+      "sga": 6151,
+      "totalOperatingExpenses": 13458,
+      "operatingIncome": 26969,
+      "nonOperatingIncome": 29,
+      "netIncome": 22956,
+      "eps": 1.46,
+      "price": 171.21,
+      "priceDate": "2023-09-29",
+      "sharesDiluted": 15672400,
+      "segments": {
+        "americas": 40115,
+        "europe": 22463,
+        "greaterChina": 15084,
+        "japan": 5505,
+        "restOfAsiaPacific": 6331
+      },
+      "productSegments": {
+        "iPhone": 43805,
+        "mac": 7614,
+        "iPad": 6443,
+        "wearables": 9322,
+        "services": 22314
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 29965,
+        "marketableSecurities": 132134,
+        "totalAssets": 352583,
+        "totalLiabilities": 290437,
+        "totalEquity": 62146,
+        "currentTermDebt": 9822,
+        "commercialPaper": 5985,
+        "longTermDebt": 95281,
+        "totalDebt": 111088
+      },
+      "cashFlow": {
+        "operatingCF": 21598,
+        "investingCF": 2394,
+        "financingCF": -23153,
+        "freeCashFlow": 19435
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 40115,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 22463,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 15084,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 5505,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 6331,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2024 Q1",
+      "fy": 2024,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 119575,
+      "costOfRevenue": 64720,
+      "grossProfit": 54855,
+      "researchAndDevelopment": 7696,
+      "sga": 6786,
+      "totalOperatingExpenses": 14482,
+      "operatingIncome": 40373,
+      "nonOperatingIncome": -50,
+      "netIncome": 33916,
+      "eps": 2.18,
+      "price": 192.53,
+      "priceDate": "2023-12-29",
+      "sharesDiluted": 15576641,
+      "segments": {
+        "americas": 50430,
+        "europe": 30397,
+        "greaterChina": 20819,
+        "japan": 7767,
+        "restOfAsiaPacific": 10162
+      },
+      "productSegments": {
+        "iPhone": 69702,
+        "mac": 7780,
+        "iPad": 7023,
+        "wearables": 11953,
+        "services": 23117
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 40760,
+        "marketableSecurities": 131815,
+        "totalAssets": 353514,
+        "totalLiabilities": 279414,
+        "totalEquity": 74100,
+        "currentTermDebt": 10954,
+        "commercialPaper": 1998,
+        "longTermDebt": 95088,
+        "totalDebt": 108040
+      },
+      "cashFlow": {
+        "operatingCF": 39895,
+        "investingCF": 1927,
+        "financingCF": -30585,
+        "freeCashFlow": 37503
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 50430,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 30397,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 20819,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 7767,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 10162,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": false
+    },
+    {
+      "label": "FY2024 Q2",
+      "fy": 2024,
+      "q": 2,
+      "isOutlook": false,
+      "revenue": 90753,
+      "costOfRevenue": 48482,
+      "grossProfit": 42271,
+      "researchAndDevelopment": 7903,
+      "sga": 6468,
+      "totalOperatingExpenses": 14371,
+      "operatingIncome": 27900,
+      "nonOperatingIncome": 158,
+      "netIncome": 23636,
+      "eps": 1.53,
+      "price": 171.48,
+      "priceDate": "2024-03-28",
+      "sharesDiluted": 15464709,
+      "segments": {
+        "americas": 37273,
+        "europe": 24123,
+        "greaterChina": 16372,
+        "japan": 6262,
+        "restOfAsiaPacific": 6723
+      },
+      "productSegments": {
+        "iPhone": 45963,
+        "mac": 7451,
+        "iPad": 5559,
+        "wearables": 7913,
+        "services": 23867
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 32695,
+        "marketableSecurities": 129642,
+        "totalAssets": 337411,
+        "totalLiabilities": 263217,
+        "totalEquity": 74194,
+        "currentTermDebt": 10762,
+        "commercialPaper": 1997,
+        "longTermDebt": 91831,
+        "totalDebt": 104590
+      },
+      "cashFlow": {
+        "operatingCF": 22690,
+        "investingCF": -310,
+        "financingCF": -30433,
+        "freeCashFlow": 20694
+      },
+      "segmentProfit": {
+        "americas": {
+          "revenue": 37273,
+          "operatingIncome": null
+        },
+        "europe": {
+          "revenue": 24123,
+          "operatingIncome": null
+        },
+        "greaterChina": {
+          "revenue": 16372,
+          "operatingIncome": null
+        },
+        "japan": {
+          "revenue": 6262,
+          "operatingIncome": null
+        },
+        "restOfAsiaPacific": {
+          "revenue": 6723,
+          "operatingIncome": null
+        }
+      },
+      "investments": null,
+      "hasPage": true
+    }
+  ],
+  "currentQuarter": {
+    "fy": 2024,
+    "q": 2,
+    "label": "FY2024 Q2"
+  },
+  "prevPage": null,
+  "nextPage": {
+    "fy": 2024,
+    "q": 3,
+    "label": "FY2024 Q3"
+  }
+}

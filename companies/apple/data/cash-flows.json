@@ -1,0 +1,245 @@
+{
+  "FY2021": {
+    "Q1": {
+      "depreciationAndAmortization": 2666,
+      "shareBasedCompensation": 2020,
+      "operatingCashFlow": 38763,
+      "capitalExpenditures": -3500,
+      "investingCashFlow": -8584,
+      "dividendsPaid": -3613,
+      "shareRepurchases": -24775,
+      "financingCashFlow": -32249,
+      "freeCashFlow": 35263
+    },
+    "Q2": {
+      "operatingCashFlow": 23981,
+      "investingCashFlow": -10368,
+      "financingCashFlow": -11326,
+      "capitalExpenditures": -2269,
+      "shareRepurchases": -18548,
+      "dividendsPaid": -3447,
+      "depreciationAndAmortization": 2797,
+      "shareBasedCompensation": 1981,
+      "freeCashFlow": 21712
+    },
+    "Q3": {
+      "operatingCashFlow": 21094,
+      "investingCashFlow": 3572,
+      "financingCashFlow": -29396,
+      "capitalExpenditures": -2093,
+      "shareRepurchases": -22900,
+      "dividendsPaid": -3767,
+      "depreciationAndAmortization": 2832,
+      "shareBasedCompensation": 1960,
+      "freeCashFlow": 19001
+    },
+    "Q4": {
+      "operatingCashFlow": 20200,
+      "investingCashFlow": 835,
+      "financingCashFlow": -20382,
+      "capitalExpenditures": -3223,
+      "shareRepurchases": -19748,
+      "dividendsPaid": -3640,
+      "depreciationAndAmortization": 2989,
+      "shareBasedCompensation": 1945,
+      "freeCashFlow": 16977
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "depreciationAndAmortization": 2697,
+      "shareBasedCompensation": 2265,
+      "operatingCashFlow": 46966,
+      "capitalExpenditures": -2803,
+      "investingCashFlow": -16106,
+      "dividendsPaid": -3732,
+      "shareRepurchases": -20478,
+      "financingCashFlow": -28159,
+      "freeCashFlow": 44163
+    },
+    "Q2": {
+      "operatingCashFlow": 28166,
+      "investingCashFlow": -9265,
+      "financingCashFlow": -28351,
+      "capitalExpenditures": -2514,
+      "shareRepurchases": -22631,
+      "dividendsPaid": -3595,
+      "depreciationAndAmortization": 2737,
+      "shareBasedCompensation": 2252,
+      "freeCashFlow": 25652
+    },
+    "Q3": {
+      "operatingCashFlow": 22892,
+      "investingCashFlow": 4234,
+      "financingCashFlow": -27445,
+      "capitalExpenditures": -2102,
+      "shareRepurchases": -21865,
+      "dividendsPaid": -3811,
+      "depreciationAndAmortization": 2805,
+      "shareBasedCompensation": 2243,
+      "freeCashFlow": 20790
+    },
+    "Q4": {
+      "operatingCashFlow": 24127,
+      "investingCashFlow": -1217,
+      "financingCashFlow": -26794,
+      "capitalExpenditures": -3289,
+      "shareRepurchases": -24428,
+      "dividendsPaid": -3703,
+      "depreciationAndAmortization": 2865,
+      "shareBasedCompensation": 2278,
+      "freeCashFlow": 20838
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "depreciationAndAmortization": 2916,
+      "shareBasedCompensation": 2905,
+      "operatingCashFlow": 34005,
+      "capitalExpenditures": -3787,
+      "investingCashFlow": -1445,
+      "dividendsPaid": -3768,
+      "shareRepurchases": -19475,
+      "financingCashFlow": -35563,
+      "freeCashFlow": 30218
+    },
+    "Q2": {
+      "operatingCashFlow": 28560,
+      "investingCashFlow": 2319,
+      "financingCashFlow": -25724,
+      "capitalExpenditures": -2916,
+      "shareRepurchases": -19594,
+      "dividendsPaid": -3650,
+      "depreciationAndAmortization": 2898,
+      "shareBasedCompensation": 2686,
+      "freeCashFlow": 25644
+    },
+    "Q3": {
+      "operatingCashFlow": 26380,
+      "investingCashFlow": 437,
+      "financingCashFlow": -24048,
+      "capitalExpenditures": -2093,
+      "shareRepurchases": -17478,
+      "dividendsPaid": -3849,
+      "depreciationAndAmortization": 3052,
+      "shareBasedCompensation": 2617,
+      "freeCashFlow": 24287
+    },
+    "Q4": {
+      "operatingCashFlow": 21598,
+      "investingCashFlow": 2394,
+      "financingCashFlow": -23153,
+      "capitalExpenditures": -2163,
+      "shareRepurchases": -21003,
+      "dividendsPaid": -3758,
+      "depreciationAndAmortization": 2653,
+      "shareBasedCompensation": 2625,
+      "freeCashFlow": 19435
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "depreciationAndAmortization": 2848,
+      "shareBasedCompensation": 2997,
+      "operatingCashFlow": 39895,
+      "capitalExpenditures": -2392,
+      "investingCashFlow": 1927,
+      "dividendsPaid": -3825,
+      "shareRepurchases": -20139,
+      "financingCashFlow": -30585,
+      "freeCashFlow": 37503
+    },
+    "Q2": {
+      "operatingCashFlow": 22690,
+      "investingCashFlow": -310,
+      "financingCashFlow": -30433,
+      "capitalExpenditures": -1996,
+      "shareRepurchases": -23205,
+      "dividendsPaid": -3710,
+      "depreciationAndAmortization": 2836,
+      "shareBasedCompensation": 2964,
+      "freeCashFlow": 20694
+    },
+    "Q3": {
+      "operatingCashFlow": 28858,
+      "investingCashFlow": -127,
+      "financingCashFlow": -36017,
+      "capitalExpenditures": -2151,
+      "shareRepurchases": -26522,
+      "dividendsPaid": -3895,
+      "depreciationAndAmortization": 2850,
+      "shareBasedCompensation": 2869,
+      "freeCashFlow": 26707
+    },
+    "Q4": {
+      "operatingCashFlow": 26811,
+      "investingCashFlow": 1445,
+      "financingCashFlow": -24948,
+      "capitalExpenditures": -2908,
+      "shareRepurchases": -25083,
+      "dividendsPaid": -3804,
+      "depreciationAndAmortization": 2911,
+      "shareBasedCompensation": 2858,
+      "freeCashFlow": 23903
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "depreciationAndAmortization": 3080,
+      "shareBasedCompensation": 3286,
+      "operatingCashFlow": 29935,
+      "capitalExpenditures": -2940,
+      "investingCashFlow": 9792,
+      "dividendsPaid": -3856,
+      "shareRepurchases": -23606,
+      "financingCashFlow": -39371,
+      "freeCashFlow": 26995
+    },
+    "Q2": {
+      "operatingCashFlow": 23952,
+      "investingCashFlow": 2917,
+      "financingCashFlow": -29006,
+      "capitalExpenditures": -3071,
+      "shareRepurchases": -25898,
+      "dividendsPaid": -3758,
+      "depreciationAndAmortization": 2661,
+      "shareBasedCompensation": 3226,
+      "freeCashFlow": 20881
+    },
+    "Q3": {
+      "operatingCashFlow": 27867,
+      "investingCashFlow": 5073,
+      "financingCashFlow": -24833,
+      "capitalExpenditures": -3462,
+      "shareRepurchases": -21075,
+      "dividendsPaid": -3945,
+      "depreciationAndAmortization": 2830,
+      "shareBasedCompensation": 3168,
+      "freeCashFlow": 24405
+    },
+    "Q4": {
+      "operatingCashFlow": 29728,
+      "investingCashFlow": -2587,
+      "financingCashFlow": -27476,
+      "capitalExpenditures": -3242,
+      "shareRepurchases": -20132,
+      "dividendsPaid": -3862,
+      "depreciationAndAmortization": 3127,
+      "shareBasedCompensation": 3183,
+      "freeCashFlow": 26486
+    }
+  },
+  "FY2026": {
+    "Q1": {
+      "depreciationAndAmortization": 3214,
+      "shareBasedCompensation": 3594,
+      "operatingCashFlow": 53925,
+      "capitalExpenditures": -2373,
+      "investingCashFlow": -4886,
+      "dividendsPaid": -3921,
+      "shareRepurchases": -24701,
+      "financingCashFlow": -39656,
+      "freeCashFlow": 51552
+    }
+  }
+}

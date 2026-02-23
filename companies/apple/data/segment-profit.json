@@ -1,0 +1,182 @@
+{
+  "FY2021": {
+    "Q1": {
+      "americas": 46310,
+      "europe": 27306,
+      "greaterChina": 21313,
+      "japan": 8285,
+      "restOfAsiaPacific": 8225,
+      "totalNetSales": 111439
+    },
+    "Q2": {
+      "americas": 34306,
+      "europe": 22264,
+      "greaterChina": 17728,
+      "japan": 7742,
+      "restOfAsiaPacific": 7544,
+      "totalNetSales": 89584
+    },
+    "Q3": {
+      "americas": 35870,
+      "europe": 18943,
+      "greaterChina": 14762,
+      "japan": 6464,
+      "restOfAsiaPacific": 5395,
+      "totalNetSales": 81434
+    },
+    "Q4": {
+      "americas": 36820,
+      "europe": 20794,
+      "greaterChina": 14563,
+      "japan": 5991,
+      "restOfAsiaPacific": 5192,
+      "totalNetSales": 83360
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "americas": 51496,
+      "europe": 29749,
+      "greaterChina": 25783,
+      "japan": 7107,
+      "restOfAsiaPacific": 9810,
+      "totalNetSales": 123945
+    },
+    "Q2": {
+      "americas": 40882,
+      "europe": 23287,
+      "greaterChina": 18343,
+      "japan": 7724,
+      "restOfAsiaPacific": 7042,
+      "totalNetSales": 97278
+    },
+    "Q3": {
+      "americas": 37472,
+      "europe": 19287,
+      "greaterChina": 14604,
+      "japan": 5446,
+      "restOfAsiaPacific": 6150,
+      "totalNetSales": 82959
+    },
+    "Q4": {
+      "americas": 39808,
+      "europe": 22795,
+      "greaterChina": 15470,
+      "japan": 5700,
+      "restOfAsiaPacific": 6373,
+      "totalNetSales": 90146
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "americas": 49278,
+      "europe": 27681,
+      "greaterChina": 23905,
+      "japan": 6755,
+      "restOfAsiaPacific": 9535,
+      "totalNetSales": 117154
+    },
+    "Q2": {
+      "americas": 37784,
+      "europe": 23945,
+      "greaterChina": 17812,
+      "japan": 7176,
+      "restOfAsiaPacific": 8119,
+      "totalNetSales": 94836
+    },
+    "Q3": {
+      "americas": 35383,
+      "europe": 20205,
+      "greaterChina": 15758,
+      "japan": 4821,
+      "restOfAsiaPacific": 5630,
+      "totalNetSales": 81797
+    },
+    "Q4": {
+      "americas": 40115,
+      "europe": 22463,
+      "greaterChina": 15084,
+      "japan": 5505,
+      "restOfAsiaPacific": 6331,
+      "totalNetSales": 89498
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "americas": 50430,
+      "europe": 30397,
+      "greaterChina": 20819,
+      "japan": 7767,
+      "restOfAsiaPacific": 10162,
+      "totalNetSales": 119575
+    },
+    "Q2": {
+      "americas": 37273,
+      "europe": 24123,
+      "greaterChina": 16372,
+      "japan": 6262,
+      "restOfAsiaPacific": 6723,
+      "totalNetSales": 90753
+    },
+    "Q3": {
+      "americas": 37678,
+      "europe": 21884,
+      "greaterChina": 14728,
+      "japan": 5097,
+      "restOfAsiaPacific": 6390,
+      "totalNetSales": 85777
+    },
+    "Q4": {
+      "americas": 41664,
+      "europe": 24924,
+      "greaterChina": 15033,
+      "japan": 5926,
+      "restOfAsiaPacific": 7383,
+      "totalNetSales": 94930
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "americas": 52648,
+      "europe": 33861,
+      "greaterChina": 18513,
+      "japan": 8987,
+      "restOfAsiaPacific": 10291,
+      "totalNetSales": 124300
+    },
+    "Q2": {
+      "americas": 40315,
+      "europe": 24454,
+      "greaterChina": 16002,
+      "japan": 7298,
+      "restOfAsiaPacific": 7290,
+      "totalNetSales": 95359
+    },
+    "Q3": {
+      "americas": 41198,
+      "europe": 24014,
+      "greaterChina": 15369,
+      "japan": 5782,
+      "restOfAsiaPacific": 7673,
+      "totalNetSales": 94036
+    },
+    "Q4": {
+      "americas": 44192,
+      "europe": 28703,
+      "greaterChina": 14493,
+      "japan": 6636,
+      "restOfAsiaPacific": 8442,
+      "totalNetSales": 102466
+    }
+  },
+  "FY2026": {
+    "Q1": {
+      "americas": 58529,
+      "europe": 38146,
+      "greaterChina": 25526,
+      "japan": 9413,
+      "restOfAsiaPacific": 12142,
+      "totalNetSales": 143756
+    }
+  }
+}

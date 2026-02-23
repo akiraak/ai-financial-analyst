@@ -116,3 +116,12 @@
   - analysis-text.json: 12チャート概要 + 8四半期分の決算サマリー・チャート解説
   - chart-builder.jsにAlphabetセグメントラベル追加、色パレット拡張
   - トップページにAlphabetカードを追加
+- [x] Apple Inc. (AAPL) のページを追加（フルビルド）
+  - 決算資料DL: FY2021〜FY2026（21四半期分のpress-release + 10-Q/10-K）
+  - データ抽出: financials, segments, balance-sheet, cash-flows, segment-profit, investments（6スクリプト）
+  - Apple固有対応: 累積キャッシュフロー→四半期変換、EU State Aid税金費用の影響注記
+  - 地域5セグメント売上（Americas, Europe, Greater China, Japan, Rest of Asia Pacific）+ 製品5セグメント売上（iPhone, Mac, iPad, Wearables, Services）
+  - xlsx生成・検証（189リテラル値 + 214数式セル 全一致）
+  - GitHub Pages: ランディングページ + 8四半期分の詳細ページ（2024Q2〜2026Q1）
+  - analysis-text.json: 12チャート概要 + 8四半期分の決算サマリー・チャート解説（定性情報含む）
+  - トップページにAppleカードを追加

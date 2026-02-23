@@ -1,0 +1,266 @@
+{
+  "FY2021": {
+    "Q1": {
+      "americas": 46310,
+      "europe": 27306,
+      "greaterChina": 21313,
+      "japan": 8285,
+      "restOfAsiaPacific": 8225,
+      "iPhone": 65597,
+      "mac": 8675,
+      "iPad": 8435,
+      "wearables": 12971,
+      "services": 15761
+    },
+    "Q2": {
+      "americas": 34306,
+      "europe": 22264,
+      "greaterChina": 17728,
+      "japan": 7742,
+      "restOfAsiaPacific": 7544,
+      "iPhone": 47938,
+      "mac": 9102,
+      "iPad": 7807,
+      "wearables": 7836,
+      "services": 16901
+    },
+    "Q3": {
+      "americas": 35870,
+      "europe": 18943,
+      "greaterChina": 14762,
+      "japan": 6464,
+      "restOfAsiaPacific": 5395,
+      "iPhone": 39570,
+      "mac": 8235,
+      "iPad": 7368,
+      "wearables": 8775,
+      "services": 17486
+    },
+    "Q4": {
+      "americas": 36820,
+      "europe": 20794,
+      "greaterChina": 14563,
+      "japan": 5991,
+      "restOfAsiaPacific": 5192,
+      "iPhone": 38868,
+      "mac": 9178,
+      "iPad": 8252,
+      "wearables": 8785,
+      "services": 18277
+    }
+  },
+  "FY2022": {
+    "Q1": {
+      "americas": 51496,
+      "europe": 29749,
+      "greaterChina": 25783,
+      "japan": 7107,
+      "restOfAsiaPacific": 9810,
+      "iPhone": 71628,
+      "mac": 10852,
+      "iPad": 7248,
+      "wearables": 14701,
+      "services": 19516
+    },
+    "Q2": {
+      "americas": 40882,
+      "europe": 23287,
+      "greaterChina": 18343,
+      "japan": 7724,
+      "restOfAsiaPacific": 7042,
+      "iPhone": 50570,
+      "mac": 10435,
+      "iPad": 7646,
+      "wearables": 8806,
+      "services": 19821
+    },
+    "Q3": {
+      "americas": 37472,
+      "europe": 19287,
+      "greaterChina": 14604,
+      "japan": 5446,
+      "restOfAsiaPacific": 6150,
+      "iPhone": 40665,
+      "mac": 7382,
+      "iPad": 7224,
+      "wearables": 8084,
+      "services": 19604
+    },
+    "Q4": {
+      "americas": 39808,
+      "europe": 22795,
+      "greaterChina": 15470,
+      "japan": 5700,
+      "restOfAsiaPacific": 6373,
+      "iPhone": 42626,
+      "mac": 11508,
+      "iPad": 7174,
+      "wearables": 9650,
+      "services": 19188
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "americas": 49278,
+      "europe": 27681,
+      "greaterChina": 23905,
+      "japan": 6755,
+      "restOfAsiaPacific": 9535,
+      "iPhone": 65775,
+      "mac": 7735,
+      "iPad": 9396,
+      "wearables": 13482,
+      "services": 20766
+    },
+    "Q2": {
+      "americas": 37784,
+      "europe": 23945,
+      "greaterChina": 17812,
+      "japan": 7176,
+      "restOfAsiaPacific": 8119,
+      "iPhone": 51334,
+      "mac": 7168,
+      "iPad": 6670,
+      "wearables": 8757,
+      "services": 20907
+    },
+    "Q3": {
+      "americas": 35383,
+      "europe": 20205,
+      "greaterChina": 15758,
+      "japan": 4821,
+      "restOfAsiaPacific": 5630,
+      "iPhone": 39669,
+      "mac": 6840,
+      "iPad": 5791,
+      "wearables": 8284,
+      "services": 21213
+    },
+    "Q4": {
+      "americas": 40115,
+      "europe": 22463,
+      "greaterChina": 15084,
+      "japan": 5505,
+      "restOfAsiaPacific": 6331,
+      "iPhone": 43805,
+      "mac": 7614,
+      "iPad": 6443,
+      "wearables": 9322,
+      "services": 22314
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "americas": 50430,
+      "europe": 30397,
+      "greaterChina": 20819,
+      "japan": 7767,
+      "restOfAsiaPacific": 10162,
+      "iPhone": 69702,
+      "mac": 7780,
+      "iPad": 7023,
+      "wearables": 11953,
+      "services": 23117
+    },
+    "Q2": {
+      "americas": 37273,
+      "europe": 24123,
+      "greaterChina": 16372,
+      "japan": 6262,
+      "restOfAsiaPacific": 6723,
+      "iPhone": 45963,
+      "mac": 7451,
+      "iPad": 5559,
+      "wearables": 7913,
+      "services": 23867
+    },
+    "Q3": {
+      "americas": 37678,
+      "europe": 21884,
+      "greaterChina": 14728,
+      "japan": 5097,
+      "restOfAsiaPacific": 6390,
+      "iPhone": 39296,
+      "mac": 7009,
+      "iPad": 7162,
+      "wearables": 8097,
+      "services": 24213
+    },
+    "Q4": {
+      "americas": 41664,
+      "europe": 24924,
+      "greaterChina": 15033,
+      "japan": 5926,
+      "restOfAsiaPacific": 7383,
+      "iPhone": 46222,
+      "mac": 7744,
+      "iPad": 6950,
+      "wearables": 9042,
+      "services": 24972
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "americas": 52648,
+      "europe": 33861,
+      "greaterChina": 18513,
+      "japan": 8987,
+      "restOfAsiaPacific": 10291,
+      "iPhone": 69138,
+      "mac": 8987,
+      "iPad": 8088,
+      "wearables": 11747,
+      "services": 26340
+    },
+    "Q2": {
+      "americas": 40315,
+      "europe": 24454,
+      "greaterChina": 16002,
+      "japan": 7298,
+      "restOfAsiaPacific": 7290,
+      "iPhone": 46841,
+      "mac": 7949,
+      "iPad": 6402,
+      "wearables": 7522,
+      "services": 26645
+    },
+    "Q3": {
+      "americas": 41198,
+      "europe": 24014,
+      "greaterChina": 15369,
+      "japan": 5782,
+      "restOfAsiaPacific": 7673,
+      "iPhone": 44582,
+      "mac": 8046,
+      "iPad": 6581,
+      "wearables": 7404,
+      "services": 27423
+    },
+    "Q4": {
+      "americas": 44192,
+      "europe": 28703,
+      "greaterChina": 14493,
+      "japan": 6636,
+      "restOfAsiaPacific": 8442,
+      "iPhone": 49025,
+      "mac": 8726,
+      "iPad": 6952,
+      "wearables": 9013,
+      "services": 28750
+    }
+  },
+  "FY2026": {
+    "Q1": {
+      "americas": 58529,
+      "europe": 38146,
+      "greaterChina": 25526,
+      "japan": 9413,
+      "restOfAsiaPacific": 12142,
+      "iPhone": 85269,
+      "mac": 8386,
+      "iPad": 8595,
+      "wearables": 11493,
+      "services": 30013
+    }
+  }
+}

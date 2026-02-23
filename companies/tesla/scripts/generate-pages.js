@@ -29,7 +29,7 @@ function generateLandingPage() {
   <meta property="og:description" content="${DESC}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${BASE_URL}/${SLUG}/">
-  <meta property="og:image" content="${BASE_URL}/${SLUG}/ogp.png">
+  <meta property="og:image" content="${BASE_URL}/ogp.png">
   <meta property="og:site_name" content="AI Financial Analyst">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../css/style.css">
@@ -119,7 +119,7 @@ function generateQuartersIndex() {
   <meta property="og:description" content="${COMPANY}の四半期ごとの業績分析・チャートを閲覧">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${BASE_URL}/${SLUG}/quarters/">
-  <meta property="og:image" content="${BASE_URL}/${SLUG}/ogp.png">
+  <meta property="og:image" content="${BASE_URL}/ogp.png">
   <meta property="og:site_name" content="AI Financial Analyst">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../../css/style.css">
@@ -212,7 +212,7 @@ function generateTemplate() {
   <meta property="og:description" content="${COMPANY} {{QUARTER_LABEL}}の業績分析・チャート">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${BASE_URL}/${SLUG}/quarters/{{QUARTER_DIR}}/">
-  <meta property="og:image" content="${BASE_URL}/${SLUG}/ogp.png">
+  <meta property="og:image" content="${BASE_URL}/ogp.png">
   <meta property="og:site_name" content="AI Financial Analyst">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../../../css/style.css">

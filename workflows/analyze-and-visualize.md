@@ -114,7 +114,7 @@
 - `og:description` — ページ説明文
 - `og:type` — `website`
 - `og:url` — ページの正規URL
-- `og:image` — OGP画像（企業別に `docs/<企業名>/ogp.png` を配置、1200×630px推奨）
+- `og:image` — OGP画像（全ページ共通で `docs/ogp.png` を使用、1200×630px推奨）
 - `og:site_name` — `AI Financial Analyst`
 - `twitter:card` — `summary_large_image`
 
@@ -131,8 +131,7 @@
 - generate-data-json.js がtemplate.htmlを各四半期フォルダにコピーする際、これらを実際の値（例: `FY2026 Q2`, `2026Q2`）に置換する
 
 **OGP画像の配置:**
-- サイト共通: `docs/ogp.png`
-- 企業別: `docs/<企業名>/ogp.png`
+- 全ページ共通: `docs/ogp.png`（1200×630px推奨）
 - 画像が未配置でもタイトル・説明文は表示される
 
 ## 技術スタック

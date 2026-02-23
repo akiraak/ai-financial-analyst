@@ -304,7 +304,11 @@ docs/                              # GitHub Pages公開ディレクトリ
   "quarters": {
     "<YYYYQN>": {
       "summary": [
-        { "label": "見出し", "text": "サマリー本文" }
+        // --- 定性情報（上部に表示、type: "qualitative"） ---
+        { "type": "qualitative", "label": "見出し", "text": "テキスト本文" },
+        { "type": "qualitative", "label": "見出し", "items": ["箇条書き1", "箇条書き2"] },
+        // --- 数値分析（下部に表示、typeなし） ---
+        { "label": "見出し", "text": "数値ベースのサマリー本文" }
       ],
       "charts": {
         "<chartId>": "その四半期の具体的な数値分析"
@@ -314,13 +318,27 @@ docs/                              # GitHub Pages公開ディレクトリ
 }
 ```
 
+**決算サマリーの構成:**
+
+サマリーは「定性情報」→「数値分析」の2部構成で表示される。定性情報は左ボーダー付きブロック、数値分析は従来のテキスト形式で、間に区切り線が入る。
+
+**定性情報（`type: "qualitative"`）:**
+- プレスリリースの内容に基づき、その四半期の特徴を表す定性的な情報を記述する
+- `label` は自由に設定する（例: "CEOコメント"、"主要トピックス"、"来期ガイダンス"、"新製品"、"戦略的提携"、"規制動向" など）
+- 本文は `text`（単一テキスト）または `items`（文字列配列→箇条書き表示）のいずれかを使用
+- 項目数・内容はプレスリリースごとに異なって構わない。その四半期で重要なトピックを選ぶ
+
+**数値分析（`type` なし）:**
+- 従来通り `label` + `text` のテキスト形式
+- 3〜4項目で四半期の業績ハイライトを記述
+
 **対象チャートID（12種）:**
 `plChart`, `marginChart`, `costChart`, `balanceSheetChart`, `cashFlowChart`, `pricePERChart`, `valuationChart`, `segmentRevenueChart`, `segmentCompositionChart`, `segmentProfitChart`, `segmentMarginChart`, `investmentChart`
 
 **書き方のルール:**
 - 「概要（overviews）」はチャートが何を表示するかの一般的な説明。四半期によらず共通
 - 「解説（quarters.*.charts）」は最新四半期のデータに基づく具体的な数値分析。金額・比率・成長率を含める
-- 「決算サマリー（quarters.*.summary）」は3〜4項目で四半期のハイライトを記述
+- 「決算サマリー（quarters.*.summary）」は定性情報（プレスリリースから抽出した定性的ハイライト）+ 数値分析3〜4項目で構成する
 - データが取得できていないチャート（segmentProfit, investments等がnullの場合）はその旨を記載
 
 **初回・新四半期追加時とも、このステップで全四半期分のテキストを生成・更新する。**

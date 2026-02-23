@@ -638,6 +638,43 @@ details.chart-details .chart-description {
   color: #444;
 }
 
+/* 決算サマリー: 定性情報ブロック */
+.summary-block {
+  margin-bottom: 14px;
+  padding-left: 14px;
+  border-left: 3px solid #ccc;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.summary-block .summary-label {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.summary-block p { margin: 0; }
+
+.summary-block ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.summary-block ul li {
+  margin-bottom: 2px;
+}
+
+.summary-block { border-left-color: #999; }
+
+/* 決算サマリー: 数値分析セクション */
+.summary-financial {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-light);
+}
+
 /* KPIサブテキスト（QoQ/YoY） */
 .kpi-item .kpi-change {
   font-size: 0.7rem;

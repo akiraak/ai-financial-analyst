@@ -163,9 +163,33 @@ const QuarterDetail = {
       title.textContent = quarterKey.replace(/(\d{4})Q(\d)/, 'FY$1 Q$2') + ' 決算サマリー';
     }
     if (content && qData.summary && qData.summary.length > 0) {
-      content.innerHTML = qData.summary.map(item =>
-        `<p><span class="label">${item.label}:</span> ${item.text}</p>`
-      ).join('');
+      // type付き項目（定性情報）と通常項目（数値分析）を分離
+      const qualitative = qData.summary.filter(item => item.type === 'qualitative');
+      const financial = qData.summary.filter(item => !item.type);
+
+      let html = '';
+
+      // 定性情報セクション
+      for (const item of qualitative) {
+        const body = item.items
+          ? '<ul>' + item.items.map(li => `<li>${li}</li>`).join('') + '</ul>'
+          : `<p>${item.text}</p>`;
+        html += `<div class="summary-block">
+          <div class="summary-label">${item.label}</div>
+          ${body}
+        </div>`;
+      }
+
+      // 数値分析セクション
+      if (financial.length > 0) {
+        html += '<div class="summary-financial">';
+        html += financial.map(item =>
+          `<p><span class="label">${item.label}:</span> ${item.text}</p>`
+        ).join('');
+        html += '</div>';
+      }
+
+      content.innerHTML = html;
     }
 
     // 投資コミットメントの挿入

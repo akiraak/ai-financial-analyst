@@ -100,6 +100,13 @@
   - GitHub Pages: ランディングページ + 8四半期分の詳細ページ（2024Q1〜2025Q4）
   - analysis-text.json: 12チャート概要 + 8四半期分の決算サマリー・チャート解説
   - トップページにTeslaカードを追加
+- [x] 四半期詳細ページの決算サマリーを改善（全7社・56四半期）
+  - プレスリリースから定性情報（CEOコメント、主要トピックス、来期ガイダンス・展望）を抽出
+  - analysis-text.jsonに`type: "qualitative"`項目として既存の数値分析テキストの前に追加
+  - quarter-detail.jsに定性情報の描画ロジックを追加（左ボーダー付きブロック、箇条書き対応）
+  - style.cssにsummary-block/summary-financialスタイルを追加
+  - analyze-and-visualize.mdワークフローに新フォーマット仕様を追記
+  - 対象企業: NVIDIA, Broadcom, Alphabet, Intel, Meta, Palantir, Tesla
 - [x] Alphabet Inc. (GOOGL) のページを追加（フルビルド）
   - 決算資料DL: FY2020〜FY2025（24四半期分のpress-release + 10-Q/10-K）
   - データ抽出: financials, segments, balance-sheet, cash-flows, segment-profit, investments（6スクリプト）

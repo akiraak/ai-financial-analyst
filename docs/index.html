@@ -12,87 +12,193 @@
   <meta property="og:site_name" content="AI Financial Analyst">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; background:#fff; }
+    /* マストヘッド */
+    .masthead { text-align:center; padding:20px 0 12px; border-bottom:3px double #111; }
+    .masthead .inner { max-width:1100px; margin:0 auto; padding:0 20px; }
+    .masthead h1 { font-size:3.2rem; font-weight:900; letter-spacing:-.04em; line-height:1; color:#111; }
+    .masthead .tagline { font-size:.72rem; font-family:-apple-system,sans-serif; letter-spacing:.1em; text-transform:uppercase; margin-top:6px; color:#888; }
+    /* メインコンテンツ */
+    .main { max-width:1100px; margin:0 auto; padding:0 20px 40px; }
+    /* リードセクション */
+    .lead { display:grid; grid-template-columns:1fr 180px; gap:28px; padding:24px 0 20px; border-bottom:1px solid #ddd; align-items:start; }
+    .lead-text h2 { font-size:1.5rem; font-weight:700; line-height:1.2; margin-bottom:12px; }
+    .lead-text p { font-size:.88rem; line-height:1.8; color:#444; font-family:-apple-system,sans-serif; }
+    .lead-char { text-align:center; }
+    .lead-char img { width:150px; }
+    .lead-char .cap { font-size:.68rem; font-family:-apple-system,sans-serif; color:#999; margin-top:6px; font-style:italic; }
+    /* 企業リスト（3カラム） */
+    .cols { display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin-top:20px; }
+    .col { padding:0 20px; border-right:1px solid #e0e0e0; }
+    .col:first-child { padding-left:0; }
+    .col:last-child { border-right:none; padding-right:0; }
+    /* 企業アイテム */
+    .ni { padding:13px 8px; margin:0 -8px; border-bottom:1px solid #eee; transition:background .15s; }
+    .ni:hover { background:#faf7ef; }
+    .ni:last-child { border-bottom:none; }
+    .ni a { text-decoration:none; color:inherit; display:block; }
+    .ni-head { display:flex; align-items:baseline; gap:10px; margin-bottom:5px; }
+    .ni .tk { font-size:.78rem; font-family:-apple-system,sans-serif; font-weight:800; color:#fff; background:#222; padding:2px 7px; border-radius:3px; letter-spacing:.04em; flex:0 0 auto; }
+    .ni h3 { font-size:.93rem; font-weight:700; color:#111; line-height:1.25; }
+    .ni a:hover h3 { color:#1a6aab; }
+    .ni p { font-size:.76rem; color:#666; line-height:1.65; font-family:-apple-system,sans-serif; }
+    /* メタ情報（分析期間・決算日） */
+    .ni-meta { margin-top:6px; font-size:.72rem; font-family:-apple-system,sans-serif; }
+    .ni-period { color:#559c30; font-weight:600; }
+    .ni-earnings { color:#999; margin-top:2px; }
+    .ni-earnings.past { color:#c0392b; font-weight:600; }
+    /* 銘柄リスト見出し */
+    .cols-header { font-family:-apple-system,sans-serif; font-size:.68rem; font-weight:700; letter-spacing:.22em; color:#111; text-align:center; border-top:2px solid #111; border-bottom:1px solid #111; padding:5px 0; margin-top:20px; text-transform:uppercase; }
+    /* フッター */
+    .foot { margin-top:28px; padding:12px 0; text-align:center; font-family:-apple-system,sans-serif; font-size:.7rem; color:#888; border-top:1px solid #ccc; }
+    .foot a { text-decoration:none; color:#111; }
+    /* レスポンシブ */
+    @media(max-width:768px){
+      .lead { grid-template-columns:1fr; }
+      .cols { grid-template-columns:1fr; }
+      .col { padding:0; border-right:none; border-bottom:1px solid #e0e0e0; padding-bottom:20px; margin-bottom:20px; }
+      .col:last-child { border-bottom:none; margin-bottom:0; }
+      .masthead h1 { font-size:2rem; }
+    }
+  </style>
 </head>
 <body>
 
-  <div class="header">
-    <div class="container">
+  <div class="masthead">
+    <div class="inner">
       <h1>AI Financial Analyst</h1>
-      <div class="meta">業績データの分析・可視化ダッシュボード</div>
+      <div class="tagline">注目銘柄 AI決算分析レポート</div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="company-list">
-      <a href="nvidia/" class="company-card" data-slug="nvidia">
-        <h2>NVIDIA</h2>
-        <span class="ticker">NVDA</span>
-        <p class="desc">GPU・AI半導体。四半期業績推移、利益率、株価・PER、費用構造を可視化。</p>
-        <div class="card-meta"></div>
-      </a>
-      <a href="broadcom/" class="company-card" data-slug="broadcom">
-        <h2>Broadcom</h2>
-        <span class="ticker">AVGO</span>
-        <p class="desc">半導体・インフラソフトウェア。AI/クラウド向けASIC、VMware統合後の業績を可視化。</p>
-        <div class="card-meta"></div>
-      </a>
-      <a href="meta/" class="company-card" data-slug="meta">
-        <h2>Meta Platforms</h2>
-        <span class="ticker">META</span>
-        <p class="desc">SNS・広告プラットフォーム。Family of Apps・Reality Labs セグメント別業績を可視化。</p>
-        <div class="card-meta"></div>
-      </a>
-      <a href="palantir/" class="company-card" data-slug="palantir">
-        <h2>Palantir Technologies</h2>
-        <span class="ticker">PLTR</span>
-        <p class="desc">データ分析・AIプラットフォーム。Government・Commercial セグメント別業績を可視化。</p>
-        <div class="card-meta"></div>
-      </a>
-      <a href="intel/" class="company-card" data-slug="intel">
-        <h2>Intel Corporation</h2>
-        <span class="ticker">INTC</span>
-        <p class="desc">半導体メーカー・ファウンドリ。CCG・DCAI・Intel Foundry セグメント別業績を可視化。</p>
-        <div class="card-meta"></div>
-      </a>
-      <a href="tesla/" class="company-card" data-slug="tesla">
-        <h2>Tesla, Inc.</h2>
-        <span class="ticker">TSLA</span>
-        <p class="desc">EV・エネルギー。Automotive・Energy Generation & Storage・Services セグメント別業績を可視化。</p>
-        <div class="card-meta"></div>
-      </a>
-      <a href="alphabet/" class="company-card" data-slug="alphabet">
-        <h2>Alphabet Inc.</h2>
-        <span class="ticker">GOOGL</span>
-        <p class="desc">検索・広告・クラウド。Google Services・Google Cloud・Other Bets セグメント別業績を可視化。</p>
-        <div class="card-meta"></div>
-      </a>
-      <a href="apple/" class="company-card" data-slug="apple">
-        <h2>Apple Inc.</h2>
-        <span class="ticker">AAPL</span>
-        <p class="desc">iPhone・Mac・iPad・Services。地域別・製品別セグメント業績を可視化。</p>
-        <div class="card-meta"></div>
-      </a>
-      <a href="microsoft/" class="company-card" data-slug="microsoft">
-        <h2>Microsoft Corporation</h2>
-        <span class="ticker">MSFT</span>
-        <p class="desc">クラウド・AI・生産性ソフトウェア。Intelligent Cloud・Productivity & Business・More Personal Computing セグメント別業績を可視化。</p>
-        <div class="card-meta"></div>
-      </a>
+  <div class="main">
+    <div class="lead">
+      <div class="lead-text">
+        <h2>注目銘柄の決算資料を、グラフで読み解く</h2>
+        <p>AIが決算資料を分析し、売上・費用・利益の推移をチャートで可視化します。株価・PERなど13種の指標で、企業の業績を四半期単位で確認できます。</p>
+      </div>
+      <div class="lead-char">
+        <img src="character/ai-craw-patterns-thinking.png" alt="thinking">
+      </div>
     </div>
-  </div>
 
-  <div class="footer">
-    <p><a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a></p>
+    <div class="cols-header">全 9 社</div>
+    <div class="cols">
+      <div class="col">
+        <div class="ni">
+          <a href="nvidia/" data-slug="nvidia">
+            <div class="ni-head">
+              <span class="tk">NVDA</span>
+              <h3>NVIDIA</h3>
+            </div>
+            <p>GPU・AI半導体。四半期業績推移、利益率、株価・PER、費用構造を可視化。</p>
+            <div class="ni-meta"></div>
+          </a>
+        </div>
+        <div class="ni">
+          <a href="broadcom/" data-slug="broadcom">
+            <div class="ni-head">
+              <span class="tk">AVGO</span>
+              <h3>Broadcom</h3>
+            </div>
+            <p>半導体・インフラソフトウェア。AI/クラウド向けASIC、VMware統合後の業績を可視化。</p>
+            <div class="ni-meta"></div>
+          </a>
+        </div>
+        <div class="ni">
+          <a href="meta/" data-slug="meta">
+            <div class="ni-head">
+              <span class="tk">META</span>
+              <h3>Meta Platforms</h3>
+            </div>
+            <p>SNS・広告プラットフォーム。Family of Apps・Reality Labs セグメント別業績を可視化。</p>
+            <div class="ni-meta"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="ni">
+          <a href="palantir/" data-slug="palantir">
+            <div class="ni-head">
+              <span class="tk">PLTR</span>
+              <h3>Palantir Technologies</h3>
+            </div>
+            <p>データ分析・AIプラットフォーム。Government・Commercial セグメント別業績を可視化。</p>
+            <div class="ni-meta"></div>
+          </a>
+        </div>
+        <div class="ni">
+          <a href="intel/" data-slug="intel">
+            <div class="ni-head">
+              <span class="tk">INTC</span>
+              <h3>Intel Corporation</h3>
+            </div>
+            <p>半導体メーカー・ファウンドリ。CCG・DCAI・Intel Foundry セグメント別業績を可視化。</p>
+            <div class="ni-meta"></div>
+          </a>
+        </div>
+        <div class="ni">
+          <a href="tesla/" data-slug="tesla">
+            <div class="ni-head">
+              <span class="tk">TSLA</span>
+              <h3>Tesla, Inc.</h3>
+            </div>
+            <p>EV・エネルギー。Automotive・Energy Generation & Storage・Services セグメント別業績を可視化。</p>
+            <div class="ni-meta"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="ni">
+          <a href="alphabet/" data-slug="alphabet">
+            <div class="ni-head">
+              <span class="tk">GOOGL</span>
+              <h3>Alphabet Inc.</h3>
+            </div>
+            <p>検索・広告・クラウド。Google Services・Google Cloud・Other Bets セグメント別業績を可視化。</p>
+            <div class="ni-meta"></div>
+          </a>
+        </div>
+        <div class="ni">
+          <a href="apple/" data-slug="apple">
+            <div class="ni-head">
+              <span class="tk">AAPL</span>
+              <h3>Apple Inc.</h3>
+            </div>
+            <p>iPhone・Mac・iPad・Services。地域別・製品別セグメント業績を可視化。</p>
+            <div class="ni-meta"></div>
+          </a>
+        </div>
+        <div class="ni">
+          <a href="microsoft/" data-slug="microsoft">
+            <div class="ni-head">
+              <span class="tk">MSFT</span>
+              <h3>Microsoft Corporation</h3>
+            </div>
+            <p>クラウド・AI・生産性ソフトウェア。Intelligent Cloud・Productivity & Business・More Personal Computing セグメント別業績を可視化。</p>
+            <div class="ni-meta"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a>
+    </div>
   </div>
 
   <script>
-  // 企業カードにメタ情報を動的表示する
-  document.querySelectorAll('.company-card[data-slug]').forEach(card => {
-    const slug = card.dataset.slug;
+  // 企業アイテムにメタ情報を動的表示する
+  document.querySelectorAll('.ni a[data-slug]').forEach(link => {
+    const slug = link.dataset.slug;
     fetch(slug + '/data.json')
       .then(r => r.json())
       .then(data => {
-        const meta = card.querySelector('.card-meta');
+        const meta = link.querySelector('.ni-meta');
         if (!meta) return;
 
         // 分析期間: hasPage=true かつ isOutlook=false の四半期の範囲
@@ -101,8 +207,8 @@
           const first = withPage[0].label;
           const last = withPage[withPage.length - 1].label;
           const periodEl = document.createElement('div');
-          periodEl.className = 'card-period';
-          periodEl.textContent = first + ' ~ ' + last;
+          periodEl.className = 'ni-period';
+          periodEl.textContent = first + ' 〜 ' + last;
           meta.appendChild(periodEl);
         }
 
@@ -114,7 +220,7 @@
             String(now.getDate()).padStart(2, '0');
           const isPast = data.nextEarningsDate <= today;
           const earningsEl = document.createElement('div');
-          earningsEl.className = 'card-earnings' + (isPast ? ' past' : '');
+          earningsEl.className = 'ni-earnings' + (isPast ? ' past' : '');
           earningsEl.textContent = '次の決算発表: ' + data.nextEarningsDate;
           meta.appendChild(earningsEl);
         }

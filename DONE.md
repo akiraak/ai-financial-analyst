@@ -137,3 +137,7 @@
   - 「四 半 期 分 析」セクションヘッダー・次の決算発表日表示
   - キャラクター画像（ai-craw-patterns-working）をマストヘッドに配置
   - 各社の generate-pages.js の generateLandingPage() も同様に更新（全9社）
+- [x] 全四半期ページ（詳細・一覧）のデザインをWSJ風スタイルに刷新
+  - 四半期選択ページ（quarters/index.html）: マストヘッド+パンくずバー+WSJ風カードレイアウト
+  - 四半期詳細ページ（quarters/<YYYYQN>/index.html）: WSJ風ヘッダー+セクション構成
+  - 全9社のgenerate-pages.jsを更新

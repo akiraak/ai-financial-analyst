@@ -31,8 +31,17 @@ ai-financial-analyst/
 │   ├── validate-xlsx.md      # xlsx数値検証フロー
 │   ├── analyze-and-visualize.md # データ分析・可視化フロー
 │   └── full-build.md         # フルビルド（DL→抽出→xlsx→ページ生成）
-├── companies/       # 企業別の分析データ・スクリプト
-│   └── <企業名>/
+├── companies/       # 企業別の分析データ・スクリプト（全9社）
+│   ├── nvidia/      # NVIDIA (NVDA)
+│   ├── broadcom/    # Broadcom (AVGO)
+│   ├── alphabet/    # Alphabet (GOOGL)
+│   ├── intel/       # Intel (INTC)
+│   ├── meta/        # Meta Platforms (META)
+│   ├── palantir/    # Palantir (PLTR)
+│   ├── tesla/       # Tesla (TSLA)
+│   ├── apple/       # Apple (AAPL)
+│   ├── microsoft/   # Microsoft (MSFT)
+│   └── <企業名>/    # 各社共通構成:
 │       ├── config.json        # 期間設定（pageYears, chartYears, nextEarningsDate）
 │       ├── filings/           # 決算資料の原本
 │       │   ├── FY20XX/
@@ -40,35 +49,51 @@ ai-financial-analyst/
 │       │   │   │   ├── press-release.*  # 決算プレスリリース（共通名称）
 │       │   │   │   ├── 10-Q.pdf        # 四半期報告書（Q1〜Q3）
 │       │   │   │   ├── 10-K.pdf        # 年次報告書（Q4のみ）
-│       │   │   │   ├── cfo-commentary.pdf # CFO Commentary
 │       │   │   │   └── ...              # その他資料（企業固有の名前で保存）
 │       │   │   └── ...
 │       │   └── README.md      # 資料一覧・URL対応表・ファイル説明
 │       ├── scripts/           # 処理コード（JSスクリプト）
 │       │   ├── extract-financials.js  # P/Lデータ抽出
+│       │   ├── extract-segments.js    # セグメント別売上抽出
+│       │   ├── extract-segment-profit.js # セグメント別損益抽出
+│       │   ├── extract-balance-sheet.js  # B/Sデータ抽出
+│       │   ├── extract-cash-flows.js  # キャッシュフロー抽出
+│       │   ├── extract-investments.js # 投資コミットメント抽出
 │       │   ├── fetch-stock-prices.js  # 四半期末株価取得
 │       │   ├── generate-xlsx.js       # xlsx生成
-│       │   ├── generate-pages.js      # HTMLページ生成
+│       │   ├── validate-xlsx.js       # xlsx数値検証
 │       │   ├── generate-data-json.js  # GitHub Pages用data.json生成
-│       │   └── ...
+│       │   ├── generate-ir-links.js   # 決算資料リンクJSON生成
+│       │   ├── generate-pages.js      # HTMLページ生成
+│       │   ├── download-filings.js    # 決算資料ダウンロード
+│       │   └── download-10q-10k.js    # 10-Q/10-Kダウンロード
 │       └── data/              # データファイル（JSON, xlsx）
 │           ├── financials.json        # 抽出済みP/Lデータ
+│           ├── segments.json          # セグメント別売上データ
+│           ├── segment-profit.json    # セグメント別損益データ
+│           ├── balance-sheet.json     # B/Sデータ
+│           ├── cash-flows.json        # キャッシュフローデータ
+│           ├── investments.json       # 投資コミットメントデータ
 │           ├── stock-prices.json      # 取得済み株価データ
+│           ├── quarterly-links.json   # 四半期別資料リンク
 │           ├── template.xlsx          # xlsx生成用テンプレート
-│           └── Financials.xlsx   # 生成されたxlsx
+│           └── Financials.xlsx        # 生成されたxlsx
 ├── assets/          # ソースアセット
 │   └── character/             # キャラクター画像（原本）
 ├── docs/            # GitHub Pages公開ディレクトリ
-│   ├── index.html             # 企業一覧トップページ
+│   ├── index.html             # 企業一覧トップページ（WSJ風デザイン）
+│   ├── ogp.png                # OGP画像（SNS共有用）
 │   ├── css/
 │   │   └── style.css          # 共通スタイル
 │   ├── js/
 │   │   ├── chart-builder.js   # 共通チャート生成ロジック（13チャート）
 │   │   └── quarter-detail.js  # 四半期詳細ページのロジック
 │   ├── character/             # キャラクター画像（公開用・assets/character/ からコピー）
-│   └── nvidia/
-│       ├── index.html         # NVIDIAレポートページ
+│   └── <企業名>/              # 全9社共通構成（nvidia, broadcom, alphabet 等）
+│       ├── index.html         # 企業ランディングページ（WSJ風デザイン）
 │       ├── data.json          # 統合データ（全四半期）
+│       ├── analysis-text.json # チャート解説・決算サマリーテキスト
+│       ├── ir-links.json      # 決算資料リンク一覧
 │       └── quarters/          # 四半期別分析ページ
 │           ├── index.html     # 四半期選択ページ
 │           ├── template.html  # 詳細ページテンプレート

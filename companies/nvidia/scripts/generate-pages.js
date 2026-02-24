@@ -43,14 +43,16 @@ function generateLandingPage() {
     .np-breadcrumb a:hover { text-decoration:underline; }
     .np-breadcrumb .sep { margin:0 6px; }
     /* マストヘッド */
-    .np-masthead { text-align:center; padding:24px 0 14px; border-bottom:3px double #111; }
-    .np-masthead .inner { max-width:900px; margin:0 auto; padding:0 20px; }
+    .np-masthead { padding:24px 0 14px; border-bottom:3px double #111; }
+    .np-masthead .inner { max-width:900px; margin:0 auto; padding:0 20px; display:flex; align-items:center; justify-content:center; gap:24px; }
+    .np-masthead .np-masthead-content { text-align:center; }
     .np-masthead .np-head { display:flex; align-items:baseline; justify-content:center; gap:14px; }
     .np-masthead h1 { font-size:2.8rem; font-weight:900; letter-spacing:-.03em; color:#111; line-height:1; }
     .np-masthead .tk { font-size:.88rem; font-family:-apple-system,sans-serif; font-weight:800; color:#fff; background:#222; padding:3px 10px; border-radius:3px; letter-spacing:.06em; }
     .np-masthead .np-meta { font-size:.7rem; font-family:-apple-system,sans-serif; color:#999; margin-top:10px; }
     .np-masthead .np-earnings { font-size:.72rem; font-family:-apple-system,sans-serif; color:#999; margin-top:4px; }
     .np-masthead .np-earnings.past { color:#c0392b; font-weight:600; }
+    .np-masthead .np-char img { width:110px; }
     /* メインコンテンツ */
     .np-main { max-width:900px; margin:0 auto; padding:0 20px 40px; }
     /* セクションヘッダー */
@@ -79,12 +81,17 @@ function generateLandingPage() {
 
   <div class="np-masthead">
     <div class="inner">
-      <div class="np-head">
-        <span class="tk">${TICKER}</span>
-        <h1>${COMPANY}</h1>
+      <div class="np-masthead-content">
+        <div class="np-head">
+          <span class="tk">${TICKER}</span>
+          <h1>${COMPANY}</h1>
+        </div>
+        <div class="np-meta" id="meta"></div>
+        <div class="np-earnings" id="next-earnings"></div>
       </div>
-      <div class="np-meta" id="meta"></div>
-      <div class="np-earnings" id="next-earnings"></div>
+      <div class="np-char">
+        <img src="../character/ai-craw-patterns-working.png" alt="AI Craw">
+      </div>
     </div>
   </div>
 

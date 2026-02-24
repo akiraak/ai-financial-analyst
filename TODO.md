@@ -1,3 +1,5 @@
 # TODO
 
-- [ ] トップページのデザインを np2-02（WSJ風・ティッカー強調）に変更する（参照: http://localhost:8899/np2-02.html）
+- [ ] 企業トップページ（docs/<企業名>/index.html）のデザインをトップページ（docs/index.html）のWSJ風スタイルに合わせる
+- [ ] 四半期ごとの分析ページ（docs/<企業名>/quarters/<YYYYQN>/index.html）のデザインをトップページ（docs/index.html）のWSJ風スタイルに合わせる
+

@@ -126,3 +126,8 @@
   - analysis-text.json: 12チャート概要 + 8四半期分の決算サマリー・チャート解説（定性情報含む）
   - トップページにAppleカードを追加
 - [x] Microsoft Corporation (MSFT) のページを追加（フルビルド）
+- [x] 全企業トップページ（docs/<企業名>/index.html）のデザインをWSJ風スタイルに刷新
+  - マストヘッド（ティッカーバッジ・大タイトル・ダブルボーダー）＋パンくずバー
+  - 「四 半 期 分 析」セクションヘッダー・次の決算発表日表示
+  - キャラクター画像（ai-craw-patterns-working）をマストヘッドに配置
+  - 各社の generate-pages.js の generateLandingPage() も同様に更新（全9社）

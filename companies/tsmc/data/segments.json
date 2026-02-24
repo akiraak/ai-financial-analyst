@@ -1,0 +1,238 @@
+{
+  "FY2020": {
+    "Q2": {
+      "hpc": 102531,
+      "smartphone": 146029,
+      "iot": 24856,
+      "automotive": 12428,
+      "dce": 15535,
+      "others": 9321,
+      "_percentages": {
+        "hpc": 33,
+        "smartphone": 47,
+        "iot": 8,
+        "automotive": 4,
+        "dce": 5,
+        "others": 3
+      }
+    }
+  },
+  "FY2021": {
+    "Q1": {
+      "hpc": 126844,
+      "smartphone": 163085,
+      "iot": 32617,
+      "automotive": 14496,
+      "dce": 14496,
+      "others": 10872,
+      "_percentages": {
+        "hpc": 35,
+        "smartphone": 45,
+        "iot": 9,
+        "automotive": 4,
+        "dce": 4,
+        "others": 3
+      }
+    },
+    "Q2": {
+      "hpc": 145137,
+      "smartphone": 156301,
+      "iot": 29772,
+      "automotive": 14886,
+      "dce": 14886,
+      "others": 11164,
+      "_percentages": {
+        "hpc": 39,
+        "smartphone": 42,
+        "iot": 8,
+        "automotive": 4,
+        "dce": 4,
+        "others": 3
+      }
+    },
+    "Q3": {
+      "hpc": 153428,
+      "smartphone": 182455,
+      "iot": 37320,
+      "automotive": 16587,
+      "dce": 12440,
+      "others": 12440,
+      "_percentages": {
+        "hpc": 37,
+        "smartphone": 44,
+        "iot": 9,
+        "automotive": 4,
+        "dce": 3,
+        "others": 3
+      }
+    },
+    "Q4": {
+      "hpc": 162130,
+      "smartphone": 192803,
+      "iot": 39437,
+      "automotive": 17528,
+      "dce": 13146,
+      "others": 13146,
+      "_percentages": {
+        "hpc": 37,
+        "smartphone": 44,
+        "iot": 9,
+        "automotive": 4,
+        "dce": 3,
+        "others": 3
+      }
+    }
+  },
+  "FY2022": {
+    "Q4": {
+      "hpc": 262723,
+      "smartphone": 237702,
+      "iot": 50043,
+      "automotive": 37532,
+      "dce": 12511,
+      "others": 25021,
+      "_percentages": {
+        "hpc": 42,
+        "smartphone": 38,
+        "iot": 8,
+        "automotive": 6,
+        "dce": 2,
+        "others": 4
+      }
+    }
+  },
+  "FY2023": {
+    "Q1": {
+      "hpc": 223799,
+      "smartphone": 172935,
+      "iot": 45777,
+      "automotive": 35604,
+      "dce": 10173,
+      "others": 20345,
+      "_percentages": {
+        "hpc": 44,
+        "smartphone": 34,
+        "iot": 9,
+        "automotive": 7,
+        "dce": 2,
+        "others": 4
+      }
+    },
+    "Q2": {
+      "hpc": 211570,
+      "smartphone": 158678,
+      "iot": 38467,
+      "automotive": 38467,
+      "dce": 14425,
+      "others": 19234,
+      "_percentages": {
+        "hpc": 44,
+        "smartphone": 33,
+        "iot": 8,
+        "automotive": 8,
+        "dce": 3,
+        "others": 4
+      }
+    },
+    "Q4": {
+      "hpc": 268977,
+      "smartphone": 268977,
+      "iot": 31276,
+      "automotive": 31276,
+      "dce": 12511,
+      "others": 12511,
+      "_percentages": {
+        "hpc": 43,
+        "smartphone": 43,
+        "iot": 5,
+        "automotive": 5,
+        "dce": 2,
+        "others": 2
+      }
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "hpc": 272616,
+      "smartphone": 225205,
+      "iot": 35559,
+      "automotive": 35559,
+      "dce": 11853,
+      "others": 11853,
+      "_percentages": {
+        "hpc": 46,
+        "smartphone": 38,
+        "iot": 6,
+        "automotive": 6,
+        "dce": 2,
+        "others": 2
+      }
+    },
+    "Q2": {
+      "hpc": 350225,
+      "smartphone": 222258,
+      "iot": 40411,
+      "automotive": 33676,
+      "dce": 13470,
+      "others": 13470,
+      "_percentages": {
+        "hpc": 52,
+        "smartphone": 33,
+        "iot": 6,
+        "automotive": 5,
+        "dce": 2,
+        "others": 2
+      }
+    },
+    "Q3": {
+      "hpc": 387443,
+      "smartphone": 258295,
+      "iot": 53178,
+      "automotive": 37985,
+      "dce": 7597,
+      "others": 15194,
+      "_percentages": {
+        "hpc": 51,
+        "smartphone": 34,
+        "iot": 7,
+        "automotive": 5,
+        "dce": 1,
+        "others": 2
+      }
+    },
+    "Q4": {
+      "hpc": 460284,
+      "smartphone": 303961,
+      "iot": 43423,
+      "automotive": 34738,
+      "dce": 8685,
+      "others": 17369,
+      "_percentages": {
+        "hpc": 53,
+        "smartphone": 35,
+        "iot": 5,
+        "automotive": 4,
+        "dce": 1,
+        "others": 2
+      }
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "hpc": 495160,
+      "smartphone": 234991,
+      "iot": 41963,
+      "automotive": 41963,
+      "dce": 8393,
+      "others": 16785,
+      "_percentages": {
+        "hpc": 59,
+        "smartphone": 28,
+        "iot": 5,
+        "automotive": 5,
+        "dce": 1,
+        "others": 2
+      }
+    }
+  }
+}

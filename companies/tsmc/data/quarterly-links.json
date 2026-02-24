@@ -1,0 +1,218 @@
+[
+  {
+    "fy": "FY2020",
+    "q": "Q1",
+    "date": "2020-04-16",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459020016960/tsm-6k_20200416.htm",
+    "presentationUrl": null,
+    "localPressRelease": "FY2020/Q1/press-release.html",
+    "localPresentation": null
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q2",
+    "date": "2020-07-16",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459020032443/tsm-ex991_64.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459020032443/tsm-ex992_36.htm",
+    "localPressRelease": "FY2020/Q2/press-release.html",
+    "localPresentation": "FY2020/Q2/presentation.html"
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q3",
+    "date": "2020-10-15",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459020046453/tsm-ex991_7.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459020046453/tsm-ex992_6.htm",
+    "localPressRelease": "FY2020/Q3/press-release.html",
+    "localPresentation": "FY2020/Q3/presentation.html"
+  },
+  {
+    "fy": "FY2020",
+    "q": "Q4",
+    "date": "2021-01-14",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459021001132/tsm-ex991_6.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459021001132/tsm-ex992_7.htm",
+    "localPressRelease": "FY2020/Q4/press-release.html",
+    "localPresentation": "FY2020/Q4/presentation.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q1",
+    "date": "2021-04-15",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459021018896/tsm-ex991_6.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459021018896/tsm-ex992_30.htm",
+    "localPressRelease": "FY2021/Q1/press-release.html",
+    "localPresentation": "FY2021/Q1/presentation.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q2",
+    "date": "2021-07-15",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459021036625/tsm-ex991_6.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459021036625/tsm-ex992_8.htm",
+    "localPressRelease": "FY2021/Q2/press-release.html",
+    "localPresentation": "FY2021/Q2/presentation.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q3",
+    "date": "2021-10-14",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459021050767/tsm-ex991_29.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459021050767/tsm-ex992_7.htm",
+    "localPressRelease": "FY2021/Q3/press-release.html",
+    "localPresentation": "FY2021/Q3/presentation.html"
+  },
+  {
+    "fy": "FY2021",
+    "q": "Q4",
+    "date": "2022-01-13",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459022001132/tsm-ex991_6.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459022001132/tsm-ex992_7.htm",
+    "localPressRelease": "FY2021/Q4/press-release.html",
+    "localPresentation": "FY2021/Q4/presentation.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q1",
+    "date": "2022-04-14",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459022014381/tsm-ex991_6.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459022014381/tsm-ex992_7.htm",
+    "localPressRelease": "FY2022/Q1/press-release.html",
+    "localPresentation": "FY2022/Q1/presentation.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q2",
+    "date": "2022-07-14",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459022025726/tsm-ex991_6.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459022025726/tsm-ex992_7.htm",
+    "localPressRelease": "FY2022/Q2/press-release.html",
+    "localPresentation": "FY2022/Q2/presentation.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q3",
+    "date": "2022-10-13",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459022034145/tsm-ex991_104.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459022034145/tsm-ex992_7.htm",
+    "localPressRelease": "FY2022/Q3/press-release.html",
+    "localPresentation": "FY2022/Q3/presentation.html"
+  },
+  {
+    "fy": "FY2022",
+    "q": "Q4",
+    "date": "2023-01-12",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459023000363/tsm-ex991_38.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000156459023000363/tsm-ex992_8.htm",
+    "localPressRelease": "FY2022/Q4/press-release.html",
+    "localPresentation": "FY2022/Q4/presentation.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q1",
+    "date": "2023-04-20",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000162828023012121/a1q23e_withguidancexfinal.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000162828023012121/a1q23presentatione.htm",
+    "localPressRelease": "FY2023/Q1/press-release.html",
+    "localPresentation": "FY2023/Q1/presentation.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q2",
+    "date": "2023-07-20",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000162828023025146/a2q23e_withguidancexfinalx.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000162828023025146/a2q23presentatione.htm",
+    "localPressRelease": "FY2023/Q2/press-release.html",
+    "localPresentation": "FY2023/Q2/presentation.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q3",
+    "date": "2023-10-19",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617923000014/a3q23e_withguidancexfinal.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617923000014/a3q23presentatione.htm",
+    "localPressRelease": "FY2023/Q3/press-release.html",
+    "localPresentation": "FY2023/Q3/presentation.html"
+  },
+  {
+    "fy": "FY2023",
+    "q": "Q4",
+    "date": "2024-01-18",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617924000005/a4q24e_withguidancexfinal.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617924000005/a4q23presentatione.htm",
+    "localPressRelease": "FY2023/Q4/press-release.html",
+    "localPresentation": "FY2023/Q4/presentation.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q1",
+    "date": "2024-04-18",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24presentatione_x.htm",
+    "localPressRelease": "FY2024/Q1/press-release.html",
+    "localPresentation": "FY2024/Q1/presentation.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q2",
+    "date": "2024-07-18",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24presentatione.htm",
+    "localPressRelease": "FY2024/Q2/press-release.html",
+    "localPresentation": "FY2024/Q2/presentation.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q3",
+    "date": "2024-10-17",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24presentatione.htm",
+    "localPressRelease": "FY2024/Q3/press-release.html",
+    "localPresentation": "FY2024/Q3/presentation.html"
+  },
+  {
+    "fy": "FY2024",
+    "q": "Q4",
+    "date": "2025-01-16",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24presentatione.htm",
+    "localPressRelease": "FY2024/Q4/press-release.html",
+    "localPresentation": "FY2024/Q4/presentation.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q1",
+    "date": "2025-04-17",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25presentatione_for6k.htm",
+    "localPressRelease": "FY2025/Q1/press-release.html",
+    "localPresentation": "FY2025/Q1/presentation.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q2",
+    "date": "2025-07-17",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25presentatione_6kxwm.htm",
+    "localPressRelease": "FY2025/Q2/press-release.html",
+    "localPresentation": "FY2025/Q2/presentation.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q3",
+    "date": "2025-10-16",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25presentatione.htm",
+    "localPressRelease": "FY2025/Q3/press-release.html",
+    "localPresentation": "FY2025/Q3/presentation.html"
+  },
+  {
+    "fy": "FY2025",
+    "q": "Q4",
+    "date": "2026-01-15",
+    "pressReleaseUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm",
+    "presentationUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25presentatione.htm",
+    "localPressRelease": "FY2025/Q4/press-release.html",
+    "localPresentation": "FY2025/Q4/presentation.html"
+  }
+]

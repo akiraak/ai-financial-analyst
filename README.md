@@ -15,6 +15,9 @@ AIを活用した株式の財務分析ツール。決算資料から業績デー
 | Intel Corporation | INTC | FY2020 Q1 〜 FY2025 Q4 |
 | Tesla, Inc. | TSLA | FY2020 Q1 〜 FY2025 Q4 |
 | Alphabet Inc. | GOOGL | FY2020 Q1 〜 FY2025 Q4 |
+| Apple Inc. | AAPL | FY2021 Q1 〜 FY2026 Q1 |
+| Microsoft Corporation | MSFT | FY2021 Q1 〜 FY2025 Q4 |
+| Taiwan Semiconductor Manufacturing | TSM | FY2020 Q1 〜 FY2025 Q4 |
 
 ## 機能
 

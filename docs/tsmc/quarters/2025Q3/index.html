@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taiwan Semiconductor Manufacturing FY2025 Q3 決算分析</title>
+  <meta property="og:title" content="Taiwan Semiconductor Manufacturing FY2025 Q3 決算分析">
+  <meta property="og:description" content="Taiwan Semiconductor Manufacturing FY2025 Q3の業績分析・チャート">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://akiraak.github.io/ai-financial-analyst/tsmc/quarters/2025Q3/">
+  <meta property="og:image" content="https://akiraak.github.io/ai-financial-analyst/ogp.png">
+  <meta property="og:site_name" content="AI Financial Analyst">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:Georgia,'Times New Roman',serif; background:#fff; color:#111; line-height:1.6; }
+    .container { max-width:1100px; margin:0 auto; padding:0 20px; }
+    .qd-bc { padding:7px 0; border-bottom:1px solid #e0e0e0; }
+    .qd-bc .inner { max-width:1100px; margin:0 auto; padding:0 20px; font-family:-apple-system,sans-serif; font-size:.72rem; color:#999; }
+    .qd-bc a { color:#555; text-decoration:none; }
+    .qd-bc a:hover { text-decoration:underline; }
+    .qd-bc .sep { margin:0 6px; color:#ccc; }
+    .qd-bc .cur { color:#555; font-weight:600; }
+    .qd-mh { padding:20px 0 14px; border-bottom:3px double #111; }
+    .qd-mh .inner { max-width:1100px; margin:0 auto; padding:0 20px; display:flex; align-items:center; justify-content:center; gap:24px; }
+    .qd-mh .qd-mh-content { text-align:center; }
+    .qd-mh .qd-hl { display:flex; align-items:baseline; justify-content:center; gap:12px; }
+    .qd-mh h1 { font-size:2.6rem; font-weight:900; letter-spacing:-.04em; color:#111; line-height:1; }
+    .qd-mh .tk { font-size:.85rem; font-family:-apple-system,sans-serif; font-weight:800; color:#fff; background:#222; padding:3px 9px; border-radius:3px; letter-spacing:.06em; line-height:1; transform:translateY(-5px); }
+    .qd-mh .qd-sub { font-size:.73rem; font-family:-apple-system,sans-serif; color:#888; margin-top:8px; }
+    .qd-mh .qd-char img { width:110px; }
+    .quarter-nav { background:#fff; border-bottom:2px solid #111; margin-bottom:0; }
+    .quarter-nav .container { display:flex; justify-content:space-between; align-items:center; padding-top:9px; padding-bottom:9px; }
+    .quarter-nav a { font-family:-apple-system,sans-serif; font-size:.8rem; font-weight:700; color:#333; text-decoration:none; }
+    .quarter-nav a:hover:not(.disabled) { color:#111; text-decoration:underline; }
+    .quarter-nav .current { font-family:Georgia,serif; font-size:.95rem; font-weight:700; color:#111; }
+    .quarter-nav .disabled { color:#bbb; pointer-events:none; }
+    .section-nav { background:#fff; border-bottom:1px solid #ccc; margin-bottom:20px; }
+    .section-nav .container { display:flex; flex-wrap:wrap; gap:0; padding-top:7px; padding-bottom:7px; }
+    .section-nav a { font-family:-apple-system,sans-serif; font-size:.73rem; font-weight:700; color:#444; text-decoration:none; padding:5px 14px; text-transform:uppercase; letter-spacing:.1em; transition:background .12s; }
+    .section-nav a:hover { background:#f5f5f5; color:#111; }
+    .section { background:#fff; border-radius:0; box-shadow:none; padding:18px 0; margin-bottom:0; border-bottom:1px solid #e8e8e8; }
+    .section:last-child { border-bottom:none; }
+    .section h2 { font-family:Georgia,'Times New Roman',serif; font-size:1.15rem; font-weight:700; color:#fff; background:#222; padding:8px 14px; margin:0 -14px 16px; border-bottom:none; }
+    .chart-description { background:#fafafa; border-left:3px solid #999; border-radius:0; font-family:-apple-system,sans-serif; }
+    .chart-description .label { color:#111; }
+    .kpi-item { background:#f7f7f7; border-radius:0; border:1px solid #e0e0e0; }
+    .kpi-item .kpi-value { color:#111; }
+    .kpi-item .kpi-label { color:#555; }
+    .kpi-item .kpi-sub { color:#777; }
+    .financial-table th { background:#f5f5f5; color:#333; }
+    .filing-link { border-radius:0; background:#f5f5f5; color:#333; }
+    .filing-link:hover { background:#222; color:#fff; }
+    .filings-fy summary { color:#333; }
+    .footer { border-top:1px solid #ccc; font-family:-apple-system,sans-serif; color:#888; padding:14px 0; }
+    .footer a { color:#555; text-decoration:none; }
+    .footer a:hover { text-decoration:underline; }
+    @media(max-width:768px) {
+      .qd-mh h1 { font-size:1.9rem; }
+      .section { padding:14px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="qd-bc">
+    <div class="inner">
+      <a href="../../../">AI Financial Analyst</a>
+      <span class="sep">/</span>
+      <a href="../../">Taiwan Semiconductor Manufacturing</a>
+      <span class="sep">/</span>
+      <span class="cur" id="breadcrumbQuarter"></span>
+    </div>
+  </div>
+  <div class="qd-mh">
+    <div class="inner">
+      <div class="qd-mh-content">
+        <div class="qd-hl">
+          <span class="tk">TSM</span>
+          <h1>Taiwan Semiconductor Manufacturing</h1>
+        </div>
+        <div class="qd-sub" id="headerMeta"></div>
+      </div>
+      <div class="qd-char">
+        <img src="../../../character/ai-craw-patterns-thinking.png" alt="AI Craw">
+      </div>
+    </div>
+  </div>
+  <nav class="quarter-nav">
+    <div class="container">
+      <a href="#" id="prevLink" class="disabled">&larr; 前の四半期</a>
+      <span class="current" id="currentLabel"></span>
+      <a href="#" id="nextLink" class="disabled">次の四半期 &rarr;</a>
+    </div>
+  </nav>
+  <nav class="section-nav">
+    <div class="container">
+      <a href="#section-kpi">決算サマリー</a>
+      <a href="#section-financial-table">財務データ</a>
+      <a href="#section-filings">決算資料</a>
+    </div>
+  </nav>
+  <div class="container" id="mainContent">
+    <div class="section" id="section-kpi">
+      <h2 id="summaryTitle">決算サマリー</h2>
+      <div class="kpi-grid" id="kpiGrid"></div>
+      <div id="summaryContent"></div>
+    </div>
+    <div class="section">
+      <h2>P/L推移</h2>
+      <div class="chart-wrapper"><canvas id="plChart"></canvas></div>
+      <div class="chart-description" id="plChart-desc"></div>
+    </div>
+    <div class="section">
+      <h2>利益率推移</h2>
+      <div class="chart-wrapper"><canvas id="marginChart"></canvas></div>
+      <div class="chart-description" id="marginChart-desc"></div>
+    </div>
+    <div class="section">
+      <h2>費用構造</h2>
+      <div class="chart-wrapper"><canvas id="costChart"></canvas></div>
+      <div class="chart-description" id="costChart-desc"></div>
+    </div>
+    <div class="section">
+      <h2>B/S概要</h2>
+      <div class="chart-wrapper"><canvas id="balanceSheetChart"></canvas></div>
+      <div class="chart-description" id="balanceSheetChart-desc"></div>
+    </div>
+    <div class="section">
+      <h2>キャッシュフロー</h2>
+      <div class="chart-wrapper"><canvas id="cashFlowChart"></canvas></div>
+      <div class="chart-description" id="cashFlowChart-desc"></div>
+    </div>
+    <div class="section">
+      <h2>株価 &amp; PER</h2>
+      <div class="chart-wrapper"><canvas id="pricePERChart"></canvas></div>
+      <div class="chart-description" id="pricePERChart-desc"></div>
+    </div>
+    <div class="section">
+      <h2>バリュエーション指標</h2>
+      <div class="chart-wrapper"><canvas id="valuationChart"></canvas></div>
+      <div class="chart-description" id="valuationChart-desc"></div>
+    </div>
+    <div class="section">
+      <h2>プラットフォーム別売上</h2>
+      <div class="chart-wrapper"><canvas id="segmentRevenueChart"></canvas></div>
+      <div class="chart-description" id="segmentRevenueChart-desc"></div>
+    </div>
+    <div class="section">
+      <h2>プラットフォーム別 売上比率</h2>
+      <div class="chart-wrapper"><canvas id="segmentCompositionChart"></canvas></div>
+      <div class="chart-description" id="segmentCompositionChart-desc"></div>
+    </div>
+    <div class="section" id="section-financial-table">
+      <h2>財務データ</h2>
+      <div class="financial-table-wrapper">
+        <table id="financialTable" class="financial-table"></table>
+      </div>
+    </div>
+    <div class="section" id="section-filings">
+      <h2>決算資料</h2>
+      <div id="filingsContainer"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <p><a href="../">四半期一覧</a> | <a href="../../">ダッシュボード</a> | <a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a></p>
+  </div>
+  <script src="../../../js/chart-builder.js"></script>
+  <script src="../../../js/quarter-detail.js"></script>
+</body>
+</html>

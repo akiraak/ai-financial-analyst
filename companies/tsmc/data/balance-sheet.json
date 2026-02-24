@@ -1,0 +1,146 @@
+{
+  "FY2023": {
+    "Q1": {
+      "cashAndMarketable": 1589190,
+      "accountsReceivable": 148050,
+      "inventories": 216070,
+      "longTermInvestments": 69910,
+      "netPPE": 2833400,
+      "totalAssets": 5045840,
+      "currentLiabilities": 873090,
+      "longTermDebt": 854790,
+      "totalLiabilities": 1952950,
+      "totalEquity": 3092890
+    },
+    "Q2": {
+      "cashAndMarketable": 1489960,
+      "accountsReceivable": 191030,
+      "inventories": 234330,
+      "longTermInvestments": 94610,
+      "netPPE": 2947230,
+      "totalAssets": 5149470,
+      "currentLiabilities": 810830,
+      "longTermDebt": 907320,
+      "totalLiabilities": 1944000,
+      "totalEquity": 3205470
+    },
+    "Q3": {
+      "cashAndMarketable": 1551320,
+      "accountsReceivable": 222830,
+      "inventories": 262090,
+      "longTermInvestments": 116350,
+      "netPPE": 3132660,
+      "totalAssets": 5484560,
+      "currentLiabilities": 970040,
+      "longTermDebt": 937490,
+      "totalLiabilities": 2111740,
+      "totalEquity": 3372820
+    },
+    "Q4": {
+      "cashAndMarketable": 1687650,
+      "accountsReceivable": 201940,
+      "inventories": 250990,
+      "longTermInvestments": 129440,
+      "netPPE": 3064480,
+      "totalAssets": 5532370,
+      "currentLiabilities": 913580,
+      "longTermDebt": 918280,
+      "totalLiabilities": 2049110,
+      "totalEquity": 3483260
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "cashAndMarketable": 1922660,
+      "accountsReceivable": 201980,
+      "inventories": 267120,
+      "longTermInvestments": 138470,
+      "netPPE": 3051850,
+      "totalAssets": 5787890,
+      "currentLiabilities": 1026180,
+      "longTermDebt": 965560,
+      "totalLiabilities": 2122180,
+      "totalEquity": 3665710
+    },
+    "Q2": {
+      "cashAndMarketable": 2048640,
+      "accountsReceivable": 210210,
+      "inventories": 272490,
+      "longTermInvestments": 140220,
+      "netPPE": 3105860,
+      "totalAssets": 5982360,
+      "currentLiabilities": 1048920,
+      "longTermDebt": 974340,
+      "totalLiabilities": 2162220,
+      "totalEquity": 3820140
+    },
+    "Q3": {
+      "cashAndMarketable": 2167600,
+      "accountsReceivable": 249970,
+      "inventories": 292880,
+      "longTermInvestments": 127330,
+      "netPPE": 3071600,
+      "totalAssets": 6165660,
+      "currentLiabilities": 1080400,
+      "longTermDebt": 936160,
+      "totalLiabilities": 2143740,
+      "totalEquity": 4021920
+    },
+    "Q4": {
+      "cashAndMarketable": 2422020,
+      "accountsReceivable": 272090,
+      "inventories": 287860,
+      "longTermInvestments": 149040,
+      "netPPE": 3234980,
+      "totalAssets": 6691940,
+      "currentLiabilities": 1264530,
+      "longTermDebt": 958430,
+      "totalLiabilities": 2368360,
+      "totalEquity": 4323580
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "cashAndMarketable": 2703090,
+      "accountsReceivable": 243950,
+      "inventories": 293390,
+      "longTermInvestments": 160790,
+      "netPPE": 3400810,
+      "totalAssets": 7133290,
+      "currentLiabilities": 1399800,
+      "longTermDebt": 986980,
+      "totalLiabilities": 2531660,
+      "totalEquity": 4601630
+    },
+    "Q3": {
+      "cashAndMarketable": 2751060,
+      "accountsReceivable": 307810,
+      "inventories": 288690,
+      "longTermInvestments": 148980,
+      "netPPE": 3499340,
+      "totalAssets": 7354110,
+      "currentLiabilities": 1275910,
+      "longTermDebt": 918230,
+      "totalLiabilities": 2318530,
+      "totalEquity": 5035580,
+      "arTurnoverDays": 25,
+      "inventoryTurnoverDays": 74,
+      "currentRatio": 2.7
+    },
+    "Q4": {
+      "cashAndMarketable": 3068590,
+      "accountsReceivable": 281790,
+      "inventories": 288110,
+      "longTermInvestments": 172370,
+      "netPPE": 3691840,
+      "totalAssets": 7933020,
+      "currentLiabilities": 1458020,
+      "longTermDebt": 896060,
+      "totalLiabilities": 2472230,
+      "totalEquity": 5460790,
+      "arTurnoverDays": 26,
+      "inventoryTurnoverDays": 74,
+      "currentRatio": 2.6
+    }
+  }
+}

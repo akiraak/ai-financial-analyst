@@ -145,3 +145,13 @@
   - docs/index.html, docs/<企業名>/index.html, quarters/index.html, quarters/template.html を修正
   - 各社generate-pages.jsのCOMPANY定数を正式名称に更新
   - フッターのデータソース表記も統一
+- [x] Taiwan Semiconductor Manufacturing (TSM) のページを追加（フルビルド）
+  - 決算資料DL: FY2020〜FY2025（24四半期分のpress-release + presentation、SEC EDGAR 6-K）
+  - TSMC固有対応: 外国民間発行体（6-K filing）、TIFRS会計、NT$通貨、ADR EPS併記
+  - データ抽出: financials（プレスリリースP/L表）, segments（プレゼンテーション隠しテキスト）, balance-sheet, cash-flows
+  - B/S・CFはFY2023以降のみ取得可能（プレゼンテーション隠しテキスト形式）
+  - セグメント: Revenue by Platform（HPC, Smartphone, IoT, Automotive, DCE, Others）
+  - xlsx生成・検証（216/216項目一致）
+  - GitHub Pages: ランディングページ + 8四半期分の詳細ページ（2024Q1〜2025Q4）
+  - analysis-text.json: 9チャート概要 + 8四半期分の決算サマリー・チャート解説
+  - トップページにTSMCカードを追加（9社→10社）

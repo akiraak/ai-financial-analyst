@@ -31,7 +31,7 @@ ai-financial-analyst/
 │   ├── validate-xlsx.md      # xlsx数値検証フロー
 │   ├── analyze-and-visualize.md # データ分析・可視化フロー
 │   └── full-build.md         # フルビルド（DL→抽出→xlsx→ページ生成）
-├── companies/       # 企業別の分析データ・スクリプト（全9社）
+├── companies/       # 企業別の分析データ・スクリプト（全10社）
 │   ├── nvidia/      # NVIDIA (NVDA)
 │   ├── broadcom/    # Broadcom (AVGO)
 │   ├── alphabet/    # Alphabet (GOOGL)
@@ -41,6 +41,7 @@ ai-financial-analyst/
 │   ├── tesla/       # Tesla (TSLA)
 │   ├── apple/       # Apple (AAPL)
 │   ├── microsoft/   # Microsoft (MSFT)
+│   ├── tsmc/        # Taiwan Semiconductor Manufacturing (TSM)
 │   └── <企業名>/    # 各社共通構成:
 │       ├── config.json        # 期間設定（pageYears, chartYears, nextEarningsDate）
 │       ├── filings/           # 決算資料の原本
@@ -89,7 +90,7 @@ ai-financial-analyst/
 │   │   ├── chart-builder.js   # 共通チャート生成ロジック（13チャート）
 │   │   └── quarter-detail.js  # 四半期詳細ページのロジック
 │   ├── character/             # キャラクター画像（公開用・assets/character/ からコピー）
-│   └── <企業名>/              # 全9社共通構成（nvidia, broadcom, alphabet 等）
+│   └── <企業名>/              # 全10社共通構成（nvidia, broadcom, alphabet 等）
 │       ├── index.html         # 企業ランディングページ（WSJ風デザイン）
 │       ├── data.json          # 統合データ（全四半期）
 │       ├── analysis-text.json # チャート解説・決算サマリーテキスト

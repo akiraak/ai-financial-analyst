@@ -1,0 +1,74 @@
+{
+  "FY2023": {
+    "Q1": {
+      "operatingCF": 385240,
+      "capex": -302500,
+      "dividends": -71300,
+      "freeCashFlow": 82740
+    },
+    "Q2": {
+      "operatingCF": 167250,
+      "capex": -250530,
+      "dividends": -71300,
+      "freeCashFlow": -83280
+    },
+    "Q3": {
+      "operatingCF": 294650,
+      "capex": -226620,
+      "dividends": -71300,
+      "freeCashFlow": 68030
+    },
+    "Q4": {
+      "operatingCF": 394830,
+      "capex": -170160,
+      "dividends": -77800,
+      "freeCashFlow": 224670
+    }
+  },
+  "FY2024": {
+    "Q1": {
+      "operatingCF": 436310,
+      "capex": -181300,
+      "dividends": -77800,
+      "freeCashFlow": 255010
+    },
+    "Q2": {
+      "operatingCF": 377670,
+      "capex": -205680,
+      "dividends": -90760,
+      "freeCashFlow": 171990
+    },
+    "Q3": {
+      "operatingCF": 391990,
+      "capex": -207080,
+      "dividends": -90760,
+      "freeCashFlow": 184910
+    },
+    "Q4": {
+      "operatingCF": 620210,
+      "capex": -361950,
+      "dividends": -103730,
+      "freeCashFlow": 258260
+    }
+  },
+  "FY2025": {
+    "Q1": {
+      "operatingCF": 625570,
+      "capex": -330830,
+      "dividends": -103720,
+      "freeCashFlow": 294740
+    },
+    "Q3": {
+      "operatingCF": 426830,
+      "capex": -287450,
+      "dividends": -116700,
+      "freeCashFlow": 139380
+    },
+    "Q4": {
+      "operatingCF": 725510,
+      "capex": -356910,
+      "dividends": -129660,
+      "freeCashFlow": 368600
+    }
+  }
+}

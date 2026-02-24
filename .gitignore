@@ -12,3 +12,6 @@ work/
 companies/*/filings/ir-page.html
 companies/*/filings/download-results.json
 
+# Claude Code 内部ディレクトリ
+.claude/
+

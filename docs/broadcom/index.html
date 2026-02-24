@@ -12,39 +12,76 @@
   <meta property="og:site_name" content="AI Financial Analyst">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; background:#fff; }
+    /* パンくず */
+    .np-breadcrumb { padding:8px 0; border-bottom:1px solid #ddd; }
+    .np-breadcrumb .inner { max-width:900px; margin:0 auto; padding:0 20px; font-family:-apple-system,sans-serif; font-size:.72rem; color:#999; }
+    .np-breadcrumb a { color:#555; text-decoration:none; }
+    .np-breadcrumb a:hover { text-decoration:underline; }
+    .np-breadcrumb .sep { margin:0 6px; }
+    /* マストヘッド */
+    .np-masthead { padding:24px 0 14px; border-bottom:3px double #111; }
+    .np-masthead .inner { max-width:900px; margin:0 auto; padding:0 20px; display:flex; align-items:center; justify-content:center; gap:24px; }
+    .np-masthead .np-masthead-content { text-align:center; }
+    .np-masthead .np-head { display:flex; align-items:baseline; justify-content:center; gap:14px; }
+    .np-masthead h1 { font-size:2.8rem; font-weight:900; letter-spacing:-.03em; color:#111; line-height:1; }
+    .np-masthead .tk { font-size:.88rem; font-family:-apple-system,sans-serif; font-weight:800; color:#fff; background:#222; padding:3px 10px; border-radius:3px; letter-spacing:.06em; }
+    .np-masthead .np-meta { font-size:.7rem; font-family:-apple-system,sans-serif; color:#999; margin-top:10px; }
+    .np-masthead .np-earnings { font-size:.72rem; font-family:-apple-system,sans-serif; color:#999; margin-top:4px; }
+    .np-masthead .np-earnings.past { color:#c0392b; font-weight:600; }
+    .np-masthead .np-char img { width:110px; }
+    /* メインコンテンツ */
+    .np-main { max-width:900px; margin:0 auto; padding:0 20px 40px; }
+    /* セクションヘッダー */
+    .np-sec-header { font-family:-apple-system,sans-serif; font-size:.68rem; font-weight:700; letter-spacing:.22em; color:#111; text-align:center; border-top:2px solid #111; border-bottom:1px solid #111; padding:5px 0; margin-top:24px; text-transform:uppercase; }
+    /* 四半期リンク */
+    .np-fy-row { display:flex; align-items:center; gap:8px; padding:10px 0; border-bottom:1px solid #eee; }
+    .np-fy-row:last-child { border-bottom:none; }
+    .np-fy-label { font-size:.82rem; font-weight:700; color:#111; min-width:56px; font-family:-apple-system,sans-serif; }
+    .np-q-link { display:inline-block; font-size:.82rem; font-weight:600; padding:4px 16px; border:1px solid #222; color:#111; text-decoration:none; font-family:-apple-system,sans-serif; transition:background .12s,color .12s; }
+    .np-q-link:hover { background:#222; color:#fff; }
+    /* フッター */
+    .np-foot { margin-top:28px; padding:12px 0; text-align:center; font-family:-apple-system,sans-serif; font-size:.7rem; color:#888; border-top:1px solid #ccc; }
+    .np-foot a { text-decoration:none; color:#555; }
+    .np-foot a:hover { text-decoration:underline; }
+  </style>
 </head>
 <body>
 
-  <div class="header">
-    <div class="container">
-      <div class="site-name"><a href="../">AI Financial Analyst</a></div>
-      <h1>Broadcom <span class="ticker">AVGO</span></h1>
-      <div class="meta" id="meta"></div>
+  <div class="np-breadcrumb">
+    <div class="inner">
+      <a href="../">AI Financial Analyst</a>
+      <span class="sep">/</span>
+      <span>Broadcom</span>
     </div>
   </div>
 
-  <nav class="breadcrumb">
-    <div class="container">
-      <a href="../">HOME</a>
-      <span class="separator">/</span>
-      <span class="current">Broadcom</span>
+  <div class="np-masthead">
+    <div class="inner">
+      <div class="np-masthead-content">
+        <div class="np-head">
+          <span class="tk">AVGO</span>
+          <h1>Broadcom</h1>
+        </div>
+        <div class="np-meta" id="meta"></div>
+        <div class="np-earnings" id="next-earnings"></div>
+      </div>
+      <div class="np-char">
+        <img src="../character/ai-craw-patterns-working.png" alt="AI Craw">
+      </div>
     </div>
-  </nav>
-
-  <div class="container">
-
-    <!-- 四半期分析リンク -->
-    <div class="section" id="section-quarters">
-      <h2>四半期分析</h2>
-      <p style="font-size:0.85rem;color:#666;margin-bottom:12px;">各四半期をクリックすると、詳細分析ページを表示します。</p>
-      <div id="quarterLinksContainer"></div>
-    </div>
-
   </div>
 
-  <div class="footer">
-    <p>データソース: Broadcom IR / Yahoo Finance</p>
-    <p><a href="../">企業一覧に戻る</a></p>
+  <div class="np-main">
+    <div class="np-sec-header">四 半 期 分 析</div>
+    <div id="quarterLinksContainer"></div>
+
+    <div class="np-foot">
+      <div>データソース: Broadcom IR / Yahoo Finance</div>
+      <div style="margin-top:6px;"><a href="../">← 銘柄一覧に戻る</a></div>
+    </div>
   </div>
 
   <script>
@@ -57,7 +94,19 @@
         const first = withPage[0]?.label || '';
         const last = withPage[withPage.length - 1]?.label || '';
         document.getElementById('meta').textContent =
-          first + ' ~ ' + last + ' | データ: ' + allActual.length + '四半期 | 更新: ' + data.generatedAt;
+          first + ' 〜 ' + last + '　|　' + allActual.length + '四半期分のデータ　|　更新: ' + data.generatedAt;
+
+        // 次の決算発表日
+        if (data.nextEarningsDate) {
+          const now = new Date();
+          const today = now.getFullYear() + '-' +
+            String(now.getMonth() + 1).padStart(2, '0') + '-' +
+            String(now.getDate()).padStart(2, '0');
+          const isPast = data.nextEarningsDate <= today;
+          const el = document.getElementById('next-earnings');
+          el.className = 'np-earnings' + (isPast ? ' past' : '');
+          el.textContent = '次の決算発表: ' + data.nextEarningsDate;
+        }
 
         // 四半期分析リンク生成（ページのある四半期のみ）
         const container = document.getElementById('quarterLinksContainer');
@@ -69,17 +118,16 @@
         const sortedFYs = Object.keys(fyGroups).sort((a, b) => b - a);
         let html = '';
         for (const fy of sortedFYs) {
-          html += '<div class="quarter-fy-row"><span class="quarter-fy-label">FY' + fy + '</span>';
+          html += '<div class="np-fy-row"><span class="np-fy-label">FY' + fy + '</span>';
           const sorted = fyGroups[fy].sort((a, b) => a.q - b.q);
           for (const q of sorted) {
-            html += '<a href="quarters/' + q.fy + 'Q' + q.q + '/" class="quarter-link-item">Q' + q.q + '</a>';
+            html += '<a href="quarters/' + q.fy + 'Q' + q.q + '/" class="np-q-link">Q' + q.q + '</a>';
           }
           html += '</div>';
         }
         container.innerHTML = html;
       })
       .catch(err => console.error('データ読み込みエラー:', err));
-
   </script>
 
 </body>

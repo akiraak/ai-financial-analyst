@@ -56,6 +56,8 @@ ai-financial-analyst/
 │           ├── stock-prices.json      # 取得済み株価データ
 │           ├── template.xlsx          # xlsx生成用テンプレート
 │           └── Financials.xlsx   # 生成されたxlsx
+├── assets/          # ソースアセット
+│   └── character/             # キャラクター画像（原本）
 ├── docs/            # GitHub Pages公開ディレクトリ
 │   ├── index.html             # 企業一覧トップページ
 │   ├── css/
@@ -63,6 +65,7 @@ ai-financial-analyst/
 │   ├── js/
 │   │   ├── chart-builder.js   # 共通チャート生成ロジック（13チャート）
 │   │   └── quarter-detail.js  # 四半期詳細ページのロジック
+│   ├── character/             # キャラクター画像（公開用・assets/character/ からコピー）
 │   └── nvidia/
 │       ├── index.html         # NVIDIAレポートページ
 │       ├── data.json          # 統合データ（全四半期）

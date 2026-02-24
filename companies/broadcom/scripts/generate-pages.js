@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 // === 設定 ===
-const COMPANY = 'Broadcom';
+const COMPANY = 'Broadcom Inc.';
 const TICKER = 'AVGO';
 const SLUG = 'broadcom';
 const DESC = '半導体・インフラソフトウェア。AI/クラウド向けASIC、VMware統合後の業績を可視化。';

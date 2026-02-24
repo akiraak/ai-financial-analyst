@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 // === 設定 ===
-const COMPANY = 'NVIDIA';
+const COMPANY = 'NVIDIA Corporation';
 const TICKER = 'NVDA';
 const SLUG = 'nvidia';
 const DESC = 'GPU・AI半導体。四半期業績推移、利益率、株価・PER、費用構造を可視化。';

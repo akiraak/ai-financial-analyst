@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 // === 設定 ===
-const COMPANY = 'Meta Platforms';
+const COMPANY = 'Meta Platforms, Inc.';
 const TICKER = 'META';
 const SLUG = 'meta';
 const DESC = 'SNS・広告プラットフォーム。Family of Apps・Reality Labs セグメント別業績を可視化。';

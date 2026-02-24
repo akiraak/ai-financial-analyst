@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 // === 設定 ===
-const COMPANY = 'Microsoft';
+const COMPANY = 'Microsoft Corporation';
 const TICKER = 'MSFT';
 const SLUG = 'microsoft';
 const DESC = 'クラウド・AI・生産性ソフトウェア。Intelligent Cloud・Productivity & Business・More Personal Computing セグメント別業績を可視化。';

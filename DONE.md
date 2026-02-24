@@ -141,3 +141,7 @@
   - 四半期選択ページ（quarters/index.html）: マストヘッド+パンくずバー+WSJ風カードレイアウト
   - 四半期詳細ページ（quarters/<YYYYQN>/index.html）: WSJ風ヘッダー+セクション構成
   - 全9社のgenerate-pages.jsを更新
+- [x] 企業名を正式名称に統一（NVIDIA Corporation, Broadcom Inc., Meta Platforms, Inc., Palantir Technologies Inc., Microsoft Corporation）
+  - docs/index.html, docs/<企業名>/index.html, quarters/index.html, quarters/template.html を修正
+  - 各社generate-pages.jsのCOMPANY定数を正式名称に更新
+  - フッターのデータソース表記も統一

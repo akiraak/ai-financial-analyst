@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 // === 設定 ===
-const COMPANY = 'Palantir Technologies';
+const COMPANY = 'Palantir Technologies Inc.';
 const TICKER = 'PLTR';
 const SLUG = 'palantir';
 const DESC = 'データ分析・AIプラットフォーム。Government・Commercial セグメント別業績を可視化。';

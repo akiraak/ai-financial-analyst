@@ -12,33 +12,93 @@
   <meta property="og:site_name" content="AI Financial Analyst">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    /* ===== WSJ風スタイル上書き ===== */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:Georgia,'Times New Roman',serif; background:#fff; color:#111; line-height:1.6; }
+    .container { max-width:1100px; margin:0 auto; padding:0 20px; }
+
+    /* パンくず */
+    .qd-bc { padding:7px 0; border-bottom:1px solid #e0e0e0; }
+    .qd-bc .inner { max-width:1100px; margin:0 auto; padding:0 20px; font-family:-apple-system,sans-serif; font-size:.72rem; color:#999; }
+    .qd-bc a { color:#555; text-decoration:none; }
+    .qd-bc a:hover { text-decoration:underline; }
+    .qd-bc .sep { margin:0 6px; color:#ccc; }
+
+    /* マストヘッド */
+    .qd-mh { padding:20px 0 14px; border-bottom:3px double #111; }
+    .qd-mh .inner { max-width:1100px; margin:0 auto; padding:0 20px; display:flex; align-items:center; justify-content:center; gap:24px; }
+    .qd-mh .qd-mh-content { text-align:center; }
+    .qd-mh .qd-hl { display:flex; align-items:baseline; justify-content:center; gap:12px; }
+    .qd-mh h1 { font-size:2.6rem; font-weight:900; letter-spacing:-.04em; color:#111; line-height:1; }
+    .qd-mh .tk { font-size:.85rem; font-family:-apple-system,sans-serif; font-weight:800; color:#fff; background:#222; padding:3px 9px; border-radius:3px; letter-spacing:.06em; line-height:1; transform:translateY(-5px); }
+    .qd-mh .qd-sub { font-size:.85rem; font-family:-apple-system,sans-serif; color:#888; margin-top:8px; }
+    .qd-mh .qd-char img { width:110px; }
+
+    /* セクション */
+    .section { background:#fff; border-radius:0; box-shadow:none; padding:18px 0; margin-bottom:0; border-bottom:1px solid #e8e8e8; }
+    .section:last-child { border-bottom:none; }
+    .section h2 { font-family:Georgia,'Times New Roman',serif; font-size:1.15rem; font-weight:700; color:#fff; background:#222; padding:8px 14px; margin:0 -14px 16px; border-bottom:none; }
+
+    /* 四半期カード */
+    .quarter-card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:14px; margin-top:10px; }
+    .quarter-card { display:block; background:#f7f7f7; border:1px solid #e0e0e0; border-radius:0; padding:16px; text-decoration:none; color:#111; transition:background .15s; }
+    .quarter-card:hover { background:#eee; }
+    .quarter-card.outlook { background:#fafafa; border-style:dashed; color:#888; }
+    .quarter-card-label { font-family:-apple-system,sans-serif; font-size:.8rem; font-weight:700; color:#555; margin-bottom:6px; }
+    .quarter-card-revenue { font-family:Georgia,serif; font-size:1.3rem; font-weight:700; color:#111; }
+    .quarter-card-meta { font-family:-apple-system,sans-serif; font-size:.7rem; color:#888; margin-top:2px; }
+    .quarter-card-detail { font-family:-apple-system,sans-serif; font-size:.72rem; color:#555; margin-top:6px; }
+    .quarter-card-sub { font-family:-apple-system,sans-serif; font-size:.7rem; color:#aaa; }
+
+    /* フッター */
+    .footer { border-top:1px solid #ccc; font-family:-apple-system,sans-serif; color:#888; padding:14px 0; margin-top:20px; }
+    .footer a { color:#555; text-decoration:none; }
+    .footer a:hover { text-decoration:underline; }
+
+    @media(max-width:768px) {
+      .qd-mh h1 { font-size:1.9rem; }
+      .quarter-card-grid { grid-template-columns:repeat(auto-fill,minmax(130px,1fr)); }
+    }
+  </style>
 </head>
 <body>
 
-  <div class="header">
-    <div class="container">
-      <div class="site-name"><a href="../../">AI Financial Analyst</a></div>
-      <h1>Apple Inc. <span class="ticker">AAPL</span></h1>
-      <div class="meta">四半期分析一覧</div>
+  <!-- パンくず -->
+  <div class="qd-bc">
+    <div class="inner">
+      <a href="../../">AI Financial Analyst</a>
+      <span class="sep">/</span>
+      <a href="../">Apple Inc.</a>
+      <span class="sep">/</span>
+      <span>四半期一覧</span>
     </div>
   </div>
 
-  <nav class="breadcrumb">
-    <div class="container">
-      <a href="../../">HOME</a>
-      <span class="separator">/</span>
-      <a href="../">Apple Inc.</a>
-      <span class="separator">/</span>
-      <span class="current">四半期一覧</span>
+  <!-- マストヘッド -->
+  <div class="qd-mh">
+    <div class="inner">
+      <div class="qd-mh-content">
+        <div class="qd-hl">
+          <span class="tk">AAPL</span>
+          <h1>Apple Inc.</h1>
+        </div>
+        <div class="qd-sub">四半期分析一覧</div>
+      </div>
+      <div class="qd-char">
+        <img src="../../character/ai-craw-patterns-thinking.png" alt="AI Craw">
+      </div>
     </div>
-  </nav>
+  </div>
 
-  <div class="container">
+  <div class="container" style="margin-top:20px;">
     <div id="quarterList"></div>
   </div>
 
   <div class="footer">
-    <p><a href="../">ダッシュボード</a> | <a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a></p>
+    <div class="container">
+      <p><a href="../">ダッシュボード</a> | <a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a></p>
+    </div>
   </div>
 
   <script>

@@ -1,8 +1,8 @@
 {
   "company": "NVIDIA",
   "ticker": "NVDA",
-  "generatedAt": "2026-02-24",
-  "nextEarningsDate": "2026-02-26",
+  "generatedAt": "2026-02-26",
+  "nextEarningsDate": "2026-05-28",
   "quarters": [
     {
       "label": "FY2022 Q4",
@@ -927,5 +927,9 @@
     "q": 2,
     "label": "FY2026 Q2"
   },
-  "nextPage": null
+  "nextPage": {
+    "fy": 2026,
+    "q": 4,
+    "label": "FY2026 Q4"
+  }
 }

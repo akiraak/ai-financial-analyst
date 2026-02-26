@@ -234,6 +234,16 @@
       "longTermDebt": 7468,
       "totalLiabilities": 42251,
       "totalEquity": 118897
+    },
+    "Q4": {
+      "cashAndEquivalents": 62556,
+      "totalCurrentAssets": 125605,
+      "totalAssets": 206803,
+      "shortTermDebt": 999,
+      "totalCurrentLiabilities": 32163,
+      "longTermDebt": 7469,
+      "totalLiabilities": 49510,
+      "totalEquity": 157293
     }
   }
 }

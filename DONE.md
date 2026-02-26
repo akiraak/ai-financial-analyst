@@ -155,3 +155,15 @@
   - GitHub Pages: ランディングページ + 8四半期分の詳細ページ（2024Q1〜2025Q4）
   - analysis-text.json: 9チャート概要 + 8四半期分の決算サマリー・チャート解説
   - トップページにTSMCカードを追加（9社→10社）
+- [x] 決算更新ワークフローを作成（workflows/update-earnings.md）
+  - 既存企業に新しい決算データが出た際の差分更新手順を定義
+  - フルビルドとの違い: データ削除なし・スクリプト流用・新四半期のみDL
+  - CLAUDE.mdにワークフロー参照を追加
+- [x] NVIDIA (NVDA) FY2026 Q4 決算更新（決算更新ワークフロー初回実行）
+  - 決算資料DL: FY2026 Q4 press-release.html（SEC EDGAR）+ 10-K.pdf（HTM→PDF変換）
+  - データ抽出: 全6スクリプト再実行（24四半期分）
+  - xlsx生成・検証: 216リテラル値 + 247数式セル = 全463項目一致
+  - ページ生成: ランディング + 9四半期分の詳細ページ（2024Q4〜2026Q4）
+  - analysis-text.json: 2026Q4の決算サマリー（定性3+数値4項目）+ 12チャート解説を追加
+  - config.json: nextEarningsDate を 2026-05-28（FY2027 Q1）に更新
+  - download-filings.js / download-10q-10k.js にFY2026 Q4エントリを追加

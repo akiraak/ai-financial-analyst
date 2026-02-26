@@ -148,6 +148,14 @@ const irDocuments = {
     ],
   },
   FY2026: {
+    Q4: [
+      { name: 'Press Release', url: 'https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026', description: 'Press Release of Fourth Quarter 2026, Online link, opens in new window' },
+      { name: 'CFO Commentary', url: 'https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf', description: 'CFO Commentary of Fourth Quarter 2026, PDF file, opens in new window' },
+      { name: 'NVIDIA Quarterly Revenue Trend', url: 'https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Rev_by_Mkt_Qtrly_Trend_Q426.pdf', description: 'NVIDIA Quarterly Revenue Trend of Fourth Quarter 2026, PDF file, opens in new window' },
+      { name: '10-K', url: 'https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm', description: '10-K of Fourth Quarter 2026, SEC EDGAR filing, opens in new window' },
+      { name: 'Presentation', url: 'https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/NVDA-F4Q26-Quarterly-Presentation.pdf', description: 'Presentation of Fourth Quarter 2026, PDF file, opens in new window' },
+      { name: 'Transcript', url: 'https://s201.q4cdn.com/141608511/files/doc_financials/2026/q4/NVDA-Q4-2026-Earnings-Call-25-February-2026-5_00-PM-ET.pdf', description: 'Transcript of Fourth Quarter 2026, PDF file, opens in new window' },
+    ],
     Q3: [
       { name: 'Press Release', url: 'https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026', description: 'Press Release of Third Quarter 2026, Online link, opens in new window' },
       { name: 'Webcast', url: 'https://events.q4inc.com/attendee/615721276', description: 'Webcast of Third Quarter 2026, Online link, opens in new window' },

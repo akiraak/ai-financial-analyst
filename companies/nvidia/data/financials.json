@@ -437,6 +437,26 @@
       "epsDiluted": 1.3,
       "sharesBasic": 24327,
       "sharesDiluted": 24483
+    },
+    "Q4": {
+      "revenue": 68127,
+      "costOfRevenue": 17034,
+      "grossProfit": 51093,
+      "researchAndDevelopment": 5512,
+      "sga": 1282,
+      "totalOperatingExpenses": 6794,
+      "operatingIncome": 44299,
+      "interestIncome": 568,
+      "interestExpense": -74,
+      "otherIncomeNet": 5604,
+      "totalOtherIncome": 6098,
+      "incomeBeforeTax": 50397,
+      "incomeTaxExpense": 7437,
+      "netIncome": 42960,
+      "epsBasic": 1.77,
+      "epsDiluted": 1.76,
+      "sharesBasic": 24304,
+      "sharesDiluted": 24432
     }
   }
 }

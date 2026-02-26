@@ -239,6 +239,16 @@
         "revenue": 6098,
         "operatingIncome": 2546
       }
+    },
+    "Q4": {
+      "computeAndNetworking": {
+        "revenue": 61651,
+        "operatingIncome": 44003
+      },
+      "graphics": {
+        "revenue": 6476,
+        "operatingIncome": 2728
+      }
     }
   }
 }

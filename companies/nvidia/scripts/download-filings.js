@@ -28,6 +28,7 @@ const filings = [
   { fy: 'FY2026', q: 'Q1', adsh: '0001045810-25-000115', file: 'q1fy26pr.htm', date: '2025-05-28' },
   { fy: 'FY2026', q: 'Q2', adsh: '0001045810-25-000207', file: 'q2fy26pr.htm', date: '2025-08-27' },
   { fy: 'FY2026', q: 'Q3', adsh: '0001045810-25-000228', file: 'q3fy26pr.htm', date: '2025-11-19' },
+  { fy: 'FY2026', q: 'Q4', adsh: '0001045810-26-000019', file: 'q4fy26pr.htm', date: '2026-02-26' },
 ];
 
 const basePath = path.join(__dirname, '..', 'filings');

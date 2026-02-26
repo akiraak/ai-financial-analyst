@@ -30,7 +30,8 @@ ai-financial-analyst/
 │   ├── generate-financials.md # 業績データxlsx生成フロー
 │   ├── validate-xlsx.md      # xlsx数値検証フロー
 │   ├── analyze-and-visualize.md # データ分析・可視化フロー
-│   └── full-build.md         # フルビルド（DL→抽出→xlsx→ページ生成）
+│   ├── full-build.md         # フルビルド（DL→抽出→xlsx→ページ生成）
+│   └── update-earnings.md   # 決算更新（既存企業の新四半期追加）
 ├── companies/       # 企業別の分析データ・スクリプト（全10社）
 │   ├── nvidia/      # NVIDIA (NVDA)
 │   ├── broadcom/    # Broadcom (AVGO)
@@ -127,6 +128,11 @@ ai-financial-analyst/
 
 - [workflows/full-build.md](workflows/full-build.md) を読み、その指示に従うこと
 - DL → データ抽出 → xlsx生成 → ページ生成 を一気通貫で実行する
+
+## 作業フロー: 決算更新
+
+- [workflows/update-earnings.md](workflows/update-earnings.md) を読み、その指示に従うこと
+- 既存企業に新四半期の決算データを追加する差分更新フロー
 
 ## 開発ルール
 

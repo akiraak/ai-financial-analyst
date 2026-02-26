@@ -149,9 +149,12 @@ for (const fyStr of fys) {
 }
 
 // ページ生成対象にhasPageフラグを付与（data.json出力前に設定）
+// pageYears分は新規生成対象、既存フォルダがある四半期もhasPage=trueにする
 const startIdx = Math.max(0, quarters.length - pageQuarters);
 for (let i = 0; i < quarters.length; i++) {
-  quarters[i].hasPage = i >= startIdx;
+  const dirName = `${quarters[i].fy}Q${quarters[i].q}`;
+  const existingDir = path.join(QUARTERS_DIR, dirName);
+  quarters[i].hasPage = i >= startIdx || fs.existsSync(existingDir);
 }
 
 const data = {
@@ -170,9 +173,11 @@ console.log(`出力: ${OUTPUT} (${quarters.length} 四半期)`);
 // 四半期別data.json + index.html を出力
 const templatePath = path.join(QUARTERS_DIR, 'template.html');
 const template = fs.existsSync(templatePath) ? fs.readFileSync(templatePath, 'utf-8') : null;
-console.log(`設定: pageYears=${config.pageYears} (${quarters.length - startIdx}ページ), chartYears=${config.chartYears} (最大${chartQuarters}四半期分)`);
+const pageCount = quarters.filter(q => q.hasPage).length;
+console.log(`設定: pageYears=${config.pageYears} (${pageCount}ページ), chartYears=${config.chartYears} (最大${chartQuarters}四半期分)`);
 
-for (let i = startIdx; i < quarters.length; i++) {
+for (let i = 0; i < quarters.length; i++) {
+  if (!quarters[i].hasPage) continue;
   const q = quarters[i];
   const dirName = `${q.fy}Q${q.q}`;
   const qDir = path.join(QUARTERS_DIR, dirName);

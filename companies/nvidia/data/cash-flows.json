@@ -141,6 +141,12 @@
       "investingCF": -9025,
       "financingCF": -14878,
       "freeCashFlow": 22089
+    },
+    "Q4": {
+      "operatingCF": 36190,
+      "investingCF": -30861,
+      "financingCF": -6210,
+      "freeCashFlow": 34902
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "company": "NVIDIA",
   "ticker": "NVDA",
-  "generatedAt": "2026-02-24",
-  "nextEarningsDate": "2026-02-26",
+  "generatedAt": "2026-02-26",
+  "nextEarningsDate": "2026-05-28",
   "quarters": [
     {
       "label": "FY2021 Q1",
@@ -1288,6 +1288,63 @@
         "netAdditions": 3704,
         "unrealizedGains": 758,
         "impairments": -74
+      },
+      "hasPage": true
+    },
+    {
+      "label": "FY2026 Q4",
+      "fy": 2026,
+      "q": 4,
+      "isOutlook": false,
+      "revenue": 68127,
+      "costOfRevenue": 17034,
+      "grossProfit": 51093,
+      "researchAndDevelopment": 5512,
+      "sga": 1282,
+      "totalOperatingExpenses": 6794,
+      "operatingIncome": 44299,
+      "nonOperatingIncome": 6098,
+      "netIncome": 42960,
+      "eps": 1.76,
+      "price": 191.52,
+      "priceDate": "2026-01-28",
+      "sharesDiluted": 24432,
+      "segments": {
+        "dataCenter": 62300,
+        "gaming": 3700,
+        "professionalVisualization": 1300,
+        "automotive": 604,
+        "oem": 223
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 62556,
+        "totalAssets": 206803,
+        "totalLiabilities": 49510,
+        "totalEquity": 157293,
+        "totalDebt": 8468
+      },
+      "cashFlow": {
+        "operatingCF": 36190,
+        "investingCF": -30861,
+        "financingCF": -6210,
+        "freeCashFlow": 34902
+      },
+      "segmentProfit": {
+        "computeAndNetworking": {
+          "revenue": 61651,
+          "operatingIncome": 44003
+        },
+        "graphics": {
+          "revenue": 6476,
+          "operatingIncome": 2728
+        }
+      },
+      "investments": {
+        "nonMarketableBalance": 22251,
+        "publiclyHeldBalance": 381,
+        "netAdditions": 12792,
+        "unrealizedGains": 1281,
+        "impairments": -9
       },
       "hasPage": true
     }

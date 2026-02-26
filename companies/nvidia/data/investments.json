@@ -140,6 +140,13 @@
       "unrealizedGains": 758,
       "impairments": -74,
       "publiclyHeldBalance": 3869
+    },
+    "Q4": {
+      "nonMarketableBalance": 22251,
+      "netAdditions": 12792,
+      "unrealizedGains": 1281,
+      "impairments": -9,
+      "publiclyHeldBalance": 381
     }
   }
 }

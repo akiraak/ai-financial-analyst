@@ -147,6 +147,12 @@
       "gaming": 4300,
       "professionalVisualization": 760,
       "automotive": 592
+    },
+    "Q4": {
+      "dataCenter": 62300,
+      "gaming": 3700,
+      "professionalVisualization": 1300,
+      "automotive": 604
     }
   }
 }

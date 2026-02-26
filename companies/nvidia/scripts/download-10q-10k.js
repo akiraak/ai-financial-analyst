@@ -39,6 +39,7 @@ const filings = [
   { fy: 'FY2026', q: 'Q1', type: '10-Q', adsh: '0001045810-25-000116', file: 'nvda-20250427.htm', date: '2025-05-28' },
   { fy: 'FY2026', q: 'Q2', type: '10-Q', adsh: '0001045810-25-000209', file: 'nvda-20250727.htm', date: '2025-08-27' },
   { fy: 'FY2026', q: 'Q3', type: '10-Q', adsh: '0001045810-25-000230', file: 'nvda-20251026.htm', date: '2025-11-19' },
+  { fy: 'FY2026', q: 'Q4', type: '10-K', adsh: '0001045810-26-000021', file: 'nvda-20260125.htm', date: '2026-02-25' },
 ];
 
 function buildEdgarUrl(adsh, filename) {

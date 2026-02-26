@@ -88,7 +88,7 @@ ai-financial-analyst/
 │   ├── css/
 │   │   └── style.css          # 共通スタイル
 │   ├── js/
-│   │   ├── chart-builder.js   # 共通チャート生成ロジック（13チャート）
+│   │   ├── chart-builder.js   # 共通チャート生成ロジック（14チャート）
 │   │   └── quarter-detail.js  # 四半期詳細ページのロジック
 │   ├── character/             # キャラクター画像（公開用・assets/character/ からコピー）
 │   └── <企業名>/              # 全10社共通構成（nvidia, broadcom, alphabet 等）

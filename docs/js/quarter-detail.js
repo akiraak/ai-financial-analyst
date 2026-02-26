@@ -131,7 +131,7 @@ const QuarterDetail = {
 
     // チャート概要・解説の挿入
     const chartIds = [
-      'plChart', 'marginChart', 'costChart',
+      'plChart', 'marginChart', 'costAmountChart', 'costRatioChart',
       'balanceSheetChart', 'cashFlowChart',
       'pricePERChart', 'valuationChart',
       'segmentRevenueChart', 'segmentCompositionChart',
@@ -394,7 +394,8 @@ const QuarterDetail = {
       // A. 収益全体像
       ChartBuilder.createPLChart(document.getElementById('plChart'), data);
       ChartBuilder.createMarginChart(document.getElementById('marginChart'), data);
-      ChartBuilder.createCostChart(document.getElementById('costChart'), data);
+      ChartBuilder.createCostAmountChart(document.getElementById('costAmountChart'), data);
+      ChartBuilder.createCostRatioChart(document.getElementById('costRatioChart'), data);
 
       // B. 財務基盤
       ChartBuilder.createBalanceSheetChart(document.getElementById('balanceSheetChart'), data);

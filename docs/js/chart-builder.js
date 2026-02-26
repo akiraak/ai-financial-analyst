@@ -661,8 +661,67 @@ const ChartBuilder = {
     });
   },
 
-  // === 10. 費用構造（積み上げ棒グラフ）===
-  createCostChart(ctx, data) {
+  // === 10a. 費用（積み上げ棒グラフ）===
+  createCostAmountChart(ctx, data) {
+    const q = this.getActualQuarters(data.quarters);
+    const labels = this.getLabels(q);
+
+    // 絶対額（$M）
+    const cor = q.map(d => d.costOfRevenue);
+    const rd = q.map(d => d.researchAndDevelopment);
+    const sga = q.map(d => d.sga);
+
+    return new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: '売上原価',
+            data: cor,
+            backgroundColor: 'rgba(239, 83, 80, 0.7)',
+            borderColor: 'rgba(239, 83, 80, 1)',
+            borderWidth: 1,
+          },
+          {
+            label: '研究開発費',
+            data: rd,
+            backgroundColor: 'rgba(255, 152, 0, 0.7)',
+            borderColor: 'rgba(255, 152, 0, 1)',
+            borderWidth: 1,
+          },
+          {
+            label: 'その他販管費',
+            data: sga,
+            backgroundColor: 'rgba(255, 213, 79, 0.7)',
+            borderColor: 'rgba(255, 213, 79, 1)',
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: '費用（百万ドル）', font: { size: 16 } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y?.toLocaleString()}M`,
+            },
+          },
+        },
+        scales: {
+          x: { stacked: true },
+          y: {
+            stacked: true,
+            ticks: { callback: v => '$' + (v / 1000).toFixed(0) + 'B' },
+          },
+        },
+      },
+    });
+  },
+
+  // === 10b. 費用売上対比（積み上げ棒グラフ）===
+  createCostRatioChart(ctx, data) {
     const q = this.getActualQuarters(data.quarters);
     const labels = this.getLabels(q);
 
@@ -702,7 +761,7 @@ const ChartBuilder = {
       options: {
         responsive: true,
         plugins: {
-          title: { display: true, text: '費用構造（対売上比率）', font: { size: 16 } },
+          title: { display: true, text: '費用売上対比', font: { size: 16 } },
           tooltip: {
             callbacks: {
               label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1)}%`,

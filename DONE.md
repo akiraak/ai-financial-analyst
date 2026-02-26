@@ -171,3 +171,9 @@
   - download-filings.js / download-10q-10k.js にFY2026 Q4エントリを追加
   - analyze-and-visualize.md: 定性情報のカテゴリ分割構成・網羅性ルールを明記
   - update-earnings.md: DLスクリプト更新手順・IR linksエントリ追加手順・既存ページ保持の注記を追加
+- [x] 費用構造チャートを「費用」と「費用売上対比」の2つに分割（NVIDIA 2026Q4で適用）
+  - chart-builder.js: createCostChart → createCostAmountChart（絶対額）+ createCostRatioChart（比率）に分割
+  - quarter-detail.js: chartIds・チャート生成呼び出しを2つに更新
+  - generate-pages.js: NVIDIAテンプレートの費用セクションを2つに分割
+  - analysis-text.json: overviews + 2026Q4の charts テキストを分割
+  - analyze-and-visualize.md: チャート仕様を13→14チャートに更新

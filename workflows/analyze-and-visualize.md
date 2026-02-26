@@ -13,7 +13,7 @@
 - **財務データ表**: 予想四半期は表示する。ヘッダーに「Q4予想」と明示し、セルはグレーアウト表示
 - **xlsxファイル**: 予想四半期を含む（Excelでの分析用）
 
-## 可視化するグラフ（13チャート）
+## 可視化するグラフ（14チャート）
 
 ### A. 収益全体像
 
@@ -29,11 +29,15 @@
 - 売上高・営業利益・純利益のYoY成長率
 - 0%ラインを基準に成長の加速・減速を把握
 
-#### 4. 費用構造（積み上げ棒グラフ）
+#### 4a. 費用（積み上げ棒グラフ）
 - 売上原価（costOfRevenue）
 - 研究開発費（researchAndDevelopment）
 - その他販管費（sga）
-- 売上高に対する構成比で表示
+- 絶対額（$M）で表示
+
+#### 4b. 費用売上対比（積み上げ棒グラフ）
+- 売上原価・研究開発費・その他販管費
+- 売上高に対する構成比（%）で表示
 
 ### B. 財務基盤
 
@@ -146,7 +150,7 @@
 docs/                              # GitHub Pages公開ディレクトリ
 ├── index.html                     # 企業一覧ページ
 ├── js/
-│   ├── chart-builder.js           # 共通チャート生成ロジック（13チャート）
+│   ├── chart-builder.js           # 共通チャート生成ロジック（14チャート）
 │   └── quarter-detail.js          # 四半期詳細ページのロジック
 ├── css/
 │   └── style.css                  # 共通スタイル
@@ -226,7 +230,8 @@ docs/                              # GitHub Pages公開ディレクトリ
 │  1. P/L推移 + 解説               │
 │  2. 利益率推移 + 解説             │
 │  3. 成長率推移 + 解説             │
-│  4. 費用構造 + 解説               │
+│  4a. 費用 + 解説                  │
+│  4b. 費用売上対比 + 解説          │
 ├──────────────────────────────────┤
 │ B. 財務基盤                      │
 │  5. B/S概要 + 解説               │
@@ -302,7 +307,7 @@ docs/                              # GitHub Pages公開ディレクトリ
 このスクリプトは以下を生成する:
 - `docs/<企業名>/index.html` — ランディングページ（四半期リンク + 財務データ表）
 - `docs/<企業名>/quarters/index.html` — 四半期選択ページ（FY別カード一覧）
-- `docs/<企業名>/quarters/template.html` — 四半期詳細テンプレート（KPI + 13チャート + セグメント説明）
+- `docs/<企業名>/quarters/template.html` — 四半期詳細テンプレート（KPI + 14チャート + セグメント説明）
 
 これらのHTMLファイルはすべてこのスクリプトから生成される。git履歴からの復元や手動作成は行わない。
 
@@ -370,7 +375,7 @@ docs/                              # GitHub Pages公開ディレクトリ
 - 3〜4項目で四半期の業績ハイライトを記述
 
 **対象チャートID（12種）:**
-`plChart`, `marginChart`, `costChart`, `balanceSheetChart`, `cashFlowChart`, `pricePERChart`, `valuationChart`, `segmentRevenueChart`, `segmentCompositionChart`, `segmentProfitChart`, `segmentMarginChart`, `investmentChart`
+`plChart`, `marginChart`, `costAmountChart`, `costRatioChart`, `balanceSheetChart`, `cashFlowChart`, `pricePERChart`, `valuationChart`, `segmentRevenueChart`, `segmentCompositionChart`, `segmentProfitChart`, `segmentMarginChart`, `investmentChart`
 
 **書き方のルール:**
 - 「概要（overviews）」はチャートが何を表示するかの一般的な説明。四半期によらず共通
@@ -382,7 +387,7 @@ docs/                              # GitHub Pages公開ディレクトリ
 
 ### 5. ページの確認
 - ランディングページ: `docs/<企業名>/index.html` — 四半期リンク・財務データ表が正しく表示されること
-- 四半期詳細ページ: `docs/<企業名>/quarters/<YYYYQN>/index.html` — KPI・13チャート・解説テキスト・決算サマリーが正しく表示されること
+- 四半期詳細ページ: `docs/<企業名>/quarters/<YYYYQN>/index.html` — KPI・14チャート・解説テキスト・決算サマリーが正しく表示されること
 
 ### 6. GitHub Pages の有効化
 リポジトリの Settings → Pages で `docs/` ディレクトリを公開元に設定する。

@@ -1,5 +1,9 @@
 # AI Financial Analyst
 
+<p align="center">
+  <img src="docs/character/ai-craw-patterns-working.png" alt="AI Craw" width="200">
+</p>
+
 AIを活用した株式の財務分析ツール。決算資料から業績データを抽出し、四半期推移をグラフで可視化します。
 
 **ダッシュボード: https://akiraak.github.io/ai-financial-analyst/**
@@ -8,10 +12,10 @@ AIを活用した株式の財務分析ツール。決算資料から業績デー
 
 | 企業 | ティッカー | 対象期間 |
 |------|-----------|---------|
-| NVIDIA | NVDA | FY2021 Q1 〜 FY2026 Q3 |
-| Broadcom | AVGO | FY2022 Q1 〜 FY2025 Q4 |
-| Meta Platforms | META | FY2022 Q1 〜 FY2025 Q3 |
-| Palantir Technologies | PLTR | FY2022 Q1 〜 FY2025 Q3 |
+| NVIDIA Corporation | NVDA | FY2021 Q1 〜 FY2026 Q4 |
+| Broadcom Inc. | AVGO | FY2022 Q1 〜 FY2025 Q4 |
+| Meta Platforms, Inc. | META | FY2022 Q1 〜 FY2025 Q3 |
+| Palantir Technologies Inc. | PLTR | FY2022 Q1 〜 FY2025 Q3 |
 | Intel Corporation | INTC | FY2020 Q1 〜 FY2025 Q4 |
 | Tesla, Inc. | TSLA | FY2020 Q1 〜 FY2025 Q4 |
 | Alphabet Inc. | GOOGL | FY2020 Q1 〜 FY2025 Q4 |
@@ -25,7 +29,7 @@ AIを活用した株式の財務分析ツール。決算資料から業績デー
 - **株価取得** — Yahoo Finance APIから四半期末株価を取得
 - **xlsx生成** — テンプレートベースの業績一覧エクセルを生成
 - **四半期別分析ページ** — 各四半期ごとにKPIサマリー・13チャート・財務データ表・分析テキストを表示
-  - A. 収益全体像: P/L推移、利益率推移、費用構造
+  - A. 収益全体像: P/L推移、利益率推移、成長率推移、費用構造
   - B. 財務基盤: B/S概要、キャッシュフロー
   - C. 株式市場評価: 株価 & PER、バリュエーション指標（PER/PSR/PBR）
   - D. セグメント分析: セグメント別売上、構成比、営業利益、営業利益率

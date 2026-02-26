@@ -164,6 +164,10 @@
   - データ抽出: 全6スクリプト再実行（24四半期分）
   - xlsx生成・検証: 216リテラル値 + 247数式セル = 全463項目一致
   - ページ生成: ランディング + 9四半期分の詳細ページ（2024Q4〜2026Q4）
-  - analysis-text.json: 2026Q4の決算サマリー（定性3+数値4項目）+ 12チャート解説を追加
+  - generate-data-json.js: 既存四半期ページが消えないよう hasPage 判定を修正（既存フォルダ存在チェック追加）
+  - generate-ir-links.js: FY2026 Q4のIR資料リンク（6ドキュメント）を追加
+  - analysis-text.json: 2026Q4の決算サマリーをカテゴリ別6ブロック構成で追加（製品・提携・セグメント・財務・ガイダンス・CEOコメント + 数値分析4項目）+ 12チャート解説
   - config.json: nextEarningsDate を 2026-05-28（FY2027 Q1）に更新
   - download-filings.js / download-10q-10k.js にFY2026 Q4エントリを追加
+  - analyze-and-visualize.md: 定性情報のカテゴリ分割構成・網羅性ルールを明記
+  - update-earnings.md: DLスクリプト更新手順・IR linksエントリ追加手順・既存ページ保持の注記を追加

@@ -154,6 +154,21 @@
         <div class="chart-note">TTM（直近4四半期EPS合計）ベース。EPS負の企業は除外。TSMCはADR EPSで算出。</div>
       </div>
 
+      <!-- Chart 7: 営業利益 × PER 散布図 -->
+      <div class="compare-section">
+        <h3>営業利益 × PER</h3>
+        <div class="chart-box"><canvas id="opIncomePERChart"></canvas></div>
+        <div class="chart-note">X軸: 四半期営業利益（USD）、Y軸: PER（TTM）。右下ほど「稼ぐ力が大きく、割安」。TSMC（NT$建て）・EPS負の企業は除外。</div>
+      </div>
+
+      <!-- Chart 8: 営業利益成長率 × PER 散布図 -->
+      <div class="compare-section">
+        <h3>営業利益成長率 × PER</h3>
+        <div class="chart-box"><canvas id="opIncomeGrowthPERChart"></canvas></div>
+        <div class="chart-note-overflow" style="display:none; font-size:.78rem; color:#c96b7e; font-weight:600; margin-top:10px; padding:8px 12px; background:#fdf2f4; border-radius:4px;"></div>
+        <div class="chart-note">X軸: 営業利益の前年同期比成長率（最大1000%）、Y軸: PER（TTM）。右下ほど「成長が速く、割安」。成長率は通貨非依存のため全社対象（EPS負の企業は除外）。</div>
+      </div>
+
     </div>
 
     <div class="foot">
@@ -187,6 +202,10 @@
         document.getElementById('revenueGrowthChart'), companies);
       CompareChart.createPERChart(
         document.getElementById('perChart'), companies);
+      CompareChart.createOpIncomePERChart(
+        document.getElementById('opIncomePERChart'), companies);
+      CompareChart.createOpIncomeGrowthPERChart(
+        document.getElementById('opIncomeGrowthPERChart'), companies);
 
       // ローディング非表示、コンテンツ表示
       document.getElementById('loadingIndicator').style.display = 'none';

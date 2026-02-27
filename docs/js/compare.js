@@ -426,4 +426,201 @@ const CompareChart = {
       options: options,
     });
   },
+
+  // Chart 7: 営業利益 × PER 散布図（USD建て＆EPS正の企業のみ）
+  createOpIncomePERChart(ctx, companies) {
+    const self = this;
+    const datasets = [];
+
+    companies.forEach(({ slug, data }) => {
+      // USD建てかつPER算出可能な企業のみ
+      if (!self.NORMALIZE[slug].isUSD) return;
+      const q = self.getLatestActual(data.quarters);
+      if (!q) return;
+      const opInc = self.normalizeFinancial(slug, q.operatingIncome);
+      const per = self.calcPER(slug, data.quarters);
+      if (opInc == null || per == null) return;
+
+      datasets.push({
+        label: self.TICKERS[slug],
+        data: [{ x: opInc, y: per }],
+        backgroundColor: self.COLORS[slug].bg,
+        borderColor: self.COLORS[slug].border,
+        borderWidth: 2,
+        pointRadius: 8,
+        pointHoverRadius: 11,
+      });
+    });
+
+    // ティッカーラベル描画用プラグイン
+    const tickerLabelPlugin = {
+      id: 'tickerLabels',
+      afterDatasetsDraw: function(chart) {
+        const ctx2 = chart.ctx;
+        ctx2.save();
+        ctx2.font = 'bold 11px -apple-system, sans-serif';
+        ctx2.textBaseline = 'bottom';
+        chart.data.datasets.forEach(function(ds, i) {
+          var meta = chart.getDatasetMeta(i);
+          if (!meta.visible || meta.data.length === 0) return;
+          var pt = meta.data[0];
+          ctx2.fillStyle = ds.borderColor;
+          ctx2.fillText(ds.label, pt.x + 10, pt.y - 4);
+        });
+        ctx2.restore();
+      }
+    };
+
+    return new Chart(ctx, {
+      type: 'scatter',
+      data: { datasets: datasets },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          title: {
+            display: true,
+            text: '営業利益 × PER（収益力と市場評価の関係）',
+            font: { size: 15, weight: 'bold' },
+            color: '#333',
+          },
+          legend: { display: true, position: 'bottom', labels: { usePointStyle: true, padding: 16 } },
+          tooltip: {
+            callbacks: {
+              label: function(ctx) {
+                var d = ctx.raw;
+                return ctx.dataset.label + ': 営業利益 $' + (d.x / 1000).toFixed(1) + 'B / PER ' + d.y.toFixed(1) + 'x';
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            title: { display: true, text: '営業利益（四半期）', font: { size: 13 } },
+            ticks: { callback: function(v) { return '$' + (v / 1000).toFixed(0) + 'B'; } },
+            grid: { color: 'rgba(0,0,0,0.06)' },
+          },
+          y: {
+            title: { display: true, text: 'PER (TTM)', font: { size: 13 } },
+            ticks: { callback: function(v) { return v + 'x'; } },
+            grid: { color: 'rgba(0,0,0,0.06)' },
+          }
+        }
+      },
+      plugins: [tickerLabelPlugin],
+    });
+  },
+
+  // Chart 8: 営業利益成長率 × PER 散布図（全社、比率は通貨非依存）
+  // X軸は最大1000%にクリップし、範囲外の企業はoutOfRange配列で返す
+  createOpIncomeGrowthPERChart(ctx, companies) {
+    const self = this;
+    const datasets = [];
+    const outOfRange = []; // X軸範囲外の企業情報
+    const X_MAX = 200;
+
+    companies.forEach(({ slug, data }) => {
+      const q = self.getLatestActual(data.quarters);
+      if (!q) return;
+      const per = self.calcPER(slug, data.quarters);
+      if (per == null) return;
+
+      // 営業利益YoY成長率の算出
+      const yoyQ = self.getYoYQuarter(data.quarters, q);
+      if (!yoyQ || yoyQ.operatingIncome == null || q.operatingIncome == null) return;
+      if (yoyQ.operatingIncome === 0) return;
+      const growth = (q.operatingIncome - yoyQ.operatingIncome) / Math.abs(yoyQ.operatingIncome) * 100;
+
+      // 範囲外の企業は記録してチャートから除外
+      if (growth > X_MAX || growth < -X_MAX) {
+        outOfRange.push({
+          ticker: self.TICKERS[slug],
+          growth: growth,
+          per: per,
+        });
+        return;
+      }
+
+      datasets.push({
+        label: self.TICKERS[slug],
+        data: [{ x: growth, y: per }],
+        backgroundColor: self.COLORS[slug].bg,
+        borderColor: self.COLORS[slug].border,
+        borderWidth: 2,
+        pointRadius: 8,
+        pointHoverRadius: 11,
+      });
+    });
+
+    // ティッカーラベル描画用プラグイン
+    const tickerLabelPlugin = {
+      id: 'tickerLabelsGrowth',
+      afterDatasetsDraw: function(chart) {
+        const ctx2 = chart.ctx;
+        ctx2.save();
+        ctx2.font = 'bold 11px -apple-system, sans-serif';
+        ctx2.textBaseline = 'bottom';
+        chart.data.datasets.forEach(function(ds, i) {
+          var meta = chart.getDatasetMeta(i);
+          if (!meta.visible || meta.data.length === 0) return;
+          var pt = meta.data[0];
+          ctx2.fillStyle = ds.borderColor;
+          ctx2.fillText(ds.label, pt.x + 10, pt.y - 4);
+        });
+        ctx2.restore();
+      }
+    };
+
+    // 範囲外の企業を注釈エリアに表示
+    if (outOfRange.length > 0) {
+      const noteEl = ctx.closest('.compare-section').querySelector('.chart-note-overflow');
+      if (noteEl) {
+        const lines = outOfRange.map(function(d) {
+          return d.ticker + ': 営業利益成長率 ' + (d.growth >= 0 ? '+' : '') + d.growth.toFixed(0) + '% / PER ' + d.per.toFixed(1) + 'x';
+        });
+        noteEl.textContent = '※ グラフ範囲外: ' + lines.join('、');
+        noteEl.style.display = 'block';
+      }
+    }
+
+    return new Chart(ctx, {
+      type: 'scatter',
+      data: { datasets: datasets },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          title: {
+            display: true,
+            text: '営業利益成長率 × PER（成長性と市場評価の関係）',
+            font: { size: 15, weight: 'bold' },
+            color: '#333',
+          },
+          legend: { display: true, position: 'bottom', labels: { usePointStyle: true, padding: 16 } },
+          tooltip: {
+            callbacks: {
+              label: function(ctx) {
+                var d = ctx.raw;
+                return ctx.dataset.label + ': 営業利益成長率 ' + (d.x >= 0 ? '+' : '') + d.x.toFixed(1) + '% / PER ' + d.y.toFixed(1) + 'x';
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            max: X_MAX,
+            title: { display: true, text: '営業利益成長率 YoY（%）', font: { size: 13 } },
+            ticks: { callback: function(v) { return (v >= 0 ? '+' : '') + v + '%'; } },
+            grid: { color: 'rgba(0,0,0,0.06)' },
+          },
+          y: {
+            title: { display: true, text: 'PER (TTM)', font: { size: 13 } },
+            ticks: { callback: function(v) { return v + 'x'; } },
+            grid: { color: 'rgba(0,0,0,0.06)' },
+          }
+        }
+      },
+      plugins: [tickerLabelPlugin],
+    });
+  },
 };

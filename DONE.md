@@ -177,6 +177,7 @@
   - docs/js/compare.js: CompareChartオブジェクト（データ正規化・6チャート・サマリーテーブル）
   - 単位正規化: Palantir(千USD→百万)、Apple(株数千→百万)、TSMC(NT$→USD金額チャートから除外)
   - トップページに「企業比較ダッシュボード →」リンクボタンを追加
+  - 散布図2種を追加: 営業利益×PER（収益力vs市場評価）、営業利益成長率×PER（成長性vs市場評価、X軸最大200%・範囲外注釈表示）
   - chart-builder.js: createCostChart → createCostAmountChart（絶対額）+ createCostRatioChart（比率）に分割
   - quarter-detail.js: chartIds・チャート生成呼び出しを2つに更新
   - generate-pages.js: NVIDIAテンプレートの費用セクションを2つに分割

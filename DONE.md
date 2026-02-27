@@ -172,6 +172,11 @@
   - analyze-and-visualize.md: 定性情報のカテゴリ分割構成・網羅性ルールを明記
   - update-earnings.md: DLスクリプト更新手順・IR linksエントリ追加手順・既存ページ保持の注記を追加
 - [x] 費用構造チャートを「費用」と「費用売上対比」の2つに分割（NVIDIA 2026Q4で適用）
+- [x] 企業比較ダッシュボードを作成（docs/compare/index.html）
+  - 全10社の主要指標を横並びで比較: 時価総額・売上高・営業利益・営業利益率・売上成長率YoY・PER
+  - docs/js/compare.js: CompareChartオブジェクト（データ正規化・6チャート・サマリーテーブル）
+  - 単位正規化: Palantir(千USD→百万)、Apple(株数千→百万)、TSMC(NT$→USD金額チャートから除外)
+  - トップページに「企業比較ダッシュボード →」リンクボタンを追加
   - chart-builder.js: createCostChart → createCostAmountChart（絶対額）+ createCostRatioChart（比率）に分割
   - quarter-detail.js: chartIds・チャート生成呼び出しを2つに更新
   - generate-pages.js: NVIDIAテンプレートの費用セクションを2つに分割

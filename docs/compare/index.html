@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業比較 — AI Financial Analyst</title>
+  <meta property="og:title" content="企業比較 — AI Financial Analyst">
+  <meta property="og:description" content="注目10銘柄の主要財務指標を横並びで比較">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:#f6f7f5; color:#333; }
+
+    /* マストヘッド */
+    .masthead { text-align:center; padding:16px 0 10px; border-bottom:3px double #111; background:#fff; }
+    .masthead .inner { max-width:1100px; margin:0 auto; padding:0 20px; }
+    .masthead h1 { font-family:Georgia,'Times New Roman',serif; font-size:2.2rem; font-weight:900; letter-spacing:-.03em; color:#111; }
+    .masthead h1 a { color:inherit; text-decoration:none; }
+    .masthead h1 a:hover { color:#559c30; }
+
+    /* パンくず */
+    .breadcrumb { max-width:1100px; margin:0 auto; padding:10px 20px 0; font-size:.75rem; color:#888; }
+    .breadcrumb a { color:#559c30; text-decoration:none; font-weight:600; }
+    .breadcrumb a:hover { text-decoration:underline; }
+
+    /* メインコンテンツ */
+    .main { max-width:1100px; margin:0 auto; padding:0 20px 40px; }
+
+    /* ページヘッダー */
+    .page-header { padding:20px 0 16px; border-bottom:2px solid #111; margin-bottom:24px; }
+    .page-header h2 { font-family:Georgia,'Times New Roman',serif; font-size:1.7rem; font-weight:700; color:#111; margin-bottom:6px; }
+    .page-header p { font-size:.85rem; color:#666; line-height:1.6; }
+
+    /* セクション */
+    .compare-section { background:#fff; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,.08); padding:24px; margin-bottom:20px; }
+    .compare-section h3 { font-size:1rem; font-weight:700; color:#4a8a30; margin-bottom:16px; padding-bottom:8px; border-bottom:2px solid #c96b7e; }
+
+    /* チャートラッパー */
+    .chart-box { position:relative; width:100%; height:380px; }
+    @media(max-width:768px) { .chart-box { height:320px; } }
+
+    /* 注釈 */
+    .chart-note { font-size:.72rem; color:#999; font-style:italic; margin-top:10px; }
+
+    /* サマリーテーブル */
+    .table-wrapper { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .summary-table { width:100%; border-collapse:collapse; font-size:.82rem; white-space:nowrap; }
+    .summary-table thead th { background:#f2f9eb; color:#4a8a30; font-weight:700; padding:10px 12px; text-align:left; border-bottom:2px solid #4a8a30; position:sticky; top:0; z-index:2; }
+    .summary-table thead th.num { text-align:right; }
+    .summary-table tbody td { padding:9px 12px; border-bottom:1px solid #eee; }
+    .summary-table tbody td.num { text-align:right; font-variant-numeric:tabular-nums; }
+    .summary-table tbody tr:hover { background:#faf7ef; }
+    .summary-table tbody td:first-child { font-weight:700; }
+
+    /* ローディング */
+    .loading { text-align:center; padding:40px 0; color:#999; font-size:.88rem; }
+    .loading::after { content:''; display:inline-block; width:18px; height:18px; border:2px solid #ccc; border-top-color:#559c30; border-radius:50%; animation:spin .6s linear infinite; margin-left:8px; vertical-align:middle; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+
+    /* フッター */
+    .foot { margin-top:28px; padding:12px 0; text-align:center; font-size:.7rem; color:#888; border-top:1px solid #ccc; }
+    .foot a { text-decoration:none; color:#111; }
+  </style>
+</head>
+<body>
+
+  <div class="masthead">
+    <div class="inner">
+      <h1><a href="../">AI Financial Analyst</a></h1>
+    </div>
+  </div>
+
+  <div class="breadcrumb">
+    <a href="../">AI Financial Analyst</a> &rsaquo; 企業比較
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <h2>企業比較ダッシュボード</h2>
+      <p>注目10銘柄の直近四半期実績データに基づく主要指標の比較。時価総額・売上・利益・成長性・バリュエーションを一覧で確認できます。</p>
+    </div>
+
+    <!-- ローディング表示 -->
+    <div id="loadingIndicator" class="loading">データを読み込んでいます</div>
+
+    <!-- コンテンツ（JS で表示） -->
+    <div id="content" style="display:none;">
+
+      <!-- サマリーテーブル -->
+      <div class="compare-section">
+        <h3>主要指標サマリー</h3>
+        <div class="table-wrapper">
+          <table class="summary-table">
+            <thead>
+              <tr>
+                <th>ティッカー</th>
+                <th>企業名</th>
+                <th>四半期</th>
+                <th class="num">売上高</th>
+                <th class="num">営業利益</th>
+                <th class="num">営業利益率</th>
+                <th class="num">時価総額</th>
+                <th class="num">売上成長率</th>
+                <th class="num">PER</th>
+              </tr>
+            </thead>
+            <tbody id="summaryBody"></tbody>
+          </table>
+        </div>
+        <div class="chart-note">※ TSMCの売上高・営業利益はNT$建てのため、USD換算値は表示していません。営業利益率・成長率は通貨に依存しないため全社表示。</div>
+      </div>
+
+      <!-- Chart 1: 時価総額 -->
+      <div class="compare-section">
+        <h3>時価総額</h3>
+        <div class="chart-box"><canvas id="marketCapChart"></canvas></div>
+        <div class="chart-note">直近四半期末の株価 × 希薄化後発行済株式数で算出。TSMCはADR価格ベース。</div>
+      </div>
+
+      <!-- Chart 2: 売上高 -->
+      <div class="compare-section">
+        <h3>売上高（四半期）</h3>
+        <div class="chart-box"><canvas id="revenueChart"></canvas></div>
+        <div class="chart-note">※ TSMCはNT$建てのため除外しています。</div>
+      </div>
+
+      <!-- Chart 3: 営業利益 -->
+      <div class="compare-section">
+        <h3>営業利益（四半期）</h3>
+        <div class="chart-box"><canvas id="opIncomeChart"></canvas></div>
+        <div class="chart-note">※ TSMCはNT$建てのため除外しています。</div>
+      </div>
+
+      <!-- Chart 4: 営業利益率 -->
+      <div class="compare-section">
+        <h3>営業利益率</h3>
+        <div class="chart-box"><canvas id="opMarginChart"></canvas></div>
+        <div class="chart-note">営業利益 ÷ 売上高。比率のため通貨に依存せず全10社を表示。</div>
+      </div>
+
+      <!-- Chart 5: 売上成長率 YoY -->
+      <div class="compare-section">
+        <h3>売上成長率（前年同期比）</h3>
+        <div class="chart-box"><canvas id="revenueGrowthChart"></canvas></div>
+        <div class="chart-note">直近四半期の売上高と前年同期を比較。比率のため全社表示。</div>
+      </div>
+
+      <!-- Chart 6: PER -->
+      <div class="compare-section">
+        <h3>PER（株価収益率）</h3>
+        <div class="chart-box"><canvas id="perChart"></canvas></div>
+        <div class="chart-note">TTM（直近4四半期EPS合計）ベース。EPS負の企業は除外。TSMCはADR EPSで算出。</div>
+      </div>
+
+    </div>
+
+    <div class="foot">
+      <a href="../">AI Financial Analyst</a> &mdash; <a href="https://github.com/akiraak/ai-financial-analyst">GitHub</a>
+    </div>
+  </div>
+
+  <script src="../js/compare.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', async function() {
+    try {
+      const companies = await CompareChart.loadAll();
+      if (companies.length === 0) {
+        document.getElementById('loadingIndicator').textContent = 'データの読み込みに失敗しました。';
+        return;
+      }
+
+      // サマリーテーブル描画
+      CompareChart.renderSummaryTable(companies);
+
+      // 6チャート描画
+      CompareChart.createMarketCapChart(
+        document.getElementById('marketCapChart'), companies);
+      CompareChart.createRevenueChart(
+        document.getElementById('revenueChart'), companies);
+      CompareChart.createOpIncomeChart(
+        document.getElementById('opIncomeChart'), companies);
+      CompareChart.createOpMarginChart(
+        document.getElementById('opMarginChart'), companies);
+      CompareChart.createRevenueGrowthChart(
+        document.getElementById('revenueGrowthChart'), companies);
+      CompareChart.createPERChart(
+        document.getElementById('perChart'), companies);
+
+      // ローディング非表示、コンテンツ表示
+      document.getElementById('loadingIndicator').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    } catch (err) {
+      console.error('比較データ読み込みエラー:', err);
+      document.getElementById('loadingIndicator').textContent = 'データの読み込みに失敗しました。';
+    }
+  });
+  </script>
+
+</body>
+</html>

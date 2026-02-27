@@ -89,6 +89,49 @@
 - 投資コミットメント情報は静的テキストで記載（Intel, OpenAI, Anthropic等）
 - データソース: 10-Q/10-K PDF → investments.json
 
+## 企業比較ダッシュボード（docs/compare/index.html）
+
+全10社の主要指標を横並びで比較する静的HTMLページ。各社の `data.json` をブラウザ側で並列fetchし、Chart.jsで6チャート+サマリーテーブルを描画する。
+
+### 比較チャート（6種）
+
+| # | 指標 | 形式 | 対象企業 | 備考 |
+|---|------|------|---------|------|
+| 1 | 時価総額 | 横棒グラフ | 全10社 | price × sharesDiluted。TSMCはADR価格÷5 |
+| 2 | 売上高 | 横棒グラフ | 9社（TSMC除外） | NT$建てのため除外 |
+| 3 | 営業利益 | 横棒グラフ | 9社（TSMC除外） | NT$建てのため除外 |
+| 4 | 営業利益率 | 横棒グラフ | 全10社 | 比率は通貨非依存 |
+| 5 | 売上成長率 YoY | 横棒グラフ | 全10社 | 前年同期比、通貨非依存 |
+| 6 | PER（TTM） | 横棒グラフ | EPS正の企業のみ | TSMCはepsADR使用 |
+
+各チャートは値の大きい順にソートして表示する。
+
+### 単位正規化（docs/js/compare.js の NORMALIZE テーブル）
+
+各社の data.json の単位が異なるため、compare.js 内で百万USD・百万株に統一する:
+
+| 企業 | 売上単位 | 株数単位 | revMul | sharesMul | 備考 |
+|------|---------|---------|--------|-----------|------|
+| NVIDIA, Broadcom, Alphabet, Intel, Meta, Tesla, Microsoft | 百万USD | 百万株 | 1 | 1 | |
+| Palantir | 千USD | 千株 | 0.001 | 0.001 | |
+| Apple | 百万USD | 千株 | 1 | 0.001 | 株数のみ変換 |
+| TSMC | 百万NT$ | 百万株 | — | 1 | isUSD: false。時価総額=ADR価格×株数÷5 |
+
+**新規企業追加時:** NORMALIZE テーブルにエントリを追加し、isUSD フラグと乗数を正しく設定すること。
+
+### ファイル構成
+
+| ファイル | 役割 |
+|---------|------|
+| `docs/compare/index.html` | 比較ページHTML（静的、ビルドスクリプト不要） |
+| `docs/js/compare.js` | CompareChartオブジェクト（データ読み込み・正規化・6チャート・サマリーテーブル） |
+
+### 更新タイミング
+
+- **各社の決算更新後:** 各社の data.json が更新されれば、比較ページはブラウザ側で最新データを自動的に読み込む。**追加のビルド作業は不要**
+- **新規企業追加時:** compare.js の `COMPANIES`, `DISPLAY_NAMES`, `TICKERS`, `NORMALIZE`, `COLORS` にエントリを追加する
+- **チャート種類の追加・変更時:** compare.js にチャート生成メソッドを追加し、compare/index.html にcanvas要素と初期化コードを追加する
+
 ## データソース
 
 ### 抽出済みデータ
@@ -151,9 +194,12 @@ docs/                              # GitHub Pages公開ディレクトリ
 ├── index.html                     # 企業一覧ページ
 ├── js/
 │   ├── chart-builder.js           # 共通チャート生成ロジック（14チャート）
-│   └── quarter-detail.js          # 四半期詳細ページのロジック
+│   ├── quarter-detail.js          # 四半期詳細ページのロジック
+│   └── compare.js                 # 企業比較チャート生成ロジック（6チャート）
 ├── css/
 │   └── style.css                  # 共通スタイル
+├── compare/
+│   └── index.html                 # 企業比較ダッシュボード
 └── <企業名>/
     ├── index.html                 # ランディングページ（四半期リンクのみ）
     ├── data.json                  # 統合JSON（全データソースを結合）

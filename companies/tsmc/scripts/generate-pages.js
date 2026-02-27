@@ -255,9 +255,14 @@ function generateTemplate() {
       <div class="chart-description" id="marginChart-desc"></div>
     </div>
     <div class="section">
-      <h2>\u8CBB\u7528\u69CB\u9020</h2>
-      <div class="chart-wrapper"><canvas id="costChart"></canvas></div>
-      <div class="chart-description" id="costChart-desc"></div>
+      <h2>費用</h2>
+      <div class="chart-wrapper"><canvas id="costAmountChart"></canvas></div>
+      <div class="chart-description" id="costAmountChart-desc"></div>
+    </div>
+    <div class="section">
+      <h2>費用売上対比</h2>
+      <div class="chart-wrapper"><canvas id="costRatioChart"></canvas></div>
+      <div class="chart-description" id="costRatioChart-desc"></div>
     </div>
     <div class="section">
       <h2>B/S\u6982\u8981</h2>

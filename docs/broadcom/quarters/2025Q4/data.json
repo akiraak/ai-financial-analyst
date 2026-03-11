@@ -1,8 +1,8 @@
 {
   "company": "Broadcom",
   "ticker": "AVGO",
-  "generatedAt": "2026-02-26",
-  "nextEarningsDate": "2026-03-06",
+  "generatedAt": "2026-03-10",
+  "nextEarningsDate": "2026-06-04",
   "quarters": [
     {
       "label": "FY2022 Q1",
@@ -353,7 +353,7 @@
       },
       "segmentProfit": null,
       "investments": null,
-      "hasPage": true
+      "hasPage": false
     },
     {
       "label": "FY2024 Q2",
@@ -639,5 +639,9 @@
     "q": 3,
     "label": "FY2025 Q3"
   },
-  "nextPage": null
+  "nextPage": {
+    "fy": 2026,
+    "q": 1,
+    "label": "FY2026 Q1"
+  }
 }

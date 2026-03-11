@@ -514,5 +514,26 @@
       "sharesBasic": 4732,
       "sharesDiluted": 4889
     }
+  },
+  "FY2026": {
+    "Q1": {
+      "revenue": 19311,
+      "costOfRevenue": 4679,
+      "totalCostOfRevenue": 6154,
+      "grossProfit": 13157,
+      "researchAndDevelopment": 2965,
+      "sga": 1019,
+      "totalOperatingExpenses": 4594,
+      "operatingIncome": 8563,
+      "interestExpense": -801,
+      "otherIncomeNet": 433,
+      "incomeBeforeTax": 8195,
+      "incomeTaxExpense": 846,
+      "netIncome": 7349,
+      "epsBasic": 1.55,
+      "epsDiluted": 1.5,
+      "sharesBasic": 4741,
+      "sharesDiluted": 4888
+    }
   }
 }

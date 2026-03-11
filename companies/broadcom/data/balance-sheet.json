@@ -250,5 +250,17 @@
       "totalLiabilities": 89800,
       "stockholdersEquity": 81292
     }
+  },
+  "FY2026": {
+    "Q1": {
+      "cashAndEquivalents": 14174,
+      "totalCurrentAssets": 32062,
+      "totalAssets": 169903,
+      "shortTermDebt": 2252,
+      "totalCurrentLiabilities": 16859,
+      "longTermDebt": 63805,
+      "totalLiabilities": 90031,
+      "stockholdersEquity": 79872
+    }
   }
 }

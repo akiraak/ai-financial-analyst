@@ -1,8 +1,8 @@
 {
   "company": "Broadcom",
   "ticker": "AVGO",
-  "generatedAt": "2026-02-26",
-  "nextEarningsDate": "2026-03-06",
+  "generatedAt": "2026-03-10",
+  "nextEarningsDate": "2026-06-04",
   "quarters": [
     {
       "label": "FY2020 Q1",
@@ -665,7 +665,7 @@
       },
       "segmentProfit": null,
       "investments": null,
-      "hasPage": true
+      "hasPage": false
     },
     {
       "label": "FY2024 Q2",
@@ -935,6 +935,45 @@
         "investingCF": -367,
         "financingCF": -1876,
         "freeCashFlow": 7466
+      },
+      "segmentProfit": null,
+      "investments": null,
+      "hasPage": true
+    },
+    {
+      "label": "FY2026 Q1",
+      "fy": 2026,
+      "q": 1,
+      "isOutlook": false,
+      "revenue": 19311,
+      "costOfRevenue": 4679,
+      "grossProfit": 13157,
+      "researchAndDevelopment": 2965,
+      "sga": 1019,
+      "totalOperatingExpenses": 4594,
+      "operatingIncome": 8563,
+      "nonOperatingIncome": -368,
+      "netIncome": 7349,
+      "eps": 1.5,
+      "price": 331.3,
+      "priceDate": "2026-01-30",
+      "sharesDiluted": 4888,
+      "segments": {
+        "semiconductorSolutions": 12515,
+        "infrastructureSoftware": 6796
+      },
+      "balanceSheet": {
+        "cashAndEquivalents": 14174,
+        "totalAssets": 169903,
+        "totalLiabilities": 90031,
+        "totalEquity": 79872,
+        "totalDebt": 66057
+      },
+      "cashFlow": {
+        "operatingCF": 8260,
+        "investingCF": -115,
+        "financingCF": -10149,
+        "freeCashFlow": 8010
       },
       "segmentProfit": null,
       "investments": null,

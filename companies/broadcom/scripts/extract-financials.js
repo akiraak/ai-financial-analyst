@@ -204,8 +204,9 @@ function extractFromFile(filePath, fy, q) {
       inSharesSection = false;
       return;
     }
-    // パターン3: "Net income per share attributable to common stock:" フラット形式（FY2022-2023）
-    if (label.match(/Net income per share attributable/i)) {
+    // パターン3: "Net income per share:" / "Net income per share attributable to common stock:" フラット形式
+    // 末尾コロン付きのヘッダー行のみマッチ（データ行 "Net income per share $1.50" は除外）
+    if (label.match(/Net income per share.*:$/i)) {
       inEpsDilutedSection = true; // フラット形式: Basic/Dilutedが直接続く
       inEpsBasicSection = false;
       inSharesSection = false;

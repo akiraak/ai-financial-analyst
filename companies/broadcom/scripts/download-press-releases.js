@@ -32,6 +32,7 @@ const filings = [
   { fy: 'FY2025', q: 'Q2', adsh: '0001730168-25-000061', file: 'avgo-05042025x8kxex99.htm', date: '2025-06-05' },
   { fy: 'FY2025', q: 'Q3', adsh: '0001730168-25-000094', file: 'avgo-08032025x8kxex99.htm', date: '2025-09-04' },
   { fy: 'FY2025', q: 'Q4', adsh: '0001730168-25-000116', file: 'avgo-11022025x8kxex99.htm', date: '2025-12-11' },
+  { fy: 'FY2026', q: 'Q1', adsh: '0001730168-26-000011', file: 'avgo-02012026x8kxex99.htm', date: '2026-03-04' },
 ];
 
 const basePath = path.join(__dirname, '..', 'filings');

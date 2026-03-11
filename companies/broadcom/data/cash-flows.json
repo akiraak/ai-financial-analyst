@@ -178,5 +178,14 @@
       "financingCashFlow": -1876,
       "freeCashFlow": 7466
     }
+  },
+  "FY2026": {
+    "Q1": {
+      "operatingCashFlow": 8260,
+      "capitalExpenditures": -250,
+      "investingCashFlow": -115,
+      "financingCashFlow": -10149,
+      "freeCashFlow": 8010
+    }
   }
 }

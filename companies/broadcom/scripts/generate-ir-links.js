@@ -121,6 +121,11 @@ const irDocuments = {
       { name: '10-K', url: 'https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm', description: '10-K of Fourth Quarter 2025' },
     ],
   },
+  FY2026: {
+    Q1: [
+      { name: 'Press Release', url: 'https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm', description: 'Press Release of First Quarter 2026' },
+    ],
+  },
 };
 
 // renderFilings() が期待する出力形式に変換して出力
